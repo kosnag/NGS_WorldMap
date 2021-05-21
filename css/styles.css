@@ -1,0 +1,20 @@
+.bg-body {
+	background: linear-gradient( rgba(0,0,0,0.20), rgba(0, 0, 0, 0.20) ), url('../images/background.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top;
+}
+.main-site {
+	margin-bottom: 30px;
+	margin-top: 30px;
+}
+.nav-custom {
+	background-color: rgba(0,123,255,0.80);
+	margin-left: auto;
+	margin-right: auto;
+}
+#intermap {
+	height: 650px;
+    width: auto;
+}
