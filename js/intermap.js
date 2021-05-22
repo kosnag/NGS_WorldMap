@@ -9,7 +9,7 @@ map.fitBounds(map_bounds);
 function onEachFeature(feature, layer) {
     layer.bindPopup(feature.properties.text);
   }
-  $.getJSON('./js/json/markers.json', function(data) {
+  $.getJSON('json/markers.json', function(data) {
     console.log(data);
 
     L.geoJson(data, {
