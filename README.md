@@ -1,4 +1,5 @@
 # NGS_InterMap
-Типо репозиторий чисто для того, чтобы он был
-
-information will be written soon
+##todo list:##
+- multilanguage support (en,kr,ru,jp)
+- json import with different icons
+- icons for materials and bosses
