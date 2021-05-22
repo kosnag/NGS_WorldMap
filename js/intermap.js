@@ -6,17 +6,15 @@ var map_img = L.imageOverlay(map_url, map_bounds).addTo(map);
 map.fitBounds(map_bounds);
 
 // JSON IMPORT
-function onEachFeature(feature, layer) {
-    layer.bindPopup(feature.properties.text);
-  }
-  $.getJSON('json/markers.json', function(data) {
-    L.geoJson(data, {
-      pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {icon: UQ});
-      },
-      onEachFeature: onEachFeature
-    }).addTo(map);
-  });
+function onEachFeature(feature, layer) {layer.bindPopup(feature.properties.text);}
+$.getJSON('./json/markers.json', function(data) {
+	L.geoJson(data, {
+		pointToLayer: function(feature, latlng) {
+			return L.marker(latlng, {icon: TEST});
+		},
+		onEachFeature: onEachFeature
+	}).addTo(map);
+});
 
 // ICONS
 var Main_Icons = L.Icon.extend({options: {iconSize:[40,40],iconAnchor:[20,40],popupAnchor:[0,-25]}});
@@ -29,7 +27,8 @@ var CentTower = new Main_Icons({iconUrl: './images/marks/cent_tower.png'}),
 	City = new Main_Icons({iconUrl: './images/marks/city.png'}),
 	Hut = new Main_Icons({iconUrl: './images/marks/hut.png'}),
 	Dungeon = new Main_Icons({iconUrl: './images/marks/dungeon.png'}),
-	Fort = new Main_Icons({iconUrl: './images/marks/fort.png'});
+	Fort = new Main_Icons({iconUrl: './images/marks/fort.png'}),
+	TEST = new Main_Icons({iconUrl: 'https://cdn.discordapp.com/emojis/763104888732647434.png'});
 											
 // MARKERS UI
 var marker = 
