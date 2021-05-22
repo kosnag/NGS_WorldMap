@@ -1,54 +1,59 @@
 {
     "type": "FeatureCollection",
-    "features": [{
-        "type": "Feature",
-        "properties": {
-             "text": "TEST1",
-             "type": "UQ"
-         },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [100,100]
-        }
-    },{
-        "type": "Feature",
-        "properties": {
-             "text": "TEST2",
-             "type": "Cocoon"
-         },
-        "geometry": {
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "TEST1",
+                "type": "UQ"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [100,100]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+               "text": "TEST2",
+                "type": "Cocoon"
+            },
+            "geometry": {
             "type": "Point",
             "coordinates": [1000,1000]
-        }
-    },{
-        "type": "Feature",
-        "properties": {
-             "text": "TEST3",
-             "type": "UQ"
-         },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [8492,8492]
-        }
-    },{
-        "type": "Feature",
-        "properties": {
-             "text": "TEST1",
-             "type": "Hut"
-         },
-        "geometry": {
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "TEST3",
+                "type": "UQ"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8492,8492]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "TEST1",
+                "type": "Hut"
+            },"geometry": {
             "type": "Point",
             "coordinates": [8000,8000]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "text": "TEST",
+                "type": "Ryuker"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [7000,9000]
+            }
         }
-    },{
-        "type": "Feature",
-        "properties": {
-             "text": "TEST",
-             "type": "Ryuker"
-         },
-        "geometry": {
-            "type": "Point",
-            "coordinates": [7000,9000]
-        }
-    }]
+    ]
 }
