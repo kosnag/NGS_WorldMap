@@ -9,7 +9,7 @@ map.fitBounds(map_bounds);
 function onEachFeature(feature, layer) {
     layer.bindPopup(feature.properties.text);
   }
-  $.getJSON('/json/markers.json', function(data) {
+  $.getJSON('json/markers.json', function(data) {
     L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
         return L.marker(latlng, {icon: UQ});
@@ -33,6 +33,6 @@ var CentTower = new Main_Icons({iconUrl: './images/marks/cent_tower.png'}),
 											
 // MARKERS UI
 var marker = 
-	L.marker([3585,4050], {icon: CentTower}).bindPopup("Central Tower (Aelio)").addTo(map);
+	L.marker([3599,3860], {icon: CentTower}).bindPopup("Central Tower (Aelio)").addTo(map);
 	L.marker([4618,1570], {icon: Mag}).bindPopup("Mag").addTo(map);
 
