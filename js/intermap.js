@@ -9,18 +9,18 @@ map.fitBounds(map_bounds);
 $.getJSON("data/markers.json",function(data){L.geoJson(data).addTo(map);});
 						
 // ICONS
-var UI_Icon = L.Icon.extend({options: {iconSize: [40,40],iconAnchor: [20,40],popupAnchor: [40,0]}});
+var Main_Icon = L.Icon.extend({options: {iconSize: [40,40],iconAnchor: [20,40],popupAnchor: [40,0]}});
 									
-var CentTower = new UI_Icon({iconUrl: 'images/marks/cent_tower.png'}),
-	Cocoon = new UI_Icon({iconUrl: 'images/marks/cocoon.png'}),
-	Mag = new UI_Icon({iconUrl: 'images/marks/mag.png'}),
-	Ryuker = new UI_Icon({iconUrl: 'images/marks/ryuker.png'}),
-	Tower = new UI_Icon({iconUrl: 'images/marks/tower.png'}),
-	UQ = new UI_Icon({iconUrl: 'images/marks/urgent.png'}),
-	City = new UI_Icon({iconUrl: 'images/marks/city.png'}),
-	Hut = new UI_Icon({iconUrl: 'images/marks/hut.png'}),
-	Dungeon = new UI_Icon({iconUrl: 'images/marks/dungeon.png'}),
-	Fort = new UI_Icon({iconUrl: 'images/marks/fort.png'});
+var CentTower = new Main_Icon({iconUrl: 'images/marks/cent_tower.png'}),
+	Cocoon = new Main_Icon({iconUrl: 'images/marks/cocoon.png'}),
+	Mag = new Main_Icon({iconUrl: 'images/marks/mag.png'}),
+	Ryuker = new Main_Icon({iconUrl: 'images/marks/ryuker.png'}),
+	Tower = new Main_Icon({iconUrl: 'images/marks/tower.png'}),
+	UQ = new Main_Icon({iconUrl: 'images/marks/urgent.png'}),
+	City = new Main_Icon({iconUrl: 'images/marks/city.png'}),
+	Hut = new Main_Icon({iconUrl: 'images/marks/hut.png'}),
+	Dungeon = new Main_Icon({iconUrl: 'images/marks/dungeon.png'}),
+	Fort = new Main_Icon({iconUrl: 'images/marks/fort.png'});
 											
 // MARKERS UI
 var marker = 

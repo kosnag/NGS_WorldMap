@@ -1,35 +1,35 @@
 {
     "type": "FeatureCollection",
     "features": [{
-        "type": "UI_Icon",
+        "type": "Feature",
         "properties": {},
         "geometry": {
             "type": "CentTower",
             "coordinates": [100,100]
         }
     },{
-        "type": "UI_Icon",
+        "type": "Feature",
         "properties": {},
         "geometry": {
             "type": "CentTower",
             "coordinates": [1000,1000]
         }
     },{
-        "type": "UI_Icon",
+        "type": "Feature",
         "properties": {},
         "geometry": {
             "type": "CentTower",
             "coordinates": [8492,8492]
         }
     },{
-        "type": "UI_Icon",
+        "type": "Feature",
         "properties": {},
         "geometry": {
             "type": "CentTower",
             "coordinates": [8000,8000]
         }
     },{
-        "type": "UI_Icon",
+        "type": "Feature",
         "properties": {},
         "geometry": {
             "type": "CentTower",
