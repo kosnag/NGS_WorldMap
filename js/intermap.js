@@ -1,13 +1,12 @@
 // MAP
 var map_url = "./images/map.jpg";
-var map = L.map("map", {crs: L.CRS.Simple,minZoom: -4});
-var map_bounds = [[0, 0],[12288, 12288]];
-var map_img = L.imageOverlay(map_url, map_bounds).addTo(map);
-map.fitBounds(map_bounds);
+var map = L.map("map",{crs:L.CRS.Simple,minZoom:-4});
+var map_bounds = [[0,0],[12288,12288]];
+var map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(map_bounds);
 
 // JSON IMPORT
 function onEachFeature(feature, layer) {layer.bindPopup(feature.properties.text);}
-$.getJSON('MarkersMain.json', function(data) {
+$.getJSON('./json/MarkersMain.json', function(data) {
 	L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {icon: TEST});
