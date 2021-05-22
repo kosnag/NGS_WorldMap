@@ -2,35 +2,45 @@
     "type": "FeatureCollection",
     "features": [{
         "type": "Feature",
-        "properties": {},
+        "properties": {
+             "Name": "Gimme! Coffee"
+         },
         "geometry": {
             "type": "Point",
             "coordinates": [100,100]
         }
     },{
         "type": "Feature",
-        "properties": {},
+        "properties": {
+             "Name": "Gimme! Coffee"
+         },
         "geometry": {
             "type": "Point",
             "coordinates": [1000,1000]
         }
     },{
         "type": "Feature",
-        "properties": {},
+        "properties": {
+             "Name": "Gimme! Coffee"
+         },
         "geometry": {
             "type": "Point",
             "coordinates": [8492,8492]
         }
     },{
         "type": "Feature",
-        "properties": {},
+        "properties": {
+             "Name": "Gimme! Coffee"
+         },
         "geometry": {
             "type": "Point",
             "coordinates": [8000,8000]
         }
     },{
         "type": "Feature",
-        "properties": {},
+        "properties": {
+             "Name": "Gimme! Coffee"
+         },
         "geometry": {
             "type": "Point",
             "coordinates": [7000,9000]
