@@ -5,9 +5,9 @@ var map_bounds = [[0, 0],[12288, 12288]];
 var map_img = L.imageOverlay(map_url, map_bounds).addTo(map);
 map.fitBounds(map_bounds);
 
-// JSON EXPORT
-$.getJSON('data.json', function (geojson) {L.geoJson(geojson, {onEachFeature: function (feature, layer) {layer.bindPopup(feature.properties.name);}}).addTo(map);});
-									
+// JSON IMPORT
+$.getJSON("data/markers.json",function(data){L.geoJson(data).addTo(map);});
+						
 // ICONS
 var UI_Icon = L.Icon.extend({options: {iconSize: [40,40],iconAnchor: [20,40],popupAnchor: [40,0]}});
 									
