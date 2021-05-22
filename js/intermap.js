@@ -9,12 +9,10 @@ map.fitBounds(map_bounds);
 function onEachFeature(feature, layer) {
     layer.bindPopup(feature.properties.text);
   }
-  $.getJSON('json/markers.json', function(data) {
-    console.log(data);
-
+  $.getJSON('/json/markers.json', function(data) {
     L.geoJson(data, {
       pointToLayer: function(feature, latlng) {
-        return L.marker(latlng, {icon: Cocoon});
+        return L.marker(latlng, {icon: UQ});
       },
       onEachFeature: onEachFeature
     }).addTo(map);
