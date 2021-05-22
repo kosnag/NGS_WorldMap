@@ -6,7 +6,7 @@ var map_img = L.imageOverlay(map_url, map_bounds).addTo(map);
 map.fitBounds(map_bounds);
 
 // JSON IMPORT
-$.getJSON("json/markers.json",function(data){L.geoJson(data).addTo(map);});
+
 						
 // ICONS
 var Main_Icon = L.Icon.extend({options: {iconSize: [40,40],iconAnchor: [20,40],popupAnchor: [40,0]}});
