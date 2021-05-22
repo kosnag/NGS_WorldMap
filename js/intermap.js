@@ -7,7 +7,7 @@ map.fitBounds(map_bounds);
 
 // JSON IMPORT
 function onEachFeature(feature, layer) {layer.bindPopup(feature.properties.text);}
-$.getJSON('./json/markers.json', function(data) {
+$.getJSON('MarkersMain.json', function(data) {
 	L.geoJson(data, {
 		pointToLayer: function(feature, latlng) {
 			return L.marker(latlng, {icon: TEST});
