@@ -3,7 +3,8 @@
     "features": [{
         "type": "Feature",
         "properties": {
-             "Name": "Gimme! Coffee"
+             "text": "TEST1",
+             "type": "UQ"
          },
         "geometry": {
             "type": "Point",
@@ -12,7 +13,8 @@
     },{
         "type": "Feature",
         "properties": {
-             "Name": "Gimme! Coffee"
+             "text": "TEST2",
+             "type": "Cocoon"
          },
         "geometry": {
             "type": "Point",
@@ -21,7 +23,8 @@
     },{
         "type": "Feature",
         "properties": {
-             "Name": "Gimme! Coffee"
+             "text": "TEST3",
+             "type": "UQ"
          },
         "geometry": {
             "type": "Point",
@@ -30,7 +33,8 @@
     },{
         "type": "Feature",
         "properties": {
-             "Name": "Gimme! Coffee"
+             "text": "TEST1",
+             "type": "Hut"
          },
         "geometry": {
             "type": "Point",
@@ -39,7 +43,8 @@
     },{
         "type": "Feature",
         "properties": {
-             "Name": "Gimme! Coffee"
+             "text": "TEST",
+             "type": "Ryuker"
          },
         "geometry": {
             "type": "Point",

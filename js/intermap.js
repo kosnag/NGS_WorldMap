@@ -1,16 +1,27 @@
 // MAP
 var map_url = "./images/map.jpg";
-var map = L.map("intermap", {crs: L.CRS.Simple,minZoom: -4});
+var map = L.map("map", {crs: L.CRS.Simple,minZoom: -4});
 var map_bounds = [[0, 0],[12288, 12288]];
 var map_img = L.imageOverlay(map_url, map_bounds).addTo(map);
 map.fitBounds(map_bounds);
 
 // JSON IMPORT
-$.getJSON("js/json/markers.json",function(data){L.geoJson(data).addTo(map);});
+function onEachFeature(feature, layer) {
+    layer.bindPopup(feature.properties.text);
+  }
+  $.getJSON('js/json/markers.json', function(data) {
+    console.log(data);
+
+    L.geoJson(data, {
+      pointToLayer: function(feature, latlng) {
+        return L.marker(latlng, {icon: Cocoon});
+      },
+      onEachFeature: onEachFeature
+    }).addTo(map);
+  });
 
 // ICONS
-var Main_Icons = L.Icon.extend({options: {iconSize: [40,40],iconAnchor: [20,40],popupAnchor: [40,0]}});
-									
+var Main_Icons = L.Icon.extend({options: {iconSize:[40,40],iconAnchor:[20,40],popupAnchor:[0,-25]}});
 var CentTower = new Main_Icons({iconUrl: 'images/marks/cent_tower.png'}),
 	Cocoon = new Main_Icons({iconUrl: 'images/marks/cocoon.png'}),
 	Mag = new Main_Icons({iconUrl: 'images/marks/mag.png'}),
@@ -25,5 +36,5 @@ var CentTower = new Main_Icons({iconUrl: 'images/marks/cent_tower.png'}),
 // MARKERS UI
 var marker = 
 	L.marker([3585,4050], {icon: CentTower}).bindPopup("Central Tower (Aelio)").addTo(map);
-	L.marker([12288-7670,1570], {icon: Mag}).bindPopup("Mag").addTo(map);
+	L.marker([4618,1570], {icon: Mag}).bindPopup("Mag").addTo(map);
 
