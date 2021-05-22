@@ -6,7 +6,7 @@ VK.Widgets.Group("vk_groups3",{mode:3,width:"auto",color1:'FFFFFF',color2:'00000
 
 // MAP
 var map_url = "images/map.jpg";
-var map = L.map("map", {
+var map = L.map("map",{
 	crs: L.CRS.Simple,
 	minZoom: -4
 });
