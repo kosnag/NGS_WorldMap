@@ -12,7 +12,6 @@ function setLanguage(lang) {
 }
 
 
-
 $(document).ready(function(){$('#credits').text(language.UI.credits);});
 $(document).ready(function(){$('#langs').text(language.UI.langs);});
 $(document).ready(function(){$('#sorting-title').text(language.UI.sorting.title);});
