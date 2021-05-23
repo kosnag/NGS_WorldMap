@@ -5,15 +5,12 @@ var map_bounds = [[0,0],[12288,12288]];
 var map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(map_bounds);
 
 // JSON IMPORT
-function onEachFeature(feature, layer) {layer.bindPopup(feature.properties.text);}
-$.getJSON('json/MarkersMain.json', function(data) {
-	L.geoJson(data, {
-		pointToLayer: function(feature, latlng) {
-			return L.marker(latlng, {icon: TEST});
-		},
-		onEachFeature: onEachFeature
-	}).addTo(map);
-});
+function onEachFeature(feature,layer){layer.bindPopup(feature.properties.text);}
+
+$.getJSON('json/MarkersMain.json', function(data) {L.geoJson(data, {onEachFeature: onEachFeature}).addTo(map);});
+
+function onEachFeature(feature,latlng){latlng.bindPopup(feature.properties.text);}
+
 
 // ICONS
 var Main_Icons = L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],popupAnchor:[0,-25]}});

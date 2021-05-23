@@ -5,7 +5,7 @@
             "type": "Feature",
             "properties": {
                 "text": "TEST1",
-                "type": "UQ"
+                "icon": "UQ"
             },
             "geometry": {
                 "type": "Point",
@@ -15,19 +15,19 @@
         {
             "type": "Feature",
             "properties": {
-               "text": "TEST2",
-                "type": "Cocoon"
+                "text": "TEST2",
+                "icon": "Cocoon"
             },
             "geometry": {
-            "type": "Point",
-            "coordinates": [1000,1000]
+                "type": "Point",
+                "coordinates": [1000,1000]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "text": "TEST3",
-                "type": "UQ"
+                "icon": "UQ"
             },
             "geometry": {
                 "type": "Point",
@@ -38,17 +38,18 @@
             "type": "Feature",
             "properties": {
                 "text": "TEST1",
-                "type": "Hut"
-            },"geometry": {
-            "type": "Point",
-            "coordinates": [8000,8000]
+                "icon": "Hut"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [8000,8000]
             }
         },
         {
             "type": "Feature",
             "properties": {
                 "text": "TEST",
-                "type": "Ryuker"
+                "icon": "Ryuker"
             },
             "geometry": {
                 "type": "Point",
