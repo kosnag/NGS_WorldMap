@@ -2,7 +2,7 @@ var language;
 function getLanguage() {
 	(localStorage.getItem('language') == null) ? setLanguage('en_global') : false;
 	$.ajax({ 
-		url:  './json/langs/' +  localStorage.getItem('language') + '.json', 
+		url:  'json/langs/' +  localStorage.getItem('language') + '.json', 
 		dataType: 'json', async: false, dataType: 'json', 
 		success: function (lang) { language = lang } 
 	});
@@ -12,7 +12,8 @@ function setLanguage(lang) {
 }
 
 
-$(document).ready(function(){$('#credits').text(language.UI.credits);});
+$(document).ready(
+	function(){$('#credits').text(language.UI.credits);});
 $(document).ready(function(){$('#langs').text(language.UI.langs);});
 $(document).ready(function(){$('#sorting-title').text(language.UI.sorting.title);});
 $(document).ready(function(){$('#sorting-1').text(language.UI.sorting.1);});
