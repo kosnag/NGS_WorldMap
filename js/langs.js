@@ -16,29 +16,26 @@ function setLanguage(lang) {
 
 
 
+$(document).ready(function(){$('#Cocoon1').text(language.Cocoon.1);});
+$(document).ready(function(){$('#Cocoon2').text(language.Cocoon.2);});
+$(document).ready(function(){$('#Cocoon3').text(language.Cocoon.3);});
+$(document).ready(function(){$('#Cocoon4').text(language.Cocoon.4);});
+$(document).ready(function(){$('#Cocoon5').text(language.Cocoon.5);});
+$(document).ready(function(){$('#Cocoon6').text(language.Cocoon.6);});
+$(document).ready(function(){$('#Cocoon7').text(language.Cocoon.7);});
+$(document).ready(function(){$('#Cocoon8').text(language.Cocoon.8);});
+$(document).ready(function(){$('#Cocoon9').text(language.Cocoon.9);});
+$(document).ready(function(){$('#Cocoon10').text(language.Cocoon.10);});
+$(document).ready(function(){$('#Cocoon11').text(language.Cocoon.11);});
+$(document).ready(function(){$('#Cocoon12').text(language.Cocoon.12);});
+$(document).ready(function(){$('#Cocoon13').text(language.Cocoon.13);});
+$(document).ready(function(){$('#Cocoon14').text(language.Cocoon.14);});
+$(document).ready(function(){$('#Cocoon15').text(language.Cocoon.15);});
 
-
-
-
-
-
-$(document).ready(function(){$('#Cocoon1').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon2').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon3').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon4').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon5').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon6').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon7').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon8').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon9').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon10').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon11').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon12').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon13').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon14').text(language.Cocoon);});
-$(document).ready(function(){$('#Cocoon15').text(language.Cocoon);});
-
-$(document).ready(function(){$('#Mag1').text(language.Mag1);});
+$(document).ready(function(){$('#Mag1').text(language.Mag.1);});
+$(document).ready(function(){$('#Mag2').text(language.Mag.2);});
+$(document).ready(function(){$('#Mag3').text(language.Mag.3);});
+$(document).ready(function(){$('#Mag4').text(language.Mag.4);});
 
 $(document).ready(function(){$('#Ryuker1').text(language.Ryuker.1);});
 $(document).ready(function(){$('#Ryuker2').text(language.Ryuker.2);});
@@ -69,9 +66,26 @@ $(document).ready(function(){$('#Tower5').text(language.Tower.5);});
 $(document).ready(function(){$('#Tower6').text(language.Tower.6);});
 $(document).ready(function(){$('#Tower7').text(language.Tower.7);});
 
+$(document).ready(function(){$('#City1').text(language.City.1);});
+$(document).ready(function(){$('#City2').text(language.City.2);});
+$(document).ready(function(){$('#City3').text(language.City.3);});
+$(document).ready(function(){$('#City4').text(language.City.4);});
+$(document).ready(function(){$('#City5').text(language.City.5);});
 
+$(document).ready(function(){$('#Hut1').text(language.Hut.1);});
+$(document).ready(function(){$('#Hut2').text(language.Hut.2);});
+$(document).ready(function(){$('#Hut3').text(language.Hut.3);});
+$(document).ready(function(){$('#Hut4').text(language.Hut.4);});
 
+$(document).ready(function(){$('#Urgent1').text(language.Urgent.1);});
+$(document).ready(function(){$('#Urgent2').text(language.Urgent.2);});
+$(document).ready(function(){$('#Urgent3').text(language.Urgent.3);});
+$(document).ready(function(){$('#Urgent4').text(language.Urgent.4);});
+$(document).ready(function(){$('#Urgent5').text(language.Urgent.5);});
 
-$(document).ready(function(){$('#').text(language.);});
-$(document).ready(function(){$('#').text(language.);});
-$(document).ready(function(){$('#').text(language.);});
+$(document).ready(function(){$('#Dungeon1').text(language.Dungeon.1);});
+$(document).ready(function(){$('#Dungeon2').text(language.Dungeon.2);});
+$(document).ready(function(){$('#Dungeon3').text(language.Dungeon.3);});
+$(document).ready(function(){$('#Dungeon4').text(language.Dungeon.4);});
+$(document).ready(function(){$('#Dungeon5').text(language.Dungeon.5);});
+
