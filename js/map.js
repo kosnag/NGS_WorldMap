@@ -25,11 +25,3 @@ var CentTower = new Main_Icons({iconUrl: 'images/marks/cent_tower.png'}),
 	Dungeon = new Main_Icons({iconUrl: 'images/marks/dungeon.png'}),
 	Fort = new Main_Icons({iconUrl: 'images/marks/fort.png'}),
 	TEST = new Main_Icons({iconUrl: 'https://cdn.discordapp.com/emojis/763104888732647434.png'});
-											
-// MARKERS UI
-var marker = 
-	L.marker([3599,3860],{icon: CentTower}).bindPopup("Central Tower (Aelio)").addTo(map);
-	L.marker([3333,2606],{icon: Cocoon}).bindPopup("Cocoon").addTo(map);
-	L.marker([4436,4107],{icon: Cocoon}).bindPopup("Cocoon").addTo(map);
-	L.marker([1003,4935],{icon: Cocoon}).bindPopup("Cocoon").addTo(map);
-
