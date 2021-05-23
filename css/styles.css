@@ -22,6 +22,7 @@
 #map {
 	height: 650px;
     width: auto;
+	background-color: rgba(30,59,90,1.00)
 }
 
 .lang-flags {
