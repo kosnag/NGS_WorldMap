@@ -21,7 +21,7 @@
 				<a class="navbar-brand text-white" href="#"><h4>PSO2NGS Interactive Map</h4></a>
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a class="nav-link text-white disabled" target="_blank" href="#">Credits</a>
+						<a id="credits" class="nav-link text-white disabled" target="_blank" href="#">Credits</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link text-white" target="_blank" href="https://docs.google.com/spreadsheets/d/12lKTrbbyHszz9TTfmvwRlRZe7MLI9nFL8XVAcIkynlU/edit?usp=sharing">Google Sheets</a>
@@ -31,7 +31,7 @@
 					</li>
 					<li class="nav-item">
 						<div class="dropdown">
-						<a class="nav-link text-white dropdown-toggle" data-toggle="dropdown" href="#">Languages</a>
+							<a id="langs" class="nav-link text-white dropdown-toggle" data-toggle="dropdown" href="#">Languages</a>
 							<div class="dropdown-menu dropdown-menu-right">
 								<a onclick="setLanguage('en_global')" class="dropdown-item" href="#"><img src="images/flags/usa.svg" class="lang-flags"> <img src="images/flags/uk.svg" class="lang-flags"> English (Global)</a>
 								<a onclick="setLanguage('en_arkslayer')" class="dropdown-item" href="#"><img src="images/flags/usa.svg" class="lang-flags"> <img src="images/flags/uk.svg" class="lang-flags"> English (Arks-Layer)</a>
@@ -125,13 +125,13 @@ var marker =
 				<div class="col-md-3 col-sm-12">
                     <div class="card">
 						<center>
-							<h4 style="margin-top:10px;margin-bottom:10px">Sorting</h4>
+							<h4 id="sorting-title" style="margin-top:10px;margin-bottom:10px">Sorting</h4>
 						</center>
-						<a class="btn btn-primary mb-2 mr-3 ml-3 disabled">Main objects</a>
-						<a class="btn btn-primary mb-2 mr-3 ml-3 disabled">Boxes</a>
-						<a class="btn btn-primary mb-2 mr-3 ml-3 disabled">Minerals</a>
-						<a class="btn btn-primary mb-2 mr-3 ml-3 disabled">Vegetables and etc</a>
-						<a class="btn btn-primary mb-2 mr-3 ml-3 disabled">Bosses</a>
+						<a id="sorting-1" class="btn btn-primary mb-2 mr-3 ml-3 disabled">Main objects</a>
+						<a id="sorting-2" class="btn btn-primary mb-2 mr-3 ml-3 disabled">Boxes</a>
+						<a id="sorting-3" class="btn btn-primary mb-2 mr-3 ml-3 disabled">Minerals</a>
+						<a id="sorting-4" class="btn btn-primary mb-2 mr-3 ml-3 disabled">Vegetables and etc</a>
+						<a id="sorting-5" class="btn btn-primary mb-2 mr-3 ml-3 disabled">Bosses</a>
 					</div>
 				</div>
 			</div>

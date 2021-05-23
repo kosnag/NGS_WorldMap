@@ -13,8 +13,16 @@ function setLanguage(lang) {
 
 
 
-
-
+$(document).ready(function(){$('#credits').text(language.UI.credits);});
+$(document).ready(function(){$('#langs').text(language.UI.langs);});
+$(document).ready(function(){$('#sorting-title').text(language.UI.sorting.title);});
+$(document).ready(function(){$('#sorting-1').text(language.UI.sorting.1);});
+$(document).ready(function(){$('#sorting-2').text(language.UI.sorting.2);});
+$(document).ready(function(){$('#sorting-3').text(language.UI.sorting.3);});
+$(document).ready(function(){$('#sorting-4').text(language.UI.sorting.4);});
+$(document).ready(function(){$('#sorting-5').text(language.UI.sorting.5);});
+$(document).ready(function(){$('#sorting-6').text(language.UI.sorting.6);});
+$(document).ready(function(){$('#sorting-7').text(language.UI.sorting.7);});
 
 $(document).ready(function(){$('#Cocoon1').text(language.Cocoon.1);});
 $(document).ready(function(){$('#Cocoon2').text(language.Cocoon.2);});
