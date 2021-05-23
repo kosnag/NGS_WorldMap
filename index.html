@@ -43,6 +43,20 @@
 				</ul>
 			</div>
 		</nav>
+		<script>
+			var language; 
+			function getLanguage() {
+				(localStorage.getItem('language') == null) ? setLanguage('en') : false;
+				$.ajax({ 
+					url:  'json/langs/' +  localStorage.getItem('language') + '.json', 
+					dataType: 'json', async: false, dataType: 'json', 
+					success: function (lang) { language = lang } 
+				});
+			}
+			function setLanguage(lang) {
+				localStorage.setItem('language', lang);
+			}
+		</script>
 		<div class="container alert alert-danger mt-3" role="alert">
 			<h4 class="alert-heading">WORK IN PROGRESS <span class="badge badge-danger">SPOILER ALERT</span></h4>
 			<p>This interactive map are corrently in development. Also something maybe will be a spoiler for <b>Phantasy Star Online 2: New Genesis</b> because used data from datamining.</p>
