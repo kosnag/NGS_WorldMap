@@ -1,8 +1,8 @@
 var language; 
 function getLanguage() {
-	(localStorage.getItem('language') == null) ? setLanguage('en') : false;
+	(localStorage.getItem('language') == null) ? setLanguage('en_global') : false;
 	$.ajax({ 
-		url:  'json/langs/' +  localStorage.getItem('language') + '.json', 
+		url:  './json/langs/' +  localStorage.getItem('language') + '.json', 
 		dataType: 'json', async: false, dataType: 'json', 
 		success: function (lang) { language = lang } 
 	});
