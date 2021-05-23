@@ -1,9 +1,3 @@
-//VK WIDGETS
-VK.Widgets.Group("vk_groups1",{mode:3,width:"auto",color1:'FFFFFF',color2:'000000',color3: '0275d8'},144825795);
-VK.Widgets.Group("vk_groups2",{mode:3,width:"auto",color1:'FFFFFF',color2:'000000',color3: '0275d8'},200732667
-);
-VK.Widgets.Group("vk_groups3",{mode:3,width:"auto",color1:'FFFFFF',color2:'000000',color3: '0275d8'},28920792);
-
 // MAP
 var map_url = "images/map.jpg";
 var map = L.map("map",{crs: L.CRS.Simple,minZoom: -4});
