@@ -11,9 +11,7 @@ function setLanguage(lang) {
 	localStorage.setItem('language', lang);
 }
 
-
-$(document).ready(
-	function(){$('#credits').text(language.UI.credits);});
+$(document).ready(function(){$('#credits').text(language.UI.credits);});
 $(document).ready(function(){$('#langs').text(language.UI.langs);});
 $(document).ready(function(){$('#sorting-title').text(language.UI.sorting.title);});
 $(document).ready(function(){$('#sorting-1').text(language.UI.sorting.1);});
@@ -96,4 +94,3 @@ $(document).ready(function(){$('#Dungeon2').text(language.Dungeon.2);});
 $(document).ready(function(){$('#Dungeon3').text(language.Dungeon.3);});
 $(document).ready(function(){$('#Dungeon4').text(language.Dungeon.4);});
 $(document).ready(function(){$('#Dungeon5').text(language.Dungeon.5);});
-
