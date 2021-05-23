@@ -1,5 +1,17 @@
 // MAP
 var map_url = "images/map.jpg";
+
+
+
+/*
+var tileWidth = 256 * Math.pow(2, orgLevel);
+var radius = tileWidth / 2 / Math.PI;
+var rx = width - tileWidth / 2;
+var ry = -height + tileWidth / 2;
+*/
+
+
+
 var map = L.map("map",{crs: L.CRS.Simple,minZoom: -4});
 var map_bounds = [[0,0],[12288,12288]];
 var map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(map_bounds);
