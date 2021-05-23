@@ -1,4 +1,8 @@
 // MAP
+var map_url = "images/map.jpg";
+var map = L.map("map",{crs: L.CRS.Simple,minZoom: -4});
+var map_bounds = [[0,0],[12288,12288]];
+var map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(map_bounds);
 /*
 var map = new L.Map('map',{maxBounds:([[0,0],[12288,12288]])});
 L.tileLayer('images/map/{z}-{x}-{y}.jpg', {
@@ -13,12 +17,6 @@ var zoom = map.getBoundsZoom([[0,0],[12288,12288]]);
 var center = new L.latLng(6144,6144);
 map.setView(center, zoom);
 */
-
-var map_url = "images/map.jpg";
-var map = L.map("map",{crs: L.CRS.Simple,minZoom: -4});
-var map_bounds = [[0,0],[12288,12288]];
-var map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(map_bounds);
-
 
 // JSON IMPORT
 /*
