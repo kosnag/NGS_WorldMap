@@ -53,7 +53,40 @@
 					<div class="card card-body">
 						<center><div id="map"></div></center>
 						<script src="js/map.js"></script>
-						<script src="js/MainMarkers.js"></script>
+						<script>
+							// MARKERS
+							var marker = 
+								L.marker([3599,3860],{icon:CentTower}).bindPopup("Central Tower (Aelio)").addTo(map);
+								
+								// COCOONS
+								L.marker([3333,2606],{icon:Cocoon}).bindPopup(FirstStepsCocoon).addTo(map);
+								L.marker([5521,2442],{icon:Cocoon}).bindPopup("Cocoon2").addTo(map);
+								L.marker([4436,4107],{icon:Cocoon}).bindPopup("Cocoon3").addTo(map);
+								L.marker([1003,4935],{icon:Cocoon}).bindPopup("Cocoon4").addTo(map);
+								
+								// REGION MAGS
+								L.marker([4755,1641],{icon:Mag}).bindPopup("Region Mag1").addTo(map);
+							
+								// RYUKER DEVICES
+								L.marker([1547,4074],{icon:Ryuker}).bindPopup("Ryuker1").addTo(map);
+								L.marker([2562,4171],{icon:Ryuker}).bindPopup("Ryuker2").addTo(map);
+								L.marker([611,5299],{icon:Ryuker}).bindPopup("Ryuker2").addTo(map);
+								L.marker([3094,2699],{icon:Ryuker}).bindPopup("Ryuker3").addTo(map);
+								L.marker([3340,3515],{icon:Ryuker}).bindPopup("Ryuker4").addTo(map);
+								L.marker([4053,4510],{icon:Ryuker}).bindPopup("Ryuker5").addTo(map);
+								L.marker([4297,2252],{icon:Ryuker}).bindPopup("Ryuker6").addTo(map);
+								L.marker([5470,1511],{icon:Ryuker}).bindPopup("Ryuker7").addTo(map);
+							
+								// TOWERS
+								L.marker([830,5506],{icon:Tower1}).bindPopup("Tower1").addTo(map);
+							
+							
+							
+							
+
+							// POPUP CONTENT
+							var FirstStepsCocoon = "<b>Cocoon</b> (1 Player)<br><h1>First Steps</h1><p>This is the facility where an Instructor who tests the basic abilities of every ARKS.<br>By following the instructions, one can learn new abilities while reaching the targeted goal.</p>";
+						</script>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12">

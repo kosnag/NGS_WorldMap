@@ -1,27 +1,33 @@
 // MAP
-var map_url = "images/map.jpg";
-
-
-
 /*
-var tileWidth = 256 * Math.pow(2, orgLevel);
-var radius = tileWidth / 2 / Math.PI;
-var rx = width - tileWidth / 2;
-var ry = -height + tileWidth / 2;
+var map = new L.Map('map',{maxBounds:([[0,0],[12288,12288]])});
+L.tileLayer('images/map/{z}-{x}-{y}.jpg', {
+	minZoom: 0,
+	maxZoom: 6,
+	opacity: 1.0,
+	noWrap: true,
+	bounds: ([[0,0],[12288,12288]])
+}).addTo(map);
+
+var zoom = map.getBoundsZoom([[0,0],[12288,12288]]);
+var center = new L.latLng(6144,6144);
+map.setView(center, zoom);
 */
 
-
-
+var map_url = "images/map.jpg";
 var map = L.map("map",{crs: L.CRS.Simple,minZoom: -4});
 var map_bounds = [[0,0],[12288,12288]];
 var map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(map_bounds);
 
+
 // JSON IMPORT
+/*
 function onEachFeature(feature,layer){layer.bindPopup(feature.properties.text);}
 
 $.getJSON('json/MarkersMain.json', function(data) {L.geoJson(data, {onEachFeature: onEachFeature}).addTo(map);});
 
 function onEachFeature(feature,latlng){latlng.bindPopup(feature.properties.text);}
+*/
 
 
 // ICONS
