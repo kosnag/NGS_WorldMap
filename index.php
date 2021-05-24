@@ -15,29 +15,6 @@ else if (isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_
 	$_SESSION['lang'] = "kr";
 }
 require_once "lang_packs/" . $_SESSION['lang'] . ".php";
-
-/*
-switch ($_GET['QUERY_STRING']) {
-	case !empty($_GET['en_gl']):
-		include 'lang_packs/en_gl.php';
-		break;
-	case !empty($_GET['en_al']):
-		include 'lang_packs/en_al.php';
-		break;
-	case !empty($_GET['jp']):
-		include 'lang_packs/jp.php';
-		break;
-	case !empty($_GET['ru']):
-		include 'lang_packs/ru.php';
-		break;
-	case !empty($_GET['kr']):
-		include 'lang_packs/kr.php';
-		break;
-	default:
-		include 'lang_packs/en_gl.php';
-		break;
-	}
-*/
 ?>
 <html>
 	<head>
@@ -45,45 +22,51 @@ switch ($_GET['QUERY_STRING']) {
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?=$localisation['UI']['title']?></title>
 		<link href="css/bootstrap.css" rel="stylesheet">
-		<link href="css/styles.css" rel="stylesheet">
 		<link href="css/leaflet.css" rel="stylesheet">
+		<link href="css/fontawesome.css" rel="stylesheet">
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
 		<script src="js/leaflet.js"></script>
+		<script src="js/fontawesome.js"></script>
 		<script src="https://vk.com/js/api/openapi.js?169"></script>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	</head>
-	<body class="bg-body">
-		<nav class="navbar navbar-expand-lg navbar-dark nav-custom">		
+	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('../images/background.png');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">		
 			<div class="container">
-				<a class="navbar-brand" href="#"><h4><?=$localisation['UI']['title']?></h4></a>
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item">
-						<a class="nav-link text-white-50 disabled" target="_blank" href="#">Credits</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-white" target="_blank" href="https://docs.google.com/spreadsheets/d/12lKTrbbyHszz9TTfmvwRlRZe7MLI9nFL8XVAcIkynlU/edit?usp=sharing">Google Sheets</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap">Github</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link text-white dropdown-toggle" href="#" id="langList" data-bs-toggle="dropdown" aria-expanded="false"><?=$localisation['UI']['languages']['switcher']?></a>
-						<ul class="dropdown-menu" aria-labelledby="langList">
-							<li><a class="dropdown-item" href="/?lang=en_gl"><img src="images/flags/usa.svg" class="lang-flags"> <img src="images/flags/uk.svg" class="lang-flags"> <?=$localisation['UI']['languages']['en_gl']?></a></li>
-							<li><a class="dropdown-item" href="/?lang=en_al"><img src="images/flags/usa.svg" class="lang-flags"> <img src="images/flags/uk.svg" class="lang-flags"> <?=$localisation['UI']['languages']['en_al']?></a></li>
-							<li><a class="dropdown-item" href="/?lang=jp"><img src="images/flags/jp.svg" class="lang-flags"> <?=$localisation['UI']['languages']['jp']?></a></li>
-							<li><a class="dropdown-item" href="/?lang=ru"><img src="images/flags/ru.svg" class="lang-flags"> <?=$localisation['UI']['languages']['ru']?></a></li>
-							<li><a class="dropdown-item" href="/?lang=kr"><img src="images/flags/kr.svg" class="lang-flags"> <?=$localisation['UI']['languages']['kr']?></a></li>
-						</ul>
-					</li>
-				</ul>
+				<a class="navbar-brand" href="#"><?=$localisation['UI']['title']?></a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarCollapse">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link text-white" target="_blank" href="https://discord.gg/AvgmpuX"><i class="fab fa-discord"></i> Discord</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" target="_blank" href="https://docs.google.com/spreadsheets/d/12lKTrbbyHszz9TTfmvwRlRZe7MLI9nFL8XVAcIkynlU/edit?usp=sharing"><i class="fab fa-google-drive"></i> Google Sheets</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap"><i class="fab fa-github"></i> Github</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link text-white dropdown-toggle" href="#" id="langList" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-language"></i> <?=$localisation['UI']['languages']['switcher']?></a>
+							<ul class="dropdown-menu" aria-labelledby="langList">
+								<li><a class="dropdown-item" href="/?lang=en_gl"><img src="images/flags/usa.svg" style="height:24px"> <img src="images/flags/uk.svg" style="height:24px"> <?=$localisation['UI']['languages']['en_gl']?></a></li>
+								<li><a class="dropdown-item" href="/?lang=en_al"><img src="images/flags/usa.svg" style="height:24px"> <img src="images/flags/uk.svg" style="height:24px"> <?=$localisation['UI']['languages']['en_al']?></a></li>
+								<li><a class="dropdown-item" href="/?lang=jp"><img src="images/flags/jp.svg" style="height:24px"> <?=$localisation['UI']['languages']['jp']?></a></li>
+								<li><a class="dropdown-item" href="/?lang=ru"><img src="images/flags/ru.svg" style="height:24px"> <?=$localisation['UI']['languages']['ru']?></a></li>
+								<li><a class="dropdown-item" href="/?lang=kr"><img src="images/flags/kr.svg" style="height:24px"> <?=$localisation['UI']['languages']['kr']?></a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</nav>
 		<div class="container alert alert-danger mt-3" role="alert">
 			<h4 class="alert-heading">WORK IN PROGRESS <span class="badge bg-danger">SPOILER ALERT</span></h4>
-			<p>This interactive map are corrently in development. Also something maybe will be a spoiler for <b>Phantasy Star Online 2: New Genesis</b> because used data from datamining.</p>
-			<p>When map will be ready, all spoiler content will be hidden from map, dont worry.</p>
+			<p>This interactive map are currently in development. Also something maybe will be a spoiler for <b>Phantasy Star Online 2: New Genesis</b> because used data from datamining.</p>
+			<p>When map will be ready, all spoiler content will be hidden from map, don't worry.</p>
 			<hr>
 			<p class="mb-0">If you want to help me, please contact with me in <a href="https://twitter.com/kosnag" target="_blank" style="">Twitter</a> or <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>">Discord (kosnag#1730)</a>. I will be very happy, if you help me! <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>">Take a hug by Matoi!</a></p>
 			<script>
@@ -95,7 +78,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new
 			<div class="row">
 				<div class="col-md-9 col-sm-12">
 					<div class="card card-body">
-						<center><div id="map"></div></center>
+						<center><div style="height:650px;width:auto;background-color:rgba(30,59,90,1.00)" id="map"></div></center>
 						<script src="js/map.js"></script>
 						<script>
 var marker = 
@@ -149,14 +132,12 @@ var marker =
 				</div>
 				<div class="col-md-3 col-sm-12">
                     <div class="card">
-						<center>
-							<h4 id="sorting-title" style="margin-top:10px;margin-bottom:10px"><?=$localisation['UI']['sorting']['title']?></h4>
-						</center>
-						<a id="sorting-1" class="btn btn-primary mb-2 mr-3 ml-3 disabled"><?=$localisation['UI']['sorting']['1']?></a>
-						<a id="sorting-2" class="btn btn-primary mb-2 mr-3 ml-3 disabled"><?=$localisation['UI']['sorting']['2']?></a>
-						<a id="sorting-3" class="btn btn-primary mb-2 mr-3 ml-3 disabled"><?=$localisation['UI']['sorting']['3']?></a>
-						<a id="sorting-4" class="btn btn-primary mb-2 mr-3 ml-3 disabled"><?=$localisation['UI']['sorting']['4']?></a>
-						<a id="sorting-5" class="btn btn-primary mb-2 mr-3 ml-3 disabled"><?=$localisation['UI']['sorting']['5']?></a>
+						<p class="h4 my-3 text-center"><?=$localisation['UI']['sorting']['title']?></p>
+						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localisation['UI']['sorting']['1']?></a>
+						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localisation['UI']['sorting']['2']?></a>
+						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localisation['UI']['sorting']['3']?></a>
+						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localisation['UI']['sorting']['4']?></a>
+						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localisation['UI']['sorting']['5']?></a>
 					</div>
 				</div>
 			</div>

@@ -1,14 +1,14 @@
 <?
 $localisation = array (
 	'UI' => array(
-		'title' => "PSO2NGS Interactive Map ТЕСТ1",
+		'title' => "PSO2NGS Interactive Map",
 		'languages' => array(
-			'switcher' => "Languages",
+			'switcher' => "Language",
 			'en_gl' => "English (Global)",
 			'en_al' => "English (Arks-Layer)",
-			'jp' => "日本語",
-			'ru' => "Русский",
-			'kr' => "한국어",
+			'jp' => "Japanese",
+			'ru' => "Russian",
+			'kr' => "Korean",
 		),
 		'sorting' => array(
 			'title' => "Sorting",

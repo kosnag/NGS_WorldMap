@@ -1,17 +1,17 @@
-<?php
+<?
 $localisation = array (
 	'UI' => array(
-		'title' => "PSO2NGS Interactive Map ТЕСТ5",
+		'title' => "Интерактивная карта PSO2NGS",
 		'languages' => array(
-			'switcher' => "Languages",
-			'en_gl' => "English (Global)",
-			'en_al' => "English (Arks-Layer)",
-			'jp' => "日本語",
+			'switcher' => "Язык",
+			'en_gl' => "Английский (Global)",
+			'en_al' => "Английский (Arks-Layer)",
+			'jp' => "Японский",
 			'ru' => "Русский",
-			'kr' => "한국어",
+			'kr' => "Корейский",
 		),
 		'sorting' => array(
-			'title' => "Sorting",
+			'title' => "Сортировка",
 			'1' => "Main objects",
 			'2' => "Boxes and Reactors",
 			'3' => "Minerals",
@@ -39,7 +39,7 @@ $localisation = array (
 			'15' => "Cocoon ID-15",
 		),
 		'mag' => array(
-			'1' => "Redion Mag ID-1",
+			'1' => "Region Mag ID-1",
 		),
 		'ryuker' => array(
 			'1' => "Ryuker Device ID-1",
