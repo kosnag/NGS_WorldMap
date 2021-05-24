@@ -66,7 +66,7 @@ switch ($_GET['QUERY_STRING']) {
 						<a class="nav-link text-white" target="_blank" href="https://docs.google.com/spreadsheets/d/12lKTrbbyHszz9TTfmvwRlRZe7MLI9nFL8XVAcIkynlU/edit?usp=sharing">Google Sheets</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white disabled" target="_blank" href="https://github.com/kosnag/NGS_InterMap">Github</a>
+						<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap">Github</a>
 					</li>
 					<li class="nav-item">
 						<div class="dropdown">
