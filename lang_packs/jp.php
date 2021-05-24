@@ -1,7 +1,7 @@
 <?php
 $localisation = array (
 	'UI' => array(
-		'title' => "PSO2NGS Interactive Map",
+		'title' => "PSO2NGS Interactive Map ТЕСТ3",
 		'languages' => array(
 			'switcher' => "Languages",
 			'en_gl' => "English (Global)",
@@ -71,9 +71,4 @@ $localisation = array (
 			'1' => "Dungeon ID-1",
 		),
 	),
-	
-	
-	
-
-
 );

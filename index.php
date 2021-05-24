@@ -1,19 +1,58 @@
-<?php include 'lang.php';?>
-<!DOCTYPE html>
+<?
+session_start();
+if (!isset($_SESSION['lang']))
+$_SESSION['lang'] = "select";
+else if (isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_GET['lang'])) {
+	if ($_GET['lang'] == "en_gl")
+	$_SESSION['lang'] = "en_gl";
+	else if ($_GET['lang'] == "en_al")
+	$_SESSION['lang'] = "en_al";
+	else if ($_GET['lang'] == "jp")
+	$_SESSION['lang'] = "jp";
+	else if ($_GET['lang'] == "ru")
+	$_SESSION['lang'] = "ru";
+	else if ($_GET['lang'] == "kr")
+	$_SESSION['lang'] = "kr";
+}
+require_once "lang_packs/" . $_SESSION['lang'] . ".php";
+
+/*
+switch ($_GET['QUERY_STRING']) {
+	case !empty($_GET['en_gl']):
+		include 'lang_packs/en_gl.php';
+		break;
+	case !empty($_GET['en_al']):
+		include 'lang_packs/en_al.php';
+		break;
+	case !empty($_GET['jp']):
+		include 'lang_packs/jp.php';
+		break;
+	case !empty($_GET['ru']):
+		include 'lang_packs/ru.php';
+		break;
+	case !empty($_GET['kr']):
+		include 'lang_packs/kr.php';
+		break;
+	default:
+		include 'lang_packs/en_gl.php';
+		break;
+	}
+*/
+?>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?=$localisation['UI']['title']?></title>
-		<link href="../css/bootstrap-4.4.1.css" rel="stylesheet">
-		<link href="../css/styles.css" rel="stylesheet">
-		<link href="../css/leaflet.css" rel="stylesheet">
-		<script src="../js/jquery-3.4.1.min.js"></script>
-		<script src="../js/popper.min.js"></script>
-		<script src="../js/bootstrap-4.4.1.js"></script>
-		<script src="../js/leaflet.js"></script>
+		<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/leaflet.css" rel="stylesheet">
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap-4.4.1.js"></script>
+		<script src="js/leaflet.js"></script>
 		<script src="https://vk.com/js/api/openapi.js?169"></script>
-		<link rel="icon" href="./images/favicon.png" type="image/x-icon">
+		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	</head>
 	<body class="bg-body">
 		<nav class="navbar navbar-expand-sm navbar-dark nav-custom">		
@@ -21,23 +60,23 @@
 				<a class="navbar-brand text-white" href="#"><h4><?=$localisation['UI']['title']?></h4></a>
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item">
-						<a id="credits" class="nav-link text-white disabled" target="_blank" href="#">Credits</a>
+						<a class="nav-link text-white disabled" target="_blank" href="#">Credits</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link text-white" target="_blank" href="https://docs.google.com/spreadsheets/d/12lKTrbbyHszz9TTfmvwRlRZe7MLI9nFL8XVAcIkynlU/edit?usp=sharing">Google Sheets</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap">Github</a>
+						<a class="nav-link text-white disabled" target="_blank" href="https://github.com/kosnag/NGS_InterMap">Github</a>
 					</li>
 					<li class="nav-item">
 						<div class="dropdown">
-							<a id="langs" class="nav-link text-white dropdown-toggle" data-toggle="dropdown" href="#"><?=$localisation['UI']['languages']['switcher']?></a>
+							<a class="nav-link text-white dropdown-toggle" data-toggle="dropdown" href="#"><?=$localisation['UI']['languages']['switcher']?></a>
 							<div class="dropdown-menu dropdown-menu-right">
-								<a class="dropdown-item" href="#"><img src="images/flags/usa.svg" class="lang-flags"> <img src="images/flags/uk.svg" class="lang-flags"> <?=$localisation['UI']['languages']['en_gl']?></a>
-								<a class="dropdown-item" href="#"><img src="images/flags/usa.svg" class="lang-flags"> <img src="images/flags/uk.svg" class="lang-flags"> <?=$localisation['UI']['languages']['en_al']?></a>
-								<a class="dropdown-item" href="#"><img src="images/flags/jp.svg" class="lang-flags"> <?=$localisation['UI']['languages']['jp']?></a>
-								<a class="dropdown-item" href="#"><img src="images/flags/ru.svg" class="lang-flags"> <?=$localisation['UI']['languages']['ru']?></a>
-								<a class="dropdown-item" href="#"><img src="images/flags/kr.svg" class="lang-flags"> <?=$localisation['UI']['languages']['kr']?></a>
+								<a class="dropdown-item" href="/?lang=en_gl"><img src="images/flags/usa.svg" class="lang-flags"> <img src="images/flags/uk.svg" class="lang-flags"> <?=$localisation['UI']['languages']['en_gl']?></a>
+								<a class="dropdown-item" href="/?lang=en_al"><img src="images/flags/usa.svg" class="lang-flags"> <img src="images/flags/uk.svg" class="lang-flags"> <?=$localisation['UI']['languages']['en_al']?></a>
+								<a class="dropdown-item" href="/?lang=jp"><img src="images/flags/jp.svg" class="lang-flags"> <?=$localisation['UI']['languages']['jp']?></a>
+								<a class="dropdown-item" href="/?lang=ru"><img src="images/flags/ru.svg" class="lang-flags"> <?=$localisation['UI']['languages']['ru']?></a>
+								<a class="dropdown-item" href="/?lang=kr"><img src="images/flags/kr.svg" class="lang-flags"> <?=$localisation['UI']['languages']['kr']?></a>
 							</div>
 						</div>
 					</li>
@@ -57,7 +96,7 @@
 				<div class="col-md-9 col-sm-12">
 					<div class="card card-body">
 						<center><div id="map"></div></center>
-						<script src="../js/map.js"></script>
+						<script src="js/map.js"></script>
 						<script>
 var marker = 
 // MARKERS
