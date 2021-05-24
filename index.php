@@ -44,12 +44,12 @@ switch ($_GET['QUERY_STRING']) {
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?=$localisation['UI']['title']?></title>
-		<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+		<link href="css/bootstrap.css" rel="stylesheet">
 		<link href="css/styles.css" rel="stylesheet">
 		<link href="css/leaflet.css" rel="stylesheet">
 		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/popper.min.js"></script>
-		<script src="js/bootstrap-4.4.1.js"></script>
+		<!--<script src="js/popper.min.js"></script>-->
+		<script src="js/bootstrap.bundle.js"></script>
 		<script src="js/leaflet.js"></script>
 		<script src="https://vk.com/js/api/openapi.js?169"></script>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
