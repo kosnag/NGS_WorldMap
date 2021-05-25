@@ -1,5 +1,5 @@
 // MAP
-var map_url = "images/map.jpg";
+var map_url = "images/map_fog.jpg";
 var map = L.map("map",{crs: L.CRS.Simple,minZoom: -4});
 var map_bounds = [[0,0],[12288,12288]];
 var map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(map_bounds);

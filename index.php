@@ -21,17 +21,17 @@ require_once "lang_packs/" . $_SESSION['lang'] . ".php";
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title><?=$localisation['UI']['title']?></title>
-		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/leaflet.css" rel="stylesheet">
-		<link href="css/fontawesome.css" rel="stylesheet">
-		<script src="js/jquery-3.4.1.min.js"></script>
-		<script src="js/bootstrap.bundle.js"></script>
+		<link href="css/fontawesome.min.css" rel="stylesheet">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/leaflet.js"></script>
-		<script src="js/fontawesome.js"></script>
+		<script src="js/fontawesome.min.js"></script>
 		<script src="https://vk.com/js/api/openapi.js?169"></script>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	</head>
-	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('../images/background.png');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
+	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('images/background.png');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">		
 			<div class="container">
 				<a class="navbar-brand" href="#"><?=$localisation['UI']['title']?></a>
