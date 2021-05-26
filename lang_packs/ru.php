@@ -1,5 +1,5 @@
 <?
-$localisation = array (
+$localization = array (
 	'UI' => array(
 		'title' => "Интерактивная карта PSO2NGS",
 		'languages' => array(
