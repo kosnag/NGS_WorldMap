@@ -53,7 +53,8 @@ require_once "lang_packs/" . $_SESSION['lang'] . ".php";
 							<a class="nav-link text-white dropdown-toggle" href="#" id="langList" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-language"></i> <?=$localisation['UI']['languages']['switcher']?></a>
 							<ul class="dropdown-menu" aria-labelledby="langList">
 								<li><a class="dropdown-item" href="/?lang=en_gl"><img src="images/flags/usa.svg" style="height:24px"> <img src="images/flags/uk.svg" style="height:24px"> <?=$localisation['UI']['languages']['en_gl']?></a></li>
-								<li><a class="dropdown-item" href="/?lang=en_al"><img src="images/flags/usa.svg" style="height:24px"> <img src="images/flags/uk.svg" style="height:24px"> <?=$localisation['UI']['languages']['en_al']?></a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item disabled" href="/?lang=en_al"><img src="images/flags/usa.svg" style="height:24px"> <img src="images/flags/uk.svg" style="height:24px"> <?=$localisation['UI']['languages']['en_al']?></a></li>
 								<li><a class="dropdown-item" href="/?lang=jp"><img src="images/flags/jp.svg" style="height:24px"> <?=$localisation['UI']['languages']['jp']?></a></li>
 								<li><a class="dropdown-item" href="/?lang=ru"><img src="images/flags/ru.svg" style="height:24px"> <?=$localisation['UI']['languages']['ru']?></a></li>
 								<li><a class="dropdown-item" href="/?lang=kr"><img src="images/flags/kr.svg" style="height:24px"> <?=$localisation['UI']['languages']['kr']?></a></li>
@@ -79,55 +80,7 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new
 				<div class="col-md-9 col-sm-12">
 					<div class="card card-body">
 						<center><div style="height:650px;width:auto;background-color:rgba(30,59,90,1.00)" id="map"></div></center>
-						<script src="js/map.js"></script>
-						<script>
-var marker = 
-// MARKERS
-	L.marker([3599,3860],{icon:CentTower}).bindPopup("<?=$localisation['markers']['centtower']['1']?>").addTo(map);
-								
-// COCOONS
-	L.marker([3333,2606],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['1']?>").addTo(map);
-	L.marker([5521,2442],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['2']?>").addTo(map);
-	L.marker([4436,4107],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['3']?>").addTo(map);
-	L.marker([1003,4935],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['4']?>").addTo(map);
-	//L.marker([926,2327],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['5']?>").addTo(map);
-	//L.marker([5248,217],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['6']?>").addTo(map);
-	//L.marker([4965,5879],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['7']?>").addTo(map);
-	//L.marker([5813,8934],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['8']?>").addTo(map);
-	//L.marker([4979,10081],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['9']?>").addTo(map);
-	//L.marker([4577,8717],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['10']?>").addTo(map);
-	//L.marker([4486,10805],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['11']?>").addTo(map);
-	//L.marker([4511,8352],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['12']?>").addTo(map);
-	//L.marker([2605,8441],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['13']?>").addTo(map);
-	//L.marker([1500,8394],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['14']?>").addTo(map);
-	//L.marker([1726,10745],{icon:Cocoon}).bindPopup("<?=$localisation['markers']['cocoon']['15']?>").addTo(map);
-							
-								
-	L.marker([4755,1641],{icon:Mag}).bindPopup("<?=$localisation['markers']['mag']['1']?>").addTo(map);
-							
-	L.marker([1547,4074],{icon:Ryuker}).bindPopup("<?=$localisation['markers']['ryuker']['1']?>").addTo(map);
-	L.marker([2562,4171],{icon:Ryuker}).bindPopup("<?=$localisation['markers']['ryuker']['2']?>").addTo(map);
-	L.marker([611,5299],{icon:Ryuker}).bindPopup("<?=$localisation['markers']['ryuker']['3']?>").addTo(map);
-	L.marker([3094,2699],{icon:Ryuker}).bindPopup("<?=$localisation['markers']['ryuker']['4']?>").addTo(map);
-	L.marker([3340,3515],{icon:Ryuker}).bindPopup("<?=$localisation['markers']['ryuker']['5']?>").addTo(map);
-	L.marker([4053,4510],{icon:Ryuker}).bindPopup("<?=$localisation['markers']['ryuker']['6']?>").addTo(map);
-	L.marker([4297,2252],{icon:Ryuker}).bindPopup("<?=$localisation['markers']['ryuker']['7']?>").addTo(map);
-	L.marker([5470,1511],{icon:Ryuker}).bindPopup("<?=$localisation['markers']['ryuker']['8']?>").addTo(map);
-							
-	L.marker([830,5506],{icon:Tower}).bindPopup("<?=$localisation['markers']['tower']['1']?>").addTo(map);
-							
-	L.marker([3483,3620],{icon:City}).bindPopup("<?=$localisation['markers']['city']['1']?>").addTo(map);
-	//L.marker([1803,1529],{icon:City}).bindPopup("<?=$localisation['markers']['city']['1']?>").addTo(map);
-							
-	//L.marker([3815,2925],{icon:Hut}).bindPopup("<?=$localisation['markers']['hut']['1']?>").addTo(map);
-	//L.marker([3056,1742],{icon:Hut}).bindPopup("<?=$localisation['markers']['hut']['2']?>").addTo(map);
-	//L.marker([1070,2054],{icon:Hut}).bindPopup("<?=$localisation['markers']['hut']['3']?>").addTo(map);
-	//L.marker([7822,3428],{icon:Hut}).bindPopup("<?=$localisation['markers']['hut']['4']?>").addTo(map);
-							
-	L.marker([8492,8492],{icon:TEST}).bindPopup("<?=$localisation['markers']['urgent']['1']?>").addTo(map);
-							
-	L.marker([1337,1337],{icon:TEST}).bindPopup("<?=$localisation['markers']['dungeon']['1']?>").addTo(map);
-						</script>
+						<script src="js/map.php?lang=<?php echo $_SESSION['lang'];?>"></script>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12">

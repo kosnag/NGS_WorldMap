@@ -19,7 +19,7 @@ $localisation = array (
 			'5' => "Bosses",
 		),
 	),
-	'markers' => array(
+	'objects' => array(
 		'centtower' => "Central Tower (Aelio)",
 		'cocoon' => array(
 			'1' => "<b>Cocoon</b> (1 Player)<br><h1>First Steps</h1><p>This is the facility where an Instructor who tests the basic abilities of every ARKS.<br>By following the instructions, one can learn new abilities while reaching the targeted goal.</p>",
@@ -29,17 +29,9 @@ $localisation = array (
 			'5' => "Cocoon ID-5",
 			'6' => "Cocoon ID-6",
 			'7' => "Cocoon ID-7",
-			'8' => "Cocoon ID-8",
-			'9' => "Cocoon ID-9",
-			'10' => "Cocoon ID-10",
-			'11' => "Cocoon ID-11",
-			'12' => "Cocoon ID-12",
-			'13' => "Cocoon ID-13",
-			'14' => "Cocoon ID-14",
-			'15' => "Cocoon ID-15",
 		),
 		'mag' => array(
-			'1' => "Redion Mag ID-1",
+			'1' => "Region Mag ID-1",
 		),
 		'ryuker' => array(
 			'1' => "Ryuker Device ID-1",
@@ -50,9 +42,16 @@ $localisation = array (
 			'6' => "Ryuker Device ID-6",
 			'7' => "Ryuker Device ID-7",
 			'8' => "Ryuker Device ID-8",
+			'9' => "Ryuker Device ID-9",
+			'10' => "Ryuker Device ID-10",
+			'11' => "Ryuker Device ID-11",
+			'12' => "Ryuker Device ID-12",
+			'13' => "Ryuker Device ID-13",
+			'14' => "Ryuker Device ID-14",
 		),
 		'tower' => array(
 			'1' => "Tower ID-1",
+			'2' => "Tower ID-2",
 		),
 		'city' => array(
 			'1' => "City ID-1",
@@ -62,7 +61,6 @@ $localisation = array (
 			'1' => "Hut ID-1",
 			'2' => "Hut ID-2",
 			'3' => "Hut ID-3",
-			'4' => "Hut ID-4",
 		),
 		'urgent' => array(
 			'1' => "Urgent Quest Location ID-1",
@@ -70,5 +68,14 @@ $localisation = array (
 		'dungeon' => array(
 			'1' => "Dungeon ID-1",
 		),
+	),
+	'BaR' => array(
+		'boxes' => array(
+			'red' => "Item Container: Red",
+			'white' => "Item Container: White",
+			'gold' => "Item Container: Gold",
+		),
+		'alphareactor' => "Aplha Reactor",
+		'datapod' => "Datapod",
 	),
 );

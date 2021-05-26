@@ -1,13 +1,13 @@
 <?php
 $localisation = array (
 	'UI' => array(
-		'title' => "PSO2NGS Interactive Map ТЕСТ4",
+		'title' => "대화 형지도 PSO2NGS",
 		'languages' => array(
-			'switcher' => "Languages",
-			'en_gl' => "English (Global)",
-			'en_al' => "English (Arks-Layer)",
-			'jp' => "日本語",
-			'ru' => "Русский",
+			'switcher' => "언어",
+			'en_gl' => "영어 (글로벌)",
+			'en_al' => "영어 (Arks-Layer)",
+			'jp' => "일본어",
+			'ru' => "러시아인",
 			'kr' => "한국어",
 		),
 		'sorting' => array(
@@ -19,40 +19,39 @@ $localisation = array (
 			'5' => "Bosses",
 		),
 	),
-	'markers' => array(
+	'objects' => array(
 		'centtower' => "Central Tower (Aelio)",
 		'cocoon' => array(
-			'1' => "<b>Cocoon</b> (1 Player)<br><h1>First Steps</h1><p>This is the facility where an Instructor who tests the basic abilities of every ARKS.<br>By following the instructions, one can learn new abilities while reaching the targeted goal.</p>",
-			'2' => "Cocoon ID-2",
-			'3' => "Cocoon ID-3",
-			'4' => "Cocoon ID-4",
-			'5' => "Cocoon ID-5",
-			'6' => "Cocoon ID-6",
-			'7' => "Cocoon ID-7",
-			'8' => "Cocoon ID-8",
-			'9' => "Cocoon ID-9",
-			'10' => "Cocoon ID-10",
-			'11' => "Cocoon ID-11",
-			'12' => "Cocoon ID-12",
-			'13' => "Cocoon ID-13",
-			'14' => "Cocoon ID-14",
-			'15' => "Cocoon ID-15",
+			'1' => "코쿤 ID-1",
+			'2' => "코쿤 ID-2",
+			'3' => "코쿤 ID-3",
+			'4' => "코쿤 ID-4",
+			'5' => "코쿤 ID-5",
+			'6' => "코쿤 ID-6",
+			'7' => "코쿤 ID-7",
 		),
 		'mag' => array(
-			'1' => "Redion Mag ID-1",
+			'1' => "리전 마그 ID-1",
 		),
 		'ryuker' => array(
-			'1' => "Ryuker Device ID-1",
-			'2' => "Ryuker Device ID-2",
-			'3' => "Ryuker Device ID-3",
-			'4' => "Ryuker Device ID-4",
-			'5' => "Ryuker Device ID-5",
-			'6' => "Ryuker Device ID-6",
-			'7' => "Ryuker Device ID-7",
-			'8' => "Ryuker Device ID-8",
+			'1' => "류커 디바이스 ID-1",
+			'2' => "류커 디바이스 ID-2",
+			'3' => "류커 디바이스 ID-3",
+			'4' => "류커 디바이스 ID-4",
+			'5' => "류커 디바이스 ID-5",
+			'6' => "류커 디바이스 ID-6",
+			'7' => "류커 디바이스 ID-7",
+			'8' => "류커 디바이스 ID-8",
+			'9' => "류커 디바이스 ID-9",
+			'10' => "류커 디바이스 ID-10",
+			'11' => "류커 디바이스 ID-11",
+			'12' => "류커 디바이스 ID-12",
+			'13' => "류커 디바이스 ID-13",
+			'14' => "류커 디바이스 ID-14",
 		),
 		'tower' => array(
-			'1' => "Tower ID-1",
+			'1' => "타워 ID-1",
+			'2' => "타워 ID-2",
 		),
 		'city' => array(
 			'1' => "City ID-1",
@@ -62,7 +61,6 @@ $localisation = array (
 			'1' => "Hut ID-1",
 			'2' => "Hut ID-2",
 			'3' => "Hut ID-3",
-			'4' => "Hut ID-4",
 		),
 		'urgent' => array(
 			'1' => "Urgent Quest Location ID-1",
@@ -70,5 +68,14 @@ $localisation = array (
 		'dungeon' => array(
 			'1' => "Dungeon ID-1",
 		),
+	),
+	'BaR' => array(
+		'boxes' => array(
+			'red' => "아이템 컨테이너 [적]",
+			'white' => "아이템 컨테이너 [백]",
+			'gold' => "아이템 컨테이너 [금]",
+		),
+		'alphareactor' => "알파 리액터",
+		'datapod' => "메시지",
 	),
 );
