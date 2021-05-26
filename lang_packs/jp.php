@@ -22,16 +22,16 @@ $localization = array (
 	'objects' => array(
 		'centtower' => "Central Tower (Aelio)",
 		'cocoon' => array(
-			'1' => "コクーン ID-1",
-			'2' => "コクーン ID-2",
-			'3' => "コクーン ID-3",
-			'4' => "コクーン ID-4",
+			'1' => "エンハンスドエネミー",
+			'2' => "スウィフトジャンプ",
+			'3' => "ファーストステップ",
+			'4' => "ワイルドラッシュ",
 			'5' => "コクーン ID-5",
 			'6' => "コクーン ID-6",
 			'7' => "コクーン ID-7",
 		),
 		'mag' => array(
-			'1' => "リージョンマグ ID-1",
+			'1' => "練達のリージョンマグ",
 		),
 		'ryuker' => array(
 			'1' => "リューカーデバイス ID-1",
@@ -50,11 +50,11 @@ $localization = array (
 			'14' => "リューカーデバイス ID-14",
 		),
 		'tower' => array(
-			'1' => "タワー ID-1",
+			'1' => "グレートウォール",
 			'2' => "タワー ID-2",
 		),
 		'city' => array(
-			'1' => "City ID-1",
+			'1' => "セントラルシティ",
 			'2' => "City ID-2",
 		),
 		'hut' => array(
@@ -63,7 +63,7 @@ $localization = array (
 			'3' => "Hut ID-3",
 		),
 		'urgent' => array(
-			'1' => "Urgent Quest Location ID-1",
+			'1' => "統制型ドールズ討伐戦",
 		),
 		'dungeon' => array(
 			'1' => "Dungeon ID-1",
