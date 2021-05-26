@@ -1,7 +1,7 @@
-<?php
-$localisation = array (
+<?
+$localization = array (
 	'UI' => array(
-		'title' => "インタラクティブマップ PSO2NGS",
+		'title' => "PSO2NGSインタラクティブマップ",
 		'languages' => array(
 			'switcher' => "言語",
 			'en_gl' => "英語 (グローバル)",
