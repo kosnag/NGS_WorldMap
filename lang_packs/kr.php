@@ -1,7 +1,7 @@
-<?php
-$localisation = array (
+<?
+$localization = array (
 	'UI' => array(
-		'title' => "대화 형지도 PSO2NGS",
+		'title' => "PSO2NGS 인터랙티브지도",
 		'languages' => array(
 			'switcher' => "언어",
 			'en_gl' => "영어 (글로벌)",
