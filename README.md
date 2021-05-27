@@ -1,4 +1,4 @@
-# NGS_InterMap
+# PSO2NGS Interactive Map
 
 ### to-do list before ngs release:
 - ~~multilanguage support (en,kr,ru,jp)~~
