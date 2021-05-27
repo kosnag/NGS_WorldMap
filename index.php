@@ -33,7 +33,7 @@ $lang_flag_style = 'height:24px'
 		<script src="https://vk.com/js/api/openapi.js?169"></script>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 	</head>
-	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('images/background.png');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
+	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('images/background.jpg');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">		
 			<div class="container">
 				<a class="navbar-brand" href="#"><?=$localization['UI']['title']?></a>
@@ -83,7 +83,7 @@ $lang_flag_style = 'height:24px'
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12">
-                    <div class="card">
+					<div class="card">
 						<p class="h4 my-3 text-center"><?=$localization['UI']['sorting']['title']?></p>
 						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localization['UI']['sorting']['1']?></a>
 						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localization['UI']['sorting']['2']?></a>
