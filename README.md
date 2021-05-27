@@ -9,7 +9,7 @@
 - add more material markers on map
 - add two more ryuker devices on map
 - make a regions/zones on map with short information
-- rewrite language memory module (from session to cookie)
+- ~~rewrite language memory module (from session to cookie)~~
 - transfer map to tiles
 - add sorting
 
