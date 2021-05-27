@@ -1,5 +1,5 @@
 <?
-$localisation = array (
+$localization = array (
 	'UI' => array(
 		'title' => "PSO2NGS Interactive Map",
 		'languages' => array(
@@ -22,10 +22,10 @@ $localisation = array (
 	'objects' => array(
 		'centtower' => "Central Tower (Aelio)",
 		'cocoon' => array(
-			'1' => "",
-			'2' => "Cocoon ID-2",
-			'3' => "Cocoon ID-3",
-			'4' => "Cocoon ID-4",
+			'1' => "<b>Cocoon</b> (4 Players)<br><h2>Enhanced Enemy</h2><p>This is the facility where an Instructor who tests the combat abilities of every ARKS.<br>Use your combat skills to take out the Enhanced Pedas Sword.</p>",
+			'2' => "<b>Cocoon</b> (4 Players)<br><h2>Swift Jump</h2><p>This is the facility where an Instructor who tests the jumping abilities of every ARKS.<br>Use <b>Jump</b> and <b>Double Jump</b> to reach the target goal.</p>",
+			'3' => "<b>Cocoon</b> (1 Player)<br><h2>First Steps</h2><p>This is the facility where an Instructor who tests the basic abilities of every ARKS.<br>By following the instructions, one can learn new abilities while reaching the targeted goal.</p>",
+			'4' => "<b>Cocoon</b> (4 Players)<br><h2>Wild Rush</h2><p>This is the facility where an Instructor who tests the combat abilities of every ARKS.<br>Use your combat skills to take out every enemy.</p>",
 			'5' => "Cocoon ID-5",
 			'6' => "Cocoon ID-6",
 			'7' => "Cocoon ID-7",
@@ -50,7 +50,7 @@ $localisation = array (
 			'14' => "Ryuker Device ID-14",
 		),
 		'tower' => array(
-			'1' => "Tower ID-1",
+			'1' => '<b>Tower</b> (4 Players)<br><h2>Great Wall</h2><p>This is the facility where an Instructor who tests the combat abilities of every ARKS.<br>Make full use of your combat abilities as a Daedal Sword awaits you in the final area.</p>',
 			'2' => "Tower ID-2",
 		),
 		'city' => array(
@@ -77,6 +77,5 @@ $localisation = array (
 		),
 		'alphareactor' => "Alpha Reactor",
 		'datapod' => "Datapod",
-		),
 	),
 );

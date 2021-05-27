@@ -1,5 +1,5 @@
 <?
-$localisation = array (
+$localization = array (
 	'UI' => array(
 		'title' => "PSO2NGS Interactive Map",
 		'languages' => array(
@@ -22,16 +22,16 @@ $localisation = array (
 	'objects' => array(
 		'centtower' => "Central Tower (Aelio)",
 		'cocoon' => array(
-			'1' => "<b>Cocoon</b> (1 Player)<br><h1>First Steps</h1><p>This is the facility where an Instructor who tests the basic abilities of every ARKS.<br>By following the instructions, one can learn new abilities while reaching the targeted goal.</p>",
-			'2' => "Cocoon ID-2",
-			'3' => "Cocoon ID-3",
-			'4' => "Cocoon ID-4",
-			'5' => "Cocoon ID-5",
+			'1' => "Enhanced Enemy",
+			'2' => "Swift Jump",
+			'3' => "First Steps",
+			'4' => "Wild Rush",
+			'5' => "Great Wall",
 			'6' => "Cocoon ID-6",
 			'7' => "Cocoon ID-7",
 		),
 		'mag' => array(
-			'1' => "Region Mag ID-1",
+			'1' => "Expert Region Mag",
 		),
 		'ryuker' => array(
 			'1' => "Ryuker Device ID-1",
