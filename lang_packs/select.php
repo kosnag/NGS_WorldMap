@@ -6,29 +6,22 @@ $lang_flag_sel = 'height:32'
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>PSO2NGS Interactive Map</title>
-		<link href="../css/bootstrap.min.css"rel="stylesheet"/>
-		<link href="../css/bootstrap.min.css"rel="stylesheet"/>
-		<link href="../fontawesome.min.css"rel="stylesheet"/>
-		<script src="../js/jquery.min.js"></script>
-		<script src="../js/bootstrap.bundle.min.js"></script>
-		<script src="../js/leaflet.js"></script>
-		<script src="../js/fontawesome.min.js"></script>
-		<link rel="icon" href="../images/favicon.png" type="image/x-icon"/>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/fontawesome.min.js"></script>
+		<link href="css/bootstrap.min.css"rel="stylesheet"/>
+		<link href="fontawesome.min.css"rel="stylesheet"/>
+		<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
 		<script>
 		$( document ).ready(function(){
-			$( "#en_gl" ).hover(function(){
-				$( "title" ).text("PSO2NGS Interactive Map");
-				$( "#title" ).text("PSO2NGS Interactive Map");
-				$( "#lang" ).text("Choose a language");
-			}, function(){});
-			$( "#en_al" ).hover(function(){
+			$( "#en" ).hover(function(){
 				$( "title" ).text("PSO2NGS Interactive Map");
 				$( "#title" ).text("PSO2NGS Interactive Map");
 				$( "#lang" ).text("Choose a language");
 			}, function(){});
 			$( "#jp" ).hover(function(){
-				$( "title" ).text("PSO2NGSインタラクティブマップ");
-				$( "#title" ).text("PSO2NGSインタラクティブマップ");
+				$( "title" ).text("PSO2NGS相互マップ");
+				$( "#title" ).text("PSO2NGS相互マップ");
 				$( "#lang" ).text("言語を選択する");
 			}, function(){});
 			$( "#ru" ).hover(function(){
@@ -49,8 +42,8 @@ $lang_flag_sel = 'height:32'
 		.custom-btn-outline-primary {color: #0d6efd;background-color: rgb(13,110,253,0.20);border-color: #0d6efd}
 		.custom-btn-outline-primary:hover {color: #fff;background-color: rgb(13,110,253,0.40);border-color: #0d6efd}
 	</style>
-	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('../images/background_blur.png');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">		
+	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('images/background_blur.jpg');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">		
 			<div class="container">
 				<a id="title" class="navbar-brand" href="https://ngs-map.kosnag.ru/">PSO2NGS Interactive Map</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -73,41 +66,41 @@ $lang_flag_sel = 'height:32'
 		</nav>
 		<div class="container mt-3 position-absolute top-50 start-50 translate-middle">
 			<div class="card-header border border-primary rounded">
-			<h1 class="card-title text-center"><span id="lang" class="badge bg-primary text-dark">Choose a language</span></h1>
+			<h1 class="card-title text-center text-light"><span id="lang" class="badge bg-primary">Choose a language</span></h1>
 			<br>
 				<div class="row">
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-dark" id="en_gl" href="/?lang=en_gl">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" href="/?lang=en_gl">
 							<span>
-								<img src="../images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="../images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Global
+								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Global
 							</span>
 						</a>
 					</div>
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-dark" id="en_al" href="/?lang=en_al">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" href="/?lang=en_al">
 							<span>
-								<img src="../images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="../images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Arks-Layer
+								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Arks-Layer
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-dark" id="jp" href="/?lang=jp">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="jp" href="/?lang=jp">
 							<span>
-								<img src="../images/flags/jp.svg" style="<? echo $lang_flag_sel;?>"><br>日本語
+								<img src="images/flags/jp.svg" style="<? echo $lang_flag_sel;?>"><br>日本語
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-dark" id="ru" href="/?lang=ru">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="ru" href="/?lang=ru">
 							<span>
-								<img src="../images/flags/ru.svg" style="<? echo $lang_flag_sel;?>"><br>Русский
+								<img src="images/flags/ru.svg" style="<? echo $lang_flag_sel;?>"><br>Русский
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-dark" id="kr" href="/?lang=kr">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="kr" href="/?lang=kr">
 							<span>
-								<img src="../images/flags/kr.svg" style="<? echo $lang_flag_sel;?>"><br>한국어>
+								<img src="images/flags/kr.svg" style="<? echo $lang_flag_sel;?>"><br>한국어
 							</span>
 						</a>
 					</div>
@@ -116,5 +109,3 @@ $lang_flag_sel = 'height:32'
 		</div>
 	</body>
 </html>
-
-
