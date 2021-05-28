@@ -1,4 +1,7 @@
 <?
+if($_SERVER["REQUEST_URI"]=="/select.php")
+header("Location: /");
+
 $lang_flag_sel = 'height:32'
 ?>
 <html>
@@ -13,23 +16,28 @@ $lang_flag_sel = 'height:32'
 		<link href="fontawesome.min.css"rel="stylesheet"/>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
 		<script>
-		$( document ).ready(function(){
-			$( "#en" ).hover(function(){
+		$(document).ready(function(){
+			$("#en1").hover(function(){
 				$( "title" ).text("PSO2NGS Interactive Map");
 				$( "#title" ).text("PSO2NGS Interactive Map");
 				$( "#lang" ).text("Choose a language");
 			}, function(){});
-			$( "#jp" ).hover(function(){
+			$("#en2").hover(function(){
+				$( "title" ).text("PSO2NGS Interactive Map");
+				$( "#title" ).text("PSO2NGS Interactive Map");
+				$( "#lang" ).text("Choose a language");
+			}, function(){});
+			$("#jp").hover(function(){
 				$( "title" ).text("PSO2NGS相互マップ");
 				$( "#title" ).text("PSO2NGS相互マップ");
 				$( "#lang" ).text("言語を選択する");
 			}, function(){});
-			$( "#ru" ).hover(function(){
+			$("#ru").hover(function(){
 				$( "title" ).text("Интерактивная карта PSO2NGS");
 				$( "#title" ).text("Интерактивная карта PSO2NGS");
 				$( "#lang" ).text("Выберите язык");
 			}, function(){});
-			$( "#kr" ).hover(function(){
+			$("#kr").hover(function(){
 				$( "title" ).text("PSO2NGS 인터랙티브지도");
 				$( "#title" ).text("PSO2NGS 인터랙티브지도");
 				$( "#lang" ).text("언어 선택");
@@ -70,14 +78,14 @@ $lang_flag_sel = 'height:32'
 			<br>
 				<div class="row">
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" href="/?lang=en_gl">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en1" href="/?lang=en_gl">
 							<span>
 								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Global
 							</span>
 						</a>
 					</div>
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" href="/?lang=en_al">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en2" href="/?lang=en_al">
 							<span>
 								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Arks-Layer
 							</span>
@@ -109,3 +117,5 @@ $lang_flag_sel = 'height:32'
 		</div>
 	</body>
 </html>
+
+

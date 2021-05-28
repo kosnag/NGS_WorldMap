@@ -78,4 +78,15 @@ $localization = array (
 		'alphareactor' => "Aplha Reactor",
 		'datapod' => "Datapod",
 	),
+	
+	// DO NOT TOUCH
+	'misc' => array(
+		'lang' => array(
+			'en_gl' => " disabled bg-primary text-white",
+			'en_al' => "",
+			'jp' => "",
+			'ru' => "",
+			'kr' => ""
+		),
+	),
 );
