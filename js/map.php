@@ -16,8 +16,6 @@ else if (isset($_GET['lang']) && $_SESSION['lang'] != $_GET['lang'] && !empty($_
 }
 require_once "../lang_packs/" . $_SESSION['lang'] . ".php";
 
-$roundMarkerTest = '"radius": 2, "weight": 4, "opacity": 1, "fillColor": "#FFA500", "color": "#FFA500"';
-
 $roundMarker = array (
 	'BaR' => array(
 		'boxes' => array(
@@ -30,84 +28,293 @@ $roundMarker = array (
 	),
 );
 ?>
-
-// MAP
-var map_url = "images/map.jpg";
-var map = L.map("map",{crs: L.CRS.Simple,minZoom: -4});
-var map_bounds = [[0,0],[12288,12288]];
-var map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(map_bounds);
+//MAP
+let map_url = "images/map.jpg" 
+let map = L.map("map",{
+	crs: L.CRS.Simple,
+	minZoom: -4
+	})
+let map_bounds = [[0,0],[12288,12288]];
+let fit_map_bounds = [[0,0],[12288-4936,7352]];
+let map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(fit_map_bounds);
 
 
 // ICONS
-var Main_Icons = L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],popupAnchor:[0,-20]}});
-var CentTower = new Main_Icons({iconUrl: 'images/marks/cent_tower.png'}),
-	Cocoon = new Main_Icons({iconUrl: 'images/marks/cocoon.png'}),
-	Mag = new Main_Icons({iconUrl: 'images/marks/mag.png'}),
-	Ryuker = new Main_Icons({iconUrl: 'images/marks/ryuker.png'}),
-	Tower = new Main_Icons({iconUrl: 'images/marks/tower.png'}),
-	Urgent = new Main_Icons({iconUrl: 'images/marks/urgent.png'}),
-	City = new Main_Icons({iconUrl: 'images/marks/city.png'}),
-	Hut = new Main_Icons({iconUrl: 'images/marks/hut.png'}),
-	Dungeon = new Main_Icons({iconUrl: 'images/marks/dungeon.png'}),
-	Fort = new Main_Icons({iconUrl: 'images/marks/fort.png'}),
-	TEST = new Main_Icons({iconUrl: 'https://cdn.discordapp.com/emojis/763104888732647434.png'});
-	
-	
-	
+let Main_Icons = L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],popupAnchor:[0,-20]}});
+let iconCentTower = new Main_Icons({iconUrl: 'images/marks/centTower.png'}),
+	iconCocoon = new Main_Icons({iconUrl: 'images/marks/cocoon.png'}),
+	iconMag = new Main_Icons({iconUrl: 'images/marks/mag.png'}),
+	iconRyuker = new Main_Icons({iconUrl: 'images/marks/ryuker.png'}),
+	iconTower = new Main_Icons({iconUrl: 'images/marks/tower.png'}),
+	iconUrgent = new Main_Icons({iconUrl: 'images/marks/urgent.png'}),
+	iconCity = new Main_Icons({iconUrl: 'images/marks/city.png'}),
+	iconHut = new Main_Icons({iconUrl: 'images/marks/hut.png'}),
+	iconDungeon = new Main_Icons({iconUrl: 'images/marks/dungeon.png'}),
+	iconFort = new Main_Icons({iconUrl: 'images/marks/fort.png'}),
+	iconTEST = new Main_Icons({iconUrl: 'https://cdn.discordapp.com/emojis/763104888732647434.png'});
+
+$(document).ready(function(){
+    console.log();
+	{ // Cocoon
+		if (CocoonToggle.length == 0) {
+			for (let i = 0; i < Cocoon.length; i++) {
+				CocoonToggle.push(L.marker(Cocoon[i]["coordinates"],{icon:iconCocoon}).bindPopup(Cocoon[i]["popup"]).addTo(map));
+			}
+		}
+		$("#Cocoon_On").click(function(){
+			if (CocoonToggle.length == 0) {
+				for (let i = 0; i < Cocoon.length; i++) {
+					CocoonToggle.push(L.marker(Cocoon[i]["coordinates"],{icon:iconCocoon}).bindPopup(Cocoon[i]["popup"]));
+				}
+			}
+			for (let i = 0; i < CocoonToggle.length; i++) {
+				CocoonToggle[i].addTo(map);
+			}
+		});
+		$("#Cocoon_Off").click(function(){
+			for (let i = 0; i < CocoonToggle.length; i++) {
+				map.removeLayer(CocoonToggle[i]);
+			}
+		});
+	}
+	{ // Mag
+		if (MagToggle.length == 0) {
+			for (let i = 0; i < Mag.length; i++) {
+				MagToggle.push(L.marker(Mag[i]["coordinates"],{icon:iconMag}).bindPopup(Mag[i]["popup"]).addTo(map));
+			}
+		}
+		$("#Mag_On").click(function(){
+			if (MagToggle.length == 0) {
+				for (let i = 0; i < Mag.length; i++) {
+					MagToggle.push(L.marker(Mag[i]["coordinates"],{icon:iconMag}).bindPopup(Mag[i]["popup"]));
+				}
+			}
+			for (let i = 0; i < MagToggle.length; i++) {
+				MagToggle[i].addTo(map);
+			}
+		});
+		$("#Mag_Off").click(function(){
+			for (let i = 0; i < MagToggle.length; i++) {
+				map.removeLayer(MagToggle[i]);
+			}
+		});
+	}
+	{ // Ryuker
+		if (RyukerDeviceToggle.length == 0) {
+			for (let i = 0; i < RyukerDevice.length; i++) {
+				RyukerDeviceToggle.push(L.marker(RyukerDevice[i]["coordinates"],{icon:iconRyuker}).bindPopup(RyukerDevice[i]["popup"]).addTo(map));
+			}
+		}
+		$("#RyukerDevice_On").click(function(){
+			if (RyukerDeviceToggle.length == 0) {
+				for (let i = 0; i < RyukerDevice.length; i++) {
+					RyukerDeviceToggle.push(L.marker(RyukerDevice[i]["coordinates"],{icon:iconRyuker}).bindPopup(RyukerDevice[i]["popup"]));
+				}
+			}
+			for (let i = 0; i < RyukerDeviceToggle.length; i++) {
+				RyukerDeviceToggle[i].addTo(map);
+			}
+		});
+		$("#RyukerDevice_Off").click(function(){
+			for (let i = 0; i < RyukerDeviceToggle.length; i++) {
+				map.removeLayer(RyukerDeviceToggle[i]);
+			}
+		});
+	}
+	{ // Tower
+		if (TowerToggle.length == 0) {
+			for (let i = 0; i < Tower.length; i++) {
+				TowerToggle.push(L.marker(Tower[i]["coordinates"],{icon:iconTower}).bindPopup(Tower[i]["popup"]).addTo(map));
+			}
+		}
+		$("#Tower_On").click(function(){
+			if (TowerToggle.length == 0) {
+				for (let i = 0; i < Tower.length; i++) {
+					TowerToggle.push(L.marker(Tower[i]["coordinates"],{icon:iconTower}).bindPopup(Tower[i]["popup"]));
+				}
+			}
+			for (let i = 0; i < TowerToggle.length; i++) {
+				TowerToggle[i].addTo(map);
+			}
+		});
+		$("#Tower_Off").click(function(){
+			for (let i = 0; i < TowerToggle.length; i++) {
+				map.removeLayer(TowerToggle[i]);
+			}
+		});
+	}
+	{ // City
+		if (CityToggle.length == 0) {
+			for (let i = 0; i < City.length; i++) {
+				CityToggle.push(L.marker(City[i]["coordinates"],{icon:iconCity}).bindPopup(City[i]["popup"]).addTo(map));
+			}
+		}
+		$("#City_On").click(function(){
+			if (CityToggle.length == 0) {
+				for (let i = 0; i < City.length; i++) {
+					CityToggle.push(L.marker(City[i]["coordinates"],{icon:iconCity}).bindPopup(City[i]["popup"]));
+				}
+			}
+			for (let i = 0; i < CityToggle.length; i++) {
+				CityToggle[i].addTo(map);
+			}
+		});
+		$("#City_Off").click(function(){
+			for (let i = 0; i < CityToggle.length; i++) {
+				map.removeLayer(CityToggle[i]);
+			}
+		});
+	}
+	{ // Hut
+		if (HutToggle.length == 0) {
+			for (let i = 0; i < Hut.length; i++) {
+				HutToggle.push(L.marker(Hut[i]["coordinates"],{icon:iconHut}).bindPopup(Hut[i]["popup"]).addTo(map));
+			}
+		}
+		$("#Hut_On").click(function(){
+			if (HutToggle.length == 0) {
+				for (let i = 0; i < Hut.length; i++) {
+					HutToggle.push(L.marker(Hut[i]["coordinates"],{icon:iconHut}).bindPopup(Hut[i]["popup"]));
+				}
+			}
+			for (let i = 0; i < HutToggle.length; i++) {
+				HutToggle[i].addTo(map);
+			}
+		});
+		$("#Hut_Off").click(function(){
+			for (let i = 0; i < HutToggle.length; i++) {
+				map.removeLayer(HutToggle[i]);
+			}
+		});
+	}
+	{ // UQ
+		if (UrgentQuestToggle.length == 0) {
+			for (let i = 0; i < UrgentQuest.length; i++) {
+				UrgentQuestToggle.push(L.marker(UrgentQuest[i]["coordinates"],{icon:iconUrgent}).bindPopup(UrgentQuest[i]["popup"]).addTo(map));
+			}
+		}
+		$("#UrgentQuest_On").click(function(){
+			if (UrgentQuestToggle.length == 0) {
+				for (let i = 0; i < UrgentQuest.length; i++) {
+					UrgentQuestToggle.push(L.marker(UrgentQuest[i]["coordinates"],{icon:iconUrgent}).bindPopup(UrgentQuest[i]["popup"]));
+				}
+			}
+			for (let i = 0; i < UrgentQuestToggle.length; i++) {
+				UrgentQuestToggle[i].addTo(map);
+			}
+		});
+		$("#UrgentQuest_Off").click(function(){
+			for (let i = 0; i < UrgentQuestToggle.length; i++) {
+				map.removeLayer(UrgentQuestToggle[i]);
+			}
+		});
+	}
+	{ // Dungeon
+		if (DungeonToggle.length == 0) {
+			for (let i = 0; i < Dungeon.length; i++) {
+				DungeonToggle.push(L.marker(Dungeon[i]["coordinates"],{icon:iconDungeon}).bindPopup(Dungeon[i]["popup"]).addTo(map));
+			}
+		}
+		$("#Dungeon_On").click(function(){
+			if (DungeonToggle.length == 0) {
+				for (let i = 0; i < Dungeon.length; i++) {
+					DungeonToggle.push(L.marker(Dungeon[i]["coordinates"],{icon:iconDungeon}).bindPopup(Dungeon[i]["popup"]));
+				}
+			}
+			for (let i = 0; i < DungeonToggle.length; i++) {
+				DungeonToggle[i].addTo(map);
+			}
+		});
+		$("#Dungeon_Off").click(function(){
+			for (let i = 0; i < DungeonToggle.length; i++) {
+				map.removeLayer(DungeonToggle[i]);
+			}
+		});
+	}
+});
+
+
 // OBJECTS
-var CentralTowers = [
-	L.marker([3599,3860],{icon:CentTower}).bindPopup("<?=$localization['objects']['centtower']?>").addTo(map)
-];
-var Cocoons	= [
-	L.marker([3333,2606],{icon:Cocoon}).bindPopup("<?=$localization['objects']['cocoon']['1']?>").addTo(map),
-	L.marker([5521,2442],{icon:Cocoon}).bindPopup("<?=$localization['objects']['cocoon']['2']?>").addTo(map),
-	L.marker([4436,4107],{icon:Cocoon}).bindPopup("<?=$localization['objects']['cocoon']['3']?>").addTo(map),
-	L.marker([1003,4935],{icon:Cocoon}).bindPopup("<?=$localization['objects']['cocoon']['4']?>").addTo(map),
-	L.marker([926,2327],{icon:Cocoon}).bindPopup("<?=$localization['objects']['cocoon']['5']?>").addTo(map),
-	L.marker([5248,217],{icon:Cocoon}).bindPopup("<?=$localization['objects']['cocoon']['6']?>").addTo(map),
-	L.marker([4965,5879],{icon:Cocoon}).bindPopup("<?=$localization['objects']['cocoon']['7']?>").addTo(map)
-];
-var Mags = [
-	L.marker([4755,1641],{icon:Mag}).bindPopup("<?=$localization['objects']['mag']['1']?>").addTo(map)
-];
-var RyukerDevices = [
-	L.marker([1547,4074],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['1']?>").addTo(map),
-	L.marker([2562,4171],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['2']?>").addTo(map),
-	L.marker([611,5299],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['3']?>").addTo(map),
-	L.marker([3094,2699],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['4']?>").addTo(map),
-	L.marker([3340,3515],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['5']?>").addTo(map),
-	L.marker([4053,4510],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['6']?>").addTo(map),
-	L.marker([4297,2252],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['7']?>").addTo(map),
-	L.marker([5503,1496],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['8']?>").addTo(map),	
-	L.marker([4827,806],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['9']?>").addTo(map),
-	L.marker([2599,822],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['10']?>").addTo(map),
-	L.marker([1764,1881],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['11']?>").addTo(map),
-	L.marker([4163,6110],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['12']?>").addTo(map),
-	L.marker([5468,5729],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['13']?>").addTo(map),
-	L.marker([5295,3919],{icon:Ryuker}).bindPopup("<?=$localization['objects']['ryuker']['14']?>").addTo(map)
-];			
-var Towers = [
-	L.marker([830,5506],{icon:Tower}).bindPopup("<?=$localization['objects']['tower']['1']?>").addTo(map),
-	L.marker([5740,1043],{icon:Tower}).bindPopup("<?=$localization['objects']['tower']['2']?>").addTo(map)
-];
-var Cities = [
-	L.marker([3483,3620],{icon:City}).bindPopup("<?=$localization['objects']['city']['1']?>").addTo(map),
-	L.marker([1803,1529],{icon:City}).bindPopup("<?=$localization['objects']['city']['2']?>").addTo(map)
-];
-var Huts = [
-	L.marker([3815,2925],{icon:Hut}).bindPopup("<?=$localization['objects']['hut']['1']?>").addTo(map),
-	L.marker([3056,1742],{icon:Hut}).bindPopup("<?=$localization['objects']['hut']['2']?>").addTo(map),
-	L.marker([1070,2054],{icon:Hut}).bindPopup("<?=$localization['objects']['hut']['3']?>").addTo(map)
-];
-var UrgentQuests = [
-	L.marker([5984,1772],{icon:Urgent}).bindPopup("<?=$localization['objects']['urgent']['1']?>").addTo(map)
-];
-var Dungeons = [
-	L.marker([5069,2507],{icon:Dungeon}).bindPopup("<?=$localization['objects']['dungeon']['1']?>").addTo(map)
-];
+// Central Tower coords
+	let CentralTower = [
+			{coordinates:[3599,3860],popup:"<?=$localization['objects']['centtower']?>"}
+		];
+	let CentralTowerToggle = [];
+
+// Cocoon coords
+	let Cocoon = [
+			{coordinates:[3333,2606],popup:"<?=$localization['objects']['cocoon']['1']?>"},
+			{coordinates:[5521,2442],popup:"<?=$localization['objects']['cocoon']['2']?>"},
+			{coordinates:[4436,4107],popup:"<?=$localization['objects']['cocoon']['3']?>"},
+			{coordinates:[1003,4935],popup:"<?=$localization['objects']['cocoon']['4']?>"},
+			{coordinates:[926,2327],popup:"<?=$localization['objects']['cocoon']['5']?>"},
+			{coordinates:[5248,217],popup:"<?=$localization['objects']['cocoon']['6']?>"},
+			{coordinates:[4965,5879],popup:"<?=$localization['objects']['cocoon']['7']?>"}
+		];
+	let CocoonToggle = [];
+
+// Mag coords
+	let Mag = [
+			{coordinates:[4755,1641],popup:"<?=$localization['objects']['mag']['1']?>"}
+		];
+	let MagToggle = [];
+
+// Ryuker coords
+	let RyukerDevice = [
+			{coordinates:[1547,4074],popup:"<?=$localization['objects']['ryuker']['1']?>"},
+			{coordinates:[2562,4171],popup:"<?=$localization['objects']['ryuker']['2']?>"},
+			{coordinates:[611,5299],popup:"<?=$localization['objects']['ryuker']['3']?>"},
+			{coordinates:[3094,2699],popup:"<?=$localization['objects']['ryuker']['4']?>"},
+			{coordinates:[3340,3515],popup:"<?=$localization['objects']['ryuker']['5']?>"},
+			{coordinates:[4053,4510],popup:"<?=$localization['objects']['ryuker']['6']?>"},
+			{coordinates:[4297,2252],popup:"<?=$localization['objects']['ryuker']['7']?>"},
+			{coordinates:[5503,1496],popup:"<?=$localization['objects']['ryuker']['8']?>"},	
+			{coordinates:[4827,806],popup:"<?=$localization['objects']['ryuker']['9']?>"},
+			{coordinates:[2599,822],popup:"<?=$localization['objects']['ryuker']['10']?>"},
+			{coordinates:[1764,1881],popup:"<?=$localization['objects']['ryuker']['11']?>"},
+			{coordinates:[4163,6110],popup:"<?=$localization['objects']['ryuker']['12']?>"},
+			{coordinates:[5468,5729],popup:"<?=$localization['objects']['ryuker']['13']?>"},
+			{coordinates:[5295,3919],popup:"<?=$localization['objects']['ryuker']['14']?>"}
+		];		
+	let RyukerDeviceToggle = [];
+
+// Tower coords
+	let Tower = [
+			{coordinates:[830,5506],popup:"<?=$localization['objects']['tower']['1']?>"},
+			{coordinates:[5740,1043],popup:"<?=$localization['objects']['tower']['2']?>"}
+		];
+	let TowerToggle = [];
+
+// City coords
+	let City = [
+			{coordinates:[3483,3620],popup:"<?=$localization['objects']['city']['1']?>"},
+			{coordinates:[1803,1529],popup:"<?=$localization['objects']['city']['2']?>"}
+		];
+	let CityToggle = [];
+
+// Hut coords
+	let Hut = [
+			{coordinates:[3815,2925],popup:"<?=$localization['objects']['hut']['1']?>"},
+			{coordinates:[3056,1742],popup:"<?=$localization['objects']['hut']['2']?>"},
+			{coordinates:[1070,2054],popup:"<?=$localization['objects']['hut']['3']?>"}
+		];
+	let HutToggle = [];
+
+// Urgent coords
+	let UrgentQuest = [
+			{coordinates:[5984,1772],popup:"<?=$localization['objects']['urgent']['1']?>"}
+		];
+	let UrgentQuestToggle = [];
+
+// Dungeon coords
+	let Dungeon = [
+			{coordinates:[5069,2507],popup:"<?=$localization['objects']['dungeon']['1']?>"}
+		];
+	let DungeonToggle = [];
+	
 
 // BOXES AND ETC
-var redBox = [
+let redBox = [
 	L.circleMarker([6197,1856],{<?echo $roundMarker['BaR']['boxes']['red'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['red']?>").addTo(map),
 	L.circleMarker([5793,1262],{<?echo $roundMarker['BaR']['boxes']['red'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['red']?>").addTo(map),
 	L.circleMarker([5902,2606],{<?echo $roundMarker['BaR']['boxes']['red'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['red']?>").addTo(map),
@@ -149,8 +356,7 @@ var redBox = [
 	L.circleMarker([1411,5857],{<?echo $roundMarker['BaR']['boxes']['red'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['red']?>").addTo(map)
 ];
 
-var whiteBox = [
-	L.circleMarker([8492,8492],{<?echo $roundMarkerTest;?>}).bindTooltip("<?=$localization['BaR']['boxes']['white']?>").addTo(map),
+let whiteBox = [
 	L.circleMarker([6454,1945],{<?echo $roundMarker['BaR']['boxes']['white'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['white']?>").addTo(map),
 	L.circleMarker([6350,1514],{<?echo $roundMarker['BaR']['boxes']['white'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['white']?>").addTo(map),
 	L.circleMarker([5894,2746],{<?echo $roundMarker['BaR']['boxes']['white'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['white']?>").addTo(map),
@@ -268,8 +474,9 @@ var whiteBox = [
 	L.circleMarker([722,3984],{<?echo $roundMarker['BaR']['boxes']['white'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['white']?>").addTo(map)
 ];
 
-var goldBox = [
+let goldBox = [
 	L.circleMarker([4181,2593],{<?echo $roundMarker['BaR']['boxes']['gold'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['gold']?>").addTo(map),
 	L.circleMarker([2808,3737],{<?echo $roundMarker['BaR']['boxes']['gold'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['gold']?>").addTo(map),
 	L.circleMarker([1526,6179],{<?echo $roundMarker['BaR']['boxes']['gold'];?>}).bindTooltip("<?=$localization['BaR']['boxes']['gold']?>").addTo(map)
 ];
+

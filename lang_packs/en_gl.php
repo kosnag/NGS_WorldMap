@@ -11,8 +11,19 @@ $localization = array (
 			'kr' => "Korean",
 		),
 		'sorting' => array(
-			'title' => "Sorting",
-			'1' => "Main objects",
+			'header' => "Sorting",
+			'mainobjects' => array(
+				'header' => "Main objects",
+				'Cocoons' => "Cocoons",
+				'Mags' => "Mags",
+				'RyukerDevices' => "Ryuker Devices",
+				'Towers' => "Towers",
+				'Cities' => "Cities",
+				'Huts' => "Huts",
+				'UrgentQuests' => "Urgent Quests",
+				'Dungeons' => "Dungeons",
+				'9' => "UNKNOWN",
+			),
 			'2' => "Boxes and Reactors",
 			'3' => "Minerals",
 			'4' => "Vegetables and etc",
@@ -88,5 +99,6 @@ $localization = array (
 			'ru' => "",
 			'kr' => ""
 		),
+		'test' => "8492",
 	),
 );

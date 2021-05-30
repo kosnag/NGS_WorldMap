@@ -32,6 +32,13 @@ $lang_flag_style = 'height:24px'
 				location.href="/";
 			}
 		</script>
+		<style>
+		.cus-btn-outline-primary, .cus-btn-outline-primary:disabled, .cus-btn-outline-primary.disabled, cus-btn-outline-primary:hover {
+			color: #000000;
+			background-color: transparent;
+			border-color: #0d6efd;
+		}
+		</style>
 	</head>
 	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('images/background.jpg');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">		
@@ -78,25 +85,91 @@ $lang_flag_style = 'height:24px'
 				<div class="col-md-9 col-sm-12">
 					<div class="card card-body">
 						<center><div style="height:650px;width:auto;background-color:rgba(30,59,90,1.00)" id="map"></div></center>
-						<script src="js/map.php?lang=<?php echo $lang;?>"></script>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12">
 					<div class="card h-100">
-						<p class="h4 my-3 text-center"><?=$localization['UI']['sorting']['title']?></p>
-						<input type="checkbox" class="btn-check" id="sorting1" autocomplete="off">
-							<label class="btn btn-outline-primary d-grid mx-3 gap-2" for="sorting1"><?=$localization['UI']['sorting']['1']?></label><br>
-						<input type="checkbox" class="btn-check" id="sorting2" autocomplete="off">
-							<label class="btn btn-outline-primary d-grid mx-3 gap-2" for="sorting2"><?=$localization['UI']['sorting']['1']?></label><br>
-						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localization['UI']['sorting']['2']?></a>
-						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localization['UI']['sorting']['3']?></a>
-						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localization['UI']['sorting']['4']?></a>
-						<a class="btn btn-primary mb-2 mx-3 disabled"><?=$localization['UI']['sorting']['5']?></a>
+						<p class="h4 my-3 text-center"><?=$localization['UI']['sorting']['header']?></p>
+						<div class="accordion" id="accordionExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+									<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne"><?=$localization['UI']['sorting']['mainobjects']['header']?></button>
+								</h2>
+								<div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+									<div class="accordion-body justify-content-center">
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Cocoons']?></div>
+												<input type="radio" class="btn-check" name="Cocoon" id="Cocoon_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1" for="Cocoon_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="Cocoon" id="Cocoon_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1" for="Cocoon_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Mags']?></div>
+												<input type="radio" class="btn-check" name="Mag" id="Mag_On" autocom	plete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1" for="Mag_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="Mag" id="Mag_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1" for="Mag_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['RyukerDevices']?></div>
+												<input type="radio" class="btn-check" name="RyukerDevice" id="RyukerDevice_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1" for="RyukerDevice_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="RyukerDevice" id="RyukerDevice_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1" for="RyukerDevice_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Towers']?></div>
+												<input type="radio" class="btn-check" name="Tower" id="Tower_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1" for="Tower_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="Tower" id="Tower_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1" for="Tower_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Cities']?></div>
+												<input type="radio" class="btn-check" name="City" id="City_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1" for="City_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="City" id="City_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1" for="City_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Huts']?></div>
+												<input type="radio" class="btn-check" name="Hut" id="Hut_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1" for="Hut_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="Hut" id="Hut_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1" for="Hut_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['UrgentQuests']?></div>
+												<input type="radio" class="btn-check" name="UrgentQuest" id="UrgentQuest_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1" for="UrgentQuest_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="UrgentQuest" id="UrgentQuest_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1" for="UrgentQuest_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Dungeons']?></div>
+												<input type="radio" class="btn-check" name="Dungeon" id="Dungeon_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1" for="Dungeon_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="Dungeon" id="Dungeon_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1" for="Dungeon_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<!--<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['9']?></div>
+												<input type="radio" class="btn-check" name="" id="_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1 py-2" for="_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="" id="_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1 py-2" for="_Off"><i class="fas fa-times"></i></label>
+										</div>-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<script src="js/map.php?lang=<?php echo $lang;?>"></script>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="container mb-4">
+		<!--<div class="container mb-4">
 			<div class="card card-body">
 				<div class="row">
 					<div class="col-md-4 col-sm-12"><div id="vk_groups1"></div></div>
@@ -109,12 +182,12 @@ $lang_flag_style = 'height:24px'
 					</script>
 				</div>
 			</div>
-		</div>
+		</div>-->
 		<!--
 		redBox
 		whiteBox
 		goldBox
-		alphaReactor:
+		alphaReactor
 		datapod
 		sautePeach
 		sauteBanana
