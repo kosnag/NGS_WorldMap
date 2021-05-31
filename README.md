@@ -2,7 +2,7 @@
 
 ### to-do list before ngs release:
 - ~~multilanguage support (en,kr,ru,jp)~~
-- ~~json import with different icons~~ (json sucks, ave php and js)
+- ~~json import with different icons~~
 - ~~icons for materials and bosses~~
 - ~~make a select language page more readable~~
 - make a template for popup messages of Leaflet on Bootstrap 5
@@ -12,7 +12,8 @@
 - ~~add sorting~~
 
 ### after ngs release:
-- rejection of php, full js
+- rewrite site to js
 - dark theme
 - add more material markers on map
 - add two more ryuker devices on map
+- modal windows with information about materials, bosses and objects
