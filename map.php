@@ -17,6 +17,7 @@ $lang_flag_style = 'height:24px'
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/leaflet.css" rel="stylesheet">
 		<link href="css/fontawesome.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/leaflet.js"></script>
@@ -32,13 +33,6 @@ $lang_flag_style = 'height:24px'
 				location.href="/";
 			}
 		</script>
-		<style>
-		.cus-btn-outline-primary, .cus-btn-outline-primary:disabled, .cus-btn-outline-primary.disabled, cus-btn-outline-primary:hover {
-			color: #000000;
-			background-color: transparent;
-			border-color: #0d6efd;
-		}
-		</style>
 	</head>
 	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('images/background.jpg');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">		
@@ -88,7 +82,7 @@ $lang_flag_style = 'height:24px'
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12">
-					<div class="card h-100">
+					<div class="card adaptive-sorting">
 						<p class="h4 my-3 text-center"><?=$localization['UI']['sorting']['header']?></p>
 						<div class="accordion accordion-flush" id="accordion">
 							<div class="accordion-item">
@@ -216,17 +210,17 @@ $lang_flag_style = 'height:24px'
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['food']['sautePear']['name']?></div>
-												<input type="radio" class="btn-check" name="sautePear" id="sautePeare_On" autocomplete="off">
+												<input type="radio" class="btn-check" name="sautePear" id="sautePear_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="sautePear_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sautePear" id="sautePear_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sautePear_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['food']['sodheTurbanShell']['name']?></div>
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['food']['sodheTurbanShell']['name']?></div>
 												<input type="radio" class="btn-check" name="sodheTurbanShell" id="sodheTurbanShell_On" autocomplete="off">
-												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="sodheTurbanShell_On"><i class="fas fa-check"></i></label>
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sodheTurbanShell_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sodheTurbanShell" id="sodheTurbanShell_Off" autocomplete="off" checked="">
-												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sodheTurbanShell_Off"><i class="fas fa-times"></i></label>
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="sodheTurbanShell_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['food']['sodheClam']['name']?></div>
@@ -271,11 +265,11 @@ $lang_flag_style = 'height:24px'
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sohHerb_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['food']['sohTomato']['name']?></div>
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['food']['sohTomato']['name']?></div>
 												<input type="radio" class="btn-check" name="sohTomato" id="sohTomato_On" autocomplete="off">
-												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="sohTomato_On"><i class="fas fa-check"></i></label>
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sohTomato_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sohTomato" id="sohTomato_Off" autocomplete="off" checked="">
-												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sohTomato_Off"><i class="fas fa-times"></i></label>
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="sohTomato_Off"><i class="fas fa-times"></i></label>
 										</div>
 									</div>
 								</div>
@@ -287,7 +281,7 @@ $lang_flag_style = 'height:24px'
 		</div>
 	<script src="js/markersData.php?lang=<?php echo $lang;?>"></script>
 	<script src="js/map.php?lang=<?php echo $lang;?>"></script>
-		<!--<div class="container mb-4">
+		<div class="container mb-4">
 			<div class="card card-body">
 				<div class="row">
 					<div class="col-md-4 col-sm-12"><div id="vk_groups1"></div></div>
@@ -300,6 +294,6 @@ $lang_flag_style = 'height:24px'
 					</script>
 				</div>
 			</div>
-		</div>-->
+		</div>
 	</body>
 </html>
