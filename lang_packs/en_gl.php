@@ -112,21 +112,7 @@ $localization = array (
 		'mag' => array(
 			'1' => 'Expert Region Mag',
 		),
-		'ryuker' => array(
-			'1' => 'Ryuker Device ID-1',
-			'2' => 'Ryuker Device ID-2',
-			'3' => 'Ryuker Device ID-3',
-			'4' => 'Ryuker Device ID-4',
-			'5' => 'Ryuker Device ID-5',
-			'6' => 'Ryuker Device ID-6',
-			'7' => 'Ryuker Device ID-7',
-			'8' => 'Ryuker Device ID-8',
-			'9' => 'Ryuker Device ID-9',
-			'10' => 'Ryuker Device ID-10',
-			'11' => 'Ryuker Device ID-11',
-			'12' => 'Ryuker Device ID-12',
-			'13' => 'Ryuker Device ID-13',
-			'14' => 'Ryuker Device ID-14',
+		'ryuker' => 'Ryuker Device',
 		),
 		'tower' => array(
 			'1' => 'Tower ID-1',
@@ -170,7 +156,7 @@ $localization = array (
 	'other' => array(
 		'alphareactor' => array (
 			'name' => 'Aplha Reactor',
-			'poput' => 'Popup',
+			'info' => 'Popup',
 		'datapod' => 'Datapod',
 	),
 	
