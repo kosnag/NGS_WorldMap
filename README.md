@@ -12,7 +12,7 @@
 - ~~add sorting~~
 
 ### after ngs release:
-- rewrite site to js
+- rewrite site
 - dark theme
 - add more material markers on map
 - add two more ryuker devices on map
