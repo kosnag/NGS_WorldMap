@@ -5,7 +5,7 @@
 - ~~json import with different icons~~
 - ~~icons for materials and bosses~~
 - ~~make a select language page more readable~~
-- make a template for popup messages of Leaflet on Bootstrap 5
+- ~~make a template for popup messages of Leaflet on Bootstrap 5~~
 - make a regions/zones on map with short information
 - ~~rewrite language memory module (from session to cookie)~~
 - transfer map to tiles
