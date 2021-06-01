@@ -205,5 +205,4 @@ $localization = array (
 		),
 		"test" => "8492",
 	),
-)
 );
