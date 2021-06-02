@@ -16,7 +16,7 @@ $localization = array (
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
 				"Cocoons" => "Cocoons",
-				"Mags" => "Mags",
+				"Mags" => "Region Mag",
 				"RyukerDevices" => "Ryuker Devices",
 				"Towers" => "Towers",
 				"Cities" => "Cities",
@@ -26,9 +26,9 @@ $localization = array (
 			),
 			"boxes" => array(
 				"header" => "Containers",
-				"redBox" => "Red Containers",
-				"whiteBox" => "White Containers",
-				"goldBox" => "Gold Containers",
+				"redBox" => "Item Container: Red",
+				"whiteBox" => "Item Container: White",
+				"goldBox" => "Item Container: Gold",
 			),
 			"food" => array(
 				"header" => "Food",
@@ -124,11 +124,11 @@ $localization = array (
 	"objects" => array(
 		"centtower" => "Central Tower (Aelio)",
 		"cocoon" => array(
-			"1" => "Enhanced Enemy",
-			"2" => "Swift Jump",
-			"3" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>First Step</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>32</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>8492</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities. Follow the instructions to reach the goal while learning the new action.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Reach the finish point!</li></ul><p class='mb-0'><b>Side Mission:</b><ul style='list-style-type: none'><li>Clear before 5:00</li><li>Clear before 10:00</li><li>Obtain 10 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b><ul style='list-style-type: none'><li>+1 SP</li></ul></p>",
-			"4" => "Wild Rush",
-			"5" => "Great Wall",
+			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Enhanced Enemy</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities.Defeat the enhanced Pettas Sword using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat the Pettas Sword</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 0:50</li><li>Clear without being incapacitated 5 times</li><li>Clear having taken damage fewer than 5 times</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
+			"2" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Swift Jump</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities.Reach the goal using “Jump” and “Double Jump.”</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Reach the finish point</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 1:20</li><li>Clear without fallin 5 times</li><li>Clear having used Glide fewer than 5 times</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
+			"3" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>First Step</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities. Follow the instructions to reach the goal while learning the new action.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Reach the finish point!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 5:00</li><li>Clear before 10:00</li><li>Obtain 10 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
+			"4" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Wild Rush</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities.Defeat all enemies using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat 42 enemies</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 1:40</li><li>Clear without being incapacitated 5 times</li><li>Obtain 5 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
+			"5" => "<div class='text-center'><p class='h4 mb-1'><b>Tower</b></p><p class='h5'><b>Great Wall</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities. Defeat the Daityl Sword in the final area using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat the Daityl!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 23:00</li><li>Clear without being incapacitated 5 times</li><li>Obtain 5 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+2 SP</li></ul></p>",
 			"6" => "Cocoon ID-6",
 			"7" => "Cocoon ID-7",
 		),
@@ -165,7 +165,7 @@ $localization = array (
 			"3" => "Hut ID-3",
 		),
 		"urgent" => array(
-			"1" => "Urgent Quest Location ID-1",
+			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Urgent Quest</b></p><p class='h5'><b>Pettas Vera Suppression Ops</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat the Pettas Vera!</li></ul></p><p class='mb-0'><b>1st Clear Reward:</b> <ul style='list-style-type: none'> <li>C/Guard I</li></ul></p>",
 		),
 		"dungeon" => array(
 			"1" => "Dungeon ID-1",
