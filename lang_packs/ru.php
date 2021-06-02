@@ -20,15 +20,24 @@ $localization = array (
 				"RyukerDevices" => "Устройства Рюкера",
 				"Towers" => "Башни",
 				"Cities" => "Города",
-				"Huts" => "Хижины",
+				"Huts" => "???",
 				"UrgentQuests" => "Срочные квесты",
 				"Dungeons" => "Подземелья",
 			),
 			"boxes" => array(
 				"header" => "Контейнеры",
+				"redBox" => array (
 				"redBox" => "Контейнер с предметами [Красный]",
+					"info" => "Popup",
+				),
+				"whiteBox" => array (
 				"whiteBox" => "Контейнер с предметами [Белый]",
+					"info" => "Popup",
+				),
+				"goldBox" => array (
 				"goldBox" => "Контейнер с предметами [Золотой]",
+					"info" => "Popup",
+				),
 			),
 			"food" => array(
 				"header" => "Еда",
@@ -160,9 +169,9 @@ $localization = array (
 			"2" => "Город Эарио",
 		),
 		"hut" => array(
-			"1" => "Hut ID-1",
-			"2" => "Hut ID-2",
-			"3" => "Hut ID-3",
+			"1" => "??? ID-1",
+			"2" => "??? ID-2",
+			"3" => "??? ID-3",
 		),
 		"urgent" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Срочный квест</b></p><p class='h5'><b>Карательная экспедиция на Педас Вера</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Количество игроков:</b></td><td><b>8</b></td></tr><tr><td><b>Требуемая Боевая Мощь:</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>Описание:</b></p><ul style='list-style-type: none'><li>В северной части Эарио на плато Альто-Лани были подтверждены сильные пространственно-временные колебания. Согласно последним данным, ожидается появление управляемого DOLLS Педас Вера. Всем членам ARKS, немедленно отправляйтесь и одолейте врага.</li></ul><p class='mb-0'><b>Условие прохождения:</b></p><ul style='list-style-type: none'><li>Одолейте Педас Вера!</li></ul></p><p class='mb-0'><b>Награда первого прохождения:</b> <ul style='list-style-type: none'> <li>C/Guard I</li></ul></p>",
@@ -170,25 +179,6 @@ $localization = array (
 		"dungeon" => array(
 			"1" => "Dungeon ID-1",
 		),
-	),
-	"boxes" => array(
-		"red" => "Контейнер с предметами [Красный]",
-		"white" => "Контейнер с предметами [Белый]",
-		"gold" => "Контейнер с предметами [Золотой]",
-	),
-	"food" => array(
-		"sautePeach" => "Соте-персик",
-		"sauteBanana" => "Соте-банан",
-		"sauteApple" => "Соте-яблоко",
-		"sautePear" => "Соте-груша",
-		"sodheTurbanShell" => "Сод Тюрбан ракушка",
-		"sodheClam" => "Сод Моллюск",
-		"sohTurnip" => "Соу Кабурана",
-		"sohMushroom" => "Соу Гриб",
-		"sodheCrab" => "Сод Краб",
-		"sodheLobster" => "Сод Лобстер",
-		"sohHerb" => "Соу Трава",
-		"sohTomato" => "Соу Томат",
 	),
 	"other" => array(
 		"alphareactor" => "Альфа реактор",
