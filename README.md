@@ -10,6 +10,7 @@
 - ~~rewrite language memory module (from session to cookie)~~
 - transfer map to tiles
 - ~~add sorting~~
+- tooltips for materials
 
 ### after ngs release:
 - rewrite site
