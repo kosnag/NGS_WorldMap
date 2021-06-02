@@ -157,21 +157,21 @@ $lang_flag_style = 'height:24px'
 								<div id="accordion2-2" class="collapse" aria-labelledby="accordion2-1" data-bs-parent="#accordion">
 									<div class="accordion-body justify-content-center">
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['boxes']['redBox']?></div>
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['boxes']['redBox']['name']?></div>
 												<input type="radio" class="btn-check" name="redBox" id="redBox_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="redBox_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="redBox" id="redBox_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="redBox_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['boxes']['whiteBox']?></div>
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['boxes']['whiteBox']['name']?></div>
 												<input type="radio" class="btn-check" name="whiteBox" id="whiteBox_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="whiteBox_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="whiteBox" id="whiteBox_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="whiteBox_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['boxes']['goldBox']?></div>
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['boxes']['goldBox']['name']?></div>
 												<input type="radio" class="btn-check" name="goldBox" id="goldBox_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="goldBox_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="goldBox" id="goldBox_Off" autocomplete="off" checked="">
@@ -270,6 +270,50 @@ $lang_flag_style = 'height:24px'
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sohTomato_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sohTomato" id="sohTomato_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="sohTomato_Off"><i class="fas fa-times"></i></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="accordion4-1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion4-2" aria-expanded="false" aria-controls="accordion4-2"><?=$localization['UI']['sorting']['minerals']['header']?></button>
+								</h2>
+								<div id="accordion4-2" class="collapse" aria-labelledby="accordion4-1" data-bs-parent="#accordion">
+									<div class="accordion-body justify-content-center">
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['minerals']['monotite']['name']?></div>
+												<input type="radio" class="btn-check" name="monotite" id="monotite_On" autocomplete="off">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="monotite_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="monotite" id="monotite_Off" autocomplete="off" checked="">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="monotite_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['minerals']['dualomite']['name']?></div>
+												<input type="radio" class="btn-check" name="dualomite" id="dualomite_On" autocomplete="off">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="dualomite_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="dualomite" id="dualomite_Off" autocomplete="off" checked="">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="dualomite_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['minerals']['trinite']['name']?></div>
+												<input type="radio" class="btn-check" name="trinite" id="trinite_On" autocomplete="off">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="trinite_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="trinite" id="trinite_Off" autocomplete="off" checked="">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="trinite_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['minerals']['PhotonChunk']['name']?></div>
+												<input type="radio" class="btn-check" name="PhotonChunk" id="PhotonChunk_On" autocomplete="off">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="PhotonChunk_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="PhotonChunk" id="PhotonChunk_Off" autocomplete="off" checked="">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="PhotonChunk_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['minerals']['PhotonQuartz']['name']?></div>
+												<input type="radio" class="btn-check" name="PhotonQuartz" id="PhotonQuartz_On" autocomplete="off">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="PhotonQuartz_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="PhotonQuartz" id="PhotonQuartz_Off" autocomplete="off" checked="">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="PhotonQuartz_Off"><i class="fas fa-times"></i></label>
 										</div>
 									</div>
 								</div>

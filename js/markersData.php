@@ -411,3 +411,125 @@ include_once "../lang_packs/" . $lang . ".php";
 		{coordinates:[2573,2922]}
 	];
 	let sohHerbToggle = [];
+
+// Minerals
+// Monotite
+	let monotite = [
+		{coordinates:[5415,3127]},
+		{coordinates:[5317,3231]},
+		{coordinates:[5163,3287]},
+		{coordinates:[5065,3311]},
+		{coordinates:[4934,3311]},
+		{coordinates:[4880,3343]},
+		{coordinates:[4818,3774]},
+		{coordinates:[4760,3710]},
+		{coordinates:[4634,4186]},
+		{coordinates:[4514,4454]},
+		{coordinates:[4514,4385]},
+		{coordinates:[4864,5358]},
+		{coordinates:[4064,5566]},
+		{coordinates:[3651,1896]},
+		{coordinates:[3425,2377]},
+		{coordinates:[3315,2674]},
+		{coordinates:[3267,2251]},
+		{coordinates:[3236,2176]},
+		{coordinates:[3197,2243]},
+		{coordinates:[3156,2011]},
+		{coordinates:[3091,2345]},
+		{coordinates:[2805,2423]},
+		{coordinates:[2830,2170]},
+		{coordinates:[2763,2276]},
+		{coordinates:[2733,2234]},
+		{coordinates:[2674,2321]},
+		{coordinates:[2638,2289]}
+	];
+	let monotiteToggle = [];
+
+// Dualomite
+	let dualomite = [
+		{coordinates:[2413,3176]},
+		{coordinates:[2285,3294]},
+		{coordinates:[950,2967]}
+	];
+	let dualomiteToggle = [];
+		
+// Trinite
+	let trinite = [
+		{coordinates:[6485,1682]},
+		{coordinates:[6348,1619]},
+		{coordinates:[5638,2344]},
+		{coordinates:[5512,2216]},
+		{coordinates:[5568,1965]},
+		{coordinates:[5486,1915]},
+		{coordinates:[5330,1752]},
+		{coordinates:[5304,1609]},
+		{coordinates:[5272,1646]},
+		{coordinates:[4385,1449]}
+	];
+	let triniteToggle = [];
+
+
+// Photon Chunk
+	let PhotonChunk = [
+		{coordinates:[2606,2553]},
+		{coordinates:[2306,3002]},
+		{coordinates:[2299,3024]},
+		{coordinates:[2280,3087]},
+		{coordinates:[2273,3113]},
+		{coordinates:[2257,3145]},
+		{coordinates:[2233,3233]},
+		{coordinates:[2167,3327]},
+		{coordinates:[2340,3943]},
+		{coordinates:[1986,3360]},
+		{coordinates:[1581,3212]},
+		{coordinates:[1558,3073]},
+		{coordinates:[1396,2960]},
+		{coordinates:[1313,2961]},
+		{coordinates:[1250,2975]},
+		{coordinates:[1188,3025]},
+		{coordinates:[1188,3087]},
+		{coordinates:[1134,5549]},
+		{coordinates:[4712,4071]}
+	];
+	let PhotonChunkToggle = [];
+
+
+// Photon Quartz
+	let PhotonQuartz = [
+		{coordinates:[6552,1728]},
+		{coordinates:[6511,1635]},
+		{coordinates:[6410,1635]},
+		{coordinates:[6439,1588]},
+		{coordinates:[6360,1555]},
+		{coordinates:[6343,1466]},
+		{coordinates:[6240,1347]},
+		{coordinates:[6113,1283]},
+		{coordinates:[6479,2027]},
+		{coordinates:[6264,2265]},
+		{coordinates:[5519,1403]},
+		{coordinates:[5256,1683]},
+		{coordinates:[5241,1740]},
+		{coordinates:[5704,2433]},
+		{coordinates:[5631,2433]},
+		{coordinates:[5722,2211]},
+		{coordinates:[5741,2128]},
+		{coordinates:[5640,2028]},
+		{coordinates:[5589,2073]},
+		{coordinates:[5542,2019]},
+		{coordinates:[5525,1949]},
+		{coordinates:[5383,1995]},
+		{coordinates:[5447,2603]},
+		{coordinates:[5496,2785]},
+		{coordinates:[5458,2873]},
+		{coordinates:[5192,2962]},
+		{coordinates:[5120,3027]},
+		{coordinates:[4206,2859]},
+		{coordinates:[4100,2870]},
+		{coordinates:[4697,4718]},
+		{coordinates:[4853,5039]},
+		{coordinates:[4962,5366]},
+		{coordinates:[3874,4638]},
+		{coordinates:[2986,2258]},
+		{coordinates:[2627,2233]}
+	];
+	let PhotonQuartzToggle = [];

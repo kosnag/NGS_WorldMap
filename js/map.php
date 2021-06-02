@@ -63,7 +63,7 @@ $(document).ready(function(){
 					centralTowerToggle.push(L.marker(centralTower[i]["coordinates"],{icon:iconCentTower}).bindPopup(centralTower[i]["popup"]).addTo(map));
 				}
 			}
-			$("#Cocoon_On").click(function(){
+			$("#centralTower_On").click(function(){
 				if (centralTowerToggle.length == 0) {
 					for (let i = 0; i < centralTower.length; i++) {
 						centralTowerToggle.push(L.marker(centralTower[i]["coordinates"],{icon:iconCocoon}).bindPopup(centralTower[i]["popup"]));
@@ -73,7 +73,7 @@ $(document).ready(function(){
 					centralTowerToggle[i].addTo(map);
 				}
 			});
-			$("#Cocoon_Off").click(function(){
+			$("#centralTower_Off").click(function(){
 				for (let i = 0; i < centralTowerToggle.length; i++) {
 					map.removeLayer(centralTowerToggle[i]);
 				}
@@ -261,7 +261,7 @@ $(document).ready(function(){
 			$("#redBox_On").click(function(){
 				if (redBoxToggle.length == 0) {
 					for (let i = 0; i < redBox.length; i++) {
-						redBoxToggle.push(L.circleMarker(redBox[i]["coordinates"],{<?echo $roundMarker['boxes']['red'];?>}).bindTooltip("<?=$localization['boxes']['red']?>"));
+						redBoxToggle.push(L.circleMarker(redBox[i]["coordinates"],{<?echo $roundMarker['boxes']['red'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>"));
 					}
 				}
 				for (let i = 0; i < redBoxToggle.length; i++) {
@@ -278,7 +278,7 @@ $(document).ready(function(){
 			$("#whiteBox_On").click(function(){
 				if (whiteBoxToggle.length == 0) {
 					for (let i = 0; i < whiteBox.length; i++) {
-						whiteBoxToggle.push(L.circleMarker(whiteBox[i]["coordinates"],{<?echo $roundMarker['boxes']['white'];?>}).bindTooltip("<?=$localization['boxes']['white']?>"));
+						whiteBoxToggle.push(L.circleMarker(whiteBox[i]["coordinates"],{<?echo $roundMarker['boxes']['white'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>"));
 					}
 				}
 				for (let i = 0; i < whiteBoxToggle.length; i++) {
@@ -295,7 +295,7 @@ $(document).ready(function(){
 			$("#goldBox_On").click(function(){
 				if (goldBoxToggle.length == 0) {
 					for (let i = 0; i < goldBox.length; i++) {
-						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['boxes']['gold']?>"));
+						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['gold']['name']?>"));
 					}
 				}
 				for (let i = 0; i < goldBoxToggle.length; i++) {
@@ -314,7 +314,7 @@ $(document).ready(function(){
 			$("#sautePeach_On").click(function(){
 				if (sautePeachToggle.length == 0) {
 					for (let i = 0; i < sautePeach.length; i++) {
-						sautePeachToggle.push(L.marker(sautePeach[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['food']['sautePeach']?>"));;
+						sautePeachToggle.push(L.marker(sautePeach[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['UI']['sorting']['food']['sautePeach']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sautePeachToggle.length; i++) {
@@ -331,7 +331,7 @@ $(document).ready(function(){
 			$("#sauteBanana_On").click(function(){
 				if (sauteBananaToggle.length == 0) {
 					for (let i = 0; i < sauteBanana.length; i++) {
-						sauteBananaToggle.push(L.marker(sauteBanana[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['food']['sauteBanana']?>"));;
+						sauteBananaToggle.push(L.marker(sauteBanana[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['UI']['sorting']['food']['sauteBanana']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sauteBananaToggle.length; i++) {
@@ -348,7 +348,7 @@ $(document).ready(function(){
 			$("#sauteApple_On").click(function(){
 				if (sauteAppleToggle.length == 0) {
 					for (let i = 0; i < sauteApple.length; i++) {
-						sauteAppleToggle.push(L.marker(sauteApple[i]["coordinates"],{icon:iconSauteApple}).bindTooltip("<?=$localization['food']['sauteApple']?>"));;
+						sauteAppleToggle.push(L.marker(sauteApple[i]["coordinates"],{icon:iconSauteApple}).bindTooltip("<?=$localization['UI']['sorting']['food']['sauteApple']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sauteAppleToggle.length; i++) {
@@ -365,7 +365,7 @@ $(document).ready(function(){
 			$("#sautePear_On").click(function(){
 				if (sautePearToggle.length == 0) {
 					for (let i = 0; i < sautePear.length; i++) {
-						sautePearToggle.push(L.marker(sautePear[i]["coordinates"],{icon:iconSautePear}).bindTooltip("<?=$localization['food']['sautePear']?>"));;
+						sautePearToggle.push(L.marker(sautePear[i]["coordinates"],{icon:iconSautePear}).bindTooltip("<?=$localization['UI']['sorting']['food']['sautePear']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sautePearToggle.length; i++) {
@@ -382,7 +382,7 @@ $(document).ready(function(){
 			$("#sodheTurbanShell_On").click(function(){
 				if (sodheTurbanShellToggle.length == 0) {
 					for (let i = 0; i < sodheTurbanShell.length; i++) {
-						sodheTurbanShellToggle.push(L.marker(sodheTurbanShell[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['food']['sodheTurbanShell']?>"));;
+						sodheTurbanShellToggle.push(L.marker(sodheTurbanShell[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheTurbanShell']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sodheTurbanShellToggle.length; i++) {
@@ -399,7 +399,7 @@ $(document).ready(function(){
 			$("#sodheClam_On").click(function(){
 				if (sodheClamToggle.length == 0) {
 					for (let i = 0; i < sodheClam.length; i++) {
-						sodheClamToggle.push(L.marker(sodheClam[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['food']['sodheClam']?>"));;
+						sodheClamToggle.push(L.marker(sodheClam[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheClam']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sodheClamToggle.length; i++) {
@@ -416,7 +416,7 @@ $(document).ready(function(){
 			$("#sohTurnip_On").click(function(){
 				if (sohTurnipToggle.length == 0) {
 					for (let i = 0; i < sohTurnip.length; i++) {
-						sohTurnipToggle.push(L.marker(sohTurnip[i]["coordinates"],{icon:iconSohTurnip}).bindTooltip("<?=$localization['food']['sohTurnip']?>"));;
+						sohTurnipToggle.push(L.marker(sohTurnip[i]["coordinates"],{icon:iconSohTurnip}).bindTooltip("<?=$localization['UI']['sorting']['food']['sohTurnip']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sohTurnipToggle.length; i++) {
@@ -433,7 +433,7 @@ $(document).ready(function(){
 			$("#sohMushroom_On").click(function(){
 				if (sohMushroomToggle.length == 0) {
 					for (let i = 0; i < sohMushroom.length; i++) {
-						sohMushroomToggle.push(L.marker(sohMushroom[i]["coordinates"],{icon:iconSohMushroom}).bindTooltip("<?=$localization['food']['sohMushroom']?>"));;
+						sohMushroomToggle.push(L.marker(sohMushroom[i]["coordinates"],{icon:iconSohMushroom}).bindTooltip("<?=$localization['UI']['sorting']['food']['sohMushroom']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sohMushroomToggle.length; i++) {
@@ -450,7 +450,7 @@ $(document).ready(function(){
 			$("#sodheCrab_On").click(function(){
 				if (sodheCrabToggle.length == 0) {
 					for (let i = 0; i < sodheCrab.length; i++) {
-						sodheCrabToggle.push(L.marker(sodheCrab[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['food']['sodheCrab']?>"));;
+						sodheCrabToggle.push(L.marker(sodheCrab[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheCrab']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sodheCrabToggle.length; i++) {
@@ -467,7 +467,7 @@ $(document).ready(function(){
 			$("#sodheLobster_On").click(function(){
 				if (sodheLobsterToggle.length == 0) {
 					for (let i = 0; i < sodheLobster.length; i++) {
-						sodheLobsterToggle.push(L.marker(sodheLobster[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['food']['sodheLobster']?>"));;
+						sodheLobsterToggle.push(L.marker(sodheLobster[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheLobster']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sodheLobsterToggle.length; i++) {
@@ -484,7 +484,7 @@ $(document).ready(function(){
 			$("#sohHerb_On").click(function(){
 				if (sohHerbToggle.length == 0) {
 					for (let i = 0; i < sohHerb.length; i++) {
-						sohHerbToggle.push(L.marker(sohHerb[i]["coordinates"],{icon:iconSohHerb}).bindTooltip("<?=$localization['food']['sohHerb']?>"));;
+						sohHerbToggle.push(L.marker(sohHerb[i]["coordinates"],{icon:iconSohHerb}).bindTooltip("<?=$localization['UI']['sorting']['food']['sohHerb']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sohHerbToggle.length; i++) {
@@ -501,7 +501,7 @@ $(document).ready(function(){
 			$("#sohTomato_On").click(function(){
 				if (sohTomatoToggle.length == 0) {
 					for (let i = 0; i < sohTomato.length; i++) {
-						sohTomatoToggle.push(L.marker(sohTomato[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['food']['sohTomato']?>"));;
+						sohTomatoToggle.push(L.marker(sohTomato[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['UI']['sorting']['food']['sohTomato']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sohTomatoToggle.length; i++) {
@@ -514,6 +514,93 @@ $(document).ready(function(){
 				}
 			});
 		}*/
+	}
+	{ // MINERALS
+		{ // Monotite
+			$("#monotite_On").click(function(){
+				if (monotiteToggle.length == 0) {
+					for (let i = 0; i < monotite.length; i++) {
+						monotiteToggle.push(L.marker(monotite[i]["coordinates"],{icon:iconMonotite}).bindTooltip("<?=$localization['UI']['sorting']['minerals']['monotite']['name']?>"));;
+					}
+				}
+				for (let i = 0; i < monotiteToggle.length; i++) {
+					monotiteToggle[i].addTo(map);
+				}
+			});
+			$("#monotite_Off").click(function(){
+				for (let i = 0; i < monotiteToggle.length; i++) {
+					map.removeLayer(monotiteToggle[i]);
+				}
+			});
+		}
+		{ // Dualomite
+			$("#dualomite_On").click(function(){
+				if (dualomiteToggle.length == 0) {
+					for (let i = 0; i < dualomite.length; i++) {
+						dualomiteToggle.push(L.marker(dualomite[i]["coordinates"],{icon:iconDualomite}).bindTooltip("<?=$localization['UI']['sorting']['minerals']['dualomite']['name']?>"));;
+					}
+				}
+				for (let i = 0; i < dualomiteToggle.length; i++) {
+					dualomiteToggle[i].addTo(map);
+				}
+			});
+			$("#dualomite_Off").click(function(){
+				for (let i = 0; i < dualomiteToggle.length; i++) {
+					map.removeLayer(dualomiteToggle[i]);
+				}
+			});
+		}
+		{ // Trinite
+			$("#trinite_On").click(function(){
+				if (triniteToggle.length == 0) {
+					for (let i = 0; i < trinite.length; i++) {
+						triniteToggle.push(L.marker(trinite[i]["coordinates"],{icon:iconTrinite}).bindTooltip("<?=$localization['UI']['sorting']['minerals']['trinite']['name']?>"));;
+					}
+				}
+				for (let i = 0; i < triniteToggle.length; i++) {
+					triniteToggle[i].addTo(map);
+				}
+			});
+			$("#trinite_Off").click(function(){
+				for (let i = 0; i < triniteToggle.length; i++) {
+					map.removeLayer(triniteToggle[i]);
+				}
+			});
+		}
+		{ // Photon Chunk
+			$("#PhotonChunk_On").click(function(){
+				if (PhotonChunkToggle.length == 0) {
+					for (let i = 0; i < PhotonChunk.length; i++) {
+						PhotonChunkToggle.push(L.marker(PhotonChunk[i]["coordinates"],{icon:iconPhotonChunk}).bindTooltip("<?=$localization['UI']['sorting']['minerals']['PhotonChunk']['name']?>"));;
+					}
+				}
+				for (let i = 0; i < PhotonChunkToggle.length; i++) {
+					PhotonChunkToggle[i].addTo(map);
+				}
+			});
+			$("#PhotonChunk_Off").click(function(){
+				for (let i = 0; i < PhotonChunkToggle.length; i++) {
+					map.removeLayer(PhotonChunkToggle[i]);
+				}
+			});
+		}
+		{ // Photon Quartz
+			$("#PhotonQuartz_On").click(function(){
+				if (PhotonQuartzToggle.length == 0) {
+					for (let i = 0; i < PhotonQuartz.length; i++) {
+						PhotonQuartzToggle.push(L.marker(PhotonQuartz[i]["coordinates"],{icon:iconPhotonQuartz}).bindTooltip("<?=$localization['UI']['sorting']['minerals']['PhotonQuartz']['name']?>"));;
+					}
+				}
+				for (let i = 0; i < PhotonQuartzToggle.length; i++) {
+					PhotonQuartzToggle[i].addTo(map);
+				}
+			});
+			$("#PhotonQuartz_Off").click(function(){
+				for (let i = 0; i < PhotonQuartzToggle.length; i++) {
+					map.removeLayer(PhotonQuartzToggle[i]);
+				}
+			});
+		}
 	}
 });
 
