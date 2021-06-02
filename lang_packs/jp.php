@@ -20,15 +20,24 @@ $localization = array (
 				"RyukerDevices" => "リューカーデバイス",
 				"Towers" => "タワー",
 				"Cities" => "市",
-				"Huts" => "小屋",
+				"Huts" => "???",
 				"UrgentQuests" => "緊クエスト",
 				"Dungeons" => "ダンジョン",
 			),
 			"boxes" => array(
 				"header" => "コンテナ",
+				"redBox" => array (
 				"redBox" => "アイテムコンテナ[赤]",
+					"info" => "Popup",
+				),
+				"redBox" => array (
 				"whiteBox" => "アイテムコンテナ[白]",
+					"info" => "Popup",
+				),
+				"redBox" => array (
 				"goldBox" => "アイテムコンテナ[金]",
+					"info" => "Popup",
+				),
 			),
 			"food" => array(
 				"header" => "フード",
@@ -160,9 +169,9 @@ $localization = array (
 			"2" => "エアリオタウン",
 		),
 		"hut" => array(
-			"1" => "Hut ID-1",
-			"2" => "Hut ID-2",
-			"3" => "Hut ID-3",
+			"1" => "??? ID-1",
+			"2" => "??? ID-2",
+			"3" => "??? ID-3",
 		),
 		"urgent" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>緊急クエスト</b></p><p class='h5'><b>ペダス・ヴェラ討伐戦</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>プレイヤー数：</b></td><td><b>8</b></td></tr><tr><td><b>必要戦闘力：</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>説明：</b></p><ul style='list-style-type: none'><li>ここは、アークス各人の戦闘能力を試すトレイニアである。可能な限りエネミーとの戦闘を避け、戦闘技術を駆使して、最深部で待ちうけるチアキュリオを撃破せよ。</li></ul><p class='mb-0'><b>クリア条件：</b></p><ul style='list-style-type: none'><li>ペダス・ヴェラを討伐せよ！</li></ul></p><p class='mb-0'><b>初回クリア報酬：</b> <ul style='list-style-type: none'> <li>C/Guard I</li></ul></p>",
@@ -170,25 +179,6 @@ $localization = array (
 		"dungeon" => array(
 			"1" => "Dungeon ID-1",
 		),
-	),
-	"boxes" => array(
-		"red" => "アイテムコンテナ[赤]",
-		"white" => "アイテムコンテナ[白]",
-		"gold" => "アイテムコンテナ[金]",
-	),
-	"food" => array(
-		"sautePeach" => "ソーテピッチ",
-		"sauteBanana" => "ソーテバナン",
-		"sauteApple" => "ソーテアッポウ",
-		"sautePear" => "ソーテナッシィ",
-		"sodheTurbanShell" => "ソッドサザイエ",
-		"sodheClam" => "ソッドアザーリ",
-		"sohTurnip" => "ソウカブラナ",
-		"sohMushroom" => "ソウマシュル",
-		"sodheCrab" => "ソッドクラーブ",
-		"sodheLobster" => "ソッドローブス",
-		"sohHerb" => "ソウハーヴ",
-		"sohTomato" => "ソウトマーテ",
 	),
 	"other" => array(
 		"alphareactor" => "アルファリアクター",

@@ -20,15 +20,24 @@ $localization = array (
 				"RyukerDevices" => "류커 디바이스",
 				"Towers" => "타워",
 				"Cities" => "도시",
-				"Huts" => "오두막",
+				"Huts" => "???",
 				"UrgentQuests" => "긴급퀘스트",
 				"Dungeons" => "던전",
 			),
 			"boxes" => array(
 				"header" => "컨테이너",
+				"redBox" => array (
 				"redBox" => "아이템 컨테이너 [적]",
+					"info" => "Popup",
+				),
+				"whiteBox" => array (
 				"whiteBox" => "아이템 컨테이너 [백]",
+					"info" => "Popup",
+				),
+				"whiteBox" => array (
 				"goldBox" => "아이템 컨테이너 [금]",
+					"info" => "Popup",
+				),
 			),
 			"food" => array(
 				"header" => "Food",
@@ -160,9 +169,9 @@ $localization = array (
 			"2" => "Aelio Town",
 		),
 		"hut" => array(
-			"1" => "Hut ID-1",
-			"2" => "Hut ID-2",
-			"3" => "Hut ID-3",
+			"1" => "??? ID-1",
+			"2" => "??? ID-2",
+			"3" => "??? ID-3",
 		),
 		"urgent" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Urgent Quest</b></p><p class='h5'><b>Pettas Vera Suppression Ops</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat the Pettas Vera!</li></ul></p><p class='mb-0'><b>1st Clear Reward:</b> <ul style='list-style-type: none'> <li>C/Guard I</li></ul></p>",
@@ -170,25 +179,6 @@ $localization = array (
 		"dungeon" => array(
 			"1" => "Dungeon ID-1",
 		),
-	),
-	"boxes" => array(
-		"red" => "아이템 컨테이너 [적]",
-		"white" => "아이템 컨테이너 [백]",
-		"gold" => "아이템 컨테이너 [금]",
-	),
-	"food" => array(
-		"sautePeach" => "소테 핏치",
-		"sauteBanana" => "소테 바난",
-		"sauteApple" => "소테 앗포우",
-		"sautePear" => "소테 낫시",
-		"sodheTurbanShell" => "솟도 사자에",
-		"sodheClam" => "솟도 아자리",
-		"sohTurnip" => "소우 카브라나",
-		"sohMushroom" => "소우 마슈루",
-		"sodheCrab" => "솟도 크라브",
-		"sodheLobster" => "솟도 로브스",
-		"sohHerb" => "소우 허브",
-		"sohTomato" => "소우 토마테",
 	),
 	"other" => array(
 		"alphareactor" => "알파 리액터",
