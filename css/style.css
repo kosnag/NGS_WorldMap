@@ -11,19 +11,6 @@
 	}
 	
 }
-@media (min-width:481px)  {
-	.adaptive-sorting {
-		display: block;
-		height: 100%;
-	}
-	
-}
-@media (min-width:641px)  {
-	.adaptive-sorting {
-		display: block;
-		height: 100%;
-	}
-}
 @media (min-width:961px)  {
 	.adaptive-sorting {
 		display: block;
@@ -40,18 +27,48 @@
 	}
 }
 
-@media (min-width:1320px) {
-	.adaptive-sorting {
-		display: block;
-		overflow-y: scroll;
-		height: 684px;
-	}
-}
-
 .adaptive-sorting::-webkit-scrollbar {
 	width: 0.25em;
 	background-color: rgba(0,123,255,0.50);
 }
 .adaptive-sorting::-webkit-scrollbar-thumb {
 	background-color: rgba(0,123,255,1);
+}
+
+.custom-card-body {
+	flex: 1 1 auto;
+	padding: 1rem 1rem;
+	background-color: rgba(0,0,0,0.0);
+	}
+.custom-btn-outline-primary {
+	color: #0d6efd;
+	background-color: rgb(13,110,253,0.20);
+	border-color: #0d6efd
+	}
+.custom-btn-outline-primary:hover {
+	color: #fff;
+	background-color: rgb(13,110,253,0.40);
+	border-color: #0d6efd
+	}
+
+body.select {
+	background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('../images/background_blur.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:top;
+}
+
+body.map {
+	background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('../images/background.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:top;
+}
+
+#map {
+	height:650px;
+	width:auto;
+	background-color:rgba(30,59,90,1.00);
 }

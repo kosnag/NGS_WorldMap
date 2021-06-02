@@ -14,6 +14,7 @@ $localization = array (
 			"header" => "Sorting",
 			"mainobjects" => array(
 				"header" => "Main objects",
+				"CentTower" => "Central Tower",
 				"Cocoons" => "Cocoons",
 				"Mags" => "Mags",
 				"RyukerDevices" => "Ryuker Devices",
@@ -81,6 +82,7 @@ $localization = array (
 				),
 			),
 			"minerals" => array(
+				"header" => "Minerals",
 				"monotite" => array (
 					"name" => "Monotite",
 					"info" => "Popup",
@@ -113,9 +115,8 @@ $localization = array (
 					"info" => "Popup",
 				),
 				"bosses" => array(
-					"header" => "Bosses",
-					"boss1" => "Boss 1",
-					"boss2" => "Boss 2",
+					"name" => "Bosses",
+					"info" => "Popup",
 				),
 			),
 		),
@@ -192,6 +193,9 @@ $localization = array (
 	"other" => array(
 		"alphareactor" => "Aplha Reactor",
 		"datapod" => "Datapod",
+		"bosses" => array(
+			"boss1" => "name",
+		),
 	),
 	
 	// DO NOT TOUCH

@@ -34,7 +34,7 @@ $lang_flag_style = 'height:24px'
 			}
 		</script>
 	</head>
-	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('images/background.jpg');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
+	<body class="map">
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">		
 			<div class="container">
 				<a class="navbar-brand" href="#"><?=$localization['UI']['title']?></a>
@@ -78,7 +78,7 @@ $lang_flag_style = 'height:24px'
 			<div class="row">
 				<div class="col-md-9 col-sm-12">
 					<div class="card card-body">
-						<center><div style="height:650px;width:auto;background-color:rgba(30,59,90,1.00)" id="map"></div></center>
+						<center><div id="map"></div></center>
 					</div>
 				</div>
 				<div class="col-md-3 col-sm-12">
