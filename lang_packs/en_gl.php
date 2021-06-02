@@ -20,15 +20,24 @@ $localization = array (
 				"RyukerDevices" => "Ryuker Devices",
 				"Towers" => "Towers",
 				"Cities" => "Cities",
-				"Huts" => "Huts",
+				"Huts" => "???",
 				"UrgentQuests" => "Urgent Quests",
 				"Dungeons" => "Dungeons",
 			),
 			"boxes" => array(
 				"header" => "Containers",
-				"redBox" => "Item Container: Red",
-				"whiteBox" => "Item Container: White",
-				"goldBox" => "Item Container: Gold",
+				"redBox" => array (
+					"name" => "Item Container: Red",
+					"info" => "Popup",
+				),
+				"whiteBox" => array (
+					"name" => "Item Container: White",
+					"info" => "Popup",
+				),
+				"goldBox" => array (
+					"name" => "Item Container: Gold",
+					"info" => "Popup",
+				),
 			),
 			"food" => array(
 				"header" => "Food",
@@ -160,9 +169,9 @@ $localization = array (
 			"2" => "Aelio Town",
 		),
 		"hut" => array(
-			"1" => "Hut ID-1",
-			"2" => "Hut ID-2",
-			"3" => "Hut ID-3",
+			"1" => "??? ID-1",
+			"2" => "??? ID-2",
+			"3" => "??? ID-3",
 		),
 		"urgent" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Urgent Quest</b></p><p class='h5'><b>Pettas Vera Suppression Ops</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat the Pettas Vera!</li></ul></p><p class='mb-0'><b>1st Clear Reward:</b> <ul style='list-style-type: none'> <li>C/Guard I</li></ul></p>",
@@ -170,25 +179,6 @@ $localization = array (
 		"dungeon" => array(
 			"1" => "Dungeon ID-1",
 		),
-	),
-	"boxes" => array(
-		"red" => "Item Container: Red",
-		"white" => "Item Container: White",
-		"gold" => "Item Container: Gold",
-	),
-	"food" => array(
-		"sautePeach" => "Saute Peach",
-		"sauteBanana" => "Saute Banana",
-		"sauteApple" => "Saute Apple",
-		"sautePear" => "Saute Pear",
-		"sodheTurbanShell" => "Sodhe Turban Shell",
-		"sodheClam" => "Sodhe Clam",
-		"sohTurnip" => "Soh Turnip",
-		"sohMushroom" => "Soh Mushroom",
-		"sodheCrab" => "Sodhe Crab",
-		"sodheLobster" => "Sodhe Lobster",
-		"sohHerb" => "Soh Herb",
-		"sohTomato" => "Soh Tomato",
 	),
 	"other" => array(
 		"alphareactor" => "Aplha Reactor",
