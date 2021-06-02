@@ -12,17 +12,13 @@ $lang_flag_sel = 'height:32'
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/fontawesome.min.js"></script>
+		<link href="css/style.css" rel="stylesheet">
 		<link href="css/bootstrap.min.css"rel="stylesheet"/>
 		<link href="fontawesome.min.css"rel="stylesheet"/>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
 		<script>
 		$(document).ready(function(){
-			$("#en1").hover(function(){
-				$( "title" ).text("PSO2NGS Interactive Map");
-				$( "#title" ).text("PSO2NGS Interactive Map");
-				$( "#lang" ).text("Choose a language");
-			}, function(){});
-			$("#en2").hover(function(){
+			$("#en").hover(function(){
 				$( "title" ).text("PSO2NGS Interactive Map");
 				$( "#title" ).text("PSO2NGS Interactive Map");
 				$( "#lang" ).text("Choose a language");
@@ -45,12 +41,7 @@ $lang_flag_sel = 'height:32'
 		});
 		</script>
 	</head>
-	<style>
-		.custom-card-body {flex: 1 1 auto;padding: 1rem 1rem;background-color: rgba(0,0,0,0.0);}
-		.custom-btn-outline-primary {color: #0d6efd;background-color: rgb(13,110,253,0.20);border-color: #0d6efd}
-		.custom-btn-outline-primary:hover {color: #fff;background-color: rgb(13,110,253,0.40);border-color: #0d6efd}
-	</style>
-	<body style="background:linear-gradient(rgba(0,0,0,0.20),rgba(0,0,0,0.20)),url('images/background_blur.jpg');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position:top;">
+	<body class="select">
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">		
 			<div class="container">
 				<a id="title" class="navbar-brand" href="https://ngs-map.kosnag.ru/">PSO2NGS Interactive Map</a>
@@ -78,14 +69,14 @@ $lang_flag_sel = 'height:32'
 			<br>
 				<div class="row">
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en1" href="/?lang=en_gl">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" href="/?lang=en_gl">
 							<span>
 								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Global
 							</span>
 						</a>
 					</div>
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en2" href="/?lang=en_al">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" href="/?lang=en_al">
 							<span>
 								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Arks-Layer
 							</span>

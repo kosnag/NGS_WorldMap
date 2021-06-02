@@ -41,7 +41,7 @@ let Mat_Icons = L.Icon.extend({options:{iconSize:[24,24],iconAnchor:[12,12],popu
 	iconAlphaReactor = new Mat_Icons({iconUrl: 'images/marks/materials2/alphaReactor.png'}),
 	iconMonotite = new Mat_Icons({iconUrl: 'images/marks/materials2/monotite.png'}),
 	iconDualomite = new Mat_Icons({iconUrl: 'images/marks/materials2/dualomite.png'}),
-	iconTrinite = new Mat_Icons({iconUrl: 'images/marks/materials2/trinite.png'},
+	iconTrinite = new Mat_Icons({iconUrl: 'images/marks/materials2/trinite.png'}),
 	iconPhotonChunk = new Mat_Icons({iconUrl: 'images/marks/materials2/photonChunk.png'}),
 	iconPhotonQuartz = new Mat_Icons({iconUrl: 'images/marks/materials2/photonQuartz.png'}),
 	iconSauteApple = new Mat_Icons({iconUrl: 'images/marks/materials2/sauteApple.png'}),
@@ -49,12 +49,36 @@ let Mat_Icons = L.Icon.extend({options:{iconSize:[24,24],iconAnchor:[12,12],popu
 	iconSautePear = new Mat_Icons({iconUrl: 'images/marks/materials2/sautePear.png'}),
 	iconSohHerb = new Mat_Icons({iconUrl: 'images/marks/materials2/sohHerb.png'}),
 	iconSohMushroom = new Mat_Icons({iconUrl: 'images/marks/materials2/sohMushroom.png'}),
-	iconSohTurnip = new Mat_Icons({iconUrl: 'images/marks/materials2/sohTurnip.png'}));
+	iconSohTurnip = new Mat_Icons({iconUrl: 'images/marks/materials2/sohTurnip.png'}),
+	iconSodheClam = new Mat_Icons({iconUrl: 'images/marks/materials2/sodheClam.png'}),
+	iconSodheLobster = new Mat_Icons({iconUrl: 'images/marks/materials2/sodheLobster.png'});
 
 $(document).ready(function(){
     console.log();
 	
 	{ // Main Objects
+		{ // Central Tower
+			if (centralTowerToggle.length == 0) {
+				for (let i = 0; i < centralTower.length; i++) {
+					centralTowerToggle.push(L.marker(centralTower[i]["coordinates"],{icon:iconCentTower}).bindPopup(centralTower[i]["popup"]).addTo(map));
+				}
+			}
+			$("#Cocoon_On").click(function(){
+				if (centralTowerToggle.length == 0) {
+					for (let i = 0; i < centralTower.length; i++) {
+						centralTowerToggle.push(L.marker(centralTower[i]["coordinates"],{icon:iconCocoon}).bindPopup(centralTower[i]["popup"]));
+					}
+				}
+				for (let i = 0; i < centralTowerToggle.length; i++) {
+					centralTowerToggle[i].addTo(map);
+				}
+			});
+			$("#Cocoon_Off").click(function(){
+				for (let i = 0; i < centralTowerToggle.length; i++) {
+					map.removeLayer(centralTowerToggle[i]);
+				}
+			});
+		}
 		{ // Cocoon
 			if (CocoonToggle.length == 0) {
 				for (let i = 0; i < Cocoon.length; i++) {
@@ -303,6 +327,193 @@ $(document).ready(function(){
 				}
 			});
 		}
+		/*{ // Saute Banana
+			$("#sauteBanana_On").click(function(){
+				if (sauteBananaToggle.length == 0) {
+					for (let i = 0; i < sauteBanana.length; i++) {
+						sauteBananaToggle.push(L.marker(sauteBanana[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['food']['sauteBanana']?>"));;
+					}
+				}
+				for (let i = 0; i < sauteBananaToggle.length; i++) {
+					sauteBananaToggle[i].addTo(map);
+				}
+			});
+			$("#sauteBanana_Off").click(function(){
+				for (let i = 0; i < sauteBananaToggle.length; i++) {
+					map.removeLayer(sauteBananaToggle[i]);
+				}
+			});
+		}*/
+		{ // Saute Apple
+			$("#sauteApple_On").click(function(){
+				if (sauteAppleToggle.length == 0) {
+					for (let i = 0; i < sauteApple.length; i++) {
+						sauteAppleToggle.push(L.marker(sauteApple[i]["coordinates"],{icon:iconSauteApple}).bindTooltip("<?=$localization['food']['sauteApple']?>"));;
+					}
+				}
+				for (let i = 0; i < sauteAppleToggle.length; i++) {
+					sauteAppleToggle[i].addTo(map);
+				}
+			});
+			$("#sauteApple_Off").click(function(){
+				for (let i = 0; i < sauteAppleToggle.length; i++) {
+					map.removeLayer(sauteAppleToggle[i]);
+				}
+			});
+		}
+		{ // Saute Pear
+			$("#sautePear_On").click(function(){
+				if (sautePearToggle.length == 0) {
+					for (let i = 0; i < sautePear.length; i++) {
+						sautePearToggle.push(L.marker(sautePear[i]["coordinates"],{icon:iconSautePear}).bindTooltip("<?=$localization['food']['sautePear']?>"));;
+					}
+				}
+				for (let i = 0; i < sautePearToggle.length; i++) {
+					sautePearToggle[i].addTo(map);
+				}
+			});
+			$("#sautePear_Off").click(function(){
+				for (let i = 0; i < sautePearToggle.length; i++) {
+					map.removeLayer(sautePearToggle[i]);
+				}
+			});
+		}
+		/*{ // Saute Turban Shell
+			$("#sodheTurbanShell_On").click(function(){
+				if (sodheTurbanShellToggle.length == 0) {
+					for (let i = 0; i < sodheTurbanShell.length; i++) {
+						sodheTurbanShellToggle.push(L.marker(sodheTurbanShell[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['food']['sodheTurbanShell']?>"));;
+					}
+				}
+				for (let i = 0; i < sodheTurbanShellToggle.length; i++) {
+					sodheTurbanShellToggle[i].addTo(map);
+				}
+			});
+			$("#sodheTurbanShell_Off").click(function(){
+				for (let i = 0; i < sodheTurbanShellToggle.length; i++) {
+					map.removeLayer(sodheTurbanShellToggle[i]);
+				}
+			});
+		}*/
+		{ // Saute Clam
+			$("#sodheClam_On").click(function(){
+				if (sodheClamToggle.length == 0) {
+					for (let i = 0; i < sodheClam.length; i++) {
+						sodheClamToggle.push(L.marker(sodheClam[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['food']['sodheClam']?>"));;
+					}
+				}
+				for (let i = 0; i < sodheClamToggle.length; i++) {
+					sodheClamToggle[i].addTo(map);
+				}
+			});
+			$("#sodheClam_Off").click(function(){
+				for (let i = 0; i < sodheClamToggle.length; i++) {
+					map.removeLayer(sodheClamToggle[i]);
+				}
+			});
+		}
+		{ // Soh Turnip
+			$("#sohTurnip_On").click(function(){
+				if (sohTurnipToggle.length == 0) {
+					for (let i = 0; i < sohTurnip.length; i++) {
+						sohTurnipToggle.push(L.marker(sohTurnip[i]["coordinates"],{icon:iconSohTurnip}).bindTooltip("<?=$localization['food']['sohTurnip']?>"));;
+					}
+				}
+				for (let i = 0; i < sohTurnipToggle.length; i++) {
+					sohTurnipToggle[i].addTo(map);
+				}
+			});
+			$("#sohTurnip_Off").click(function(){
+				for (let i = 0; i < sohTurnipToggle.length; i++) {
+					map.removeLayer(sohTurnipToggle[i]);
+				}
+			});
+		}
+		{ // Soh Mushroom
+			$("#sohMushroom_On").click(function(){
+				if (sohMushroomToggle.length == 0) {
+					for (let i = 0; i < sohMushroom.length; i++) {
+						sohMushroomToggle.push(L.marker(sohMushroom[i]["coordinates"],{icon:iconSohMushroom}).bindTooltip("<?=$localization['food']['sohMushroom']?>"));;
+					}
+				}
+				for (let i = 0; i < sohMushroomToggle.length; i++) {
+					sohMushroomToggle[i].addTo(map);
+				}
+			});
+			$("#sohMushroom_Off").click(function(){
+				for (let i = 0; i < sohMushroomToggle.length; i++) {
+					map.removeLayer(sohMushroomToggle[i]);
+				}
+			});
+		}
+		{ // Sodhe Crab
+			$("#sodheCrab_On").click(function(){
+				if (sodheCrabToggle.length == 0) {
+					for (let i = 0; i < sodheCrab.length; i++) {
+						sodheCrabToggle.push(L.marker(sodheCrab[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['food']['sodheCrab']?>"));;
+					}
+				}
+				for (let i = 0; i < sodheCrabToggle.length; i++) {
+					sodheCrabToggle[i].addTo(map);
+				}
+			});
+			$("#sodheCrab_Off").click(function(){
+				for (let i = 0; i < sodheCrabToggle.length; i++) {
+					map.removeLayer(sodheCrabToggle[i]);
+				}
+			});
+		}
+		{ // Sodhe Lobster
+			$("#sodheLobster_On").click(function(){
+				if (sodheLobsterToggle.length == 0) {
+					for (let i = 0; i < sodheLobster.length; i++) {
+						sodheLobsterToggle.push(L.marker(sodheLobster[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['food']['sodheLobster']?>"));;
+					}
+				}
+				for (let i = 0; i < sodheLobsterToggle.length; i++) {
+					sodheLobsterToggle[i].addTo(map);
+				}
+			});
+			$("#sodheLobster_Off").click(function(){
+				for (let i = 0; i < sodheLobsterToggle.length; i++) {
+					map.removeLayer(sodheLobsterToggle[i]);
+				}
+			});
+		}
+		{ // Soh Herb
+			$("#sohHerb_On").click(function(){
+				if (sohHerbToggle.length == 0) {
+					for (let i = 0; i < sohHerb.length; i++) {
+						sohHerbToggle.push(L.marker(sohHerb[i]["coordinates"],{icon:iconSohHerb}).bindTooltip("<?=$localization['food']['sohHerb']?>"));;
+					}
+				}
+				for (let i = 0; i < sohHerbToggle.length; i++) {
+					sohHerbToggle[i].addTo(map);
+				}
+			});
+			$("#sohHerb_Off").click(function(){
+				for (let i = 0; i < sohHerbToggle.length; i++) {
+					map.removeLayer(sohHerbToggle[i]);
+				}
+			});
+		}
+		/*{ // Soh Tomato
+			$("#sohTomato_On").click(function(){
+				if (sohTomatoToggle.length == 0) {
+					for (let i = 0; i < sohTomato.length; i++) {
+						sohTomatoToggle.push(L.marker(sohTomato[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['food']['sohTomato']?>"));;
+					}
+				}
+				for (let i = 0; i < sohTomatoToggle.length; i++) {
+					sohTomatoToggle[i].addTo(map);
+				}
+			});
+			$("#sohTomato_Off").click(function(){
+				for (let i = 0; i < sohTomatoToggle.length; i++) {
+					map.removeLayer(sohTomatoToggle[i]);
+				}
+			});
+		}*/
 	}
 });
 
