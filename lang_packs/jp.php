@@ -27,15 +27,15 @@ $localization = array (
 			"boxes" => array(
 				"header" => "コンテナ",
 				"redBox" => array (
-				"redBox" => "アイテムコンテナ[赤]",
+					"name" => "アイテムコンテナ[赤]",
 					"info" => "Popup",
 				),
-				"redBox" => array (
-				"whiteBox" => "アイテムコンテナ[白]",
+				"whiteBox" => array (
+					"name" => "アイテムコンテナ[白]",
 					"info" => "Popup",
 				),
-				"redBox" => array (
-				"goldBox" => "アイテムコンテナ[金]",
+				"goldBox" => array (
+					"name" => "アイテムコンテナ[金]",
 					"info" => "Popup",
 				),
 			),
