@@ -20,7 +20,7 @@ $localization = array (
 				"RyukerDevices" => "Ryuker Devices",
 				"Towers" => "Towers",
 				"Cities" => "Cities",
-				"Huts" => "???",
+				"Huts" => "Huts",
 				"UrgentQuests" => "Urgent Quests",
 				"Dungeons" => "Dungeons",
 			),
