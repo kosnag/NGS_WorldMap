@@ -13,6 +13,7 @@ $roundMarker = array (
 );
 ?>
 //MAP
+/*
 let map_url = "images/map.jpg" 
 let map = L.map("map",{
 	crs: L.CRS.Simple,
@@ -21,6 +22,21 @@ let map = L.map("map",{
 let map_bounds = [[0,0],[12288,12288]];
 let fit_map_bounds = [[0,0],[7352,7352]];
 let map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(fit_map_bounds);
+*/
+
+var bounds = [[0, 0], [12288, 12288]];
+var map = L.map("map", {
+	crs: L.CRS.Simple,
+	minZoom: 0,
+	maxZoom: 6
+	}).setView([0, 0], 4);
+
+	L.tileLayer('map/{z}-{x}-{y}.jpg',{
+		tms: false
+	}).addTo(map);
+var fitbounds = map.fitBounds(bounds);
+    var zoom = map.getBoundsZoom(bounds);
+
 
 
 // ICONS
@@ -261,7 +277,7 @@ $(document).ready(function(){
 			$("#redBox_On").click(function(){
 				if (redBoxToggle.length == 0) {
 					for (let i = 0; i < redBox.length; i++) {
-						redBoxToggle.push(L.circleMarker(redBox[i]["coordinates"],{<?echo $roundMarker['boxes']['red'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>"));
+						redBoxToggle.push(L.circleMarker(redBox[i]["coordinates"],{<?echo $roundMarker['boxes']['red'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['redBox']['name']?>"));
 					}
 				}
 				for (let i = 0; i < redBoxToggle.length; i++) {
@@ -278,7 +294,7 @@ $(document).ready(function(){
 			$("#whiteBox_On").click(function(){
 				if (whiteBoxToggle.length == 0) {
 					for (let i = 0; i < whiteBox.length; i++) {
-						whiteBoxToggle.push(L.circleMarker(whiteBox[i]["coordinates"],{<?echo $roundMarker['boxes']['white'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>"));
+						whiteBoxToggle.push(L.circleMarker(whiteBox[i]["coordinates"],{<?echo $roundMarker['boxes']['white'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['whiteBox']['name']?>"));
 					}
 				}
 				for (let i = 0; i < whiteBoxToggle.length; i++) {
@@ -295,7 +311,7 @@ $(document).ready(function(){
 			$("#goldBox_On").click(function(){
 				if (goldBoxToggle.length == 0) {
 					for (let i = 0; i < goldBox.length; i++) {
-						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['gold']['name']?>"));
+						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['redBox']['name']?>"));
 					}
 				}
 				for (let i = 0; i < goldBoxToggle.length; i++) {
@@ -603,6 +619,3 @@ $(document).ready(function(){
 		}
 	}
 });
-
-
-
