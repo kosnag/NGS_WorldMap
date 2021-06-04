@@ -55,11 +55,11 @@ $lang_flag_style = 'height:24px'
 						<li class="nav-item dropdown">
 							<a class="nav-link text-white dropdown-toggle" href="#" id="langList" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-language"></i> <?=$localization['UI']['languages']['switcher']?></a>
 							<ul class="dropdown-menu" aria-labelledby="langList">
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['en_gl']?>" href="" onclick="change_lang('en_gl')"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_gl']?></a></li>
-								<li><a class="dropdown-item disabled<?=$localization['misc']['lang']['en_al']?>" href="" onclick="change_lang('en_al')"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_al']?></a></li>
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['jp']?>" href="" onclick="change_lang('jp')"><img src="images/flags/jp.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['jp']?></a></li>
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['ru']?>" href="" onclick="change_lang('ru')"><img src="images/flags/ru.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['ru']?></a></li>
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['kr']?>" href="" onclick="change_lang('kr')"><img src="images/flags/kr.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['kr']?></a></li>
+								<li><a class="dropdown-item<?=$localization['misc']['lang']['en_gl']?>" href="?lang=en_gl"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_gl']?></a></li>
+								<li><a class="dropdown-item disabled<?=$localization['misc']['lang']['en_al']?>" href="?lang=en_al"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_al']?></a></li>
+								<li><a class="dropdown-item<?=$localization['misc']['lang']['jp']?>" href="?lang=jp"><img src="images/flags/jp.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['jp']?></a></li>
+								<li><a class="dropdown-item<?=$localization['misc']['lang']['ru']?>" href="?lang=ru"><img src="images/flags/ru.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['ru']?></a></li>
+								<li><a class="dropdown-item<?=$localization['misc']['lang']['kr']?>" href="?lang=kr"><img src="images/flags/kr.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['kr']?></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -91,6 +91,13 @@ $lang_flag_style = 'height:24px'
 								</h2>
 								<div id="accordion1-2" class="collapse" aria-labelledby="accordion1-1" data-bs-parent="#accordion">
 									<div class="accordion-body justify-content-center">
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['CentTower']?></div>
+												<input type="radio" class="btn-check" name="centralTower" id="centralTower_On" autocomplete="off" checked="">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="centralTower_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="centralTower" id="centralTower_Off" autocomplete="off">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="centralTower_Off"><i class="fas fa-times"></i></label>
+										</div>
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Cocoons']?></div>
 												<input type="radio" class="btn-check" name="Cocoon" id="Cocoon_On" autocomplete="off" checked="">
@@ -195,7 +202,7 @@ $lang_flag_style = 'height:24px'
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sautePeach_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['food']['sauteBanana']['name']?></div>
+											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['food']['sauteBanana']['name']?>--></div>
 												<input type="radio" class="btn-check" name="sauteBanana" id="sauteBanana_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sauteBanana_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sauteBanana" id="sauteBanana_Off" autocomplete="off" checked="">
@@ -216,7 +223,7 @@ $lang_flag_style = 'height:24px'
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sautePear_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['food']['sodheTurbanShell']['name']?></div>
+											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['food']['sodheTurbanShell']['name']?>--></div>
 												<input type="radio" class="btn-check" name="sodheTurbanShell" id="sodheTurbanShell_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sodheTurbanShell_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sodheTurbanShell" id="sodheTurbanShell_Off" autocomplete="off" checked="">
@@ -265,7 +272,7 @@ $lang_flag_style = 'height:24px'
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sohHerb_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['food']['sohTomato']['name']?></div>
+											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['food']['sohTomato']['name']?>--></div>
 												<input type="radio" class="btn-check" name="sohTomato" id="sohTomato_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sohTomato_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sohTomato" id="sohTomato_Off" autocomplete="off" checked="">
