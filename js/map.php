@@ -22,22 +22,20 @@ let map = L.map("map",{
 let map_bounds = [[0,0],[12288,12288]];
 let fit_map_bounds = [[0,0],[7352,7352]];
 let map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(fit_map_bounds);
-*/
+*/	
 
-var bounds = [[0, 0], [12288, 12288]];
-var map = L.map("map", {
-	crs: L.CRS.Simple,
-	minZoom: 0,
-	maxZoom: 6
-	}).setView([0, 0], 4);
-
+//var bounds = [[0, 0], [12288, 12288]];
+var map = L.map("map", {crs: L.CRS.Simple}).setView([0, 0], 1);
+	//L.CRS.Wall = L.extend({}, L.CRS.Simple, {transformation: new L.Transformation(0,0, 12288,12288)});
 	L.tileLayer('map/{z}-{x}-{y}.jpg',{
-		tms: false
+		tms: false,
+		noWrap: true,
+		minZoom: 1,
+		maxZoom: 6
 	}).addTo(map);
-var fitbounds = map.fitBounds(bounds);
-    var zoom = map.getBoundsZoom(bounds);
-
-
+var	leftDown = L.latLng(0, 0),
+	rightUp = L.latLng(12288, 12288);
+var bounds = L.latLngBounds(leftDown, rightUp);
 
 // ICONS
 let Main_Icons = L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],popupAnchor:[0,-20]}});
@@ -311,7 +309,7 @@ $(document).ready(function(){
 			$("#goldBox_On").click(function(){
 				if (goldBoxToggle.length == 0) {
 					for (let i = 0; i < goldBox.length; i++) {
-						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['redBox']['name']?>"));
+						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>"));
 					}
 				}
 				for (let i = 0; i < goldBoxToggle.length; i++) {
