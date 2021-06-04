@@ -55,11 +55,11 @@ $lang_flag_style = 'height:24px'
 						<li class="nav-item dropdown">
 							<a class="nav-link text-white dropdown-toggle" href="#" id="langList" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-language"></i> <?=$localization['UI']['languages']['switcher']?></a>
 							<ul class="dropdown-menu" aria-labelledby="langList">
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['en_gl']?>" href="?lang=en_gl"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_gl']?></a></li>
-								<li><a class="dropdown-item disabled<?=$localization['misc']['lang']['en_al']?>" href="?lang=en_al"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_al']?></a></li>
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['jp']?>" href="?lang=jp"><img src="images/flags/jp.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['jp']?></a></li>
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['ru']?>" href="?lang=ru"><img src="images/flags/ru.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['ru']?></a></li>
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['kr']?>" href="?lang=kr"><img src="images/flags/kr.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['kr']?></a></li>
+								<li><a class="dropdown-item<?=$localization['misc']['lang']['en_gl']?>" href="/?lang=en_gl" onclick="change_lang('en_gl')"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_gl']?></a></li>
+								<li><a class="dropdown-item disabled<?=$localization['misc']['lang']['en_al']?>" href="/?lang=en_al" onclick="change_lang('en_al')"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_al']?></a></li>
+								<li><a class="dropdown-item<?=$localization['misc']['lang']['jp']?>" href="/?lang=jp" onclick="change_lang('jp')"><img src="images/flags/jp.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['jp']?></a></li>
+								<li><a class="dropdown-item<?=$localization['misc']['lang']['ru']?>" href="/?lang=ru" onclick="change_lang('ru')"><img src="images/flags/ru.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['ru']?></a></li>
+								<li><a class="dropdown-item<?=$localization['misc']['lang']['kr']?>" href="/?lang=kr" onclick="change_lang('kr')"><img src="images/flags/kr.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['kr']?></a></li>
 							</ul>
 						</li>
 					</ul>
