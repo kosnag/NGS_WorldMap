@@ -13,30 +13,37 @@ $roundMarker = array (
 );
 ?>
 //MAP
-/*
-let map_url = "images/map.jpg" 
+
+let map_url = "images/map_nospoiler2.jpg" 
+//let map_url = "https://cdn.discordapp.com/attachments/837207740019113987/844553666177269795/SPOILER_ui_worldmap_020000_mediumzoom.webp" 
 let map = L.map("map",{
 	crs: L.CRS.Simple,
-	minZoom: -4
-	})
+	minZoom: -3,
+	noWrap: true
+	});
+	
 let map_bounds = [[0,0],[12288,12288]];
-let fit_map_bounds = [[0,0],[7352,7352]];
+let fit_map_bounds = [[0,0],[12288-4715,12288-4715]];
+
+//let map_bounds = [[0,0],[4715,4715]];
+//let fit_map_bounds = [[0,0],[4715,4715]];
+
 let map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(fit_map_bounds);
-*/	
 
 //var bounds = [[0, 0], [12288, 12288]];
-var map = L.map("map", {crs: L.CRS.Simple}).setView([0, 0], 1);
-	//L.CRS.Wall = L.extend({}, L.CRS.Simple, {transformation: new L.Transformation(0,0, 12288,12288)});
+/*
+var map = L.map("map", {crs: L.CRS.Simple}).setView([-112, 112], 2);
+	L.CRS.Wall = L.extend({}, L.CRS.Simple, {transformation: new L.Transformation(0,0, 12288,12288)});
 	L.tileLayer('map/{z}-{x}-{y}.jpg',{
-		tms: false,
+		tms: true,
 		noWrap: true,
 		minZoom: 1,
 		maxZoom: 6
 	}).addTo(map);
-var	leftDown = L.latLng(0, 0),
-	rightUp = L.latLng(12288, 12288);
+var	leftDown = L.latLng(-224, 0),
+	rightUp = L.latLng(0, 224);
 var bounds = L.latLngBounds(leftDown, rightUp);
-
+*/
 // ICONS
 let Main_Icons = L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],popupAnchor:[0,-20]}});
 	iconCentTower = new Main_Icons({iconUrl: 'images/marks/centTower.png'}),

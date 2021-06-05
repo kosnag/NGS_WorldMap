@@ -67,9 +67,9 @@ $lang_flag_style = 'height:24px'
 			</div>
 		</nav>
 		<div class="container alert alert-danger mt-3" role="alert">
-			<h4 class="alert-heading">WORK IN PROGRESS <span class="badge bg-danger">SPOILER ALERT</span></h4>
-			<p>This interactive map are currently in development. Also something maybe will be a spoiler for <b>Phantasy Star Online 2: New Genesis</b> because used data from datamining.</p>
-			<p>When map will be ready, all spoiler content will be hidden from map, don't worry.</p>
+			<h4 class="alert-heading">WORK IN PROGRESS <span class="badge bg-danger">STILL IN DEVELOPMENT</span></h4>
+			<p>This interactive map are currently in development. I'm preparing to college's exams because map aren't finished.</p>
+			<p>All spoiler content was hidden and I'll only make regions and location for Alpha Reactors. After the exams I'll finish the map!</p>
 			<hr>
 			<p class="mb-0">If you want to help me, please contact with me in <a href="https://twitter.com/kosnag" target="_blank">Twitter</a> or <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>">Discord (kosnag#1730)</a>. I will be very happy, if you help me! <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>">Take a hug by Matoi!</a></p>
 			<script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})</script>
