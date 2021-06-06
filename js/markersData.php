@@ -533,3 +533,14 @@ include_once "../lang_packs/" . $lang . ".php";
 		{coordinates:[2627,2233]}
 	];
 	let PhotonQuartzToggle = [];
+	
+// Alpha Reactors
+	let alphaReactor = [
+		{coordinates:[5815,1449]},
+		{coordinates:[5338,2104]},
+		{coordinates:[4809,3383]},
+		{coordinates:[3906,1961]},
+		{coordinates:[3339,2162]},
+		{coordinates:[326,5358]}
+	];
+	let alphaReactorToggle = [];

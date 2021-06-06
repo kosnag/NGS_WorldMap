@@ -32,7 +32,7 @@ let map_img = L.imageOverlay(map_url,map_bounds).addTo(map);map.fitBounds(fit_ma
 
 //var bounds = [[0, 0], [12288, 12288]];
 /*
-var map = L.map("map", {crs: L.CRS.Simple}).setView([-112, 112], 2);
+var map = L.map("map", {crs: L.CRS.Simple})
 	L.CRS.Wall = L.extend({}, L.CRS.Simple, {transformation: new L.Transformation(0,0, 12288,12288)});
 	L.tileLayer('map/{z}-{x}-{y}.jpg',{
 		tms: true,
@@ -58,21 +58,22 @@ let Main_Icons = L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],pop
 	iconFort = new Main_Icons({iconUrl: 'images/marks/fort.png'}),
 	iconTEST = new Main_Icons({iconUrl: 'https://cdn.discordapp.com/emojis/763104888732647434.png'});
 	
-let Mat_Icons = L.Icon.extend({options:{iconSize:[24,24],iconAnchor:[12,12],popupAnchor:[0,-12]}});
-	iconAlphaReactor = new Mat_Icons({iconUrl: 'images/marks/materials2/alphaReactor.png'}),
-	iconMonotite = new Mat_Icons({iconUrl: 'images/marks/materials2/monotite.png'}),
-	iconDualomite = new Mat_Icons({iconUrl: 'images/marks/materials2/dualomite.png'}),
-	iconTrinite = new Mat_Icons({iconUrl: 'images/marks/materials2/trinite.png'}),
-	iconPhotonChunk = new Mat_Icons({iconUrl: 'images/marks/materials2/photonChunk.png'}),
-	iconPhotonQuartz = new Mat_Icons({iconUrl: 'images/marks/materials2/photonQuartz.png'}),
-	iconSauteApple = new Mat_Icons({iconUrl: 'images/marks/materials2/sauteApple.png'}),
-	iconSautePeach = new Mat_Icons({iconUrl: 'images/marks/materials2/sautePeach.png'}),
-	iconSautePear = new Mat_Icons({iconUrl: 'images/marks/materials2/sautePear.png'}),
-	iconSohHerb = new Mat_Icons({iconUrl: 'images/marks/materials2/sohHerb.png'}),
-	iconSohMushroom = new Mat_Icons({iconUrl: 'images/marks/materials2/sohMushroom.png'}),
-	iconSohTurnip = new Mat_Icons({iconUrl: 'images/marks/materials2/sohTurnip.png'}),
-	iconSodheClam = new Mat_Icons({iconUrl: 'images/marks/materials2/sodheClam.png'}),
-	iconSodheLobster = new Mat_Icons({iconUrl: 'images/marks/materials2/sodheLobster.png'});
+let Mat_Icons = L.Icon.extend({options:{iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-13]}});
+	iconAlphaReactor = new Mat_Icons({iconUrl: 'images/marks/materials/alphaReactor.png'}),
+	iconMonotite = new Mat_Icons({iconUrl: 'images/marks/materials/monotite.png'}),
+	iconDualomite = new Mat_Icons({iconUrl: 'images/marks/materials/dualomite.png'}),
+	iconTrinite = new Mat_Icons({iconUrl: 'images/marks/materials/trinite.png'}),
+	iconPhotonChunk = new Mat_Icons({iconUrl: 'images/marks/materials/photonChunk.png'}),
+	iconPhotonQuartz = new Mat_Icons({iconUrl: 'images/marks/materials/photonQuartz.png'}),
+	iconSauteApple = new Mat_Icons({iconUrl: 'images/marks/materials/sauteApple.png'}),
+	iconSautePeach = new Mat_Icons({iconUrl: 'images/marks/materials/sautePeach.png'}),
+	iconSautePear = new Mat_Icons({iconUrl: 'images/marks/materials/sautePear.png'}),
+	iconSohHerb = new Mat_Icons({iconUrl: 'images/marks/materials/sohHerb.png'}),
+	iconSohMushroom = new Mat_Icons({iconUrl: 'images/marks/materials/sohMushroom.png'}),
+	iconSohTurnip = new Mat_Icons({iconUrl: 'images/marks/materials/sohTurnip.png'}),
+	iconSodheClam = new Mat_Icons({iconUrl: 'images/marks/materials/sodheClam.png'}),
+	iconSodheLobster = new Mat_Icons({iconUrl: 'images/marks/materials/sodheLobster.png'}),
+	iconSodheCrab = new Mat_Icons({iconUrl: 'images/marks/materials/sodheCrab.png'});
 
 $(document).ready(function(){
     console.log();
@@ -211,11 +212,11 @@ $(document).ready(function(){
 			});
 		}
 		{ // Hut
-			if (HutToggle.length == 0) {
+			/*if (HutToggle.length == 0) {
 				for (let i = 0; i < Hut.length; i++) {
 					HutToggle.push(L.marker(Hut[i]["coordinates"],{icon:iconHut}).bindPopup(Hut[i]["popup"]).addTo(map));
 				}
-			}
+			}*/
 			$("#Hut_On").click(function(){
 				if (HutToggle.length == 0) {
 					for (let i = 0; i < Hut.length; i++) {
@@ -255,11 +256,12 @@ $(document).ready(function(){
 			});
 		}
 		{ // Dungeon
+			/*
 			if (DungeonToggle.length == 0) {
 				for (let i = 0; i < Dungeon.length; i++) {
 					DungeonToggle.push(L.marker(Dungeon[i]["coordinates"],{icon:iconDungeon}).bindPopup(Dungeon[i]["popup"]).addTo(map));
 				}
-			}
+			}*/
 			$("#Dungeon_On").click(function(){
 				if (DungeonToggle.length == 0) {
 					for (let i = 0; i < Dungeon.length; i++) {
@@ -420,7 +422,7 @@ $(document).ready(function(){
 			$("#sodheClam_On").click(function(){
 				if (sodheClamToggle.length == 0) {
 					for (let i = 0; i < sodheClam.length; i++) {
-						sodheClamToggle.push(L.marker(sodheClam[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheClam']['name']?>"));;
+						sodheClamToggle.push(L.marker(sodheClam[i]["coordinates"],{icon:iconSodheClam}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheClam']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sodheClamToggle.length; i++) {
@@ -471,7 +473,7 @@ $(document).ready(function(){
 			$("#sodheCrab_On").click(function(){
 				if (sodheCrabToggle.length == 0) {
 					for (let i = 0; i < sodheCrab.length; i++) {
-						sodheCrabToggle.push(L.marker(sodheCrab[i]["coordinates"],{icon:iconSautePeach}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheCrab']['name']?>"));;
+						sodheCrabToggle.push(L.marker(sodheCrab[i]["coordinates"],{icon:iconSodheCrab}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheCrab']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sodheCrabToggle.length; i++) {
@@ -488,7 +490,7 @@ $(document).ready(function(){
 			$("#sodheLobster_On").click(function(){
 				if (sodheLobsterToggle.length == 0) {
 					for (let i = 0; i < sodheLobster.length; i++) {
-						sodheLobsterToggle.push(L.marker(sodheLobster[i]["coordinates"],{icon:iconTEST}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheLobster']['name']?>"));;
+						sodheLobsterToggle.push(L.marker(sodheLobster[i]["coordinates"],{icon:iconSodheLobster}).bindTooltip("<?=$localization['UI']['sorting']['food']['sodheLobster']['name']?>"));;
 					}
 				}
 				for (let i = 0; i < sodheLobsterToggle.length; i++) {
@@ -622,5 +624,22 @@ $(document).ready(function(){
 				}
 			});
 		}
+		{ // Alpha Reactors
+			$("#alphaReactor_On").click(function(){
+				if (alphaReactorToggle.length == 0) {
+					for (let i = 0; i < alphaReactor.length; i++) {
+						alphaReactorToggle.push(L.marker(alphaReactor[i]["coordinates"],{icon:iconAlphaReactor}).bindTooltip("<?=$localization['UI']['sorting']['other']['alphaReactor']['name']?>"));;
+					}
+				}
+				for (let i = 0; i < alphaReactorToggle.length; i++) {
+					alphaReactorToggle[i].addTo(map);
+				}
+			});
+			$("#alphaReactor_Off").click(function(){
+				for (let i = 0; i < alphaReactorToggle.length; i++) {
+					map.removeLayer(alphaReactorToggle[i]);
+				}
+			});
+		}
 	}
-});
+}); 
