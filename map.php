@@ -83,7 +83,16 @@ $lang_flag_style = 'height:24px'
 				</div>
 				<div class="col-md-3 col-sm-12">
 					<div class="card adaptive-sorting">
-						<p class="h4 my-3 text-center"><?=$localization['UI']['sorting']['header']?></p>
+						<p class="h4 mt-3 text-center"><?=$localization['UI']['sorting']['header']?></p>
+						<div class="card-body bg-transparent justify-content-center">
+							<div class="btn-group w-100" role="group">
+								<div class="btn cus-btn-outline-primary w-100 disabled">Sectors?</div>
+									<input type="radio" class="btn-check" name="sectors" id="sectors_On" autocomplete="off">
+									<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sectors_On"><i class="fas fa-check"></i></label>
+									<input type="radio" class="btn-check" name="sectors" id="sectors_Off" autocomplete="off" checked="">
+									<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="sectors_Off"><i class="fas fa-times"></i></label>
+							</div>
+						</div>
 						<div class="accordion accordion-flush" id="accordion">
 							<div class="accordion-item">
 								<h2 class="accordion-header" id="accordion1-1">
