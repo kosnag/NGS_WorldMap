@@ -80,10 +80,15 @@ $(document).ready(function(){
 
 	{ // Sections
 		$("#sections_On").click(function(){
-			for (let i = 0; i < sectionsToggle.length; i++) {
-				sectionsToggle[i].addTo(map);
-			}
-		});
+				if (sectionsToggle.length == 0) {
+					for (let i = 0; i < sections.length; i++) {
+						sectionsToggle.push(L.polygon(sections[i]["coordinates"]).bindPopup(sections[i]["popup"]));
+					}
+				}
+				for (let i = 0; i < sectionsToggle.length; i++) {
+					sectionsToggle[i].addTo(map);
+				}
+			});
 		$("#sections_Off").click(function(){
 			for (let i = 0; i < sectionsToggle.length; i++) {
 				map.removeLayer(sectionsToggle[i]);
