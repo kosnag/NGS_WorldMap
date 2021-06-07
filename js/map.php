@@ -77,7 +77,19 @@ let Mat_Icons = L.Icon.extend({options:{iconSize:[26,26],iconAnchor:[13,13],popu
 
 $(document).ready(function(){
     console.log();
-	
+
+	{ // Sections
+		$("#sections_On").click(function(){
+			for (let i = 0; i < sectionsToggle.length; i++) {
+				sectionsToggle[i].addTo(map);
+			}
+		});
+		$("#sections_Off").click(function(){
+			for (let i = 0; i < sectionsToggle.length; i++) {
+				map.removeLayer(sectionsToggle[i]);
+			}
+		});
+	}
 	{ // Main Objects
 		{ // Central Tower
 			if (centralTowerToggle.length == 0) {
