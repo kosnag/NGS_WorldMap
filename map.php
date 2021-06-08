@@ -60,6 +60,7 @@ $lang_flag_style = 'height:24px'
 								<li><a class="dropdown-item<?=$localization['misc']['lang']['jp']?>" href="/?lang=jp" onclick="change_lang('jp')"><img src="images/flags/jp.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['jp']?></a></li>
 								<li><a class="dropdown-item<?=$localization['misc']['lang']['ru']?>" href="/?lang=ru" onclick="change_lang('ru')"><img src="images/flags/ru.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['ru']?></a></li>
 								<li><a class="dropdown-item<?=$localization['misc']['lang']['kr']?>" href="/?lang=kr" onclick="change_lang('kr')"><img src="images/flags/kr.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['kr']?></a></li>
+								<li><a class="dropdown-item disabled<?=$localization['misc']['lang']['pt']?>" href="/?lang=pt" onclick="change_lang('pt')"><img src="images/flags/pt.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/br.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['pt']?></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -86,7 +87,7 @@ $lang_flag_style = 'height:24px'
 						<p class="h4 mt-3 text-center"><?=$localization['UI']['sorting']['header']?></p>
 						<div class="card-body bg-transparent justify-content-center">
 							<div class="btn-group w-100" role="group">
-								<div class="btn cus-btn-outline-primary w-100">Sections?</div>
+								<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['sections']?></div>
 									<input type="radio" class="btn-check" name="sections" id="sections_On" autocomplete="off">
 									<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="sections_On"><i class="fas fa-check"></i></label>
 									<input type="radio" class="btn-check" name="sections" id="sections_Off" autocomplete="off" checked="">
@@ -136,11 +137,11 @@ $lang_flag_style = 'height:24px'
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="Tower_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Cities']?></div>
-												<input type="radio" class="btn-check" name="City" id="City_On" autocomplete="off" checked="">
-												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="City_On"><i class="fas fa-check"></i></label>
-												<input type="radio" class="btn-check" name="City" id="City_Off" autocomplete="off">
-												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="City_Off"><i class="fas fa-times"></i></label>
+											<div class="btn cus-btn-outline-primary w-100 disabled">??? <!--<?=$localization['UI']['sorting']['mainobjects']['Cities']?>--></div>
+												<input type="radio" class="btn-check" name="City" id="City_On" autocomplete="off">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="City_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="City" id="City_Off" autocomplete="off" checked="">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="City_Off"><i class="fas fa-times"></i></label>
 										</div>
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['mainobjects']['Huts']?>--></div>
@@ -346,9 +347,9 @@ $lang_flag_style = 'height:24px'
 				</div>
 			</div>
 		</div>
-	<script src="js/markersData.php?lang=<?php echo $lang;?>"></script>
-	<script src="js/map.php?lang=<?php echo $lang;?>"></script>
-		<div class="container mb-4">
+		<script src="js/markersData.php?lang=<?php echo $lang;?>"></script>
+		<script src="js/map.php?lang=<?php echo $lang;?>"></script>
+		<!--<div class="container mb-4">
 			<div class="card card-body">
 				<div class="row">
 					<div class="col-md-4 col-sm-12"><div id="vk_groups1"></div></div>
@@ -361,6 +362,8 @@ $lang_flag_style = 'height:24px'
 					</script>
 				</div>
 			</div>
-		</div>
+		</div>-->
+		<hr class="my-3 bg-light con">
+		<span class="d-flex justify-content-center mb-3"><a class="btn custom-btn-outline-primary text-light" href="https://sega.com/">© SEGA | Phantasy Star Online 2</a></span>
 	</body>
 </html>
