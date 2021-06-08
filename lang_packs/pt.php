@@ -1,23 +1,23 @@
 <?
 $localization = array (
 	"UI" => array(
-		"title" => "PSO2NGS Interactive Map",
+		"title" => "Mapa Interactivo PSO2NGS",
 		"languages" => array(
-			"switcher" => "Language",
-			"en_gl" => "English (Global)",
-			"en_al" => "English (Arks-Layer)",
-			"jp" => "Japanese",
-			"ru" => "Russian",
-			"kr" => "Korean",
-			"pt" => "Portuguese",
+			"switcher" => "Idioma",
+			"en_gl" => "Inglês (Global)",
+			"en_al" => "Inglês (Arks-Layer)",
+			"jp" => "Japonês",
+			"ru" => "Russo",
+			"kr" => "Coreano",
+			"pt" => "Português",
 		),
 		"misc" => array(
-			"contributers" => "Contributers",
-			"discord-contribute" => "Help with map",
+			"contributors" => "Colaborador",
+			"discord-contribute" => "Contribuir",
 		),
 		"sorting" => array(
-			"header" => "Sorting",
-			"sections-switch" => "Sections",
+			"header" => "Classificacao",
+			"sections-switch" => "Partes",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
@@ -210,12 +210,12 @@ $localization = array (
 	// DO NOT TOUCH
 	"misc" => array(
 		"lang" => array(
-			"en_gl" => " disabled bg-primary text-white",
+			"en_gl" => "",
 			"en_al" => "",
 			"jp" => "",
 			"ru" => "",
 			"kr" => "",
-			"pt" => "",
+			"pt" => " disabled bg-primary text-white",
 		),
 		"test" => "8492",
 	),

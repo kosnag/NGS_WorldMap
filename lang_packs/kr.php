@@ -3,8 +3,8 @@ $localization = array (
 	"UI" => array(
 		"title" => "PSO2NGS 인터랙티브지도",
 		"languages" => array(
-			"switcher" => "Language",
-			"en_gl" => "영어 (Global)",
+			"switcher" => "언어",
+			"en_gl" => "영어 (글로벌)",
 			"en_al" => "영어 (Arks-Layer)",
 			"jp" => "일본어",
 			"ru" => "러시아인",
@@ -12,12 +12,12 @@ $localization = array (
 			"pt" => "포르투갈어",
 		),
 		"misc" => array(
-			"contributers" => "Contributers",
-			"discord-contribute" => "Help with map",
+			"contributors" => "기여자",
+			"discord-contribute" => "기여하다",
 		),
 		"sorting" => array(
 			"header" => "정렬",
-			"sections-switch" => "",
+			"sections-switch" => "섹션",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
@@ -136,15 +136,15 @@ $localization = array (
 			),
 			"sections" => array(
 				"aelio" => array (
-					"centalCity" => "Name",
-					"centalAeilo" => "Name",
-					"mtMagnus" => "Name",
-					"southAelio" => "Name",
-					"northAelio" => "Name",
-					"laboratoryRuins" => "Name",
-					"westAelio" => "Name",
-					"resolForest" => "Name",
-					"halphaLake" => "Name",
+					"centalCity" => "센트럴 시티",
+					"centalAeilo" => "중앙 에아리오",
+					"mtMagnus" => "마그나스 산",
+					"southAelio" => "남쪽 에아리오",
+					"northAelio" => "북쪽 에아리오",
+					"laboratoryRuins" => "반포드 연구소 유적",
+					"westAelio" => "서쪽 에아리오",
+					"resolForest" => "레졸의 숲",
+					"halphaLake" => "할피리아 숲",
 				),
 			),
 		),

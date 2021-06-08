@@ -3,8 +3,8 @@ $localization = array (
 	"UI" => array(
 		"title" => "Интерактивная карта PSO2NGS",
 		"languages" => array(
-			"switcher" => "Language",
-			"en_gl" => "Английский (Global)",
+			"switcher" => "Язык",
+			"en_gl" => "Английский (Глобал)",
 			"en_al" => "Английский (Arks-Layer)",
 			"jp" => "Японский",
 			"ru" => "Русский",
@@ -12,12 +12,12 @@ $localization = array (
 			"pt" => "Португальский",
 		),
 		"misc" => array(
-			"contributers" => "Contributers",
-			"discord-contribute" => "Help with map",
+			"contributors" => "Соучастники",
+			"discord-contribute" => "Помочь",
 		),
 		"sorting" => array(
 			"header" => "Сортировка",
-			"sections-switch" => "",
+			"sections-switch" => "Секции",
 			"mainobjects" => array(
 				"header" => "Основные объекты",
 				"CentTower" => "Центральная Башня",
@@ -49,7 +49,7 @@ $localization = array (
 				"header" => "Еда",
 				"sautePeach" => array (
 					"name" => "Соте-персик",
-					"info" => "Popup",
+					"info" => "Увеличивает PP / Увеличивает объём восстанавливаемого PP",
 				),
 				"sauteBanana" => array (
 					"name" => "Соте-банан",
@@ -57,11 +57,11 @@ $localization = array (
 				),
 				"sauteApple" => array (
 					"name" => "Соте-яблоко",
-					"info" => "Popup",
+					"info" => "Увеличивает PP / Снижает расход PP",
 				),
 				"sautePear" => array (
 					"name" => "Соте-груша",
-					"info" => "Popup",
+					"info" => "Увеличивает PP / Увеличивает урон по слабым точкам",
 				),
 				"sodheTurbanShell" => array (
 					"name" => "Сод Тюрбан ракушка",
@@ -69,15 +69,15 @@ $localization = array (
 				),
 				"sodheClam" => array (
 					"name" => "Сод Моллюск",
-					"info" => "Popup",
+					"info" => "Увеличивает HP / Снижает расход PP",
 				),
 				"sohTurnip" => array (
 					"name" => "Соу Кабурана",
-					"info" => "Popup",
+					"info" => "Увеличивает сопротивление урону / Увеличивает восстановление HP",
 				),
 				"sohMushroom" => array (
 					"name" => "Соу Гриб",
-					"info" => "Popup",
+					"info" => "Увеличивает сопротивление урону / Увеличивает восстановление PP",
 				),
 				"sodheCrab" => array (
 					"name" => "Сод Краб",
@@ -89,7 +89,7 @@ $localization = array (
 				),
 				"sohHerb" => array (
 					"name" => "Соу Трава",
-					"info" => "Popup",
+					"info" => "Увеличивает сопротивление урону / Снижает расход PP",
 				),
 				"sohTomato" => array (
 					"name" => "Соу Томат",
@@ -100,30 +100,30 @@ $localization = array (
 				"header" => "Минералы",
 				"monotite" => array (
 					"name" => "Монотайт",
-					"info" => "Popup",
+					"info" => "Разблокирует потенциал 1 ур., используется для снятия ограничий",
 				),
 				"dualomite" => array (
 					"name" => "Дуаломайт",
-					"info" => "Popup",
+					"info" => "Разблокирует потенциал 2 ур., используется для снятия ограничий",
 				),
 				"trinite" => array (
 					"name" => "Торанинайт",
-					"info" => "Popup",
+					"info" => "Разблокирует потенциал 3 ур., используется для снятия ограничий",
 				),
 				"PhotonChunk" => array (
 					"name" => "Фрагмент фотона",
-					"info" => "Popup",
+					"info" => "Используется для снятия ограничий",
 				),
 				"PhotonQuartz" => array (
 					"name" => "Фотонный кварц",
-					"info" => "Popup",
+					"info" => "Используется для мульти-оружия",
 				),
 			),
 			"other" => array(
 				"header" => "Прочее",
 				"alphaReactor" => array (
 					"name" => "Альфа реакторы",
-					"info" => "Popup",
+					"info" => "Можно продать за высокую цену (3,500 месеты)",
 				),
 				"datapod" => array (
 					"name" => "Сообщения",
@@ -136,15 +136,15 @@ $localization = array (
 			),
 			"sections" => array(
 				"aelio" => array (
-					"centalCity" => "Name",
-					"centalAeilo" => "Name",
-					"mtMagnus" => "Name",
-					"southAelio" => "Name",
-					"northAelio" => "Name",
-					"laboratoryRuins" => "Name",
-					"westAelio" => "Name",
-					"resolForest" => "Name",
-					"halphaLake" => "Name",
+					"centalCity" => "Централ-Сити",
+					"centalAeilo" => "Центр Эарио",
+					"mtMagnus" => "Гора Магнус",
+					"southAelio" => "Юг Эарио",
+					"northAelio" => "Север Эарио",
+					"laboratoryRuins" => "Руины лаборатории Ванфорд",
+					"westAelio" => "Запад Эарио",
+					"resolForest" => "Лес Резол",
+					"halphaLake" => "Озеро Хальфия",
 				),
 			),
 		),

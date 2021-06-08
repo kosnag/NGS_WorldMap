@@ -3,8 +3,8 @@ $localization = array (
 	"UI" => array(
 		"title" => "PSO2NGS インタラクティブ マップ",
 		"languages" => array(
-			"switcher" => "Language",
-			"en_gl" => "英語 (Global)",
+			"switcher" => "言語",
+			"en_gl" => "英語 (グローバル)",
 			"en_al" => "英語 (Arks-Layer)",
 			"jp" => "日本語",
 			"ru" => "ロシア語",
@@ -12,12 +12,12 @@ $localization = array (
 			"pt" => "ポルトガル",
 		),
 		"misc" => array(
-			"contributers" => "Contributers",
-			"discord-contribute" => "Help with map",
+			"contributors" => "貢献者",
+			"discord-contribute" => "貢献する",
 		),
 		"sorting" => array(
 			"header" => "並べ替え",
-			"sections-switch" => "",
+			"sections-switch" => "セクション",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
@@ -49,7 +49,7 @@ $localization = array (
 				"header" => "フード",
 				"sautePeach" => array (
 					"name" => "ソーテピッチ",
-					"info" => "Popup",
+					"info" => "PP増加/PP回復量増加",
 				),
 				"sauteBanana" => array (
 					"name" => "ソーテバナン",
@@ -57,11 +57,11 @@ $localization = array (
 				),
 				"sauteApple" => array (
 					"name" => "ソーテアッポウ",
-					"info" => "Popup",
+					"info" => "PP増加/PP消費量軽減",
 				),
 				"sautePear" => array (
 					"name" => "ソーテナッシィ",
-					"info" => "Popup",
+					"info" => "PP増加/弱点部位ダメージ増加",
 				),
 				"sodheTurbanShell" => array (
 					"name" => "ソッドサザイエ",
@@ -69,15 +69,15 @@ $localization = array (
 				),
 				"sodheClam" => array (
 					"name" => "ソッドアザーリ",
-					"info" => "Popup",
+					"info" => "HP増加/PP消費量軽減",
 				),
 				"sohTurnip" => array (
 					"name" => "ソウカブラナ",
-					"info" => "Popup",
+					"info" => "ダメージ耐性/HP回復量増加",
 				),
 				"sohMushroom" => array (
 					"name" => "ソウマシュル",
-					"info" => "Popup",
+					"info" => "ダメージ耐性/PP回復量増加",
 				),
 				"sodheCrab" => array (
 					"name" => "ソッドクラーブ",
@@ -89,7 +89,7 @@ $localization = array (
 				),
 				"sohHerb" => array (
 					"name" => "ソウハーヴ",
-					"info" => "Popup",
+					"info" => "ダメージ耐性/PP消費量軽減",
 				),
 				"sohTomato" => array (
 					"name" => "ソウトマーテ",
@@ -100,30 +100,30 @@ $localization = array (
 				"header" => "鉱石",
 				"monotite" => array (
 					"name" => "モノタイト",
-					"info" => "Popup",
+					"info" => "潜在能力解放Lv.1、限界突破に用いる",
 				),
 				"dualomite" => array (
 					"name" => "デュアロマイト",
-					"info" => "Popup",
+					"info" => "潜在能力解放Lv.2、限界突破に用いる",
 				),
 				"trinite" => array (
 					"name" => "トライナイト",
-					"info" => "Popup",
+					"info" => "潜在能力解放Lv.3、限界突破に用いる",
 				),
 				"PhotonChunk" => array (
 					"name" => "フォトンチャンク",
-					"info" => "Popup",
+					"info" => "限界突破に用いる",
 				),
 				"PhotonQuartz" => array (
 					"name" => "フォトンクォーツ",
-					"info" => "Popup",
+					"info" => "武器のマルチウェポンに用いる",
 				),
 			),
 			"other" => array(
 				"header" => "その他",
 				"alphaReactor" => array (
 					"name" => "アルファリアクター",
-					"info" => "Popup",
+					"info" => "高値(3,500メセタ)で売却することができる",
 				),
 				"datapod" => array (
 					"name" => "メッセージ",
@@ -136,15 +136,15 @@ $localization = array (
 			),
 			"sections" => array(
 				"aelio" => array (
-					"centalCity" => "Name",
-					"centalAeilo" => "Name",
-					"mtMagnus" => "Name",
-					"southAelio" => "Name",
-					"northAelio" => "Name",
-					"laboratoryRuins" => "Name",
-					"westAelio" => "Name",
-					"resolForest" => "Name",
-					"halphaLake" => "Name",
+					"centalCity" => "セントラルシティ",
+					"centalAeilo" => "中央エアリオ",
+					"mtMagnus" => "マグナス山",
+					"southAelio" => "南エアリオ",
+					"northAelio" => "北エアリオ",
+					"laboratoryRuins" => "ウァンフォード研究所跡",
+					"westAelio" => "西エアリオ",
+					"resolForest" => "レゾルの森林",
+					"halphaLake" => "ハルフィリア湖",
 				),
 			),
 		),

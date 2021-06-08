@@ -12,12 +12,12 @@ $localization = array (
 			"pt" => "Portuguese",
 		),
 		"misc" => array(
-			"contributers" => "Contributers",
-			"discord-contribute" => "Help with map",
+			"contributors" => "Contributers",
+			"discord-contribute" => "Contribute",
 		),
 		"sorting" => array(
 			"header" => "Sorting",
-			"sections-switch" => "",
+			"sections-switch" => "Sections",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
