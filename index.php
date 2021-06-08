@@ -22,6 +22,10 @@ if( $_COOKIE["lang"] !== null || $_GET["lang"] !== null ){
             setcookie("lang","kr",time()+60*60*24*30*12*10,"/");
             $lang = "kr";
         }
+        else if($_GET["lang"] === "pt"){
+            setcookie("lang","pt",time()+60*60*24*30*12*10,"/");
+            $lang = "pt";
+        }
 }
 if( $lang !== null )
 require_once "map.php";
