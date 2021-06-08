@@ -9,9 +9,15 @@ $localization = array (
 			"jp" => "Japanese",
 			"ru" => "Russian",
 			"kr" => "Korean",
+			"pt" => "Portuguese",
+		),
+		"misc" => array(
+			"contributers" => "Contributers",
+			"discord-contribute" => "Help with map",
 		),
 		"sorting" => array(
 			"header" => "Sorting",
+			"sections" => "",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
@@ -128,6 +134,19 @@ $localization = array (
 					"info" => "Popup",
 				),
 			),
+			"sections" => array(
+				"aelio" => array (
+					"centalCity" => "Name",
+					"centalAeilo" => "Name",
+					"mtMagnus" => "Name",
+					"southAelio" => "Name",
+					"northAelio" => "Name",
+					"laboratoryRuins" => "Name",
+					"westAelio" => "Name",
+					"resolForest" => "Name",
+					"halphaLake" => "Name",
+				),
+			),
 		),
 	),
 	"objects" => array(
@@ -196,6 +215,7 @@ $localization = array (
 			"jp" => "",
 			"ru" => "",
 			"kr" => "",
+			"pt" => "",
 		),
 		"test" => "8492",
 	),

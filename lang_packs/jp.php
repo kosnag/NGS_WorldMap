@@ -4,14 +4,20 @@ $localization = array (
 		"title" => "PSO2NGS インタラクティブ マップ",
 		"languages" => array(
 			"switcher" => "Language",
-			"en_gl" => "英語 / English (Global)",
-			"en_al" => "英語 / English (Arks-Layer)",
-			"jp" => "日本語 / Japanese",
-			"ru" => "ロシア語 / Russian",
-			"kr" => "韓国語 / Korean",
+			"en_gl" => "英語 (Global)",
+			"en_al" => "英語 (Arks-Layer)",
+			"jp" => "日本語",
+			"ru" => "ロシア語",
+			"kr" => "韓国語",
+			"pt" => "ポルトガル",
+		),
+		"misc" => array(
+			"contributers" => "Contributers",
+			"discord-contribute" => "Help with map",
 		),
 		"sorting" => array(
 			"header" => "並べ替え",
+			"sections" => "",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
@@ -128,6 +134,19 @@ $localization = array (
 					"info" => "Popup",
 				),
 			),
+			"sections" => array(
+				"aelio" => array (
+					"centalCity" => "Name",
+					"centalAeilo" => "Name",
+					"mtMagnus" => "Name",
+					"southAelio" => "Name",
+					"northAelio" => "Name",
+					"laboratoryRuins" => "Name",
+					"westAelio" => "Name",
+					"resolForest" => "Name",
+					"halphaLake" => "Name",
+				),
+			),
 		),
 	),
 	"objects" => array(
@@ -196,6 +215,7 @@ $localization = array (
 			"jp" => " disabled bg-primary text-white",
 			"ru" => "",
 			"kr" => "",
+			"pt" => "",
 		),
 		"test" => "8492",
 	),
