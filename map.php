@@ -87,7 +87,7 @@ $lang_flag_style = 'height:24px'
 						<p class="h4 mt-3 text-center"><?=$localization['UI']['sorting']['header']?></p>
 						<div class="card-body bg-transparent justify-content-center">
 							<div class="btn-group w-100" role="group">
-								<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['sections']?></div>
+								<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['sections-switch']?></div>
 									<input type="radio" class="btn-check" name="sections" id="sections_On" autocomplete="off">
 									<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="sections_On"><i class="fas fa-check"></i></label>
 									<input type="radio" class="btn-check" name="sections" id="sections_Off" autocomplete="off" checked="">

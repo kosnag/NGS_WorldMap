@@ -17,7 +17,7 @@ $localization = array (
 		),
 		"sorting" => array(
 			"header" => "Sorting",
-			"sections" => "",
+			"sections-switch" => "",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
