@@ -14,8 +14,7 @@ $roundMarker = array (
 ?>
 //MAP
 
-let map_url = "images/map_nospoiler2.jpg" 
-//let map_url = "https://cdn.discordapp.com/attachments/837207740019113987/844553666177269795/SPOILER_ui_worldmap_020000_mediumzoom.webp" 
+let map_url = "images/map_new.jpg" 
 let map = L.map("map",{
 	crs: L.CRS.Simple,
 	minZoom: -3,
@@ -82,7 +81,7 @@ $(document).ready(function(){
 		$("#sections_On").click(function(){
 				if (sectionsToggle.length == 0) {
 					for (let i = 0; i < sections.length; i++) {
-						sectionsToggle.push(L.polygon(sections[i]["coordinates"]).bindPopup(sections[i]["popup"]));
+						sectionsToggle.push(L.polygon(sections[i]["coordinates"],{fillColor:sections[i]["color"],color:"lightblue",weight:"1"}).bindPopup(sections[i]["popup"]));
 					}
 				}
 				for (let i = 0; i < sectionsToggle.length; i++) {
@@ -206,7 +205,7 @@ $(document).ready(function(){
 				}
 			});
 		}
-		{ // City
+/*		{ // City
 			if (CityToggle.length == 0) {
 				for (let i = 0; i < City.length; i++) {
 					CityToggle.push(L.marker(City[i]["coordinates"],{icon:iconCity}).bindPopup(City[i]["popup"]).addTo(map));
@@ -227,7 +226,7 @@ $(document).ready(function(){
 					map.removeLayer(CityToggle[i]);
 				}
 			});
-		}
+		}*/
 		{ // Hut
 			/*if (HutToggle.length == 0) {
 				for (let i = 0; i < Hut.length; i++) {
