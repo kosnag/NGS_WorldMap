@@ -12,9 +12,9 @@ $lang_flag_sel = 'height:32'
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/fontawesome.min.js"></script>
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/bootstrap.min.css"rel="stylesheet"/>
-		<link href="fontawesome.min.css"rel="stylesheet"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet"/>
+		<link href="fontawesome.min.css" rel="stylesheet"/>
+		<link href="css/style.css" rel="stylesheet"/>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon"/>
 		<script>
 		$(document).ready(function(){
@@ -76,7 +76,7 @@ $lang_flag_sel = 'height:32'
 						</a>
 					</div>
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" href="/?lang=en_al">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="en" href="/?lang=en_al">
 							<span>
 								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Arks-Layer
 							</span>
@@ -108,5 +108,3 @@ $lang_flag_sel = 'height:32'
 		</div>
 	</body>
 </html>
-
-
