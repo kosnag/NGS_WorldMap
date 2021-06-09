@@ -71,12 +71,11 @@ $lang_flag_style = 'height:24px'
 			</div>
 		</nav>
 		<div class="container alert alert-danger mt-3" role="alert">
-			<h4 class="alert-heading">WORK IN PROGRESS <span class="badge bg-danger">STILL IN DEVELOPMENT</span></h4>
-			<p>This interactive map are currently in development. I'm preparing to college's exams it's a reason why map aren't finished.</p>
-			<p>Test versions of map will be available on other URL after 10th June.</p>
+			<h4 class="alert-heading">WORK IN PROGRESS</h4>
+			<p>This interactive map are currently in development. I'm waiting NGS release for check information about sections and quests.</p>
+			<p>Information on map will updating everyday!</p>
 			<hr>
 			<p class="mb-0">If you want to help me, please contact with me in <a href="https://twitter.com/kosnag" target="_blank">Twitter</a>, <a href="https://vk.com/kosnag" target="_blank">VK</a> or <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>">Discord (kosnag#1730)</a>. I will be very happy, if you help me! <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>">Take a hug by Matoi!</a></p>
-			<script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})</script>
 		</div>
 		<div class="container mb-3">
 			<div class="row">
@@ -352,7 +351,8 @@ $lang_flag_style = 'height:24px'
 		</div>
 		<script src="js/markersData.php?lang=<?php echo $lang;?>"></script>
 		<script src="js/map.php?lang=<?php echo $lang;?>"></script>
-		<!--<div class="container mb-4">
+		<script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})</script>
+		<div class="container mb-4">
 			<div class="card card-body">
 				<div class="row">
 					<div class="col-md-4 col-sm-12"><div id="vk_groups1"></div></div>
@@ -365,6 +365,6 @@ $lang_flag_style = 'height:24px'
 					</script>
 				</div>
 			</div>
-		</div>-->
+		</div>
 	</body>
 </html>
