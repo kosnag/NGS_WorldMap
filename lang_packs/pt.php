@@ -22,26 +22,26 @@ $localization = array (
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
 				"Cocoons" => "Cocoons",
-				"Mags" => "Region Mag",
-				"RyukerDevices" => "Ryuker Devices",
-				"Towers" => "Towers",
-				"Cities" => "Cities",
-				"Huts" => "Huts",
+				"Mags" => "Mag de Região",
+				"RyukerDevices" => "Dispositivo Ryuker",
+				"Towers" => "Torre",
+				"Cities" => "Cidade",
+				"Huts" => "Cabana",
 				"UrgentQuests" => "Urgent Quests",
-				"Dungeons" => "Dungeons",
+				"Dungeons" => "Masmorra",
 			),
 			"boxes" => array(
 				"header" => "Containers",
 				"redBox" => array (
-					"name" => "Item Container: Red",
+					"name" => "Recipiente de Item: Vermelho",
 					"info" => "Popup",
 				),
 				"whiteBox" => array (
-					"name" => "Item Container: White",
+					"name" => "Recipiente de Item: Branco",
 					"info" => "Popup",
 				),
 				"goldBox" => array (
-					"name" => "Item Container: Gold",
+					"name" => "Recipiente de Item: Ouro",
 					"info" => "Popup",
 				),
 			),
@@ -159,9 +159,12 @@ $localization = array (
 			"5" => "Cocoon ID-5",
 			"6" => "Cocoon ID-6",
 			"7" => "Cocoon ID-7",
+			"7" => "Cocoon ID-8",
 		),
 		"mag" => array(
 			"1" => "Expert Region Mag",
+			"2" => "Region Mag ID-2",
+			"3" => "Region Mag ID-3",
 		),
 		"ryuker" => array(
 			"1" => "Balflow Falls",
@@ -182,6 +185,7 @@ $localization = array (
 		"tower" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Tower</b></p><p class='h5'><b>Great Wall</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities. Defeat the Daityl Sword in the final area using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat the Daityl!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 23:00</li><li>Clear without being incapacitated 5 times</li><li>Obtain 5 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+2 SP</li></ul></p>",
 			"2" => "Tower ID-2",
+			"3" => "Tower ID-3",
 		),
 		"city" => array(
 			"1" => "Central City",

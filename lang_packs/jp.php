@@ -159,9 +159,12 @@ $localization = array (
 			"5" => "Cocoon ID-5",
 			"6" => "Cocoon ID-6",
 			"7" => "Cocoon ID-7",
+			"7" => "Cocoon ID-8",
 		),
 		"mag" => array(
 			"1" => "練達のリージョンマグ",
+			"2" => "Region Mag ID-2",
+			"3" => "Region Mag ID-3",
 		),
 		"ryuker" => array(
 			"1" => "バルフロウ大瀑布",
@@ -182,6 +185,7 @@ $localization = array (
 		"tower" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>タワー</b></p><p class='h5'><b>グレートウォール</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>プレイヤー数：</b></td><td><b>?</b></td></tr><tr><td><b>必要戦闘力：</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>説明：</b></p><ul style='list-style-type: none'><li>ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使し、最深部で待ちうける“ダイダル・ソード”を撃破せよ。</li></ul><p class='mb-0'><b>メインミッション：</b></p><ul style='list-style-type: none'><li>ダイダルを倒せ！</li></ul><p class='mb-0'><b>サイドミッション：</b> <ul style='list-style-type: none'> <li>23:00以内にクリア</li><li>戦闘不能回数5回未満でクリア</li><li>ポイントキューブを5回取得してクリア</li><li>サイドミッションすべて達成してクリア</li></ul></p><p class='mb-0'><b>褒賞：</b> <ul style='list-style-type: none'> <li>+2 SP</li></ul></p>",
 			"2" => "Tower ID-2",
+			"3" => "Tower ID-3",
 		),
 		"city" => array(
 			"1" => "セントラルシティ",

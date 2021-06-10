@@ -159,9 +159,12 @@ $localization = array (
 			"5" => "Cocoon ID-5",
 			"6" => "Cocoon ID-6",
 			"7" => "Cocoon ID-7",
+			"7" => "Cocoon ID-8",
 		),
 		"mag" => array(
 			"1" => "숙달의 리전 마그",
+			"2" => "Region Mag ID-2",
+			"3" => "Region Mag ID-3",
 		),
 		"ryuker" => array(
 			"1" => "바르플로우 대폭포",
@@ -182,6 +185,7 @@ $localization = array (
 		"tower" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Tower</b></p><p class='h5'><b>First Step</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities.Follow the instructions to reach the goal while learning the new action.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Reach the finish point!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 5:00</li><li>Clear before 10:00</li><li>Obtain 10 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
 			"2" => "Tower ID-2",
+			"3" => "Tower ID-3",
 		),
 		"city" => array(
 			"1" => "Central City",

@@ -159,9 +159,12 @@ $localization = array (
 			"5" => "Cocoon ID-5",
 			"6" => "Cocoon ID-6",
 			"7" => "Cocoon ID-7",
+			"7" => "Cocoon ID-8",
 		),
 		"mag" => array(
 			"1" => "Эксперт Mag региона",
+			"2" => "Region Mag ID-2",
+			"3" => "Region Mag ID-3",
 		),
 		"ryuker" => array(
 			"1" => "Водопад Балфлоу",
@@ -182,6 +185,7 @@ $localization = array (
 		"tower" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Башня</b></p><p class='h5'><b>Великая стена</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Количество игроков:</b></td><td><b>?</b></td></tr><tr><td><b>Требуемая Боевая Мощь:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Описание:</b></p><ul style='list-style-type: none'><li>Это Треиниа, где ARKS могут проверить свои боевые способности. Одолейте Дайдару мечника в конечной зоне, используя свои боевые навыки.</li></ul><p class='mb-0'><b>Главная миссия:</b></p><ul style='list-style-type: none'><li>Одолейте Дайдару!</li></ul><p class='mb-0'><b>Доп-миссии:</b> <ul style='list-style-type: none'> <li>Пройдите менее чем за 23:00</li><li>Пройдите менее чем с 5 смертями</li><li>Получите 5 очков и пройдите</li><li>Завершите доп-миссии и пройдите</li></ul></p><p class='mb-0'><b>Награда:</b> <ul style='list-style-type: none'> <li>+2 SP</li></ul></p>",
 			"2" => "Tower ID-2",
+			"3" => "Tower ID-3",
 		),
 		"city" => array(
 			"1" => "Централ-Сити",

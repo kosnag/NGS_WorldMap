@@ -33,13 +33,16 @@ include_once "../lang_packs/" . $lang . ".php";
 			{coordinates:[1003,4935],popup:"<?=$localization['objects']['cocoon']['4']?>"},
 			{coordinates:[926,2327],popup:"<?=$localization['objects']['cocoon']['5']?>"},
 			{coordinates:[5248,217],popup:"<?=$localization['objects']['cocoon']['6']?>"},
-			{coordinates:[4965,5879],popup:"<?=$localization['objects']['cocoon']['7']?>"}
+			{coordinates:[4965,5879],popup:"<?=$localization['objects']['cocoon']['7']?>"},
+			{coordinates:[1961,5248],popup:"<?=$localization['objects']['cocoon']['8']?>"}
 		];
 	let CocoonToggle = [];
 
 // Mag coords
 	let Mag = [
-			{coordinates:[4755,1641],popup:"<?=$localization['objects']['mag']['1']?>"}
+			{coordinates:[4755,1641],popup:"<?=$localization['objects']['mag']['1']?>"},
+			{coordinates:[554,3860],popup:"<?=$localization['objects']['mag']['2']?>"},
+			{coordinates:[2809,1037],popup:"<?=$localization['objects']['mag']['3']?>"}
 		];
 	let MagToggle = [];
 
@@ -65,7 +68,8 @@ include_once "../lang_packs/" . $lang . ".php";
 // Tower coords
 	let Tower = [
 			{coordinates:[830,5506],popup:"<?=$localization['objects']['tower']['1']?>"},
-			{coordinates:[5740,1043],popup:"<?=$localization['objects']['tower']['2']?>"}
+			{coordinates:[5740,1043],popup:"<?=$localization['objects']['tower']['2']?>"},
+			{coordinates:[3914,5346],popup:"<?=$localization['objects']['tower']['3']?>"}
 		];
 	let TowerToggle = [];
 
@@ -86,7 +90,8 @@ include_once "../lang_packs/" . $lang . ".php";
 
 // Urgent coords
 	let UrgentQuest = [
-			{coordinates:[5984,1772],popup:"<?=$localization['objects']['urgent']['1']?>"}
+			{coordinates:[5984,1772],popup:"<?=$localization['objects']['urgent']['1']?>"},
+			{coordinates:[5201,3144],popup:"<?=$localization['objects']['urgent']['2']?>"}
 		];
 	let UrgentQuestToggle = [];
 

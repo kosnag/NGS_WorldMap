@@ -159,9 +159,12 @@ $localization = array (
 			"5" => "Cocoon ID-5",
 			"6" => "Cocoon ID-6",
 			"7" => "Cocoon ID-7",
+			"7" => "Cocoon ID-8",
 		),
 		"mag" => array(
 			"1" => "Expert Region Mag",
+			"2" => "Region Mag ID-2",
+			"3" => "Region Mag ID-3",
 		),
 		"ryuker" => array(
 			"1" => "Balflow Falls",
@@ -182,6 +185,7 @@ $localization = array (
 		"tower" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Tower</b></p><p class='h5'><b>Great Wall</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities. Defeat the Daityl Sword in the final area using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat the Daityl!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 23:00</li><li>Clear without being incapacitated 5 times</li><li>Obtain 5 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Rewards for 1st clear:</b><ul style='list-style-type: none'><li>+1 SP</li></ul></p>",
 			"2" => "Tower ID-2",
+			"3" => "Tower ID-3",
 		),
 		"city" => array(
 			"1" => "Central City",
@@ -194,6 +198,7 @@ $localization = array (
 		),
 		"urgent" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Urgent Quest</b></p><p class='h5'><b>Pettas Vera Suppression Ops</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat the Pettas Vera!</li></ul></p><p class='mb-0'><b>Rewards for 1st clear:</b><ul style='list-style-type: none'> <li>C/Guard I</li></ul></p><p class='mb-0'><b>Rewards:</b><ul style='list-style-type: none'><li>2000 N-Meseta</li></ul></p>",
+			"2" => "UQ ID-2",
 		),
 		"dungeon" => array(
 			"1" => "Dungeon ID-1",
