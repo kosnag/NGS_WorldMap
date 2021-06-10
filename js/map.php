@@ -96,11 +96,11 @@ $(document).ready(function(){
 	}
 	{ // Main Objects
 		{ // Central Tower
-			if (centralTowerToggle.length == 0) {
+			/*if (centralTowerToggle.length == 0) {
 				for (let i = 0; i < centralTower.length; i++) {
 					centralTowerToggle.push(L.marker(centralTower[i]["coordinates"],{icon:iconCentTower}).bindPopup(centralTower[i]["popup"]).addTo(map));
 				}
-			}
+			}*/
 			$("#centralTower_On").click(function(){
 				if (centralTowerToggle.length == 0) {
 					for (let i = 0; i < centralTower.length; i++) {
@@ -205,12 +205,12 @@ $(document).ready(function(){
 				}
 			});
 		}
-/*		{ // City
-			if (CityToggle.length == 0) {
+		{ // City
+			/*if (CityToggle.length == 0) {
 				for (let i = 0; i < City.length; i++) {
 					CityToggle.push(L.marker(City[i]["coordinates"],{icon:iconCity}).bindPopup(City[i]["popup"]).addTo(map));
 				}
-			}
+			}*/
 			$("#City_On").click(function(){
 				if (CityToggle.length == 0) {
 					for (let i = 0; i < City.length; i++) {
@@ -226,7 +226,7 @@ $(document).ready(function(){
 					map.removeLayer(CityToggle[i]);
 				}
 			});
-		}*/
+		}
 		{ // Hut
 			/*if (HutToggle.length == 0) {
 				for (let i = 0; i < Hut.length; i++) {
@@ -272,8 +272,7 @@ $(document).ready(function(){
 			});
 		}
 		{ // Dungeon
-			/*
-			if (DungeonToggle.length == 0) {
+			/*if (DungeonToggle.length == 0) {
 				for (let i = 0; i < Dungeon.length; i++) {
 					DungeonToggle.push(L.marker(Dungeon[i]["coordinates"],{icon:iconDungeon}).bindPopup(Dungeon[i]["popup"]).addTo(map));
 				}
