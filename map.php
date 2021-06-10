@@ -47,11 +47,11 @@ $lang_flag_style = 'height:24px'
 							<a class="nav-link text-white" target="_blank" href="https://discord.gg/AvgmpuX"><i class="fab fa-discord"></i> <?=$localization['UI']['misc']['discord-contribute']?></a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white disabled" target="_blank" href=""><i class="fab fa-google-drive"></i> <?=$localization['UI']['misc']['contributors']?></a>
+							<a class="nav-link text-white" target="_blank" href="" data-bs-toggle="modal" data-bs-target="#contributors"><i class="fas fa-hands-helping"></i> <?=$localization['UI']['misc']['contributors']?></a>
 						</li>
-						<!--<li class="nav-item">
+						<li class="nav-item">
 							<a class="nav-link text-white" target="_blank" href="https://docs.google.com/spreadsheets/d/12lKTrbbyHszz9TTfmvwRlRZe7MLI9nFL8XVAcIkynlU/edit?usp=sharing"><i class="fab fa-google-drive"></i> Google Sheets</a>
-						</li>-->
+						</li>
 						<li class="nav-item">
 							<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap"><i class="fab fa-github"></i> Github</a>
 						</li>
@@ -70,6 +70,23 @@ $lang_flag_style = 'height:24px'
 				</div>
 			</div>
 		</nav>
+		<div class="modal fade" id="contributors" tabindex="-1" aria-labelledby="contributorsLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+					<div class="modal-body">
+						...
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="container alert alert-danger mt-3" role="alert">
 			<h4 class="alert-heading">WORK IN PROGRESS</h4>
 			<p>This interactive map are currently in development. I'm waiting NGS release for check information about sections and quests.</p>
@@ -103,13 +120,13 @@ $lang_flag_style = 'height:24px'
 								</h2>
 								<div id="accordion1-2" class="collapse" aria-labelledby="accordion1-1" data-bs-parent="#accordion">
 									<div class="accordion-body justify-content-center">
-										<div class="btn-group w-100 mb-2" role="group">
+										<!--<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['CentTower']?></div>
 												<input type="radio" class="btn-check" name="centralTower" id="centralTower_On" autocomplete="off" checked="">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="centralTower_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="centralTower" id="centralTower_Off" autocomplete="off">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="centralTower_Off"><i class="fas fa-times"></i></label>
-										</div>
+										</div>-->
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['Cocoons']?></div>
 												<input type="radio" class="btn-check" name="Cocoon" id="Cocoon_On" autocomplete="off" checked="">
@@ -138,20 +155,20 @@ $lang_flag_style = 'height:24px'
 												<input type="radio" class="btn-check" name="Tower" id="Tower_Off" autocomplete="off">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="Tower_Off"><i class="fas fa-times"></i></label>
 										</div>
-										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled">??? <!--<?=$localization['UI']['sorting']['mainobjects']['Cities']?>--></div>
+										<!--<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['mainobjects']['Cities']?></div>
 												<input type="radio" class="btn-check" name="City" id="City_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="City_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="City" id="City_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="City_Off"><i class="fas fa-times"></i></label>
-										</div>
-										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['mainobjects']['Huts']?>--></div>
+										</div>-->
+										<!--<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['mainobjects']['Huts']?></div>
 												<input type="radio" class="btn-check" name="Hut" id="Hut_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="Hut_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="Hut" id="Hut_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="Hut_Off"><i class="fas fa-times"></i></label>
-										</div>
+										</div>-->
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['mainobjects']['UrgentQuests']?></div>
 												<input type="radio" class="btn-check" name="UrgentQuest" id="UrgentQuest_On" autocomplete="off" checked="">
@@ -159,13 +176,13 @@ $lang_flag_style = 'height:24px'
 												<input type="radio" class="btn-check" name="UrgentQuest" id="UrgentQuest_Off" autocomplete="off">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="UrgentQuest_Off"><i class="fas fa-times"></i></label>
 										</div>
-										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['mainobjects']['Dungeons']?>--></div>
+										<!--<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['mainobjects']['Dungeons']?></div>
 												<input type="radio" class="btn-check" name="Dungeon" id="Dungeon_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="Dungeon_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="Dungeon" id="Dungeon_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-cente disabled" for="Dungeon_Off"><i class="fas fa-times"></i></label>
-										</div>
+										</div>-->
 									</div>
 								</div>
 							</div>
@@ -213,13 +230,13 @@ $lang_flag_style = 'height:24px'
 												<input type="radio" class="btn-check" name="sautePeach" id="sautePeach_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sautePeach_Off"><i class="fas fa-times"></i></label>
 										</div>
-										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['food']['sauteBanana']['name']?>--></div>
+										<!--<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['food']['sauteBanana']['name']?></div>
 												<input type="radio" class="btn-check" name="sauteBanana" id="sauteBanana_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sauteBanana_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sauteBanana" id="sauteBanana_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="sauteBanana_Off"><i class="fas fa-times"></i></label>
-										</div>
+										</div>-->
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['food']['sauteApple']['name']?></div>
 												<input type="radio" class="btn-check" name="sauteApple" id="sauteApple_On" autocomplete="off">
@@ -234,13 +251,13 @@ $lang_flag_style = 'height:24px'
 												<input type="radio" class="btn-check" name="sautePear" id="sautePear_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sautePear_Off"><i class="fas fa-times"></i></label>
 										</div>
-										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['food']['sodheTurbanShell']['name']?>--></div>
+										<!--<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['food']['sodheTurbanShell']['name']?></div>
 												<input type="radio" class="btn-check" name="sodheTurbanShell" id="sodheTurbanShell_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sodheTurbanShell_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sodheTurbanShell" id="sodheTurbanShell_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="sodheTurbanShell_Off"><i class="fas fa-times"></i></label>
-										</div>
+										</div>-->
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['food']['sodheClam']['name']?></div>
 												<input type="radio" class="btn-check" name="sodheClam" id="sodheClam_On" autocomplete="off">
@@ -283,13 +300,13 @@ $lang_flag_style = 'height:24px'
 												<input type="radio" class="btn-check" name="sohHerb" id="sohHerb_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="sohHerb_Off"><i class="fas fa-times"></i></label>
 										</div>
-										<div class="btn-group w-100 mb-2" role="group">
-											<div class="btn cus-btn-outline-primary w-100 disabled">???<!--<?=$localization['UI']['sorting']['food']['sohTomato']['name']?>--></div>
+										<!--<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['food']['sohTomato']['name']?></div>
 												<input type="radio" class="btn-check" name="sohTomato" id="sohTomato_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="sohTomato_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="sohTomato" id="sohTomato_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="sohTomato_Off"><i class="fas fa-times"></i></label>
-										</div>
+										</div>-->
 									</div>
 								</div>
 							</div>
@@ -352,7 +369,7 @@ $lang_flag_style = 'height:24px'
 		<script src="js/markersData.php?lang=<?php echo $lang;?>"></script>
 		<script src="js/map.php?lang=<?php echo $lang;?>"></script>
 		<script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})</script>
-		<div class="container mb-4">
+		<!--<div class="container mb-4">
 			<div class="card card-body">
 				<div class="row">
 					<div class="col-md-4 col-sm-12"><div id="vk_groups1"></div></div>
@@ -365,6 +382,6 @@ $lang_flag_style = 'height:24px'
 					</script>
 				</div>
 			</div>
-		</div>
+		</div>-->
 	</body>
 </html>
