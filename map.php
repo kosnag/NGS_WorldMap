@@ -89,7 +89,7 @@ $lang_flag_style = 'height:24px'
 		</div>
 		<div class="container alert alert-danger mt-3" role="alert">
 			<h4 class="alert-heading">WORK IN PROGRESS</h4>
-			<p>This interactive map are currently in development. I'm waiting NGS release for check information about sections and quests.</p>
+			<p>This interactive map are currently in development.</p>
 			<p>Information on map will updating everyday!</p>
 			<hr>
 			<p class="mb-0">If you want to help me, please contact with me in <a href="https://twitter.com/kosnag" target="_blank">Twitter</a>, <a href="https://vk.com/kosnag" target="_blank">VK</a> or <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>">Discord (kosnag#1730)</a>. I will be very happy, if you help me! <a href="#" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" title="<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>">Take a hug by Matoi!</a></p>
