@@ -45,6 +45,15 @@ $lang_flag_sel = 'height:32'
 			}, function(){});
 		});
 		</script>
+		
+		<!-- META FOR GOOGLE TWITTER ETC -->
+		<meta name="twitter:description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
+		<meta property="og:title" content="PSO2NGS Interactive Map">
+		<meta name="description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
+		<meta property="og:type" content="website">
+		<meta name="twitter:card" content="">
+		<meta name="twitter:title" content="PSO2NGS Interactive Map">
+		
 	</head>
 	<body class="select">
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">		

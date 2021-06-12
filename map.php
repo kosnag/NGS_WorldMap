@@ -33,6 +33,15 @@ $lang_flag_style = 'height:24px'
 				location.href="/";
 			}
 		</script>
+		
+		<!-- META FOR GOOGLE TWITTER ETC -->
+		<meta name="twitter:description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
+		<meta property="og:title" content="PSO2NGS Interactive Map">
+		<meta name="description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
+		<meta property="og:type" content="website">
+		<meta name="twitter:card" content="">
+		<meta name="twitter:title" content="PSO2NGS Interactive Map">
+
 	</head>
 	<body class="map">
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">		
