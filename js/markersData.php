@@ -589,16 +589,27 @@ include_once "../lang_packs/" . $lang . ".php";
 		
 // Trinite
 	let trinite = [
-		{coordinates:[6485,1682]},
-		{coordinates:[6348,1619]},
-		{coordinates:[5638,2344]},
-		{coordinates:[5512,2216]},
-		{coordinates:[5568,1965]},
-		{coordinates:[5486,1915]},
-		{coordinates:[5330,1752]},
-		{coordinates:[5304,1609]},
-		{coordinates:[5272,1646]},
-		{coordinates:[4385,1449]}
+		{coordinates:[688,2286]},
+		{coordinates:[615,2223]},
+		{coordinates:[1023,1445]},
+		{coordinates:[1309,1487]},
+		{coordinates:[1995,1769]},
+		{coordinates:[2618,2145]},
+		{coordinates:[2757,1899]},
+		{coordinates:[2719,1729]},
+		{coordinates:[3221,1700]},
+		{coordinates:[4144,2431]},
+		{coordinates:[4372,1443]},
+		{coordinates:[4634,832]},
+		{coordinates:[5303,1612]},
+		{coordinates:[5261,1644]},
+		{coordinates:[5323,1758]},
+		{coordinates:[5513,1941]},
+		{coordinates:[5588,1990]},
+		{coordinates:[5511,2218]},
+		{coordinates:[5640,2345]},
+		{coordinates:[6364,1616]},
+		{coordinates:[6481,1720]}
 	];
 	let triniteToggle = [];
 
