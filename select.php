@@ -19,27 +19,41 @@ $lang_flag_sel = 'height:32'
 		<script>
 		$(document).ready(function(){
 			$("#en").hover(function(){
-				$( "title" ).text("PSO2NGS Interactive Map");
-				$( "#title" ).text("PSO2NGS Interactive Map");
-				$( "#lang" ).text("Choose a language");
+				$("title").text("PSO2NGS Interactive Map");
+				$("#title").text("PSO2NGS Interactive Map");
+				$("#lang").text("Choose a language");
 			}, function(){});
 			$("#jp").hover(function(){
-				$( "title" ).text("PSO2NGS相互マップ");
-				$( "#title" ).text("PSO2NGS相互マップ");
-				$( "#lang" ).text("言語を選択する");
+				$("title").text("PSO2NGS相互マップ");
+				$("#title").text("PSO2NGS相互マップ");
+				$("#lang").text("言語を選択する");
 			}, function(){});
 			$("#ru").hover(function(){
-				$( "title" ).text("Интерактивная карта PSO2NGS");
-				$( "#title" ).text("Интерактивная карта PSO2NGS");
-				$( "#lang" ).text("Выберите язык");
+				$("title").text("Интерактивная карта PSO2NGS");
+				$("#title").text("Интерактивная карта PSO2NGS");
+				$("#lang").text("Выберите язык");
 			}, function(){});
 			$("#kr").hover(function(){
-				$( "title" ).text("PSO2NGS 인터랙티브지도");
-				$( "#title" ).text("PSO2NGS 인터랙티브지도");
-				$( "#lang" ).text("언어 선택");
+				$("title" ).text("PSO2NGS 인터랙티브지도");
+				$("#title" ).text("PSO2NGS 인터랙티브지도");
+				$("#lang" ).text("언어 선택");
+			}, function(){});
+			$("#pt").hover(function(){
+				$("title").text("Mapa Interactivo PSO2NGS");
+				$("#title").text("Mapa Interactivo PSO2NGS");
+				$("#lang").text("Escolha uma língua");
 			}, function(){});
 		});
 		</script>
+		
+		<!-- META FOR GOOGLE TWITTER ETC -->
+		<meta name="twitter:description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
+		<meta property="og:title" content="PSO2NGS Interactive Map">
+		<meta name="description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
+		<meta property="og:type" content="website">
+		<meta name="twitter:card" content="">
+		<meta name="twitter:title" content="PSO2NGS Interactive Map">
+		
 	</head>
 	<body class="select">
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">		
@@ -100,6 +114,13 @@ $lang_flag_sel = 'height:32'
 						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="kr" href="/?lang=kr">
 							<span>
 								<img src="images/flags/kr.svg" style="<? echo $lang_flag_sel;?>"><br>한국어
+							</span>
+						</a>
+					</div>
+					<div class="col-12 mb-3">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="pt" href="/?lang=pt">
+							<span>
+								<img src="images/flags/pt.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/br.svg" style="<? echo $lang_flag_sel;?>"><br>Português
 							</span>
 						</a>
 					</div>

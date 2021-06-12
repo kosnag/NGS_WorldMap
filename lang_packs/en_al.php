@@ -9,9 +9,15 @@ $localization = array (
 			"jp" => "Japanese",
 			"ru" => "Russian",
 			"kr" => "Korean",
+			"pt" => "Portuguese",
+		),
+		"misc" => array(
+			"contributors" => "Contributers",
+			"discord-contribute" => "Contribute",
 		),
 		"sorting" => array(
 			"header" => "Sorting",
+			"sections-switch" => "Sections",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
@@ -27,15 +33,15 @@ $localization = array (
 			"boxes" => array(
 				"header" => "Containers",
 				"redBox" => array (
-					"name" => "Item Container: Red",
+					"name" => "Item Container [Red]",
 					"info" => "Popup",
 				),
 				"whiteBox" => array (
-					"name" => "Item Container: White",
+					"name" => "Item Container [White]",
 					"info" => "Popup",
 				),
 				"goldBox" => array (
-					"name" => "Item Container: Gold",
+					"name" => "Item Container [Gold]",
 					"info" => "Popup",
 				),
 			),
@@ -128,21 +134,37 @@ $localization = array (
 					"info" => "Popup",
 				),
 			),
+			"sections" => array(
+				"aelio" => array (
+					"centalCity" => "Name",
+					"centalAeilo" => "Name",
+					"mtMagnus" => "Name",
+					"southAelio" => "Name",
+					"northAelio" => "Name",
+					"laboratoryRuins" => "Name",
+					"westAelio" => "Name",
+					"resolForest" => "Name",
+					"halphaLake" => "Name",
+				),
+			),
 		),
 	),
 	"objects" => array(
 		"centtower" => "Central Tower (Aelio)",
 		"cocoon" => array(
-			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Enhanced Enemy</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities.Defeat the enhanced Pettas Sword using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat the Pettas Sword</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 0:50</li><li>Clear without being incapacitated 5 times</li><li>Clear having taken damage fewer than 5 times</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
-			"2" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Swift Jump</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities.Reach the goal using “Jump” and “Double Jump.”</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Reach the finish point</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 1:20</li><li>Clear without fallin 5 times</li><li>Clear having used Glide fewer than 5 times</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
-			"3" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>First Step</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities. Follow the instructions to reach the goal while learning the new action.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Reach the finish point!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 5:00</li><li>Clear before 10:00</li><li>Obtain 10 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
-			"4" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Wild Rush</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities.Defeat all enemies using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat 42 enemies</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 1:40</li><li>Clear without being incapacitated 5 times</li><li>Obtain 5 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
+			"1" => "<div class='text-center'> <p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Enhanced Enemy</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'> <tbody> <tr> <td><b>Number of players:</b></td><td><b>4</b></td></tr><tr> <td><b>Required Battle Power:</b></td><td><b>864</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'> <li>This is the facility where an Instructor who tests the combat abilities of every ARKS. Use your combat skills to take out the Enhanced Pedas Sword.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'> <li>Defeat the Pedas Sword!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear in under 0:50</li><li>Clear in under 5 deaths</li><li>Clear in under 10 damage attempts</li><li>Complete: Side Missions</li></ul></p><p class='mb-0'><b>Rewards for 1st clear:</b><ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
+			"2" => "<div class='text-center'> <p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Swift Jump</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'> <tbody> <tr> <td><b>Number of players:</b></td><td><b>4</b></td></tr><tr> <td><b>Recommended Power:</b></td><td><b>880</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'> <li>This is the facility where an Instructor who tests the jumping abilities of every ARKS. Use <b>Jump</b> & <b>Double Jump</b> to reach the target goal.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'> <li>Reach the Goal!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear in under 1:20</li><li>Clear without falling 5 times</li><li>Clear while using no more than 5 Glide(s)</li><li>Complete: Side Missions</li></ul></p><p class='mb-0'><b>Reward for 1st clear:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
+			"3" => "<div class='text-center'> <p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>First Steps</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'> <tbody> <tr> <td><b>Number of players:</b></td><td><b>1</b></td></tr><tr> <td><b>Recommended Power:</b></td><td><b>800</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'> <li>This is the facility where an Instructor who tests the basic abilities of every ARKS. By following the instructions, one can learn new abilities while reaching the targeted goal.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'> <li>Reach for the goal!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear in under 5:00</li><li>Clear in under 10:00</li><li>Obtain 10 Point Cubes and Clear</li><li>Complete: Side Missions</li></ul></p><p class='mb-0'><b>Reward for 1st clear:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
+			"4" => "<div class='text-center'> <p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Wild Rush</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'> <tbody> <tr> <td><b>Number of players:</b></td><td><b>4</b></td></tr><tr> <td><b>Recommended Power:</b></td><td><b>864</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'> <li>This is the facility where an Instructor who tests the combat abilities of every ARKS. Use your combat skills to take out every enemy.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'> <li>Defeat 42 Enemies</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear in under 1:40</li><li>Clear in under 5 deaths</li><li>Obtain 5 Point Cubes and Clear</li><li>Complete: Side Missions</li></ul></p><p class='mb-0'><b>Reward for 1st clear:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
 			"5" => "Cocoon ID-5",
 			"6" => "Cocoon ID-6",
 			"7" => "Cocoon ID-7",
+			"7" => "Cocoon ID-8",
 		),
 		"mag" => array(
 			"1" => "Expert Region Mag",
+			"2" => "Region Mag ID-2",
+			"3" => "Region Mag ID-3",
 		),
 		"ryuker" => array(
 			"1" => "Balflow Falls",
@@ -161,8 +183,9 @@ $localization = array (
 			"14" => "Ryuker Device ID-14",
 		),
 		"tower" => array(
-			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Tower</b></p><p class='h5'><b>Great Wall</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities. Defeat the Daityl Sword in the final area using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat the Daityl!</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 23:00</li><li>Clear without being incapacitated 5 times</li><li>Obtain 5 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Reward:</b> <ul style='list-style-type: none'> <li>+2 SP</li></ul></p>",
+			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Cocoon</b></p><p class='h5'><b>Wild Rush</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>?</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>This is Trainia, where ARKS defenders can test their abilities.Defeat all enemies using your battle skills.</li></ul><p class='mb-0'><b>Main Mission:</b></p><ul style='list-style-type: none'><li>Defeat 42 enemies</li></ul><p class='mb-0'><b>Side Mission:</b> <ul style='list-style-type: none'> <li>Clear before 1:40</li><li>Clear without being incapacitated 5 times</li><li>Obtain 5 Point Cubes</li><li>Complete all Side Missions and clear.</li></ul></p><p class='mb-0'><b>Rewards for 1st clear:</b><ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
 			"2" => "Tower ID-2",
+			"3" => "Tower ID-3",
 		),
 		"city" => array(
 			"1" => "Central City",
@@ -174,7 +197,7 @@ $localization = array (
 			"3" => "??? ID-3",
 		),
 		"urgent" => array(
-			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Urgent Quest</b></p><p class='h5'><b>Pettas Vera Suppression Ops</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat the Pettas Vera!</li></ul></p><p class='mb-0'><b>1st Clear Reward:</b> <ul style='list-style-type: none'> <li>C/Guard I</li></ul></p>",
+			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Emergency Quest</b></p><p class='h5'><b>Subdue the Control-type DOLLS</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>Notice to all ARKS Members: We will begin the campaign to repel the DOLLS that have appeared in the Aerio Region. All ARKS are requested to participate in this mission.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat Pedas Vera</li></ul></p><p class='mb-0'><b>Rewards for 1st clear:</b><ul style='list-style-type: none'> <li>C/Guard I</li></ul></p><p class='mb-0'><b>Rewards:</b><ul style='list-style-type: none'><li>2000 N-Meseta</li></ul></p>",
 		),
 		"dungeon" => array(
 			"1" => "Dungeon ID-1",
@@ -196,6 +219,7 @@ $localization = array (
 			"jp" => "",
 			"ru" => "",
 			"kr" => "",
+			"pt" => "",
 		),
 		"test" => "8492",
 	),

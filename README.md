@@ -8,14 +8,10 @@
 - ~~rewrite language memory module (from session to cookie)~~
 - ~~add sorting~~
 
-### after exams (after ngs release):
-- transfer map to tiles
-- make a regions/zones on map with short information
-- icons for ~~materials~~, bosses and regions
-- tooltips for materials
-
 ### after ngs release:
+- transfer map to tiles
+- ~~make a regions/zones on map with short information~~
+- icons for ~~materials~~ and bosses
+- tooltips for materials
 - rewrite site
-- add more material markers on map
-- add two more region mags on map
 - bosses locations

@@ -3,15 +3,21 @@ $localization = array (
 	"UI" => array(
 		"title" => "PSO2NGS インタラクティブ マップ",
 		"languages" => array(
-			"switcher" => "Language",
-			"en_gl" => "英語 / English (Global)",
-			"en_al" => "英語 / English (Arks-Layer)",
-			"jp" => "日本語 / Japanese",
-			"ru" => "ロシア語 / Russian",
-			"kr" => "韓国語 / Korean",
+			"switcher" => "言語",
+			"en_gl" => "英語 (グローバル)",
+			"en_al" => "英語 (Arks-Layer)",
+			"jp" => "日本語",
+			"ru" => "ロシア語",
+			"kr" => "韓国語",
+			"pt" => "ポルトガル",
+		),
+		"misc" => array(
+			"contributors" => "貢献者",
+			"discord-contribute" => "貢献する",
 		),
 		"sorting" => array(
 			"header" => "並べ替え",
+			"sections-switch" => "セクション",
 			"mainobjects" => array(
 				"header" => "Main objects",
 				"CentTower" => "Central Tower",
@@ -43,7 +49,7 @@ $localization = array (
 				"header" => "フード",
 				"sautePeach" => array (
 					"name" => "ソーテピッチ",
-					"info" => "Popup",
+					"info" => "PP増加/PP回復量増加",
 				),
 				"sauteBanana" => array (
 					"name" => "ソーテバナン",
@@ -51,11 +57,11 @@ $localization = array (
 				),
 				"sauteApple" => array (
 					"name" => "ソーテアッポウ",
-					"info" => "Popup",
+					"info" => "PP増加/PP消費量軽減",
 				),
 				"sautePear" => array (
 					"name" => "ソーテナッシィ",
-					"info" => "Popup",
+					"info" => "PP増加/弱点部位ダメージ増加",
 				),
 				"sodheTurbanShell" => array (
 					"name" => "ソッドサザイエ",
@@ -63,15 +69,15 @@ $localization = array (
 				),
 				"sodheClam" => array (
 					"name" => "ソッドアザーリ",
-					"info" => "Popup",
+					"info" => "HP増加/PP消費量軽減",
 				),
 				"sohTurnip" => array (
 					"name" => "ソウカブラナ",
-					"info" => "Popup",
+					"info" => "ダメージ耐性/HP回復量増加",
 				),
 				"sohMushroom" => array (
 					"name" => "ソウマシュル",
-					"info" => "Popup",
+					"info" => "ダメージ耐性/PP回復量増加",
 				),
 				"sodheCrab" => array (
 					"name" => "ソッドクラーブ",
@@ -83,7 +89,7 @@ $localization = array (
 				),
 				"sohHerb" => array (
 					"name" => "ソウハーヴ",
-					"info" => "Popup",
+					"info" => "ダメージ耐性/PP消費量軽減",
 				),
 				"sohTomato" => array (
 					"name" => "ソウトマーテ",
@@ -94,30 +100,30 @@ $localization = array (
 				"header" => "鉱石",
 				"monotite" => array (
 					"name" => "モノタイト",
-					"info" => "Popup",
+					"info" => "潜在能力解放Lv.1、限界突破に用いる",
 				),
 				"dualomite" => array (
 					"name" => "デュアロマイト",
-					"info" => "Popup",
+					"info" => "潜在能力解放Lv.2、限界突破に用いる",
 				),
 				"trinite" => array (
 					"name" => "トライナイト",
-					"info" => "Popup",
+					"info" => "潜在能力解放Lv.3、限界突破に用いる",
 				),
 				"PhotonChunk" => array (
 					"name" => "フォトンチャンク",
-					"info" => "Popup",
+					"info" => "限界突破に用いる",
 				),
 				"PhotonQuartz" => array (
 					"name" => "フォトンクォーツ",
-					"info" => "Popup",
+					"info" => "武器のマルチウェポンに用いる",
 				),
 			),
 			"other" => array(
 				"header" => "その他",
 				"alphaReactor" => array (
 					"name" => "アルファリアクター",
-					"info" => "Popup",
+					"info" => "高値(3,500メセタ)で売却することができる",
 				),
 				"datapod" => array (
 					"name" => "メッセージ",
@@ -126,6 +132,19 @@ $localization = array (
 				"bosses" => array(
 					"name" => "ボス",
 					"info" => "Popup",
+				),
+			),
+			"sections" => array(
+				"aelio" => array (
+					"centalCity" => "セントラルシティ",
+					"centalAeilo" => "中央エアリオ",
+					"mtMagnus" => "マグナス山",
+					"southAelio" => "南エアリオ",
+					"northAelio" => "北エアリオ",
+					"laboratoryRuins" => "ウァンフォード研究所跡",
+					"westAelio" => "西エアリオ",
+					"resolForest" => "レゾルの森林",
+					"halphaLake" => "ハルフィリア湖",
 				),
 			),
 		),
@@ -140,9 +159,12 @@ $localization = array (
 			"5" => "Cocoon ID-5",
 			"6" => "Cocoon ID-6",
 			"7" => "Cocoon ID-7",
+			"7" => "Cocoon ID-8",
 		),
 		"mag" => array(
 			"1" => "練達のリージョンマグ",
+			"2" => "Region Mag ID-2",
+			"3" => "Region Mag ID-3",
 		),
 		"ryuker" => array(
 			"1" => "バルフロウ大瀑布",
@@ -163,6 +185,7 @@ $localization = array (
 		"tower" => array(
 			"1" => "<div class='text-center'><p class='h4 mb-1'><b>タワー</b></p><p class='h5'><b>グレートウォール</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>プレイヤー数：</b></td><td><b>?</b></td></tr><tr><td><b>必要戦闘力：</b></td><td><b>???</b></td></tr></tbody></table><p class='mb-0'><b>説明：</b></p><ul style='list-style-type: none'><li>ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使し、最深部で待ちうける“ダイダル・ソード”を撃破せよ。</li></ul><p class='mb-0'><b>メインミッション：</b></p><ul style='list-style-type: none'><li>ダイダルを倒せ！</li></ul><p class='mb-0'><b>サイドミッション：</b> <ul style='list-style-type: none'> <li>23:00以内にクリア</li><li>戦闘不能回数5回未満でクリア</li><li>ポイントキューブを5回取得してクリア</li><li>サイドミッションすべて達成してクリア</li></ul></p><p class='mb-0'><b>褒賞：</b> <ul style='list-style-type: none'> <li>+2 SP</li></ul></p>",
 			"2" => "Tower ID-2",
+			"3" => "Tower ID-3",
 		),
 		"city" => array(
 			"1" => "セントラルシティ",
@@ -196,6 +219,7 @@ $localization = array (
 			"jp" => " disabled bg-primary text-white",
 			"ru" => "",
 			"kr" => "",
+			"pt" => "",
 		),
 		"test" => "8492",
 	),
