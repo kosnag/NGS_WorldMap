@@ -616,25 +616,28 @@ include_once "../lang_packs/" . $lang . ".php";
 
 // Photon Chunk
 	let PhotonChunk = [
-		{coordinates:[2606,2553]},
-		{coordinates:[2306,3002]},
-		{coordinates:[2299,3024]},
-		{coordinates:[2280,3087]},
-		{coordinates:[2273,3113]},
-		{coordinates:[2257,3145]},
-		{coordinates:[2233,3233]},
-		{coordinates:[2167,3327]},
-		{coordinates:[2340,3943]},
-		{coordinates:[1986,3360]},
-		{coordinates:[1581,3212]},
-		{coordinates:[1558,3073]},
-		{coordinates:[1396,2960]},
-		{coordinates:[1313,2961]},
-		{coordinates:[1250,2975]},
-		{coordinates:[1188,3025]},
-		{coordinates:[1188,3087]},
-		{coordinates:[1134,5549]},
-		{coordinates:[4712,4071]}
+		{coordinates:[2579,2534]},
+		{coordinates:[2338,3084]},
+		{coordinates:[2344,3235]},
+		{coordinates:[2282,3140]},
+		{coordinates:[2225,3133]},
+		{coordinates:[2161,3328]},
+		{coordinates:[2209,3235]},
+		{coordinates:[2331,3949]},
+		{coordinates:[1953,3363]},
+		{coordinates:[1575,3232]},
+		{coordinates:[1542,3106]},
+		{coordinates:[1414,2972]},
+		{coordinates:[1319,2965]},
+		{coordinates:[1257,2989]},
+		{coordinates:[1179,3022]},
+		{coordinates:[1175,3089]},
+		{coordinates:[859,4431]},
+		{coordinates:[1524,4448]},
+		{coordinates:[1584,4526]},
+		{coordinates:[1867,4581]},
+		{coordinates:[2044,4915]},
+		{coordinates:[1851,5103]}
 	];
 	let PhotonChunkToggle = [];
 
