@@ -48,51 +48,51 @@ $localization = array (
 			"food" => array(
 				"header" => "Food",
 				"sautePeach" => array (
-					"name" => "Saute Peach",
+					"name" => "Light Aelio Peach",
 					"info" => "Popup",
 				),
 				"sauteBanana" => array (
-					"name" => "Saute Banana",
+					"name" => "Robust Aelio Banana",
 					"info" => "Popup",
 				),
 				"sauteApple" => array (
-					"name" => "Saute Apple",
+					"name" => "Rich Aelio Apple",
 					"info" => "Popup",
 				),
 				"sautePear" => array (
-					"name" => "Saute Pear",
+					"name" => "Crisp Aelio Pear",
 					"info" => "Popup",
 				),
 				"sodheTurbanShell" => array (
-					"name" => "Saute Turban Shell",
+					"name" => "Light Aelio Turban Shell",
 					"info" => "Popup",
 				),
 				"sodheClam" => array (
-					"name" => "Saute Clam",
+					"name" => "Rich Aelio Clam",
 					"info" => "Popup",
 				),
 				"sohTurnip" => array (
-					"name" => "Soh Turnip",
+					"name" => "Robust Aelio Turnip",
 					"info" => "Popup",
 				),
 				"sohMushroom" => array (
-					"name" => "Soh Mushroom",
+					"name" => "Light Aelio Mushroom",
 					"info" => "Popup",
 				),
 				"sodheCrab" => array (
-					"name" => "Sodhe Crab",
+					"name" => "Crisp Aelio Crab",
 					"info" => "Popup",
 				),
 				"sodheLobster" => array (
-					"name" => "Sodhe Lobster",
+					"name" => "Robust Aelio Lobster",
 					"info" => "Popup",
 				),
 				"sohHerb" => array (
-					"name" => "Soh Herb",
+					"name" => "Rich Aelio Herb",
 					"info" => "Popup",
 				),
 				"sohTomato" => array (
-					"name" => "Soh Tomato",
+					"name" => "Crisp Aelio Tomato",
 					"info" => "Popup",
 				),
 			),
@@ -197,8 +197,8 @@ $localization = array (
 			"3" => "??? ID-3",
 		),
 		"urgent" => array(
-			"1" => "<div class='text-center'><p class='h4 mb-1'><b>Urgent Quest</b></p><p class='h5'><b>Pettas Vera Suppression Ops</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>950</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat the Pettas Vera!</li></ul></p><p class='mb-0'><b>Rewards for 1st clear:</b><ul style='list-style-type: none'> <li>C/Guard I</li></ul></p><p class='mb-0'><b>Rewards:</b><ul style='list-style-type: none'><li>2000 N-Meseta</li></ul></p>",
-			"2" => "UQ ID-2",
+			"1" => "div class='text-center'><p class='h4 mb-1'><b>Urgent Quest</b></p><p class='h5'><b>Command DOLLS Suppression Op</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>1184</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat the Command DOLLS unit!</li></ul></p><p class='mb-0'><b>Rewards for 1st clear:</b><ul style='list-style-type: none'> <li>C/Guard I</li></ul></p><p class='mb-0'><b>Rewards:</b><ul style='list-style-type: none'><li>2000 N-Meseta</li></ul></p>",
+			"2" => "<div class='text-center'><p class='h4 mb-1'><b>Urgent Quest</b></p><p class='h5'><b>Nex Vera Suppression Op</b></p></div><table class='table table-sm d-flex justify-content-center table-borderless mt-1' style='font-size:14px'><tbody><tr><td><b>Number of players:</b></td><td><b>8</b></td></tr><tr><td><b>Required Battle Power:</b></td><td><b>1184</b></td></tr></tbody></table><p class='mb-0'><b>Description:</b></p><ul style='list-style-type: none'><li>A powerful space-time flux has been detected in Resol Forest. Based on past data, we expect Nex Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.</li></ul><p class='mb-0'><b>Clear Conditions:</b></p><ul style='list-style-type: none'><li>Defeat the Nex Vera!</li></ul></p><p class='mb-0'><b>1st Clear Reward:</b> <ul style='list-style-type: none'> <li>+1 SP</li></ul></p>",
 		),
 		"dungeon" => array(
 			"1" => "Dungeon ID-1",
