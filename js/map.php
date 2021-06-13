@@ -6,9 +6,9 @@ include_once "../lang_packs/" . $lang . ".php";
 
 $roundMarker = array (
 	'boxes' => array(
-		'red' => '"radius": 3, "weight": 3, "fillOpacity": 1, "opacity": 1, "fillColor": "#FF0000", "color": "#FF0000"',
-		'white' => '"radius": 3, "weight": 3, "fillOpacity": 1, "opacity": 1, "fillColor": "#FFFFFF", "color": "#FFFFFF"',
-		'gold' => '"radius": 3, "weight": 3, "fillOpacity": 1, "opacity": 1, "fillColor": "#FFD700", "color": "#FFD700"',
+		'red' => '"radius": 4, "weight": 4, "fillOpacity": 1, "opacity": 1, "fillColor": "#FF0000", "color": "#FF0000"',
+		'white' => '"radius": 4, "weight": 4, "fillOpacity": 1, "opacity": 1, "fillColor": "#FFFFFF", "color": "#FFFFFF"',
+		'gold' => '"radius": 4, "weight": 4, "fillOpacity": 1, "opacity": 1, "fillColor": "#FFD700", "color": "#FFD700"',
 	),
 );
 ?>
