@@ -64,6 +64,9 @@ $lang_flag_style = 'height:24px'
 						<li class="nav-item">
 							<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap"><i class="fab fa-github"></i> Github</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap/commits/main"><i class="fab fa-github"></i> Changelog</a>
+						</li>
 						<li class="nav-item dropdown">
 							<a class="nav-link text-white dropdown-toggle" href="#" id="langList" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-language"></i> <?=$localization['UI']['languages']['switcher']?></a>
 							<ul class="dropdown-menu" aria-labelledby="langList">
