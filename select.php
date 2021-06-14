@@ -65,13 +65,19 @@ $lang_flag_sel = 'height:32'
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link text-white" target="_blank" href="https://discord.gg/AvgmpuX"><i class="fab fa-discord"></i> Discord</a>
+							<a class="nav-link text-white" target="_blank" href="https://discord.gg/AvgmpuX"><i class="fab fa-discord"></i> <?=$localization['UI']['misc']['discord-contribute']?></a>
 						</li>
+						<!--<li class="nav-item">
+							<a class="nav-link text-white" target="_blank" href="" data-bs-toggle="modal" data-bs-target="#contributors"><i class="fas fa-hands-helping"></i> <?=$localization['UI']['misc']['contributors']?></a>
+						</li>-->
 						<li class="nav-item">
 							<a class="nav-link text-white" target="_blank" href="https://docs.google.com/spreadsheets/d/12lKTrbbyHszz9TTfmvwRlRZe7MLI9nFL8XVAcIkynlU/edit?usp=sharing"><i class="fab fa-google-drive"></i> Google Sheets</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap"><i class="fab fa-github"></i> Github</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-white" target="_blank" href="https://github.com/kosnag/NGS_InterMap/commits/main"><i class="fab fa-github"></i> Changelog</a>
 						</li>
 					</ul>
 				</div>
