@@ -32,7 +32,7 @@ include_once "../lang_packs/" . $lang . ".php";
 			{coordinates:[4436,4107],popup:"<?=$localization['objects']['cocoon']['3']?>"},
 			{coordinates:[1003,4935],popup:"<?=$localization['objects']['cocoon']['4']?>"},
 			{coordinates:[926,2327],popup:"<?=$localization['objects']['cocoon']['5']?>"},
-			{coordinates:[5248,217],popup:"<?=$localization['objects']['cocoon']['6']?>"},
+			{coordinates:[5248,257],popup:"<?=$localization['objects']['cocoon']['6']?>"},
 			{coordinates:[4965,5879],popup:"<?=$localization['objects']['cocoon']['7']?>"},
 			{coordinates:[1961,5248],popup:"<?=$localization['objects']['cocoon']['8']?>"}
 		];
@@ -396,171 +396,33 @@ include_once "../lang_packs/" . $lang . ".php";
 // Minerals
 // Monotite
 	let monotite = [
-		{coordinates:[5409,3124]},
-		{coordinates:[5331,3238]},
-		{coordinates:[5180,3304]},
-		{coordinates:[5086,3328]},
-		{coordinates:[4944,3342]},
-		{coordinates:[4847,3373]},
-		{coordinates:[4754,3697]},
-		{coordinates:[4818,3761]},
-		{coordinates:[4650,4179]},
-		{coordinates:[4510,4367]},
-		{coordinates:[4499,4450]},
-		{coordinates:[4882,5390]},
-		{coordinates:[4062,5573]},
-		{coordinates:[4031,5257]},
-		{coordinates:[4014,5284]},
-		{coordinates:[3969,5271]},
-		{coordinates:[3624,1543]},
-		{coordinates:[3657,1887]},
-		{coordinates:[3431,2363]},
-		{coordinates:[3281,2255]},
-		{coordinates:[3239,2160]},
-		{coordinates:[3182,2252]},
-		{coordinates:[3050,2370]},
-		{coordinates:[3146,2020]},
-		{coordinates:[2823,2165]},
-		{coordinates:[2795,2425]},
-		{coordinates:[2760,2248]},
-		{coordinates:[2726,2206]},
-		{coordinates:[2598,2259]}
+		{coordinates:[5438,3109]},{coordinates:[5317,3213]},{coordinates:[5050,3333]},{coordinates:[5024,3278]},{coordinates:[4996,3301]},{coordinates:[4964,3361]},{coordinates:[4862,3301]},{coordinates:[4884,3465]},{coordinates:[4871,3474]},{coordinates:[4858,3510]},{coordinates:[4796,3535]},{coordinates:[4824,3987]},{coordinates:[4544,7423]},{coordinates:[4462,4390]},{coordinates:[4031,5236]},{coordinates:[4010,5269]},{coordinates:[3951,5255]},{coordinates:[3424,2382]},{coordinates:[2955,2202]},{coordinates:[2927,2228]},{coordinates:[2830,2257]},{coordinates:[2791,2220]},{coordinates:[2726,2334]},{coordinates:[2881,2486]},{coordinates:[2784,2458]},{coordinates:[2400,2627]}
 	];
 	let monotiteToggle = [];
 
 // Dualomite
 	let dualomite = [
-		{coordinates:[487,648]},
-		{coordinates:[827,590]},
-		{coordinates:[1019,1423]},
-		{coordinates:[1063,1382]},
-		{coordinates:[1238,1549]},
-		{coordinates:[1350,1607]},
-		{coordinates:[989,1991]},
-		{coordinates:[843,1959]},
-		{coordinates:[629,2238]},
-		{coordinates:[706,2279]},
-		{coordinates:[618,2302]},
-		{coordinates:[907,2727]},
-		{coordinates:[1195,2466]},
-		{coordinates:[1420,2194]},
-		{coordinates:[928,3127]},
-		{coordinates:[999,3070]},
-		{coordinates:[944,2979]},
-		{coordinates:[1356,3010]},
-		{coordinates:[1975,1759]},
-		{coordinates:[1975,1107]},
-		{coordinates:[1902,724]},
-		{coordinates:[2504,2167]},
-		{coordinates:[2593,2113]},
-		{coordinates:[2828,1992]},
-		{coordinates:[2701,1738]},
-		{coordinates:[2275,3300]},
-		{coordinates:[1356,4575]},
-		{coordinates:[1460,4430]},
-		{coordinates:[1543,4576]},
-		{coordinates:[1920,4622]},
-		{coordinates:[1861,4928]},
-		{coordinates:[2098,5192]},
-		{coordinates:[1924,5038]},
-		{coordinates:[1794,5161]},
-		{coordinates:[3429,1285]},
-		{coordinates:[3635,1345]},
-		{coordinates:[3784,1209]},
-		{coordinates:[4345,654]},
-		{coordinates:[4457,863]},
-		{coordinates:[4573,594]},
-		{coordinates:[5466,366]},
-		{coordinates:[5535,370]}
+		{coordinates:[5449,1014]},{coordinates:[5508,352]},{coordinates:[5479,369]},{coordinates:[4588,647]},{coordinates:[4504,861]},{coordinates:[4317,711]},{coordinates:[3632,1320]},{coordinates:[3435,1270]},{coordinates:[2841,2049]},{coordinates:[2671,2081]},{coordinates:[2185,2968]},{coordinates:[2230,3091]},{coordinates:[2205,3353]},{coordinates:[1821,4067]},{coordinates:[1973,4654]},{coordinates:[1954,4718]},{coordinates:[2057,4979]},{coordinates:[2180,5164]},{coordinates:[1860,5206]},{coordinates:[876,4484]},{coordinates:[921,4124]},{coordinates:[1033,4113]},{coordinates:[1050,3147]},{coordinates:[1082,3056]},{coordinates:[959,3036]},{coordinates:[912,3075]},{coordinates:[1417,2443]},{coordinates:[1408,2236]},{coordinates:[1969,1120]},{coordinates:[1841,903]},{coordinates:[1900,711]},{coordinates:[1371,1591]},{coordinates:[1198,1517]},{coordinates:[1043,1349]},{coordinates:[1040,1443]},{coordinates:[1102,1694]},{coordinates:[1016,2007]},{coordinates:[893,1914]},{coordinates:[715,2308]},{coordinates:[619,2345]},{coordinates:[597,2341]},{coordinates:[837,625]}
 	];
 	let dualomiteToggle = [];
 		
 // Trinite
 	let trinite = [
-		{coordinates:[688,2286]},
-		{coordinates:[615,2223]},
-		{coordinates:[1023,1445]},
-		{coordinates:[1309,1487]},
-		{coordinates:[1995,1769]},
-		{coordinates:[2618,2145]},
-		{coordinates:[2757,1899]},
-		{coordinates:[2719,1729]},
-		{coordinates:[3221,1700]},
-		{coordinates:[4144,2431]},
-		{coordinates:[4372,1443]},
-		{coordinates:[4634,832]},
-		{coordinates:[5303,1612]},
-		{coordinates:[5261,1644]},
-		{coordinates:[5323,1758]},
-		{coordinates:[5513,1941]},
-		{coordinates:[5588,1990]},
-		{coordinates:[5511,2218]},
-		{coordinates:[5640,2345]},
-		{coordinates:[6364,1616]},
-		{coordinates:[6481,1720]}
+		{coordinates:[6473,1739]},{coordinates:[5401,1599]},{coordinates:[5295,1599]},{coordinates:[5317,1712]},{coordinates:[5418,2050]},{coordinates:[5526,2223]},{coordinates:[5647,2356]},{coordinates:[5677,2449]},{coordinates:[4654,867]},{coordinates:[4156,2452]},{coordinates:[2598,2158]},{coordinates:[1441,1485]},{coordinates:[1232,1479]}
 	];
 	let triniteToggle = [];
 
 
 // Photon Chunk
 	let PhotonChunk = [
-		{coordinates:[2579,2534]},
-		{coordinates:[2338,3084]},
-		{coordinates:[2344,3235]},
-		{coordinates:[2282,3140]},
-		{coordinates:[2225,3133]},
-		{coordinates:[2161,3328]},
-		{coordinates:[2209,3235]},
-		{coordinates:[2331,3949]},
-		{coordinates:[1953,3363]},
-		{coordinates:[1575,3232]},
-		{coordinates:[1542,3106]},
-		{coordinates:[1414,2972]},
-		{coordinates:[1319,2965]},
-		{coordinates:[1257,2989]},
-		{coordinates:[1179,3022]},
-		{coordinates:[1175,3089]},
-		{coordinates:[859,4431]},
-		{coordinates:[1524,4448]},
-		{coordinates:[1584,4526]},
-		{coordinates:[1867,4581]},
-		{coordinates:[2044,4915]},
-		{coordinates:[1851,5103]}
+		{coordinates:[5611,1739]},{coordinates:[4935,3306]},{coordinates:[2773,2344]},{coordinates:[2576,2642]},{coordinates:[2142,2896]},{coordinates:[2154,2929]},{coordinates:[2162,3350]},{coordinates:[2293,3493]},{coordinates:[2007,5213]},{coordinates:[1855,5023]},{coordinates:[1812,4506]},{coordinates:[1704,4461]},{coordinates:[1476,4471]},{coordinates:[1378,4288]},{coordinates:[1741,3223]},{coordinates:[1675,3086]},{coordinates:[1657,2978]},{coordinates:[1061,3092]},{coordinates:[1029,3046]},{coordinates:[1029,4133]}
 	];
 	let PhotonChunkToggle = [];
 
 
 // Photon Quartz
 	let PhotonQuartz = [
-		{coordinates:[2535,2238]},
-		{coordinates:[2975,2260]},
-		{coordinates:[4092,2869]},
-		{coordinates:[4216,2852]},
-		{coordinates:[5104,3038]},
-		{coordinates:[5184,2977]},
-		{coordinates:[5459,2869]},
-		{coordinates:[5489,2786]},
-		{coordinates:[5448,2592]},
-		{coordinates:[5653,2425]},
-		{coordinates:[5728,2431]},
-		{coordinates:[5761,2187]},
-		{coordinates:[5464,2067]},
-		{coordinates:[5353,1818]},
-		{coordinates:[5248,1804]},
-		{coordinates:[5242,1707]},
-		{coordinates:[6277,2262]},
-		{coordinates:[6507,2051]},
-		{coordinates:[6568,1754]},
-		{coordinates:[6532,1646]},
-		{coordinates:[6424,1649]},
-		{coordinates:[6449,1585]},
-		{coordinates:[6371,1546]},
-		{coordinates:[6346,1457]},
-		{coordinates:[6244,1349]},
-		{coordinates:[6102,1258]},
-		{coordinates:[4680,4732]},
-		{coordinates:[4828,5049]},
-		{coordinates:[4974,5400]}
+		{coordinates:[6494,2084]},{coordinates:[6544,1738]},{coordinates:[6514,1653]},{coordinates:[6467,1633]},{coordinates:[6426,1635]},{coordinates:[6327,1398]},{coordinates:[6289,1379]},{coordinates:[6298,2245]},{coordinates:[6125,2348]},{coordinates:[6085,2433]},{coordinates:[5746,2175]},{coordinates:[5922,1290]},{coordinates:[5612,2516]},{coordinates:[5589,2263]},{coordinates:[5469,2081]},{coordinates:[5533,1962]},{coordinates:[5482,1926]},{coordinates:[5341,1770]},{coordinates:[5266,1763]},{coordinates:[5243,1712]},{coordinates:[5244,1681]},{coordinates:[5307,1636]},{coordinates:[5552,1394]},{coordinates:[5349,3198]},{coordinates:[5203,2996]},{coordinates:[5094,3078]},{coordinates:[5152,3326]},{coordinates:[4813,3643]},{coordinates:[4795,4012]},{coordinates:[4552,2946]},{coordinates:[4569,4872]},{coordinates:[3258,2245]},{coordinates:[3005,2519]},{coordinates:[2748,2474]},{coordinates:[2643,2307]}
 	];
 	let PhotonQuartzToggle = [];
 	
