@@ -639,6 +639,8 @@ $(document).ready(function(){
 				}
 			});
 		}
+	}
+	{ // Other
 		{ // Alpha Reactors
 			$("#alphaReactor_On").click(function(){
 				if (alphaReactorToggle.length == 0) {
@@ -653,6 +655,23 @@ $(document).ready(function(){
 			$("#alphaReactor_Off").click(function(){
 				for (let i = 0; i < alphaReactorToggle.length; i++) {
 					map.removeLayer(alphaReactorToggle[i]);
+				}
+			});
+		}
+		{ // Datapods
+			$("#datapod_On").click(function(){
+				if (datapodToggle.length == 0) {
+					for (let i = 0; i < datapod.length; i++) {
+						datapodToggle.push(L.marker(datapod[i]["coordinates"],{icon:iconAlphaReactor}).bindTooltip("<?=$localization['UI']['sorting']['other']['datapod']['name']?>").bindPopup("YX: " + datapod[i]["coordinates"]));
+					}
+				}
+				for (let i = 0; i < datapodToggle.length; i++) {
+					datapodToggle[i].addTo(map);
+				}
+			});
+			$("#datapod_Off").click(function(){
+				for (let i = 0; i < datapodToggle.length; i++) {
+					map.removeLayer(datapodToggle[i]);
 				}
 			});
 		}
