@@ -302,7 +302,7 @@ $(document).ready(function(){
 			$("#redBox_On").click(function(){
 				if (redBoxToggle.length == 0) {
 					for (let i = 0; i < redBox.length; i++) {
-						redBoxToggle.push(L.circleMarker(redBox[i]["coordinates"],{icon:iconRedBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['redBox']['name']?>").bindPopup("YX: " + redBox[i]["coordinates"]));
+						redBoxToggle.push(L.marker(redBox[i]["coordinates"],{icon:iconRedBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['redBox']['name']?>").bindPopup("YX: " + redBox[i]["coordinates"]));
 					}
 				}
 				for (let i = 0; i < redBoxToggle.length; i++) {
@@ -319,7 +319,7 @@ $(document).ready(function(){
 			$("#whiteBox_On").click(function(){
 				if (whiteBoxToggle.length == 0) {
 					for (let i = 0; i < whiteBox.length; i++) {
-						whiteBoxToggle.push(L.circleMarker(whiteBox[i]["coordinates"],{icon:iconWhiteBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['whiteBox']['name']?>").bindPopup("YX: " + whiteBox[i]["coordinates"]));
+						whiteBoxToggle.push(L.marker(whiteBox[i]["coordinates"],{icon:iconWhiteBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['whiteBox']['name']?>").bindPopup("YX: " + whiteBox[i]["coordinates"]));
 					}
 				}
 				for (let i = 0; i < whiteBoxToggle.length; i++) {
@@ -336,7 +336,7 @@ $(document).ready(function(){
 			$("#goldBox_On").click(function(){
 				if (goldBoxToggle.length == 0) {
 					for (let i = 0; i < goldBox.length; i++) {
-						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{icon:iconGoldBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>").bindPopup("YX: " + goldBox[i]["coordinates"]));
+						goldBoxToggle.push(L.marker(goldBox[i]["coordinates"],{icon:iconGoldBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>").bindPopup("YX: " + goldBox[i]["coordinates"]));
 					}
 				}
 				for (let i = 0; i < goldBoxToggle.length; i++) {
@@ -419,7 +419,7 @@ $(document).ready(function(){
 				}
 			});
 		}
-		/*{ // Saute Turban Shell
+		{ // Saute Turban Shell
 			$("#sodheTurbanShell_On").click(function(){
 				if (sodheTurbanShellToggle.length == 0) {
 					for (let i = 0; i < sodheTurbanShell.length; i++) {
@@ -435,7 +435,7 @@ $(document).ready(function(){
 					map.removeLayer(sodheTurbanShellToggle[i]);
 				}
 			});
-		}*/
+		}
 		{ // Saute Clam
 			$("#sodheClam_On").click(function(){
 				if (sodheClamToggle.length == 0) {
@@ -538,7 +538,7 @@ $(document).ready(function(){
 				}
 			});
 		}
-		/*{ // Soh Tomato
+		{ // Soh Tomato
 			$("#sohTomato_On").click(function(){
 				if (sohTomatoToggle.length == 0) {
 					for (let i = 0; i < sohTomato.length; i++) {
@@ -554,7 +554,7 @@ $(document).ready(function(){
 					map.removeLayer(sohTomatoToggle[i]);
 				}
 			});
-		}*/
+		}
 	}
 	{ // MINERALS
 		{ // Monotite
@@ -665,7 +665,7 @@ $(document).ready(function(){
 			$("#datapod_On").click(function(){
 				if (datapodToggle.length == 0) {
 					for (let i = 0; i < datapod.length; i++) {
-						datapodToggle.push(L.marker(datapod[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['other']['datapod']['name']?>").bindPopup("YX: " + datapod[i]["coordinates"]));
+						datapodToggle.push(L.circleMarker(datapod[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['other']['datapod']['name']?>").bindPopup("YX: " + datapod[i]["coordinates"]));
 					}
 				}
 				for (let i = 0; i < datapodToggle.length; i++) {
