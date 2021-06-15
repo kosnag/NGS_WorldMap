@@ -367,10 +367,10 @@ $lang_flag_style = 'height:24px'
 								</div>
 							</div>
 							<div class="accordion-item">
-								<h2 class="accordion-header" id="accordion2-1">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-2" aria-expanded="false" aria-controls="accordion2-2"><?=$localization['UI']['sorting']['other']['header']?></button>
+								<h2 class="accordion-header" id="accordion5-1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion5-2" aria-expanded="false" aria-controls="accordion5-2"><?=$localization['UI']['sorting']['other']['header']?></button>
 								</h2>
-								<div id="accordion2-2" class="collapse" aria-labelledby="accordion2-1" data-bs-parent="#accordion">
+								<div id="accordion5-2" class="collapse" aria-labelledby="accordion5-1" data-bs-parent="#accordion">
 									<div class="accordion-body justify-content-center">
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><span class="text-danger">[OUTDATED]</span><?=$localization['UI']['sorting']['other']['alphaReactor']['name']?></div>
