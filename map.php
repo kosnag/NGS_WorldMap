@@ -386,6 +386,13 @@ $lang_flag_style = 'height:24px'
 												<input type="radio" class="btn-check" name="datapod" id="datapod_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="datapod_Off"><i class="fas fa-times"></i></label>
 										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100 disabled"><?=$localization['UI']['sorting']['other']['bosses']['name']?></div>
+												<input type="radio" class="btn-check" name="bosses" id="bosses_On" autocomplete="off">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center disabled" for="bosses_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="bosses" id="bosses_Off" autocomplete="off" checked="">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center disabled" for="bosses_Off"><i class="fas fa-times"></i></label>
+										</div>
 									</div>
 								</div>
 							</div>

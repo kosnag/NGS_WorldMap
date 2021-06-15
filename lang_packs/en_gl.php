@@ -130,7 +130,7 @@ $localization = array (
 					"info" => "Popup",
 				),
 				"bosses" => array(
-					"name" => "Bosses",
+					"name" => "Veteran Enemies",
 					"info" => "Popup",
 				),
 			),
