@@ -27,7 +27,7 @@ $localization = array (
 				"Towers" => "タワー",
 				"Cities" => "市",
 				"Huts" => "???",
-				"UrgentQuests" => "緊クエスト",
+				"UrgentQuests" => "緊急クエスト",
 				"Dungeons" => "ダンジョン",
 			),
 			"boxes" => array(
@@ -163,8 +163,8 @@ $localization = array (
 		),
 		"mag" => array(
 			"1" => "練達のリージョンマグ",
-			"2" => "Region Mag ID-2",
-			"3" => "Region Mag ID-3",
+			"2" => "千金のリージョンマグ",
+			"3" => "常勝のリージョンマグ",
 		),
 		"ryuker" => array(
 			"1" => "バルフロウ大瀑布",
