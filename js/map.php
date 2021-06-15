@@ -72,7 +72,7 @@ let Mat_Icons = L.Icon.extend({options:{iconSize:[26,26],iconAnchor:[13,13],popu
 	iconSodheLobster = new Mat_Icons({iconUrl: 'images/marks/materials/sodheLobster.png'}),
 	iconSodheCrab = new Mat_Icons({iconUrl: 'images/marks/materials/sodheCrab.png'});
 	
-let Box_Icons = L.Icon.extend({options:{iconSize:[24,24],iconAnchor:[12,12],popupAnchor:[0,-12]}});
+let Box_Icons = L.Icon.extend({options:{iconSize:[18,18],iconAnchor:[9,9],popupAnchor:[0,-9]}});
 	iconWhiteBox = new Box_Icons({iconUrl: 'images/marks/containers/whiteBox.png'}),
 	iconRedBox = new Box_Icons({iconUrl: 'images/marks/containers/redBox.png'}),
 	iconGoldBox = new Box_Icons({iconUrl: 'images/marks/containers/goldBox.png'});
