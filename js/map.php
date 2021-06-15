@@ -6,8 +6,6 @@ include_once "../lang_packs/" . $lang . ".php";
 
 $roundMarker = array (
 	'boxes' => array(
-		'red' => '"radius": 4, "weight": 4, "fillOpacity": 1, "opacity": 1, "fillColor": "#FF0000", "color": "#FF0000"',
-		'white' => '"radius": 4, "weight": 4, "fillOpacity": 1, "opacity": 1, "fillColor": "#FFFFFF", "color": "#FFFFFF"',
 		'gold' => '"radius": 4, "weight": 4, "fillOpacity": 1, "opacity": 1, "fillColor": "#FFD700", "color": "#FFD700"',
 	),
 );
@@ -73,6 +71,11 @@ let Mat_Icons = L.Icon.extend({options:{iconSize:[26,26],iconAnchor:[13,13],popu
 	iconSodheClam = new Mat_Icons({iconUrl: 'images/marks/materials/sodheClam.png'}),
 	iconSodheLobster = new Mat_Icons({iconUrl: 'images/marks/materials/sodheLobster.png'}),
 	iconSodheCrab = new Mat_Icons({iconUrl: 'images/marks/materials/sodheCrab.png'});
+	
+let Box_Icons = L.Icon.extend({options:{iconSize:[24,24],iconAnchor:[12,12],popupAnchor:[0,-12]}});
+	iconWhiteBox = new Box_Icons({iconUrl: 'images/marks/containers/whiteBox.png'}),
+	iconRedBox = new Box_Icons({iconUrl: 'images/marks/containers/redBox.png'}),
+	iconGoldBox = new Box_Icons({iconUrl: 'images/marks/containers/goldBox.png'});
 
 $(document).ready(function(){
     console.log();
@@ -100,7 +103,7 @@ $(document).ready(function(){
 				for (let i = 0; i < centralTower.length; i++) {
 					centralTowerToggle.push(L.marker(centralTower[i]["coordinates"],{icon:iconCentTower}).bindPopup(centralTower[i]["popup"]).addTo(map));
 				}
-			}*/
+			}
 			$("#centralTower_On").click(function(){
 				if (centralTowerToggle.length == 0) {
 					for (let i = 0; i < centralTower.length; i++) {
@@ -115,7 +118,7 @@ $(document).ready(function(){
 				for (let i = 0; i < centralTowerToggle.length; i++) {
 					map.removeLayer(centralTowerToggle[i]);
 				}
-			});
+			});*/
 		}
 		{ // Cocoon
 			if (CocoonToggle.length == 0) {
@@ -210,7 +213,7 @@ $(document).ready(function(){
 				for (let i = 0; i < City.length; i++) {
 					CityToggle.push(L.marker(City[i]["coordinates"],{icon:iconCity}).bindPopup(City[i]["popup"]).addTo(map));
 				}
-			}*/
+			}
 			$("#City_On").click(function(){
 				if (CityToggle.length == 0) {
 					for (let i = 0; i < City.length; i++) {
@@ -225,14 +228,14 @@ $(document).ready(function(){
 				for (let i = 0; i < CityToggle.length; i++) {
 					map.removeLayer(CityToggle[i]);
 				}
-			});
+			});*/
 		}
 		{ // Hut
 			/*if (HutToggle.length == 0) {
 				for (let i = 0; i < Hut.length; i++) {
 					HutToggle.push(L.marker(Hut[i]["coordinates"],{icon:iconHut}).bindPopup(Hut[i]["popup"]).addTo(map));
 				}
-			}*/
+			}
 			$("#Hut_On").click(function(){
 				if (HutToggle.length == 0) {
 					for (let i = 0; i < Hut.length; i++) {
@@ -247,7 +250,7 @@ $(document).ready(function(){
 				for (let i = 0; i < HutToggle.length; i++) {
 					map.removeLayer(HutToggle[i]);
 				}
-			});
+			});*/
 		}
 		{ // UQ
 			if (UrgentQuestToggle.length == 0) {
@@ -276,7 +279,7 @@ $(document).ready(function(){
 				for (let i = 0; i < Dungeon.length; i++) {
 					DungeonToggle.push(L.marker(Dungeon[i]["coordinates"],{icon:iconDungeon}).bindPopup(Dungeon[i]["popup"]).addTo(map));
 				}
-			}*/
+			}
 			$("#Dungeon_On").click(function(){
 				if (DungeonToggle.length == 0) {
 					for (let i = 0; i < Dungeon.length; i++) {
@@ -291,7 +294,7 @@ $(document).ready(function(){
 				for (let i = 0; i < DungeonToggle.length; i++) {
 					map.removeLayer(DungeonToggle[i]);
 				}
-			});
+			});*/
 		}
 	}
 	{ // Boxes
@@ -299,7 +302,7 @@ $(document).ready(function(){
 			$("#redBox_On").click(function(){
 				if (redBoxToggle.length == 0) {
 					for (let i = 0; i < redBox.length; i++) {
-						redBoxToggle.push(L.circleMarker(redBox[i]["coordinates"],{<?echo $roundMarker['boxes']['red'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['redBox']['name']?>").bindPopup("YX: " + redBox[i]["coordinates"]));
+						redBoxToggle.push(L.circleMarker(redBox[i]["coordinates"],{icon:iconRedBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['redBox']['name']?>").bindPopup("YX: " + redBox[i]["coordinates"]));
 					}
 				}
 				for (let i = 0; i < redBoxToggle.length; i++) {
@@ -316,7 +319,7 @@ $(document).ready(function(){
 			$("#whiteBox_On").click(function(){
 				if (whiteBoxToggle.length == 0) {
 					for (let i = 0; i < whiteBox.length; i++) {
-						whiteBoxToggle.push(L.circleMarker(whiteBox[i]["coordinates"],{<?echo $roundMarker['boxes']['white'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['whiteBox']['name']?>").bindPopup("YX: " + whiteBox[i]["coordinates"]));
+						whiteBoxToggle.push(L.circleMarker(whiteBox[i]["coordinates"],{icon:iconWhiteBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['whiteBox']['name']?>").bindPopup("YX: " + whiteBox[i]["coordinates"]));
 					}
 				}
 				for (let i = 0; i < whiteBoxToggle.length; i++) {
@@ -333,7 +336,7 @@ $(document).ready(function(){
 			$("#goldBox_On").click(function(){
 				if (goldBoxToggle.length == 0) {
 					for (let i = 0; i < goldBox.length; i++) {
-						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>").bindPopup("YX: " + goldBox[i]["coordinates"]));
+						goldBoxToggle.push(L.circleMarker(goldBox[i]["coordinates"],{icon:iconGoldBox}).bindTooltip("<?=$localization['UI']['sorting']['boxes']['goldBox']['name']?>").bindPopup("YX: " + goldBox[i]["coordinates"]));
 					}
 				}
 				for (let i = 0; i < goldBoxToggle.length; i++) {
@@ -662,7 +665,7 @@ $(document).ready(function(){
 			$("#datapod_On").click(function(){
 				if (datapodToggle.length == 0) {
 					for (let i = 0; i < datapod.length; i++) {
-						datapodToggle.push(L.marker(datapod[i]["coordinates"],{icon:iconAlphaReactor}).bindTooltip("<?=$localization['UI']['sorting']['other']['datapod']['name']?>").bindPopup("YX: " + datapod[i]["coordinates"]));
+						datapodToggle.push(L.marker(datapod[i]["coordinates"],{<?echo $roundMarker['boxes']['gold'];?>}).bindTooltip("<?=$localization['UI']['sorting']['other']['datapod']['name']?>").bindPopup("YX: " + datapod[i]["coordinates"]));
 					}
 				}
 				for (let i = 0; i < datapodToggle.length; i++) {
