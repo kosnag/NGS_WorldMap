@@ -408,7 +408,7 @@ include_once "../lang_packs/" . $lang . ".php";
 		
 // Trinite
 	let trinite = [
-		{coordinates:[6473,1739]},{coordinates:[5401,1599]},{coordinates:[5295,1599]},{coordinates:[5317,1712]},{coordinates:[5418,2050]},{coordinates:[5526,2223]},{coordinates:[5647,2356]},{coordinates:[5677,2449]},{coordinates:[4654,867]},{coordinates:[4156,2452]},{coordinates:[2598,2158]},{coordinates:[1441,1485]},{coordinates:[1232,1479]}
+		{coordinates:[6547,1737]},{coordinates:[6399,1644]},{coordinates:[6263,1462]},{coordinates:[6232,1330]},{coordinates:[5954,1247]},{coordinates:[5698,2379]},{coordinates:[5657,2390]},{coordinates:[5520,2240]},{coordinates:[5482,1923]},{coordinates:[5331,1740]},{coordinates:[5267,1649]},{coordinates:[5429,2465]},{coordinates:[5547,2768]},{coordinates:[5144,3004]},{coordinates:[4353,2792]},{coordinates:[4552,1565]},{coordinates:[4658,817]},{coordinates:[3794,1198]},{coordinates:[3444,1280]},{coordinates:[3175,2120]},{coordinates:[2850,2228]},{coordinates:[2825,1947]},{coordinates:[2571,2175]},{coordinates:[1844,2467]},{coordinates:[2129,1423]},{coordinates:[1846,913]},{coordinates:[1866,716]},{coordinates:[1238,1514]},{coordinates:[1052,2391]},{coordinates:[1799,1662]}
 	];
 	let triniteToggle = [];
 
