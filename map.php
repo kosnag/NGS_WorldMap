@@ -363,12 +363,28 @@ $lang_flag_style = 'height:24px'
 												<input type="radio" class="btn-check" name="PhotonQuartz" id="PhotonQuartz_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="PhotonQuartz_Off"><i class="fas fa-times"></i></label>
 										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="accordion2-1">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion2-2" aria-expanded="false" aria-controls="accordion2-2"><?=$localization['UI']['sorting']['other']['header']?></button>
+								</h2>
+								<div id="accordion2-2" class="collapse" aria-labelledby="accordion2-1" data-bs-parent="#accordion">
+									<div class="accordion-body justify-content-center">
 										<div class="btn-group w-100 mb-2" role="group">
 											<div class="btn cus-btn-outline-primary w-100"><span class="text-danger">[OUTDATED]</span><?=$localization['UI']['sorting']['other']['alphaReactor']['name']?></div>
 												<input type="radio" class="btn-check" name="alphaReactor" id="alphaReactor_On" autocomplete="off">
 												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="alphaReactor_On"><i class="fas fa-check"></i></label>
 												<input type="radio" class="btn-check" name="alphaReactor" id="alphaReactor_Off" autocomplete="off" checked="">
 												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="alphaReactor_Off"><i class="fas fa-times"></i></label>
+										</div>
+										<div class="btn-group w-100 mb-2" role="group">
+											<div class="btn cus-btn-outline-primary w-100"><?=$localization['UI']['sorting']['other']['datapod']['name']?></div>
+												<input type="radio" class="btn-check" name="datapod" id="datapod_On" autocomplete="off">
+												<label class="btn btn-outline-success ratio-1x1 d-flex align-items-center" for="datapod_On"><i class="fas fa-check"></i></label>
+												<input type="radio" class="btn-check" name="datapod" id="datapod_Off" autocomplete="off" checked="">
+												<label class="btn btn-outline-danger ratio-1x1 d-flex align-items-center" for="datapod_Off"><i class="fas fa-times"></i></label>
 										</div>
 									</div>
 								</div>
