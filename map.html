@@ -1,14 +1,3 @@
-<?
-if($_SERVER["REQUEST_URI"]=="/map.php")
-header("Location: /");
-
-if( $_COOKIE["lang"] !== null )
-$lang = $_COOKIE["lang"];
-if( $lang !== null )
-include_once "lang_packs/" . $lang . ".php";
-
-$lang_flag_style = 'height:24px'
-?>
 <html>
 	<head>
 		<meta charset="utf-8">
@@ -24,15 +13,13 @@ $lang_flag_style = 'height:24px'
 		<script src="js/fontawesome.min.js"></script>
 		<script src="https://vk.com/js/api/openapi.js?169"></script>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
-		<script>
-			function change_lang(lang){
-				var d = new Date();
-				d.setTime(d.getTime() + (24*60*60*365*10));
-				var expires = d.toUTCString();
-				document.cookie = "lang="+lang+"; expires = "+expires+"; path=/";
-				location.href="/";
-			}
-		</script>
+
+		<script src="js/localization.js"></script>
+		<script src="js/data/containers.js"></script>
+		<script src="js/data/food.js"></script>
+		<script src="js/data/main.js"></script>
+		<script src="js/data/other.js"></script>
+		<script src="js/data/minerals.js"></script>
 		
 		<!-- META FOR GOOGLE TWITTER ETC -->
 		<meta name="twitter:description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
