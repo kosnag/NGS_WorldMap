@@ -44,12 +44,3 @@ let Box_Icons = L.Icon.extend({options:{iconSize:[18,18],iconAnchor:[9,9],popupA
 	iconWhiteBox = new Box_Icons({iconUrl: 'images/marks/containers/whiteBox.png'}),
 	iconRedBox = new Box_Icons({iconUrl: 'images/marks/containers/redBox.png'}),
 	iconGoldBox = new Box_Icons({iconUrl: 'images/marks/containers/goldBox.png'});
-
-// IMPORT LOCATIONS
-import './data/containers.js';
-import './data/food.js';
-import './data/main.js';
-import './data/minerals.js';
-import './data/other.js';
-import './data/sections.js';
-//import './data/veterans.js';
