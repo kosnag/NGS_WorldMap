@@ -1,6 +1,4 @@
 $(document).ready(function(){
-    console.log();
-
 	{ // Sections
 		$("#sections_On").click(function(){
 				if (sectionsToggle.length == 0) {
