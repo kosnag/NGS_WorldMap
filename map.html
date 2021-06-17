@@ -13,8 +13,6 @@
 		<script src="js/fontawesome.min.js"></script>
 		<script src="https://vk.com/js/api/openapi.js?169"></script>
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
-
-		<script src="js/localization.js"></script>
 		
 		<!-- META FOR GOOGLE TWITTER ETC -->
 		<meta name="twitter:description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
@@ -23,7 +21,6 @@
 		<meta property="og:type" content="website">
 		<meta name="twitter:card" content="">
 		<meta name="twitter:title" content="PSO2NGS Interactive Map">
-
 	</head>
 	<body class="map">
 		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -383,7 +380,18 @@
 				</div>
 			</div>
 		</div>
-		<script type="module" src="js/map.js"></script>
+		
+		<script src="js/mapButtons.js"></script>
+		<script src="js/map.js"></script>
+		<script src="js/localization.js"></script>
+
+		<script src="js/data/containers.js"></script>
+		<script src="js/data/food.js"></script>
+		<script src="js/data/main.js"></script>
+		<script src="js/data/minerals.js"></script>
+		<script src="js/data/other.js"></script>
+		<script src="js/data/sections.js"></script>
+
 		<script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})</script>
 		<!--<div class="container mb-4">
 			<div class="card card-body">
