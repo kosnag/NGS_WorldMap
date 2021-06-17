@@ -66,11 +66,3 @@
 	}
 }
 
-@media (min-width:1025px) {
-	.adaptive-sorting {
-		display: block;
-		overflow-y: scroll;
-		height: 684px;
-	}
-}
-
