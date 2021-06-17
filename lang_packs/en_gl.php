@@ -163,8 +163,8 @@ $localization = array (
 		),
 		"mag" => array(
 			"1" => "<b>Expert Region Mag</b>",
-			"2" => "<b>Region Mag ID-2</b>",
-			"3" => "<b>Region Mag ID-3</b>",
+			"2" => "<b>Priceless Region Mag</b>",
+			"3" => "<b>Invincible Region Mag</b>",
 		),
 		"ryuker" => array(
 			"1" => "<b>Balflow Falls</b>",
