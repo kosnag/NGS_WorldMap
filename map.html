@@ -15,11 +15,6 @@
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 
 		<script src="js/localization.js"></script>
-		<script src="js/data/containers.js"></script>
-		<script src="js/data/food.js"></script>
-		<script src="js/data/main.js"></script>
-		<script src="js/data/other.js"></script>
-		<script src="js/data/minerals.js"></script>
 		
 		<!-- META FOR GOOGLE TWITTER ETC -->
 		<meta name="twitter:description" content="Interactive map for world of Phantasy Star Online 2: New Genesis with location of everything. Crowdsourcing Open-Source project. ">
@@ -388,7 +383,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="js/map.js?lang=<?php echo $lang;?>"></script>
+		<script type="module" src="js/map.js"></script>
 		<script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})</script>
 		<!--<div class="container mb-4">
 			<div class="card card-body">
