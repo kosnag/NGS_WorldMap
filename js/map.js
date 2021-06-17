@@ -44,3 +44,8 @@ let Box_Icons = L.Icon.extend({options:{iconSize:[18,18],iconAnchor:[9,9],popupA
 	iconWhiteBox = new Box_Icons({iconUrl: 'images/marks/containers/whiteBox.png'}),
 	iconRedBox = new Box_Icons({iconUrl: 'images/marks/containers/redBox.png'}),
 	iconGoldBox = new Box_Icons({iconUrl: 'images/marks/containers/goldBox.png'});
+	
+let VetBoss_Icons = L.Icon.extend({options:{iconSize:[32,32],iconAnchor:[16,16],popupAnchor:[0,-16]}});
+	iconBOSS_1 = new VetBoss_Icons({iconUrl: 'https://cdn.discordapp.com/emojis/763104888732647434.png'}),
+	iconBOSS_2 = new VetBoss_Icons({iconUrl: 'https://cdn.discordapp.com/emojis/763104888732647434.png'}),
+	iconBOSS_3 = new VetBoss_Icons({iconUrl: 'https://cdn.discordapp.com/emojis/763104888732647434.png'});
