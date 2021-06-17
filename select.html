@@ -1,9 +1,3 @@
-<?
-if($_SERVER["REQUEST_URI"]=="/select.php")
-header("Location: /");
-
-$lang_flag_sel = 'height:32'
-?>
 <html>
 	<head>
 		<meta charset="utf-8"/>
@@ -22,27 +16,27 @@ $lang_flag_sel = 'height:32'
 				$("title").text("PSO2NGS Interactive Map");
 				$("#title").text("PSO2NGS Interactive Map");
 				$("#lang").text("Choose a language");
-			}, function(){});
+			});
 			$("#jp").hover(function(){
 				$("title").text("PSO2NGS相互マップ");
 				$("#title").text("PSO2NGS相互マップ");
 				$("#lang").text("言語を選択する");
-			}, function(){});
+			});
 			$("#ru").hover(function(){
 				$("title").text("Интерактивная карта PSO2NGS");
 				$("#title").text("Интерактивная карта PSO2NGS");
 				$("#lang").text("Выберите язык");
-			}, function(){});
+			});
 			$("#kr").hover(function(){
 				$("title" ).text("PSO2NGS 인터랙티브지도");
 				$("#title" ).text("PSO2NGS 인터랙티브지도");
 				$("#lang" ).text("언어 선택");
-			}, function(){});
+			});
 			$("#pt").hover(function(){
 				$("title").text("Mapa Interactivo PSO2NGS");
 				$("#title").text("Mapa Interactivo PSO2NGS");
 				$("#lang").text("Escolha uma língua");
-			}, function(){});
+			});
 		});
 		</script>
 		
@@ -65,12 +59,6 @@ $lang_flag_sel = 'height:32'
 				<div class="collapse navbar-collapse" id="navbarCollapse">
 					<ul class="navbar-nav ms-auto">
 						<li class="nav-item">
-							<a class="nav-link text-white" target="_blank" href="https://discord.gg/AvgmpuX"><i class="fab fa-discord"></i> <?=$localization['UI']['misc']['discord-contribute']?></a>
-						</li>
-						<!--<li class="nav-item">
-							<a class="nav-link text-white" target="_blank" href="" data-bs-toggle="modal" data-bs-target="#contributors"><i class="fas fa-hands-helping"></i> <?=$localization['UI']['misc']['contributors']?></a>
-						</li>-->
-						<li class="nav-item">
 							<a class="nav-link text-white" target="_blank" href="https://docs.google.com/spreadsheets/d/12lKTrbbyHszz9TTfmvwRlRZe7MLI9nFL8XVAcIkynlU/edit?usp=sharing"><i class="fab fa-google-drive"></i> Google Sheets</a>
 						</li>
 						<li class="nav-item">
@@ -91,42 +79,42 @@ $lang_flag_sel = 'height:32'
 					<div class="col-6 mb-3">
 						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" href="/?lang=en_gl">
 							<span>
-								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Global
+								<img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"><br>English<br>Global
 							</span>
 						</a>
 					</div>
 					<div class="col-6 mb-3">
 						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="en" href="/?lang=en_al">
 							<span>
-								<img src="images/flags/usa.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_sel;?>"><br>English<br>Arks-Layer
+								<img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"><br>English<br>Arks-Layer
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
 						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="jp" href="/?lang=jp">
 							<span>
-								<img src="images/flags/jp.svg" style="<? echo $lang_flag_sel;?>"><br>日本語
+								<img src="images/flags/jp.svg" style="height:32"><br>日本語
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
 						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="ru" href="/?lang=ru">
 							<span>
-								<img src="images/flags/ru.svg" style="<? echo $lang_flag_sel;?>"><br>Русский
+								<img src="images/flags/ru.svg" style="height:32"><br>Русский
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
 						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="kr" href="/?lang=kr">
 							<span>
-								<img src="images/flags/kr.svg" style="<? echo $lang_flag_sel;?>"><br>한국어
+								<img src="images/flags/kr.svg" style="height:32"><br>한국어
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
 						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="pt" href="/?lang=pt">
 							<span>
-								<img src="images/flags/pt.svg" style="<? echo $lang_flag_sel;?>"> <img src="images/flags/br.svg" style="<? echo $lang_flag_sel;?>"><br>Português
+								<img src="images/flags/pt.svg" style="height:32"> <img src="images/flags/br.svg" style="height:32"><br>Português
 							</span>
 						</a>
 					</div>
