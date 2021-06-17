@@ -31,9 +31,9 @@
 
 	</head>
 	<body class="map">
-		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">		
+		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0,123,255,0.80);">
 			<div class="container">
-				<a class="navbar-brand" href="#"><?=$localization['UI']['title']?></a>
+				<a class="navbar-brand" href="/"><?=$localization['UI']['title']?></a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -57,12 +57,12 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link text-white dropdown-toggle" href="#" id="langList" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-language"></i> <?=$localization['UI']['languages']['switcher']?></a>
 							<ul class="dropdown-menu" aria-labelledby="langList">
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['en_gl']?>" href="/?lang=en_gl" onclick="change_lang('en_gl')"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_gl']?></a></li>
-								<li><a class="dropdown-item disabled<?=$localization['misc']['lang']['en_al']?>" href="/?lang=en_al" onclick="change_lang('en_al')"><img src="images/flags/usa.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/uk.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['en_al']?></a></li>
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['jp']?>" href="/?lang=jp" onclick="change_lang('jp')"><img src="images/flags/jp.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['jp']?></a></li>
-								<li><a class="dropdown-item<?=$localization['misc']['lang']['ru']?>" href="/?lang=ru" onclick="change_lang('ru')"><img src="images/flags/ru.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['ru']?></a></li>
-								<li><a class="dropdown-item disabled<?=$localization['misc']['lang']['kr']?>" href="/?lang=kr" onclick="change_lang('kr')"><img src="images/flags/kr.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['kr']?></a></li>
-								<li><a class="dropdown-item disabled<?=$localization['misc']['lang']['pt']?>" href="/?lang=pt" onclick="change_lang('pt')"><img src="images/flags/pt.svg" style="<? echo $lang_flag_style;?>"> <img src="images/flags/br.svg" style="<? echo $lang_flag_style;?>"> <?=$localization['UI']['languages']['pt']?></a></li>
+								<li><a class="dropdown-item" href="/?lang=en_gl" onclick="change_lang('en_gl')"><img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"> <?=$localization['UI']['languages']['en_gl']?></a></li>
+								<li><a class="dropdown-item disabled" href="/?lang=en_al" onclick="change_lang('en_al')"><img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"> <?=$localization['UI']['languages']['en_al']?></a></li>
+								<li><a class="dropdown-item" href="/?lang=jp" onclick="change_lang('jp')"><img src="images/flags/jp.svg" style="height:32"> <?=$localization['UI']['languages']['jp']?></a></li>
+								<li><a class="dropdown-item" href="/?lang=ru" onclick="change_lang('ru')"><img src="images/flags/ru.svg" style="height:32"> <?=$localization['UI']['languages']['ru']?></a></li>
+								<li><a class="dropdown-item disabled" href="/?lang=kr" onclick="change_lang('kr')"><img src="images/flags/kr.svg" style="height:32"> <?=$localization['UI']['languages']['kr']?></a></li>
+								<li><a class="dropdown-item disabled" href="/?lang=pt" onclick="change_lang('pt')"><img src="images/flags/pt.svg" style="height:32"> <img src="images/flags/br.svg" style="height:32"> <?=$localization['UI']['languages']['pt']?></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -388,8 +388,7 @@
 				</div>
 			</div>
 		</div>
-		<script src="js/markersData.php?lang=<?php echo $lang;?>"></script>
-		<script src="js/map.php?lang=<?php echo $lang;?>"></script>
+		<script src="js/map.js?lang=<?php echo $lang;?>"></script>
 		<script>var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})</script>
 		<!--<div class="container mb-4">
 			<div class="card card-body">
