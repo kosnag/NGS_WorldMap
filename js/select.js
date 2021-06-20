@@ -1,4 +1,3 @@
-$(document).ready(function(){
     $("#select-en").hover(function(){
         $("#select-title").text("PSO2NGS Interactive Map");
         $("#select-lang").text("Choose a language");
@@ -19,7 +18,7 @@ $(document).ready(function(){
         $("#select-title").text("Mapa Interactivo PSO2NGS");
         $("#select-lang").text("Escolha uma língua");
     });
-});
+
 
 function change_lang(lang){
     var d = new Date();
@@ -29,7 +28,6 @@ function change_lang(lang){
     location.href="/";
 }
 
-$(document).ready(function(){
     if (Cookies.get('lang') == 'en_gl') {
         $("#lang_js").attr("src", "js/lang_packs/en_gl.js");
     } else if (Cookies.get('lang') == 'en_al') {
@@ -45,4 +43,3 @@ $(document).ready(function(){
     } else {
         alert('NO COOKIE FOUND'); // test
     };
-});

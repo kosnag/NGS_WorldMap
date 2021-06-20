@@ -1,3 +1,3 @@
-$(document).ready(function(){
-    $("title").text(langTitle);
-});
+addEventListener("load",function(){
+    document.title = langTitle;
+    });
