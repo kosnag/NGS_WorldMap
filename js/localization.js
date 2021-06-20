@@ -9,18 +9,37 @@ function change_lang(lang){
     location.href="/";
 }
 
+/*
 if (Cookies.get('lang') == 'en_gl') {
-    alert('COOKIE EN_GL');
+    $(document).ready(function(){$("#lang_js").attr("src", "js/lang_packs/en_gl.js");});
 } else if (Cookies.get('lang') == 'en_al') {
-    alert('COOKIE EN AL');
+    $(document).ready(function(){$("#lang_js").attr("src", "js/lang_packs/en_al.js");});
 } else if (Cookies.get('lang') == 'jp') {
-    alert('COOKIE JP');
+    $(document).ready(function(){$("#lang_js").attr("src", "js/lang_packs/jp.js");});
 } else if (Cookies.get('lang') == 'ru') {
-    alert('COOKIE RU');
+    $(document).ready(function(){$("#lang_js").attr("src", "js/lang_packs/ru.js");});
 } else if (Cookies.get('lang') == 'kr') {
-    alert('COOKIE KR');
+    $(document).ready(function(){$("#lang_js").attr("src", "js/lang_packs/kr.js");});
 } else if (Cookies.get('lang') == 'pt') {
-    alert('COOKIE PT');
+    $(document).ready(function(){$("#lang_js").attr("src", "js/lang_packs/pt.js");});
 } else {
     alert('NO COOKIE FOUND');
 }
+*/
+$(document).ready(function(){
+    if (Cookies.get('lang') == 'en_gl') {
+        $("#lang_js").attr("src", "js/lang_packs/en_gl.js");
+    } else if (Cookies.get('lang') == 'en_al') {
+        $("#lang_js").attr("src", "js/lang_packs/en_al.js");
+    } else if (Cookies.get('lang') == 'jp') {
+        $("#lang_js").attr("src", "js/lang_packs/jp.js");
+    } else if (Cookies.get('lang') == 'ru') {
+        $("#lang_js").attr("src", "js/lang_packs/ru.js");
+    } else if (Cookies.get('lang') == 'kr') {
+        $("#lang_js").attr("src", "js/lang_packs/kr.js");
+    } else if (Cookies.get('lang') == 'pt') {
+        $("#lang_js").attr("src", "js/lang_packs/pt.js");
+    } else {
+        alert('NO COOKIE FOUND');
+    }
+});
