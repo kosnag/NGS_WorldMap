@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title><?=$localization['UI']['title']?></title>
+		<title></title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/leaflet.css" rel="stylesheet">
 		<link href="css/fontawesome.min.css" rel="stylesheet">
@@ -382,26 +382,6 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- SCRIPTS FOR MAP -->
-		<script src="js/mapButtons.js"></script>
-		<script src="js/map.js"></script>
-		<script src="js/localization.js"></script>
-
-		<script id="lang_js"></script>
-
-		<!-- DATAS OF MARKERS AND ETC FOR MAP -->
-		<script src="js/data/containers.js"></script>
-		<script src="js/data/food.js"></script>
-		<script src="js/data/main.js"></script>
-		<script src="js/data/minerals.js"></script>
-		<script src="js/data/other.js"></script>
-		<script src="js/data/sections.js"></script>
-
-		<!-- BOOTSTRAP TOOLTIPS -->
-		<script>
-			var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})
-		</script>
 		<!--<div class="container mb-4">
 			<div class="card card-body">
 				<div class="row">
@@ -417,4 +397,24 @@
 			</div>
 		</div>-->
 	</body>
+	<!-- SCRIPTS FOR MAP -->
+	<script src="js/mapButtons.js"></script>
+	<script src="js/map.js"></script>
+
+	<script id="lang_js"></script>
+	
+	<script src="js/localization.js"></script>
+	
+	<!-- DATAS OF MARKERS AND ETC FOR MAP -->
+	<script src="js/data/containers.js"></script>
+	<script src="js/data/food.js"></script>
+	<script src="js/data/main.js"></script>
+	<script src="js/data/minerals.js"></script>
+	<script src="js/data/other.js"></script>
+	<script src="js/data/sections.js"></script>
+	
+	<!-- BOOTSTRAP TOOLTIPS -->
+	<script>
+		var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {return new bootstrap.Tooltip(tooltipTriggerEl)})
+	</script>
 </html>
