@@ -43,6 +43,6 @@ $(document).ready(function(){
     } else if (Cookies.get('lang') == 'pt') {
         $("#lang_js").attr("src", "js/lang_packs/pt.js");
     } else {
-        alert('NO COOKIE FOUND'); // i think how to realize loading of "select.html"
+        alert('NO COOKIE FOUND'); // test
     };
 });
