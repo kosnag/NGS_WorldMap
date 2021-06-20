@@ -2,7 +2,6 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title></title>
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/leaflet.css" rel="stylesheet">
 		<link href="css/fontawesome.min.css" rel="stylesheet">
@@ -13,8 +12,13 @@
 		<script src="js/fontawesome.min.js"></script>
 		<!--<script src="https://vk.com/js/api/openapi.js?169"></script>-->
 		<script src="js/js.cookie.min.js"></script>
+
 		<script id="lang_js"></script>
+		<script src="js/select.js"></script>
 		<script src="js/localization.js"></script>
+
+		<title></title>
+
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 		
 		<!-- META FOR GOOGLE TWITTER ETC -->
@@ -53,12 +57,12 @@
 						<li class="nav-item dropdown">
 							<a class="nav-link text-white dropdown-toggle" href="#" id="langList" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-language"></i> <?=$localization['UI']['languages']['switcher']?></a>
 							<ul class="dropdown-menu" aria-labelledby="langList">
-								<li><a class="dropdown-item" href="#" onclick="change_lang('en_gl')"><img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"> <?=$localization['UI']['languages']['en_gl']?></a></li>
-								<li><a class="dropdown-item disabled" href="#" onclick="change_lang('en_al')"><img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"> <?=$localization['UI']['languages']['en_al']?></a></li>
-								<li><a class="dropdown-item" href="#" onclick="change_lang('jp')"><img src="images/flags/jp.svg" style="height:32"> <?=$localization['UI']['languages']['jp']?></a></li>
-								<li><a class="dropdown-item" href="#" onclick="change_lang('ru')"><img src="images/flags/ru.svg" style="height:32"> <?=$localization['UI']['languages']['ru']?></a></li>
-								<li><a class="dropdown-item disabled" href="#" onclick="change_lang('kr')"><img src="images/flags/kr.svg" style="height:32"> <?=$localization['UI']['languages']['kr']?></a></li>
-								<li><a class="dropdown-item disabled" href="#" onclick="change_lang('pt')"><img src="images/flags/pt.svg" style="height:32"> <img src="images/flags/br.svg" style="height:32"> <?=$localization['UI']['languages']['pt']?></a></li>
+								<li><a class="dropdown-item" onclick="change_lang('en_gl')"><img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"> <?=$localization['UI']['languages']['en_gl']?></a></li>
+								<li><a class="dropdown-item disabled" onclick="change_lang('en_al')"><img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"> <?=$localization['UI']['languages']['en_al']?></a></li>
+								<li><a class="dropdown-item" onclick="change_lang('jp')"><img src="images/flags/jp.svg" style="height:32"> <?=$localization['UI']['languages']['jp']?></a></li>
+								<li><a class="dropdown-item" onclick="change_lang('ru')"><img src="images/flags/ru.svg" style="height:32"> <?=$localization['UI']['languages']['ru']?></a></li>
+								<li><a class="dropdown-item disabled" onclick="change_lang('kr')"><img src="images/flags/kr.svg" style="height:32"> <?=$localization['UI']['languages']['kr']?></a></li>
+								<li><a class="dropdown-item disabled" onclick="change_lang('pt')"><img src="images/flags/pt.svg" style="height:32"> <img src="images/flags/br.svg" style="height:32"> <?=$localization['UI']['languages']['pt']?></a></li>
 							</ul>
 						</li>
 					</ul>
@@ -402,7 +406,6 @@
 	<!-- SCRIPTS FOR MAP -->
 	<script src="js/mapButtons.js"></script>
 	<script src="js/map.js"></script>
-	<script src="js/select.js"></script>
 	
 	<!-- DATAS OF MARKERS AND ETC FOR MAP -->
 	<script src="js/data/containers.js"></script>
