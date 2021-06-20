@@ -2,7 +2,7 @@
 	<head>
 		<meta charset="utf-8"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>PSO2NGS Interactive Map</title>
+		<title id="select-title">PSO2NGS Interactive Map</title>
 		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.bundle.min.js"></script>
 		<script src="js/fontawesome.min.js"></script>
@@ -24,7 +24,7 @@
 	<body class="select">
 		<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">		
 			<div class="container">
-				<a id="title" class="navbar-brand" href="https://ngs-map.kosnag.ru/">PSO2NGS Interactive Map</a>
+				<a id="select-title" class="navbar-brand" href="https://ngs-map.kosnag.ru/">PSO2NGS Interactive Map</a>
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
@@ -45,46 +45,46 @@
 		</nav>
 		<div class="container mt-3 position-absolute top-50 start-50 translate-middle">
 			<div class="card-header border border-primary rounded">
-			<h1 class="card-title text-center text-light"><span id="lang" class="badge bg-primary">Choose a language</span></h1>
+			<h1 class="card-title text-center text-light"><span id="select-lang" class="badge bg-primary">Choose a language</span></h1>
 			<br>
 				<div class="row">
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="en" onclick="change_lang('en_gl')" href="#">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="select-en" onclick="change_lang('en_gl')" href="#">
 							<span>
 								<img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"><br>English<br>Global
 							</span>
 						</a>
 					</div>
 					<div class="col-6 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="en" onclick="change_lang('en_al')" href="#">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="select-en" onclick="change_lang('en_al')" href="#">
 							<span>
 								<img src="images/flags/usa.svg" style="height:32"> <img src="images/flags/uk.svg" style="height:32"><br>English<br>Arks-Layer
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="jp" onclick="change_lang('jp')" href="#">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="select-jp" onclick="change_lang('jp')" href="#">
 							<span>
 								<img src="images/flags/jp.svg" style="height:32"><br>日本語
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="ru" onclick="change_lang('ru')" href="#">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light" id="select-ru" onclick="change_lang('ru')" href="#">
 							<span>
 								<img src="images/flags/ru.svg" style="height:32"><br>Русский
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="kr" onclick="change_lang('kr')" href="#">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="select-kr" onclick="change_lang('kr')" href="#">
 							<span>
 								<img src="images/flags/kr.svg" style="height:32"><br>한국어
 							</span>
 						</a>
 					</div>
 					<div class="col-12 mb-3">
-						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="pt" onclick="change_lang('pt')" href="#">
+						<a class="card custom-card-body btn custom-btn-outline-primary text-light disabled" id="select-pt" onclick="change_lang('pt')" href="#">
 							<span>
 								<img src="images/flags/pt.svg" style="height:32"> <img src="images/flags/br.svg" style="height:32"><br>Português
 							</span>
