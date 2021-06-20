@@ -1,3 +1,5 @@
+let langTitle = "PSO2NGS Interactive Map";
+/*
 <?
 $localization = array (
 	"UI" => array(
@@ -224,3 +226,4 @@ $localization = array (
 		"test" => "8492",
 	),
 );
+*/

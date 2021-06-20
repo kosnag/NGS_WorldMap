@@ -1,4 +1,4 @@
-<?
+/*<?
 $localization = array (
 	"UI" => array(
 		"title" => "Интерактивная карта PSO2NGS",
@@ -225,3 +225,4 @@ $localization = array (
 		"test" => "8492",
 	),
 );
+*/
