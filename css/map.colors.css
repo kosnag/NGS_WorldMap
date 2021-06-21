@@ -1,0 +1,74 @@
+
+/*========================================================================================
+      Neko Web Application - The framework and/or tool to easily create own web applications
+      This test application used to demonstrate what framework can do
+      Copyright (C) 2019  S.V.G
+------------------------------------------------------------------------------------------
+      This program is free software: you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation, either version 3 of the License, or
+      (at your option) any later version.
+------------------------------------------------------------------------------------------
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+      http://nekoweb.ddns.net/nekoapp/LICENSE.txt
+========================================================================================*/
+
+:root {                                                           /* This color variables used by elements in default mode */
+    --map-primary-text-color: rgb(255, 255, 255);
+    --map-secondary-text-color: rgb(0, 0, 0);
+	--map-highlight-text-color: rgb(180, 180, 180);
+    --map-header-primary-text-color: rgba(255, 255, 255, .6);
+    --map-header-secondary-text-color: rgba(255, 255, 255, 1);
+    --map-placeholder-text-color: rgba(200, 200, 200, .8);
+	--map-primary-shadow-color: rgb(0, 0, 0, .5);
+    --map-primary-background-color: rgb(125, 125, 125);
+	--map-primary-button-color: rgb(150, 150, 150);
+	--map-secondary-button-color: rgb(180, 180, 180);
+    --map-colorbutton-primary-color: rgb(200, 200, 200);
+    --map-colorbutton-secondary-color: rgb(180, 0, 0);
+	--map-glass-button-color: rgb(220, 220, 220);
+	--map-pane-button-color: rgba(180, 180, 180, .6);
+    --map-checkbox-primary-color: rgb(150, 150, 150);
+    --map-checkbox-secondary-color: rgb(180, 180, 180);
+    --map-textbox-primary-color: rgb(100, 100, 100);
+    --map-textbox-secondary-color: rgb(80, 80, 80);
+    --map-textbox-highlighted-color: rgb(150, 150, 150);
+    --map-textbox-default-color: rgb(255, 255, 255);
+	--map-combobox-primary-color: rgb(80, 80, 80);
+	--map-combobox-secondary-color: rgb(220,220,220);
+	--map-wave-animation-color: rgba(255, 255, 255, .2);
+    --map-progress-bar-color: rgb(200, 200, 200);
+	--map-overlay-background-color: rgba(0, 0, 0, .6);
+	--map-window-background-color: rgb(100 ,100 ,100)
+}
+[dark] {                                                          /* This color variables used by elements in dark mode */
+    --map-primary-text-color: rgb(255, 255, 255);
+    --map-secondary-text-color: rgb(100, 100, 100);
+	--map-highlight-text-color: rgb(120, 120, 120);
+    --map-header-primary-text-color: rgba(255, 255, 255, .6);
+    --map-header-secondary-text-color: rgba(255, 255, 255, 1);
+    --map-placeholder-text-color: rgba(120, 120, 120, .8);
+	--map-primary-shadow-color: rgb(100, 100, 100, .5);
+    --map-primary-background-color: rgb(70, 70, 70);
+	--map-primary-button-color: rgb(90, 90, 90);
+	--map-secondary-button-color: rgb(120, 120, 120);
+    --map-colorbutton-primary-color: rgb(200, 200, 200);
+    --map-colorbutton-secondary-color: rgb(180, 0, 0);
+	--map-glass-button-color: rgb(220, 220, 220);
+	--map-pane-button-color: rgba(120, 120, 120, .6);
+    --map-checkbox-primary-color: rgb(90, 90, 90);
+    --map-checkbox-secondary-color: rgb(120, 120, 120);
+    --map-textbox-primary-color: rgb(50, 50, 50);
+    --map-textbox-secondary-color: rgb(30, 30, 30);
+    --map-textbox-highlighted-color: rgb(90, 90, 90);
+    --map-textbox-default-color: rgb(255, 255, 255);
+	--map-combobox-primary-color: rgb(30, 30, 30);
+	--map-combobox-secondary-color: rgb(160, 160, 160);
+	--map-wave-animation-color: rgba(255, 255, 255, .2);
+    --map-progress-bar-color: rgb(140, 140, 140);
+	--map-overlay-background-color: rgba(0, 0, 0, .6);
+	--map-window-background-color: rgb(50 ,50 ,50)
+}

@@ -1,8 +1,270 @@
 var map_app = new nekoapp({
+    application : document.querySelector("map-app"),
     applicationInfo: {
         nekoappID : "18",
         applicationTitle : "PSO2NGS Interactive Map",
         applicationVersion : "v0.8492",
         applicationURL : "//ngs-map.kosnag.ru/"
+    },
+    applicationStylesheets : {
+        default : "css/map.main.css",
+        colors : "css/map.colors.css",
+        ui : "css/map.ui.css",
+        mdb : "css/mdb.min.css",
+        mdb_d : "css/mdb.dark.min.css",
+        leaflet : "css/leaflet.css"
+    },
+    applicationClasses : {
+        UIButtonBackground : "map_ui_button_background" ,									//  Class for button background
+        UIButtonContent : "map_ui_button_content" ,											//  Class for button content
+        UIDefaultButton : "map_ui_default_button" ,											//  Class for default button type
+        UIColorButton : "map_ui_color_button" ,												//  Class for color button type
+        UIGlassButton : "map_ui_glass_button" ,												//  Class for glass button type
+        UIPaneButton : "map_ui_pane_button" ,												//  Class for pane button type
+        UICircleButton : "map_ui_circle_button" ,											//  Class for circle button type
+		UICheckBoxIcon : "map_ui_checkbox_icon" ,											//  Class for checkbox icon
+		UICheckBoxContent : "map_ui_checkbox_content" ,										//  Class for checkbox content
+		UIRadioButtonIcon : "map_ui_radiobutton_icon" ,										//  Class for radio button icon
+		UIRadioButtonContent : "map_ui_radiobutton_content" ,								//  Class for radio button content
+        UITextBoxInput : "map_ui_textbox_input" ,											//  Class for textbox input
+        UITextBoxStroke : "map_ui_textbox_stroke" ,											//  Class for textbox stroke
+        UIStrokedTextBox : "map_ui_stroked_textbox" ,										//  Class for stroke textbox type
+        UISimpleTextBox : "map_ui_simple_textbox" ,											//  Class for simple textbox type
+        UIHighlightedTextBox : "map_ui_highlighted_textbox" ,								//  Class for highlighted textbox type
+		UIComboBoxValue : "map_ui_combobox_value" ,											//  Class for combobox value
+		UIComboBoxIcon : "map_ui_combobox_icon" ,											//  Class for combobox icon
+		UIComboBoxOptions : "map_ui_combobox_options" ,										//  Class for combobox options
+        headerContainer : "map_head_container" ,											//  Class for header container
+		headerNavigationItem : "map_head_navigation_item_content" ,							//  Class for header navigation item content
+		localeChangeList : "map_localechange_language_list" ,								//  Class for language list in locale change window
+        progressBarInner : "map_progress_bar_inner" ,										//  Class for progress bar inner part
+		rowSubtext : "map_row_subtext" ,													//  Class for row subtext
+		localeBoxIcon : "map_localebox_icon" ,												//  Class for localebox icon
+		localeBoxText : "map_localebox_text"												//  Class for localebox text
+    },
+    applicationElements : {                                                                     //  Defined custom elements for your application
+        localizedStringElement : {																//  Element for localized string
+            tag : "map-string" ,															//  Tag of your custom element
+            prototype : {}																		//  Prototype of your custom element
+        } ,
+        graphicElement : {																		//  Element for vector graphics
+            tag : "map-ui-graphic" ,
+            prototype : {}
+        } ,
+        graphicsLibraryElement : {																//  Element for graphics library
+            tag : "map-ui-graphics" ,
+            prototype : {}
+        } ,
+        graphicsSetElement : {																	//  Element for graphics set
+            tag : "map-graphicset" ,
+            prototype : {}
+        } ,
+        animationElement : {																	//  Element for animation
+            tag : "map-ui-animation" ,
+            prototype : {}
+        } ,
+        animationSpriteElement : {																//  Element for animation sprite
+            tag : "map-ui-animation-sprite" ,
+            prototype : {}
+        } ,
+        UIElement : {																			//  Element for User Interface element
+            tag : "map-ui-element" ,
+            prototype : {}
+        } ,
+        buttonElement : {																		//  Element for button
+            tag : "map-ui-button" ,
+            prototype : {}
+        } ,
+        checkBoxElement : {																		//  Element for checkbox
+            tag : "map-ui-checkbox" ,
+            prototype : {}
+        } ,
+        radioButtonElement : {																	//  Element for radio button
+            tag : "map-ui-radiobutton" ,
+            prototype : {}
+        } ,
+        textBoxElement : {																		//  Element for textbox
+            tag : "map-ui-textbox" ,
+            prototype : {}
+        } ,
+		comboboxElement : {																		//  Element for combobox
+			tag : "map-ui-combobox" ,
+			prototype : {}
+		} ,
+        tooltipElement : {																		//  Element for tooltip
+            tag : "map-ui-tooltip" ,
+            prototype : {}
+        } ,
+        moduleElement : {																		//  Element for module
+            tag : "map-module" ,
+            prototype : {}
+        } ,
+        headerElement : {																		//  Element for header
+            tag : "map-head" ,
+            prototype : {}
+        } ,
+        footerElement : {																		//  Element for footer
+            tag : "map-footer" ,
+            prototype : {}
+        } ,
+        windowElement : {																		//  Element for window
+            tag : "map-window" ,
+            prototype : {}
+        } ,
+		windowTitle : {																			//  Element for window title
+			tag : "map-window-title" ,
+			prototype : {}
+		} ,
+        overlayElement : {																		//  Element for overlay
+            tag : "map-overlay" ,
+            prototype : {}
+        } ,
+        headerLogoElement : {																	//  Element for header logo
+            tag : "map-logo" ,
+            prototype : {}
+        } ,
+		headerNavigationElement : {																//  Element for header navigation
+			tag : "map-navigation" ,
+			prototype : {}
+		} ,
+		headerNavigationItem : {																//  Element for header navigation item
+			tag : "map-navigation-item" ,
+			prototype : {}
+		} ,
+        spinnerElement : {																		//  Element for spinner
+            tag : "map-ui-spinner" ,
+            prototype : {}
+        } ,
+        loadScreenElement : {																	//  Element for loading screen
+            tag : "map-loading" ,
+            prototype : {}
+        } ,
+        progressBarElement : {																	//  Element for progress bar
+            tag : "map-progress" ,
+            prototype : {}
+        } ,
+		headlineElement : {																		//  Element for headline
+			tag : "map-headline" ,
+			prototype : {}
+		} ,
+		featuresElement : {																		//  Element for features
+			tag : "map-features" ,
+			prototype : {}
+		} ,
+		featuresRow : {																			//  Element for features row
+			tag : "map-features-row" ,
+			prototype : {}
+		} ,
+		UITestElement : {																		//  Element for User Interface Test
+			tag : "map-uitest" ,
+			prototype : {}
+		} ,
+		UITestRow : {																			//  Element for UI Test row
+			tag : "map-uitest-row" ,
+			prototype : {}
+		} ,
+        introElement : {																		//  Element for introduction
+            tag : "map-intro" ,
+            prototype : {
+				locale : "" ,																	//  Localization property
+				loadIntro : function() {														//  Loads introduction content and appends into introduction element
+					var container = this;
+					nekoapp.system.xhr().load("/map-app/intro/"+this.locale+".html", {			//  Performs a GET request to receive content
+						onload : function() {													//  Event that appends content when loaded
+							var parser = new DOMParser;
+                        	var content = parser.parseFromString(this.responseText, "text/html");
+                        	container.innerHTML = content.body.innerHTML;
+                    	}
+                	});
+				}
+			}
+        } ,
+		testElement : {																			//  Test Element
+			tag : "map-test-element" ,
+			prototype : {
+				do_something : function() {														//  Asking element to do something
+					this.children[1].innerHTML = "What I supposed to do?";
+				} ,
+				template : nekoapp.create.template(function() {									//  Creating template for test element
+					var text1 = document.createElement("h3"),
+						text2 = document.createElement("p");
+					// To use nekoapp elements template must be created outside nekoapp constructor and before app initialization
+					text1.innerHTML = "This is Test Element!";
+					text2.style.fontStyle = "italic";
+					text2.innerHTML = "This text was inserted here from template.";
+					return [text1, text2];														//  Elements that'll be in template
+				})
+			}
+		} ,
+		localeBoxElement : {																	//  Element for locale box (change language box)
+			tag : "map-localebox" ,
+			prototype : {
+				init : function() {																//  Init element
+					var icon = nekoapp.create.element(map, "span", {						//  Locale box globe icon
+							class : map.preferences.classes.localeBoxIcon ,
+							text : nekoapp.create.graphic(map, "main;globe_icon", "0 0 20 20")
+						}) ,
+						text = nekoapp.create.element(map, "span", {						//  Locale box language text
+							class : map.preferences.classes.localeBoxText
+						}) ,
+						event = new nekoapp.event({												//  Event to call change language window
+							target : this ,
+							onclick : function(object, event) {
+								nekoapp.locale.openChangeWindow(map);						//  Calling change language window
+							}
+						});
+					this.appendChild(icon);
+					this.appendChild(text);
+					event.register();															//  Registering event
+					this.update();
+				} ,
+				update : function() {															//  Update language text (if language was changed)
+					if (this.children.length) {													//  Check if locale box in initialized
+						this.children[1].innerHTML = map.localeLanguageStrings[map.locale.activeLanguage];
+					}
+				}
+			}
+		},
+        wip_element : {
+            tag : "map-wip-element",
+            prototype : {
+                template : nekoapp.create.template(
+                    function(){
+                        let h4 = document.createElement("h4");
+                        h4.innerHTML = "Work In Progress";
+                        return[h4];
+                    }
+                )
+            }
+        }
+    },
+    applicationGraphics : {                                                                     //  SVG Graphics used for your application
+        resourceName : "MAP GRAPHICS" ,
+        URL : "html/html.html"
+    },
+    applicationAnimations : {																	//  Animations used by your application
+		UIWaveAnimation : {																		//  Wave animation
+			name : "map_ui_wave_animation" ,
+			duration : 300
+		} ,
+		CSSVariables : {																		//  CSS Variables used by animations and UI stylesheet
+			startposX : "--map-ui-animation-startpos-x" ,
+			startposY : "--map-ui-animation-startpos-y" ,
+			width : "--map-ui-animation-width" ,
+			height : "--map-ui-animation-height"
+		}
+	},
+    applicationModules : {
+        map_module : {
+            primaryModule : true,
+            moduleType : "pageModule",
+            moduleURL : "/",
+            moduleContents : function(){
+                var elements = {
+                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element)
+                };
+                return [elements, elements.wip_element]
+            }
+        }
     }
 });
