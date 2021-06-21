@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-
+		<link rel="preload" href="js/nekoapp.js" as="script">
+		<link rel="preload" href="js/map.main.js" as="script">
+		<script type="text/javascript">(function(){"use strict";var a=document.getElementsByTagName("link"),b=document.getElementsByTagName("head")[0],c=document.getElementsByTagName("script")[document.getElementsByTagName("script").length-1],d=document.createElement("script"),e=document.createElement("script"),f,g;for(var i=0;i<a.length;i++)if(a[i].href.indexOf("nekoapp.js")>-1)f=a[i].href;for(var i=0;i<a.length;i++)if(a[i].href.indexOf(".main.js")>-1)g=a[i].href;d.type="text/javascript";d.src=f;d.onload=function(){b.insertBefore(e,c);};e.type="text/javascript";e.src=g;b.insertBefore(d,c);})();</script>
 	</head>
 	<body>
-		
+			<map-app>
+				
+			</map-app>
 	</body>
 </html>
