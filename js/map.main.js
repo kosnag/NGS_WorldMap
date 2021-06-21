@@ -263,8 +263,31 @@ var map_app = new nekoapp({
                 var elements = {
                     wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element)
                 };
-                return [elements, elements.wip_element]
-            }
+                return [elements, elements.wip_element];
+            },
+            onModuleChange : function(){},
+            onLocaleChange : function(){}
+        },
+        map_header : {
+            moduleType: "headerModule",
+            headerLayout: {}
         }
+    },
+    applicationLocalization : {
+        "en-US": {URL: "languages/en_gl.json"},
+        "en-AL": {URL: "languages/en_al.json"},
+        "ru-RU": {URL: "languages/ru_RU.json"},
+        "ko-KR": {URL: "languages/ko_KR.json"},
+        "ja-JP": {URL: "languages/ja_JP.json"},
+        "pt-BR": {URL: "languages/pt_br.json"}
+
     }
 });
+map_app.preferences.events.onAppInit = new nekoapp.event({
+	target : map_app ,
+	oninit : function() {
+		//testapp.modules.testapp_footer.moduleContents.localebox.init();
+        document.title = map_app.locale.strings.langTitle;
+	}
+});
+nekoapp.system.init(map_app);
