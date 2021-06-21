@@ -1,3 +1,4 @@
+//nekoapp.system.scripts.add({application:map_app, url: "js/mdb.min.js"});
 var map_app = new nekoapp({
     application : document.querySelector("map-app"),
     applicationInfo: {
@@ -143,59 +144,6 @@ var map_app = new nekoapp({
             tag : "map-progress" ,
             prototype : {}
         } ,
-		headlineElement : {																		//  Element for headline
-			tag : "map-headline" ,
-			prototype : {}
-		} ,
-		featuresElement : {																		//  Element for features
-			tag : "map-features" ,
-			prototype : {}
-		} ,
-		featuresRow : {																			//  Element for features row
-			tag : "map-features-row" ,
-			prototype : {}
-		} ,
-		UITestElement : {																		//  Element for User Interface Test
-			tag : "map-uitest" ,
-			prototype : {}
-		} ,
-		UITestRow : {																			//  Element for UI Test row
-			tag : "map-uitest-row" ,
-			prototype : {}
-		} ,
-        introElement : {																		//  Element for introduction
-            tag : "map-intro" ,
-            prototype : {
-				locale : "" ,																	//  Localization property
-				loadIntro : function() {														//  Loads introduction content and appends into introduction element
-					var container = this;
-					nekoapp.system.xhr().load("/map-app/intro/"+this.locale+".html", {			//  Performs a GET request to receive content
-						onload : function() {													//  Event that appends content when loaded
-							var parser = new DOMParser;
-                        	var content = parser.parseFromString(this.responseText, "text/html");
-                        	container.innerHTML = content.body.innerHTML;
-                    	}
-                	});
-				}
-			}
-        } ,
-		testElement : {																			//  Test Element
-			tag : "map-test-element" ,
-			prototype : {
-				do_something : function() {														//  Asking element to do something
-					this.children[1].innerHTML = "What I supposed to do?";
-				} ,
-				template : nekoapp.create.template(function() {									//  Creating template for test element
-					var text1 = document.createElement("h3"),
-						text2 = document.createElement("p");
-					// To use nekoapp elements template must be created outside nekoapp constructor and before app initialization
-					text1.innerHTML = "This is Test Element!";
-					text2.style.fontStyle = "italic";
-					text2.innerHTML = "This text was inserted here from template.";
-					return [text1, text2];														//  Elements that'll be in template
-				})
-			}
-		} ,
 		localeBoxElement : {																	//  Element for locale box (change language box)
 			tag : "map-localebox" ,
 			prototype : {
@@ -230,9 +178,20 @@ var map_app = new nekoapp({
             prototype : {
                 template : nekoapp.create.template(
                     function(){
-                        let h4 = document.createElement("h4");
-                        h4.innerHTML = "Work In Progress";
-                        return[h4];
+                        let ЕБАНЫЙ_БЛЯТЬ_СКРИПТ = document.createElement("script");
+                        ЕБАНЫЙ_БЛЯТЬ_СКРИПТ.src = "js/mdb.min.js"
+                        let h_alert = document.createElement("h4");
+                        h_alert.className = "alert-heading"
+                        h_alert.innerHTML = "WORK IN PROGRESS";
+                        let p1_alert = document.createElement("p");
+                        p1_alert.innerHTML = "This interactive map are currently in development.";
+                        let p2_alert = document.createElement("hr");
+                        let p3_alert = document.createElement("p");
+                        p3_alert.className = "mb-0"
+                        p3_alert.innerHTML = "If you want to help me, please contact with me in <a href='https://twitter.com/kosnag' target='_blank'>Twitter</a>, <a href='https://vk.com/kosnag' target='_blank'>VK</a> or <a href='#' data-mdb-toggle='tooltip' data-mdb-placement='bottom' data-mdb-html='true' title='<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>'>Discord (kosnag#1730)</a>. I will be very happy, if you help me! <a href='#' data-mdb-toggle='tooltip' data-mdb-placement='bottom' data-mdb-html='true' title='<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>'>Take a hug by Matoi!</a>";
+                        let блетб = document.createElement("script");
+                        блетб.innerHTML = "const exampleEl = document.getElementById('example'); const tooltip = new mdb.Tooltip(exampleEl);"
+                        return[ЕБАНЫЙ_БЛЯТЬ_СКРИПТ,h_alert,p1_alert,p2_alert,p3_alert,блетб];
                     }
                 )
             }
@@ -261,7 +220,7 @@ var map_app = new nekoapp({
             moduleURL : "/",
             moduleContents : function(){
                 var elements = {
-                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element)
+                    wip_element :   nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-3"})
                 };
                 return [elements, elements.wip_element];
             },
