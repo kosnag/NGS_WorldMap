@@ -247,13 +247,13 @@ var map_app = new nekoapp({
                         alert_p3.appendChild(alert_span4)
                         alert_p3.appendChild(alert_a4)
 
-                        /*let alert_button_close = document.createElement("button")
-                            alert_button_close.className = "btn-close ms-2"
+                        let alert_button_close = document.createElement("button")
+                            alert_button_close.className = "btn-close"
                             alert_button_close.setAttribute("type", "button")
                             alert_button_close.setAttribute("data-bs-dismiss", "alert")
-                            alert_button_close.setAttribute("aria-label", "close");*/
+                            alert_button_close.setAttribute("aria-label", "close");
 
-                        return[alert_h,alert_p1,alert_p2,alert_p3]
+                        return[alert_h,alert_p1,alert_p2,alert_p3,alert_button_close]
                     }
                 ),
                 init : function(){
@@ -288,24 +288,23 @@ var map_app = new nekoapp({
             moduleURL : "/",
             moduleContents : function(){
                 var elements = {
-                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-3 alert-dismissible alert-absolute fade show", id: "alert_wip", attr:{role: "alert", "data-bs-color": "secondary"}})
+                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-1 alert-dismissible fade show", attr:{role: "alert"}})/*,
+                    change_language_element : nekoapp.create.object(map_app,map_app.preferences.elements.change_language_element,{})*/
                 };
                 return [elements, elements.wip_element];
             },
             onModuleChange : function(){
                 this.moduleContents.wip_element.init();
             },
-            onLocaleChange : function(){}
+            onLocaleChange : function(){
+                document.title = map_app.locale.strings.language_title;
+                map_app.modules.map_header.children[0].children[0].setText();
+            }
         },
         map_header : {
             moduleType: "headerModule",
             headerLayout: {
                 headerLogo : {},
-                /*element0 : {
-                    tag : "map-header-navigation",
-                    class : "navbar-nav ms-auto",
-                    content : {}
-                }*/
                 headerNavigation : {
                     items : [{
                         label : "localeString@contribute_button",
@@ -313,24 +312,31 @@ var map_app = new nekoapp({
                             URL : "//discord.gg/AvgmpuX",
                             useDefaultNavigation : true,
                             target : "_blank"
-                        }
-                    },{
+                        }},
+                        {
                         label : "localeString@github_button",
                         hyperlink : {
                             URL : "//github.com/kosnag/NGS_InterMap",
                             useDefaultNavigation : true,
                             target : "_blank"
-                        }
-                    },{
+                        }},
+                        {
                         label : "localeString@changelog_button",
                         hyperlink : {
                             URL : "//github.com/kosnag/NGS_InterMap/commits/main",
                             useDefaultNavigation : true,
                             target : "_blank"
-                        }
-                    },{
+                        }},
+                        {
                         label : "localeString@laguages_button",
-                    }]
+                        hyperlink : {
+                            URL : "#",
+                            event : function(openLangMenu){
+                                openLangMenu.setAttribute("data-bs-toggle","modal"),
+                                openLangMenu.setAttribute("data-bs-target","#langModalMenu")
+                            }
+                        }}
+                    ]
                 }
             }
         }
@@ -345,6 +351,9 @@ var map_app = new nekoapp({
 
     }
 });
+map_app.loadScreen.spinner = nekoapp.create.element(map_app, "spinner", {
+    text : nekoapp.create.element(map_app, "div", {class : "spinner-border text-primary", attr : {role: "status"}, style : "width: 6rem; height: 6rem;"})
+,class : "d-flex justify-content-center"})
 map_app.preferences.events.onAppInit = new nekoapp.event({
 	target : map_app ,
 	oninit : function() {
@@ -352,7 +361,10 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
         document.title = map_app.locale.strings.language_title;
         map_app.modules.map_header.className = "navbar navbar-expand-lg navbar-dark";
         map_app.modules.map_header.children[0].children[0].setText();
+        document.body.className = "bg-secondary";
 	}
 });
 nekoapp.system.scripts.add({application:map_app, url: "js/bootstrap.bundle.min.js"});
+nekoapp.system.scripts.add({application:map_app, url: "js/leaflet.js"});
+nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
 nekoapp.system.init(map_app);
