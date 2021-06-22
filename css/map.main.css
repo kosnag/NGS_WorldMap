@@ -21,7 +21,7 @@ html, body, a, div, span, section, p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockq
     padding: 0
 }
 html, body {
-    font-family: var(--mdb-font-sans-serif)
+    font-family: var(--bs-font-sans-serif)
 }
 a {
     text-decoration: none
@@ -492,8 +492,8 @@ map-app map-head .map_head_navigation_container {
     align-items: center
 }
 map-app map-head map-logo {
-    width: 222px;
-    height: 18px;
+    /*width: 222px;
+    height: 18px;*/
     margin: 0 20px;
     display: block
 }
@@ -509,6 +509,9 @@ map-app map-head map-navigation map-navigation-item {
     position: relative;
     overflow: hidden;
     display: inline-flex
+}
+map-app map-head map-navigation map-navigation-item a {
+    text-decoration: none;
 }
 map-app map-head map-navigation map-navigation-item map-ui-animation {
     position: absolute;

@@ -1,4 +1,3 @@
-
 var map_app = new nekoapp({
     application : document.querySelector("map-app"),
     applicationInfo: {
@@ -11,8 +10,7 @@ var map_app = new nekoapp({
         default : "css/map.main.css",
         colors : "css/map.colors.css",
         ui : "css/map.ui.css",
-        //mdb : "css/mdb.min.css",
-        mdb_d : "css/mdb.dark.min.css",
+        bs : "css/bootstrap.min.css",
         leaflet : "css/leaflet.css"
     },
     applicationClasses : {
@@ -224,10 +222,10 @@ var map_app = new nekoapp({
                                 alert_a3.id = "alert-tooltip1"
                                 alert_a3.innerHTML = "Discord (kosnag#1730)"
                                 alert_a3.href = "#"
-                                alert_a3.setAttribute("data-mdb-toogle","tooltip")
-                                alert_a3.setAttribute("data-mdb-placement","bottom")
-                                alert_a3.setAttribute("data-mdb-html","true")
-                                alert_a3.setAttribute("data-mdb-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>");
+                                alert_a3.setAttribute("data-bs-toogle","tooltip")
+                                alert_a3.setAttribute("data-bs-placement","bottom")
+                                alert_a3.setAttribute("data-bs-html","true")
+                                alert_a3.setAttribute("data-bs-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>");
                             let alert_span4 = document.createElement("span")
                                 alert_span4.innerHTML = ". I will be very happy, if you help me! "
                             let alert_a4 = document.createElement("a")
@@ -235,10 +233,10 @@ var map_app = new nekoapp({
                                 alert_a4.id = "alert-tooltip2"
                                 alert_a4.innerHTML = "Take a hug by Matoi!"
                                 alert_a4.href = "#"
-                                alert_a4.setAttribute("data-mdb-toogle","tooltip")
-                                alert_a4.setAttribute("data-mdb-placement","bottom")
-                                alert_a4.setAttribute("data-mdb-html","true")
-                                alert_a4.setAttribute("data-mdb-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>");
+                                alert_a4.setAttribute("data-bs-toogle","tooltip")
+                                alert_a4.setAttribute("data-bs-placement","bottom")
+                                alert_a4.setAttribute("data-bs-html","true")
+                                alert_a4.setAttribute("data-bs-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>");
                         
                         alert_p3.appendChild(alert_span1)
                         alert_p3.appendChild(alert_a1)
@@ -249,29 +247,20 @@ var map_app = new nekoapp({
                         alert_p3.appendChild(alert_span4)
                         alert_p3.appendChild(alert_a4)
 
-                        let alert_button_close = document.createElement("button")
+                        /*let alert_button_close = document.createElement("button")
                             alert_button_close.className = "btn-close ms-2"
                             alert_button_close.setAttribute("type", "button")
-                            alert_button_close.setAttribute("data-mdb-dismiss", "alert")
-                            alert_button_close.setAttribute("aria-label", "close");
+                            alert_button_close.setAttribute("data-bs-dismiss", "alert")
+                            alert_button_close.setAttribute("aria-label", "close");*/
 
-                        return[alert_h,alert_p1,alert_p2,alert_p3,alert_button_close]
+                        return[alert_h,alert_p1,alert_p2,alert_p3]
                     }
                 ),
                 init : function(){
                     const   alertTooltip1 = document.getElementById('alert-tooltip1'),
                             alertTooltip2 = document.getElementById('alert-tooltip2');
-                    const   constAlertTooltip1 = new mdb.Tooltip(alertTooltip1),
-                            constAlertTooltip2 = new mdb.Tooltip(alertTooltip2);
-                    mdb.Alert.getInstance(document.getElementById("alert_wip")).update({
-                        position: "top-right",
-                        delay: 2000,
-                        autohide: true,
-                        width: "600px",
-                        offset: 20,
-                        stacking: false,
-                        appendToBody: false,
-                    });
+                    const   constAlertTooltip1 = new bootstrap.Tooltip(alertTooltip1),
+                            constAlertTooltip2 = new bootstrap.Tooltip(alertTooltip2);
                 }
             }
         }
@@ -299,7 +288,7 @@ var map_app = new nekoapp({
             moduleURL : "/",
             moduleContents : function(){
                 var elements = {
-                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-3 alert-dismissible alert-absolute fade", id: "alert_wip", attr:{role: "alert", "data-mdb-color": "secondary"}})
+                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-3 alert-dismissible alert-absolute fade show", id: "alert_wip", attr:{role: "alert", "data-bs-color": "secondary"}})
                 };
                 return [elements, elements.wip_element];
             },
@@ -365,5 +354,5 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
         map_app.modules.map_header.children[0].children[0].setText();
 	}
 });
-nekoapp.system.scripts.add({application:map_app, url: "js/mdb.min.js"});
+nekoapp.system.scripts.add({application:map_app, url: "js/bootstrap.bundle.min.js"});
 nekoapp.system.init(map_app);
