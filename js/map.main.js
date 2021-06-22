@@ -12,7 +12,7 @@ var map_app = new nekoapp({
         colors : "css/map.colors.css",
         ui : "css/map.ui.css",
         mdb : "css/mdb.min.css",
-        mdb_d : "css/mdb.dark.min.css",
+        //mdb_d : "css/mdb.dark.min.css",
         leaflet : "css/leaflet.css"
     },
     applicationClasses : {
@@ -35,7 +35,7 @@ var map_app = new nekoapp({
 		UIComboBoxValue : "map_ui_combobox_value" ,											//  Class for combobox value
 		UIComboBoxIcon : "map_ui_combobox_icon" ,											//  Class for combobox icon
 		UIComboBoxOptions : "map_ui_combobox_options" ,										//  Class for combobox options
-        headerContainer : "map_head_container" ,											//  Class for header container
+        headerContainer : "container-fluid",
 		headerNavigationItem : "map_head_navigation_item_content" ,							//  Class for header navigation item content
 		localeChangeList : "map_localechange_language_list" ,								//  Class for language list in locale change window
         progressBarInner : "map_progress_bar_inner" ,										//  Class for progress bar inner part
@@ -122,7 +122,13 @@ var map_app = new nekoapp({
         } ,
         headerLogoElement : {																	//  Element for header logo
             tag : "map-logo" ,
-            prototype : {}
+            prototype : {
+                setText : function(){
+                    if (this.className !== "navbar-brand")
+                    this.className = "navbar-brand"
+                    this.innerHTML = map_app.locale.strings.language_title;
+                }
+            }
         } ,
 		headerNavigationElement : {																//  Element for header navigation
 			tag : "map-navigation" ,
@@ -173,35 +179,84 @@ var map_app = new nekoapp({
 				}
 			}
 		},
+        /*headerLogo: {
+            tag: "map-header-logo",
+            prototype : {
+                }
+            }
+        },*/
         wip_element : {
             tag : "map-wip-element",
             prototype : {
                 template : nekoapp.create.template(
                     function(){
-                        let h_alert = document.createElement("h4");
-                        h_alert.className = "alert-heading"
-                        h_alert.innerHTML = "WORK IN PROGRESS";
-                        let p1_alert = document.createElement("p");
-                        p1_alert.innerHTML = "This interactive map are currently in development.";
-                        let p2_alert = document.createElement("hr");
-                        let p3_alert = document.createElement("p");
-                        p3_alert.className = "mb-0"
-                        p3_alert.innerHTML = 'If you want to help me, please contact with me in <a href="https://twitter.com/kosnag" target="_blank">Twitter</a>, <a href="https://vk.com/kosnag" target="_blank">VK</a> or <a href="#" data-mdb-toggle="tooltip" data-mdb-placement="bottom" data-mdb-html="true" title="<img class="d-block m-1 mx-auto" src="https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png" height="100">">Discord (kosnag#1730)</a>. I will be very happy, if you help me! <a href="#" data-mdb-toggle="tooltip" data-mdb-placement="bottom" data-mdb-html="true" title="<img class="d-block m-1 mx-auto" src="https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png" height="100">">Take a hug by Matoi!</a>';
-                        let a_tooltip1 = document.createElement("a");
-                            a_tooltip1.id = "alert-tooltip"
-                            a_tooltip1.innerHTML = "Discord (kosnag#1730)";
-                            a_tooltip1.href = "a";
-                            a_tooltip1.setAttribute("data-mdb-toogle","tooltip");
-                            a_tooltip1.setAttribute("data-mdb-placement","bottom");
-                            a_tooltip1.setAttribute("data-mdb-html","true");
-                            a_tooltip1.setAttribute("data-mdb-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>");
-                        p3_alert.appendChild(a_tooltip1);
-                        return[h_alert,p1_alert,p2_alert,p3_alert];
+                        let alert_h = document.createElement("h4")
+                            alert_h.className = "alert-heading"
+                            alert_h.innerHTML = "WORK IN PROGRESS";
+
+                        let alert_p1 = document.createElement("p")
+                            alert_p1.innerHTML = "This interactive map are currently in development.";
+
+                        let alert_p2 = document.createElement("hr");
+
+                        let alert_a_style = "color: #1266f1;text-decoration: underline;"
+
+                        let alert_p3 = document.createElement("p");
+                            alert_p3.className = "mb-0";
+                            let alert_span1 = document.createElement("span")
+                                alert_span1.innerHTML = "If you want to help me, please contact with me in "
+                            let alert_a1 = document.createElement("a")
+                                alert_a1.style = alert_a_style
+                                alert_a1.href = "https://twitter.com/kosnag"
+                                alert_a1.target = "_blank"
+                                alert_a1.innerHTML = "Twitter";
+                            let alert_span2 = document.createElement("span")
+                                alert_span2.innerHTML = ", ";
+                            let alert_a2 = document.createElement("a")
+                                alert_a2.style = alert_a_style
+                                alert_a2.href = "https://vk.com/kosnag"
+                                alert_a2.target = "_blank"
+                                alert_a2.innerHTML = "VK";
+                            let alert_span3 = document.createElement("span")
+                                alert_span3.innerHTML = " or ";
+                            let alert_a3 = document.createElement("a")
+                                alert_a3.style = alert_a_style
+                                alert_a3.id = "alert-tooltip1"
+                                alert_a3.innerHTML = "Discord (kosnag#1730)"
+                                alert_a3.href = "#"
+                                alert_a3.setAttribute("data-mdb-toogle","tooltip")
+                                alert_a3.setAttribute("data-mdb-placement","bottom")
+                                alert_a3.setAttribute("data-mdb-html","true")
+                                alert_a3.setAttribute("data-mdb-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>");
+                            let alert_span4 = document.createElement("span")
+                                alert_span4.innerHTML = ". I will be very happy, if you help me! "
+                            let alert_a4 = document.createElement("a")
+                                alert_a4.style = alert_a_style
+                                alert_a4.id = "alert-tooltip2"
+                                alert_a4.innerHTML = "Take a hug by Matoi!"
+                                alert_a4.href = "#"
+                                alert_a4.setAttribute("data-mdb-toogle","tooltip")
+                                alert_a4.setAttribute("data-mdb-placement","bottom")
+                                alert_a4.setAttribute("data-mdb-html","true")
+                                alert_a4.setAttribute("data-mdb-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>");
+                        
+                        alert_p3.appendChild(alert_span1)
+                        alert_p3.appendChild(alert_a1)
+                        alert_p3.appendChild(alert_span2)
+                        alert_p3.appendChild(alert_a2)
+                        alert_p3.appendChild(alert_span3)
+                        alert_p3.appendChild(alert_a3)
+                        alert_p3.appendChild(alert_span4)
+                        alert_p3.appendChild(alert_a4)
+
+                        return[alert_h,alert_p1,alert_p2,alert_p3]
                     }
                 ),
                 init : function(){
-                    const exampleEl = document.getElementById('alert-tooltip');
-                    const tooltip = new mdb.Tooltip(exampleEl);
+                    const   alertTooltip1 = document.getElementById('alert-tooltip1'),
+                            alertTooltip2 = document.getElementById('alert-tooltip2');
+                    const   constAlertTooltip1 = new mdb.Tooltip(alertTooltip1),
+                            constAlertTooltip2 = new mdb.Tooltip(alertTooltip2);
                 }
             }
         }
@@ -229,7 +284,7 @@ var map_app = new nekoapp({
             moduleURL : "/",
             moduleContents : function(){
                 var elements = {
-                    wip_element :   nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-3"})
+                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-3"})
                 };
                 return [elements, elements.wip_element];
             },
@@ -240,7 +295,40 @@ var map_app = new nekoapp({
         },
         map_header : {
             moduleType: "headerModule",
-            headerLayout: {}
+            headerLayout: {
+                headerLogo : {},
+                /*element0 : {
+                    tag : "map-header-navigation",
+                    class : "navbar-nav ms-auto",
+                    content : {}
+                }*/
+                headerNavigation : {
+                    items : [{
+                        label : "localeString@contribute_button",
+                        hyperlink : {
+                            URL : "//discord.gg/AvgmpuX",
+                            useDefaultNavigation : true,
+                            target : "_blank"
+                        }
+                    },{
+                        label : "localeString@github_button",
+                        hyperlink : {
+                            URL : "//github.com/kosnag/NGS_InterMap",
+                            useDefaultNavigation : true,
+                            target : "_blank"
+                        }
+                    },{
+                        label : "localeString@changelog_button",
+                        hyperlink : {
+                            URL : "//github.com/kosnag/NGS_InterMap/commits/main",
+                            useDefaultNavigation : true,
+                            target : "_blank"
+                        }
+                    },{
+                        label : "localeString@laguages_button",
+                    }]
+                }
+            }
         }
     },
     applicationLocalization : {
@@ -257,7 +345,9 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
 	target : map_app ,
 	oninit : function() {
 		//testapp.modules.testapp_footer.moduleContents.localebox.init();
-        document.title = map_app.locale.strings.langTitle;
+        document.title = map_app.locale.strings.language_title;
+        map_app.modules.map_header.className = "navbar navbar-expand-lg navbar-dark"
+        map_app.modules.map_header.children[0].children[0].setText();
 	}
 });
 nekoapp.system.scripts.add({application:map_app, url: "js/mdb.min.js"});

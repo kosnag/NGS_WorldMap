@@ -21,7 +21,7 @@ html, body, a, div, span, section, p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockq
     padding: 0
 }
 html, body {
-    font-family: Arial, sans-serif
+    font-family: var(--mdb-font-sans-serif)
 }
 a {
     text-decoration: none
@@ -519,8 +519,8 @@ map-app map-head map-navigation map-navigation-item map-ui-animation {
     z-index: -1
 }
 map-app map-head map-navigation map-navigation-item map-ui-element {
-    font-size: 1.25em;
-    text-transform: uppercase;
+    font-size: 18px;
+    /*text-transform: uppercase;*/
     height: 60px;
     padding: 0 20px;
     display: inline-flex;

@@ -1,3 +1,8 @@
 {
-    "langTitle": "Интерактивная Карта PSO2NGS"
+    "language_title": "Интерактивная Карта PSO2NGS",
+
+    "contribute_button": "<i class='fab fa-discord'></i> Contribute",
+    "github_button": "<i class='fab fa-github'></i> Github",
+    "changelog_button": "<i class='fab fa-github'></i> Changlelog",
+    "laguages_button": "<i class='fas fa-language'></i> Язык"
 }

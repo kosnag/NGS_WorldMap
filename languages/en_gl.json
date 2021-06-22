@@ -1,3 +1,9 @@
 {
-    "langTitle": "PSO2NGS Interactive Map"
+    "language_title": "PSO2NGS Interactive Map",
+
+    "contribute_button": "<i class='fab fa-discord'></i> Contribute",
+    "github_button": "Github",
+    "changelog_button": "Changlelog",
+    "laguages_button": "Language"
+    
 }
