@@ -1,4 +1,4 @@
-nekoapp.system.scripts.add({application:map_app, url: "js/mdb.min.js"});
+
 var map_app = new nekoapp({
     application : document.querySelector("map-app"),
     applicationInfo: {
@@ -178,8 +178,6 @@ var map_app = new nekoapp({
             prototype : {
                 template : nekoapp.create.template(
                     function(){
-                        let ЕБАНЫЙ_БЛЯТЬ_СКРИПТ = document.createElement("script");
-                        ЕБАНЫЙ_БЛЯТЬ_СКРИПТ.src = "js/mdb.min.js"
                         let h_alert = document.createElement("h4");
                         h_alert.className = "alert-heading"
                         h_alert.innerHTML = "WORK IN PROGRESS";
@@ -188,21 +186,23 @@ var map_app = new nekoapp({
                         let p2_alert = document.createElement("hr");
                         let p3_alert = document.createElement("p");
                         p3_alert.className = "mb-0"
-                        p3_alert.innerHTML = "If you want to help me, please contact with me in <a href='https://twitter.com/kosnag' target='_blank'>Twitter</a>, <a href='https://vk.com/kosnag' target='_blank'>VK</a> or <a href='#' data-mdb-toggle='tooltip' data-mdb-placement='bottom' data-mdb-html='true' title='<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>'>Discord (kosnag#1730)</a>. I will be very happy, if you help me! <a href='#' data-mdb-toggle='tooltip' data-mdb-placement='bottom' data-mdb-html='true' title='<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>'>Take a hug by Matoi!</a>";
+                        p3_alert.innerHTML = 'If you want to help me, please contact with me in <a href="https://twitter.com/kosnag" target="_blank">Twitter</a>, <a href="https://vk.com/kosnag" target="_blank">VK</a> or <a href="#" data-mdb-toggle="tooltip" data-mdb-placement="bottom" data-mdb-html="true" title="<img class="d-block m-1 mx-auto" src="https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png" height="100">">Discord (kosnag#1730)</a>. I will be very happy, if you help me! <a href="#" data-mdb-toggle="tooltip" data-mdb-placement="bottom" data-mdb-html="true" title="<img class="d-block m-1 mx-auto" src="https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png" height="100">">Take a hug by Matoi!</a>';
                         let a_tooltip1 = document.createElement("a");
-                        a_tooltip1.innerHTML = "Discord (kosnag#1730)";
-                        a_tooltip1.href = "a";
-                        a_tooltip1.setAttribute("data-mdb-toogle","tooltip");
-                        a_tooltip1.setAttribute("data-mdb-placement","bottom");
-                        a_tooltip1.setAttribute("data-mdb-html","true");
-                        a_tooltip1.setAttribute("data-mdb-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>");
-                        a_tooltip1.title = "<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>";
+                            a_tooltip1.id = "alert-tooltip"
+                            a_tooltip1.innerHTML = "Discord (kosnag#1730)";
+                            a_tooltip1.href = "a";
+                            a_tooltip1.setAttribute("data-mdb-toogle","tooltip");
+                            a_tooltip1.setAttribute("data-mdb-placement","bottom");
+                            a_tooltip1.setAttribute("data-mdb-html","true");
+                            a_tooltip1.setAttribute("data-mdb-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>");
                         p3_alert.appendChild(a_tooltip1);
-                        let блетб = document.createElement("script");
-                        блетб.innerHTML = "const exampleEl = document.getElementById('example'); const tooltip = new mdb.Tooltip(exampleEl);"
-                        return[ЕБАНЫЙ_БЛЯТЬ_СКРИПТ,h_alert,p1_alert,p2_alert,p3_alert,блетб];
+                        return[h_alert,p1_alert,p2_alert,p3_alert];
                     }
-                )
+                ),
+                init : function(){
+                    const exampleEl = document.getElementById('alert-tooltip');
+                    const tooltip = new mdb.Tooltip(exampleEl);
+                }
             }
         }
     },
@@ -233,7 +233,9 @@ var map_app = new nekoapp({
                 };
                 return [elements, elements.wip_element];
             },
-            onModuleChange : function(){},
+            onModuleChange : function(){
+                this.moduleContents.wip_element.init();
+            },
             onLocaleChange : function(){}
         },
         map_header : {
@@ -258,4 +260,5 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
         document.title = map_app.locale.strings.langTitle;
 	}
 });
+nekoapp.system.scripts.add({application:map_app, url: "js/mdb.min.js"});
 nekoapp.system.init(map_app);
