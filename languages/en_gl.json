@@ -2,8 +2,8 @@
     "language_title": "PSO2NGS Interactive Map",
 
     "contribute_button": "<i class='fab fa-discord'></i> Contribute",
-    "github_button": "Github",
-    "changelog_button": "Changlelog",
-    "laguages_button": "Language"
-    
+    "github_button": "<i class='fab fa-github'></i> Github",
+    "changelog_button": "<i class='fab fa-github'></i> Changlelog",
+    "laguages_button": "<i class='fas fa-language'></i> Language",
+    "ГДЕ_БЛЯТЬ_ИКОНКИ": "ПОКАЖИ ТКНИ"
 }
