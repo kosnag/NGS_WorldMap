@@ -332,12 +332,12 @@ var map_app = new nekoapp({
         }
     },
     applicationLocalization : {
-        "en-US": {URL: "/languages/en_gl.json"},
-        "en-AL": {URL: "/languages/en_al.json"},
-        "ru-RU": {URL: "/languages/ru_RU.json"},
-        "ko-KR": {URL: "/languages/ko_KR.json"},
-        "ja-JP": {URL: "/languages/ja_JP.json"},
-        "pt-BR": {URL: "/languages/pt_br.json"}
+        "en-US": {URL: "languages/en_gl.json"},
+        "en-AL": {URL: "languages/en_al.json"},
+        "ru-RU": {URL: "languages/ru_RU.json"},
+        "ko-KR": {URL: "languages/ko_KR.json"},
+        "ja-JP": {URL: "languages/ja_JP.json"},
+        "pt-BR": {URL: "languages/pt_br.json"}
 
     }
 });
