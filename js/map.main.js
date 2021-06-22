@@ -11,8 +11,8 @@ var map_app = new nekoapp({
         default : "css/map.main.css",
         colors : "css/map.colors.css",
         ui : "css/map.ui.css",
-        mdb : "css/mdb.min.css",
-        //mdb_d : "css/mdb.dark.min.css",
+        //mdb : "css/mdb.min.css",
+        mdb_d : "css/mdb.dark.min.css",
         leaflet : "css/leaflet.css"
     },
     applicationClasses : {
@@ -249,7 +249,13 @@ var map_app = new nekoapp({
                         alert_p3.appendChild(alert_span4)
                         alert_p3.appendChild(alert_a4)
 
-                        return[alert_h,alert_p1,alert_p2,alert_p3]
+                        let alert_button_close = document.createElement("button")
+                            alert_button_close.className = "btn-close ms-2"
+                            alert_button_close.setAttribute("type", "button")
+                            alert_button_close.setAttribute("data-mdb-dismiss", "alert")
+                            alert_button_close.setAttribute("aria-label", "close");
+
+                        return[alert_h,alert_p1,alert_p2,alert_p3,alert_button_close]
                     }
                 ),
                 init : function(){
@@ -257,6 +263,15 @@ var map_app = new nekoapp({
                             alertTooltip2 = document.getElementById('alert-tooltip2');
                     const   constAlertTooltip1 = new mdb.Tooltip(alertTooltip1),
                             constAlertTooltip2 = new mdb.Tooltip(alertTooltip2);
+                    mdb.Alert.getInstance(document.getElementById("alert_wip")).update({
+                        position: "top-right",
+                        delay: 2000,
+                        autohide: true,
+                        width: "600px",
+                        offset: 20,
+                        stacking: false,
+                        appendToBody: false,
+                    });
                 }
             }
         }
@@ -284,7 +299,7 @@ var map_app = new nekoapp({
             moduleURL : "/",
             moduleContents : function(){
                 var elements = {
-                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-3"})
+                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-3 alert-dismissible alert-absolute fade", id: "alert_wip", attr:{role: "alert", "data-mdb-color": "secondary"}})
                 };
                 return [elements, elements.wip_element];
             },
@@ -346,7 +361,7 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
 	oninit : function() {
 		//testapp.modules.testapp_footer.moduleContents.localebox.init();
         document.title = map_app.locale.strings.language_title;
-        map_app.modules.map_header.className = "navbar navbar-expand-lg navbar-dark"
+        map_app.modules.map_header.className = "navbar navbar-expand-lg navbar-dark";
         map_app.modules.map_header.children[0].children[0].setText();
 	}
 });
