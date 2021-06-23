@@ -2945,8 +2945,8 @@ textarea.form-control-lg {
 
 .btn-custom-blue {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: var(--bs-custom-blue);
+  border-color: var(--bs-custom-blue);
 }
 .btn-custom-blue:hover {
   color: #fff;
@@ -2969,8 +2969,8 @@ textarea.form-control-lg {
 }
 .btn-custom-blue:disabled, .btn-custom-blue.disabled {
   color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  background-color: var(--bs-custom-blue);
+  border-color: var(--bs-custom-blue);
 }
 
 .btn-primary {

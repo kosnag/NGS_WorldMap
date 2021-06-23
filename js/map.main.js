@@ -337,6 +337,19 @@ var map_app = new nekoapp({
                 )
 
             }
+        },
+        leaflet : {
+            tag : "map-leaflet",
+            prototype : {
+                template : nekoapp.create.template(
+                    function(){
+                        let leaflet_div = document.createElement("div")
+                            leaflet_div.id = "leaflet-app",
+                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: 650px"
+                        return[leaflet_div]
+                    }
+                )
+            }
         }
     },
     applicationGraphics : {                                                                     //  SVG Graphics used for your application
@@ -366,7 +379,8 @@ var map_app = new nekoapp({
                         class : "alert alert-danger mt-1 alert-dismissible fade show", 
                         attr : {
                             role : "alert"
-                        }
+                        },
+                        style: "display: block;"
                     }),
                     change_language_element : nekoapp.create.object(map_app,map_app.preferences.elements.change_language_element,{
                         class : "modal fade", 
@@ -376,12 +390,20 @@ var map_app = new nekoapp({
                             "aria-labelledby" : "languageModalLabel",
                             "aria-hidden" : "true"
                         }
+                    }),
+                    leaflet : nekoapp.create.object(map_app,map_app.preferences.elements.leaflet,{
+                        style : {
+                            display: "block",
+                            width: "650px",
+                            height: "650px"
+                        }
                     })
                 };
-                return [elements, [elements.wip_element,elements.change_language_element]];
+                return [elements, [elements.wip_element,elements.change_language_element,elements.leaflet]];
             },
             onModuleChange : function(){
                 this.moduleContents.wip_element.init();
+                nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
                 //this.moduleContents.change_language_element.init();
             },
             onLocaleChange : function(){
@@ -461,5 +483,4 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
 });
 nekoapp.system.scripts.add({application:map_app, url: "js/bootstrap.bundle.min.js"});
 nekoapp.system.scripts.add({application:map_app, url: "js/leaflet.js"});
-nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
 nekoapp.system.init(map_app);
