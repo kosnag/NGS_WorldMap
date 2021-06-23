@@ -267,18 +267,64 @@ var map_app = new nekoapp({
                             modal_modelDialog.className = "modal-dialog modal-dialog-centered";
 
                             let modal_modalContent = document.createElement("div")
-                                modal_modalContent.className = "modal-content";
-                            modal_modelDialog.appendChild(modal_modalContent)
+                                modal_modalContent.className = "modal-content"
+                                modal_modelDialog.appendChild(modal_modalContent);
 
                                 let modal_content_title = document.createElement("div")
                                     modal_content_title.className = "modal-header"
-                                    modal_content_title.innerHTML = "<h5 class='modal-title' id='exampleModalLabel'>Modal title</h5>"
+                                    modal_content_title.innerHTML = "<h5 class='modal-title text-center' id='languageModalLabel'>Choose a language</h5>";
                                 
                                 let modal_content_body = document.createElement("div")
-                                    modal_content_title.className = "modal-body"
-                                    modal_content_body.innerHTML = "Woohoo, you're reading this text in a modal!"
+                                    modal_content_title.className = "modal-body";
+                                    
+                                    let modal_content_body_buttons = document.createElement("div")
+                                        modal_content_body_buttons.className = "d-grid gap-2 mb-3 mx-5"
+
+                                        let modal_content_body_button1 = document.createElement("button")
+                                            modal_content_body_button1.setAttribute("type","button")
+                                            modal_content_body_button1.className = "btn btn-custom-blue btn-lg"
+                                            modal_content_body_button1.innerHTML = "English (Global)";
+                                            modal_content_body_button1.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-US')")
+                                            
+                                        let modal_content_body_button2 = document.createElement("button")
+                                            modal_content_body_button2.setAttribute("type","button")
+                                            modal_content_body_button2.className = "btn btn-custom-blue btn-lg"
+                                            modal_content_body_button2.innerHTML = "English (Fan-patch)";
+                                            modal_content_body_button2.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-AL')")
+                                        
+                                        let modal_content_body_button3 = document.createElement("button")
+                                            modal_content_body_button3.setAttribute("type","button")
+                                            modal_content_body_button3.className = "btn btn-custom-blue btn-lg disabled"
+                                            modal_content_body_button3.innerHTML = "日本語";
+                                            modal_content_body_button3.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ja-JP')")
+                                        
+                                        let modal_content_body_button4 = document.createElement("button")
+                                            modal_content_body_button4.setAttribute("type","button")
+                                            modal_content_body_button4.className = "btn btn-custom-blue btn-lg"
+                                            modal_content_body_button4.innerHTML = "Русский";
+                                            modal_content_body_button4.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ru-RU')")
+
+                                        let modal_content_body_button5 = document.createElement("button")
+                                            modal_content_body_button5.setAttribute("type","button")
+                                            modal_content_body_button5.className = "btn btn-custom-blue btn-lg disabled"
+                                            modal_content_body_button5.innerHTML = "한국어";
+                                            modal_content_body_button5.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ko-KR')")
+
+                                        let modal_content_body_button6 = document.createElement("button")
+                                            modal_content_body_button6.setAttribute("type","button")
+                                            modal_content_body_button6.className = "btn btn-custom-blue btn-lg disabled"
+                                            modal_content_body_button6.innerHTML = "Português";
+                                            modal_content_body_button6.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'pt-BR')")
 
                                 modal_modalContent.appendChild(modal_content_title)
+                                modal_modalContent.appendChild(modal_content_body)
+                                    modal_content_body.appendChild(modal_content_body_buttons)
+                                        modal_content_body_buttons.appendChild(modal_content_body_button1)
+                                        modal_content_body_buttons.appendChild(modal_content_body_button2)
+                                        modal_content_body_buttons.appendChild(modal_content_body_button3)
+                                        modal_content_body_buttons.appendChild(modal_content_body_button4)
+                                        modal_content_body_buttons.appendChild(modal_content_body_button5)
+                                        modal_content_body_buttons.appendChild(modal_content_body_button6)
 
                             return[modal_modelDialog]
                     }
@@ -391,7 +437,11 @@ var map_app = new nekoapp({
     }
 });
 map_app.loadScreen.spinner = nekoapp.create.element(map_app, "spinner", {
-    text : nekoapp.create.element(map_app, "div", {class : "spinner-border text-primary", attr : {role: "status"}, style : "width: 6rem; height: 6rem;"})
+    text : nekoapp.create.element(map_app, "div", {
+        class : "spinner-border text-primary",
+        attr : {role: "status"},
+        style : "width: 6rem; height: 6rem;"
+    })
 ,class : "d-flex justify-content-center"})
 map_app.preferences.events.onAppInit = new nekoapp.event({
 	target : map_app ,
