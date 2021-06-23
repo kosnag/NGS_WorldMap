@@ -283,38 +283,44 @@ var map_app = new nekoapp({
                                         let modal_content_body_button1 = document.createElement("button")
                                             modal_content_body_button1.setAttribute("type","button")
                                             modal_content_body_button1.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button1.innerHTML = "English (Global)";
-                                            modal_content_body_button1.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-US')")
+                                            modal_content_body_button1.innerHTML = "English (Global)"
+                                            modal_content_body_button1.setAttribute("data-bs-dismiss","modal")
+                                            modal_content_body_button1.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-US')");
                                             
                                         let modal_content_body_button2 = document.createElement("button")
                                             modal_content_body_button2.setAttribute("type","button")
                                             modal_content_body_button2.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button2.innerHTML = "English (Fan-patch)";
-                                            modal_content_body_button2.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-AL')")
+                                            modal_content_body_button2.innerHTML = "English (Fan-patch)"
+                                            modal_content_body_button2.setAttribute("data-bs-dismiss","modal")
+                                            modal_content_body_button2.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-AL')");
                                         
                                         let modal_content_body_button3 = document.createElement("button")
                                             modal_content_body_button3.setAttribute("type","button")
                                             modal_content_body_button3.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button3.innerHTML = "日本語";
-                                            modal_content_body_button3.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ja-JP')")
+                                            modal_content_body_button3.innerHTML = "日本語"
+                                            modal_content_body_button3.setAttribute("data-bs-dismiss","modal")
+                                            modal_content_body_button3.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ja-JP')");
                                         
                                         let modal_content_body_button4 = document.createElement("button")
                                             modal_content_body_button4.setAttribute("type","button")
                                             modal_content_body_button4.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button4.innerHTML = "Русский";
-                                            modal_content_body_button4.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ru-RU')")
+                                            modal_content_body_button4.innerHTML = "Русский"
+                                            modal_content_body_button4.setAttribute("data-bs-dismiss","modal")
+                                            modal_content_body_button4.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ru-RU')");
 
                                         let modal_content_body_button5 = document.createElement("button")
                                             modal_content_body_button5.setAttribute("type","button")
                                             modal_content_body_button5.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button5.innerHTML = "한국어";
-                                            modal_content_body_button5.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ko-KR')")
+                                            modal_content_body_button5.innerHTML = "한국어"
+                                            modal_content_body_button5.setAttribute("data-bs-dismiss","modal")
+                                            modal_content_body_button5.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ko-KR')");
 
                                         let modal_content_body_button6 = document.createElement("button")
                                             modal_content_body_button6.setAttribute("type","button")
                                             modal_content_body_button6.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button6.innerHTML = "Português";
-                                            modal_content_body_button6.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'pt-BR')")
+                                            modal_content_body_button6.innerHTML = "Português"
+                                            modal_content_body_button6.setAttribute("data-bs-dismiss","modal")
+                                            modal_content_body_button6.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'pt-BR')");
 
                                 modal_modalContent.appendChild(modal_content_title)
                                 modal_modalContent.appendChild(modal_content_body)
