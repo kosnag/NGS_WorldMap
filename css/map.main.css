@@ -80,7 +80,7 @@ map-window map-ui-animation map-ui-animation-sprite {
 	position: absolute
 }
 map-app map-module {
-    padding: 60px 0 50px;
+    padding: 0px 0 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
