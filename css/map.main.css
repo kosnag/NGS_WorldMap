@@ -82,7 +82,7 @@ map-window map-ui-animation map-ui-animation-sprite {
 map-app map-module {
     padding: 60px 0 50px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     transition: opacity ease .4s
 }
