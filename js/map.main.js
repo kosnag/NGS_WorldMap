@@ -380,7 +380,7 @@ var map_app = new nekoapp({
                         attr : {
                             role : "alert"
                         },
-                        style: "display: block;"
+                        style: "display: block;margin:0 auto"
                     }),
                     change_language_element : nekoapp.create.object(map_app,map_app.preferences.elements.change_language_element,{
                         class : "modal fade", 
@@ -395,7 +395,8 @@ var map_app = new nekoapp({
                         style : {
                             display: "block",
                             width: "650px",
-                            height: "650px"
+                            height: "650px",
+			    margin: "0 auto"
                         }
                     })
                 };
