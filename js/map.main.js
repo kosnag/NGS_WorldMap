@@ -177,12 +177,6 @@ var map_app = new nekoapp({
 				}
 			}
 		},
-        /*headerLogo: {
-            tag: "map-header-logo",
-            prototype : {
-                }
-            }
-        },*/
         wip_element : {
             tag : "map-wip-element",
             prototype : {
@@ -263,6 +257,34 @@ var map_app = new nekoapp({
                             constAlertTooltip2 = new bootstrap.Tooltip(alertTooltip2);
                 }
             }
+        },
+        change_language_element : {
+            tag : "map-change-language-element",
+            prototype : {
+                template : nekoapp.create.template(
+                    function(){
+                        let modal_modelDialog = document.createElement("div")
+                            modal_modelDialog.className = "modal-dialog modal-dialog-centered";
+
+                            let modal_modalContent = document.createElement("div")
+                                modal_modalContent.className = "modal-content";
+                            modal_modelDialog.appendChild(modal_modalContent)
+
+                                let modal_content_title = document.createElement("div")
+                                    modal_content_title.className = "modal-header"
+                                    modal_content_title.innerHTML = "<h5 class='modal-title' id='exampleModalLabel'>Modal title</h5>"
+                                
+                                let modal_content_body = document.createElement("div")
+                                    modal_content_title.className = "modal-body"
+                                    modal_content_body.innerHTML = "Woohoo, you're reading this text in a modal!"
+
+                                modal_modalContent.appendChild(modal_content_title)
+
+                            return[modal_modelDialog]
+                    }
+                )
+
+            }
         }
     },
     applicationGraphics : {                                                                     //  SVG Graphics used for your application
@@ -288,13 +310,27 @@ var map_app = new nekoapp({
             moduleURL : "/",
             moduleContents : function(){
                 var elements = {
-                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{class:"alert alert-danger mt-1 alert-dismissible fade show", attr:{role: "alert"}})/*,
-                    change_language_element : nekoapp.create.object(map_app,map_app.preferences.elements.change_language_element,{})*/
+                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{
+                        class : "alert alert-danger mt-1 alert-dismissible fade show", 
+                        attr : {
+                            role : "alert"
+                        }
+                    }),
+                    change_language_element : nekoapp.create.object(map_app,map_app.preferences.elements.change_language_element,{
+                        class : "modal fade", 
+                        id : "languageModal",
+                        attr : {
+                            tabindex : "-1",
+                            "aria-labelledby" : "languageModalLabel",
+                            "aria-hidden" : "true"
+                        }
+                    })
                 };
-                return [elements, elements.wip_element];
+                return [elements, [elements.wip_element,elements.change_language_element]];
             },
             onModuleChange : function(){
                 this.moduleContents.wip_element.init();
+                //this.moduleContents.change_language_element.init();
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
@@ -332,8 +368,11 @@ var map_app = new nekoapp({
                         hyperlink : {
                             URL : "#",
                             event : function(openLangMenu){
-                                openLangMenu.setAttribute("data-bs-toggle","modal"),
-                                openLangMenu.setAttribute("data-bs-target","#langModalMenu")
+                                if (!(openLangMenu.hasAttribute("data-bs-toggle") && openLangMenu.hasAttribute("data-bs-target"))){
+                                    openLangMenu.setAttribute("data-bs-toggle","modal"),
+                                    openLangMenu.setAttribute("data-bs-target","#languageModal")
+                                    openLangMenu.click()
+                                }
                             }
                         }}
                     ]

@@ -6,6 +6,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --bs-custom-gray-transparent: rgb(170 170 170 / 85%);
+  --bs-custom-gray: #aaaaaa;
+  --bs-custom-blue: #004caf;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -5274,7 +5277,8 @@ textarea.form-control-lg {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #fff;
+  background-color: var(--bs-custom-gray-transparent);
+  /*background-color: #fff;*/
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
