@@ -414,6 +414,7 @@ var map_app = new nekoapp({
             onModuleChange : function(){
                 this.moduleContents.wip_element.init();
                 nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
+                setTimeout(function(){map.invalidateSize(true);}, 200);
                 //this.moduleContents.change_language_element.init();
             },
             onLocaleChange : function(){
