@@ -346,7 +346,8 @@ var map_app = new nekoapp({
                         let leaflet_div = document.createElement("div")
                             leaflet_div.className = "col-10"
                             leaflet_div.id = "leaflet-app",
-                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: 100vh; position: fixed"
+                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: 100vh;"
+
                         return[leaflet_div]
                     }
                 )
@@ -402,7 +403,7 @@ var map_app = new nekoapp({
                     }),
                     leaflet : nekoapp.create.object(map_app,map_app.preferences.elements.leaflet,{
                         style : {
-                            display: "block",
+                            //display: "block",
                             margin: "0 auto"
                         },
                         class : "container-fluid row"
@@ -488,6 +489,7 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
         map_app.modules.map_header.className = "navbar navbar-expand-lg navbar-dark";
         map_app.modules.map_header.children[0].children[0].setText();
         document.body.className = "bg-secondary";
+        //nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
 	}
 });
 nekoapp.system.scripts.add({application:map_app, url: "js/bootstrap.bundle.min.js"});

@@ -1,18 +1,23 @@
-let map_url = "assets/map_v2.png" 
-let map = L.map("leaflet-app",{
+let map_id = "leaflet-app"
+let map_url = "assets/map_v2.png";
+let map_yx = [[0,0],[7321,7321]];
+let map_yx_border = [[0,0],[12288,12288]];
+
+let map = L.map(map_id,{
 	crs: L.CRS.Simple,
-	minZoom: "-2.5",
-    maxZoom: "2.5",
+	minZoom: "-2",
+    maxZoom: "3",
     zoomControl: false,
     attributionControl: false,
     keyboard: false,
-    center: [2357,2357],
-	noWrap: true,
-    maxBoundsViscosity: "1.0"
+    //center: [3660.5,3660.5],
+	//noWrap: true,
+    maxBoundsViscosity: "0.5",
+    boxZoom: false
 	});
 
-let map_bounds = [[0,0],[4715,4715]];
-let fit_map_bounds = [[0,0],[12288-4715,12288-4715]];
+let map_render = L.imageOverlay(map_url,map_yx).addTo(map);
 
-let map_img = L.imageOverlay(map_url,map_bounds).addTo(map);
-    map.fitBounds(map_bounds);
+map.fitBounds(map_yx);
+map.setView([3660.5,3660.5]);
+map.setMaxBounds(map_yx);
