@@ -346,7 +346,7 @@ var map_app = new nekoapp({
                         let leaflet_div = document.createElement("div")
                             leaflet_div.className = "col-10"
                             leaflet_div.id = "leaflet-app",
-                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: 650px"
+                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: 100vh; position: fixed"
                         return[leaflet_div]
                     }
                 )
@@ -403,8 +403,6 @@ var map_app = new nekoapp({
                     leaflet : nekoapp.create.object(map_app,map_app.preferences.elements.leaflet,{
                         style : {
                             display: "block",
-                            width: "100%",
-                            height: "100%",
                             margin: "0 auto"
                         },
                         class : "container-fluid row"
