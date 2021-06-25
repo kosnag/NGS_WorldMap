@@ -323,11 +323,57 @@ var map_app = new nekoapp({
                             map_menu.className = "col-3 bg-menu"
                             map_menu.style = "padding-top: 70px"
 
-                            let map_menu_header = document.createElement("div")
-                                map_menu_header.className = "h5"
-                                map_menu_header.innerHTML = "A"
+                            let map_menu_body = document.createElement("div")
+                                map_menu_body.className = "px-4 py-2"
 
-                            map_menu.appendChild(map_menu_header)
+                                let map_menu_body_header = document.createElement("div")
+                                    map_menu_body_header.className = "h3 text-center text-light"
+                                    map_menu_body_header.innerHTML = "Map Menu"
+                                
+                                let map_menu_body_versionButtons = document.createElement("div")
+                                    map_menu_body_versionButtons.className = "btn-group"
+                                    map_menu_body_versionButtons.setAttribute("role","group")
+
+                                    let map_menu_body_versionButtons_Global1 = document.createElement("input")
+                                        map_menu_body_versionButtons_Global1.className = "btn-check"
+                                        map_menu_body_versionButtons_Global1.id = "versionGlobal"
+                                        map_menu_body_versionButtons_Global1.setAttribute("type","radio")
+                                        map_menu_body_versionButtons_Global1.setAttribute("name","btnradio")
+                                        map_menu_body_versionButtons_Global1.setAttribute("autocomplete","off")
+                                        map_menu_body_versionButtons_Global1.setAttribute("checked","")
+
+                                    let map_menu_body_versionButtons_Global2 = document.createElement("label")
+                                        map_menu_body_versionButtons_Global2.className = "btn btn-outline-primary"
+                                        map_menu_body_versionButtons_Global2.setAttribute("for","versionGlobal")
+
+                                    let map_menu_body_versionButtons_Japanese1 = document.createElement("input")
+                                        map_menu_body_versionButtons_Japanese1.className = "btn-check"
+                                        map_menu_body_versionButtons_Japanese1.id = "versionJapanese"
+                                        map_menu_body_versionButtons_Japanese1.setAttribute("type","radio")
+                                        map_menu_body_versionButtons_Japanese1.setAttribute("name","btnradio")
+                                        map_menu_body_versionButtons_Japanese1.setAttribute("autocomplete","off")
+
+                                    let map_menu_body_versionButtons_Japanese2 = document.createElement("label")
+                                        map_menu_body_versionButtons_Japanese2.className = "btn btn-outline-primary"
+                                        map_menu_body_versionButtons_Japanese2.setAttribute("for","versionJapanese")
+
+                                        
+
+
+
+
+
+
+
+
+                            map_menu.appendChild(map_menu_body)
+                                map_menu_body.appendChild(map_menu_body_header)
+                                map_menu_body.appendChild(map_menu_body_versionButtons)
+                                map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Global1)
+                                map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Global2)
+                                map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Japanese1)
+                                map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Japanese2)
+
 
                         return[leaflet_div,map_menu]
                     }
@@ -407,11 +453,15 @@ var map_app = new nekoapp({
             onModuleChange : function(){
                 //this.moduleContents.alert_element.init();
                 //this.moduleContents.language_menu.init();
-                this.moduleContents.ngs_map.init();
+                this.moduleContents.ngs_map.init();                                        
+                //map_menu_body_versionButtons_Global2.innerHTML = map_app.locale.strings.mapVersionEn
+                //map_menu_body_versionButtons_Japanese2.innerHTML = map_app.locale.strings.mapVersionJp
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
                 map_app.modules.map_header.children[0].children[0].setText();
+                //map_menu_body_versionButtons_Global2.innerHTML = map_app.locale.strings.mapVersionEn
+                //map_menu_body_versionButtons_Japanese2.innerHTML = map_app.locale.strings.mapVersionJp
             }
         },
         map_header : {
