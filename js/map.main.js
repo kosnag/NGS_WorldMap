@@ -148,37 +148,8 @@ var map_app = new nekoapp({
             tag : "map-progress" ,
             prototype : {}
         } ,
-		localeBoxElement : {																	//  Element for locale box (change language box)
-			tag : "map-localebox" ,
-			prototype : {
-				init : function() {																//  Init element
-					var icon = nekoapp.create.element(map, "span", {						//  Locale box globe icon
-							class : map.preferences.classes.localeBoxIcon ,
-							text : nekoapp.create.graphic(map, "main;globe_icon", "0 0 20 20")
-						}) ,
-						text = nekoapp.create.element(map, "span", {						//  Locale box language text
-							class : map.preferences.classes.localeBoxText
-						}) ,
-						event = new nekoapp.event({												//  Event to call change language window
-							target : this ,
-							onclick : function(object, event) {
-								nekoapp.locale.openChangeWindow(map);						//  Calling change language window
-							}
-						});
-					this.appendChild(icon);
-					this.appendChild(text);
-					event.register();															//  Registering event
-					this.update();
-				} ,
-				update : function() {															//  Update language text (if language was changed)
-					if (this.children.length) {													//  Check if locale box in initialized
-						this.children[1].innerHTML = map.localeLanguageStrings[map.locale.activeLanguage];
-					}
-				}
-			}
-		},
-        wip_element : {
-            tag : "map-wip-element",
+        alert_element : {
+            tag : "alert-window",
             prototype : {
                 template : nekoapp.create.template(
                     function(){
@@ -258,8 +229,8 @@ var map_app = new nekoapp({
                 }
             }
         },
-        change_language_element : {
-            tag : "map-change-language-element",
+        language_menu : {
+            tag : "language-menu",
             prototype : {
                 template : nekoapp.create.template(
                     function(){
@@ -334,12 +305,12 @@ var map_app = new nekoapp({
 
                             return[modal_modelDialog]
                     }
-                )
+                ),
 
             }
         },
         leaflet : {
-            tag : "map-leaflet",
+            tag : "leaflet-map",
             prototype : {
                 template : nekoapp.create.template(
                     function(){
@@ -350,9 +321,27 @@ var map_app = new nekoapp({
 
                         return[leaflet_div]
                     }
-                )
+                ),
+                init : function(){  
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
+                    setTimeout(function(){map.invalidateSize(true);}, 200);
+                }
             }
-        }
+        }/*,
+        menu_map : {
+            tag : "menu-map",
+            prototype : {
+                template : nekoapp.create.template(
+                    function(){
+                        let AAAAAA = AAAAAA
+                        return[]
+                    }
+                ),
+                init : function(){
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/AAAAAA.js"});
+                }
+            }
+        }*/
     },
     applicationGraphics : {                                                                     //  SVG Graphics used for your application
         resourceName : "MAP GRAPHICS" ,
@@ -377,7 +366,7 @@ var map_app = new nekoapp({
             moduleURL : "/",
             moduleContents : function(){
                 var elements = {
-                    wip_element : nekoapp.create.object(map_app,map_app.preferences.elements.wip_element,{
+                    /*alert_element : nekoapp.create.object(map_app,map_app.preferences.elements.alert_element,{
                         class : "alert alert-danger mt-1 alert-dismissible fade show", 
                         attr : {
                             role : "alert"
@@ -391,10 +380,10 @@ var map_app = new nekoapp({
                                 width: "75%",
                                 "z-index": "8492"
                             }
-                    }),
-                    change_language_element : nekoapp.create.object(map_app,map_app.preferences.elements.change_language_element,{
-                        class : "modal fade", 
+                    }),*/
+                    language_menu : nekoapp.create.object(map_app,map_app.preferences.elements.language_menu,{
                         id : "languageModal",
+                        class : "modal fade", 
                         attr : {
                             tabindex : "-1",
                             "aria-labelledby" : "languageModalLabel",
@@ -402,20 +391,24 @@ var map_app = new nekoapp({
                         }
                     }),
                     leaflet : nekoapp.create.object(map_app,map_app.preferences.elements.leaflet,{
+                        class : "container-fluid row",
                         style : {
                             //display: "block",
                             margin: "0 auto"
-                        },
-                        class : "container-fluid row"
-                    })
+                        }
+                    }),
+                    /*menu_map : nekoapp.create.object(map_app,map_app.preferences.elements.menu_map,{
+                        class : "container-fluid row",
+                        style : {}
+                    })*/
                 };
-                return [elements, [elements.wip_element,elements.change_language_element,elements.leaflet]];
+                return [elements, [/*elements.alert_element,*/elements.language_menu,elements.leaflet/*,elements.menu_map*/]];
             },
             onModuleChange : function(){
-                this.moduleContents.wip_element.init();
-                nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
-                setTimeout(function(){map.invalidateSize(true);}, 200);
-                //this.moduleContents.change_language_element.init();
+                //this.moduleContents.alert_element.init();
+                //this.moduleContents.language_menu.init();
+                this.moduleContents.leaflet.init();
+                //this.moduleContents.menu_map.init();
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
@@ -480,17 +473,15 @@ map_app.loadScreen.spinner = nekoapp.create.element(map_app, "spinner", {
         class : "spinner-border text-primary",
         attr : {role: "status"},
         style : "width: 6rem; height: 6rem;"
-    })
-,class : "d-flex justify-content-center"})
+    }),
+    class : "d-flex justify-content-center"})
 map_app.preferences.events.onAppInit = new nekoapp.event({
 	target : map_app ,
 	oninit : function() {
-		//testapp.modules.testapp_footer.moduleContents.localebox.init();
         document.title = map_app.locale.strings.language_title;
         map_app.modules.map_header.className = "navbar navbar-expand-lg navbar-dark";
         map_app.modules.map_header.children[0].children[0].setText();
         document.body.className = "bg-secondary";
-        //nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
 	}
 });
 nekoapp.system.scripts.add({application:map_app, url: "js/bootstrap.bundle.min.js"});
