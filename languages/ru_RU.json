@@ -2,14 +2,14 @@
     "language_title": "Интерактивная Карта PSO2NGS",
 
     "__NAVBAR__": "DON'T TOUCH THAT STRING",
-    "contribute_button": "<i class='fab fa-discord'></i> Contribute",
+    "contribute_button": "<i class='fab fa-discord'></i> Помочь",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "changelog_button": "<i class='fab fa-github'></i> Changlelog",
+    "changelog_button": "<i class='fab fa-github'></i> Изменения",
     "laguages_button": "<i class='fas fa-language'></i> Язык",
 
     "__MENU__": "DON'T TOUCH THAT STRING",
-    "mapHeader": "Map Menu",
-    "mapVersion": "Version",
-    "mapVersionJp": "Japanese",
-    "mapVersionEn": "Global"
+    "mapHeader": "Меню карты",
+    "mapVersion": "Версия",
+    "mapVersionJp": "Японская",
+    "mapVersionEn": "Глобальная"
 }
