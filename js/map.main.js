@@ -496,7 +496,7 @@ var map_app = new nekoapp({
                         {
                         label : "localeString@changelog_button",
                         hyperlink : {
-                            URL : "//github.com/kosnag/NGS_InterMap/commits/main",
+                            URL : "//github.com/kosnag/NGS_InterMap/commits/test",
                             useDefaultNavigation : true,
                             target : "_blank"
                         }},
