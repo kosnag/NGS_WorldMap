@@ -309,39 +309,44 @@ var map_app = new nekoapp({
 
             }
         },
-        leaflet : {
-            tag : "leaflet-map",
+        ngs_map : {
+            tag : "ngs-map",
             prototype : {
                 template : nekoapp.create.template(
                     function(){
                         let leaflet_div = document.createElement("div")
-                            leaflet_div.className = "col-10"
-                            leaflet_div.id = "leaflet-app",
-                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: 100vh;"
+                            leaflet_div.className = "col-9"
+                            leaflet_div.id = "leaflet-app"
+                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: 100vh; border-right: 1px solid var(--bs-light);"
 
-                        return[leaflet_div]
+                        let map_menu = document.createElement("div")
+                            map_menu.className = "col-3 bg-menu"
+                            map_menu.style = "padding-top: 70px"
+
+                            let map_menu_header = document.createElement("div")
+                                map_menu_header.className = "h5"
+                                map_menu_header.innerHTML = "A"
+
+                            map_menu.appendChild(map_menu_header)
+
+                        return[leaflet_div,map_menu]
                     }
                 ),
                 init : function(){  
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/map.js"});
-                    setTimeout(function(){map.invalidateSize(true);}, 200);
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/index.js"});
+                    setTimeout(function(){map.invalidateSize(true);}, 250);
+
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/caves.js"});
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/containers.js"});
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/food.js"});
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/gigantixes.js"});
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/landmarks.js"});
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/minerals.js"});
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/sections.js"});
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/veterans.js"});
                 }
             }
-        }/*,
-        menu_map : {
-            tag : "menu-map",
-            prototype : {
-                template : nekoapp.create.template(
-                    function(){
-                        let AAAAAA = AAAAAA
-                        return[]
-                    }
-                ),
-                init : function(){
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/AAAAAA.js"});
-                }
-            }
-        }*/
+        }
     },
     applicationGraphics : {                                                                     //  SVG Graphics used for your application
         resourceName : "MAP GRAPHICS" ,
@@ -390,25 +395,19 @@ var map_app = new nekoapp({
                             "aria-hidden" : "true"
                         }
                     }),
-                    leaflet : nekoapp.create.object(map_app,map_app.preferences.elements.leaflet,{
+                    ngs_map : nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
                         class : "container-fluid row",
                         style : {
-                            //display: "block",
                             margin: "0 auto"
                         }
-                    }),
-                    /*menu_map : nekoapp.create.object(map_app,map_app.preferences.elements.menu_map,{
-                        class : "container-fluid row",
-                        style : {}
-                    })*/
+                    })
                 };
-                return [elements, [/*elements.alert_element,*/elements.language_menu,elements.leaflet/*,elements.menu_map*/]];
+                return [elements, [/*elements.alert_element,*/elements.language_menu,elements.ngs_map]];
             },
             onModuleChange : function(){
                 //this.moduleContents.alert_element.init();
                 //this.moduleContents.language_menu.init();
-                this.moduleContents.leaflet.init();
-                //this.moduleContents.menu_map.init();
+                this.moduleContents.ngs_map.init();
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
