@@ -364,16 +364,16 @@ var map_app = new nekoapp({
 
 
 
-                            map_menu.appendChild(map_menu_body)
+                            /*map_menu.appendChild(map_menu_body)
                                 map_menu_body.appendChild(map_menu_body_header)
                                 map_menu_body.appendChild(map_menu_body_versionButtons)
                                 map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Global1)
                                 map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Global2)
                                 map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Japanese1)
-                                map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Japanese2)
+                                map_menu_body_versionButtons.appendChild(map_menu_body_versionButtons_Japanese2)*/
 
 
-                        return[leaflet_div,map_menu]
+                        return[leaflet_div]
                     }
                 ),
                 init : function(){  
@@ -415,7 +415,7 @@ var map_app = new nekoapp({
             moduleURL : "/",
             moduleContents : function(){
                 var elements = {
-                    /*alert_element : nekoapp.create.object(map_app,map_app.preferences.elements.alert_element,{
+                    alert_element : nekoapp.create.object(map_app,map_app.preferences.elements.alert_element,{
                         class : "alert alert-danger mt-1 alert-dismissible fade show", 
                         attr : {
                             role : "alert"
@@ -429,7 +429,7 @@ var map_app = new nekoapp({
                                 width: "75%",
                                 "z-index": "8492"
                             }
-                    }),*/
+                    }),
                     language_menu : nekoapp.create.object(map_app,map_app.preferences.elements.language_menu,{
                         id : "languageModal",
                         class : "modal fade", 
@@ -446,6 +446,12 @@ var map_app = new nekoapp({
                             "padding-top": "60px"
                         }
                     }),
+		    map_menu : nekoapp.create.element(map_app,"div",{
+			class: "col-3 bg-menu"
+		    }),
+		    map_menu_body: nekoapp.create.element(map_app,"div",{
+			class: "px-4 py-2"
+		    }),
                     menu_header : nekoapp.create.element(map_app,"div",{
                         class: "h3 text-center text-light", 
                         text: nekoapp.create.localizedString(
@@ -453,6 +459,9 @@ var map_app = new nekoapp({
                         )
                     })
                 };
+		elements.ngs_map.appendChild(elements.map_menu);
+		elements.map_menu.appendChild(elements.map_menu_body);
+		elements.map_menu_body.appendChild(elements.menu_header);
                 return [elements, [/*elements.alert_element,*/elements.language_menu,elements.ngs_map]];
             },
             onModuleChange : function(){
