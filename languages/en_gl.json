@@ -8,6 +8,7 @@
     "laguages_button": "<i class='fas fa-language'></i> Language",
 
     "__MENU__": "DON'T TOUCH THAT STRING",
+    "mapHeader": "Map Menu",
     "mapVersion": "Version",
     "mapVersionJp": "Japanese",
     "mapVersionEn": "Global"

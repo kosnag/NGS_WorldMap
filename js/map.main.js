@@ -317,18 +317,16 @@ var map_app = new nekoapp({
                         let leaflet_div = document.createElement("div")
                             leaflet_div.className = "col-9"
                             leaflet_div.id = "leaflet-app"
-                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: 100vh; border-right: 1px solid var(--bs-light);"
+                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: calc(100vh - 60px); border-right: 1px solid var(--bs-light);"
 
                         let map_menu = document.createElement("div")
                             map_menu.className = "col-3 bg-menu"
-                            map_menu.style = "padding-top: 70px"
 
                             let map_menu_body = document.createElement("div")
                                 map_menu_body.className = "px-4 py-2"
 
                                 let map_menu_body_header = document.createElement("div")
                                     map_menu_body_header.className = "h3 text-center text-light"
-                                    map_menu_body_header.innerHTML = "Map Menu"
                                 
                                 let map_menu_body_versionButtons = document.createElement("div")
                                     map_menu_body_versionButtons.className = "btn-group"
@@ -380,7 +378,7 @@ var map_app = new nekoapp({
                 ),
                 init : function(){  
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/index.js"});
-                    setTimeout(function(){map.invalidateSize(true);}, 250);
+                    setTimeout(function(){map.invalidateSize(true);}, 200);
 
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/data/caves.js"});
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/data/containers.js"});
@@ -444,8 +442,15 @@ var map_app = new nekoapp({
                     ngs_map : nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
                         class : "container-fluid row",
                         style : {
-                            margin: "0 auto"
+                            //margin: "0 auto",
+                            "padding-top": "60px"
                         }
+                    }),
+                    menu_header : nekoapp.create.element(map_app,"div",{
+                        class: "h3 text-center text-light", 
+                        text: nekoapp.create.localizedString(
+                            map_app, "mapHeader"
+                        )
                     })
                 };
                 return [elements, [/*elements.alert_element,*/elements.language_menu,elements.ngs_map]];
