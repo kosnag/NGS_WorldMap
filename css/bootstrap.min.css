@@ -9,6 +9,7 @@
   --bs-custom-gray-transparent: rgb(170 170 170 / 85%);
   --bs-custom-gray: #aaaaaa;
   --bs-custom-blue: #004caf;
+  --bs-custom-blue-menu: #003d8d;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -7433,6 +7434,10 @@ textarea.form-control-lg {
 
 .text-reset {
   color: inherit !important;
+}
+
+.bg-menu {
+  background-color: var(--bs-custom-blue-menu) !important;
 }
 
 .bg-primary {

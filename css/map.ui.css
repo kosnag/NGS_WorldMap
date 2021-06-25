@@ -260,8 +260,9 @@ map-app[processing] map-progress div.map_progress_bar_inner {
     animation: progress_animation 1.25s linear infinite
 }
 map-app map-head {
-    background: var(--bs-custom-blue)/*;
-	box-shadow: 0 4px 12px var(--bs-primary)*/
+    background: var(--bs-custom-blue);
+    border-bottom: 1px solid var(--bs-light);
+	/*box-shadow: 0 4px 12px var(--bs-primary)*/
 }
 map-app map-footer {
     background: var(--map-primary-background-color);
