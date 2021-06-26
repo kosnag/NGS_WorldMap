@@ -11,5 +11,8 @@
     "mapHeader": "Меню карты",
     "mapVersion": "Версия",
     "mapVersionJp": "Японская",
-    "mapVersionEn": "Глобальная"
+    "mapVersionEn": "Глобальная",
+    "mapSections": "Секции",
+    "mapSectionsOn": "Показать",
+    "mapSectionsOff": "Скрыть"
 }

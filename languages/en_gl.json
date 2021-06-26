@@ -11,5 +11,8 @@
     "mapHeader": "Map Menu",
     "mapVersion": "Version",
     "mapVersionJp": "Japanese",
-    "mapVersionEn": "Global"
+    "mapVersionEn": "Global",
+    "mapSections": "Sections",
+    "mapSectionsOn": "Unhide",
+    "mapSectionsOff": "Hide"
 }
