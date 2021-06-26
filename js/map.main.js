@@ -254,42 +254,48 @@ var map_app = new nekoapp({
                                         let modal_content_body_button1 = document.createElement("button")
                                             modal_content_body_button1.setAttribute("type","button")
                                             modal_content_body_button1.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button1.innerHTML = "<span class='float-start'><img src='assets/flags/en-US.svg' height='32px'> <img src='assets/flags/en-UK.svg' height='32px'></span> English (Global)"
+                                            modal_content_body_button1.style = "position: relative;"
+                                            modal_content_body_button1.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/en-US.svg' height='32px'> <img src='assets/flags/en-UK.svg' height='32px'></span> English (Global)"
                                             modal_content_body_button1.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button1.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-US')");
                                             
                                         let modal_content_body_button2 = document.createElement("button")
                                             modal_content_body_button2.setAttribute("type","button")
                                             modal_content_body_button2.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button2.innerHTML = "<span class='float-start'><img src='assets/flags/en-US.svg' height='32px'> <img src='assets/flags/en-UK.svg' height='32px'></span> English (Fan-patch)"
+                                            modal_content_body_button2.style = "position: relative;"
+                                            modal_content_body_button2.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/en-US.svg' height='32px'> <img src='assets/flags/en-UK.svg' height='32px'></span> English (Fan-patch)"
                                             modal_content_body_button2.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button2.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-AL')");
                                         
                                         let modal_content_body_button3 = document.createElement("button")
                                             modal_content_body_button3.setAttribute("type","button")
                                             modal_content_body_button3.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button3.innerHTML = "<span class='float-start'><img src='assets/flags/ja-JP.svg' height='32px'></span> 日本語"
+                                            modal_content_body_button3.style = "position: relative;"
+                                            modal_content_body_button3.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/ja-JP.svg' height='32px'></span> 日本語"
                                             modal_content_body_button3.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button3.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ja-JP')");
                                         
                                         let modal_content_body_button4 = document.createElement("button")
                                             modal_content_body_button4.setAttribute("type","button")
                                             modal_content_body_button4.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button4.innerHTML = "<span class='float-start'><img src='assets/flags/ru-RU.svg' height='32px'></span> Русский"
+                                            modal_content_body_button4.style = "position: relative;"
+                                            modal_content_body_button4.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/ru-RU.svg' height='32px'></span> Русский"
                                             modal_content_body_button4.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button4.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ru-RU')");
 
                                         let modal_content_body_button5 = document.createElement("button")
                                             modal_content_body_button5.setAttribute("type","button")
                                             modal_content_body_button5.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button5.innerHTML = "<span class='float-start'><img src='assets/flags/ko-KR.svg' height='32px'></span> 한국어"
+                                            modal_content_body_button5.style = "position: relative;"
+                                            modal_content_body_button5.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/ko-KR.svg' height='32px'></span> 한국어"
                                             modal_content_body_button5.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button5.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ko-KR')");
 
                                         let modal_content_body_button6 = document.createElement("button")
                                             modal_content_body_button6.setAttribute("type","button")
                                             modal_content_body_button6.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button6.innerHTML = "<span class='float-start'><img src='assets/flags/pt-PT.svg' height='32px'> <img src='assets/flags/pt-BR.svg' height='32px'></span> Português"
+                                            modal_content_body_button6.style = "position: relative;"
+                                            modal_content_body_button6.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/pt-PT.svg' height='32px'> <img src='assets/flags/pt-BR.svg' height='32px'></span> Português"
                                             modal_content_body_button6.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button6.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'pt-BR')");
 
@@ -388,7 +394,6 @@ var map_app = new nekoapp({
                     ngs_map : nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
                         class : "container-fluid row",
                         style : {
-                            //margin: "0 auto",
                             "padding-top": "60px"
                         }
                     }),
@@ -675,7 +680,7 @@ var map_app = new nekoapp({
             onModuleChange : function(){
                 //this.moduleContents.alert_element.init();
                 //this.moduleContents.language_menu.init();
-                this.moduleContents.ngs_map.init();                                        
+                this.moduleContents.ngs_map.init();                                     
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
