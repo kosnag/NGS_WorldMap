@@ -254,42 +254,42 @@ var map_app = new nekoapp({
                                         let modal_content_body_button1 = document.createElement("button")
                                             modal_content_body_button1.setAttribute("type","button")
                                             modal_content_body_button1.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button1.innerHTML = "English (Global)"
+                                            modal_content_body_button1.innerHTML = "<span class='float-start'><img src='/assets/flags/en-US.svg' height='32px'> <img src='/assets/flags/en-UK.svg' height='32px'></span> English (Global)"
                                             modal_content_body_button1.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button1.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-US')");
                                             
                                         let modal_content_body_button2 = document.createElement("button")
                                             modal_content_body_button2.setAttribute("type","button")
                                             modal_content_body_button2.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button2.innerHTML = "English (Fan-patch)"
+                                            modal_content_body_button2.innerHTML = "<span class='float-start'><img src='/assets/flags/en-US.svg' height='32px'> <img src='/assets/flags/en-UK.svg' height='32px'></span> English (Fan-patch)"
                                             modal_content_body_button2.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button2.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-AL')");
                                         
                                         let modal_content_body_button3 = document.createElement("button")
                                             modal_content_body_button3.setAttribute("type","button")
                                             modal_content_body_button3.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button3.innerHTML = "日本語"
+                                            modal_content_body_button3.innerHTML = "<span class='float-start'><img src='/assets/flags/ja-JP.svg' height='32px'></span> 日本語"
                                             modal_content_body_button3.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button3.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ja-JP')");
                                         
                                         let modal_content_body_button4 = document.createElement("button")
                                             modal_content_body_button4.setAttribute("type","button")
                                             modal_content_body_button4.className = "btn btn-custom-blue btn-lg"
-                                            modal_content_body_button4.innerHTML = "Русский"
+                                            modal_content_body_button4.innerHTML = "<span class='float-start'><img src='/assets/flags/ru-RU.svg' height='32px'></span> Русский"
                                             modal_content_body_button4.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button4.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ru-RU')");
 
                                         let modal_content_body_button5 = document.createElement("button")
                                             modal_content_body_button5.setAttribute("type","button")
                                             modal_content_body_button5.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button5.innerHTML = "한국어"
+                                            modal_content_body_button5.innerHTML = "<span class='float-start'><img src='/assets/flags/ko-KR.svg' height='32px'></span> 한국어"
                                             modal_content_body_button5.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button5.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ko-KR')");
 
                                         let modal_content_body_button6 = document.createElement("button")
                                             modal_content_body_button6.setAttribute("type","button")
                                             modal_content_body_button6.className = "btn btn-custom-blue btn-lg disabled"
-                                            modal_content_body_button6.innerHTML = "Português"
+                                            modal_content_body_button6.innerHTML = "<span class='float-start'><img src='/assets/flags/pt-PT.svg' height='32px'> <img src='/assets/flags/pt-BR.svg' height='32px'></span> Português"
                                             modal_content_body_button6.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button6.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'pt-BR')");
 
@@ -403,10 +403,10 @@ var map_app = new nekoapp({
                                     text: nekoapp.create.localizedString(map_app, "mapHeader")
                                 }),
                                 menu_versionButton_body: nekoapp.create.element(map_app,"div",{
-                                    class: "d-flex mt-4 mb-1"
+                                    class: "d-flex my-3"
                                 }),
                                     menu_versionButton_desc : nekoapp.create.element(map_app,"div",{
-                                        class: "h5 text-light",
+                                        class: "h5 text-light align-self-center",
                                         text: "<i class='fas fa-map-signs'></i> "
                                     }),
                                     menu_versionButtons : nekoapp.create.element(map_app,"div",{
@@ -449,10 +449,10 @@ var map_app = new nekoapp({
                                             text: nekoapp.create.localizedString(map_app, "mapVersionJp")
                                         }),
                                 menu_sections_body: nekoapp.create.element(map_app,"div",{
-                                    class: "d-flex mt-4 mb-1"
+                                    class: "d-flex my-3"
                                 }),
                                     menu_sections_desc : nekoapp.create.element(map_app,"div",{
-                                        class: "h5 text-light",
+                                        class: "h5 text-light align-self-center",
                                         text: "<i class='fas fa-map'></i> "
                                     }),
                                     menu_sectionsButtons : nekoapp.create.element(map_app,"div",{
@@ -493,7 +493,139 @@ var map_app = new nekoapp({
                                                 "for": "sectionsOff"
                                             },
                                             text: nekoapp.create.localizedString(map_app, "mapSectionsOff")
+                                        }),
+                                menu_sections_body: nekoapp.create.element(map_app,"div",{
+                                    class: "d-flex my-3"
+                                }),
+                                    menu_sections_desc : nekoapp.create.element(map_app,"div",{
+                                        class: "h5 text-light align-self-center",
+                                        text: "<i class='fas fa-map'></i> "
+                                    }),
+                                    menu_sectionsButtons : nekoapp.create.element(map_app,"div",{
+                                        class: "btn-group ms-auto",
+                                        attr: {
+                                            "role": "group"
+                                        }
+                                    }),
+                                        menu_sectionsButton_On1 : nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "sectionsOn",
+                                            attr: {
+                                                "type": "radio",
+                                                "name": "sections",
+                                                "autocomplete": "off",
+                                                "checked": ""
+                                            }
+                                        }),
+                                        menu_sectionsButton_On2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue",
+                                            attr: {
+                                                "for": "sectionsOn"
+                                            },
+                                            text: nekoapp.create.localizedString(map_app, "mapSectionsOn")
+                                        }),
+                                        menu_sectionsButton_Off1 : nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "sectionsOff",
+                                            attr: {
+                                                "type": "radio",
+                                                "name": "sections",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_sectionsButton_Off2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue",
+                                            attr: {
+                                                "for": "sectionsOff"
+                                            },
+                                            text: nekoapp.create.localizedString(map_app, "mapSectionsOff")
+                                        }),
+                                menu_minerals_body: nekoapp.create.element(map_app,"div",{
+                                    class: "my-3"
+                                }),
+                                    menu_minerals_desc: nekoapp.create.element(map_app,"div",{
+                                        class: "h5 text-light text-center mb-3",
+                                        text: "<i class='fas fa-gem'></i> "
+                                    }),
+                                    menu_mineralsButton_group: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex",
+                                    }),
+                                        menu_mineralsButton_monotite_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "monititeCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_mineralsButton_monotite_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "monititeCheckbox"
+                                            },
+                                            text: "<img src='/assets/markers/minerals/monotite.png'>"
+                                        }),
+                                        menu_mineralsButton_dualomite_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "dualomiteCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_mineralsButton_dualomite_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "dualomiteCheckbox"
+                                            },
+                                            text: "<img src='/assets/markers/minerals/dualomite.png'>"
+                                        }),
+                                        menu_mineralsButton_trinite_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "triniteCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_mineralsButton_trinite_2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "triniteCheckbox"
+                                            },
+                                            text: "<img src='/assets/markers/minerals/trinite.png'>"
+                                        }),
+                                        menu_mineralsButton_photonChunk_1 : nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "photonChunkCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_mineralsButton_photonChunk_2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "photonChunkCheckbox"
+                                            },
+                                            text: "<img src='/assets/markers/minerals/photonChunk.png'>"
+                                        }),
+                                        menu_mineralsButton_photonQuartz_1 : nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "photonQuartz",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_mineralsButton_photonQuartz_2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "photonQuartz"
+                                            },
+                                            text: "<img src='/assets/markers/minerals/photonQuartz.png'>"
                                         })
+
                 };
                         elements.ngs_map.appendChild(elements.map_menu)
                             elements.map_menu.appendChild(elements.map_menu_body)
@@ -519,6 +651,23 @@ var map_app = new nekoapp({
                                         elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On2)
                                         elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off1)
                                         elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off2)
+                                elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
+
+                                
+                                elements.map_menu_body.appendChild(elements.menu_minerals_body)
+                                    elements.menu_minerals_body.appendChild(elements.menu_minerals_desc)
+                                        elements.menu_minerals_desc.appendChild(nekoapp.create.localizedString(map_app, "mapMineralsTitle"))
+                                    elements.menu_minerals_body.appendChild(elements.menu_mineralsButton_group)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_1)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_2)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_1)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_2)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_1)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_2)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_1)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_2)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_1)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
                                 
                 return [elements, [/*elements.alert_element,*/elements.language_menu,elements.ngs_map]];
