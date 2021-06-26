@@ -9,6 +9,7 @@
   --bs-custom-gray-transparent: rgb(170 170 170 / 85%);
   --bs-custom-gray: #aaaaaa;
   --bs-custom-blue: #004caf;
+  --bs-custom-blue-button: #0055c5;
   --bs-custom-blue-menu: #003d8d;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -61,7 +62,7 @@ body {
 }
 
 hr {
-  margin: 1rem 0;
+  /*margin: 1rem 0;*/
   color: inherit;
   background-color: currentColor;
   border: 0;
@@ -2972,6 +2973,31 @@ textarea.form-control-lg {
   color: #fff;
   background-color: var(--bs-custom-blue);
   border-color: var(--bs-custom-blue);
+}
+
+.btn-outline-custom-blue {
+  color: var(--bs-white);
+  border-color: var(--bs-gray);
+}
+.btn-outline-custom-blue:hover {
+  color: #fff;
+  background-color: var(--bs-custom-blue-button);
+  border-color: var(--bs-gray);
+}
+.btn-check:focus + .btn-outline-custom-blue, .btn-outline-custom-blue:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.0);
+}
+.btn-check:checked + .btn-outline-custom-blue, .btn-check:active + .btn-outline-custom-blue, .btn-outline-custom-blue:active, .btn-outline-custom-blue.active, .btn-outline-custom-blue.dropdown-toggle.show {
+  color: #fff;
+  background-color: var(--bs-custom-blue-button);
+  border-color: var(--bs-gray);
+}
+.btn-check:checked + .btn-outline-custom-blue:focus, .btn-check:active + .btn-outline-custom-blue:focus, .btn-outline-custom-blue:active:focus, .btn-outline-custom-blue.active:focus, .btn-outline-custom-blue.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.0);
+}
+.btn-outline-custom-blue:disabled, .btn-outline-custom-blue.disabled {
+  color: var(--bs-custom-blue-button);
+  background-color: transparent;
 }
 
 .btn-primary {
