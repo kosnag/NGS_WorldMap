@@ -426,8 +426,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "type": "radio",
                                                 "name": "version",
-                                                "autocomplete": "off",
-                                                "checked": ""
+                                                "autocomplete": "off"
                                             }
                                         }),
                                         menu_versionButton_Global2 : nekoapp.create.element(map_app,"label",{
@@ -518,8 +517,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "type": "radio",
                                                 "name": "sections",
-                                                "autocomplete": "off",
-                                                "checked": ""
+                                                "autocomplete": "off"
                                             }
                                         }),
                                         menu_sectionsButton_On2 : nekoapp.create.element(map_app,"label",{
@@ -642,37 +640,64 @@ var map_app = new nekoapp({
                                         elements.menu_versionButton_desc.appendChild(nekoapp.create.localizedString(map_app, "mapVersion"))
                                     elements.menu_versionButton_body.appendChild(elements.menu_versionButtons)
                                         elements.menu_versionButtons.appendChild(elements.menu_versionButton_Global1)
-                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Global2)
+                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Global2).addEventListener("click",()=>localStorage.setItem("version","na"))
                                         elements.menu_versionButtons.appendChild(elements.menu_versionButton_Japanese1)
-                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Japanese2)
+                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Japanese2).addEventListener("click",()=>localStorage.setItem("version","jp"))
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
-
+                                if (localStorage.getItem('version') == 'jp'){elements.menu_versionButton_Japanese1.setAttribute("checked","")} else {elements.menu_versionButton_Global1.setAttribute("checked","")}
                                 
                                 elements.map_menu_body.appendChild(elements.menu_sections_body)
                                     elements.menu_sections_body.appendChild(elements.menu_sections_desc)
                                         elements.menu_sections_desc.appendChild(nekoapp.create.localizedString(map_app, "mapSections"))
                                     elements.menu_sections_body.appendChild(elements.menu_sectionsButtons)
                                         elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On1)
-                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On2)
+                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On2).addEventListener("click",()=>localStorage.setItem("sections","1"))
                                         elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off1)
-                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off2)
+                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off2).addEventListener("click",()=>localStorage.setItem("sections","0"))
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
+                                if (localStorage.getItem('sections') == '1'){elements.menu_sectionsButton_On1.setAttribute("checked","")} else {elements.menu_sectionsButton_Off1.setAttribute("checked","")}
 
-                                
+/*
+                                elements.map_menu_body.appendChild(elements.menu_landmarks_body)
+                                    elements.menu_landmarks_body.appendChild(elements.menu_minerals_desc)
+                                        elements.menu_landmarks_desc.appendChild(nekoapp.create.localizedString(map_app, "mapLandmarksTitle"))
+                                    elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_1)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_2)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_tower_1)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_tower_2)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_urgent_1)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_urgent_2)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_ryuker_1)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_ryuker_2)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_mag_1)
+                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_mag_2)
+                                elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
+*/
                                 elements.map_menu_body.appendChild(elements.menu_minerals_body)
                                     elements.menu_minerals_body.appendChild(elements.menu_minerals_desc)
                                         elements.menu_minerals_desc.appendChild(nekoapp.create.localizedString(map_app, "mapMineralsTitle"))
                                     elements.menu_minerals_body.appendChild(elements.menu_mineralsButton_group)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_2)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_2).addEventListener("click", function(){
+                                            if (elements.menu_mineralsButton_monotite_1.hasAttribute('checked')){
+                                                    localStorage.setItem("minerals",JSON.stringify({monotite:0}))
+                                                } else {
+                                                    localStorage.setItem("minerals",JSON.stringify({monotite:1}))
+                                                }})
+                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_monotite_1.setAttribute("checked","")} else {elements.menu_mineralsButton_monotite_1.removeAttribute("checked")}
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_2)
+                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_dualomite_1.setAttribute("checked","")} else {elements.menu_mineralsButton_dualomite_1.removeAttribute("checked")}
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_2)
+                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_trinite_1.setAttribute("checked","")} else {elements.menu_mineralsButton_trinite_1.removeAttribute("checked")}
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_2)
+                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_photonChunk_1.setAttribute("checked","")} else {elements.menu_mineralsButton_photonChunk_1.removeAttribute("checked")}
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_2)
+                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_photonQuartz_1.setAttribute("checked","")} else {elements.menu_mineralsButton_photonQuartz_1.removeAttribute("checked")}
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
                                 
                 return [elements, [/*elements.alert_element,*/elements.language_menu,elements.ngs_map]];
