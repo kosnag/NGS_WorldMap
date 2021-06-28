@@ -322,7 +322,7 @@ var map_app = new nekoapp({
                     function(){
                         let leaflet_div = document.createElement("div")
                             leaflet_div.className = "col-9"
-                            leaflet_div.id = "leaflet-app"
+                            leaflet_div.id = "leaflet-map"
                             leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: calc(100vh - 60px); border-right: 1px solid var(--bs-light);"
 
                         return[leaflet_div]
@@ -357,7 +357,12 @@ var map_app = new nekoapp({
                     if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_photonQuartz_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "0"){}
                 }
             }
-        }
+        },
+		// MAP MENU ELEMENT  -- SVGvsevolod
+		map_menu_element : {
+			tag : "map-menu",
+			prototype : {}
+		}
     },
     applicationGraphics : {                                                                     //  SVG Graphics used for your application
         resourceName : "MAP GRAPHICS" ,
@@ -397,22 +402,13 @@ var map_app = new nekoapp({
                                 "z-index": "8492"
                             }
                     }),
-                    language_menu : nekoapp.create.object(map_app,map_app.preferences.elements.language_menu,{
-                        id : "languageModal",
-                        class : "modal fade", 
-                        attr : {
-                            tabindex : "-1",
-                            "aria-labelledby" : "languageModalLabel",
-                            "aria-hidden" : "true"
-                        }
-                    }),
                     ngs_map : nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
                         class : "container-fluid row",
                         style : {
                             "padding-top": "60px"
                         }
                     }),
-                        map_menu : nekoapp.create.element(map_app,"div",{
+                        map_menu : nekoapp.create.object(map_app,map_app.preferences.elements.map_menu_element,{
                             class: "col-3 bg-menu"
                         }),
                             map_menu_body: nekoapp.create.element(map_app,"div",{
@@ -655,22 +651,19 @@ var map_app = new nekoapp({
                                         elements.menu_versionButton_desc.appendChild(nekoapp.create.localizedString(map_app, "mapVersion"))
                                     elements.menu_versionButton_body.appendChild(elements.menu_versionButtons)
                                         elements.menu_versionButtons.appendChild(elements.menu_versionButton_Global1)
-                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Global2).addEventListener("click",()=>localStorage.setItem("version","na"))
+                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Global2)
                                         elements.menu_versionButtons.appendChild(elements.menu_versionButton_Japanese1)
-                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Japanese2).addEventListener("click",()=>localStorage.setItem("version","jp"))
+                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Japanese2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
-                                if (localStorage.getItem('version') == 'jp'){elements.menu_versionButton_Japanese1.setAttribute("checked","")} else {elements.menu_versionButton_Global1.setAttribute("checked","")}
-                                
                                 elements.map_menu_body.appendChild(elements.menu_sections_body)
                                     elements.menu_sections_body.appendChild(elements.menu_sections_desc)
                                         elements.menu_sections_desc.appendChild(nekoapp.create.localizedString(map_app, "mapSections"))
                                     elements.menu_sections_body.appendChild(elements.menu_sectionsButtons)
                                         elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On1)
-                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On2).addEventListener("click",()=>localStorage.setItem("sections","1"))
+                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On2)
                                         elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off1)
-                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off2).addEventListener("click",()=>localStorage.setItem("sections","0"))
+                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
-                                if (localStorage.getItem('sections') == '1'){elements.menu_sectionsButton_On1.setAttribute("checked","")} else {elements.menu_sectionsButton_Off1.setAttribute("checked","")}
 
 /*
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
@@ -704,17 +697,60 @@ var map_app = new nekoapp({
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
-                                
-                return [elements, [/*elements.alert_element,*/elements.language_menu,elements.ngs_map]];
+				
+				// BIND MAP MENU BUTTONS EVENTS  -- SVGvsevolod
+				elements.menu_versionButton_Global1.addEventListener("change",function(){
+					if(map.user_settings.version === "jp")
+						map.user_settings.version = "na";
+					map.save_settings();
+				});
+				elements.menu_versionButton_Japanese1.addEventListener("change",function(){
+					if(map.user_settings.version === "na")
+						map.user_settings.version = "jp";
+					map.save_settings();
+				});
+				elements.menu_sectionsButton_On1.addEventListener("change",function(){
+					if(!map.user_settings.sections)
+						map.user_settings.sections = true;
+					map.save_settings();
+				});
+				elements.menu_sectionsButton_Off1.addEventListener("change",function(){
+					if(map.user_settings.sections)
+						map.user_settings.sections = false;
+					map.save_settings();
+				});
+				elements.menu_mineralsButton_monotite_1.addEventListener("change",function(){
+					map.toogle_markers(map.map_markers.minerals.monotite);
+					if(map.user_settings.minerals.monotite)
+						map.user_settings.minerals.monotite = false;
+					else
+						map.user_settings.minerals.monotite = true;
+					map.save_settings();
+				});
+				
+                return [elements, [/*elements.alert_element,*/,elements.ngs_map]];
             },
             onModuleChange : function(){
                 //this.moduleContents.alert_element.init();
-                //this.moduleContents.language_menu.init();
-                this.moduleContents.ngs_map.init();
+				// INITIALIZE MAP AND MAP MENU  -- SVGvsevolod
+				map.init();
+				if(map.user_settings.version === "na"){
+					map_app.modules.map_module.moduleContents.menu_versionButton_Global1.setAttribute("checked","");
+				}else if(map.user_settings.version === "jp"){
+					map_app.modules.map_module.moduleContents.menu_versionButton_Japanese1.setAttribute("checked","");
+				}
+				if(map.user_settings.sections)
+					map_app.modules.map_module.moduleContents.menu_sectionsButton_On1.setAttribute("checked","");
+				else
+					map_app.modules.map_module.moduleContents.menu_sectionsButton_Off1.setAttribute("checked","");
+				if(map.user_settings.minerals.monotite)
+					map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
                 map_app.modules.map_header.children[0].children[0].setText();
+				// UPDATE MAP STRINGS  -- SVGvsevolod
+				map.update_locale();
             }
         },
         map_header : {
@@ -784,9 +820,21 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
         map_app.modules.map_header.className = "navbar navbar-expand-lg navbar-dark";
         map_app.modules.map_header.children[0].children[0].setText();
         document.body.className = "bg-secondary";
+		
+		// LANGUAGE CHANGE WINDOW INSIDE APP OBJECT INSTEAD OF APP MODULE OBJECT  -- SVGvsevolod
+		map_app.languageMenu = nekoapp.create.object(map_app,map_app.preferences.elements.language_menu,{
+			id : "languageModal",
+			class : "modal fade",
+			attr : {
+				tabindex : "-1",
+				"aria-labelledby" : "languageModalLabel",
+				"aria-hidden" : "true"
+			}
+		});
+		map_app.app.appendChild(map_app.languageMenu);
 	}
 });
 nekoapp.system.scripts.add({application:map_app, url: "js/bootstrap.bundle.min.js"});
 nekoapp.system.scripts.add({application:map_app, url: "js/leaflet.js"});
-map_app.minerals = {monotite:0,dualomite:0,trinite:0,photonChunk:0,photonQuartz:0};
+nekoapp.system.scripts.add({application:map_app, url: "js/map.js"});
 nekoapp.system.init(map_app);

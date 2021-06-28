@@ -19,5 +19,6 @@
     "mapSectionsOn": "Unhide",
     "mapSectionsOff": "Hide",
 
-    "mapMineralsTitle" : "Minerals"
+    "mapMineralsTitle" : "Minerals",
+	"mapMonotiteTitle" : "Monotite"
 }

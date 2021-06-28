@@ -19,5 +19,6 @@
     "mapSectionsOn": "Показать",
     "mapSectionsOff": "Скрыть",
 
-    "mapMineralsTitle" : "Минералы"
+    "mapMineralsTitle" : "Минералы",
+	"mapMonotiteTitle" : "Монотайт"
 }
