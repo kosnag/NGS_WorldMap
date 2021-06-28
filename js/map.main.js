@@ -340,6 +340,17 @@ var map_app = new nekoapp({
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/data/minerals.js"});
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/data/sections.js"});
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/data/veterans.js"});
+
+                    // IF FOR CHECKBOXES
+                    if (!localStorage.getItem('minerals')){
+                        localStorage.setItem("minerals", JSON.stringify(map_app.minerals))
+                    }
+                    // MINERALS
+                    if(JSON.parse(localStorage.getItem("minerals")).monotite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).monotite == "0"){}
+                    if(JSON.parse(localStorage.getItem("minerals")).dualomite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).dualomite == "0"){}
+                    if(JSON.parse(localStorage.getItem("minerals")).trinite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).trinite == "0"){}
+                    if(JSON.parse(localStorage.getItem("minerals")).photonChunk == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_photonChunk_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).photonChunk == "0"){}
+                    if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_photonQuartz_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "0"){}
                 }
             }
         }
@@ -680,24 +691,51 @@ var map_app = new nekoapp({
                                     elements.menu_minerals_body.appendChild(elements.menu_mineralsButton_group)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_2).addEventListener("click", function(){
-                                            if (elements.menu_mineralsButton_monotite_1.hasAttribute('checked')){
-                                                    localStorage.setItem("minerals",JSON.stringify({monotite:0}))
-                                                } else {
-                                                    localStorage.setItem("minerals",JSON.stringify({monotite:1}))
-                                                }})
-                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_monotite_1.setAttribute("checked","")} else {elements.menu_mineralsButton_monotite_1.removeAttribute("checked")}
+                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == "0"){
+                                                map_app.minerals.monotite=1
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }else if(JSON.parse(localStorage.getItem("minerals")).monotite == "1")
+                                            {
+                                                map_app.minerals.monotite=0
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }})
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_2)
-                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_dualomite_1.setAttribute("checked","")} else {elements.menu_mineralsButton_dualomite_1.removeAttribute("checked")}
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_2).addEventListener("click", function(){
+                                            if (JSON.parse(localStorage.getItem("minerals")).dualomite == "0"){
+                                                map_app.minerals.dualomite=1
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }else if(JSON.parse(localStorage.getItem("minerals")).dualomite == "1")
+                                            {
+                                                map_app.minerals.dualomite=0
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }})
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_2)
-                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_trinite_1.setAttribute("checked","")} else {elements.menu_mineralsButton_trinite_1.removeAttribute("checked")}
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_2).addEventListener("click", function(){
+                                            if (JSON.parse(localStorage.getItem("minerals")).trinite == "0"){
+                                                map_app.minerals.trinite=1
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }else if(JSON.parse(localStorage.getItem("minerals")).trinite == "1"){
+                                                map_app.minerals.trinite=0
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }})
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_2)
-                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_photonChunk_1.setAttribute("checked","")} else {elements.menu_mineralsButton_photonChunk_1.removeAttribute("checked")}
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_2).addEventListener("click", function(){
+                                            if (JSON.parse(localStorage.getItem("minerals")).photonChunk == "0"){
+                                                map_app.minerals.photonChunk=1
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }else if(JSON.parse(localStorage.getItem("minerals")).photonChunk == "1"){
+                                                map_app.minerals.photonChunk=0
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }})
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_2)
-                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == '1'){elements.menu_mineralsButton_photonQuartz_1.setAttribute("checked","")} else {elements.menu_mineralsButton_photonQuartz_1.removeAttribute("checked")}
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_2).addEventListener("click", function(){
+                                            if (JSON.parse(localStorage.getItem("minerals")).photonQuartz == "0"){
+                                                map_app.minerals.photonQuartz=1
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }else if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "1"){
+                                                map_app.minerals.photonQuartz=0
+                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+                                            }})
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
                                 
                 return [elements, [/*elements.alert_element,*/elements.language_menu,elements.ngs_map]];
@@ -705,7 +743,7 @@ var map_app = new nekoapp({
             onModuleChange : function(){
                 //this.moduleContents.alert_element.init();
                 //this.moduleContents.language_menu.init();
-                this.moduleContents.ngs_map.init();                                     
+                this.moduleContents.ngs_map.init();
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
@@ -783,4 +821,5 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
 });
 nekoapp.system.scripts.add({application:map_app, url: "js/bootstrap.bundle.min.js"});
 nekoapp.system.scripts.add({application:map_app, url: "js/leaflet.js"});
+map_app.minerals = {monotite:0,dualomite:0,trinite:0,photonChunk:0,photonQuartz:0};
 nekoapp.system.init(map_app);
