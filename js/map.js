@@ -148,6 +148,7 @@ var map = {
 		L.imageOverlay("assets/map_v2.png",map.constants.map_bounds).addTo(map.map_object);
 		map.map_object.fitBounds(map.constants.map_bounds);
 		map.map_object.setMaxBounds(map.constants.map_bounds);
+		map.map_object.setView([3660.5,3660.5]).setZoom("-2");
 		setTimeout(function(){map.map_object.invalidateSize(true)},200);
 		
 		// LOAD USER SETTINGS  -- SVGvsevolod
