@@ -3,9 +3,12 @@
         if (JSON.parse(localStorage.getItem("minerals")).monotite == "0"){
             map_app.minerals.monotite=1
             localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+            for (let i = 0; i < monotite.length; i++) {monotiteToggle.push(L.marker(monotite[i]["coordinates"],{icon:iconMonotite}).bindTooltip(map_app.locale.strings.mapMineralsTitle).bindPopup("YX: " + monotite[i]["coordinates"]));}
+            for (let i = 0; i < monotiteToggle.length; i++) {monotiteToggle[i].addTo(map);}
         }else if(JSON.parse(localStorage.getItem("minerals")).monotite == "1"){
             map_app.minerals.monotite=0
             localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
+            for (let i = 0; i < monotiteToggle.length; i++) {map.removeLayer(monotiteToggle[i]);}
         }})
     map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_2.addEventListener("click", function(){
         if (JSON.parse(localStorage.getItem("minerals")).dualomite == "0"){

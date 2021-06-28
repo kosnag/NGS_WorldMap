@@ -32,11 +32,11 @@ let Main_Icons = L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],pop
 	
 let Mat_Icons = L.Icon.extend({options:{iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-13]}});
     // MINERALS
-	iconMonotite = new Mat_Icons({iconUrl: 'assets/markers/materials/monotite.png'}),
-	iconDualomite = new Mat_Icons({iconUrl: 'assets/markers/materials/dualomite.png'}),
-	iconTrinite = new Mat_Icons({iconUrl: 'assets/markers/materials/trinite.png'}),
-	iconPhotonChunk = new Mat_Icons({iconUrl: 'assets/markers/materials/photonChunk.png'}),
-	iconPhotonQuartz = new Mat_Icons({iconUrl: 'assets/markers/materials/photonQuartz.png'}),
+	iconMonotite = new Mat_Icons({iconUrl: 'assets/markers/minerals/monotite.png'}),
+	iconDualomite = new Mat_Icons({iconUrl: 'assets/markers/minerals/dualomite.png'}),
+	iconTrinite = new Mat_Icons({iconUrl: 'assets/markers/minerals/trinite.png'}),
+	iconPhotonChunk = new Mat_Icons({iconUrl: 'assets/markers/minerals/photonChunk.png'}),
+	iconPhotonQuartz = new Mat_Icons({iconUrl: 'assets/markers/minerals/photonQuartz.png'}),
 
     // FOOD
 	iconAelioApple = new Mat_Icons({iconUrl: 'assets/markers/food/aelioApple.png'}),
