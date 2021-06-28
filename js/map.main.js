@@ -340,9 +340,13 @@ var map_app = new nekoapp({
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/data/minerals.js"});
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/data/sections.js"});
                     nekoapp.system.scripts.add({application:map_app, url: "js/map/data/veterans.js"});
+                    
+                    nekoapp.system.scripts.add({application:map_app, url: "js/map/buttons.js"});
 
                     // IF FOR CHECKBOXES
-                    if (!localStorage.getItem('minerals')){
+                    if (localStorage.getItem('minerals')){
+                        map_app.minerals = JSON.parse(localStorage.getItem('minerals'))
+                    } else {
                         localStorage.setItem("minerals", JSON.stringify(map_app.minerals))
                     }
                     // MINERALS
@@ -690,52 +694,15 @@ var map_app = new nekoapp({
                                         elements.menu_minerals_desc.appendChild(nekoapp.create.localizedString(map_app, "mapMineralsTitle"))
                                     elements.menu_minerals_body.appendChild(elements.menu_mineralsButton_group)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_2).addEventListener("click", function(){
-                                            if (JSON.parse(localStorage.getItem("minerals")).monotite == "0"){
-                                                map_app.minerals.monotite=1
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }else if(JSON.parse(localStorage.getItem("minerals")).monotite == "1")
-                                            {
-                                                map_app.minerals.monotite=0
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }})
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_2)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_2).addEventListener("click", function(){
-                                            if (JSON.parse(localStorage.getItem("minerals")).dualomite == "0"){
-                                                map_app.minerals.dualomite=1
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }else if(JSON.parse(localStorage.getItem("minerals")).dualomite == "1")
-                                            {
-                                                map_app.minerals.dualomite=0
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }})
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_2)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_2).addEventListener("click", function(){
-                                            if (JSON.parse(localStorage.getItem("minerals")).trinite == "0"){
-                                                map_app.minerals.trinite=1
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }else if(JSON.parse(localStorage.getItem("minerals")).trinite == "1"){
-                                                map_app.minerals.trinite=0
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }})
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_2)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_2).addEventListener("click", function(){
-                                            if (JSON.parse(localStorage.getItem("minerals")).photonChunk == "0"){
-                                                map_app.minerals.photonChunk=1
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }else if(JSON.parse(localStorage.getItem("minerals")).photonChunk == "1"){
-                                                map_app.minerals.photonChunk=0
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }})
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_2)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_2).addEventListener("click", function(){
-                                            if (JSON.parse(localStorage.getItem("minerals")).photonQuartz == "0"){
-                                                map_app.minerals.photonQuartz=1
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }else if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "1"){
-                                                map_app.minerals.photonQuartz=0
-                                                localStorage.setItem("minerals",JSON.stringify(map_app.minerals))
-                                            }})
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
                                 
                 return [elements, [/*elements.alert_element,*/elements.language_menu,elements.ngs_map]];
