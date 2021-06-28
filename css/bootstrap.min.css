@@ -2981,7 +2981,7 @@ textarea.form-control-lg {
 }
 .btn-outline-custom-blue:hover {
   color: #fff;
-  background-color: var(--bs-custom-blue-button);
+  background-color: rgb(0, 85, 197, 0.5);
   border-color: var(--bs-gray);
 }
 .btn-check:focus + .btn-outline-custom-blue, .btn-outline-custom-blue:focus {
