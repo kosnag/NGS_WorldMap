@@ -609,33 +609,33 @@ var map_app = new nekoapp({
                                             },
                                             text: "<img src='assets/markers/minerals/trinite.png'>"
                                         }),
-                                        menu_mineralsButton_photonChunk_1 : nekoapp.create.element(map_app,"input",{
+                                        menu_mineralsButton_phChunk_1 : nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
-                                            id: "photonChunkCheckbox",
+                                            id: "phChunkCheckbox",
                                             attr: {
                                                 "type": "checkbox",
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_mineralsButton_photonChunk_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_mineralsButton_phChunk_2 : nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
-                                                "for": "photonChunkCheckbox"
+                                                "for": "phChunkCheckbox"
                                             },
                                             text: "<img src='assets/markers/minerals/photonChunk.png'>"
                                         }),
-                                        menu_mineralsButton_photonQuartz_1 : nekoapp.create.element(map_app,"input",{
+                                        menu_mineralsButton_phQuartz_1 : nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
-                                            id: "photonQuartz",
+                                            id: "phQuartzCheckbox",
                                             attr: {
                                                 "type": "checkbox",
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_mineralsButton_photonQuartz_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_mineralsButton_phQuartz_2 : nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
-                                                "for": "photonQuartz"
+                                                "for": "phQuartzCheckbox"
                                             },
                                             text: "<img src='assets/markers/minerals/photonQuartz.png'>"
                                         })
@@ -692,10 +692,10 @@ var map_app = new nekoapp({
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_dualomite_2)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_trinite_2)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonChunk_2)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_1)
-                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_photonQuartz_2)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_phChunk_1)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_phChunk_2)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_phQuartz_1)
+                                        elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_phQuartz_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 				
 				// BIND MAP MENU BUTTONS EVENTS  -- SVGvsevolod
@@ -727,6 +727,38 @@ var map_app = new nekoapp({
 						map.user_settings.minerals.monotite = true;
 					map.save_settings();
 				});
+				elements.menu_mineralsButton_dualomite_1.addEventListener("change",function(){
+					map.toogle_markers(map.map_markers.minerals.dualomite);
+					if(map.user_settings.minerals.dualomite)
+						map.user_settings.minerals.dualomite = false;
+					else
+						map.user_settings.minerals.dualomite = true;
+					map.save_settings();
+				});
+				elements.menu_mineralsButton_trinite_1.addEventListener("change",function(){
+					map.toogle_markers(map.map_markers.minerals.trinite);
+					if(map.user_settings.minerals.trinite)
+						map.user_settings.minerals.trinite = false;
+					else
+						map.user_settings.minerals.trinite = true;
+					map.save_settings();
+				});
+				elements.menu_mineralsButton_phChunk_1.addEventListener("change",function(){
+					map.toogle_markers(map.map_markers.minerals.phChunk);
+					if(map.user_settings.minerals.phChunk)
+						map.user_settings.minerals.phChunk = false;
+					else
+						map.user_settings.minerals.phChunk = true;
+					map.save_settings();
+				});
+				elements.menu_mineralsButton_phQuartz_1.addEventListener("change",function(){
+					map.toogle_markers(map.map_markers.minerals.phQuartz);
+					if(map.user_settings.minerals.phQuartz)
+						map.user_settings.minerals.phQuartz = false;
+					else
+						map.user_settings.minerals.phQuartz = true;
+					map.save_settings();
+				});
 				
                 return [elements, [/*elements.alert_element,*/,elements.ngs_map]];
             },
@@ -743,8 +775,11 @@ var map_app = new nekoapp({
 					map_app.modules.map_module.moduleContents.menu_sectionsButton_On1.setAttribute("checked","");
 				else
 					map_app.modules.map_module.moduleContents.menu_sectionsButton_Off1.setAttribute("checked","");
-				if(map.user_settings.minerals.monotite)
-					map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
+				if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
+				if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
+				if(map.user_settings.minerals.trinite)map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","");
+				if(map.user_settings.minerals.phChunk)map_app.modules.map_module.moduleContents.menu_mineralsButton_phChunk_1.setAttribute("checked","");
+				if(map.user_settings.minerals.phQuartz)map_app.modules.map_module.moduleContents.menu_mineralsButton_phQuartz_1.setAttribute("checked","");
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;

@@ -20,5 +20,7 @@
     "mapSectionsOff": "Hide",
 
     "mapMineralsTitle" : "Minerals",
-	"mapMonotiteTitle" : "Monotite"
+	"mapMonotiteTitle" : "Monotite",
+
+    "mapCocoonTitle": "Cocoon"
 }

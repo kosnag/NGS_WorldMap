@@ -20,5 +20,7 @@
     "mapSectionsOff": "Скрыть",
 
     "mapMineralsTitle" : "Минералы",
-	"mapMonotiteTitle" : "Монотайт"
+	"mapMonotiteTitle" : "Монотайт",
+
+    "mapCocoonTitle": "Кокон"
 }
