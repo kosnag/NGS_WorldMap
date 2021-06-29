@@ -19,8 +19,29 @@
     "mapSectionsOn": "Unhide",
     "mapSectionsOff": "Hide",
 
+	"mapPopupMaxPlayers": "Number of players",
+	"mapPopupRecomendedBP": "Recommended Battle Power",
+	"mapPopupDescription": "Description",
+	"mapPopupMainMission": "Main Mission",
+	"mapPopupSideMissions": "Side Mission",
+	"mapPopupClearReward": "1st Clear Reward",
+	"mapPopupRewards": "Rewards",
+	"mapPopupRewardMeseta": "N-Meseta",
+	"mapPopupRewardSP": "SP",
+	
     "mapMineralsTitle" : "Minerals",
 	"mapMonotiteTitle" : "Monotite",
 
-    "mapCocoonTitle": "Cocoon"
+    "mapCocoonTitle": "Cocoon",
+	
+	"mapCocoonName1": "Enhanced Enemy",
+	
+	"mapCocoonDesc1": "This is Trainia, where ARKS defenders can test their abilities.<br>Defeat the enhanced Pettas Sword using your battle skills.",
+	
+	"mapCocoonMain1": "Defeat the Pettas Sword",
+	
+	"mapCocoonSide1a": "Clear before 0:55",
+	"mapCocoonSide1b": "Clear without being incapacitated 5 times",
+	"mapCocoonSide1c": "Clear having taken damage fewer than 10 times",
+	"mapCocoonSide1d": "Complete all Side Missions and clear"
 }

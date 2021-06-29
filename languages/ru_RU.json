@@ -18,9 +18,30 @@
     "mapSections": "Секции",
     "mapSectionsOn": "Показать",
     "mapSectionsOff": "Скрыть",
+	
+	"mapPopupMaxPlayers": "Количество игроков",
+	"mapPopupRecomendedBP": "Требуемая Боевая Мощь",
+	"mapPopupDescription": "Описание",
+	"mapPopupMainMission": "Главная миссия",
+	"mapPopupSideMissions": "Доп-миссии",
+	"mapPopupClearReward": "Награда первого прохождения",
+	"mapPopupRewards": "Награды",
+	"mapPopupRewardMeseta": "N-Meseta",
+	"mapPopupRewardSP": "SP",
 
     "mapMineralsTitle" : "Минералы",
 	"mapMonotiteTitle" : "Монотайт",
 
-    "mapCocoonTitle": "Кокон"
+    "mapCocoonTitle": "Кокон",
+	
+	"mapCocoonName1": "Усиленный враг",
+	
+	"mapCocoonDesc1": "Это Треиниа, где ARKS могут проверить свои боевые способности. Одолейте усиленного Педаса мечника, используя свои боевые навыки.",
+	
+	"mapCocoonMain1": "Одолейте Педаса мечника!",
+	
+	"mapCocoonSide1a": "Пройдите менее чем за 0:55",
+	"mapCocoonSide1b": "Пройдите менее чем с 5 смертями",
+	"mapCocoonSide1c": "Получите не более 5 ударов",
+	"mapCocoonSide1d": "Завершите доп-миссии и пройдите"
 }

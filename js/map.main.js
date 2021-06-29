@@ -765,21 +765,22 @@ var map_app = new nekoapp({
             onModuleChange : function(){
                 //this.moduleContents.alert_element.init();
 				// INITIALIZE MAP AND MAP MENU  -- SVGvsevolod
-				map.init();
-				if(map.user_settings.version === "na"){
-					map_app.modules.map_module.moduleContents.menu_versionButton_Global1.setAttribute("checked","");
-				}else if(map.user_settings.version === "jp"){
-					map_app.modules.map_module.moduleContents.menu_versionButton_Japanese1.setAttribute("checked","");
-				}
-				if(map.user_settings.sections)
-					map_app.modules.map_module.moduleContents.menu_sectionsButton_On1.setAttribute("checked","");
-				else
-					map_app.modules.map_module.moduleContents.menu_sectionsButton_Off1.setAttribute("checked","");
-				if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
-				if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
-				if(map.user_settings.minerals.trinite)map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","");
-				if(map.user_settings.minerals.phChunk)map_app.modules.map_module.moduleContents.menu_mineralsButton_phChunk_1.setAttribute("checked","");
-				if(map.user_settings.minerals.phQuartz)map_app.modules.map_module.moduleContents.menu_mineralsButton_phQuartz_1.setAttribute("checked","");
+				map.init(function(){
+					if(map.user_settings.version === "na"){
+						map_app.modules.map_module.moduleContents.menu_versionButton_Global1.setAttribute("checked","");
+					}else if(map.user_settings.version === "jp"){
+						map_app.modules.map_module.moduleContents.menu_versionButton_Japanese1.setAttribute("checked","");
+					}
+					if(map.user_settings.sections)
+						map_app.modules.map_module.moduleContents.menu_sectionsButton_On1.setAttribute("checked","");
+					else
+						map_app.modules.map_module.moduleContents.menu_sectionsButton_Off1.setAttribute("checked","");
+					if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
+					if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
+					if(map.user_settings.minerals.trinite)map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","");
+					if(map.user_settings.minerals.phChunk)map_app.modules.map_module.moduleContents.menu_mineralsButton_phChunk_1.setAttribute("checked","");
+					if(map.user_settings.minerals.phQuartz)map_app.modules.map_module.moduleContents.menu_mineralsButton_phQuartz_1.setAttribute("checked","");
+				});
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
