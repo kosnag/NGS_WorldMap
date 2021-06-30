@@ -362,6 +362,87 @@ var map_app = new nekoapp({
 		map_menu_element : {
 			tag : "map-menu",
 			prototype : {}
+		},
+		map_popup_element : {
+			tag : "map-popup",
+			prototype : {
+				template : nekoapp.create.template(function(){
+					var popup_category = document.createElement("h4"),
+						popup_name = document.createElement("h5"),
+						popup_req1 = document.createElement("div"),
+						popup_req2 = document.createElement("div"),
+						popup_req_label1 = document.createElement("span"),
+						popup_req_space1 = document.createElement("span"),
+						popup_req_value1 = document.createElement("span"),
+						popup_req_label2 = document.createElement("span"),
+						popup_req_space2 = document.createElement("span"),
+						popup_req_value2 = document.createElement("span"),
+						popup_desc_label = document.createElement("p"),
+						popup_desc_value = document.createElement("div"),
+						popup_main_label = document.createElement("p"),
+						popup_main_value = document.createElement("div"),
+						popup_side_label = document.createElement("p"),
+						popup_side_value = document.createElement("ul"),
+						popup_clear_reward_label = document.createElement("p"),
+						popup_clear_reward_value = document.createElement("ul");
+					popup_category.className = "text-center mb-1";
+					popup_category.style = "font-weight:bold";
+					popup_name.className = "text-center";
+					popup_name.style = "font-weight:bold";
+					popup_req1.style = "display:flex;flex-direction:row;padding:0 15px;font-size:14px;font-weight:bold";
+					popup_req2.style = "display:flex;flex-direction:row;padding:0 15px;font-size:14px;font-weight:bold";
+					popup_req_space1.style = "flex:1";
+					popup_req_space2.style = "flex:1";
+					popup_req1.appendChild(popup_req_label1);
+					popup_req1.appendChild(popup_req_space1);
+					popup_req1.appendChild(popup_req_value1);
+					popup_req2.appendChild(popup_req_label2);
+					popup_req2.appendChild(popup_req_space2);
+					popup_req2.appendChild(popup_req_value2);
+					popup_desc_label.className = "mb-0";
+					popup_desc_label.style = "font-weight:bold";
+					popup_main_label.className = "mb-0";
+					popup_main_label.style = "font-weight:bold";
+					popup_side_label.className = "mb-0";
+					popup_side_label.style = "font-weight:bold";
+					popup_side_value.style = "padding:0";
+					popup_clear_reward_label.className = "mb-0";
+					popup_clear_reward_label.style = "font-weight:bold";
+					popup_clear_reward_value.style = "padding:0";
+					return[popup_category,popup_name,popup_req1,popup_req2,popup_desc_label,popup_desc_value,popup_main_label,popup_main_value,popup_side_label,popup_side_value,popup_clear_reward_label,popup_clear_reward_value];
+				}),
+				setInfo: function(info){
+					if(info.category && typeof info.category === "string")this.children[0].innerHTML = map_app.locale.strings[info.category];
+					if(info.name && typeof info.name === "string")this.children[1].innerHTML = map_app.locale.strings[info.name];
+					if(info.popup_data && typeof info.popup_data === "object"){
+						this.children[2].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
+						this.children[2].children[2].innerHTML = info.popup_data.max_players;
+						this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupRecomendedBP + ":";
+						this.children[3].children[2].innerHTML = info.popup_data.recomended_bp;
+						this.children[4].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
+						this.children[5].innerHTML = map_app.locale.strings[info.popup_data.description];
+						this.children[6].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
+						this.children[7].innerHTML = map_app.locale.strings[info.popup_data.main_mission];
+						this.children[8].innerHTML = map_app.locale.strings.mapPopupSideMissions + ":";
+						nekoapp.system.clear(this.children[9]);
+						for(var i in info.popup_data.side_missions){
+							var item = document.createElement("li");
+							this.children[9].appendChild(item).innerHTML = map_app.locale.strings[info.popup_data.side_missions[i]];
+						}
+						this.children[10].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
+						nekoapp.system.clear(this.children[11]);
+						for(var i in info.popup_data.clear_reward){
+							var item = document.createElement("li");
+							switch(info.popup_data.clear_reward[i].reward_type){
+								case"sp":
+									item.innerHTML = "+" + info.popup_data.clear_reward[i].reward_count + " " + map_app.locale.strings.mapPopupRewardSP;
+									break;
+							}
+							this.children[11].appendChild(item);
+						}
+					}
+				}
+			}
 		}
     },
     applicationGraphics : {                                                                     //  SVG Graphics used for your application
