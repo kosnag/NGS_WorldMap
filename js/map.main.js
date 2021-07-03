@@ -423,6 +423,9 @@ var map_app = new nekoapp({
 								case"sp":
 									item.innerHTML = "+" + info.popup_data.clear_reward[i].reward_count + " " + map_app.locale.strings.mapPopupRewardSP;
 									break;
+                                case"meseta":
+                                    item.innerHTML = info.popup_data.clear_reward[i].reward_count + " " + map_app.locale.strings.mapPopupRewardMeseta;
+                                    break;
 							}
 							this.children[11].appendChild(item);
 						}
