@@ -48,6 +48,12 @@
 				{"coordinates":[5248,257],"id":"c-6","popup":true,"tooltip":true},
 				{"coordinates":[4965,5879],"id":"c-7","popup":true,"tooltip":true},
 				{"coordinates":[1961,5248],"id":"c-8","popup":true,"tooltip":true}
+			],
+			"tower": [
+				{"coordinates":[830,5506],"id":"t-1","popup":true,"tooltip":true},
+				{"coordinates":[5740,1043],"id":"t-2","popup":true,"tooltip":true},
+				{"coordinates":[3914,5346],"id":"t-3","popup":true,"tooltip":true}
+
 			]
 		},
 		"minerals": {
@@ -60,7 +66,8 @@
 	},
 	"map_category_strings": {
 		"main": {
-			"cocoon": "mapCocoonTitle"
+			"cocoon": "mapCocoonTitle",
+			"tower": "mapTowerTitle"
 		},
 		"food": {
 			"apple": "mapAppleTitle",
@@ -98,6 +105,11 @@
 				"c-6": "mapCocoonName6",
 				"c-7": "mapCocoonName7",
 				"c-8": "mapCocoonName8"
+			},
+			"tower": {
+				"t-1": "mapTowerName1",
+				"t-2": "mapTowerName2",
+				"t-3": "mapTowerName3"
 			}
 		}
 	},
@@ -205,6 +217,47 @@
 						{
 							"reward_type": "sp",
 							"reward_count": 1
+						}
+					]
+				}
+			},
+			"tower": {
+				"t-1": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapTowerDesc1",
+					"main_mission": "mapTowerMain1",
+					"side_missions": ["mapTowerSide1a","mapTowerSide1b","mapTowerSide1c","mapTowerSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 4
+						}
+					]
+				},
+				"t-2": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapTowerDesc2",
+					"main_mission": "mapTowerMain2",
+					"side_missions": ["mapTowerSide2a","mapTowerSide2b","mapTowerSide2c","mapTowerSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 4
+						}
+					]
+				},
+				"t-3": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapTowerDesc3",
+					"main_mission": "mapTowerMain3",
+					"side_missions": ["mapTowerSide3a","mapTowerSide3b","mapTowerSide3c","mapTowerSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 4
 						}
 					]
 				}

@@ -110,5 +110,30 @@
 	"mapCocoonSide8b": "Clear before 2:35",
 	"mapCocoonSide8c": "Obtain 5 Point Cubes",
 
-	"mapCocoonSideF": "Complete all Side Missions and clear"
+	"mapCocoonSideF": "Complete all Side Missions and clear",
+
+	"mapTowerTitle": "Tower",
+	
+	"mapTowerName1": "Aero Runner",
+	"mapTowerDesc1": "Use Photon Glide to reach the target destination.",
+	"mapTowerMain1": "Reach the finish point",
+	"mapTowerSide1a": "Clear before 2:05",
+	"mapTowerSide1b": "Clear without falling 5 times",
+	"mapTowerSide1c": "Obtain 10 Point Cubes",
+
+	"mapTowerName2": "ALTERS Rush",
+	"mapTowerDesc2": "Avoid combat with enemies whenever possible and make use of your battle skills to defeat the Chiacurio in the final area.",
+	"mapTowerMain2": "Defeat the Chiacurio",
+	"mapTowerSide2a": "Clear before 8:00",
+	"mapTowerSide2b": "Clear having suppressed under 4 of the enemies",
+	"mapTowerSide2c": "Clear wihtout being incapacitated",
+
+	"mapTowerName3": "Great Wall",
+	"mapTowerDesc3": "Defeat the Daityl Sword in the final area using your battle skills.",
+	"mapTowerMain3": "Defeat the Daityl",
+	"mapTowerSide3a": "Clear before 23:00",
+	"mapTowerSide3b": "Clear without being incapacitated 5 times",
+	"mapTowerSide3c": "Obtain 5 Point Cubes",
+
+	"mapTowerSideF": "Complete all Side Missions and clear"
 }
