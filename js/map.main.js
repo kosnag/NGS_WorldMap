@@ -328,21 +328,7 @@ var map_app = new nekoapp({
                         return[leaflet_div]
                     }
                 ),
-                init : function(){  
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/index.js"});
-                    setTimeout(function(){map.invalidateSize(true);}, 200);
-
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/caves.js"});
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/containers.js"});
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/food.js"});
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/gigantixes.js"});
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/landmarks.js"});
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/minerals.js"});
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/sections.js"});
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/data/veterans.js"});
-                    
-                    nekoapp.system.scripts.add({application:map_app, url: "js/map/buttons.js"});
-
+                init : function(){
                     // IF FOR CHECKBOXES
                     if (localStorage.getItem('minerals')){
                         map_app.minerals = JSON.parse(localStorage.getItem('minerals'))
@@ -499,51 +485,6 @@ var map_app = new nekoapp({
                                     class: "h3 text-center text-light", 
                                     text: nekoapp.create.localizedString(map_app, "mapHeader")
                                 }),
-                                menu_versionButton_body: nekoapp.create.element(map_app,"div",{
-                                    class: "d-flex my-3"
-                                }),
-                                    menu_versionButton_desc : nekoapp.create.element(map_app,"div",{
-                                        class: "h5 text-light align-self-center",
-                                        text: "<i class='fas fa-map-signs'></i> "
-                                    }),
-                                    menu_versionButtons : nekoapp.create.element(map_app,"div",{
-                                        class: "btn-group ms-auto",
-                                        attr: {
-                                            "role": "group"
-                                        }
-                                    }),
-                                        menu_versionButton_Global1 : nekoapp.create.element(map_app,"input",{
-                                            class: "btn-check",
-                                            id: "versionGlobal",
-                                            attr: {
-                                                "type": "radio",
-                                                "name": "version",
-                                                "autocomplete": "off"
-                                            }
-                                        }),
-                                        menu_versionButton_Global2 : nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue",
-                                            attr: {
-                                                "for": "versionGlobal"
-                                            },
-                                            text: nekoapp.create.localizedString(map_app, "mapVersionEn")
-                                        }),
-                                        menu_versionButton_Japanese1 : nekoapp.create.element(map_app,"input",{
-                                            class: "btn-check",
-                                            id: "versionJapanese",
-                                            attr: {
-                                                "type": "radio",
-                                                "name": "version",
-                                                "autocomplete": "off"
-                                            }
-                                        }),
-                                        menu_versionButton_Japanese2 : nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue",
-                                            attr: {
-                                                "for": "versionJapanese"
-                                            },
-                                            text: nekoapp.create.localizedString(map_app, "mapVersionJp")
-                                        }),
                                 menu_sections_body: nekoapp.create.element(map_app,"div",{
                                     class: "d-flex my-3"
                                 }),
@@ -727,15 +668,6 @@ var map_app = new nekoapp({
                             elements.map_menu_body.appendChild(elements.menu_header)
                                 elements.map_menu_body.appendChild(elements.menu_header)
 
-                                elements.map_menu_body.appendChild(elements.menu_versionButton_body)
-                                    elements.menu_versionButton_body.appendChild(elements.menu_versionButton_desc)
-                                        elements.menu_versionButton_desc.appendChild(nekoapp.create.localizedString(map_app, "mapVersion"))
-                                    elements.menu_versionButton_body.appendChild(elements.menu_versionButtons)
-                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Global1)
-                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Global2)
-                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Japanese1)
-                                        elements.menu_versionButtons.appendChild(elements.menu_versionButton_Japanese2)
-                                elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
                                 elements.map_menu_body.appendChild(elements.menu_sections_body)
                                     elements.menu_sections_body.appendChild(elements.menu_sections_desc)
                                         elements.menu_sections_desc.appendChild(nekoapp.create.localizedString(map_app, "mapSections"))
@@ -847,15 +779,12 @@ var map_app = new nekoapp({
                 //this.moduleContents.alert_element.init();
 				// INITIALIZE MAP AND MAP MENU  -- SVGvsevolod
 				map.init(function(){
-					if(map.user_settings.version === "na"){
-						map_app.modules.map_module.moduleContents.menu_versionButton_Global1.setAttribute("checked","");
-					}else if(map.user_settings.version === "jp"){
-						map_app.modules.map_module.moduleContents.menu_versionButton_Japanese1.setAttribute("checked","");
-					}
+
 					if(map.user_settings.sections)
 						map_app.modules.map_module.moduleContents.menu_sectionsButton_On1.setAttribute("checked","");
 					else
 						map_app.modules.map_module.moduleContents.menu_sectionsButton_Off1.setAttribute("checked","");
+                        
 					if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
 					if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
 					if(map.user_settings.minerals.trinite)map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","");
