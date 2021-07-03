@@ -109,7 +109,98 @@
 					"recomended_bp": 835,
 					"description": "mapCocoonDesc1",
 					"main_mission": "mapCocoonMain1",
-					"side_missions": ["mapCocoonSide1a","mapCocoonSide1b","mapCocoonSide1c","mapCocoonSide1d"],
+					"side_missions": ["mapCocoonSide1a","mapCocoonSide1b","mapCocoonSide1c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-2": {
+					"max_players": 4,
+					"recomended_bp": 916,
+					"description": "mapCocoonDesc2",
+					"main_mission": "mapCocoonMain2",
+					"side_missions": ["mapCocoonSide2a","mapCocoonSide2b","mapCocoonSide2c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-3": {
+					"max_players": 1,
+					"recomended_bp": 800,
+					"description": "mapCocoonDesc3",
+					"main_mission": "mapCocoonMain3",
+					"side_missions": ["mapCocoonSide3a","mapCocoonSide3b","mapCocoonSide3c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-4": {
+					"max_players": 4,
+					"recomended_bp": 894,
+					"description": "mapCocoonDesc4",
+					"main_mission": "mapCocoonMain4",
+					"side_missions": ["mapCocoonSide4a","mapCocoonSide4b","mapCocoonSide4c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-5": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapCocoonDesc5",
+					"main_mission": "mapCocoonMain5",
+					"side_missions": ["mapCocoonSide5a","mapCocoonSide5b","mapCocoonSide5c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-6": {
+					"max_players": 4,
+					"recomended_bp": 835,
+					"description": "mapCocoonDesc6",
+					"main_mission": "mapCocoonMain6",
+					"side_missions": ["mapCocoonSide6a","mapCocoonSide6b","mapCocoonSide6c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-7": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapCocoonDesc7",
+					"main_mission": "mapCocoonMain7",
+					"side_missions": ["mapCocoonSide7a","mapCocoonSide7b","mapCocoonSide7c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-8": {
+					"max_players": 4,
+					"recomended_bp": 1009,
+					"description": "mapCocoonDesc8",
+					"main_mission": "mapCocoonMain8",
+					"side_missions": ["mapCocoonSide8a","mapCocoonSide8b","mapCocoonSide8c","mapCocoonSideF"],
 					"clear_reward": [
 						{
 							"reward_type": "sp",
