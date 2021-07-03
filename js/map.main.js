@@ -261,7 +261,7 @@ var map_app = new nekoapp({
                                             
                                         let modal_content_body_button2 = document.createElement("button")
                                             modal_content_body_button2.setAttribute("type","button")
-                                            modal_content_body_button2.className = "btn btn-custom-blue btn-lg"
+                                            modal_content_body_button2.className = "btn btn-custom-blue btn-lg disabled"
                                             modal_content_body_button2.style = "position: relative;"
                                             modal_content_body_button2.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/en-US.svg' height='32px'> <img src='assets/flags/en-UK.svg' height='32px'></span> English (Fan-patch)"
                                             modal_content_body_button2.setAttribute("data-bs-dismiss","modal")
@@ -269,7 +269,7 @@ var map_app = new nekoapp({
                                         
                                         let modal_content_body_button3 = document.createElement("button")
                                             modal_content_body_button3.setAttribute("type","button")
-                                            modal_content_body_button3.className = "btn btn-custom-blue btn-lg disabled"
+                                            modal_content_body_button3.className = "btn btn-custom-blue btn-lg"
                                             modal_content_body_button3.style = "position: relative;"
                                             modal_content_body_button3.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/ja-JP.svg' height='32px'></span> 日本語"
                                             modal_content_body_button3.setAttribute("data-bs-dismiss","modal")
@@ -285,7 +285,7 @@ var map_app = new nekoapp({
 
                                         let modal_content_body_button5 = document.createElement("button")
                                             modal_content_body_button5.setAttribute("type","button")
-                                            modal_content_body_button5.className = "btn btn-custom-blue btn-lg disabled"
+                                            modal_content_body_button5.className = "btn btn-custom-blue btn-lg"
                                             modal_content_body_button5.style = "position: relative;"
                                             modal_content_body_button5.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/ko-KR.svg' height='32px'></span> 한국어"
                                             modal_content_body_button5.setAttribute("data-bs-dismiss","modal")
@@ -722,7 +722,7 @@ var map_app = new nekoapp({
 						map.user_settings.sections = false;
 					map.save_settings();
 				});
-                
+
 				elements.menu_mineralsButton_monotite_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.monotite);
 					if(map.user_settings.minerals.monotite)
 						map.user_settings.minerals.monotite = false;
