@@ -85,7 +85,7 @@ var map = {
 				});
 				L.imageOverlay("assets/map_v2.png",map.constants.map_bounds).addTo(map.map_object);
 				map.map_object.fitBounds(map.constants.map_bounds);
-				map.map_object.setMaxBounds(map.constants.map_bounds);
+				map.map_object.setMaxBounds(map.constants.map_max_bounds);
 		
 				// LOAD USER SETTINGS  -- SVGvsevolod
 				map.load_settings();
