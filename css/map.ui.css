@@ -1,0 +1,491 @@
+
+/*========================================================================================
+      Neko Web Application - The framework and/or tool to easily create own web applications
+      This test application used to demonstrate what framework can do
+      Copyright (C) 2019  S.V.G
+------------------------------------------------------------------------------------------
+      This program is free software: you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation, either version 3 of the License, or
+      (at your option) any later version.
+------------------------------------------------------------------------------------------
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+      http://nekoweb.ddns.net/nekoapp/LICENSE.txt
+========================================================================================*/
+
+html, body {
+    width: 100%;
+    height: 100%;
+    background: var(--map-primary-background-color);
+    color: var(--map-primary-text-color)
+}
+map-overlay {
+	background: var(--map-overlay-background-color)
+}
+map-app a,
+map-window a {
+	color: var(--map-primary-text-color);
+	transition: color ease .2s
+}
+map-app a:hover,
+map-app a:focus,
+map-window a:hover,
+map-window a:focus {
+	color: var(--map-highlight-text-color)
+}
+map-app map-ui-button,
+map-window map-ui-button {
+	text-shadow: 1px 1px 2px var(--map-primary-shadow-color)
+}
+map-app map-ui-button map-ui-element.map_ui_button_background,
+map-window map-ui-button map-ui-element.map_ui_button_background {
+	transition: background ease .2s, border-color ease .2s
+}
+map-app map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background {
+	transition: background ease .2s, border-color ease .2s, opacity ease .2s
+}
+map-app map-ui-button.map_ui_default_button,
+map-app map-ui-button.map_ui_color_button,
+map-app map-ui-button.map_ui_glass_button,
+map-window map-ui-button.map_ui_default_button,
+map-window map-ui-button.map_ui_color_button,
+map-window map-ui-button.map_ui_glass_button {
+	border-radius: 2px;
+	box-shadow: 2px 3px 4px var(--map-primary-shadow-color)
+}
+map-app map-ui-button.map_ui_default_button map-ui-element.map_ui_button_background,
+map-app map-ui-button.map_ui_color_button map-ui-element.map_ui_button_background,
+map-app map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_default_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_color_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background {
+	background: transparent;
+	border-style: solid;
+	border-width: 6px
+}
+map-app map-ui-button.map_ui_default_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_default_button map-ui-element.map_ui_button_background {
+	border-color: var(--map-primary-button-color)
+}
+map-app map-ui-button.map_ui_default_button:hover map-ui-element.map_ui_button_background,
+map-app map-ui-button.map_ui_default_button:focus map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_default_button:hover map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_default_button:focus map-ui-element.map_ui_button_background {
+	background: var(--map-primary-button-color)
+}
+map-app map-ui-button.map_ui_default_button:active map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_default_button:active map-ui-element.map_ui_button_background {
+	background: var(--map-secondary-button-color);
+	border-color: var(--map-secondary-button-color)
+}
+map-app map-ui-button.map_ui_color_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_color_button map-ui-element.map_ui_button_background {
+	border-color: var(--map-colorbutton-primary-color)
+}
+map-app map-ui-button.map_ui_color_button:hover map-ui-element.map_ui_button_background,
+map-app map-ui-button.map_ui_color_button:focus map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_color_button:hover map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_color_button:focus map-ui-element.map_ui_button_background {
+	background: var(--map-colorbutton-primary-color)
+}
+map-app map-ui-button.map_ui_color_button:active map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_color_button:active map-ui-element.map_ui_button_background {
+	background: var(--map-colorbutton-secondary-color);
+	border-color: var(--map-colorbutton-secondary-color)
+}
+map-app map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background,
+map-app map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background {
+	border-color: var(--map-glass-button-color);
+	opacity: .6
+}
+map-app map-ui-button.map_ui_glass_button:active map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_glass_button:active map-ui-element.map_ui_button_background {
+	opacity: .8
+}
+map-app map-ui-button.map_ui_glass_button:hover map-ui-element.map_ui_button_background,
+map-app map-ui-button.map_ui_glass_button:focus map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_glass_button:hover map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_glass_button:focus map-ui-element.map_ui_button_background {
+	background: var(--map-glass-button-color)
+}
+map-app map-ui-button.map_ui_pane_button:active map-ui-element.map_ui_button_background,
+map-app map-ui-button.map_ui_circle_button:active map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_pane_button:active map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_circle_button:active map-ui-element.map_ui_button_background {
+	background: var(--map-pane-button-color)
+}
+map-app map-ui-button.map_ui_pane_button map-ui-element.map_ui_button_content,
+map-app map-ui-button.map_ui_circle_button map-ui-element.map_ui_button_content,
+map-window map-ui-button.map_ui_pane_button map-ui-element.map_ui_button_content,
+map-window map-ui-button.map_ui_circle_button map-ui-element.map_ui_button_content {
+	opacity: .6;
+	transition: opacity ease .2s
+}
+map-app map-ui-button.map_ui_pane_button:hover map-ui-element.map_ui_button_content,
+map-app map-ui-button.map_ui_pane_button:focus map-ui-element.map_ui_button_content,
+map-app map-ui-button.map_ui_circle_button:hover map-ui-element.map_ui_button_content,
+map-app map-ui-button.map_ui_circle_button:focus map-ui-element.map_ui_button_content,
+map-window map-ui-button.map_ui_pane_button:hover map-ui-element.map_ui_button_content,
+map-window map-ui-button.map_ui_pane_button:focus map-ui-element.map_ui_button_content,
+map-window map-ui-button.map_ui_circle_button:hover map-ui-element.map_ui_button_content,
+map-window map-ui-button.map_ui_circle_button:focus map-ui-element.map_ui_button_content {
+	opacity: 1
+}
+map-app map-ui-button.map_ui_circle_button map-ui-element.map_ui_button_content map-ui-graphic svg,
+map-window map-ui-button.map_ui_circle_button map-ui-element.map_ui_button_content map-ui-graphic svg {
+	fill: var(--map-primary-text-color)
+}
+map-app map-ui-checkbox map-ui-element.map_ui_checkbox_icon map-ui-graphic,
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon,
+map-window map-ui-checkbox map-ui-element.map_ui_checkbox_icon map-ui-graphic,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon {
+    opacity: .8;
+    transition: opacity ease .2s
+}
+map-app map-ui-checkbox:hover map-ui-element.map_ui_checkbox_icon map-ui-graphic,
+map-app map-ui-checkbox:focus map-ui-element.map_ui_checkbox_icon map-ui-graphic,
+map-app map-ui-radiobutton:hover map-ui-element.map_ui_radiobutton_icon,
+map-app map-ui-radiobutton:focus map-ui-element.map_ui_radiobutton_icon,
+map-window map-ui-checkbox:hover map-ui-element.map_ui_checkbox_icon map-ui-graphic,
+map-window map-ui-checkbox:focus map-ui-element.map_ui_checkbox_icon map-ui-graphic,
+map-window map-ui-radiobutton:hover map-ui-element.map_ui_radiobutton_icon,
+map-window map-ui-radiobutton:focus map-ui-element.map_ui_radiobutton_icon {
+    opacity: 1;
+}
+map-app map-ui-checkbox map-ui-element.map_ui_checkbox_icon map-ui-graphic svg,
+map-window map-ui-checkbox map-ui-element.map_ui_checkbox_icon map-ui-graphic svg {
+    fill: var(--map-checkbox-primary-color);
+    transition: fill ease .2s
+}
+map-app map-ui-checkbox[checked] map-ui-element.map_ui_checkbox_icon map-ui-graphic svg,
+map-window map-ui-checkbox[checked] map-ui-element.map_ui_checkbox_icon map-ui-graphic svg {
+    fill: var(--map-checkbox-secondary-color)
+}
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon {
+	border-color: var(--map-checkbox-primary-color)
+}
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon::after,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon::after {
+	background: var(--map-checkbox-primary-color)
+}
+map-app map-ui-radiobutton[selected] map-ui-element.map_ui_radiobutton_icon,
+map-window map-ui-radiobutton[selected] map-ui-element.map_ui_radiobutton_icon {
+	border-color: var(--map-checkbox-secondary-color)
+}
+map-app map-ui-radiobutton[selected] map-ui-element.map_ui_radiobutton_icon::after,
+map-window map-ui-radiobutton[selected] map-ui-element.map_ui_radiobutton_icon::after {
+	background: var(--map-checkbox-secondary-color)
+}
+map-app map-ui-textbox[placeholder]::before,
+map-window map-ui-textbox[placeholder]::before {
+    color: var(--map-placeholder-text-color);
+    transition: opacity ease .2s
+}
+map-app map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_stroke,
+map-window map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_stroke {
+    background: var(--map-primary-button-color)
+}
+map-app map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_stroke::after,
+map-window map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_stroke::after {
+    background: var(--map-secondary-button-color)
+}
+map-app map-ui-textbox.map_ui_simple_textbox,
+map-window map-ui-textbox.map_ui_simple_textbox {
+    background: var(--map-textbox-primary-color);
+    border-color: var(--map-textbox-secondary-color)
+}
+map-app map-ui-textbox.map_ui_highlighted_textbox,
+map-window map-ui-textbox.map_ui_highlighted_textbox {
+    background: var(--map-textbox-primary-color);
+    transition: background ease .2s, color ease .2s
+}
+map-app map-ui-textbox.map_ui_highlighted_textbox:hover,
+map-window map-ui-textbox.map_ui_highlighted_textbox:hover {
+    background: var(--map-textbox-highlighted-color)
+}
+map-app map-ui-textbox.map_ui_highlighted_textbox[focused],
+map-window map-ui-textbox.map_ui_highlighted_textbox[focused] {
+    background: var(--map-textbox-default-color);
+    color: var(--map-secondary-text-color)
+}
+map-app map-ui-combobox,
+map-window map-ui-combobox {
+	border-color: var(--map-combobox-primary-color)
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_icon map-ui-graphic svg,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_icon map-ui-graphic svg {
+	fill: var(--map-primary-text-color)
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_options,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_options {
+	background: var(--map-combobox-secondary-color);
+	box-shadow: 0 1px 3px var(--map-primary-shadow-color)
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_options map-ui-element,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_options map-ui-element {
+	color: var(--map-combobox-primary-color);
+	transition: background ease .2s, color ease .2s
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_options map-ui-element:hover,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_options map-ui-element:hover {
+	background: var(--map-combobox-primary-color);
+	color: var(--map-combobox-secondary-color)
+}
+map-overlay map-window {
+	background: var(--map-window-background-color);
+	box-shadow: 0 0 16px 4px var(--map-primary-shadow-color)
+}
+map-app map-loading {
+    background: var(--map-primary-background-color)
+}
+map-app map-loading map-ui-graphic svg {
+    fill: var(--map-primary-text-color);
+    stroke: var(--map-primary-text-color)
+}
+map-app map-loading .loading_message {
+    color: var(--map-primary-text-color)
+}
+map-app map-progress div.map_progress_bar_inner {
+    background: var(--map-progress-bar-color)
+}
+map-app[processing] map-progress div.map_progress_bar_inner {
+    position: absolute;
+    animation: progress_animation 1.25s linear infinite
+}
+map-app map-head {
+    background: var(--bs-custom-blue);
+    border-bottom: 1px solid var(--bs-light);
+	/*box-shadow: 0 4px 12px var(--bs-primary)*/
+}
+map-app map-footer {
+    background: var(--map-primary-background-color);
+	box-shadow: 0 -4px 12px var(--map-primary-shadow-color)
+}
+map-app map-head map-logo map-ui-graphic svg {
+    fill: var(--map-header-primary-text-color)
+}
+map-app map-head map-navigation map-navigation-item map-ui-element {
+    color: var(--bs-white);
+    /*transition: color ease .2s*/
+}
+map-app map-head map-navigation map-navigation-item:hover map-ui-element {
+    color: var(--bs-white)
+}
+map-app map-ui-spinner,
+map-window map-ui-spinner {
+    display: block;
+    width: 60px;
+    height: 60px
+}
+map-app map-ui-spinner .spinner_container,
+map-window map-ui-spinner .spinner_container {
+    position: relative;
+    width: 60px;
+    height: 60px
+}
+map-app map-ui-spinner .spinner_rotator,
+map-window map-ui-spinner .spinner_rotator {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: rotate_spin 2s linear infinite
+}
+map-app map-ui-spinner .spinner_slice,
+map-window map-ui-spinner .spinner_slice {
+    position: absolute;
+    width: 40%;
+    height: 50%;
+    border-radius: 20%;
+    overflow: hidden
+}
+map-app map-ui-spinner .spinner_slice.top,
+map-window map-ui-spinner .spinner_slice.top {
+    top: 0;
+    left: 30%;
+    right: 30%
+}
+map-app map-ui-spinner .spinner_slice.top_right,
+map-window map-ui-spinner .spinner_slice.top_right {
+    top: 7%;
+    right: 13%;
+    transform: rotate(45deg)
+}
+map-app map-ui-spinner .spinner_slice.right,
+map-window map-ui-spinner .spinner_slice.right {
+    top: 25%;
+    bottom: 25%;
+    right: 5%;
+    transform: rotate(90deg)
+}
+map-app map-ui-spinner .spinner_slice.bottom_right,
+map-window map-ui-spinner .spinner_slice.bottom_right {
+    bottom: 7%;
+    right: 13%;
+    transform: rotate(135deg)
+}
+map-app map-ui-spinner .spinner_slice.bottom,
+map-window map-ui-spinner .spinner_slice.bottom {
+    bottom: 0;
+    left: 30%;
+    right: 30%;
+    transform: rotate(180deg)
+}
+map-app map-ui-spinner .spinner_slice.bottom_left,
+map-window map-ui-spinner .spinner_slice.bottom_left {
+    bottom: 7%;
+    left: 13%;
+    transform: rotate(225deg)
+}
+map-app map-ui-spinner .spinner_slice.left,
+map-window map-ui-spinner .spinner_slice.left {
+    top: 25%;
+    bottom: 25%;
+    left: 5%;
+    transform: rotate(270deg)
+}
+map-app map-ui-spinner .spinner_slice.top_left,
+map-window map-ui-spinner .spinner_slice.top_left {
+    top: 7%;
+    left: 13%;
+    transform: rotate(315deg)
+}
+map-app map-ui-spinner .spinner_slice::after,
+map-window map-ui-spinner .spinner_slice::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    right: -75%;
+    border-color: var(--map-primary-text-color) transparent transparent transparent;
+    border-style: solid;
+    border-width: 6px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 250%;
+    height: 200%;
+    animation: circle_spin 3s ease-in infinite
+}
+map-app map-ui-spinner .spinner_slice.top::after,
+map-window map-ui-spinner .spinner_slice.top::after {
+    transform: rotate(-74deg)
+}
+map-app map-ui-spinner .spinner_slice.top_right::after,
+map-window map-ui-spinner .spinner_slice.top_right::after {
+    transform: rotate(-95deg)
+}
+map-app map-ui-spinner .spinner_slice.right::after,
+map-window map-ui-spinner .spinner_slice.right::after {
+    transform: rotate(-116deg)
+}
+map-app map-ui-spinner .spinner_slice.bottom_right::after,
+map-window map-ui-spinner .spinner_slice.bottom_right::after {
+    transform: rotate(-137deg)
+}
+map-app map-ui-spinner .spinner_slice.bottom::after,
+map-window map-ui-spinner .spinner_slice.bottom::after {
+    transform: rotate(-158deg)
+}
+map-app map-ui-spinner .spinner_slice.bottom_left::after,
+map-window map-ui-spinner .spinner_slice.bottom_left::after {
+    transform: rotate(-179deg)
+}
+map-app map-ui-spinner .spinner_slice.left::after,
+map-window map-ui-spinner .spinner_slice.left::after {
+    transform: rotate(-200deg)
+}
+map-app map-ui-spinner .spinner_slice.top_left::after,
+map-window map-ui-spinner .spinner_slice.top_left::after {
+    transform: rotate(-221deg)
+}
+map-ui-animation[animation-name="map_ui_wave_animation"][is-running] map-ui-animation-sprite[animating] {
+	background: var(--map-wave-animation-color);
+	border-radius: 50%;
+	animation: map_ui_wave_animation .5s ease
+}
+map-ui-button.map_ui_circle_button map-ui-animation[animation-name="map_ui_wave_animation"][is-running] map-ui-animation-sprite[animating],
+map-ui-checkbox map-ui-animation[animation-name="map_ui_wave_animation"][is-running] map-ui-animation-sprite[animating],
+map-ui-radiobutton map-ui-animation[animation-name="map_ui_wave_animation"][is-running] map-ui-animation-sprite[animating] {
+	animation: map_ui_circle_wave_animation .5s ease
+}
+@keyframes map_ui_wave_animation {
+	0% {
+		top: var(--map-ui-animation-startpos-y);
+		left: var(--map-ui-animation-startpos-x);
+		width: 0;
+		height: 0;
+		opacity: 0
+	}
+	75% {
+		top: calc(var(--map-ui-animation-startpos-y) - var(--map-ui-animation-width));
+		left: calc(var(--map-ui-animation-startpos-x) - var(--map-ui-animation-width));
+		width: calc(var(--map-ui-animation-width)*2);
+		height: calc(var(--map-ui-animation-width)*2);
+		opacity: 1
+	}
+	100% {
+		top: calc(var(--map-ui-animation-startpos-y) - var(--map-ui-animation-width));
+		left: calc(var(--map-ui-animation-startpos-x) - var(--map-ui-animation-width));
+		width: calc(var(--map-ui-animation-width) * 2);
+		height: calc(var(--map-ui-animation-width) * 2);
+		opacity: 0
+	}
+}
+@keyframes map_ui_circle_wave_animation {
+	0% {
+		top: 50%;
+		left: 50%;
+		width: 0;
+		height: 0;
+		opacity: 0
+	}
+	50% {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 1
+	}
+	100% {
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0
+	}
+}
+@keyframes rotate_spin {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+@keyframes circle_spin {
+    40% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(120deg)
+    }
+}
+@keyframes progress_animation {
+    0% {
+        left: 0;
+        width: 0
+    }
+    50% {
+        left: 42%;
+        width: 16%
+    }
+    100% {
+        left: 100%;
+        width: 0
+    }
+}
