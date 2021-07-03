@@ -55,10 +55,60 @@
     "mapCocoonTitle": "Cocoon",
 	
 	"mapCocoonName1": "Enhanced Enemy",
-	"mapCocoonDesc1": "This is Trainia, where ARKS defenders can test their abilities.<br>Defeat the enhanced Pettas Sword using your battle skills.",
+	"mapCocoonDesc1": "Defeat the enhanced Pettas Sword using your battle skills.",
 	"mapCocoonMain1": "Defeat the Pettas Sword",
 	"mapCocoonSide1a": "Clear before 0:55",
 	"mapCocoonSide1b": "Clear without being incapacitated 5 times",
 	"mapCocoonSide1c": "Clear having taken damage fewer than 10 times",
-	"mapCocoonSide1d": "Complete all Side Missions and clear"
+
+	"mapCocoonName2": "Swift Jump",
+	"mapCocoonDesc2": "Reach the goal using Jump and Double Jump.",
+	"mapCocoonMain2": "Reach the finish point",
+	"mapCocoonSide2a": "Clear before 1:25",
+	"mapCocoonSide2b": "Clear without falling 5 times",
+	"mapCocoonSide2c": "Clear having used Glide fewer than 5 times",
+
+	"mapCocoonName3": "First Step",
+	"mapCocoonDesc3": "Follow the instructions to reach the goal while learning the new action.",
+	"mapCocoonMain3": "Reach the finish point",
+	"mapCocoonSide3a": "Clear before 5:00",
+	"mapCocoonSide3b": "Clear before 10:00",
+	"mapCocoonSide3c": "Obtain 10 Point Cubes",
+
+	"mapCocoonName4": "Wild Rush",
+	"mapCocoonDesc4": "Defeat all enemies using your battle skills.",
+	"mapCocoonMain4": "Defeat 42 enemies",
+	"mapCocoonSide4a": "Clear before 1:45",
+	"mapCocoonSide4b": "Clear without being incapacipated 5 times",
+	"mapCocoonSide4c": "Obtain 5 Point Cubes",
+
+	"mapCocoonName5": "Roaring Rush",
+	"mapCocoonDesc5": "Make use of your battle skills to defeat Gororox.",
+	"mapCocoonMain5": "Defeat all enemies",
+	"mapCocoonSide5a": "Clear before 1:45",
+	"mapCocoonSide5b": "Clear without being incapacipated 2 times",
+	"mapCocoonSide5c": "Clear having taken damage fewer that 15 times",
+
+	"mapCocoonName6": "Test Flight",
+	"mapCocoonDesc6": "Use Photon Glide to reach the target destination.",
+	"mapCocoonMain6": "Reach the finish point",
+	"mapCocoonSide6a": "Clear before 1:15",
+	"mapCocoonSide6b": "Clear without falling 5 times",
+	"mapCocoonSide6c": "Obtain 5 Point Cubes",
+
+	"mapCocoonName7": "Fleeting Fight",
+	"mapCocoonDesc7": "Make use of your battle skills to defeat the Bujin.",
+	"mapCocoonMain7": "Defeat the Bujin",
+	"mapCocoonSide7a": "Clear before 5:00",
+	"mapCocoonSide7b": "Clear without being incapacipated 5 times",
+	"mapCocoonSide7c": "Obtain having taken damage fewer that 20 times",
+
+	"mapCocoonName8": "Runway",
+	"mapCocoonDesc8": "Use Photon Dash to reach the target destination.",
+	"mapCocoonMain8": "Reach the finish point",
+	"mapCocoonSide8a": "Clear before 1:55",
+	"mapCocoonSide8b": "Clear before 2:35",
+	"mapCocoonSide8c": "Obtain 5 Point Cubes",
+
+	"mapCocoonSideF": "Complete all Side Missions and clear"
 }
