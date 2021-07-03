@@ -667,6 +667,62 @@ var map_app = new nekoapp({
                                             text: "<img src='assets/markers/landmarks/urgent.png'>"
                                         }),
                                 
+                                menu_boxes_body: nekoapp.create.element(map_app,"div",{
+                                    class: "my-3"
+                                }),
+                                    menu_boxes_desc: nekoapp.create.element(map_app,"div",{
+                                        class: "h5 text-light text-center mb-3",
+                                        text: "<i class='fas fa-box'></i> "
+                                    }),
+                                    menu_boxesButton_group: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex",
+                                    }),
+                                        menu_boxesButton_whiteBox_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "whiteBoxCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_boxesButton_whiteBox_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1 disabled",
+                                            attr: {
+                                                "for": "whiteBoxCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/containers/whiteBox.png'>"
+                                        }),
+                                        menu_boxesButton_redBox_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "redBoxCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_boxesButton_redBox_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "redBoxCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/containers/redBox.png'>"
+                                        }),
+                                        menu_boxesButton_goldBox_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "goldBoxCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_boxesButton_goldBox_2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1 disabled",
+                                            attr: {
+                                                "for": "goldBoxCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/containers/goldBox.png'>"
+                                        }),
+                                
                                 menu_minerals_body: nekoapp.create.element(map_app,"div",{
                                     class: "my-3"
                                 }),
@@ -786,15 +842,15 @@ var map_app = new nekoapp({
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
                                 elements.map_menu_body.appendChild(elements.menu_boxes_body)
-                                    elements.menu_boxes_body.appendChild(elements.menu_minerals_desc)
+                                    elements.menu_boxes_body.appendChild(elements.menu_boxes_desc)
                                         elements.menu_boxes_desc.appendChild(nekoapp.create.localizedString(map_app, "mapBoxesTitle"))
                                     elements.menu_boxes_body.appendChild(elements.menu_boxesButton_group)
-                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_cocoon_1)
-                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_cocoon_2)
-                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_tower_1)
-                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_tower_2)
-                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_urgent_1)
-                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_urgent_2)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_whiteBox_1)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_whiteBox_2)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_redBox_1)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_redBox_2)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_goldBox_1)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_goldBox_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
                                 elements.map_menu_body.appendChild(elements.menu_minerals_body)
