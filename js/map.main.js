@@ -239,7 +239,6 @@ var map_app = new nekoapp({
 
                             let modal_modalContent = document.createElement("div")
                                 modal_modalContent.className = "modal-content"
-                                modal_modelDialog.appendChild(modal_modalContent);
 
                                 let modal_content_title = document.createElement("div")
                                     modal_content_title.className = "modal-header"
@@ -299,6 +298,8 @@ var map_app = new nekoapp({
                                             modal_content_body_button6.setAttribute("data-bs-dismiss","modal")
                                             modal_content_body_button6.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'pt-BR')");
 
+                            
+                            modal_modelDialog.appendChild(modal_modalContent)
                                 modal_modalContent.appendChild(modal_content_title)
                                 modal_modalContent.appendChild(modal_content_body)
                                     modal_content_body.appendChild(modal_content_body_buttons)
@@ -329,18 +330,62 @@ var map_app = new nekoapp({
                     }
                 ),
                 init : function(){
+                    // LANDMARKS
+                    // IF FOR CHECKBOXES
+                    if (localStorage.getItem('landmarks')){
+                        map_app.landmarks = JSON.parse(localStorage.getItem('landmarks'))
+                    } else {
+                        localStorage.setItem("landmarks", JSON.stringify(map_app.landmarks))
+                    }
+                    if(JSON.parse(localStorage.getItem("landmarks")).cocoon == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_cocoon_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).cocoon == "0"){}
+                    if(JSON.parse(localStorage.getItem("landmarks")).mag == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_mag_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).mag == "0"){}
+                    if(JSON.parse(localStorage.getItem("landmarks")).ryuker == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_ryuker_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).ryuker == "0"){}
+                    if(JSON.parse(localStorage.getItem("landmarks")).tower == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_tower_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).tower == "0"){}
+                    if(JSON.parse(localStorage.getItem("landmarks")).urgent == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_urgent_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).urgent == "0"){}
+
+                    // CONTAINERS
+                    // IF FOR CHECKBOXES
+                    if (localStorage.getItem('boxes')){
+                        map_app.boxes = JSON.parse(localStorage.getItem('boxes'))
+                    } else {
+                        localStorage.setItem("boxes", JSON.stringify(map_app.boxes))
+                    }
+                    //if(JSON.parse(localStorage.getItem("boxes")).whiteBox == "1"){map_app.modules.map_module.moduleContents.menu_boxesButton_whiteBox_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("boxes")).whiteBox == "0"){}
+                    if(JSON.parse(localStorage.getItem("boxes")).redBox == "1"){map_app.modules.map_module.moduleContents.menu_boxesButton_redBox_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("boxes")).redBox == "0"){}
+                    //if(JSON.parse(localStorage.getItem("boxes")).goldBox == "1"){map_app.modules.map_module.moduleContents.menu_boxesButton_goldBox_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("boxes")).goldBox == "0"){}
+                    
+                    // MINERALS
                     // IF FOR CHECKBOXES
                     if (localStorage.getItem('minerals')){
                         map_app.minerals = JSON.parse(localStorage.getItem('minerals'))
                     } else {
                         localStorage.setItem("minerals", JSON.stringify(map_app.minerals))
                     }
-                    // MINERALS
                     if(JSON.parse(localStorage.getItem("minerals")).monotite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).monotite == "0"){}
                     if(JSON.parse(localStorage.getItem("minerals")).dualomite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).dualomite == "0"){}
                     if(JSON.parse(localStorage.getItem("minerals")).trinite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).trinite == "0"){}
                     if(JSON.parse(localStorage.getItem("minerals")).photonChunk == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_photonChunk_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).photonChunk == "0"){}
                     if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_photonQuartz_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "0"){}
+
+                    // FOOD
+                    // IF FOR CHECKBOXES
+                    if (localStorage.getItem('food')){
+                        map_app.food = JSON.parse(localStorage.getItem('food'))
+                    } else {
+                        localStorage.setItem("food", JSON.stringify(map_app.food))
+                    }
+                    if(JSON.parse(localStorage.getItem("food")).apple == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_apple_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).apple == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).banana == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_banana_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).banana == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).clam == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_clam_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).clam == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).crab == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_crab_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).crab == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).herb == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_herb_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).herb == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).lobster == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_lobster_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).lobster == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).mushroom == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_mushroom_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).mushroom == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).peach == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_peach_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).peach == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).pear == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_pear_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).pear == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).tomato == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_tomato_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).tomato == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).shell == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_shell_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).shell == "0"){}
+                    if(JSON.parse(localStorage.getItem("food")).turnip == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_turnip_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).turnip == "0"){}
                 }
             }
         },
@@ -726,43 +771,208 @@ var map_app = new nekoapp({
 					map.save_settings();
 				});
 
-				elements.menu_mineralsButton_monotite_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.monotite);
+                elements.menu_landmarksButton_cocoon_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.landmarks.cocoon);
+                    if(map.user_settings.landmarks.cocoon)
+                        map.user_settings.landmarks.cocoon = false;
+                    else
+                        map.user_settings.landmarks.cocoon = true;
+                    map.save_settings();
+                });
+                elements.menu_landmarksButton_mag_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.landmarks.mag);
+                    if(map.user_settings.landmarks.mag)
+                        map.user_settings.landmarks.mag = false;
+                    else
+                        map.user_settings.landmarks.mag = true;
+                    map.save_settings();
+                });
+                elements.menu_landmarksButton_ryuker_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.landmarks.ryuker);
+                    if(map.user_settings.landmarks.ryuker)
+                        map.user_settings.landmarks.ryuker = false;
+                    else
+                        map.user_settings.landmarks.ryuker = true;
+                    map.save_settings();
+                });
+                elements.menu_landmarksButton_tower_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.landmarks.tower);
+                    if(map.user_settings.landmarks.tower)
+                        map.user_settings.landmarks.tower = false;
+                    else
+                        map.user_settings.landmarks.tower = true;
+                    map.save_settings();
+                });
+                elements.menu_landmarksButton_urgent_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.landmarks.urgent);
+                    if(map.user_settings.landmarks.urgent)
+                        map.user_settings.landmarks.urgent = false;
+                    else
+                        map.user_settings.landmarks.urgent = true;
+                    map.save_settings();
+                });                
+				elements.menu_mineralsButton_monotite_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.minerals.monotite);
 					if(map.user_settings.minerals.monotite)
 						map.user_settings.minerals.monotite = false;
 					else
 						map.user_settings.minerals.monotite = true;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_dualomite_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.dualomite);
+				elements.menu_mineralsButton_dualomite_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.minerals.dualomite);
 					if(map.user_settings.minerals.dualomite)
 						map.user_settings.minerals.dualomite = false;
 					else
 						map.user_settings.minerals.dualomite = true;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_trinite_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.trinite);
+				elements.menu_mineralsButton_trinite_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.minerals.trinite);
 					if(map.user_settings.minerals.trinite)
 						map.user_settings.minerals.trinite = false;
 					else
 						map.user_settings.minerals.trinite = true;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_phChunk_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.phChunk);
+				elements.menu_mineralsButton_phChunk_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.minerals.phChunk);
 					if(map.user_settings.minerals.phChunk)
 						map.user_settings.minerals.phChunk = false;
 					else
 						map.user_settings.minerals.phChunk = true;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_phQuartz_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.phQuartz);
+				elements.menu_mineralsButton_phQuartz_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.minerals.phQuartz);
 					if(map.user_settings.minerals.phQuartz)
 						map.user_settings.minerals.phQuartz = false;
 					else
 						map.user_settings.minerals.phQuartz = true;
 					map.save_settings();
 				});
+                elements.menu_foodButton_apple_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.apple);
+                    if(map.user_settings.food.apple)
+                        map.user_settings.food.apple = false;
+                    else
+                        map.user_settings.food.apple = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_banana_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.banana);
+                    if(map.user_settings.food.banana)
+                        map.user_settings.food.banana = false;
+                    else
+                        map.user_settings.food.banana = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_clam_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.clam);
+                    if(map.user_settings.food.clam)
+                        map.user_settings.food.clam = false;
+                    else
+                        map.user_settings.food.clam = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_crab_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.crab);
+                    if(map.user_settings.food.crab)
+                        map.user_settings.food.crab = false;
+                    else
+                        map.user_settings.food.crab = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_herb_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.herb);
+                    if(map.user_settings.food.herb)
+                        map.user_settings.food.herb = false;
+                    else
+                        map.user_settings.food.herb = true;
+                    map.save_settings();
+                });                
+                elements.menu_foodButton_lobster_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.lobster);
+                    if(map.user_settings.food.lobster)
+                        map.user_settings.food.lobster = false;
+                    else
+                        map.user_settings.food.lobster = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_mushroom_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.mushroom);
+                    if(map.user_settings.food.mushroom)
+                        map.user_settings.food.mushroom = false;
+                    else
+                        map.user_settings.food.mushroom = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_peach_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.peach);
+                    if(map.user_settings.food.peach)
+                        map.user_settings.food.peach = false;
+                    else
+                        map.user_settings.food.peach = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_pear_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.pear);
+                    if(map.user_settings.food.pear)
+                        map.user_settings.food.pear = false;
+                    else
+                        map.user_settings.food.pear = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_tomato_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.tomato);
+                    if(map.user_settings.food.tomato)
+                        map.user_settings.food.tomato = false;
+                    else
+                        map.user_settings.food.tomato = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_shell_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.shell);
+                    if(map.user_settings.food.shell)
+                        map.user_settings.food.shell = false;
+                    else
+                        map.user_settings.food.shell = true;
+                    map.save_settings();
+                });
+                elements.menu_foodButton_turnip_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.food.turnip);
+                    if(map.user_settings.food.turnip)
+                        map.user_settings.food.turnip = false;
+                    else
+                        map.user_settings.food.turnip = true;
+                    map.save_settings();
+                });
+                elements.menu_boxesButton_whiteBox_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.boxes.whiteBox);
+                    if(map.user_settings.boxes.whiteBox)
+                        map.user_settings.boxes.whiteBox = false;
+                    else
+                        map.user_settings.boxes.whiteBox = true;
+                    map.save_settings();
+                });
+                elements.menu_boxesButton_redBox_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.boxes.redBox);
+                    if(map.user_settings.boxes.redBox)
+                        map.user_settings.boxes.redBox = false;
+                    else
+                        map.user_settings.boxes.redBox = true;
+                    map.save_settings();
+                });
+                elements.menu_boxesButton_goldBox_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.boxes.goldBox);
+                    if(map.user_settings.boxes.goldBox)
+                        map.user_settings.boxes.goldBox = false;
+                    else
+                        map.user_settings.boxes.goldBox = true;
+                    map.save_settings();
+                });                
 				
-                return [elements, [/*elements.alert_element,*/,elements.ngs_map]];
+                return [elements, [/*elements.alert_element,*/elements.ngs_map]];
             },
             onModuleChange : function(){
                 //this.moduleContents.alert_element.init();
@@ -774,12 +984,34 @@ var map_app = new nekoapp({
 					else
 						map_app.modules.map_module.moduleContents.menu_sectionsButton_Off1.setAttribute("checked","");
 
-					if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
-					if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
-					if(map.user_settings.minerals.trinite)map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","");
-					if(map.user_settings.minerals.phChunk)map_app.modules.map_module.moduleContents.menu_mineralsButton_phChunk_1.setAttribute("checked","");
-					if(map.user_settings.minerals.phQuartz)map_app.modules.map_module.moduleContents.menu_mineralsButton_phQuartz_1.setAttribute("checked","");
-				});
+                        if(map.user_settings.landmarks.cocoon)map_app.modules.map_module.moduleContents.menu_landmarksButton_cocoon_1.setAttribute("checked","");
+                        if(map.user_settings.landmarks.mag)map_app.modules.map_module.moduleContents.menu_landmarksButton_mag_1.setAttribute("checked","");
+                        if(map.user_settings.landmarks.ryuker)map_app.modules.map_module.moduleContents.menu_landmarksButton_ryuker_1.setAttribute("checked","");
+                        if(map.user_settings.landmarks.tower)map_app.modules.map_module.moduleContents.menu_landmarksButton_tower_1.setAttribute("checked","");
+                        if(map.user_settings.landmarks.urgent)map_app.modules.map_module.moduleContents.menu_landmarksButton_urgent_1.setAttribute("checked","");
+                        
+                        if(map.user_settings.boxes.whiteBox)map_app.modules.map_module.moduleContents.menu_boxesButton_whiteBox_1.setAttribute("checked","");
+                        if(map.user_settings.boxes.redBox)map_app.modules.map_module.moduleContents.menu_boxesButton_redBox_1.setAttribute("checked","");
+                        if(map.user_settings.boxes.goldBox)map_app.modules.map_module.moduleContents.menu_boxesButton_goldBox_1.setAttribute("checked","");
+                        
+                        if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
+                        if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
+                        if(map.user_settings.minerals.trinite)map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","");
+                        if(map.user_settings.minerals.phChunk)map_app.modules.map_module.moduleContents.menu_mineralsButton_phChunk_1.setAttribute("checked","");
+                        if(map.user_settings.minerals.phQuartz)map_app.modules.map_module.moduleContents.menu_mineralsButton_phQuartz_1.setAttribute("checked","");
+                        
+                        if(map.user_settings.food.apple)map_app.modules.map_module.moduleContents.menu_foodButton__1.setAttribute("checked","");
+                        if(map.user_settings.food.banana)map_app.modules.map_module.moduleContents.menu_foodButton_banana_1.setAttribute("checked","");
+                        if(map.user_settings.food.clam)map_app.modules.map_module.moduleContents.menu_foodButton_clam_1.setAttribute("checked","");
+                        if(map.user_settings.food.crab)map_app.modules.map_module.moduleContents.menu_foodButton_crab_1.setAttribute("checked","");
+                        if(map.user_settings.food.herb)map_app.modules.map_module.moduleContents.menu_foodButton_herb_1.setAttribute("checked","");
+                        if(map.user_settings.food.lobster)map_app.modules.map_module.moduleContents.menu_foodButton_lobster_1.setAttribute("checked","");
+                        if(map.user_settings.food.mushroom)map_app.modules.map_module.moduleContents.menu_foodButton_mushroom_1.setAttribute("checked","");
+                        if(map.user_settings.food.peach)map_app.modules.map_module.moduleContents.menu_foodButton_peach_1.setAttribute("checked","");
+                        if(map.user_settings.food.pear)map_app.modules.map_module.moduleContents.menu_foodButton_pear_1.setAttribute("checked","");
+                        if(map.user_settings.food.tomato)map_app.modules.map_module.moduleContents.menu_foodButton_tomato_1.setAttribute("checked","");
+                        if(map.user_settings.food.shell)map_app.modules.map_module.moduleContents.menu_foodButton_shell_1.setAttribute("checked","");
+                        if(map.user_settings.food.turnip)map_app.modules.map_module.moduleContents.menu_foodButton_turnip_1.setAttribute("checked","");				});
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
