@@ -11,14 +11,37 @@
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "Меню",
 
-    "mapVersion": "Версия",
-    "mapVersionJp": "Японская",
-    "mapVersionEn": "Глобальная",
-
     "mapSections": "Секции",
     "mapSectionsOn": "Показать",
-    "mapSectionsOff": "Скрыть",
+    "mapSectionsOff": "Спрятать",
 	
+    "mapFoodTitle" : "Минералы",
+	"mapMonotiteTitle": "Монотайт",
+	"mapDualomiteTitle": "Дуаломайт",
+	"mapTriniteTitle": "Торанинайт",
+	"mapPhChunkTitle": "Фрагмент фотона",
+	"mapPhQuartzTitle": "Фотонный кварц",
+
+    "mapMineralsTitle" : "Минералы",
+	"mapAppleTitle": "Матта яблоко Эарио",
+	"mapBananaTitle": "Гатцу банан Эарио",
+	"mapClamTitle": "Матта моллюск Эарио",
+	"mapCrabTitle": "Шакки краб Эарио",
+	"mapHerbTitle": "Матта трава Эарио",
+	"mapLobsterTitle": "Гатцу лобстер Эарио",
+	"mapMushroomTitle": "Саппа гриб Эарио",
+	"mapPeachTitle": "Саппа персик Эарио",
+	"mapPearTitle": "Шакки груша Эарио",
+	"mapTomatoTitle": "Шакки томат Эарио",
+	"mapShellTitle": "Саппа тюрбан ракушка Эарио",
+	"mapTurnipTitle": "Гатцу кабурана Эарио",
+
+    "mapBoxesTitle" : "Containers",
+	"mapRedBoxTitle": "Контейнер с предметами [Красный]",
+	"mapWhiteBoxTitle": "Контейнер с предметами [Белый]",
+	"mapGoldBoxTitle": "Контейнер с предметами [Золотой]",
+
+
 	"mapPopupMaxPlayers": "Количество игроков",
 	"mapPopupRecomendedBP": "Требуемая Боевая Мощь",
 	"mapPopupDescription": "Описание",
@@ -29,17 +52,11 @@
 	"mapPopupRewardMeseta": "N-Meseta",
 	"mapPopupRewardSP": "SP",
 
-    "mapMineralsTitle" : "Минералы",
-	"mapMonotiteTitle" : "Монотайт",
-
     "mapCocoonTitle": "Кокон",
 	
-	"mapCocoonName1": "Усиленный враг",
-	
-	"mapCocoonDesc1": "Это Треиниа, где ARKS могут проверить свои боевые способности. Одолейте усиленного Педаса мечника, используя свои боевые навыки.",
-	
+	"mapCocoonName1": "Enhanced Enemy",
+	"mapCocoonDesc1": "Это Треиниа, где ARKS могут проверить свои боевые способности.<br>Одолейте усиленного Педаса мечника, используя свои боевые навыки.",
 	"mapCocoonMain1": "Одолейте Педаса мечника!",
-	
 	"mapCocoonSide1a": "Пройдите менее чем за 0:55",
 	"mapCocoonSide1b": "Пройдите менее чем с 5 смертями",
 	"mapCocoonSide1c": "Получите не более 5 ударов",

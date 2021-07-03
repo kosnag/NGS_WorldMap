@@ -11,13 +11,36 @@
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "Menu",
 
-    "mapVersion": "Version",
-    "mapVersionJp": "Japanese",
-    "mapVersionEn": "Global",
-
     "mapSections": "Sections",
     "mapSectionsOn": "Unhide",
     "mapSectionsOff": "Hide",
+	
+    "mapFoodTitle" : "Minerals",
+	"mapMonotiteTitle": "Monotite",
+	"mapDualomiteTitle": "Dualomite",
+	"mapTriniteTitle": "Trinite",
+	"mapPhChunkTitle": "Photon Chunk",
+	"mapPhQuartzTitle": "Photon Quartz",
+
+    "mapMineralsTitle" : "Minerals",
+	"mapAppleTitle": "Rich Aelio Apple",
+	"mapBananaTitle": "Robust Aelio Banana",
+	"mapClamTitle": "Rich Aelio Clam",
+	"mapCrabTitle": "Crisp Aelio Crab",
+	"mapHerbTitle": "Rich Aelio Herb",
+	"mapLobsterTitle": "Robust Aelio Lobster",
+	"mapMushroomTitle": "Light Aelio Mushroom",
+	"mapPeachTitle": "Light Aelio Peach",
+	"mapPearTitle": "Crisp Aelio Pear",
+	"mapTomatoTitle": "Crisp Aelio Tomato",
+	"mapShellTitle": "Light Aelio Turban Shell",
+	"mapTurnipTitle": "Robust Aelio Turnip",
+
+    "mapBoxesTitle" : "Containers",
+	"mapRedBoxTitle": "Item Container [Red]",
+	"mapWhiteBoxTitle": "Item Container [Green]",
+	"mapGoldBoxTitle": "Item Container [Gold]",
+
 
 	"mapPopupMaxPlayers": "Number of players",
 	"mapPopupRecomendedBP": "Recommended Battle Power",
@@ -28,18 +51,12 @@
 	"mapPopupRewards": "Rewards",
 	"mapPopupRewardMeseta": "N-Meseta",
 	"mapPopupRewardSP": "SP",
-	
-    "mapMineralsTitle" : "Minerals",
-	"mapMonotiteTitle" : "Monotite",
 
     "mapCocoonTitle": "Cocoon",
 	
 	"mapCocoonName1": "Enhanced Enemy",
-	
 	"mapCocoonDesc1": "This is Trainia, where ARKS defenders can test their abilities.<br>Defeat the enhanced Pettas Sword using your battle skills.",
-	
 	"mapCocoonMain1": "Defeat the Pettas Sword",
-	
 	"mapCocoonSide1a": "Clear before 0:55",
 	"mapCocoonSide1b": "Clear without being incapacitated 5 times",
 	"mapCocoonSide1c": "Clear having taken damage fewer than 10 times",
