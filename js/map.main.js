@@ -330,6 +330,7 @@ var map_app = new nekoapp({
                     }
                 ),
                 init : function(){
+                    setTimeout(function(){map.invalidateSize(true);}, 250);
                     // LANDMARKS
                     // IF FOR CHECKBOXES
                     if (localStorage.getItem('landmarks')){
@@ -726,7 +727,6 @@ var map_app = new nekoapp({
                                         elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
-/*
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
                                     elements.menu_landmarks_body.appendChild(elements.menu_minerals_desc)
                                         elements.menu_landmarks_desc.appendChild(nekoapp.create.localizedString(map_app, "mapLandmarksTitle"))
@@ -742,7 +742,19 @@ var map_app = new nekoapp({
                                         elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_mag_1)
                                         elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_mag_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
-*/
+
+                                elements.map_menu_body.appendChild(elements.menu_boxes_body)
+                                    elements.menu_boxes_body.appendChild(elements.menu_minerals_desc)
+                                        elements.menu_boxes_desc.appendChild(nekoapp.create.localizedString(map_app, "mapBoxesTitle"))
+                                    elements.menu_boxes_body.appendChild(elements.menu_boxesButton_group)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_cocoon_1)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_cocoon_2)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_tower_1)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_tower_2)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_urgent_1)
+                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_urgent_2)
+                                elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
+
                                 elements.map_menu_body.appendChild(elements.menu_minerals_body)
                                     elements.menu_minerals_body.appendChild(elements.menu_minerals_desc)
                                         elements.menu_minerals_desc.appendChild(nekoapp.create.localizedString(map_app, "mapMineralsTitle"))
@@ -947,14 +959,14 @@ var map_app = new nekoapp({
                         map.user_settings.food.turnip = true;
                     map.save_settings();
                 });
-                elements.menu_boxesButton_whiteBox_1.addEventListener("change",function(){
+                /*elements.menu_boxesButton_whiteBox_1.addEventListener("change",function(){
                     map.toogle_markers(map.map_markers.boxes.whiteBox);
                     if(map.user_settings.boxes.whiteBox)
                         map.user_settings.boxes.whiteBox = false;
                     else
                         map.user_settings.boxes.whiteBox = true;
                     map.save_settings();
-                });
+                });*/
                 elements.menu_boxesButton_redBox_1.addEventListener("change",function(){
                     map.toogle_markers(map.map_markers.boxes.redBox);
                     if(map.user_settings.boxes.redBox)
@@ -963,14 +975,14 @@ var map_app = new nekoapp({
                         map.user_settings.boxes.redBox = true;
                     map.save_settings();
                 });
-                elements.menu_boxesButton_goldBox_1.addEventListener("change",function(){
+                /*elements.menu_boxesButton_goldBox_1.addEventListener("change",function(){
                     map.toogle_markers(map.map_markers.boxes.goldBox);
                     if(map.user_settings.boxes.goldBox)
                         map.user_settings.boxes.goldBox = false;
                     else
                         map.user_settings.boxes.goldBox = true;
                     map.save_settings();
-                });                
+                });*/
 				
                 return [elements, [/*elements.alert_element,*/elements.ngs_map]];
             },
@@ -990,9 +1002,9 @@ var map_app = new nekoapp({
                         if(map.user_settings.landmarks.tower)map_app.modules.map_module.moduleContents.menu_landmarksButton_tower_1.setAttribute("checked","");
                         if(map.user_settings.landmarks.urgent)map_app.modules.map_module.moduleContents.menu_landmarksButton_urgent_1.setAttribute("checked","");
                         
-                        if(map.user_settings.boxes.whiteBox)map_app.modules.map_module.moduleContents.menu_boxesButton_whiteBox_1.setAttribute("checked","");
+                        //if(map.user_settings.boxes.whiteBox)map_app.modules.map_module.moduleContents.menu_boxesButton_whiteBox_1.setAttribute("checked","");
                         if(map.user_settings.boxes.redBox)map_app.modules.map_module.moduleContents.menu_boxesButton_redBox_1.setAttribute("checked","");
-                        if(map.user_settings.boxes.goldBox)map_app.modules.map_module.moduleContents.menu_boxesButton_goldBox_1.setAttribute("checked","");
+                        //if(map.user_settings.boxes.goldBox)map_app.modules.map_module.moduleContents.menu_boxesButton_goldBox_1.setAttribute("checked","");
                         
                         if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
                         if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
