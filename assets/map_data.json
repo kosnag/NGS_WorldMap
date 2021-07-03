@@ -346,7 +346,7 @@
 							"reward_count": 5000
 						}
 					],
-					"next_clear_reward": [
+					"rewards": [
 						{
 							"reward_type": "meseta",
 							"reward_count": 2000
@@ -363,7 +363,7 @@
 							"reward_count": 5000
 						}
 					],
-					"next_clear_reward": [
+					"rewards": [
 						{
 							"reward_type": "meseta",
 							"reward_count": 2000
