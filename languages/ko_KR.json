@@ -15,14 +15,14 @@
     "mapSectionsOn": "Unhide",
     "mapSectionsOff": "Hide",
 	
-    "mapFoodTitle" : "Minerals",
+    "mapMineralsTitle" : "Minerals",
 	"mapMonotiteTitle": "Monotite",
 	"mapDualomiteTitle": "Dualomite",
 	"mapTriniteTitle": "Trinite",
 	"mapPhChunkTitle": "Photon Chunk",
 	"mapPhQuartzTitle": "Photon Quartz",
 
-    "mapMineralsTitle" : "Minerals",
+    "mapFoodTitle" : "Food",
 	"mapAppleTitle": "Rich Aelio Apple",
 	"mapBananaTitle": "Robust Aelio Banana",
 	"mapClamTitle": "Rich Aelio Clam",

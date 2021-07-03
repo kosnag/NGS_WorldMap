@@ -15,14 +15,14 @@
     "mapSectionsOn": "Показать",
     "mapSectionsOff": "Спрятать",
 	
-    "mapFoodTitle" : "Минералы",
+    "mapMineralsTitle" : "Минералы",
 	"mapMonotiteTitle": "Монотайт",
 	"mapDualomiteTitle": "Дуаломайт",
 	"mapTriniteTitle": "Торанинайт",
 	"mapPhChunkTitle": "Фрагмент фотона",
 	"mapPhQuartzTitle": "Фотонный кварц",
 
-    "mapMineralsTitle" : "Минералы",
+    "mapFoodTitle" : "Еда",
 	"mapAppleTitle": "Матта яблоко Эарио",
 	"mapBananaTitle": "Гатцу банан Эарио",
 	"mapClamTitle": "Матта моллюск Эарио",
@@ -38,18 +38,18 @@
 
     "mapBoxesTitle" : "Контейнеры",
 	"mapRedBoxTitle": "Контейнер с предметами [Красный]",
-	"mapWhiteBoxTitle": "Контейнер с предметами [Белый]",
+	"mapWhiteBoxTitle": "Контейнер с предметами [Зелёный]",
 	"mapGoldBoxTitle": "Контейнер с предметами [Золотой]",
 
 
 	"mapPopupMaxPlayers": "Количество игроков",
 	"mapPopupRecomendedBP": "Требуемая Боевая Мощь",
 	"mapPopupDescription": "Описание",
-	"mapPopupMainMission": "Главная миссия",
+	"mapPopupMainMission": "Основная миссия",
 	"mapPopupSideMissions": "Доп-миссии",
 	"mapPopupClearReward": "Награда первого прохождения",
 	"mapPopupRewards": "Награды",
-	"mapPopupRewardMeseta": "N-Meseta",
+	"mapPopupRewardMeseta": "N-месета",
 	"mapPopupRewardSP": "SP",
 
     "mapCocoonTitle": "Кокон",
@@ -57,57 +57,57 @@
 	"mapCocoonName1": "Усиленный враг",
 	"mapCocoonDesc1": "Одолейте усиленного Педаса мечника, используя свои боевые навыки.",
 	"mapCocoonMain1": "Одолейте Педаса мечника!",
-	"mapCocoonSide1a": "Пройдите менее чем за 0:55",
+	"mapCocoonSide1a": "Пройдите за 0:55",
 	"mapCocoonSide1b": "Пройдите менее чем с 5 смертями",
-	"mapCocoonSide1c": "Получите не более 5 ударов",
+	"mapCocoonSide1c": "Получите не более 10 ударов",
 
 	"mapCocoonName2": "Быстрый прыжок",
 	"mapCocoonDesc2": "Достигните цели, используя прыжок и двойной прыжок.",
 	"mapCocoonMain2": "Достигните цели!",
-	"mapCocoonSide2a": "Пройдите менее чем за 1:25",
+	"mapCocoonSide2a": "Пройдите за 1:25",
 	"mapCocoonSide2b": "Пройдите менее чем с 5 падениями",
 	"mapCocoonSide2c": "Используйте парение менее 5 раз",
 
-	"mapCocoonName3": "Быстрый прыжок",
+	"mapCocoonName3": "Первые шаги",
 	"mapCocoonDesc3": "Следуйте инструкциям, чтобы достичь цели и изучить новое умение.",
 	"mapCocoonMain3": "Достигните цели!",
-	"mapCocoonSide3a": "Пройдите менее чем за 5:00",
-	"mapCocoonSide3b": "Пройдите менее чем за 10:00",
+	"mapCocoonSide3a": "Пройдите за 5:00",
+	"mapCocoonSide3b": "Пройдите за 10:00",
 	"mapCocoonSide3c": "Получите 10 очков и пройдите",
 
 	"mapCocoonName4": "Дикая спешка",
 	"mapCocoonDesc4": "Одолейте всех врагов, используя свои боевые навыки.",
 	"mapCocoonMain4": "Одолейте 42 врагов!",
-	"mapCocoonSide4a": "Пройдите менее чем за 1:45",
+	"mapCocoonSide4a": "Пройдите за 1:45",
 	"mapCocoonSide4b": "Пройдите менее чем с 5 смертями",
 	"mapCocoonSide4c": "Получите 5 очков и пройдите",
 
 	"mapCocoonName5": "Ревущий рывок",
 	"mapCocoonDesc5": "Используйте все свои боевые навыки, чтобы одолеть Горорокса.",
 	"mapCocoonMain5": "Одолейте Горорокса!",
-	"mapCocoonSide5a": "Пройдите менее чем за 6:30",
+	"mapCocoonSide5a": "Пройдите за 6:30",
 	"mapCocoonSide5b": "Пройдите менее чем с 2 смертями",
 	"mapCocoonSide5c": "Получите не более 15 ударов",
 
 	"mapCocoonName6": "Тестовый полёт",
 	"mapCocoonDesc6": "Используйте фотонное парение, чтобы достичь цели.",
 	"mapCocoonMain6": "Достигните цели!",
-	"mapCocoonSide6a": "Пройдите менее чем за 1:15",
+	"mapCocoonSide6a": "Пройдите за 1:15",
 	"mapCocoonSide6b": "Пройдите менее чем с 5 падениями",
 	"mapCocoonSide6c": "Получите 5 очков и пройдите",
 
 	"mapCocoonName7": "Скоротечный бой",
 	"mapCocoonDesc7": "Используйте свои боевые навыки, чтобы одолеть Буджина.",
 	"mapCocoonMain7": "Одолейте Буджина!",
-	"mapCocoonSide7a": "Пройдите менее чем за 5:00",
+	"mapCocoonSide7a": "Пройдите за 5:00",
 	"mapCocoonSide7b": "Пройдите менее чем с 5 смертями",
 	"mapCocoonSide7c": "Получите не более 20 ударов",
 
 	"mapCocoonName8": "Скоростной забег",
 	"mapCocoonDesc8": "Используйте фотонный рывок, чтобы достичь цели.",
 	"mapCocoonMain8": "Достигните цели!",
-	"mapCocoonSide8a": "Пройдите менее чем за 1:55",
-	"mapCocoonSide8b": "Пройдите менее чем за 2:35",
+	"mapCocoonSide8a": "Пройдите за 1:55",
+	"mapCocoonSide8b": "Пройдите за 2:35",
 	"mapCocoonSide8c": "Получите 5 очков и пройдите",
 
 	"mapCocoonSideF": "Завершите доп-миссии и пройдите",
@@ -131,7 +131,7 @@
 	"mapTowerName3": "Великая стена",
 	"mapTowerDesc3": "Одолейте Дайдару мечника в конечной зоне, используя свои боевые навыки.",
 	"mapTowerMain3": "Одолейте Дайдару!",
-	"mapTowerSide3a": "Пройдите менее чем за 23:00",
+	"mapTowerSide3a": "Пройдите за 23:00",
 	"mapTowerSide3b": "Пройдите менее чем с 5 смертями",
 	"mapTowerSide3c": "Получите 5 очков и пройдите",
 
@@ -139,14 +139,14 @@
 
 	"mapUrgentTitle": "Срочный квест",
 	
-	"mapUrgentName1": "Карательная экспедиция на контролирующих DOLLS",
+	"mapUrgentName1": "Карательная экспедиция на контролирующего DOLLS",
 	"mapUrgentMain1": "Одолейте контролирующую боевую еденицу!",
 
 	"mapUrgentName2": "Карательная экспедиция на Некс Вера",
 	"mapUrgentMain2": "Одолейте Некс Вера!",
 
 
-	"mapRyukerTitle": "Ryuker Device",
+	"mapRyukerTitle": "Устройство Рюкера",
 	"mapRyukerName1": "Водопад Балфлоу",
 	"mapRyukerName2": "Гора Магнус",
 	"mapRyukerName3": "Гора Пикотт",
@@ -165,6 +165,6 @@
 
 	"mapMagTitle": "Mag региона",
 	"mapMagName1": "Эксперт",
-	"mapMagName2": "Priceless",
-	"mapMagName3": "Invincible"
+	"mapMagName2": "Бесценный",
+	"mapMagName3": "Непобедимый"
 }
