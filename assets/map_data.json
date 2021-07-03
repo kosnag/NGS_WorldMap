@@ -8,8 +8,7 @@
 			"mag": {"iconUrl": "assets/markers/landmarks/mag.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
 			"ryuker": {"iconUrl": "assets/markers/landmarks/ryuker.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
 			"tower": {"iconUrl": "assets/markers/landmarks/tower.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
-			"urgent": {"iconUrl": "assets/markers/landmarks/urgent.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
-			"test": {"iconUrl": "https://cdn.discordapp.com/emojis/763104888732647434.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]}
+			"urgent": {"iconUrl": "assets/markers/landmarks/urgent.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]}
 		},
 		"minerals": {
 			"monotite": {"iconUrl": "assets/markers/minerals/monotite.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
@@ -30,10 +29,10 @@
 			"pear": {"iconUrl": "assets/markers/food/aelioPear.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
 			"tomato": {"iconUrl": "assets/markers/food/aelioTomato.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
 			"shell": {"iconUrl": "assets/markers/food/aelioTurbanShell.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
-			"turnip": {"iconUrl": "assets/markers/food/aelio.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]}
+			"turnip": {"iconUrl": "assets/markers/food/aelioTurnip.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]}
 		},
 		"boxes": {
-			"greenBox": {"iconUrl": "assets/markers/containers/whiteBox.png", "iconSize": [18,18], "iconAnchor": [9,9], "popupAnchor": [0,-9]},
+			"whiteBox": {"iconUrl": "assets/markers/containers/whiteBox.png", "iconSize": [18,18], "iconAnchor": [9,9], "popupAnchor": [0,-9]},
 			"redBox": {"iconUrl": "assets/markers/containers/redBox.png", "iconSize": [18,18], "iconAnchor": [9,9], "popupAnchor": [0,-9]},
 			"goldBox": {"iconUrl": "assets/markers/containers/goldBox.png", "iconSize": [18,18], "iconAnchor": [9,9], "popupAnchor": [0,-9]}
 		}
@@ -63,18 +62,42 @@
 		"main": {
 			"cocoon": "mapCocoonTitle"
 		},
+		"food": {
+			"apple": "mapAppleTitle",
+			"banana": "mapBananaTitle",
+			"clam": "mapClamTitle",
+			"crab": "mapCrabTitle",
+			"herb": "mapHerbTitle",
+			"lobster": "mapLobsterTitle",
+			"mushroom": "mapMushroomTitle",
+			"peach": "mapPeachTitle",
+			"pear": "mapPearTitle",
+			"tomato": "mapTomatoTitle",
+			"shell": "mapShellTitle",
+			"turnip": "mapTurnipTitle"
+		},
 		"minerals": {
 			"monotite": "mapMonotiteTitle",
-			"dualomite": "mapMonotiteTitle",
-			"trinite": "mapMonotiteTitle",
-			"phChunk": "mapMonotiteTitle",
-			"phQuartz": "mapMonotiteTitle"
+			"dualomite": "mapDualomiteTitle",
+			"trinite": "mapTriniteTitle",
+			"phChunk": "mapPhChunkTitle",
+			"phQuartz": "mapPhQuartzTitle"
+		},
+		"boxes": {
+			"redBox": "mapRedBoxTitle"
 		}
 	},
 	"map_names_strings": {
 		"main": {
 			"cocoon": {
-				"c-1": "mapCocoonName1"
+				"c-1": "mapCocoonName1",
+				"c-2": "mapCocoonName2",
+				"c-3": "mapCocoonName3",
+				"c-4": "mapCocoonName4",
+				"c-5": "mapCocoonName5",
+				"c-6": "mapCocoonName6",
+				"c-7": "mapCocoonName7",
+				"c-8": "mapCocoonName8"
 			}
 		}
 	},
@@ -102,7 +125,6 @@
 			"center": [3660,3662],
 			"zoom": -2
 		},
-		"version": "na",
 		"sections": false,
 		"main": {
 			"cocoon": false
@@ -113,6 +135,23 @@
 			"trinite": false,
 			"phChunk": false,
 			"phQuartz": false
+		},
+		"food": {
+			"apple": false,
+			"banana": false,
+			"clam": false,
+			"crab": false,
+			"herb": false,
+			"lobster": false,
+			"mushroom": false,
+			"peach": false,
+			"pear": false,
+			"tomato": false,
+			"shell": false,
+			"turnip": false
+		},
+		"boxes": {
+			"redBox": false
 		}
 	}
 }
