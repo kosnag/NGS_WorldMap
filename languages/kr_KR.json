@@ -1,0 +1,47 @@
+{
+    "language_title": "PSO2NGS 인터렉티브 맵",
+
+    "__NAVBAR__": "DON'T TOUCH THAT STRING",
+    "contribute_button": "<i class='fab fa-discord'></i> 기증하기",
+    "github_button": "<i class='fab fa-github'></i> Github",
+    "changelog_button": "<i class='fab fa-github'></i> 변경사항",
+    "laguages_button": "<i class='fas fa-language'></i> 언여",
+
+    
+    "__MENU__": "DON'T TOUCH THAT STRING",
+    "mapHeader": "메뉴",
+
+    "map버전": "버전",
+    "map버전Jp": "일본",
+    "map버전En": "글로벌",
+
+    "map섹션": "섹션",
+    "map섹션On": "숨김 취소",
+    "map섹션Off": "숨김",
+
+	"mapPopupMaxPlayers": "플레이어 수",
+	"mapPopupRecomendedBP": "권장 전투력",
+	"mapPopup설명": "설명",
+	"mapPopupMainMission": "Main Mission",
+	"mapPopupSideMissions": "Side Mission",
+	"mapPopupClearReward": "1st Clear Reward",
+	"mapPopupRewards": "Rewards",
+	"mapPopupRewardMeseta": "N-Meseta",
+	"mapPopupRewardSP": "SP",
+	
+    "mapMineralsTitle" : "Minerals",
+	"mapMonotiteTitle" : "Monotite",
+
+    "mapCocoonTitle": "Cocoon",
+	
+	"mapCocoonName1": "Enhanced Enemy",
+	
+	"mapCocoonDesc1": "This is Trainia, where ARKS defenders can test their abilities.<br>Defeat the enhanced Pettas Sword using your battle skills.",
+	
+	"mapCocoonMain1": "Defeat the Pettas Sword",
+	
+	"mapCocoonSide1a": "Clear before 0:55",
+	"mapCocoonSide1b": "Clear without being incapacitated 5 times",
+	"mapCocoonSide1c": "Clear having taken damage fewer than 10 times",
+	"mapCocoonSide1d": "Complete all Side Missions and clear"
+}
