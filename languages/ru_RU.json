@@ -1,0 +1,170 @@
+{
+    "language_title": "Интерактивная Карта PSO2NGS",
+
+    "__NAVBAR__": "DON'T TOUCH THAT STRING",
+    "contribute_button": "<i class='fab fa-discord'></i> Помочь",
+    "github_button": "<i class='fab fa-github'></i> Github",
+    "changelog_button": "<i class='fab fa-github'></i> Изменения",
+    "laguages_button": "<i class='fas fa-language'></i> Язык",
+
+
+    "__MENU__": "DON'T TOUCH THAT STRING",
+    "mapHeader": "Меню",
+
+    "mapSections": "Секции",
+    "mapSectionsOn": "Показать",
+    "mapSectionsOff": "Спрятать",
+	
+    "mapFoodTitle" : "Минералы",
+	"mapMonotiteTitle": "Монотайт",
+	"mapDualomiteTitle": "Дуаломайт",
+	"mapTriniteTitle": "Торанинайт",
+	"mapPhChunkTitle": "Фрагмент фотона",
+	"mapPhQuartzTitle": "Фотонный кварц",
+
+    "mapMineralsTitle" : "Минералы",
+	"mapAppleTitle": "Матта яблоко Эарио",
+	"mapBananaTitle": "Гатцу банан Эарио",
+	"mapClamTitle": "Матта моллюск Эарио",
+	"mapCrabTitle": "Шакки краб Эарио",
+	"mapHerbTitle": "Матта трава Эарио",
+	"mapLobsterTitle": "Гатцу лобстер Эарио",
+	"mapMushroomTitle": "Саппа гриб Эарио",
+	"mapPeachTitle": "Саппа персик Эарио",
+	"mapPearTitle": "Шакки груша Эарио",
+	"mapTomatoTitle": "Шакки томат Эарио",
+	"mapShellTitle": "Саппа тюрбан ракушка Эарио",
+	"mapTurnipTitle": "Гатцу кабурана Эарио",
+
+    "mapBoxesTitle" : "Контейнеры",
+	"mapRedBoxTitle": "Контейнер с предметами [Красный]",
+	"mapWhiteBoxTitle": "Контейнер с предметами [Белый]",
+	"mapGoldBoxTitle": "Контейнер с предметами [Золотой]",
+
+
+	"mapPopupMaxPlayers": "Количество игроков",
+	"mapPopupRecomendedBP": "Требуемая Боевая Мощь",
+	"mapPopupDescription": "Описание",
+	"mapPopupMainMission": "Главная миссия",
+	"mapPopupSideMissions": "Доп-миссии",
+	"mapPopupClearReward": "Награда первого прохождения",
+	"mapPopupRewards": "Награды",
+	"mapPopupRewardMeseta": "N-Meseta",
+	"mapPopupRewardSP": "SP",
+
+    "mapCocoonTitle": "Кокон",
+	
+	"mapCocoonName1": "Усиленный враг",
+	"mapCocoonDesc1": "Одолейте усиленного Педаса мечника, используя свои боевые навыки.",
+	"mapCocoonMain1": "Одолейте Педаса мечника!",
+	"mapCocoonSide1a": "Пройдите менее чем за 0:55",
+	"mapCocoonSide1b": "Пройдите менее чем с 5 смертями",
+	"mapCocoonSide1c": "Получите не более 5 ударов",
+
+	"mapCocoonName2": "Быстрый прыжок",
+	"mapCocoonDesc2": "Достигните цели, используя прыжок и двойной прыжок.",
+	"mapCocoonMain2": "Достигните цели!",
+	"mapCocoonSide2a": "Пройдите менее чем за 1:25",
+	"mapCocoonSide2b": "Пройдите менее чем с 5 падениями",
+	"mapCocoonSide2c": "Используйте парение менее 5 раз",
+
+	"mapCocoonName3": "Быстрый прыжок",
+	"mapCocoonDesc3": "Следуйте инструкциям, чтобы достичь цели и изучить новое умение.",
+	"mapCocoonMain3": "Достигните цели!",
+	"mapCocoonSide3a": "Пройдите менее чем за 5:00",
+	"mapCocoonSide3b": "Пройдите менее чем за 10:00",
+	"mapCocoonSide3c": "Получите 10 очков и пройдите",
+
+	"mapCocoonName4": "Дикая спешка",
+	"mapCocoonDesc4": "Одолейте всех врагов, используя свои боевые навыки.",
+	"mapCocoonMain4": "Одолейте 42 врагов!",
+	"mapCocoonSide4a": "Пройдите менее чем за 1:45",
+	"mapCocoonSide4b": "Пройдите менее чем с 5 смертями",
+	"mapCocoonSide4c": "Получите 5 очков и пройдите",
+
+	"mapCocoonName5": "Ревущий рывок",
+	"mapCocoonDesc5": "Используйте все свои боевые навыки, чтобы одолеть Горорокса.",
+	"mapCocoonMain5": "Одолейте Горорокса!",
+	"mapCocoonSide5a": "Пройдите менее чем за 6:30",
+	"mapCocoonSide5b": "Пройдите менее чем с 2 смертями",
+	"mapCocoonSide5c": "Получите не более 15 ударов",
+
+	"mapCocoonName6": "Тестовый полёт",
+	"mapCocoonDesc6": "Используйте фотонное парение, чтобы достичь цели.",
+	"mapCocoonMain6": "Достигните цели!",
+	"mapCocoonSide6a": "Пройдите менее чем за 1:15",
+	"mapCocoonSide6b": "Пройдите менее чем с 5 падениями",
+	"mapCocoonSide6c": "Получите 5 очков и пройдите",
+
+	"mapCocoonName7": "Скоротечный бой",
+	"mapCocoonDesc7": "Используйте свои боевые навыки, чтобы одолеть Буджина.",
+	"mapCocoonMain7": "Одолейте Буджина!",
+	"mapCocoonSide7a": "Пройдите менее чем за 5:00",
+	"mapCocoonSide7b": "Пройдите менее чем с 5 смертями",
+	"mapCocoonSide7c": "Получите не более 20 ударов",
+
+	"mapCocoonName8": "Скоростной забег",
+	"mapCocoonDesc8": "Используйте фотонный рывок, чтобы достичь цели.",
+	"mapCocoonMain8": "Достигните цели!",
+	"mapCocoonSide8a": "Пройдите менее чем за 1:55",
+	"mapCocoonSide8b": "Пройдите менее чем за 2:35",
+	"mapCocoonSide8c": "Получите 5 очков и пройдите",
+
+	"mapCocoonSideF": "Завершите доп-миссии и пройдите",
+
+	"mapTowerTitle": "Башня",
+	
+	"mapTowerName1": "Аэро-бегун",
+	"mapTowerDesc1": "Используйте фотонное парение, чтобы достичь цели.",
+	"mapTowerMain1": "Достигните цели!",
+	"mapTowerSide1a": "Продите менее чем за 2:05",
+	"mapTowerSide1b": "Пройдите менее чем с 5 падениями",
+	"mapTowerSide1c": "Получите 10 очков и пройдите",
+
+	"mapTowerName2": "Спешка с альтерами",
+	"mapTowerDesc2": "По возможности избегайте сражений с врагами и используйте свои боевые навыки, чтобы одолеть Чиа Курио в конечной зоне.",
+	"mapTowerMain2": "Одолейте Чиа Курио!",
+	"mapTowerSide2a": "Продите менее чем за 8:00",
+	"mapTowerSide2b": "Пройдите, одолев не более 4 врагов",
+	"mapTowerSide2c": "Пройдите менее чем с 5 смертями",
+
+	"mapTowerName3": "Великая стена",
+	"mapTowerDesc3": "Одолейте Дайдару мечника в конечной зоне, используя свои боевые навыки.",
+	"mapTowerMain3": "Одолейте Дайдару!",
+	"mapTowerSide3a": "Пройдите менее чем за 23:00",
+	"mapTowerSide3b": "Пройдите менее чем с 5 смертями",
+	"mapTowerSide3c": "Получите 5 очков и пройдите",
+
+	"mapTowerSideF": "Завершите доп-миссии и пройдите",
+
+	"mapUrgentTitle": "Срочный квест",
+	
+	"mapUrgentName1": "Карательная экспедиция на контролирующих DOLLS",
+	"mapUrgentMain1": "Одолейте контролирующую боевую еденицу!",
+
+	"mapUrgentName2": "Карательная экспедиция на Некс Вера",
+	"mapUrgentMain2": "Одолейте Некс Вера!",
+
+
+	"mapRyukerTitle": "Ryuker Device",
+	"mapRyukerName1": "Водопад Балфлоу",
+	"mapRyukerName2": "Гора Магнус",
+	"mapRyukerName3": "Гора Пикотт",
+	"mapRyukerName4": "Равнина Харфана: Запад",
+	"mapRyukerName5": "Централ-Сити",
+	"mapRyukerName6": "Равнина Харфана: Восток",
+	"mapRyukerName7": "Болото Харфана",
+	"mapRyukerName8": "Плоскогорье Альто-Лани",
+	"mapRyukerName9": "Утёс Крайано",
+	"mapRyukerName10": "Остров Канаи",
+	"mapRyukerName11": "Руины Эарио",
+	"mapRyukerName12": "Руины лаборатории Ванфорд",
+	"mapRyukerName13": "Озеро Хальфия",
+	"mapRyukerName14": "Лес Резол",
+
+
+	"mapMagTitle": "Mag региона",
+	"mapMagName1": "Эксперт",
+	"mapMagName2": "Priceless",
+	"mapMagName3": "Invincible"
+}

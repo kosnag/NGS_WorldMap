@@ -1,0 +1,650 @@
+
+/*========================================================================================
+      Neko Web Application - The framework and/or tool to easily create own web applications
+      This test application used to demonstrate what framework can do
+      Copyright (C) 2019  S.V.G
+------------------------------------------------------------------------------------------
+      This program is free software: you can redistribute it and/or modify
+      it under the terms of the GNU General Public License as published by
+      the Free Software Foundation, either version 3 of the License, or
+      (at your option) any later version.
+------------------------------------------------------------------------------------------
+      This program is distributed in the hope that it will be useful,
+      but WITHOUT ANY WARRANTY; without even the implied warranty of
+      MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+      GNU General Public License for more details.
+      http://nekoweb.ddns.net/nekoapp/LICENSE.txt
+========================================================================================*/
+
+html, body, a, div, span, section, p, h1, h2, h3, h4, h5, h6, ul, ol, li, blockquote, map-string {
+    margin: 0;
+    padding: 0
+}
+html, body {
+    font-family: var(--bs-font-sans-serif)
+}
+a {
+    text-decoration: none
+}
+img {
+    border: none;
+    max-width: 100%
+}
+ul {
+    list-style: none
+}
+[hidden] {
+    display: none!important
+}
+html, body {
+    font-family: Arial, sans-serif
+}
+map-app {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+	transition: filter ease .2s
+}
+map-app[overlay-active] {
+	filter: blur(5px)
+}
+map-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity ease .2s
+}
+map-app map-ui-graphic,
+map-window map-ui-graphic {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    vertical-align: middle
+}
+map-app map-ui-animation,
+map-window map-ui-animation {
+	position: relative;
+	overflow: hidden
+}
+map-app map-ui-animation map-ui-animation-sprite,
+map-window map-ui-animation map-ui-animation-sprite {
+	position: absolute
+}
+map-app map-module {
+    padding: 0px 0 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity ease .4s
+}
+map-overlay map-window {
+	position: relative;
+	overflow: hidden;
+	display: inline-flex;
+	flex-direction: column;
+	padding: 18px;
+	transition: transform ease .2s
+}
+map-app[processing] map-module {
+    opacity: .4
+}
+map-app[loading] map-module {
+    opacity: 0;
+    pointer-events: none
+}
+map-app map-ui-button,
+map-app map-ui-checkbox,
+map-app map-ui-radiobutton,
+map-app map-ui-textbox,
+map-app map-ui-combobox,
+map-window map-ui-button,
+map-window map-ui-checkbox,
+map-window map-ui-radiobutton,
+map-window map-ui-textbox,
+map-window map-ui-combobox {
+	position: relative;
+	display: inline-flex
+}
+map-app map-ui-button,
+map-window map-ui-button {
+	overflow: hidden
+}
+map-app map-ui-button a,
+map-window map-ui-button a {
+    display: inline-flex
+}
+map-app map-ui-button.map_ui_circle_button,
+map-window map-ui-button.map_ui_circle_button {
+	border-radius: 50%
+}
+map-app map-ui-button map-ui-animation,
+map-app map-ui-button map-ui-element.map_ui_button_background,
+map-app map-ui-button map-ui-element.map_ui_button_content,
+map-window map-ui-button map-ui-animation,
+map-window map-ui-button map-ui-element.map_ui_button_background,
+map-window map-ui-button map-ui-element.map_ui_button_content {
+	pointer-events: none
+}
+map-app map-ui-button map-ui-animation,
+map-window map-ui-button map-ui-animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2
+}
+map-app map-ui-button map-ui-element.map_ui_button_background,
+map-window map-ui-button map-ui-element.map_ui_button_background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1
+}
+map-app map-ui-button map-ui-element.map_ui_button_content,
+map-window map-ui-button map-ui-element.map_ui_button_content {
+	z-index: 3;
+	padding: 10px 14px;
+	font-weight: bold;
+	text-transform: uppercase
+}
+map-app map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background,
+map-window map-ui-button.map_ui_glass_button map-ui-element.map_ui_button_background {
+	filter: blur(1px)
+}
+map-app map-ui-button.map_ui_circle_button map-ui-element.map_ui_button_content,
+map-window map-ui-button.map_ui_circle_button map-ui-element.map_ui_button_content {
+	padding: 10px
+}
+map-app map-ui-checkbox map-ui-animation,
+map-app map-ui-checkbox map-ui-element.map_ui_checkbox_icon,
+map-app map-ui-checkbox map-ui-element.map_ui_checkbox_content,
+map-app map-ui-radiobutton map-ui-animation,
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon,
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_content,
+map-window map-ui-checkbox map-ui-animation,
+map-window map-ui-checkbox map-ui-element.map_ui_checkbox_icon,
+map-window map-ui-checkbox map-ui-element.map_ui_checkbox_content,
+map-window map-ui-radiobutton map-ui-animation,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_content {
+    pointer-events: none
+}
+map-app map-ui-checkbox map-ui-animation,
+map-app map-ui-radiobutton map-ui-animation,
+map-window map-ui-checkbox map-ui-animation,
+map-window map-ui-radiobutton map-ui-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+}
+map-app map-ui-checkbox map-ui-element.map_ui_checkbox_icon,
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon,
+map-window map-ui-checkbox map-ui-element.map_ui_checkbox_icon,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2
+}
+map-app map-ui-checkbox map-ui-element.map_ui_checkbox_icon,
+map-window map-ui-checkbox map-ui-element.map_ui_checkbox_icon {
+	padding: 10px
+}
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon {
+	margin: 10px;
+	width: 17px;
+	height: 17px;
+	border: solid 4px;
+	border-radius: 50%;
+	transition: border-color ease .2s
+}
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon::after,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_icon::after {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	border-radius: 50%;
+	transition: width ease .2s, height ease .2s, top ease .2s, left ease .2s, background ease .2s
+}
+map-app map-ui-radiobutton[selected] map-ui-element.map_ui_radiobutton_icon::after,
+map-window map-ui-radiobutton[selected] map-ui-element.map_ui_radiobutton_icon::after {
+	width: 13px;
+	height: 13px;
+	top: 2px;
+	left: 2px
+}
+map-app map-ui-checkbox map-ui-element.map_ui_checkbox_icon map-ui-graphic,
+map-window map-ui-checkbox map-ui-element.map_ui_checkbox_icon map-ui-graphic {
+    width: 25px;
+    height: 25px
+}
+map-app map-ui-checkbox map-ui-element.map_ui_checkbox_content,
+map-app map-ui-radiobutton map-ui-element.map_ui_radiobutton_content,
+map-window map-ui-checkbox map-ui-element.map_ui_checkbox_content,
+map-window map-ui-radiobutton map-ui-element.map_ui_radiobutton_content {
+    height: 45px;
+    padding: 0 10px 0 50px;
+    display: inline-flex;
+    align-items: center
+}
+map-app map-ui-textbox[placeholder]::before,
+map-window map-ui-textbox[placeholder]::before {
+    content: attr(placeholder);
+    position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    padding: 10px 12px;
+	text-align: initial;
+    opacity: 1;
+    pointer-events: none
+}
+map-app map-ui-textbox[placeholder][has-text]::before,
+map-window map-ui-textbox[placeholder][has-text]::before {
+    opacity: 0
+}
+map-app map-ui-textbox map-ui-element.map_ui_textbox_input,
+map-window map-ui-textbox map-ui-element.map_ui_textbox_input {
+    width: 224px;
+    min-height: 18px;
+    padding: 10px 12px;
+    text-align: left
+}
+map-app map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_input,
+map-window map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_input {
+	width: 250px
+}
+map-app map-ui-textbox.map_ui_stroked_textbox[placeholder]::before,
+map-window map-ui-textbox.map_ui_stroked_textbox[placeholder]::before {
+    padding: 10px 0
+}
+map-app map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_input,
+map-window map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_input {
+    padding: 10px 0 13px
+}
+map-app map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_stroke,
+map-window map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_stroke {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    pointer-events: none
+}
+map-app map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_stroke::after,
+map-window map-ui-textbox.map_ui_stroked_textbox map-ui-element.map_ui_textbox_stroke::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    height: 3px;
+    transition: left ease .2s, right ease .2s
+}
+map-app map-ui-textbox.map_ui_stroked_textbox[focused] map-ui-element.map_ui_textbox_stroke::after,
+map-window map-ui-textbox.map_ui_stroked_textbox[focused] map-ui-element.map_ui_textbox_stroke::after {
+    left: 0;
+    right: 0
+}
+map-app map-ui-textbox.map_ui_simple_textbox,
+map-app map-ui-textbox.map_ui_highlighted_textbox,
+map-window map-ui-textbox.map_ui_simple_textbox,
+map-window map-ui-textbox.map_ui_highlighted_textbox {
+    border-radius: 3px
+}
+map-app map-ui-textbox.map_ui_simple_textbox,
+map-window map-ui-textbox.map_ui_simple_textbox {
+    border: solid 1px
+}
+map-app map-ui-textbox.map_ui_highlighted_textbox map-ui-element.map_ui_textbox_input,
+map-app map-ui-textbox.map_ui_highlighted_textbox[placeholder]::before,
+map-window map-ui-textbox.map_ui_highlighted_textbox map-ui-element.map_ui_textbox_input,
+map-window map-ui-textbox.map_ui_highlighted_textbox[placeholder]::before {
+	padding: 11px 13px
+}
+map-app map-ui-combobox,
+map-window map-ui-combobox {
+	align-items: center;
+	width: 248px;
+	border: solid 1px;
+    border-radius: 3px
+}
+map-app map-ui-combobox map-ui-animation,
+map-app map-ui-combobox map-ui-element.map_ui_combobox_value,
+map-app map-ui-combobox map-ui-element.map_ui_combobox_icon,
+map-window map-ui-combobox map-ui-animation,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_value,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_icon {
+	pointer-events: none
+}
+map-app map-ui-combobox map-ui-animation,
+map-window map-ui-combobox map-ui-animation {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_value,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_value {
+	flex: 1;
+	padding: 10px 0 10px 12px;
+	text-align: initial
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_icon,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_icon {
+	padding: 0 12px
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_icon map-ui-graphic,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_icon map-ui-graphic {
+	width: 16px;
+	height: 8px
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_options,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_options {
+	position: absolute;
+	top: 34px;
+	left: -1px;
+	right: -1px;
+	height: 0;
+	padding: 0;
+	overflow: hidden;
+	transition: height ease .2s, padding ease .2s
+}
+map-app map-ui-combobox[selecting] map-ui-element.map_ui_combobox_options,
+map-window map-ui-combobox[selecting] map-ui-element.map_ui_combobox_options {
+	padding: 8px 0
+}
+map-app map-ui-combobox map-ui-element.map_ui_combobox_options map-ui-element,
+map-window map-ui-combobox map-ui-element.map_ui_combobox_options map-ui-element {
+	display: block;
+	padding: 8px 14px;
+	text-align: initial
+}
+map-window map-window-title {
+	margin: 0 30px 18px 0;
+	font-weight: bold
+}
+map-window map-ui-button#window_close_button {
+	position: absolute;
+	top: 12px;
+	right: 12px
+}
+map-window map-ui-button#window_close_button map-ui-element.map_ui_button_content {
+	padding: 5px;
+	width: 16px;
+	height: 16px
+}
+map-window map-ui-button#window_close_button map-ui-element.map_ui_button_content map-ui-graphic {
+	width: 16px;
+	height: 16px;
+	vertical-align: top
+}
+map-window .map_localechange_language_list {
+	padding: 15px 30px 0
+}
+map-window .map_localechange_language_list li {
+	margin: 0 0 12px;
+	font-size: .95em
+}
+map-app map-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5000;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+map-app[initialization] map-loading {
+    transition: opacity ease 1s
+}
+map-app[initialization-finished] map-loading {
+    opacity: 0;
+    pointer-events: none
+}
+map-app map-loading map-ui-graphic {
+    width: 250px
+}
+map-app map-loading map-ui-graphic svg {
+    stroke-width: 0
+}
+map-app map-loading .loading_status {
+    position: absolute;
+    bottom: calc(8vh);
+    width: 100%
+}
+map-app map-loading map-ui-spinner,
+map-window map-loading map-ui-spinner {
+    margin: 0 auto
+}
+map-app map-loading .loading_message {
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+    min-height: 50px
+}
+map-app map-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 0;
+    transition: height ease .4s
+}
+map-app map-progress div.map_progress_bar_inner {
+    height: 100%
+}
+map-app[processing] map-progress,
+map-app[loading] map-progress {
+    height: 4px
+}
+map-app[loading] map-progress div.map_progress_bar_inner {
+    width: 0;
+    transition: width ease .4s
+}
+map-app map-head {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+    z-index: 1000
+}
+map-app map-head .map_head_container {
+    height: 60px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between
+}
+map-app map-head .map_head_navigation_container {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+map-app map-head map-logo {
+    /*width: 222px;
+    height: 18px;*/
+    margin: 0 20px;
+    display: block
+}
+map-app map-head map-logo map-ui-graphic {
+    width: 222px;
+    height: 18px
+}
+map-app map-head map-navigation {
+    display: flex;
+    flex-direction: row
+}
+map-app map-head map-navigation map-navigation-item {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex
+}
+map-app map-head map-navigation map-navigation-item a {
+    text-decoration: none;
+}
+map-app map-head map-navigation map-navigation-item map-ui-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1
+}
+map-app map-head map-navigation map-navigation-item map-ui-element {
+    font-size: 18px;
+    /*text-transform: uppercase;*/
+    height: 60px;
+    padding: 0 20px;
+    display: inline-flex;
+    align-items: center
+}
+map-app map-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+	bottom: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 1000
+}
+map-app map-footer .map_footer_container {
+    height: 50px;
+    margin: 0 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 0.75em
+}
+map-app map-headline {
+	display: block;
+	padding: 35px 0 0 0;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center
+}
+map-app map-module#map_features map-features-row,
+map-app map-module#map_ui map-uitest-row {
+	display: block;
+	padding: 25px 0;
+	text-align: center
+}
+map-app map-module#map_features map-features-row h3,
+map-app map-module#map_features map-features-row p,
+map-app map-module#map_ui map-uitest-row h3,
+map-app map-module#map_ui map-uitest-row p {
+	padding: 0 10px 14px
+}
+map-app map-module#map_features map-features-row p.map_row_subtext,
+map-app map-module#map_ui map-uitest-row p.map_row_subtext {
+	padding: 14px 10px
+}
+map-app map-test-element {
+	padding: 16px;
+	display: inline-block;
+	border: dashed 4px rgb(0, 0, 0)
+}
+map-app map-module#map_test_module {
+	padding: 20px;
+	border: dashed 4px rgb(0, 0, 0)
+}
+map-app map-test-element h3 {
+	padding: 0 0 12px !important
+}
+map-app map-test-element p {
+	padding: 0 !important
+}
+map-app map-module#map_features map-test-element,
+map-app map-module#map_features map-module#map_test_module {
+	margin: 0 0 14px
+}
+map-app map-module#map_ui map-uitest-row map-ui-button,
+map-app map-module#map_ui map-uitest-row map-ui-checkbox,
+map-app map-module#map_ui map-uitest-row map-ui-radiobutton,
+map-app map-module#map_ui map-uitest-row map-ui-textbox {
+	margin: 0 10px
+}
+map-app map-module#map_ui map-uitest-row map-ui-button.map_uitest_circle_button map-ui-graphic {
+	width: 25px;
+	height: 25px
+}
+map-app map-module#map_ui map-uitest-row map-ui-textbox {
+    vertical-align: top
+}
+map-app map-module#map_intro map-intro {
+    padding: 30px 0;
+    display: block;
+    font-size: 1.1em;
+    text-align: center
+}
+map-app map-module#map_intro map-intro .intro_title {
+    padding: 30px 0;
+    font-size: 4em
+}
+map-window#map_testwindow {
+	width: 520px
+}
+map-window#map_testwindow .map_testwindow_content {
+	padding: 25px 0 40px;
+	text-align: center
+}
+map-window#map_testwindow .map_testwindow_content h1 {
+	padding: 0 0 12px
+}
+map-app map-localebox {
+	margin: 0 20px 0 0;
+	padding: 4px 8px;
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+	cursor: pointer;
+	opacity: .6;
+	transition: opacity ease .2s
+}
+map-app map-localebox:hover,
+map-app map-localebox:focus {
+	opacity: 1
+}
+map-app map-localebox .map_localebox_icon map-ui-graphic {
+	width: 20px;
+	height: 20px;
+	margin: 0 12px 0 0
+}
+map-app map-localebox .map_localebox_icon map-ui-graphic svg {
+	fill: transparent;
+	stroke: var(--map-primary-text-color);
+	stroke-width: 1px
+}
+map-app map-localebox .map_localebox_text {
+	font-size: 1.15em
+}
