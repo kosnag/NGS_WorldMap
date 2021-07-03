@@ -135,5 +135,13 @@
 	"mapTowerSide3b": "Clear without being incapacitated 5 times",
 	"mapTowerSide3c": "Obtain 5 Point Cubes",
 
-	"mapTowerSideF": "Complete all Side Missions and clear"
+	"mapTowerSideF": "Complete all Side Missions and clear",
+
+	"mapUrgentTitle": "Urgent Quest",
+	
+	"mapUrgentName1": "Command DOLLS Suppression Op",
+	"mapUrgentMain1": "Defeat the Command DOLLS unit!",
+
+	"mapUrgentName2": "Nex Vera Suppression Op",
+	"mapUrgentMain2": "Defeat the Nex Vera!"
 }

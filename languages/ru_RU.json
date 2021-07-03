@@ -36,7 +36,7 @@
 	"mapShellTitle": "Саппа тюрбан ракушка Эарио",
 	"mapTurnipTitle": "Гатцу кабурана Эарио",
 
-    "mapBoxesTitle" : "Containers",
+    "mapBoxesTitle" : "Контейнеры",
 	"mapRedBoxTitle": "Контейнер с предметами [Красный]",
 	"mapWhiteBoxTitle": "Контейнер с предметами [Белый]",
 	"mapGoldBoxTitle": "Контейнер с предметами [Золотой]",
@@ -135,5 +135,13 @@
 	"mapTowerSide3b": "Пройдите менее чем с 5 смертями",
 	"mapTowerSide3c": "Получите 5 очков и пройдите",
 
-	"mapTowerSideF": "Complete all Side Missions and clear"
+	"mapTowerSideF": "Завершите доп-миссии и пройдите",
+
+	"mapUrgentTitle": "Срочный квест",
+	
+	"mapUrgentName1": "Карательная экспедиция на контролирующих DOLLS",
+	"mapUrgentMain1": "Одолейте контролирующую боевую еденицу!",
+
+	"mapUrgentName2": "Карательная экспедиция на Некс Вера",
+	"mapUrgentMain2": "Одолейте Некс Вера!"
 }

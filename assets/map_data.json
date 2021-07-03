@@ -54,6 +54,10 @@
 				{"coordinates":[5740,1043],"id":"t-2","popup":true,"tooltip":true},
 				{"coordinates":[3914,5346],"id":"t-3","popup":true,"tooltip":true}
 
+			],
+			"urgent": [
+				{"coordinates":[5984,1772],"id":"uq-1","popup":true,"tooltip":true},
+				{"coordinates":[5201,3144],"id":"uq-2","popup":false,"tooltip":true}
 			]
 		},
 		"minerals": {
@@ -67,7 +71,8 @@
 	"map_category_strings": {
 		"main": {
 			"cocoon": "mapCocoonTitle",
-			"tower": "mapTowerTitle"
+			"tower": "mapTowerTitle",
+			"urgent": "mapUrgentTitle"
 		},
 		"food": {
 			"apple": "mapAppleTitle",
@@ -110,6 +115,10 @@
 				"t-1": "mapTowerName1",
 				"t-2": "mapTowerName2",
 				"t-3": "mapTowerName3"
+			},
+			"urgent": {
+				"uq-1": "mapUrgentName1",
+				"uq-2": "mapUrgentName2"
 			}
 		}
 	},
@@ -261,6 +270,42 @@
 						}
 					]
 				}
+			},
+			"urgent": {
+				"uq-1": {
+					"max_players": 8,
+					"recomended_bp": 1184,
+					"main_mission": "mapUrgentMain1",
+					"clear_reward": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 5000
+						}
+					],
+					"next_clear_reward": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 2000
+						}
+					]
+				},
+				"uq-2": {
+					"max_players": 8,
+					"recomended_bp": 1184,
+					"main_mission": "mapUrgentMain2",
+					"clear_reward": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 5000
+						}
+					],
+					"next_clear_reward": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 2000
+						}
+					]
+				}
 			}
 		}
 	},
@@ -271,7 +316,11 @@
 		},
 		"sections": false,
 		"main": {
-			"cocoon": false
+			"ryuker": false,
+			"cocoon": false,
+			"tower": false,
+			"mag": false,
+			"urgent": false
 		},
 		"minerals": {
 			"monotite": false,
