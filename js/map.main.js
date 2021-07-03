@@ -580,51 +580,93 @@ var map_app = new nekoapp({
                                             },
                                             text: nekoapp.create.localizedString(map_app, "mapSectionsOff")
                                         }),
-                                menu_sections_body: nekoapp.create.element(map_app,"div",{
-                                    class: "d-flex my-3"
+                                
+                                menu_landmarks_body: nekoapp.create.element(map_app,"div",{
+                                    class: "my-3"
                                 }),
-                                    menu_sections_desc : nekoapp.create.element(map_app,"div",{
-                                        class: "h5 text-light align-self-center",
-                                        text: "<i class='fas fa-map'></i> "
+                                    menu_landmarks_desc: nekoapp.create.element(map_app,"div",{
+                                        class: "h5 text-light text-center mb-3",
+                                        text: "<i class='fas fa-landmark'></i> "
                                     }),
-                                    menu_sectionsButtons : nekoapp.create.element(map_app,"div",{
-                                        class: "btn-group ms-auto",
-                                        attr: {
-                                            "role": "group"
-                                        }
+                                    menu_landmarksButton_group: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex",
                                     }),
-                                        menu_sectionsButton_On1 : nekoapp.create.element(map_app,"input",{
+                                        menu_landmarksButton_cocoon_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
-                                            id: "sectionsOn",
+                                            id: "cocoonCheckbox",
                                             attr: {
-                                                "type": "radio",
-                                                "name": "sections",
+                                                "type": "checkbox",
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_sectionsButton_On2 : nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue",
+                                        menu_landmarksButton_cocoon_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
-                                                "for": "sectionsOn"
+                                                "for": "cocoonCheckbox"
                                             },
-                                            text: nekoapp.create.localizedString(map_app, "mapSectionsOn")
+                                            text: "<img src='assets/markers/landmarks/cocoon.png'>"
                                         }),
-                                        menu_sectionsButton_Off1 : nekoapp.create.element(map_app,"input",{
+                                        menu_landmarksButton_tower_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
-                                            id: "sectionsOff",
+                                            id: "towerCheckbox",
                                             attr: {
-                                                "type": "radio",
-                                                "name": "sections",
+                                                "type": "checkbox",
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_sectionsButton_Off2 : nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue",
+                                        menu_landmarksButton_tower_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
-                                                "for": "sectionsOff"
+                                                "for": "towerCheckbox"
                                             },
-                                            text: nekoapp.create.localizedString(map_app, "mapSectionsOff")
+                                            text: "<img src='assets/markers/landmarks/tower.png'>"
                                         }),
+                                        menu_landmarksButton_ryuker_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "ryukerCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_landmarksButton_ryuker_2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "ryukerCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/landmarks/ryuker.png'>"
+                                        }),
+                                        menu_landmarksButton_mag_1 : nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "magCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_landmarksButton_mag_2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "magCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/landmarks/mag.png'>"
+                                        }),
+                                        menu_landmarksButton_urgent_1 : nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "urgentCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_landmarksButton_urgent_2 : nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "urgentCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/landmarks/urgent.png'>"
+                                        }),
+                                
                                 menu_minerals_body: nekoapp.create.element(map_app,"div",{
                                     class: "my-3"
                                 }),
@@ -637,7 +679,7 @@ var map_app = new nekoapp({
                                     }),
                                         menu_mineralsButton_monotite_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
-                                            id: "monititeCheckbox",
+                                            id: "monotiteCheckbox",
                                             attr: {
                                                 "type": "checkbox",
                                                 "autocomplete": "off"
@@ -646,7 +688,7 @@ var map_app = new nekoapp({
                                         menu_mineralsButton_monotite_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
-                                                "for": "monititeCheckbox"
+                                                "for": "monotiteCheckbox"
                                             },
                                             text: "<img src='assets/markers/minerals/monotite.png'>"
                                         }),
@@ -708,7 +750,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "phQuartzCheckbox"
                                             },
-                                            text: "<img src='assets/markers/minerals/photonQuartz.png'>"
+                                            text: "<img src='assets/markers/minerals/urgent.png'>"
                                         })
 
                 };
