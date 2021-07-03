@@ -143,5 +143,28 @@
 	"mapUrgentMain1": "Одолейте контролирующую боевую еденицу!",
 
 	"mapUrgentName2": "Карательная экспедиция на Некс Вера",
-	"mapUrgentMain2": "Одолейте Некс Вера!"
+	"mapUrgentMain2": "Одолейте Некс Вера!",
+
+
+	"mapRyukerTitle": "Ryuker Device",
+	"mapRyukerName1": "Водопад Балфлоу",
+	"mapRyukerName2": "Гора Магнус",
+	"mapRyukerName3": "Гора Пикотт",
+	"mapRyukerName4": "Равнина Харфана: Запад",
+	"mapRyukerName5": "Централ-Сити",
+	"mapRyukerName6": "Равнина Харфана: Восток",
+	"mapRyukerName7": "Болото Харфана",
+	"mapRyukerName8": "Плоскогорье Альто-Лани",
+	"mapRyukerName9": "Утёс Крайано",
+	"mapRyukerName10": "Остров Канаи",
+	"mapRyukerName11": "Руины Эарио",
+	"mapRyukerName12": "Руины лаборатории Ванфорд",
+	"mapRyukerName13": "Озеро Хальфия",
+	"mapRyukerName14": "Лес Резол",
+
+
+	"mapMagTitle": "Mag региона",
+	"mapMagName1": "Эксперт",
+	"mapMagName2": "Priceless",
+	"mapMagName3": "Invincible"
 }
