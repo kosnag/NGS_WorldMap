@@ -712,16 +712,6 @@ var map_app = new nekoapp({
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 				
 				// BIND MAP MENU BUTTONS EVENTS  -- SVGvsevolod
-				elements.menu_versionButton_Global1.addEventListener("change",function(){
-					if(map.user_settings.version === "jp")
-						map.user_settings.version = "na";
-					map.save_settings();
-				});
-				elements.menu_versionButton_Japanese1.addEventListener("change",function(){
-					if(map.user_settings.version === "na")
-						map.user_settings.version = "jp";
-					map.save_settings();
-				});
 				elements.menu_sectionsButton_On1.addEventListener("change",function(){
 					if(!map.user_settings.sections)
 						map.user_settings.sections = true;
@@ -784,7 +774,7 @@ var map_app = new nekoapp({
 						map_app.modules.map_module.moduleContents.menu_sectionsButton_On1.setAttribute("checked","");
 					else
 						map_app.modules.map_module.moduleContents.menu_sectionsButton_Off1.setAttribute("checked","");
-                        
+
 					if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
 					if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
 					if(map.user_settings.minerals.trinite)map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","");
