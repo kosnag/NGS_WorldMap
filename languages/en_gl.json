@@ -143,5 +143,28 @@
 	"mapUrgentMain1": "Defeat the Command DOLLS unit!",
 
 	"mapUrgentName2": "Nex Vera Suppression Op",
-	"mapUrgentMain2": "Defeat the Nex Vera!"
+	"mapUrgentMain2": "Defeat the Nex Vera!",
+
+
+	"mapRyukerTitle": "Ryuker Device",
+	"mapRyukerName1": "Balflow Falls",
+	"mapRyukerName2": "Mt. Magnus",
+	"mapRyukerName3": "Mt. Piccolt",
+	"mapRyukerName4": "Halphana Plains: West",
+	"mapRyukerName5": "Central City",
+	"mapRyukerName6": "Halphana Plains: East",
+	"mapRyukerName7": "Halphana Wetlands",
+	"mapRyukerName8": "Altolani Plateau",
+	"mapRyukerName9": "Cryano Cliffs",
+	"mapRyukerName10": "Lakau Coast",
+	"mapRyukerName11": "Aelio Town Ruins",
+	"mapRyukerName12": "Vanford Laboratory Ruins",
+	"mapRyukerName13": "Halphia Lake",
+	"mapRyukerName14": "Resol Forest",
+
+
+	"mapMagTitle": "Region Mag",
+	"mapMagName1": "Expert",
+	"mapMagName2": "Priceless",
+	"mapMagName3": "Invincible"
 }
