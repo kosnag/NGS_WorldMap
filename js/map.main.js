@@ -722,40 +722,36 @@ var map_app = new nekoapp({
 						map.user_settings.sections = false;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_monotite_1.addEventListener("change",function(){
-					map.toogle_markers(map.map_markers.minerals.monotite);
+                
+				elements.menu_mineralsButton_monotite_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.monotite);
 					if(map.user_settings.minerals.monotite)
 						map.user_settings.minerals.monotite = false;
 					else
 						map.user_settings.minerals.monotite = true;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_dualomite_1.addEventListener("change",function(){
-					map.toogle_markers(map.map_markers.minerals.dualomite);
+				elements.menu_mineralsButton_dualomite_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.dualomite);
 					if(map.user_settings.minerals.dualomite)
 						map.user_settings.minerals.dualomite = false;
 					else
 						map.user_settings.minerals.dualomite = true;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_trinite_1.addEventListener("change",function(){
-					map.toogle_markers(map.map_markers.minerals.trinite);
+				elements.menu_mineralsButton_trinite_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.trinite);
 					if(map.user_settings.minerals.trinite)
 						map.user_settings.minerals.trinite = false;
 					else
 						map.user_settings.minerals.trinite = true;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_phChunk_1.addEventListener("change",function(){
-					map.toogle_markers(map.map_markers.minerals.phChunk);
+				elements.menu_mineralsButton_phChunk_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.phChunk);
 					if(map.user_settings.minerals.phChunk)
 						map.user_settings.minerals.phChunk = false;
 					else
 						map.user_settings.minerals.phChunk = true;
 					map.save_settings();
 				});
-				elements.menu_mineralsButton_phQuartz_1.addEventListener("change",function(){
-					map.toogle_markers(map.map_markers.minerals.phQuartz);
+				elements.menu_mineralsButton_phQuartz_1.addEventListener("change",function(){map.toogle_markers(map.map_markers.minerals.phQuartz);
 					if(map.user_settings.minerals.phQuartz)
 						map.user_settings.minerals.phQuartz = false;
 					else
