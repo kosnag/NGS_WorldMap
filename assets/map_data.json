@@ -192,7 +192,7 @@
 			"cocoon": {
 				"c-1": {
 					"max_players": 4,
-					"recomended_bp": 835,
+					"recomended_bp": 835,	
 					"description": "mapCocoonDesc1",
 					"main_mission": "mapCocoonMain1",
 					"side_missions": ["mapCocoonSide1a","mapCocoonSide1b","mapCocoonSide1c","mapCocoonSideF"],

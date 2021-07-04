@@ -806,7 +806,203 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "phQuartzCheckbox"
                                             },
-                                            text: "<img src='assets/markers/minerals/urgent.png'>"
+                                            text: "<img src='assets/markers/minerals/photonQuartz.png'>"
+                                        }),
+                                menu_food_body: nekoapp.create.element(map_app,"div",{
+                                    class: "my-3"
+                                }),
+                                    menu_food_desc: nekoapp.create.element(map_app,"div",{
+                                        class: "h5 text-light text-center mb-3",
+                                        text: "<i class='fas fa-box'></i> "
+                                    }),
+                                    menu_foodButton_group1: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex",
+                                    }),
+                                        menu_foodButton_apple_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "appleCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_apple_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "appleCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioApple.png'>"
+                                        }),
+                                        menu_foodButton_banana_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "bananaCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_banana_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "bananaCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioBanana.png'>"
+                                        }),
+                                        menu_foodButton_clam_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "clamCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_clam_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "clamCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioClam.png'>"
+                                        }),
+                                        menu_foodButton_crab_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "crabCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_crab_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "crabCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioCrab.png'>"
+                                        }),
+                                    menu_foodButton_group2: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex",
+                                    }),
+                                        menu_foodButton_herb_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "herbCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_herb_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "herbCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioHerb.png'>"
+                                        }),
+                                        menu_foodButton_lobster_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "lobsterCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_lobster_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "lobsterCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioLobster.png'>"
+                                        }),
+                                        menu_foodButton_mushroom_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "mushroomCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_mushroom_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "mushroomCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioMushroom.png'>"
+                                        }),
+                                        menu_foodButton_peach_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "peachCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_peach_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "peachCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioPeach.png'>"
+                                        }),
+                                    menu_foodButton_group3: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex",
+                                    }),
+                                        menu_foodButton_pear_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "pearCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_pear_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "pearCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioPear.png'>"
+                                        }),
+                                        menu_foodButton_tomato_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "tomatoCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_tomato_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "tomatoCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioTomato.png'>"
+                                        }),
+                                        menu_foodButton_shell_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "shellCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_shell_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "shellCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioTurbanShell.png'>"
+                                        }),
+                                        menu_foodButton_turnip_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "turnipCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_foodButton_turnip_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "turnipCheckbox"
+                                            },
+                                            text: "<img src='assets/markers/food/aelioTurnip.png'>"
                                         })
 
                 };
@@ -867,6 +1063,38 @@ var map_app = new nekoapp({
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_phChunk_2)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_phQuartz_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_phQuartz_2)
+                                elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
+
+                                elements.map_menu_body.appendChild(elements.menu_food_body)
+                                    elements.menu_food_body.appendChild(elements.menu_food_desc)
+                                        elements.menu_food_desc.appendChild(nekoapp.create.localizedString(map_app, "mapFoodTitle"))
+                                    elements.menu_food_body.appendChild(elements.menu_foodButton_group1)
+                                        elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_apple_1)
+                                        elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_apple_2)
+                                        elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_banana_1)
+                                        elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_banana_2)
+                                        elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_clam_1)
+                                        elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_clam_2)
+                                        elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_crab_1)
+                                        elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_crab_2)
+                                    elements.menu_food_body.appendChild(elements.menu_foodButton_group2)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_herb_1)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_herb_2)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_lobster_1)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_lobster_2)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_mushroom_1)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_mushroom_2)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_peach_1)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_peach_2)
+                                    elements.menu_food_body.appendChild(elements.menu_foodButton_group2)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_pear_1)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_pear_2)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_tomato_1)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_tomato_2)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_shell_1)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_shell_2)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_turnip_1)
+                                        elements.menu_foodButton_group2.appendChild(elements.menu_foodButton_turnip_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 				
 				// BIND MAP MENU BUTTONS EVENTS  -- SVGvsevolod
