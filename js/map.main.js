@@ -330,7 +330,7 @@ var map_app = new nekoapp({
                     }
                 ),
                 init : function(){
-                    setTimeout(function(){map.invalidateSize(true);}, 250);
+                    setTimeout(function(){map.invalidateSize(true);}, 300)
                     // LANDMARKS
                     // IF FOR CHECKBOXES
                     if (localStorage.getItem('landmarks')){
@@ -536,7 +536,7 @@ var map_app = new nekoapp({
                                     text: nekoapp.create.localizedString(map_app, "mapHeader")
                                 }),
                                 menu_sections_body: nekoapp.create.element(map_app,"div",{
-                                    class: "d-flex my-3"
+                                    class: "d-flex my-3 justify-content-center"
                                 }),
                                     menu_sections_desc : nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light align-self-center",
@@ -605,7 +605,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "cocoonCheckbox"
                                             },
-                                            text: "<img src='assets/markers/landmarks/cocoon.png'>"
+                                            text: "<img width='48px' src='assets/markers/landmarks/cocoon.png'>"
                                         }),
                                         menu_landmarksButton_tower_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -620,7 +620,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "towerCheckbox"
                                             },
-                                            text: "<img src='assets/markers/landmarks/tower.png'>"
+                                            text: "<img width='48px' src='assets/markers/landmarks/tower.png'>"
                                         }),
                                         menu_landmarksButton_ryuker_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -635,7 +635,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "ryukerCheckbox"
                                             },
-                                            text: "<img src='assets/markers/landmarks/ryuker.png'>"
+                                            text: "<img width='48px' src='assets/markers/landmarks/ryuker.png'>"
                                         }),
                                         menu_landmarksButton_mag_1 : nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -650,7 +650,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "magCheckbox"
                                             },
-                                            text: "<img src='assets/markers/landmarks/mag.png'>"
+                                            text: "<img width='48px' src='assets/markers/landmarks/mag.png'>"
                                         }),
                                         menu_landmarksButton_urgent_1 : nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -665,7 +665,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "urgentCheckbox"
                                             },
-                                            text: "<img src='assets/markers/landmarks/urgent.png'>"
+                                            text: "<img width='48px' src='assets/markers/landmarks/urgent.png'>"
                                         }),
                                 
                                 menu_boxes_body: nekoapp.create.element(map_app,"div",{
@@ -676,7 +676,7 @@ var map_app = new nekoapp({
                                         text: "<i class='fas fa-box'></i> "
                                     }),
                                     menu_boxesButton_group: nekoapp.create.element(map_app,"button-group",{
-                                        class: "d-flex",
+                                        class: "d-flex justify-content-center",
                                     }),
                                         menu_boxesButton_whiteBox_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -691,7 +691,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "whiteBoxCheckbox"
                                             },
-                                            text: "<img src='assets/markers/containers/whiteBox.png'>"
+                                            text: "<img width='48px' src='assets/markers/containers/whiteBox.png'>"
                                         }),
                                         menu_boxesButton_redBox_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -706,7 +706,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "redBoxCheckbox"
                                             },
-                                            text: "<img src='assets/markers/containers/redBox.png'>"
+                                            text: "<img width='48px' src='assets/markers/containers/redBox.png'>"
                                         }),
                                         menu_boxesButton_goldBox_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -721,7 +721,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "goldBoxCheckbox"
                                             },
-                                            text: "<img src='assets/markers/containers/goldBox.png'>"
+                                            text: "<img width='48px' src='assets/markers/containers/goldBox.png'>"
                                         }),
                                 
                                 menu_minerals_body: nekoapp.create.element(map_app,"div",{
@@ -732,7 +732,7 @@ var map_app = new nekoapp({
                                         text: "<i class='fas fa-gem'></i> "
                                     }),
                                     menu_mineralsButton_group: nekoapp.create.element(map_app,"button-group",{
-                                        class: "d-flex",
+                                        class: "d-flex justify-content-center",
                                     }),
                                         menu_mineralsButton_monotite_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -747,7 +747,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "monotiteCheckbox"
                                             },
-                                            text: "<img src='assets/markers/minerals/monotite.png'>"
+                                            text: "<img width='48px' src='assets/markers/minerals/monotite.png'>"
                                         }),
                                         menu_mineralsButton_dualomite_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -762,7 +762,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "dualomiteCheckbox"
                                             },
-                                            text: "<img src='assets/markers/minerals/dualomite.png'>"
+                                            text: "<img width='48px' src='assets/markers/minerals/dualomite.png'>"
                                         }),
                                         menu_mineralsButton_trinite_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -777,7 +777,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "triniteCheckbox"
                                             },
-                                            text: "<img src='assets/markers/minerals/trinite.png'>"
+                                            text: "<img width='48px' src='assets/markers/minerals/trinite.png'>"
                                         }),
                                         menu_mineralsButton_phChunk_1 : nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -792,7 +792,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "phChunkCheckbox"
                                             },
-                                            text: "<img src='assets/markers/minerals/photonChunk.png'>"
+                                            text: "<img width='48px' src='assets/markers/minerals/photonChunk.png'>"
                                         }),
                                         menu_mineralsButton_phQuartz_1 : nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -807,7 +807,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "phQuartzCheckbox"
                                             },
-                                            text: "<img src='assets/markers/minerals/photonQuartz.png'>"
+                                            text: "<img width='48px' src='assets/markers/minerals/photonQuartz.png'>"
                                         }),
                                 menu_food_body: nekoapp.create.element(map_app,"div",{
                                     class: "my-3"
@@ -817,7 +817,7 @@ var map_app = new nekoapp({
                                         text: "<i class='fas fa-apple-alt'></i> "
                                     }),
                                     menu_foodButton_group1: nekoapp.create.element(map_app,"button-group",{
-                                        class: "d-flex",
+                                        class: "d-flex justify-content-center",
                                     }),
                                         menu_foodButton_apple_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -832,7 +832,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "appleCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioApple.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioApple.png'>"
                                         }),
                                         menu_foodButton_banana_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -847,7 +847,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "bananaCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioBanana.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioBanana.png'>"
                                         }),
                                         menu_foodButton_clam_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -862,7 +862,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "clamCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioClam.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioClam.png'>"
                                         }),
                                         menu_foodButton_crab_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -877,10 +877,10 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "crabCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioCrab.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioCrab.png'>"
                                         }),
                                     menu_foodButton_group2: nekoapp.create.element(map_app,"button-group",{
-                                        class: "d-flex",
+                                        class: "d-flex justify-content-center my-2",
                                     }),
                                         menu_foodButton_herb_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -895,7 +895,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "herbCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioHerb.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioHerb.png'>"
                                         }),
                                         menu_foodButton_lobster_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -910,7 +910,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "lobsterCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioLobster.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioLobster.png'>"
                                         }),
                                         menu_foodButton_mushroom_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -925,7 +925,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "mushroomCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioMushroom.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioMushroom.png'>"
                                         }),
                                         menu_foodButton_peach_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -940,10 +940,10 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "peachCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioPeach.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioPeach.png'>"
                                         }),
                                     menu_foodButton_group3: nekoapp.create.element(map_app,"button-group",{
-                                        class: "d-flex",
+                                        class: "d-flex justify-content-center",
                                     }),
                                         menu_foodButton_pear_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -958,7 +958,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "pearCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioPear.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioPear.png'>"
                                         }),
                                         menu_foodButton_tomato_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -973,7 +973,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "tomatoCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioTomato.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioTomato.png'>"
                                         }),
                                         menu_foodButton_shell_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -988,7 +988,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "shellCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioTurbanShell.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioTurbanShell.png'>"
                                         }),
                                         menu_foodButton_turnip_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -1003,7 +1003,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "turnipCheckbox"
                                             },
-                                            text: "<img src='assets/markers/food/aelioTurnip.png'>"
+                                            text: "<img width='48px' src='assets/markers/food/aelioTurnip.png'>"
                                         })
 
                 };
@@ -1339,7 +1339,7 @@ var map_app = new nekoapp({
                         if(map.user_settings.minerals.phChunk)map_app.modules.map_module.moduleContents.menu_mineralsButton_phChunk_1.setAttribute("checked","");
                         if(map.user_settings.minerals.phQuartz)map_app.modules.map_module.moduleContents.menu_mineralsButton_phQuartz_1.setAttribute("checked","");
                         
-                        if(map.user_settings.food.apple)map_app.modules.map_module.moduleContents.menu_foodButton__1.setAttribute("checked","");
+                        if(map.user_settings.food.apple)map_app.modules.map_module.moduleContents.menu_foodButton_apple_1.setAttribute("checked","");
                         if(map.user_settings.food.banana)map_app.modules.map_module.moduleContents.menu_foodButton_banana_1.setAttribute("checked","");
                         if(map.user_settings.food.clam)map_app.modules.map_module.moduleContents.menu_foodButton_clam_1.setAttribute("checked","");
                         if(map.user_settings.food.crab)map_app.modules.map_module.moduleContents.menu_foodButton_crab_1.setAttribute("checked","");
@@ -1350,7 +1350,8 @@ var map_app = new nekoapp({
                         if(map.user_settings.food.pear)map_app.modules.map_module.moduleContents.menu_foodButton_pear_1.setAttribute("checked","");
                         if(map.user_settings.food.tomato)map_app.modules.map_module.moduleContents.menu_foodButton_tomato_1.setAttribute("checked","");
                         if(map.user_settings.food.shell)map_app.modules.map_module.moduleContents.menu_foodButton_shell_1.setAttribute("checked","");
-                        if(map.user_settings.food.turnip)map_app.modules.map_module.moduleContents.menu_foodButton_turnip_1.setAttribute("checked","");				});
+                        if(map.user_settings.food.turnip)map_app.modules.map_module.moduleContents.menu_foodButton_turnip_1.setAttribute("checked","");
+                    });
             },
             onLocaleChange : function(){
                 document.title = map_app.locale.strings.language_title;
