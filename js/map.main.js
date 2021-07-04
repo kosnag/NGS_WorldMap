@@ -292,7 +292,7 @@ var map_app = new nekoapp({
 
                                         let modal_content_body_button6 = document.createElement("button")
                                             modal_content_body_button6.setAttribute("type","button")
-                                            modal_content_body_button6.className = "btn btn-custom-blue btn-lg disabled"
+                                            modal_content_body_button6.className = "btn btn-custom-blue btn-lg"
                                             modal_content_body_button6.style = "position: relative;"
                                             modal_content_body_button6.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/pt-PT.svg' height='32px'> <img src='assets/flags/pt-BR.svg' height='32px'></span> Português"
                                             modal_content_body_button6.setAttribute("data-bs-dismiss","modal")
@@ -508,14 +508,15 @@ var map_app = new nekoapp({
                         attr : {
                             role : "alert"
                         },
-                        style: {display: "block", 
-                                margin: "0 auto",
-                                position: "absolute",
-                                top: "75px",
-                                left: "0",
-                                right: "0",
-                                width: "75%",
-                                "z-index": "8492"
+                        style: {
+                            display: "block", 
+                            margin: "0 auto",
+                            position: "absolute",
+                            top: "75px",
+                            left: "0",
+                            right: "0",
+                            width: "75%",
+                            "z-index": "8492"
                             }
                     }),
                     ngs_map : nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
