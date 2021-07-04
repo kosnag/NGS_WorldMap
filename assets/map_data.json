@@ -1,7 +1,7 @@
 {
 	"constants": {
 		"map_bounds": [[0,0],[7321,7321]],
-		"map_max_bounds": [[-1000,-1000],[8321,8321]]
+		"map_max_bounds": [[-1500,-1500],[8821,8821]]
 	},
 	"map_icons": {
 		"landmarks": {
