@@ -813,7 +813,7 @@ var map_app = new nekoapp({
                                 }),
                                     menu_food_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
-                                        text: "<i class='fas fa-box'></i> "
+                                        text: "<i class='fas fa-apple-alt'></i> "
                                     }),
                                     menu_foodButton_group1: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex",
