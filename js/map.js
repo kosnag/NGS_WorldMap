@@ -114,10 +114,30 @@ var map = {
 				},200);
 			}
 		});
-		let weekDay = new gergthrt
+		new Date().getUTCHours()+7
+		let weekDay = new Date().getUTCDay()
 		switch(weekDay){
-			case '1_monday':
-			break;
+			case '1':
+				alert('1')
+				break;
+			case '2':
+				alert('2')
+				break;
+			case '3':
+				alert('3')
+				break;
+			case '4':
+				alert('4')
+				break;
+			case '5':
+				alert('5')
+				break;
+			case '6':
+				alert('6')
+				break;
+			case '0':
+				alert('0')
+				break;
 		}
 	}
 };
