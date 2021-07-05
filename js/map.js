@@ -55,6 +55,34 @@ var map = {
 				for(var i in Object.keys(data))
 					map[Object.keys(data)[i]] = data[Object.keys(data)[i]];
 				
+				if(new Date().getUTCHours()>7) // если время большк семи часов
+					var day = new Date().getUTCDay(); // то сегодняшний день
+				else
+					var day = !new Date().getUTCDay()?6:new Date().getUTCDay()-1 // иначе вчерашний
+
+					switch(day){
+					case 1:
+						nekoapp.system.xhr().load("assets/data/1_monday.json",{onload: function(){var data = JSON.parse(this.responseText);for(var i in Object.keys(data))map[Object.keys(data)[i]] = data[Object.keys(data)[i]];}});
+						break;
+					case 2:
+						nekoapp.system.xhr().load("assets/data/2_tuesday.json",{onload: function(){var data = JSON.parse(this.responseText);for(var i in Object.keys(data))map[Object.keys(data)[i]] = data[Object.keys(data)[i]];}});
+						break;
+					case 3:
+						nekoapp.system.xhr().load("assets/data/3_wednesday.json",{onload: function(){var data = JSON.parse(this.responseText);for(var i in Object.keys(data))map[Object.keys(data)[i]] = data[Object.keys(data)[i]];}});
+						break;
+					case 4:
+						nekoapp.system.xhr().load("assets/data/4_thursday.json",{onload: function(){var data = JSON.parse(this.responseText);for(var i in Object.keys(data))map[Object.keys(data)[i]] = data[Object.keys(data)[i]];}});
+						break;
+					case 5:
+						nekoapp.system.xhr().load("assets/data/5_friday.json",{onload: function(){var data = JSON.parse(this.responseText);for(var i in Object.keys(data))map[Object.keys(data)[i]] = data[Object.keys(data)[i]];}});
+						break;
+					case 6:
+						nekoapp.system.xhr().load("assets/data/6_saturday.json",{onload: function(){var data = JSON.parse(this.responseText);for(var i in Object.keys(data))map[Object.keys(data)[i]] = data[Object.keys(data)[i]];}});
+						break;
+					case 0:
+						nekoapp.system.xhr().load("assets/data/7_sunday.json",{onload: function(){var data = JSON.parse(this.responseText);for(var i in Object.keys(data))map[Object.keys(data)[i]] = data[Object.keys(data)[i]];}});
+						break;
+				}
 				// INITIALIZE ICONS  -- SVGvsevolod
 				for(var i in Object.keys(map.map_icons))
 					for(var j in Object.keys(map.map_icons[Object.keys(map.map_icons)[i]]))
@@ -114,30 +142,5 @@ var map = {
 				},200);
 			}
 		});
-		new Date().getUTCHours()+7
-		let weekDay = new Date().getUTCDay()
-		switch(weekDay){
-			case '1':
-				alert('1')
-				break;
-			case '2':
-				alert('2')
-				break;
-			case '3':
-				alert('3')
-				break;
-			case '4':
-				alert('4')
-				break;
-			case '5':
-				alert('5')
-				break;
-			case '6':
-				alert('6')
-				break;
-			case '0':
-				alert('0')
-				break;
-		}
 	}
 };
