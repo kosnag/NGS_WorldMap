@@ -48,17 +48,24 @@ var map = {
 		localStorage.setItem("user_settings",JSON.stringify(map.user_settings));
 	},
 	init: function(additional_init){
+		// UNIVERSAL PARSE DATA FUNCTION  -- SVGvsevolod
+		var set_data = function(data,target){
+			for(var i in Object.keys(data)){
+				if(!target[Object.keys(data)[i]])
+					target[Object.keys(data)[i]] = {};
+				if(typeof data[Object.keys(data)[i]]==="object"&&!(data[Object.keys(data)[i]] instanceof Array))
+					set_data(data[Object.keys(data)[i]],target[Object.keys(data)[i]]);
+				else
+					target[Object.keys(data)[i]]=data[Object.keys(data)[i]];
+			}
+		};
 		// LOAD POPUP DATA  -- SVGvsevolod
 		nekoapp.system.xhr().load("assets/data/map.json",{
 			onload: function(){
-				var data = JSON.parse(this.responseText);
-				for(var i in Object.keys(data))
-					map[Object.keys(data)[i]] = data[Object.keys(data)[i]];
+				set_data(JSON.parse(this.responseText),map);
 				
 				var init2 = function(data,additional_init){	
-					var data = JSON.parse(data);
-					for(var i in Object.keys(data))
-						Object.assign(map[Object.keys(data)[i]],data[Object.keys(data)[i]])
+					set_data(data,map);
 
 					// INITIALIZE ICONS  -- SVGvsevolod
 					for(var i in Object.keys(map.map_icons))
@@ -123,28 +130,27 @@ var map = {
 					var day = !new Date().getUTCDay()?6:new Date().getUTCDay()-1 // иначе вчерашний
 					switch(day){
 					case 1:
-						nekoapp.system.xhr().load("assets/data/1_monday.json",{onload: function(){init2(this.responseText,additional_init)}});
+						nekoapp.system.xhr().load("assets/data/1_monday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 						break;
 					case 2:
-						nekoapp.system.xhr().load("assets/data/2_tuesday.json",{onload: function(){init2(this.responseText,additional_init)}});
+						nekoapp.system.xhr().load("assets/data/2_tuesday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 						break;
 					case 3:
-						nekoapp.system.xhr().load("assets/data/3_wednesday.json",{onload: function(){init2(this.responseText,additional_init)}});
+						nekoapp.system.xhr().load("assets/data/3_wednesday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 						break;
 					case 4:
-						nekoapp.system.xhr().load("assets/data/4_thursday.json",{onload: function(){init2(this.responseText,additional_init)}});
+						nekoapp.system.xhr().load("assets/data/4_thursday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 						break;
 					case 5:
-						nekoapp.system.xhr().load("assets/data/5_friday.json",{onload: function(){init2(this.responseText,additional_init)}});
+						nekoapp.system.xhr().load("assets/data/5_friday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 						break;
 					case 6:
-						nekoapp.system.xhr().load("assets/data/6_saturday.json",{onload: function(){init2(this.responseText,additional_init)}});
+						nekoapp.system.xhr().load("assets/data/6_saturday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 						break;
 					case 0:
-						nekoapp.system.xhr().load("assets/data/7_sunday.json",{onload: function(){init2(this.responseText,additional_init)}});
+						nekoapp.system.xhr().load("assets/data/7_sunday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 						break;
 				}
-				
 			}
 		});
 	}
