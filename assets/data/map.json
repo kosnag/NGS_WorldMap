@@ -1,0 +1,392 @@
+{
+	"constants": {
+		"map_bounds": [[0,0],[7321,7321]],
+		"map_max_bounds": [[-1500,-1500],[8821,8821]]
+	},
+	"map_icons": {
+		"landmarks": {
+			"cocoon": {"iconUrl": "assets/markers/landmarks/cocoon.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
+			"mag": {"iconUrl": "assets/markers/landmarks/mag.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
+			"ryuker": {"iconUrl": "assets/markers/landmarks/ryuker.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
+			"tower": {"iconUrl": "assets/markers/landmarks/tower.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
+			"urgent": {"iconUrl": "assets/markers/landmarks/urgent.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]}
+		},
+		"minerals": {
+			"monotite": {"iconUrl": "assets/markers/minerals/monotite.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"dualomite": {"iconUrl": "assets/markers/minerals/dualomite.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"trinite": {"iconUrl": "assets/markers/minerals/trinite.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"phChunk": {"iconUrl": "assets/markers/minerals/photonChunk.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"phQuartz": {"iconUrl": "assets/markers/minerals/photonQuartz.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]}
+		},
+		"food": {
+			"apple": {"iconUrl": "assets/markers/food/aelioApple.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"banana": {"iconUrl": "assets/markers/food/aelioBanana.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"clam": {"iconUrl": "assets/markers/food/aelioClam.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"crab": {"iconUrl": "assets/markers/food/aelioCrab.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"herb": {"iconUrl": "assets/markers/food/aelioHerb.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"lobster": {"iconUrl": "assets/markers/food/aelioLobster.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"mushroom": {"iconUrl": "assets/markers/food/aelioMushroom.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"peach": {"iconUrl": "assets/markers/food/aelioPeach.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"pear": {"iconUrl": "assets/markers/food/aelioPear.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"tomato": {"iconUrl": "assets/markers/food/aelioTomato.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"shell": {"iconUrl": "assets/markers/food/aelioTurbanShell.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"turnip": {"iconUrl": "assets/markers/food/aelioTurnip.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]}
+		},
+		"boxes": {
+			"whiteBox": {"iconUrl": "assets/markers/containers/whiteBox.png", "iconSize": [18,18], "iconAnchor": [9,9], "popupAnchor": [0,-9]},
+			"redBox": {"iconUrl": "assets/markers/containers/redBox.png", "iconSize": [18,18], "iconAnchor": [9,9], "popupAnchor": [0,-9]},
+			"goldBox": {"iconUrl": "assets/markers/containers/goldBox.png", "iconSize": [18,18], "iconAnchor": [9,9], "popupAnchor": [0,-9]}
+		}
+	},
+	"map_markers": {
+		"landmarks": {
+			"cocoon": [
+				{"coordinates":[3333,2606],"id":"c-1","popup":true,"tooltip":true},
+				{"coordinates":[5521,2442],"id":"c-2","popup":true,"tooltip":true},
+				{"coordinates":[4436,4107],"id":"c-3","popup":true,"tooltip":true},
+				{"coordinates":[1003,4935],"id":"c-4","popup":true,"tooltip":true},
+				{"coordinates":[926,2327],"id":"c-5","popup":true,"tooltip":true},
+				{"coordinates":[5248,257],"id":"c-6","popup":true,"tooltip":true},
+				{"coordinates":[4965,5879],"id":"c-7","popup":true,"tooltip":true},
+				{"coordinates":[1961,5248],"id":"c-8","popup":true,"tooltip":true}
+			],
+			"tower": [
+				{"coordinates":[830,5506],"id":"t-1","popup":true,"tooltip":true},
+				{"coordinates":[5740,1043],"id":"t-2","popup":true,"tooltip":true},
+				{"coordinates":[3914,5346],"id":"t-3","popup":true,"tooltip":true}
+
+			],
+			"urgent": [
+				{"coordinates":[5984,1772],"id":"uq-1","popup":false,"tooltip":true},
+				{"coordinates":[5201,3144],"id":"uq-2","popup":false,"tooltip":true}
+			],
+			"ryuker": [
+				{"coordinates":[1547,4074],"id":"r-1","tooltip":true},
+				{"coordinates":[2562,4171],"id":"r-2","tooltip":true},
+				{"coordinates":[611,5299],"id":"r-3","tooltip":true},
+				{"coordinates":[3094,2699],"id":"r-4","tooltip":true},
+				{"coordinates":[3340,3515],"id":"r-5","tooltip":true},
+				{"coordinates":[4053,4510],"id":"r-6","tooltip":true},
+				{"coordinates":[4297,2252],"id":"r-7","tooltip":true},
+				{"coordinates":[5503,1496],"id":"r-8","tooltip":true},	
+				{"coordinates":[4827,806],"id":"r-9","tooltip":true},
+				{"coordinates":[2599,822],"id":"r-10","tooltip":true},
+				{"coordinates":[1764,1881],"id":"r-11","tooltip":true},
+				{"coordinates":[4163,6110],"id":"r-12","tooltip":true},
+				{"coordinates":[5468,5729],"id":"r-13","tooltip":true},
+				{"coordinates":[5295,3919],"id":"r-14","tooltip":true}
+			],
+			"mag": [
+				{"coordinates":[4755,1641],"id":"m-1","tooltip":true},
+				{"coordinates":[554,3860],"id":"m-2","tooltip":true},
+				{"coordinates":[2809,1037],"id":"m-3","tooltip":true}
+
+			]
+		},
+		"boxes": {
+			"redBox": [{"coordinates":[6437,1557],"tooltip":true},{"coordinates":[5526,382],"tooltip":true},{"coordinates":[5646,879],"tooltip":true},{"coordinates":[5638,1096],"tooltip":true},{"coordinates":[5596,1123],"tooltip":true},{"coordinates":[5797,1298],"tooltip":true},{"coordinates":[5844,1522],"tooltip":true},{"coordinates":[5917,2662],"tooltip":true},{"coordinates":[5429,1875],"tooltip":true},{"coordinates":[5537,2593],"tooltip":true},{"coordinates":[5584,2756],"tooltip":true},{"coordinates":[5455,2942],"tooltip":true},{"coordinates":[5494,3036],"tooltip":true},{"coordinates":[5309,3304],"tooltip":true},{"coordinates":[5064,2531],"tooltip":true},{"coordinates":[5093,2021],"tooltip":true},{"coordinates":[5257,1737],"tooltip":true},{"coordinates":[5249,192],"tooltip":true},{"coordinates":[4752,382],"tooltip":true},{"coordinates":[4506,1266],"tooltip":true},{"coordinates":[4563,2242],"tooltip":true},{"coordinates":[4271,1766],"tooltip":true},{"coordinates":[4128,179],"tooltip":true},{"coordinates":[4380,635],"tooltip":true},{"coordinates":[3689,664],"tooltip":true},{"coordinates":[3786,1387],"tooltip":true},{"coordinates":[3635,1798],"tooltip":true},{"coordinates":[3593,1893],"tooltip":true},{"coordinates":[4150,2440],"tooltip":true},{"coordinates":[4519,2903],"tooltip":true},{"coordinates":[4863,3388],"tooltip":true},{"coordinates":[4363,3381],"tooltip":true},{"coordinates":[3873,2930],"tooltip":true},{"coordinates":[3135,2385],"tooltip":true},{"coordinates":[2999,2445],"tooltip":true},{"coordinates":[2823,2356],"tooltip":true},{"coordinates":[2773,2254],"tooltip":true},{"coordinates":[2234,1026],"tooltip":true},{"coordinates":[2598,3074],"tooltip":true},{"coordinates":[2598,2588],"tooltip":true},{"coordinates":[2501,2534],"tooltip":true},{"coordinates":[2310,3180],"tooltip":true},{"coordinates":[2330,3566],"tooltip":true},{"coordinates":[1956,494],"tooltip":true},{"coordinates":[1870,1949],"tooltip":true},{"coordinates":[998,1571],"tooltip":true},{"coordinates":[1067,2176],"tooltip":true},{"coordinates":[963,2683],"tooltip":true},{"coordinates":[1040,2899],"tooltip":true},{"coordinates":[1010,2983],"tooltip":true},{"coordinates":[1184,3166],"tooltip":true},{"coordinates":[1602,3126],"tooltip":true},{"coordinates":[822,3057],"tooltip":true},{"coordinates":[639,2314],"tooltip":true},{"coordinates":[580,3223],"tooltip":true},{"coordinates":[877,3414],"tooltip":true},{"coordinates":[1164,3518],"tooltip":true},{"coordinates":[1194,4181],"tooltip":true},{"coordinates":[976,5033],"tooltip":true},{"coordinates":[1622,3790],"tooltip":true},{"coordinates":[1870,4050],"tooltip":true},{"coordinates":[1919,4089],"tooltip":true},{"coordinates":[2092,4181],"tooltip":true},{"coordinates":[2090,3612],"tooltip":true},{"coordinates":[2058,3475],"tooltip":true},{"coordinates":[1414,5823],"tooltip":true},{"coordinates":[1880,5187],"tooltip":true},{"coordinates":[1935,5509],"tooltip":true},{"coordinates":[2057,5529],"tooltip":true},{"coordinates":[2315,5664],"tooltip":true},{"coordinates":[2546,6261],"tooltip":true},{"coordinates":[2928,4747],"tooltip":true},{"coordinates":[3014,4705],"tooltip":true},{"coordinates":[3829,4062],"tooltip":true},{"coordinates":[4320,4234],"tooltip":true},{"coordinates":[4606,4541],"tooltip":true},{"coordinates":[4650,5163],"tooltip":true},{"coordinates":[3818,5315],"tooltip":true},{"coordinates":[4939,5154],"tooltip":true},{"coordinates":[5008,5398],"tooltip":true},{"coordinates":[5122,5523],"tooltip":true},{"coordinates":[5202,5520],"tooltip":true},{"coordinates":[5183,5601],"tooltip":true},{"coordinates":[5030,6477],"tooltip":true},{"coordinates":[5868,6749],"tooltip":true},{"coordinates":[6198,6774],"tooltip":true},{"coordinates":[6919,5823],"tooltip":true},{"coordinates":[6669,5906],"tooltip":true},{"coordinates":[6539,5742],"tooltip":true},{"coordinates":[6029,4616],"tooltip":true},{"coordinates":[5626,4694],"tooltip":true},{"coordinates":[5477,4888],"tooltip":true},{"coordinates":[6037,4259],"tooltip":true},{"coordinates":[5784,4181],"tooltip":true},{"coordinates":[5524,4081],"tooltip":true},{"coordinates":[5388,3737],"tooltip":true},{"coordinates":[5152,3673],"tooltip":true},{"coordinates":[4392,6552],"tooltip":true},{"coordinates":[4171,7015],"tooltip":true},{"coordinates":[4001,6926],"tooltip":true},{"coordinates":[3838,6801],"tooltip":true},{"coordinates":[3444,6538],"tooltip":true},{"coordinates":[3655,5836],"tooltip":true},{"coordinates":[3156,6100],"tooltip":true},{"coordinates":[3045,6025],"tooltip":true},{"coordinates":[3167,5908],"tooltip":true},{"coordinates":[3053,5739],"tooltip":true},{"coordinates":[3183,5598],"tooltip":true},{"coordinates":[3419,5179],"tooltip":true},{"coordinates":[3594,4816],"tooltip":true},{"coordinates":[3480,4821],"tooltip":true},{"coordinates":[3547,4719],"tooltip":true},{"coordinates":[597,376]}]
+		}
+	},
+	"map_category_strings": {
+		"landmarks": {
+			"cocoon": "mapCocoonTitle",
+			"tower": "mapTowerTitle",
+			"urgent": "mapUrgentTitle",
+			"ryuker": "mapRyukerTitle",
+			"mag": "mapMagTitle"
+		},
+		"food": {
+			"apple": "mapAppleTitle",
+			"banana": "mapBananaTitle",
+			"clam": "mapClamTitle",
+			"crab": "mapCrabTitle",
+			"herb": "mapHerbTitle",
+			"lobster": "mapLobsterTitle",
+			"mushroom": "mapMushroomTitle",
+			"peach": "mapPeachTitle",
+			"pear": "mapPearTitle",
+			"tomato": "mapTomatoTitle",
+			"shell": "mapShellTitle",
+			"turnip": "mapTurnipTitle"
+		},
+		"minerals": {
+			"monotite": "mapMonotiteTitle",
+			"dualomite": "mapDualomiteTitle",
+			"trinite": "mapTriniteTitle",
+			"phChunk": "mapPhChunkTitle",
+			"phQuartz": "mapPhQuartzTitle"
+		},
+		"boxes": {
+			"redBox": "mapRedBoxTitle"
+		}
+	},
+	"map_names_strings": {
+		"landmarks": {
+			"cocoon": {
+				"c-1": "mapCocoonName1",
+				"c-2": "mapCocoonName2",
+				"c-3": "mapCocoonName3",
+				"c-4": "mapCocoonName4",
+				"c-5": "mapCocoonName5",
+				"c-6": "mapCocoonName6",
+				"c-7": "mapCocoonName7",
+				"c-8": "mapCocoonName8"
+			},
+			"tower": {
+				"t-1": "mapTowerName1",
+				"t-2": "mapTowerName2",
+				"t-3": "mapTowerName3"
+			},
+			"urgent": {
+				"uq-1": "mapUrgentName1",
+				"uq-2": "mapUrgentName2"
+			},
+			"ryuker": {
+				"r-1": "mapRyukerName1",
+				"r-2": "mapRyukerName2",
+				"r-3": "mapRyukerName3",
+				"r-4": "mapRyukerName4",
+				"r-5": "mapRyukerName5",
+				"r-6": "mapRyukerName6",
+				"r-7": "mapRyukerName7",
+				"r-8": "mapRyukerName8",
+				"r-9": "mapRyukerName9",
+				"r-10": "mapRyukerName10",
+				"r-11": "mapRyukerName11",
+				"r-12": "mapRyukerName12",
+				"r-13": "mapRyukerName13",
+				"r-14": "mapRyukerName14"
+			},
+			"mag": {
+				"m-1": "mapMagName1",
+				"m-2": "mapMagName2",
+				"m-3": "mapMagName3"
+			}
+		}
+	},
+	"map_popup_data": {
+		"landmarks": {
+			"cocoon": {
+				"c-1": {
+					"max_players": 4,
+					"recomended_bp": 835,	
+					"description": "mapCocoonDesc1",
+					"main_mission": "mapCocoonMain1",
+					"side_missions": ["mapCocoonSide1a","mapCocoonSide1b","mapCocoonSide1c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-2": {
+					"max_players": 4,
+					"recomended_bp": 916,
+					"description": "mapCocoonDesc2",
+					"main_mission": "mapCocoonMain2",
+					"side_missions": ["mapCocoonSide2a","mapCocoonSide2b","mapCocoonSide2c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-3": {
+					"max_players": 1,
+					"recomended_bp": 800,
+					"description": "mapCocoonDesc3",
+					"main_mission": "mapCocoonMain3",
+					"side_missions": ["mapCocoonSide3a","mapCocoonSide3b","mapCocoonSide3c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-4": {
+					"max_players": 4,
+					"recomended_bp": 894,
+					"description": "mapCocoonDesc4",
+					"main_mission": "mapCocoonMain4",
+					"side_missions": ["mapCocoonSide4a","mapCocoonSide4b","mapCocoonSide4c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-5": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapCocoonDesc5",
+					"main_mission": "mapCocoonMain5",
+					"side_missions": ["mapCocoonSide5a","mapCocoonSide5b","mapCocoonSide5c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-6": {
+					"max_players": 4,
+					"recomended_bp": 835,
+					"description": "mapCocoonDesc6",
+					"main_mission": "mapCocoonMain6",
+					"side_missions": ["mapCocoonSide6a","mapCocoonSide6b","mapCocoonSide6c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-7": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapCocoonDesc7",
+					"main_mission": "mapCocoonMain7",
+					"side_missions": ["mapCocoonSide7a","mapCocoonSide7b","mapCocoonSide7c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				},
+				"c-8": {
+					"max_players": 4,
+					"recomended_bp": 1009,
+					"description": "mapCocoonDesc8",
+					"main_mission": "mapCocoonMain8",
+					"side_missions": ["mapCocoonSide8a","mapCocoonSide8b","mapCocoonSide8c","mapCocoonSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 1
+						}
+					]
+				}
+			},
+			"tower": {
+				"t-1": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapTowerDesc1",
+					"main_mission": "mapTowerMain1",
+					"side_missions": ["mapTowerSide1a","mapTowerSide1b","mapTowerSide1c","mapTowerSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 4
+						}
+					]
+				},
+				"t-2": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapTowerDesc2",
+					"main_mission": "mapTowerMain2",
+					"side_missions": ["mapTowerSide2a","mapTowerSide2b","mapTowerSide2c","mapTowerSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 4
+						}
+					]
+				},
+				"t-3": {
+					"max_players": 4,
+					"recomended_bp": 1184,
+					"description": "mapTowerDesc3",
+					"main_mission": "mapTowerMain3",
+					"side_missions": ["mapTowerSide3a","mapTowerSide3b","mapTowerSide3c","mapTowerSideF"],
+					"clear_reward": [
+						{
+							"reward_type": "sp",
+							"reward_count": 4
+						}
+					]
+				}
+			},
+			"urgent": {
+				"uq-1": {
+					"max_players": 8,
+					"recomended_bp": 1184,
+					"main_mission": "mapUrgentMain1",
+					"clear_reward": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 5000
+						}
+					],
+					"rewards": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 2000
+						}
+					]
+				},
+				"uq-2": {
+					"max_players": 8,
+					"recomended_bp": 1184,
+					"main_mission": "mapUrgentMain2",
+					"clear_reward": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 5000
+						}
+					],
+					"rewards": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 2000
+						}
+					]
+				}
+			}
+		}
+	},
+	"user_settings": {
+		"map_view": {
+			"center": [3660,3660],
+			"zoom": -2
+		},
+		"sections": false,
+		"landmarks": {
+			"ryuker": true,
+			"cocoon": true,
+			"tower": true,
+			"mag": true,
+			"urgent": true
+		},
+		"minerals": {
+			"monotite": false,
+			"dualomite": false,
+			"trinite": false,
+			"phChunk": false,
+			"phQuartz": false
+		},
+		"food": {
+			"apple": false,
+			"banana": false,
+			"clam": false,
+			"crab": false,
+			"herb": false,
+			"lobster": false,
+			"mushroom": false,
+			"peach": false,
+			"pear": false,
+			"tomato": false,
+			"shell": false,
+			"turnip": false
+		},
+		"boxes": {
+			"redBox": false
+		}
+	}
+}

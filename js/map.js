@@ -49,7 +49,7 @@ var map = {
 	},
 	init: function(additional_init){
 		// LOAD POPUP DATA  -- SVGvsevolod
-		nekoapp.system.xhr().load("assets/map_data.json",{
+		nekoapp.system.xhr().load("assets/data/map.json",{
 			onload: function(){
 				var data = JSON.parse(this.responseText);
 				for(var i in Object.keys(data))
@@ -114,5 +114,10 @@ var map = {
 				},200);
 			}
 		});
+		let weekDay = new gergthrt
+		switch(weekDay){
+			case '1_monday':
+			break;
+		}
 	}
 };
