@@ -1,21 +1,21 @@
 {
-    "language_title": "PSO2NGS Interactive Map",
+    "language_title": "PSO2NGS 인터렉티브 맵",
 
     "__NAVBAR__": "DON'T TOUCH THAT STRING",
-    "contribute_button": "<i class='fab fa-discord'></i> Contribute",
+    "contribute_button": "<i class='fab fa-discord'></i> 기증하기",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "changelog_button": "<i class='fab fa-github'></i> Changlelog",
-    "laguages_button": "<i class='fas fa-language'></i> Language",
+    "changelog_button": "<i class='fab fa-github'></i> 변경사항",
+    "laguages_button": "<i class='fas fa-language'></i> 언어",
 
     
     "__MENU__": "DON'T TOUCH THAT STRING",
-    "mapHeader": "Menu",
+    "mapHeader": "메뉴",
 
     "mapSections": "섹션",
-    "mapSectionsOn": "Unhide",
-    "mapSectionsOff": "Hide",
+    "mapSectionsOn": "숨김 해제",
+    "mapSectionsOff": "숨김",
 	
-    "mapMineralsTitle" : "컨테이너",
+    "mapMineralsTitle" : "광석",
 	"mapMonotiteTitle": "모노타이트",
 	"mapDualomiteTitle": "듀아로마이트",
 	"mapTriniteTitle": "트라이나이트",
@@ -48,8 +48,8 @@
 	"mapPopupMainMission": "메인 미션",
 	"mapPopupSideMissions": "사이드 미션",
 	"mapPopupClearReward": "첫회 클리어 보상",
-	"mapPopupRewards": "Rewards",
-	"mapPopupRewardMeseta": "N-Meseta",
+	"mapPopupRewards": "보상",
+	"mapPopupRewardMeseta": "N-메세타",
 	"mapPopupRewardSP": "SP",
 
     "mapCocoonTitle": "코쿤",
@@ -73,7 +73,7 @@
 	"mapCocoonMain3": "골에 도달하라!",
 	"mapCocoonSide3a": "5:00이내에 클리어",
 	"mapCocoonSide3b": "10:00이내에 클리어",
-	"mapCocoonSide3c": ">포인트 큐브 10개 획득 후 클리어",
+	"mapCocoonSide3c": "포인트 큐브 10개 획득 후 클리어",
 
 	"mapCocoonName4": "와일드 러쉬",
 	"mapCocoonDesc4": "전투 기술을 구사하여 모든 에너미를 격파하라.",
@@ -122,8 +122,8 @@
 	"mapTowerSide1c": "포인트 큐브를 10개 획득 후 클리어",
 
 	"mapTowerName2": "알터즈 러쉬",
-	"mapTowerDesc2": "최대한 에너미와의 전투를 피하고 전투 기술을 구사하여 최심부에 기다리고 있는치아큐리오를 격파하라.",
-	"mapTowerMain2": "Defeat the Chiacurio",
+	"mapTowerDesc2": "최대한 에너미와의 전투를 피하고 전투 기술을 구사하여 최심부에 기다리고 있는 치아큐리오를 격파하라.",
+	"mapTowerMain2": "치아큐리오를 쓰러뜨려라!",
 	"mapTowerSide2a": "8:00미만으로 클리어",
 	"mapTowerSide2b": "에너미 토벌 수 4마리 미만으로 클리어",
 	"mapTowerSide2c": "전투 불능 횟수 5회 미만으로 클리어",
@@ -146,7 +146,7 @@
 	"mapUrgentMain2": "넥스 베라를 토벌하라!",
 
 
-	"mapRyukerTitle": "Ryuker Device",
+	"mapRyukerTitle": "류커 디바이스",
 	"mapRyukerName1": "발플로우 대폭포",
 	"mapRyukerName2": "마그너스산",
 	"mapRyukerName3": "피코트산",
