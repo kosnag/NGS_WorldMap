@@ -58,7 +58,7 @@ var map = {
 				var init2 = function(data,additional_init){	
 					var data = JSON.parse(data);
 					for(var i in Object.keys(data))
-						map[Object.keys(data)[i]] = data[Object.keys(data)[i]];
+						Object.assign(map[Object.keys(data)[i]],data[Object.keys(data)[i]])
 
 					// INITIALIZE ICONS  -- SVGvsevolod
 					for(var i in Object.keys(map.map_icons))
