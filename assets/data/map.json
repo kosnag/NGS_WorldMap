@@ -95,6 +95,16 @@
 			"ryuker": "mapRyukerTitle",
 			"mag": "mapMagTitle"
 		},
+		"boxes": {
+			"redBox": "mapRedBoxTitle"
+		},
+		"minerals": {
+			"monotite": "mapMonotiteTitle",
+			"dualomite": "mapDualomiteTitle",
+			"trinite": "mapTriniteTitle",
+			"phChunk": "mapPhChunkTitle",
+			"phQuartz": "mapPhQuartzTitle"
+		},
 		"food": {
 			"apple": "mapAppleTitle",
 			"banana": "mapBananaTitle",
@@ -108,16 +118,6 @@
 			"tomato": "mapTomatoTitle",
 			"shell": "mapShellTitle",
 			"turnip": "mapTurnipTitle"
-		},
-		"minerals": {
-			"monotite": "mapMonotiteTitle",
-			"dualomite": "mapDualomiteTitle",
-			"trinite": "mapTriniteTitle",
-			"phChunk": "mapPhChunkTitle",
-			"phQuartz": "mapPhQuartzTitle"
-		},
-		"boxes": {
-			"redBox": "mapRedBoxTitle"
 		}
 	},
 	"map_names_strings": {
