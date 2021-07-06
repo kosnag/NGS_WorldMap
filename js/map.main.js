@@ -606,7 +606,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "cocoonCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/landmarks/cocoon.png'>"
                                         }),
@@ -623,7 +623,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "towerCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/landmarks/tower.png'>"
                                         }),
@@ -640,7 +640,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "ryukerCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/landmarks/ryuker.png'>"
                                         }),
@@ -657,7 +657,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "magCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/landmarks/mag.png'>"
                                         }),
@@ -674,7 +674,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "urgentCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/landmarks/urgent.png'>"
                                         }),
@@ -702,7 +702,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "whiteBoxCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/containers/whiteBox.png'>"
                                         }),
@@ -719,7 +719,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "redBoxCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/containers/redBox.png'>"
                                         }),
@@ -736,7 +736,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "goldBoxCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/containers/goldBox.png'>"
                                         }),
@@ -764,7 +764,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "monotiteCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/minerals/monotite.png'>"
                                         }),
@@ -781,7 +781,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "dualomiteCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/minerals/dualomite.png'>"
                                         }),
@@ -798,7 +798,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "triniteCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/minerals/trinite.png'>"
                                         }),
@@ -815,7 +815,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "phChunkCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/minerals/photonChunk.png'>"
                                         }),
@@ -832,7 +832,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "phQuartzCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/minerals/photonQuartz.png'>"
                                         }),
@@ -859,7 +859,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "appleCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top",
+                                                "data-bs-placement": "bottom",
                                                 "data-bs-html": "true"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioApple.png'>"
@@ -877,7 +877,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "bananaCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top",
+                                                "data-bs-placement": "bottom",
                                                 "data-bs-html": "true"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioBanana.png'>"
@@ -895,7 +895,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "clamCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioClam.png'>"
                                         }),
@@ -912,7 +912,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "crabCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioCrab.png'>"
                                         }),
@@ -932,7 +932,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "herbCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioHerb.png'>"
                                         }),
@@ -949,7 +949,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "lobsterCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioLobster.png'>"
                                         }),
@@ -966,7 +966,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "mushroomCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioMushroom.png'>"
                                         }),
@@ -983,7 +983,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "peachCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioPeach.png'>"
                                         }),
@@ -1003,7 +1003,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "pearCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioPear.png'>"
                                         }),
@@ -1020,7 +1020,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "tomatoCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioTomato.png'>"
                                         }),
@@ -1037,7 +1037,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "shellCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioTurbanShell.png'>"
                                         }),
@@ -1054,7 +1054,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "turnipCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "top"
+                                                "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioTurnip.png'>"
                                         })
@@ -1367,6 +1367,35 @@ var map_app = new nekoapp({
                 return [elements, [/*elements.alert_element,*/elements.ngs_map]];
             },
             onModuleChange : function(){
+                
+                new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_cocoon_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_mag_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_ryuker_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_tower_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_urgent_2)
+                
+                new bootstrap.Tooltip(this.moduleContents.menu_boxesButton_whiteBox_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_boxesButton_redBox_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_boxesButton_goldBox_2)
+                
+                new bootstrap.Tooltip(this.moduleContents.menu_mineralsButton_monotite_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_mineralsButton_dualomite_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_mineralsButton_trinite_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_mineralsButton_phChunk_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_mineralsButton_phQuartz_2)
+                
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_apple_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_banana_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_clam_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_crab_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_herb_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_lobster_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_mushroom_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_peach_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_pear_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_tomato_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_shell_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_foodButton_turnip_2)
                 //this.moduleContents.alert_element.init();
 				// INITIALIZE MAP AND MAP MENU  -- SVGvsevolod
 				map.init(function(){
