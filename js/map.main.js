@@ -587,7 +587,7 @@ var map_app = new nekoapp({
                                 }),
                                     menu_landmarks_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
-                                        text: "<i class='fas fa-landmark'></i> "
+                                        text: "<i class='fas fa-map-marker-alt'></i> "
                                     }),
                                     menu_landmarksButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex",
@@ -1023,7 +1023,7 @@ var map_app = new nekoapp({
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
-                                    elements.menu_landmarks_body.appendChild(elements.menu_minerals_desc)
+                                    elements.menu_landmarks_body.appendChild(elements.menu_landmarks_desc)
                                         elements.menu_landmarks_desc.appendChild(nekoapp.create.localizedString(map_app, "mapLandmarksTitle"))
                                     elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group)
                                         elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_1)
