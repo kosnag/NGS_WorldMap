@@ -85,7 +85,21 @@ var map = {
 					// INITIALIZE SECTIONS
 					for(var i in Object.keys(map.sections))
 						for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]])){
-							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"])
+							
+							let sectionColor = map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["type"]
+							switch(sectionColor){
+								case "lobby":
+									var sectionColorByType = "blue"
+									break;
+								case "explore":
+									var sectionColorByType = "green"
+									break;
+								case "battle":
+									var sectionColorByType = "red"
+									break;
+							}
+
+							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"],{fillColor:sectionColorByType})
 
 						}
 					// INITIALIZE MAP  -- SVGvsevolod
