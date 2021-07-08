@@ -448,34 +448,34 @@ var map_app = new nekoapp({
 					if(info.category && typeof info.category === "string")this.children[0].innerHTML = map_app.locale.strings[info.category];
 					if(info.name && typeof info.name === "string")this.children[1].innerHTML = map_app.locale.strings[info.name];
 					if(info.popup_data && typeof info.popup_data === "object"){
-						this.children[2].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
-						this.children[2].children[2].innerHTML = info.popup_data.max_players;
-						this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupRecomendedBP + ":";
-						this.children[3].children[2].innerHTML = info.popup_data.recomended_bp;
-						this.children[4].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
-						this.children[5].innerHTML = map_app.locale.strings[info.popup_data.description];
-						this.children[6].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
-						this.children[7].innerHTML = map_app.locale.strings[info.popup_data.main_mission];
-						this.children[8].innerHTML = map_app.locale.strings.mapPopupSideMissions + ":";
+						if(info.popup_data.max_players){this.children[2].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
+						    this.children[2].children[2].innerHTML = info.popup_data.max_players;}
+						if(info.popup_data.recomended_bp){this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupRecomendedBP + ":";
+						    this.children[3].children[2].innerHTML = info.popup_data.recomended_bp;}
+						if(info.popup_data.description){this.children[4].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
+						    this.children[5].innerHTML = map_app.locale.strings[info.popup_data.description];}
+						if(info.popup_data.main_mission){this.children[6].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
+						    this.children[7].innerHTML = map_app.locale.strings[info.popup_data.main_mission];}
+						if(info.popup_data.side_missions){this.children[8].innerHTML = map_app.locale.strings.mapPopupSideMissions + ":";
 						nekoapp.system.clear(this.children[9]);
 						for(var i in info.popup_data.side_missions){
 							var item = document.createElement("li");
 							this.children[9].appendChild(item).innerHTML = map_app.locale.strings[info.popup_data.side_missions[i]];
-						}
-						this.children[10].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
+						}}
+						if(info.popup_data.clear_reward){this.children[10].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
 						nekoapp.system.clear(this.children[11]);
 						for(var i in info.popup_data.clear_reward){
 							var item = document.createElement("li");
 							switch(info.popup_data.clear_reward[i].reward_type){
-								case"sp":
+								case "sp":
 									item.innerHTML = "+" + info.popup_data.clear_reward[i].reward_count + " " + map_app.locale.strings.mapPopupRewardSP;
 									break;
-                                case"meseta":
+                                case "meseta":
                                     item.innerHTML = info.popup_data.clear_reward[i].reward_count + " " + map_app.locale.strings.mapPopupRewardMeseta;
                                     break;
 							}
 							this.children[11].appendChild(item);
-						}
+						}}
 					}
 				}
 			}
@@ -535,54 +535,7 @@ var map_app = new nekoapp({
                                 menu_header : nekoapp.create.element(map_app,"div",{
                                     class: "h3 text-center text-light", 
                                     text: nekoapp.create.localizedString(map_app, "mapHeader")
-                                }),
-                                menu_sections_body: nekoapp.create.element(map_app,"div",{
-                                    class: "d-flex my-3 justify-content-center"
-                                }),
-                                    menu_sections_desc : nekoapp.create.element(map_app,"div",{
-                                        class: "h5 text-light align-self-center",
-                                        text: "<i class='fas fa-map'></i> "
-                                    }),
-                                    menu_sectionsButtons : nekoapp.create.element(map_app,"div",{
-                                        class: "btn-group ms-auto",
-                                        attr: {
-                                            "role": "group"
-                                        }
-                                    }),
-                                        menu_sectionsButton_On1 : nekoapp.create.element(map_app,"input",{
-                                            class: "btn-check",
-                                            id: "sectionsOn",
-                                            attr: {
-                                                "type": "radio",
-                                                "name": "sections",
-                                                "autocomplete": "off",
-                                                "checked": ""
-                                            }
-                                        }),
-                                        menu_sectionsButton_On2 : nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue",
-                                            attr: {
-                                                "for": "sectionsOn"
-                                            },
-                                            text: nekoapp.create.localizedString(map_app, "mapSectionsOn")
-                                        }),
-                                        menu_sectionsButton_Off1 : nekoapp.create.element(map_app,"input",{
-                                            class: "btn-check",
-                                            id: "sectionsOff",
-                                            attr: {
-                                                "type": "radio",
-                                                "name": "sections",
-                                                "autocomplete": "off"
-                                            }
-                                        }),
-                                        menu_sectionsButton_Off2 : nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue",
-                                            attr: {
-                                                "for": "sectionsOff"
-                                            },
-                                            text: nekoapp.create.localizedString(map_app, "mapSectionsOff")
-                                        }),
-                                
+                                }),                                
                                 menu_landmarks_body: nekoapp.create.element(map_app,"div",{
                                     class: "my-3"
                                 }),
@@ -1064,17 +1017,7 @@ var map_app = new nekoapp({
                             elements.map_menu.appendChild(elements.map_menu_body)
                             elements.map_menu_body.appendChild(elements.menu_header)
                                 elements.map_menu_body.appendChild(elements.menu_header)
-/*
-                                elements.map_menu_body.appendChild(elements.menu_sections_body)
-                                    elements.menu_sections_body.appendChild(elements.menu_sections_desc)
-                                        elements.menu_sections_desc.appendChild(nekoapp.create.localizedString(map_app, "mapSections"))
-                                    elements.menu_sections_body.appendChild(elements.menu_sectionsButtons)
-                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On1)
-                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_On2)
-                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off1)
-                                        elements.menu_sectionsButtons.appendChild(elements.menu_sectionsButton_Off2)
-                                elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
-*/
+
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
                                     elements.menu_landmarks_body.appendChild(elements.menu_landmarks_desc)
                                         elements.menu_landmarks_desc.appendChild(nekoapp.create.localizedString(map_app, "mapLandmarksTitle"))
@@ -1152,17 +1095,6 @@ var map_app = new nekoapp({
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
 				// BIND MAP MENU BUTTONS EVENTS  -- SVGvsevolod
-				elements.menu_sectionsButton_On1.addEventListener("change",function(){
-					if(!map.user_settings.sections)
-						map.user_settings.sections = true;
-					map.save_settings();
-				});
-				elements.menu_sectionsButton_Off1.addEventListener("change",function(){
-					if(map.user_settings.sections)
-						map.user_settings.sections = false;
-					map.save_settings();
-				});
-
                 elements.menu_landmarksButton_cocoon_1.addEventListener("change",function(){
                     map.toogle_markers(map.map_markers.landmarks.cocoon);
                     if(map.user_settings.landmarks.cocoon)
@@ -1399,12 +1331,6 @@ var map_app = new nekoapp({
                 //this.moduleContents.alert_element.init();
 				// INITIALIZE MAP AND MAP MENU  -- SVGvsevolod
 				map.init(function(){
-
-					if(map.user_settings.sections)
-						map_app.modules.map_module.moduleContents.menu_sectionsButton_On1.setAttribute("checked","");
-					else
-						map_app.modules.map_module.moduleContents.menu_sectionsButton_Off1.setAttribute("checked","");
-
                         if(map.user_settings.landmarks.cocoon)map_app.modules.map_module.moduleContents.menu_landmarksButton_cocoon_1.setAttribute("checked","");
                         if(map.user_settings.landmarks.mag)map_app.modules.map_module.moduleContents.menu_landmarksButton_mag_1.setAttribute("checked","");
                         if(map.user_settings.landmarks.ryuker)map_app.modules.map_module.moduleContents.menu_landmarksButton_ryuker_1.setAttribute("checked","");

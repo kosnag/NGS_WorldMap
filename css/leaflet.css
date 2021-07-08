@@ -207,6 +207,7 @@
 
 .leaflet-interactive {
 	cursor: pointer;
+	transition: fill-opacity ease .5s, stroke-opacity ease .5s;
 	}
 .leaflet-grab {
 	cursor: -webkit-grab;
