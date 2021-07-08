@@ -648,3 +648,15 @@ map-app map-localebox .map_localebox_icon map-ui-graphic svg {
 map-app map-localebox .map_localebox_text {
 	font-size: 1.15em
 }
+
+#side_map_menu {
+	overflow-y: scroll;
+    height: calc(100vh - 120px);
+}
+#side_map_menu::-webkit-scrollbar {
+	width: 0.25em;
+	background-color: rgba(0,123,255,0.50);
+}
+#side_map_menu::-webkit-scrollbar-thumb {
+	background-color: rgba(0,123,255,1);
+}
