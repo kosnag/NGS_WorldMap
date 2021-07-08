@@ -85,7 +85,7 @@ var map = {
 					// INITIALIZE SECTIONS
 					for(var i in Object.keys(map.sections))
 						for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]])){
-							
+
 							let sectionColor = map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["type"]
 							switch(sectionColor){
 								case "lobby":
@@ -99,7 +99,12 @@ var map = {
 									break;
 							}
 
-							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"],{fillColor:sectionColorByType})
+							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"],{fillColor:sectionColorByType,color:"lightblue",weight:"1"})
+
+							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].setStyle({fillOpacity:0,opacity:.25})
+
+							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})})
+							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})})
 
 						}
 					// INITIALIZE MAP  -- SVGvsevolod
