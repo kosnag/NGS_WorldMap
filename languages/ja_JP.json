@@ -44,7 +44,8 @@
 	"mapLandmarksTitle": "ランドマーク",
 
 	"mapPopupMaxPlayers": "人数",
-	"mapPopupRecomendedBP": "必要戦闘力",
+	"mapPopupRecomendedBP": "推奨戦闘力",
+	"mapPopupRequiredBP": "Recommended Battle Power",
 	"mapPopupDescription": "説明",
 	"mapPopupMainMission": "メインミッション",
 	"mapPopupSideMissions": "サイドミッション",

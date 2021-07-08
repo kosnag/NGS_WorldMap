@@ -44,7 +44,8 @@
 	"mapLandmarksTitle": "Ориентиры",
 
 	"mapPopupMaxPlayers": "Количество игроков",
-	"mapPopupRecomendedBP": "Требуемая Боевая Мощь",
+	"mapPopupRecomendedBP": "Рекомендованная Боевая Мощь",
+	"mapPopupRequiredBP": "Требуемая Боевая Мощь",
 	"mapPopupDescription": "Описание",
 	"mapPopupMainMission": "Основная миссия",
 	"mapPopupSideMissions": "Доп-миссии",
