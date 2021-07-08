@@ -86,8 +86,7 @@ var map = {
 					for(var i in Object.keys(map.sections))
 						for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]])){
 
-							let sectionColor = map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["type"]
-							switch(sectionColor){
+							switch(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["type"]){
 								case "lobby":
 									var sectionColorByType = "blue"
 									break;
@@ -151,7 +150,7 @@ var map = {
 						
 						// ADDITIONAL INIT FROM CALLBACK FUNCTION  -- SVGvsevolod
 						additional_init();
-					},250);
+					},300);
 					// INITIALIZE AND LOADING LOCALES
 					map.update_locale();
 				}

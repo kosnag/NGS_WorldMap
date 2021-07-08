@@ -45,6 +45,7 @@
 
 	"mapPopupMaxPlayers": "Number of players",
 	"mapPopupRecomendedBP": "Recommended Battle Power",
+	"mapPopupRequiredBP": "Required Battle Power",
 	"mapPopupDescription": "Description",
 	"mapPopupMainMission": "Main Mission",
 	"mapPopupSideMissions": "Side Mission",
@@ -165,7 +166,7 @@
 
 
 	"mapMagTitle": "Region Mag",
-	"mapMagName1": "Expert",
-	"mapMagName2": "Priceless",
-	"mapMagName3": "Invincible"
+	"mapMagName1": "Expert Region Mag",
+	"mapMagName2": "Priceless Region Mag",
+	"mapMagName3": "Invincible Region Mag"
 }

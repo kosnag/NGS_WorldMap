@@ -329,7 +329,7 @@
 			"urgent": {
 				"uq-1": {
 					"max_players": 8,
-					"recomended_bp": 1184,
+					"required_bp": 1184,
 					"main_mission": "mapUrgentMain1",
 					"clear_reward": [
 						{
@@ -346,7 +346,7 @@
 				},
 				"uq-2": {
 					"max_players": 8,
-					"recomended_bp": 1184,
+					"required_bp": 1184,
 					"main_mission": "mapUrgentMain2",
 					"clear_reward": [
 						{
@@ -369,7 +369,6 @@
 			"center": [3660,3660],
 			"zoom": -2
 		},
-		"sections": false,
 		"landmarks": {
 			"ryuker": true,
 			"cocoon": true,

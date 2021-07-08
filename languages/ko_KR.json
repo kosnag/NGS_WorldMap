@@ -44,7 +44,8 @@
 	"mapLandmarksTitle": "랜드 마크",
 
 	"mapPopupMaxPlayers": "플레이어 수",
-	"mapPopupRecomendedBP": "필요 전투력",
+	"mapPopupRecomendedBP": "Recommended Battle Power",
+	"mapPopupRequiredBP": "필요 전투력",
 	"mapPopupDescription": "설명",
 	"mapPopupMainMission": "메인 미션",
 	"mapPopupSideMissions": "사이드 미션",
@@ -165,7 +166,7 @@
 
 
 	"mapMagTitle": "리전 마그",
-	"mapMagName1": "숙달의",
-	"mapMagName2": "천금의",
-	"mapMagName3": "상승의"
+	"mapMagName1": "숙달의 리전 마그",
+	"mapMagName2": "천금의 리전 마그",
+	"mapMagName3": "상승의 리전 마그"
 }

@@ -452,6 +452,8 @@ var map_app = new nekoapp({
 						    this.children[2].children[2].innerHTML = info.popup_data.max_players;}
 						if(info.popup_data.recomended_bp){this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupRecomendedBP + ":";
 						    this.children[3].children[2].innerHTML = info.popup_data.recomended_bp;}
+                        if(info.popup_data.required_bp){this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupRequiredBP + ":";
+                            this.children[3].children[2].innerHTML = info.popup_data.required_bp;}
 						if(info.popup_data.description){this.children[4].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
 						    this.children[5].innerHTML = map_app.locale.strings[info.popup_data.description];}
 						if(info.popup_data.main_mission){this.children[6].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
@@ -529,13 +531,14 @@ var map_app = new nekoapp({
                         map_menu : nekoapp.create.object(map_app,map_app.preferences.elements.map_menu_element,{
                             class: "col-3 bg-menu"
                         }),
-                            map_menu_body: nekoapp.create.element(map_app,"div",{
-                                class: "px-3 py-2"
+                            menu_header : nekoapp.create.element(map_app,"div",{
+                                class: "h3 text-center text-light mt-3", 
+                                text: nekoapp.create.localizedString(map_app, "mapHeader")
                             }),
-                                menu_header : nekoapp.create.element(map_app,"div",{
-                                    class: "h3 text-center text-light", 
-                                    text: nekoapp.create.localizedString(map_app, "mapHeader")
-                                }),                                
+                            map_menu_body: nekoapp.create.element(map_app,"div",{
+                                class: "px-3 py-2",
+                                id: "side_map_menu"
+                            }),
                                 menu_landmarks_body: nekoapp.create.element(map_app,"div",{
                                     class: "my-3"
                                 }),
@@ -1014,9 +1017,8 @@ var map_app = new nekoapp({
 
                 };
                         elements.ngs_map.appendChild(elements.map_menu)
+                            elements.map_menu.appendChild(elements.menu_header)
                             elements.map_menu.appendChild(elements.map_menu_body)
-                            elements.map_menu_body.appendChild(elements.menu_header)
-                                elements.map_menu_body.appendChild(elements.menu_header)
 
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
                                     elements.menu_landmarks_body.appendChild(elements.menu_landmarks_desc)

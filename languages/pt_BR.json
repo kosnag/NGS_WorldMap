@@ -44,7 +44,8 @@
 	"mapLandmarksTitle": "Pontos de referência",
 
 	"mapPopupMaxPlayers": "Número de Jogadores",
-	"mapPopupRecomendedBP": "Requisito de Battle Power",
+	"mapPopupRecomendedBP": "Recommended Battle Power",
+	"mapPopupRequiredBP": "Requisito de Battle Power",
 	"mapPopupDescription": "Descrição",
 	"mapPopupMainMission": "Missão Principal",
 	"mapPopupSideMissions": "Missão Secundária",
@@ -165,7 +166,7 @@
 
 
 	"mapMagTitle": "Mag de Região",
-	"mapMagName1": "Especialista",
-	"mapMagName2": "Inestimável",
-	"mapMagName3": "Invencível"
+	"mapMagName1": "Especialista Mag de Região",
+	"mapMagName2": "Inestimável Mag de Região",
+	"mapMagName3": "Invencível Mag de Região"
 }
