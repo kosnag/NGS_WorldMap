@@ -35,6 +35,11 @@ var map = {
 							name: map.map_names_strings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id],
 							popup_data: map.map_popup_data[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id]
 						});
+					if(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]._popup)
+						map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]._popup.getContent().setInfo({
+							name: map.map_names_strings[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k].id],
+							popup_data: map.map_popup_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k].id]
+						});
 				}
 	},
 	load_settings: function(){
@@ -83,27 +88,27 @@ var map = {
 								if(marker.popup)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element));
 							}
 					// INITIALIZE SECTIONS
-					for(var i in info.popup_data.type){
-						switch(info.popup_data.type[i]){
-							case "lobby":
-								var sectionColorByType = "blue"
-								break;
-							case "gathering":
-								var sectionColorByType = "green"
-								break;
-							case "combat":
-								var sectionColorByType = "red"
-								break;
-						}
+						for(var i in info.popup_data.type){
+							switch(info.popup_data.type){
+								case "lobby":
+									var sectionColorByType = "blue"
+									break;
+								case "gathering":
+									var sectionColorByType = "green"
+									break;
+								case "combat":
+									var sectionColorByType = "red"
+									break;
+							}
 
-							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"],{fillColor:sectionColorByType,color:"lightblue",weight:"1"})
+								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"],{fillColor:sectionColorByType,color:"lightblue",weight:"1"})
 
-							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].setStyle({fillOpacity:0,opacity:.25})
+								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].setStyle({fillOpacity:0,opacity:.25})
 
-							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})})
-							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})})
+								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})})
+								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})})
 
-						}
+							}
 					// INITIALIZE MAP  -- SVGvsevolod
 					map.map_object = L.map("leaflet-map",{
 						crs: L.CRS.Simple,

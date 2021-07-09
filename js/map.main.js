@@ -591,7 +591,7 @@ var map_app = new nekoapp({
                         this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
                         nekoapp.system.clear(this.children[3].children[2]);
                         for(var i in info.popup_data.type){
-                            switch(info.popup_data.type[i]){
+                            switch(info.popup_data.type){
                                 case "lobby":
                                     popup_section_players_value.innerHTML = "100";
                                     break;
@@ -607,7 +607,7 @@ var map_app = new nekoapp({
                         this.children[2].children[0].innerHTML = map_app.locale.strings.mapPopupSectionTypes;
                             nekoapp.system.clear(this.children[2].children[2]);
                             for(var i in info.popup_data.type){
-                                switch(info.popup_data.type[i]){
+                                switch(info.popup_data.type){
                                     case "lobby":
                                         popup_section_type_value.innerHTML = map_app.locale.strings.mapPopupSectionsTypeLobby;
                                         break;
