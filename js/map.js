@@ -83,20 +83,18 @@ var map = {
 								if(marker.popup)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element));
 							}
 					// INITIALIZE SECTIONS
-					for(var i in Object.keys(map.sections))
-						for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]])){
-
-							switch(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["type"]){
-								case "lobby":
-									var sectionColorByType = "blue"
-									break;
-								case "explore":
-									var sectionColorByType = "green"
-									break;
-								case "battle":
-									var sectionColorByType = "red"
-									break;
-							}
+					for(var i in info.popup_data.type){
+						switch(info.popup_data.type[i]){
+							case "lobby":
+								var sectionColorByType = "blue"
+								break;
+							case "gathering":
+								var sectionColorByType = "green"
+								break;
+							case "combat":
+								var sectionColorByType = "red"
+								break;
+						}
 
 							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"],{fillColor:sectionColorByType,color:"lightblue",weight:"1"})
 

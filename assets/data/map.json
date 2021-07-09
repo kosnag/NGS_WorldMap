@@ -331,12 +331,11 @@
 					"max_players": 8,
 					"required_bp": 1184,
 					"main_mission": "mapUrgentMain1",
-					"clear_reward": [
+					"clear_reward":
 						{
 							"reward_type": "meseta",
 							"reward_count": 5000
-						}
-					],
+						},
 					"rewards": [
 						{
 							"reward_type": "meseta",
@@ -361,6 +360,70 @@
 						}
 					]
 				}
+			}
+		}
+	},
+	"map_popup_section_data": {
+		"aelio": {
+			"centalAeilo": {
+				"image": "",
+				"type": "gathering",
+				"recomended_bp": 800,
+				"average_enemy_level": 1
+			},
+			"mtMagnus": {
+				"image": "",
+				"type": "combat",
+				"recomended_bp": 864,
+				"tiers": {
+					"1": 5,
+					"2": 15
+				}
+			},
+			"southAelio": {
+				"image": "",
+				"type": "gathering",
+				"recomended_bp": 835,
+				"average_enemy_level": 3
+			},
+			"northAelio": {
+				"image": "",
+				"type": "gathering",
+				"recomended_bp": 987,
+				"average_enemy_level": 10
+			},
+			"laboratoryRuins": {
+				"image": "",
+				"type": "combat",
+				"recomended_bp": 1009,
+				"tiers": {
+					"1": "10",
+					"2": "15"
+				}
+			},
+			"westAelio": {
+				"image": "",
+				"type": "gathering",
+				"recomended_bp": 933,
+				"average_enemy_level": 7
+			},
+			"resolForest": {
+				"image": "",
+				"type": "combat",
+				"recomended_bp": 1184,
+				"tiers": {
+					"1": "15"
+				}
+			},
+			"halphaLake": {
+				"image": "",
+				"type": "gathering",
+				"recomended_bp": 9999,
+				"average_enemy_level": 60
+			},
+			"centalCity": {
+				"image": "",
+				"type": "lobby"
 			}
 		}
 	},

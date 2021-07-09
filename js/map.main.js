@@ -404,12 +404,12 @@ var map_app = new nekoapp({
 						popup_name = document.createElement("h5"),
 						popup_req1 = document.createElement("div"),
 						popup_req2 = document.createElement("div"),
-						popup_req_label1 = document.createElement("span"),
-						popup_req_space1 = document.createElement("span"),
-						popup_req_value1 = document.createElement("span"),
-						popup_req_label2 = document.createElement("span"),
-						popup_req_space2 = document.createElement("span"),
-						popup_req_value2 = document.createElement("span"),
+						popup_req1_label = document.createElement("span"),
+						popup_req1_space = document.createElement("span"),
+						popup_req1_value = document.createElement("span"),
+						popup_req2_label = document.createElement("span"),
+						popup_req2_space = document.createElement("span"),
+						popup_req2_value = document.createElement("span"),
 						popup_desc_label = document.createElement("p"),
 						popup_desc_value = document.createElement("div"),
 						popup_main_label = document.createElement("p"),
@@ -417,21 +417,23 @@ var map_app = new nekoapp({
 						popup_side_label = document.createElement("p"),
 						popup_side_value = document.createElement("ul"),
 						popup_clear_reward_label = document.createElement("p"),
-						popup_clear_reward_value = document.createElement("ul");
+						popup_clear_reward_value = document.createElement("ul"),
+						popup_rewards_label = document.createElement("p"),
+						popup_rewards_value = document.createElement("ul");
 					popup_category.className = "text-center mb-1";
 					popup_category.style = "font-weight:bold";
 					popup_name.className = "text-center";
 					popup_name.style = "font-weight:bold";
-					popup_req1.style = "display:flex;flex-direction:row;padding:0 15px;font-size:14px;font-weight:bold";
-					popup_req2.style = "display:flex;flex-direction:row;padding:0 15px;font-size:14px;font-weight:bold";
-					popup_req_space1.style = "flex:1";
-					popup_req_space2.style = "flex:1";
-					popup_req1.appendChild(popup_req_label1);
-					popup_req1.appendChild(popup_req_space1);
-					popup_req1.appendChild(popup_req_value1);
-					popup_req2.appendChild(popup_req_label2);
-					popup_req2.appendChild(popup_req_space2);
-					popup_req2.appendChild(popup_req_value2);
+					popup_req1.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+					popup_req2.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+					popup_req1_space.style = "flex:1";
+					popup_req2_space.style = "flex:1";
+					popup_req1.appendChild(popup_req1_label);
+					popup_req1.appendChild(popup_req1_space);
+					popup_req1.appendChild(popup_req1_value);
+					popup_req2.appendChild(popup_req2_label);
+					popup_req2.appendChild(popup_req2_space);
+					popup_req2.appendChild(popup_req2_value);
 					popup_desc_label.className = "mb-0";
 					popup_desc_label.style = "font-weight:bold";
 					popup_main_label.className = "mb-0";
@@ -442,29 +444,32 @@ var map_app = new nekoapp({
 					popup_clear_reward_label.className = "mb-0";
 					popup_clear_reward_label.style = "font-weight:bold";
 					popup_clear_reward_value.style = "padding:0";
-					return[popup_category,popup_name,popup_req1,popup_req2,popup_desc_label,popup_desc_value,popup_main_label,popup_main_value,popup_side_label,popup_side_value,popup_clear_reward_label,popup_clear_reward_value];
+					popup_rewards_label.className = "mb-0";
+					popup_rewards_label.style = "font-weight:bold";
+					popup_rewards_value.style = "padding:0";
+					return[popup_category,popup_name,popup_req1,popup_req2,popup_desc_label,popup_desc_value,popup_main_label,popup_main_value,popup_side_label,popup_side_value,popup_clear_reward_label,popup_clear_reward_value,popup_rewards_label,popup_rewards_value];
 				}),
 				setInfo: function(info){
 					if(info.category && typeof info.category === "string")this.children[0].innerHTML = map_app.locale.strings[info.category];
 					if(info.name && typeof info.name === "string")this.children[1].innerHTML = map_app.locale.strings[info.name];
 					if(info.popup_data && typeof info.popup_data === "object"){
-						if(info.popup_data.max_players){this.children[2].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
-						    this.children[2].children[2].innerHTML = info.popup_data.max_players;}
+						this.children[2].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
+						    this.children[2].children[2].innerHTML = info.popup_data.max_players;
 						if(info.popup_data.recomended_bp){this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupRecomendedBP + ":";
 						    this.children[3].children[2].innerHTML = info.popup_data.recomended_bp;}
                         if(info.popup_data.required_bp){this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupRequiredBP + ":";
                             this.children[3].children[2].innerHTML = info.popup_data.required_bp;}
 						if(info.popup_data.description){this.children[4].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
 						    this.children[5].innerHTML = map_app.locale.strings[info.popup_data.description];}
-						if(info.popup_data.main_mission){this.children[6].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
-						    this.children[7].innerHTML = map_app.locale.strings[info.popup_data.main_mission];}
+                        this.children[6].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
+						    this.children[7].innerHTML = map_app.locale.strings[info.popup_data.main_mission];
 						if(info.popup_data.side_missions){this.children[8].innerHTML = map_app.locale.strings.mapPopupSideMissions + ":";
 						nekoapp.system.clear(this.children[9]);
 						for(var i in info.popup_data.side_missions){
 							var item = document.createElement("li");
 							this.children[9].appendChild(item).innerHTML = map_app.locale.strings[info.popup_data.side_missions[i]];
 						}}
-						if(info.popup_data.clear_reward){this.children[10].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
+						this.children[10].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
 						nekoapp.system.clear(this.children[11]);
 						for(var i in info.popup_data.clear_reward){
 							var item = document.createElement("li");
@@ -477,11 +482,155 @@ var map_app = new nekoapp({
                                     break;
 							}
 							this.children[11].appendChild(item);
+						}
+                        if(info.popup_data.rewards){this.children[12].innerHTML = map_app.locale.strings.mapPopupRewards + ":";
+						nekoapp.system.clear(this.children[13]);
+						for(var i in info.popup_data.rewards){
+							var item = document.createElement("li");
+							switch(info.popup_data.rewards[i].reward_type){
+                                case "meseta":
+                                    item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapPopupRewardMeseta;
+                                    break;
+							}
+							this.children[13].appendChild(item);
 						}}
 					}
 				}
 			}
-		}
+		},
+		map_popup_section_element : {
+			tag : "map-popup-section",
+			prototype : {
+                template: nekoapp.create.template(function(){
+                    var popup_section_img = document.createElement("img"),
+                        popup_section_name = document.createElement("h5"),
+                        popup_section_type = document.createElement("div"),
+                            popup_section_type_label = document.createElement("span"),
+                            popup_section_type_space = document.createElement("span"),
+                            popup_section_type_value = document.createElement("span"),
+                        popup_section_players = document.createElement("div"),
+                            popup_section_players_label = document.createElement("span"),
+                            popup_section_players_space = document.createElement("span"),
+                            popup_section_players_value = document.createElement("span"),
+                        popup_section_recBP = document.createElement("div"),
+                            popup_section_recBP_label = document.createElement("span"),
+                            popup_section_recBP_space = document.createElement("span"),
+                            popup_section_recBP_value = document.createElement("span"),
+                        popup_section_enemy_level = document.createElement("div"),
+                            popup_section_enemy_level_label = document.createElement("span"),
+                            popup_section_enemy_level_space = document.createElement("span"),
+                            popup_section_enemy_level_value = document.createElement("span"),
+                        popup_section_tiers = document.createElement("div"),
+                            popup_section_tiers_col1 = document.createElement("span"),
+                            popup_section_tiers_space = document.createElement("span"),
+                            popup_section_tiers_col2 = document.createElement("span"),
+                        popup_section_tier1 = document.createElement("div"),
+                            popup_section_tier1_label = document.createElement("span"),
+                            popup_section_tier1_space = document.createElement("span"),
+                            popup_section_tier1_value = document.createElement("span"),
+                        popup_section_tier2 = document.createElement("div"),
+                            popup_section_tier2_label = document.createElement("span"),
+                            popup_section_tier2_space = document.createElement("span"),
+                            popup_section_tier2_value = document.createElement("span");
+
+                    popup_section_img.className = "text-center mb-1"
+                    popup_section_img.style = "width:300px"
+
+                    popup_section_name.className = "text-center mb-1"
+                    popup_section_name.style = "font-weight:bold"
+
+					popup_section_type.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold"
+                        popup_section_type.appendChild(popup_section_type_label)
+                        popup_section_type.appendChild(popup_section_type_space)
+                            popup_section_type_space.style = "flex:1"
+                        popup_section_type.appendChild(popup_section_type_value)
+                        
+					popup_section_players.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold"
+                        popup_section_players.appendChild(popup_section_players_label)
+                        popup_section_players.appendChild(popup_section_players_space)
+                            popup_section_players_space.style = "flex:1"
+                        popup_section_players.appendChild(popup_section_players_value)
+                        
+					popup_section_recBP.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold"
+                        popup_section_recBP.appendChild(popup_section_recBP_label)
+                        popup_section_recBP.appendChild(popup_section_recBP_space)
+                            popup_section_recBP_space.style = "flex:1"
+                        popup_section_recBP.appendChild(popup_section_recBP_value)
+                        
+					popup_section_enemy_level.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold"
+                        popup_section_enemy_level.appendChild(popup_section_enemy_level_label)
+                        popup_section_enemy_level.appendChild(popup_section_enemy_level_space)
+                            popup_section_enemy_level_space.style = "flex:1"
+                        popup_section_enemy_level.appendChild(popup_section_enemy_level_value)
+                        
+					popup_section_tiers.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold"
+                        popup_section_tiers.appendChild(popup_section_tiers_col1)
+                            popup_section_tiers_col1.innerHTML = "a"
+                        popup_section_tiers.appendChild(popup_section_tiers_space)
+                            popup_section_tiers_space.style = "flex:1"
+                        popup_section_tiers.appendChild(popup_section_tiers_col2)
+                            popup_section_tiers_col2.innerHTML = "a"
+                        
+					popup_section_tier1.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold"
+                        popup_section_tier1.appendChild(popup_section_tier1_label)
+                        popup_section_tier1.appendChild(popup_section_tier1_space)
+                            popup_section_tier1_space.style = "flex:1"
+                        popup_section_tier1.appendChild(popup_section_tier1_value)
+                        
+					popup_section_tier2.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold"
+                        popup_section_tier2.appendChild(popup_section_tier2_label)
+                        popup_section_tier2.appendChild(popup_section_tier2_space)
+                            popup_section_tier2_space.style = "flex:1"
+                        popup_section_tier2.appendChild(popup_section_tier2_value)
+
+                    return[popup_section_img,popup_section_name,popup_section_type,popup_section_players,popup_section_tiers,,popup_section_tier1,popup_section_tier2]
+                }),
+                setInfo: function(info){
+                    if(info.name && typeof info.name === "string")this.children[1].innerHTML = map_app.locale.strings[info.name];
+                    if(info.popup_data && typeof info.popup_data === "object"){
+                        this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
+                        nekoapp.system.clear(this.children[3].children[2]);
+                        for(var i in info.popup_data.type){
+                            switch(info.popup_data.type[i]){
+                                case "lobby":
+                                    popup_section_players_value.innerHTML = "100";
+                                    break;
+                                case "gathering":
+                                    popup_section_players_value.innerHTML = "32";
+                                    break;
+                                case "combat":
+                                    popup_section_players_value.innerHTML = "8";
+                                    break;
+                            }
+                        }
+                        this.children[0].children[0].addAttribute("src",info.popup_data.image);
+                        this.children[2].children[0].innerHTML = map_app.locale.strings.mapPopupSectionTypes;
+                            nekoapp.system.clear(this.children[2].children[2]);
+                            for(var i in info.popup_data.type){
+                                switch(info.popup_data.type[i]){
+                                    case "lobby":
+                                        popup_section_type_value.innerHTML = map_app.locale.strings.mapPopupSectionsTypeLobby;
+                                        break;
+                                    case "gathering":
+                                        popup_section_type_value.innerHTML = map_app.locale.strings.mapPopupSectionsTypeExploration;
+                                        break;
+                                    case "combat":
+                                        popup_section_type_value.innerHTML = map_app.locale.strings.mapPopupSectionsTypeBattle;
+                                        break;
+                                }
+                            }
+                        if(info.popup_data.recomended_bp){this.children[4].children[0].innerHTML = map_app.locale.strings.mapPopupRecomendedBP;
+                            this.children[4].children[2].innerHTML = info.popup_data.recomended_bp;}
+                        if(info.popup_data.average_enemy_level){this.children[5].children[0].innerHTML = map_app.locale.strings.mapPopupSectionAvgEnemyLvl;
+                            this.children[5].children[2].innerHTML = info.popup_data.average_enemy_level;}
+                        if(info.popup_data.tiers["1"]){this.children[7].children[0].innerHTML = map_app.locale.strings.mapPopupSectionTier1;
+                            this.children[7].children[2].innerHTML = info.popup_data.tiers["1"];}
+                        if(info.popup_data.tiers["2"]){this.children[8].children[0].innerHTML = map_app.locale.strings.mapPopupSectionTier1;
+                            this.children[8].children[2].innerHTML = info.popup_data.tiers["2"];}
+                    }
+                }
+            }
+        }
     },
     applicationGraphics : {                                                                     //  SVG Graphics used for your application
         resourceName : "MAP GRAPHICS" ,
