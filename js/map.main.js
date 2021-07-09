@@ -586,39 +586,36 @@ var map_app = new nekoapp({
                     return[popup_section_img,popup_section_name,popup_section_type,popup_section_players,popup_section_tiers,,popup_section_tier1,popup_section_tier2]
                 }),
                 setInfo: function(info){
-                    if(info.name && typeof info.name === "string")this.children[1].innerHTML = map_app.locale.strings[info.name];
+                    this.children[0].children[0].addAttribute("src",info.popup_data.image);
+                    info.name && typeof info.name === "string"; this.children[1].innerHTML = map_app.locale.strings[info.name];
+
                     if(info.popup_data && typeof info.popup_data === "object"){
                         this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
                         nekoapp.system.clear(this.children[3].children[2]);
-                        for(var i in info.popup_data.type){
                             switch(info.popup_data.type){
                                 case "lobby":
-                                    popup_section_players_value.innerHTML = "100";
+                                    this.children[3].children[2].innerHTML = "100";
                                     break;
                                 case "gathering":
-                                    popup_section_players_value.innerHTML = "32";
+                                    this.children[3].children[2].innerHTML = "32";
                                     break;
                                 case "combat":
-                                    popup_section_players_value.innerHTML = "8";
+                                    this.children[3].children[2].innerHTML = "8";
                                     break;
                             }
-                        }
-                        this.children[0].children[0].addAttribute("src",info.popup_data.image);
                         this.children[2].children[0].innerHTML = map_app.locale.strings.mapPopupSectionTypes;
                             nekoapp.system.clear(this.children[2].children[2]);
-                            for(var i in info.popup_data.type){
                                 switch(info.popup_data.type){
                                     case "lobby":
-                                        popup_section_type_value.innerHTML = map_app.locale.strings.mapPopupSectionsTypeLobby;
+                                        this.children[2].children[2].innerHTML = map_app.locale.strings.mapPopupSectionsTypeLobby;
                                         break;
                                     case "gathering":
-                                        popup_section_type_value.innerHTML = map_app.locale.strings.mapPopupSectionsTypeExploration;
+                                        this.children[2].children[2].innerHTML = map_app.locale.strings.mapPopupSectionsTypeExploration;
                                         break;
                                     case "combat":
-                                        popup_section_type_value.innerHTML = map_app.locale.strings.mapPopupSectionsTypeBattle;
+                                        this.children[2].children[2].innerHTML = map_app.locale.strings.mapPopupSectionsTypeBattle;
                                         break;
                                 }
-                            }
                         if(info.popup_data.recomended_bp){this.children[4].children[0].innerHTML = map_app.locale.strings.mapPopupRecomendedBP;
                             this.children[4].children[2].innerHTML = info.popup_data.recomended_bp;}
                         if(info.popup_data.average_enemy_level){this.children[5].children[0].innerHTML = map_app.locale.strings.mapPopupSectionAvgEnemyLvl;

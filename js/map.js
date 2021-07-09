@@ -88,7 +88,6 @@ var map = {
 								if(marker.popup)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element));
 							}
 					// INITIALIZE SECTIONS
-						for(var i in info.popup_data.type){
 							switch(info.popup_data.type){
 								case "lobby":
 									var sectionColorByType = "blue"
@@ -101,13 +100,20 @@ var map = {
 									break;
 							}
 
+							for(var i in Object.keys(map.sections))
+							for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]]))
+								for(var k in map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]){
+									var section = map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k];
+									map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k] = L.marker(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k]["coordinates"],{icon:map.map_icons[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]});
+									if(section.id && typeof section.id === "string")map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k].id = section.id;
+									if(section.popup)map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_section_element));
+
 								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"],{fillColor:sectionColorByType,color:"lightblue",weight:"1"})
 
 								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].setStyle({fillOpacity:0,opacity:.25})
 
 								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})})
 								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})})
-
 							}
 					// INITIALIZE MAP  -- SVGvsevolod
 					map.map_object = L.map("leaflet-map",{
