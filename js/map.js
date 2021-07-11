@@ -34,11 +34,20 @@ var map = {
 							category: map.map_category_strings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]],
 							name: map.map_names_strings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id],
 							popup_data: map.map_popup_data[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id]
-						});
+						});/*
 					if(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]._popup)
-						map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]._popup.getContent().setInfo({
-							name: map.map_names_strings[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k].id],
-							popup_data: map.map_popup_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k].id]
+						map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k].getContent().setInfo({
+							name: map.map_names_strings[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]],
+							popup_data: map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]]
+						});*/
+	}
+		for(var i in Object.keys(map.sections))
+			for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]]))
+				for(var k in map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]){
+					if(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k]._popup)
+						map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k]._popup.getContent().setInfo({
+							name: map.map_names_strings[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k].id],
+							popup_data: map.map_popup_data[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k].id]
 						});
 				}
 	},
