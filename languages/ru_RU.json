@@ -168,5 +168,15 @@
 	"mapMagTitle": "Mag региона",
 	"mapMagName1": "Эксперт Mag региона",
 	"mapMagName2": "Бесценный Mag региона",
-	"mapMagName3": "Непобедимый Mag региона"
+	"mapMagName3": "Непобедимый Mag региона",
+	
+	"mapCentralAelio": "Центр Эарио",
+	"mapSouthAelio": "Юг Эарио",
+	"mapNorthAelio": "Север Эарио",
+	"mapWestAelio": "Запад Эарио",
+	"mapHalphaLake": "Озеро Хальфия",
+	"mapMtMagnus": "Гора Магнус",
+	"mapLaboratoryRuins": "Руины лаборатории Ванфорд",
+	"mapResolForest": "Лес Резол",
+	"mapCentralCity": "Централ-Сити"
 }

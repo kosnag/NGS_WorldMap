@@ -34,22 +34,15 @@ var map = {
 							category: map.map_category_strings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]],
 							name: map.map_names_strings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id],
 							popup_data: map.map_popup_data[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id]
-						});/*
-					if(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]._popup)
-						map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k].getContent().setInfo({
-							name: map.map_names_strings[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]],
-							popup_data: map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]][Object.keys(map.map_popup_section_data[Object.keys(map.map_popup_section_data)[i]])[j]][k]]
-						});*/
-	}
-		for(var i in Object.keys(map.sections))
-			for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]]))
-				for(var k in map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]){
-					if(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k]._popup)
-						map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k]._popup.getContent().setInfo({
-							name: map.map_names_strings[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k].id],
-							popup_data: map.map_popup_data[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k].id]
 						});
 				}
+		for(var i in Object.keys(map.map_sections))
+			for(var j in Object.keys(map.map_sections[Object.keys(map.map_sections)[i]]))
+				if(map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]]._popup)
+					map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]]._popup.getContent().setInfo({
+						name: map.map_names_strings.sections[Object.keys(map.map_sections)[i]][map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id],
+						popup_data: map.map_popup_data.sections[Object.keys(map.map_sections)[i]][map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id]
+					});
 	},
 	load_settings: function(){
 		if(localStorage.getItem("user_settings") && typeof JSON.parse(localStorage.getItem("user_settings")) === "object"){
@@ -91,13 +84,16 @@ var map = {
 						for(var j in Object.keys(map.map_markers[Object.keys(map.map_markers)[i]]))
 							for(var k in map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]){
 								var marker = map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k];
-								map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k] = L.marker(map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k]["coordinates"],{icon:map.map_icons[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]});
+								map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k] = L.marker(marker.coordinates,{icon:map.map_icons[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]});
 								if(marker.id && typeof marker.id === "string")map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id = marker.id;
 								if(marker.tooltip)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindTooltip();
 								if(marker.popup)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element));
 							}
 					// INITIALIZE SECTIONS
-							switch(info.popup_data.type){
+					for(var i in Object.keys(map.map_sections))
+						for(var j in Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])){
+							var section = map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]];
+							switch(section.type){
 								case "lobby":
 									var sectionColorByType = "blue"
 									break;
@@ -108,22 +104,23 @@ var map = {
 									var sectionColorByType = "red"
 									break;
 							}
-
-							for(var i in Object.keys(map.sections))
-							for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]]))
-								for(var k in map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]){
-									var section = map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k];
-									map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k] = L.marker(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k]["coordinates"],{icon:map.map_icons[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]});
-									if(section.id && typeof section.id === "string")map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k].id = section.id;
-									if(section.popup)map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_section_element));
-
-								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]] = L.polygon(map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]]["coordinates"],{fillColor:sectionColorByType,color:"lightblue",weight:"1"})
-
-								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].setStyle({fillOpacity:0,opacity:.25})
-
-								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})})
-								map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})})
+							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]] = L.polygon(section.coordinates,{fillColor:sectionColorByType,color:"lightblue",weight:"1"});
+							if(section.id && typeof section.id)map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id = section.id;
+							if(section.popup){
+								var popup = nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element);
+								map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].bindPopup(popup);
+								popup.popup_id = section.id;
+								popup.popup_tier = 0;
+								popup.setAttribute("popup-id",section.id);
+								popup.initTiers({
+									name: map.map_names_strings.sections[Object.keys(map.map_sections)[i]][map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id],
+									popup_data: map.map_popup_data.sections[Object.keys(map.map_sections)[i]][map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id]
+								});
 							}
+							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].setStyle({fillOpacity:0,opacity:.25});
+							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})});
+							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})});
+						}
 					// INITIALIZE MAP  -- SVGvsevolod
 					map.map_object = L.map("leaflet-map",{
 						crs: L.CRS.Simple,
@@ -132,7 +129,7 @@ var map = {
 						zoomControl: false,
 						attributionControl: false,
 						keyboard: false,
-						maxBoundsViscosity: "0.5",
+						maxBoundsViscosity: "0.5", 
 						boxZoom: false,
 						zoomDelta: "0.5"
 					});
@@ -149,9 +146,9 @@ var map = {
 							if(map.user_settings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]])
 								map.toogle_markers(map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]);
 			
-					for(var i in Object.keys(map.sections))
-						for(var j in Object.keys(map.sections[Object.keys(map.sections)[i]]))
-							map.sections[Object.keys(map.sections)[i]][Object.keys(map.sections[Object.keys(map.sections)[i]])[j]].addTo(map.map_object)
+					for(var i in Object.keys(map.map_sections))
+						for(var j in Object.keys(map.map_sections[Object.keys(map.map_sections)[i]]))
+							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].addTo(map.map_object)
 
 					setTimeout(function(){
 						// SET MAP VIEW AND ZOOM FROM USER SETTINGS  -- SVGvsevolod
@@ -176,29 +173,9 @@ var map = {
 					var day = new Date().getUTCDay(); // то сегодняшний день
 				else
 					var day = !new Date().getUTCDay()?6:new Date().getUTCDay()-1 // иначе вчерашний
-					switch(day){
-					case 1:
-						nekoapp.system.xhr().load("assets/data/1_monday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
-						break;
-					case 2:
-						nekoapp.system.xhr().load("assets/data/2_tuesday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
-						break;
-					case 3:
-						nekoapp.system.xhr().load("assets/data/3_wednesday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
-						break;
-					case 4:
-						nekoapp.system.xhr().load("assets/data/4_thursday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
-						break;
-					case 5:
-						nekoapp.system.xhr().load("assets/data/5_friday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
-						break;
-					case 6:
-						nekoapp.system.xhr().load("assets/data/6_saturday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
-						break;
-					case 0:
-						nekoapp.system.xhr().load("assets/data/7_sunday.json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
-						break;
-				}
+				// DAY DATA CHOOSING OPTIMIZATION  -- SVGvsevolod 
+				var days = ["7_sunday","1_monday","2_tuesday","3_wednesday","4_thursday","5_friday","6_saturday"];
+				nekoapp.system.xhr().load("assets/data/"+days[day]+".json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 			}
 		});
 	}
