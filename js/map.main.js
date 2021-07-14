@@ -1,157 +1,157 @@
 var map_app = new nekoapp({
-    application : document.querySelector("map-app"),
+    application: document.querySelector("map-app"),
     applicationInfo: {
-        nekoappID : "18",
-        applicationTitle : "PSO2NGS Interactive Map",
-        applicationVersion : "v0.8492",
-        applicationURL : "//ngs-map.kosnag.ru/"
+        nekoappID: "18",
+        applicationTitle: "PSO2NGS Interactive Map",
+        applicationVersion: "v1.995",
+        applicationURL: "//ngs-map.kosnag.ru/"
     },
-    applicationStylesheets : {
-        default : "css/map.main.css",
-        colors : "css/map.colors.css",
-        ui : "css/map.ui.css",
-        bs : "css/bootstrap.min.css",
-        leaflet : "css/leaflet.css"
+    applicationStylesheets: {
+        default: "css/map.main.css",
+        colors: "css/map.colors.css",
+        ui: "css/map.ui.css",
+        bs: "css/bootstrap.min.css",
+        leaflet: "css/leaflet.css"
     },
-    applicationClasses : {
-        UIButtonBackground : "map_ui_button_background" ,									//  Class for button background
-        UIButtonContent : "map_ui_button_content" ,											//  Class for button content
-        UIDefaultButton : "map_ui_default_button" ,											//  Class for default button type
-        UIColorButton : "map_ui_color_button" ,												//  Class for color button type
-        UIGlassButton : "map_ui_glass_button" ,												//  Class for glass button type
-        UIPaneButton : "map_ui_pane_button" ,												//  Class for pane button type
-        UICircleButton : "map_ui_circle_button" ,											//  Class for circle button type
-		UICheckBoxIcon : "map_ui_checkbox_icon" ,											//  Class for checkbox icon
-		UICheckBoxContent : "map_ui_checkbox_content" ,										//  Class for checkbox content
-		UIRadioButtonIcon : "map_ui_radiobutton_icon" ,										//  Class for radio button icon
-		UIRadioButtonContent : "map_ui_radiobutton_content" ,								//  Class for radio button content
-        UITextBoxInput : "map_ui_textbox_input" ,											//  Class for textbox input
-        UITextBoxStroke : "map_ui_textbox_stroke" ,											//  Class for textbox stroke
-        UIStrokedTextBox : "map_ui_stroked_textbox" ,										//  Class for stroke textbox type
-        UISimpleTextBox : "map_ui_simple_textbox" ,											//  Class for simple textbox type
-        UIHighlightedTextBox : "map_ui_highlighted_textbox" ,								//  Class for highlighted textbox type
-		UIComboBoxValue : "map_ui_combobox_value" ,											//  Class for combobox value
-		UIComboBoxIcon : "map_ui_combobox_icon" ,											//  Class for combobox icon
-		UIComboBoxOptions : "map_ui_combobox_options" ,										//  Class for combobox options
-        headerContainer : "container-fluid",
-		headerNavigationItem : "map_head_navigation_item_content" ,							//  Class for header navigation item content
-		localeChangeList : "map_localechange_language_list" ,								//  Class for language list in locale change window
-        progressBarInner : "map_progress_bar_inner" ,										//  Class for progress bar inner part
-		rowSubtext : "map_row_subtext" ,													//  Class for row subtext
-		localeBoxIcon : "map_localebox_icon" ,												//  Class for localebox icon
-		localeBoxText : "map_localebox_text"												//  Class for localebox text
+    applicationClasses: {
+        UIButtonBackground: "map_ui_button_background",									//  Class for button background
+        UIButtonContent: "map_ui_button_content",											//  Class for button content
+        UIDefaultButton: "map_ui_default_button",											//  Class for default button type
+        UIColorButton: "map_ui_color_button",												//  Class for color button type
+        UIGlassButton: "map_ui_glass_button",												//  Class for glass button type
+        UIPaneButton: "map_ui_pane_button",												//  Class for pane button type
+        UICircleButton: "map_ui_circle_button",											//  Class for circle button type
+		UICheckBoxIcon: "map_ui_checkbox_icon",											//  Class for checkbox icon
+		UICheckBoxContent: "map_ui_checkbox_content",										//  Class for checkbox content
+		UIRadioButtonIcon: "map_ui_radiobutton_icon",										//  Class for radio button icon
+		UIRadioButtonContent: "map_ui_radiobutton_content",								//  Class for radio button content
+        UITextBoxInput: "map_ui_textbox_input",											//  Class for textbox input
+        UITextBoxStroke: "map_ui_textbox_stroke",											//  Class for textbox stroke
+        UIStrokedTextBox: "map_ui_stroked_textbox",										//  Class for stroke textbox type
+        UISimpleTextBox: "map_ui_simple_textbox",											//  Class for simple textbox type
+        UIHighlightedTextBox: "map_ui_highlighted_textbox",								//  Class for highlighted textbox type
+		UIComboBoxValue: "map_ui_combobox_value",											//  Class for combobox value
+		UIComboBoxIcon: "map_ui_combobox_icon",											//  Class for combobox icon
+		UIComboBoxOptions: "map_ui_combobox_options",										//  Class for combobox options
+        headerContainer: "container-fluid",
+		headerNavigationItem: "map_head_navigation_item_content",							//  Class for header navigation item content
+		localeChangeList: "map_localechange_language_list",								//  Class for language list in locale change window
+        progressBarInner: "map_progress_bar_inner",										//  Class for progress bar inner part
+		rowSubtext: "map_row_subtext",													//  Class for row subtext
+		localeBoxIcon: "map_localebox_icon",												//  Class for localebox icon
+		localeBoxText: "map_localebox_text"												//  Class for localebox text
     },
-    applicationElements : {                                                                     //  Defined custom elements for your application
-        localizedStringElement : {																//  Element for localized string
-            tag : "map-string" ,															//  Tag of your custom element
-            prototype : {}																		//  Prototype of your custom element
-        } ,
-        graphicElement : {																		//  Element for vector graphics
-            tag : "map-ui-graphic" ,
-            prototype : {}
-        } ,
-        graphicsLibraryElement : {																//  Element for graphics library
-            tag : "map-ui-graphics" ,
-            prototype : {}
-        } ,
-        graphicsSetElement : {																	//  Element for graphics set
-            tag : "map-graphicset" ,
-            prototype : {}
-        } ,
-        animationElement : {																	//  Element for animation
-            tag : "map-ui-animation" ,
-            prototype : {}
-        } ,
-        animationSpriteElement : {																//  Element for animation sprite
-            tag : "map-ui-animation-sprite" ,
-            prototype : {}
-        } ,
-        UIElement : {																			//  Element for User Interface element
-            tag : "map-ui-element" ,
-            prototype : {}
-        } ,
-        buttonElement : {																		//  Element for button
-            tag : "map-ui-button" ,
-            prototype : {}
-        } ,
-        checkBoxElement : {																		//  Element for checkbox
-            tag : "map-ui-checkbox" ,
-            prototype : {}
-        } ,
-        radioButtonElement : {																	//  Element for radio button
-            tag : "map-ui-radiobutton" ,
-            prototype : {}
-        } ,
-        textBoxElement : {																		//  Element for textbox
-            tag : "map-ui-textbox" ,
-            prototype : {}
-        } ,
-		comboboxElement : {																		//  Element for combobox
-			tag : "map-ui-combobox" ,
-			prototype : {}
-		} ,
-        tooltipElement : {																		//  Element for tooltip
-            tag : "map-ui-tooltip" ,
-            prototype : {}
-        } ,
-        moduleElement : {																		//  Element for module
-            tag : "map-module" ,
-            prototype : {}
-        } ,
-        headerElement : {																		//  Element for header
-            tag : "map-head" ,
-            prototype : {}
-        } ,
-        footerElement : {																		//  Element for footer
-            tag : "map-footer" ,
-            prototype : {}
-        } ,
-        windowElement : {																		//  Element for window
-            tag : "map-window" ,
-            prototype : {}
-        } ,
-		windowTitle : {																			//  Element for window title
-			tag : "map-window-title" ,
-			prototype : {}
-		} ,
-        overlayElement : {																		//  Element for overlay
-            tag : "map-overlay" ,
-            prototype : {}
-        } ,
-        headerLogoElement : {																	//  Element for header logo
-            tag : "map-logo" ,
-            prototype : {
-                setText : function(){
+    applicationElements: {                                                                     //  Defined custom elements for your application
+        localizedStringElement: {																//  Element for localized string
+            tag: "map-string",															//  Tag of your custom element
+            prototype: {}																		//  Prototype of your custom element
+        },
+        graphicElement: {																		//  Element for vector graphics
+            tag: "map-ui-graphic",
+            prototype: {}
+        },
+        graphicsLibraryElement: {																//  Element for graphics library
+            tag: "map-ui-graphics",
+            prototype: {}
+        },
+        graphicsSetElement: {																	//  Element for graphics set
+            tag: "map-graphicset",
+            prototype: {}
+        },
+        animationElement: {																	//  Element for animation
+            tag: "map-ui-animation",
+            prototype: {}
+        },
+        animationSpriteElement: {																//  Element for animation sprite
+            tag: "map-ui-animation-sprite",
+            prototype: {}
+        },
+        UIElement: {																			//  Element for User Interface element
+            tag: "map-ui-element",
+            prototype: {}
+        },
+        buttonElement: {																		//  Element for button
+            tag: "map-ui-button",
+            prototype: {}
+        },
+        checkBoxElement: {																		//  Element for checkbox
+            tag: "map-ui-checkbox",
+            prototype: {}
+        },
+        radioButtonElement: {																	//  Element for radio button
+            tag: "map-ui-radiobutton",
+            prototype: {}
+        },
+        textBoxElement: {																		//  Element for textbox
+            tag: "map-ui-textbox",
+            prototype: {}
+        },
+		comboboxElement: {																		//  Element for combobox
+			tag: "map-ui-combobox",
+			prototype: {}
+		},
+        tooltipElement: {																		//  Element for tooltip
+            tag: "map-ui-tooltip",
+            prototype: {}
+        },
+        moduleElement: {																		//  Element for module
+            tag: "map-module",
+            prototype: {}
+        },
+        headerElement: {																		//  Element for header
+            tag: "map-head",
+            prototype: {}
+        },
+        footerElement: {																		//  Element for footer
+            tag: "map-footer",
+            prototype: {}
+        },
+        windowElement: {																		//  Element for window
+            tag: "map-window",
+            prototype: {}
+        },
+		windowTitle: {																			//  Element for window title
+			tag: "map-window-title",
+			prototype: {}
+		},
+        overlayElement: {																		//  Element for overlay
+            tag: "map-overlay",
+            prototype: {}
+        },
+        headerLogoElement: {																	//  Element for header logo
+            tag: "map-logo",
+            prototype: {
+                setText: function(){
                     if (this.className !== "navbar-brand")
                     this.className = "navbar-brand"
                     this.innerHTML = map_app.locale.strings.language_title;
                 }
             }
-        } ,
-		headerNavigationElement : {																//  Element for header navigation
-			tag : "map-navigation" ,
-			prototype : {}
-		} ,
-		headerNavigationItem : {																//  Element for header navigation item
-			tag : "map-navigation-item" ,
-			prototype : {}
-		} ,
-        spinnerElement : {																		//  Element for spinner
-            tag : "map-ui-spinner" ,
-            prototype : {}
-        } ,
-        loadScreenElement : {																	//  Element for loading screen
-            tag : "map-loading" ,
-            prototype : {}
-        } ,
-        progressBarElement : {																	//  Element for progress bar
-            tag : "map-progress" ,
-            prototype : {}
-        } ,
-        alert_element : {
-            tag : "alert-window",
-            prototype : {
-                template : nekoapp.create.template(
+        },
+		headerNavigationElement: {																//  Element for header navigation
+			tag: "map-navigation",
+			prototype: {}
+		},
+		headerNavigationItem: {																//  Element for header navigation item
+			tag: "map-navigation-item",
+			prototype: {}
+		},
+        spinnerElement: {																		//  Element for spinner
+            tag: "map-ui-spinner",
+            prototype: {}
+        },
+        loadScreenElement: {																	//  Element for loading screen
+            tag: "map-loading",
+            prototype: {}
+        },
+        progressBarElement: {																	//  Element for progress bar
+            tag: "map-progress",
+            prototype: {}
+        },
+        alert_element: {
+            tag: "alert-window",
+            prototype: {
+                template: nekoapp.create.template(
                     function(){
                         let alert_h = document.createElement("h4")
                             alert_h.className = "alert-heading"
@@ -184,7 +184,6 @@ var map_app = new nekoapp({
                                 alert_span3.innerHTML = " or ";
                             let alert_a3 = document.createElement("a")
                                 alert_a3.style = alert_a_style
-                                alert_a3.id = "alert-tooltip1"
                                 alert_a3.innerHTML = "Discord (kosnag#1730)"
                                 alert_a3.href = "#"
                                 alert_a3.setAttribute("data-bs-toogle","tooltip")
@@ -195,7 +194,6 @@ var map_app = new nekoapp({
                                 alert_span4.innerHTML = ". I will be very happy, if you help me! "
                             let alert_a4 = document.createElement("a")
                                 alert_a4.style = alert_a_style
-                                alert_a4.id = "alert-tooltip2"
                                 alert_a4.innerHTML = "Take a hug by Matoi!"
                                 alert_a4.href = "#"
                                 alert_a4.setAttribute("data-bs-toogle","tooltip")
@@ -221,18 +219,16 @@ var map_app = new nekoapp({
                         return[alert_h,alert_p1,alert_p2,alert_p3,alert_button_close]
                     }
                 ),
-                init : function(){
-                    const   alertTooltip1 = document.getElementById('alert-tooltip1'),
-                            alertTooltip2 = document.getElementById('alert-tooltip2');
-                    const   constAlertTooltip1 = new bootstrap.Tooltip(alertTooltip1),
-                            constAlertTooltip2 = new bootstrap.Tooltip(alertTooltip2);
+                init: function(){
+                    new bootstrap.Tooltip(alert_a3),
+                    new bootstrap.Tooltip(alert_a4);
                 }
             }
         },
-        language_menu : {
-            tag : "language-menu",
-            prototype : {
-                template : nekoapp.create.template(
+        language_menu: {
+            tag: "language-menu",
+            prototype: {
+                template: nekoapp.create.template(
                     function(){
                         let modal_modelDialog = document.createElement("div")
                             modal_modelDialog.className = "modal-dialog modal-dialog-centered";
@@ -316,10 +312,10 @@ var map_app = new nekoapp({
 
             }
         },
-        ngs_map : {
-            tag : "ngs-map",
-            prototype : {
-                template : nekoapp.create.template(
+        ngs_map: {
+            tag: "ngs-map",
+            prototype: {
+                template: nekoapp.create.template(
                     function(){
                         let leaflet_div = document.createElement("div")
                             leaflet_div.className = "col-9"
@@ -329,7 +325,7 @@ var map_app = new nekoapp({
                         return[leaflet_div]
                     }
                 ),
-                init : function(){
+                init: function(){
 
                     setTimeout(function(){map.invalidateSize(true);}, 300)
                     // LANDMARKS
@@ -392,14 +388,14 @@ var map_app = new nekoapp({
             }
         },
 		// MAP MENU ELEMENT  -- SVGvsevolod
-		map_menu_element : {
-			tag : "map-menu",
-			prototype : {}
+		map_menu_element: {
+			tag: "map-menu",
+			prototype: {}
 		},
-		map_popup_element : {
-			tag : "map-popup",
-			prototype : {
-				template : nekoapp.create.template(function(){
+		map_popup_element: {
+			tag: "map-popup",
+			prototype: {
+				template: nekoapp.create.template(function(){
 					var popup_image = document.createElement("img"), // this.children[0]
 						popup_category = document.createElement("h4"), // this.children[1]
 						popup_name = document.createElement("h5"), // this.children[2]
@@ -632,33 +628,33 @@ var map_app = new nekoapp({
 			}
 		}
     },
-    applicationGraphics : {                                                                     //  SVG Graphics used for your application
-        resourceName : "MAP GRAPHICS" ,
-        URL : "html/html.html"
+    applicationGraphics: {                                                                     //  SVG Graphics used for your application
+        resourceName: "MAP GRAPHICS",
+        URL: "html/html.html"
     },
-    applicationAnimations : {																	//  Animations used by your application
-		UIWaveAnimation : {																		//  Wave animation
-			name : "map_ui_wave_animation" ,
-			duration : 300
-		} ,
-		CSSVariables : {																		//  CSS Variables used by animations and UI stylesheet
-			startposX : "--map-ui-animation-startpos-x" ,
-			startposY : "--map-ui-animation-startpos-y" ,
-			width : "--map-ui-animation-width" ,
-			height : "--map-ui-animation-height"
+    applicationAnimations: {																	//  Animations used by your application
+		UIWaveAnimation: {																		//  Wave animation
+			name: "map_ui_wave_animation",
+			duration: 300
+		},
+		CSSVariables: {																		//  CSS Variables used by animations and UI stylesheet
+			startposX: "--map-ui-animation-startpos-x",
+			startposY: "--map-ui-animation-startpos-y",
+			width: "--map-ui-animation-width",
+			height: "--map-ui-animation-height"
 		}
 	},
-    applicationModules : {
-        map_module : {
-            primaryModule : true,
-            moduleType : "pageModule",
-            moduleURL : "/",
-            moduleContents : function(){
+    applicationModules: {
+        map_module: {
+            primaryModule: true,
+            moduleType: "pageModule",
+            moduleURL: "/",
+            moduleContents: function(){
                 var elements = {
-                    alert_element : nekoapp.create.object(map_app,map_app.preferences.elements.alert_element,{
-                        class : "alert alert-danger mt-1 alert-dismissible fade show", 
-                        attr : {
-                            role : "alert"
+                    alert_element: nekoapp.create.object(map_app,map_app.preferences.elements.alert_element,{
+                        class: "alert alert-danger mt-1 alert-dismissible fade show", 
+                        attr: {
+                            role: "alert"
                         },
                         style: {
                             display: "block", 
@@ -671,17 +667,18 @@ var map_app = new nekoapp({
                             "z-index": "8492"
                             }
                     }),
-                    ngs_map : nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
-                        class : "container-fluid row",
-                        style : {
+                    ngs_map: nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
+                        class: "container-fluid row",
+                        style: {
                             "padding-top": "60px"
                         }
                     }),
-                        map_menu : nekoapp.create.object(map_app,map_app.preferences.elements.map_menu_element,{
+                        map_menu: nekoapp.create.object(map_app,map_app.preferences.elements.map_menu_element,{
                             class: "col-3 bg-menu"
                         }),
-                            menu_header : nekoapp.create.element(map_app,"div",{
+                            menu_header: nekoapp.create.element(map_app,"div",{
                                 class: "h3 text-center text-light mt-3", 
+                                attr: {"hidden": ""},
                                 text: nekoapp.create.localizedString(map_app, "mapHeader")
                             }),
                             map_menu_body: nekoapp.create.element(map_app,"div",{
@@ -740,7 +737,7 @@ var map_app = new nekoapp({
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_landmarksButton_ryuker_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_landmarksButton_ryuker_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
                                                 "for": "ryukerCheckbox",
@@ -749,7 +746,7 @@ var map_app = new nekoapp({
                                             },
                                             text: "<img width='48px' src='assets/markers/landmarks/ryuker.png'>"
                                         }),
-                                        menu_landmarksButton_mag_1 : nekoapp.create.element(map_app,"input",{
+                                        menu_landmarksButton_mag_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
                                             id: "magCheckbox",
                                             attr: {
@@ -757,7 +754,7 @@ var map_app = new nekoapp({
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_landmarksButton_mag_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_landmarksButton_mag_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
                                                 "for": "magCheckbox",
@@ -766,7 +763,7 @@ var map_app = new nekoapp({
                                             },
                                             text: "<img width='48px' src='assets/markers/landmarks/mag.png'>"
                                         }),
-                                        menu_landmarksButton_urgent_1 : nekoapp.create.element(map_app,"input",{
+                                        menu_landmarksButton_urgent_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
                                             id: "urgentCheckbox",
                                             attr: {
@@ -774,7 +771,7 @@ var map_app = new nekoapp({
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_landmarksButton_urgent_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_landmarksButton_urgent_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
                                                 "for": "urgentCheckbox",
@@ -836,7 +833,7 @@ var map_app = new nekoapp({
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_boxesButton_goldBox_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_boxesButton_goldBox_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1 disabled",
                                             attr: {
                                                 "for": "goldBoxCheckbox",
@@ -898,7 +895,7 @@ var map_app = new nekoapp({
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_mineralsButton_trinite_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_mineralsButton_trinite_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
                                                 "for": "triniteCheckbox",
@@ -907,7 +904,7 @@ var map_app = new nekoapp({
                                             },
                                             text: "<img width='48px' src='assets/markers/minerals/trinite.png'>"
                                         }),
-                                        menu_mineralsButton_phChunk_1 : nekoapp.create.element(map_app,"input",{
+                                        menu_mineralsButton_phChunk_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
                                             id: "phChunkCheckbox",
                                             attr: {
@@ -915,7 +912,7 @@ var map_app = new nekoapp({
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_mineralsButton_phChunk_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_mineralsButton_phChunk_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
                                                 "for": "phChunkCheckbox",
@@ -924,7 +921,7 @@ var map_app = new nekoapp({
                                             },
                                             text: "<img width='48px' src='assets/markers/minerals/photonChunk.png'>"
                                         }),
-                                        menu_mineralsButton_phQuartz_1 : nekoapp.create.element(map_app,"input",{
+                                        menu_mineralsButton_phQuartz_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
                                             id: "phQuartzCheckbox",
                                             attr: {
@@ -932,7 +929,7 @@ var map_app = new nekoapp({
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_mineralsButton_phQuartz_2 : nekoapp.create.element(map_app,"label",{
+                                        menu_mineralsButton_phQuartz_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
                                                 "for": "phQuartzCheckbox",
@@ -1449,7 +1446,7 @@ var map_app = new nekoapp({
 				
                 return [elements, [/*elements.alert_element,*/elements.ngs_map]];
             },
-            onModuleChange : function(){
+            onModuleChange: function(){
                 
                 new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_cocoon_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_mag_2)
@@ -1512,7 +1509,7 @@ var map_app = new nekoapp({
                         if(map.user_settings.food.turnip)map_app.modules.map_module.moduleContents.menu_foodButton_turnip_1.setAttribute("checked","");
                     });
             },
-            onLocaleChange : function(){
+            onLocaleChange: function(){
                 document.title = map_app.locale.strings.language_title;
                 map_app.modules.map_header.children[0].children[0].setText();
                 
@@ -1549,37 +1546,37 @@ var map_app = new nekoapp({
 				map.update_locale();
             }
         },
-        map_header : {
+        map_header: {
             moduleType: "headerModule",
             headerLayout: {
-                headerLogo : {},
-                headerNavigation : {
-                    items : [{
-                        label : "localeString@contribute_button",
-                        hyperlink : {
-                            URL : "//discord.gg/AvgmpuX",
-                            useDefaultNavigation : true,
-                            target : "_blank"
+                headerLogo: {},
+                headerNavigation: {
+                    items: [{
+                        label: "localeString@contribute_button",
+                        hyperlink: {
+                            URL: "//discord.gg/AvgmpuX",
+                            useDefaultNavigation: true,
+                            target: "_blank"
                         }},
                         {
-                        label : "localeString@github_button",
-                        hyperlink : {
-                            URL : "//github.com/kosnag/NGS_InterMap",
-                            useDefaultNavigation : true,
-                            target : "_blank"
+                        label: "localeString@github_button",
+                        hyperlink: {
+                            URL: "//github.com/kosnag/NGS_InterMap",
+                            useDefaultNavigation: true,
+                            target: "_blank"
                         }},
                         {
-                        label : "localeString@changelog_button",
-                        hyperlink : {
-                            URL : "//github.com/kosnag/NGS_InterMap/commits/main",
-                            useDefaultNavigation : true,
-                            target : "_blank"
+                        label: "localeString@changelog_button",
+                        hyperlink: {
+                            URL: "//github.com/kosnag/NGS_InterMap/commits/main",
+                            useDefaultNavigation: true,
+                            target: "_blank"
                         }},
                         {
-                        label : "localeString@laguages_button",
-                        hyperlink : {
-                            URL : "#",
-                            event : function(openLangMenu){
+                        label: "localeString@laguages_button",
+                        hyperlink: {
+                            URL: "#",
+                            event: function(openLangMenu){
                                 if (!(openLangMenu.hasAttribute("data-bs-toggle") && openLangMenu.hasAttribute("data-bs-target"))){
                                     openLangMenu.setAttribute("data-bs-toggle","modal"),
                                     openLangMenu.setAttribute("data-bs-target","#languageModal")
@@ -1592,7 +1589,7 @@ var map_app = new nekoapp({
             }
         }
     },
-    applicationLocalization : {
+    applicationLocalization: {
         "en-US": {URL: "languages/en_US.json"},
         "en-AL": {URL: "languages/en_al.json"},
         "ru-RU": {URL: "languages/ru_RU.json"},
@@ -1603,15 +1600,15 @@ var map_app = new nekoapp({
     }
 });
 map_app.loadScreen.spinner = nekoapp.create.element(map_app, "spinner", {
-    text : nekoapp.create.element(map_app, "div", {
-        class : "spinner-border text-primary",
-        attr : {role: "status"},
-        style : "width: 6rem; height: 6rem;"
+    text: nekoapp.create.element(map_app, "div", {
+        class: "spinner-border text-primary",
+        attr: {role: "status"},
+        style: "width: 6rem; height: 6rem;"
     }),
-    class : "d-flex justify-content-center"})
+    class: "d-flex justify-content-center"})
 map_app.preferences.events.onAppInit = new nekoapp.event({
-	target : map_app ,
-	oninit : function() {
+	target: map_app,
+	oninit: function() {
         document.title = map_app.locale.strings.language_title;
         map_app.modules.map_header.className = "navbar navbar-expand-lg navbar-dark";
         map_app.modules.map_header.children[0].children[0].setText();
@@ -1619,12 +1616,12 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
 		
 		// LANGUAGE CHANGE WINDOW INSIDE APP OBJECT INSTEAD OF APP MODULE OBJECT  -- SVGvsevolod
 		map_app.languageMenu = nekoapp.create.object(map_app,map_app.preferences.elements.language_menu,{
-			id : "languageModal",
-			class : "modal fade",
-			attr : {
-				tabindex : "-1",
-				"aria-labelledby" : "languageModalLabel",
-				"aria-hidden" : "true"
+			id: "languageModal",
+			class: "modal fade",
+			attr: {
+				tabindex: "-1",
+				"aria-labelledby": "languageModalLabel",
+				"aria-hidden": "true"
 			}
 		});
 		map_app.app.appendChild(map_app.languageMenu);
