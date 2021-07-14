@@ -2997,7 +2997,7 @@ textarea.form-control-lg {
 }
 .btn-outline-custom-blue:disabled, .btn-outline-custom-blue.disabled {
   color: var(--bs-custom-blue-button);
-  background-color: transparent;
+  background-color: rgb(170 170 170 / 65%);
 }
 
 .btn-primary {
