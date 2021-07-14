@@ -105,8 +105,22 @@
 		},
 		"enemies": {
 			"veteran": [
-				{"coordinates":[8492,8492],"id":"v-1","tooltip":true},
-				{"coordinates":[2040,2040],"id":"v-2","tooltip":true}
+				{"coordinates":[5275,3405],"id":"EldiSkythe","tooltip":true},
+				{"coordinates":[4922,2997],"id":"Bujin","tooltip":true},
+				{"coordinates":[5534,2129],"id":"Chiacurio","tooltip":true},
+				{"coordinates":[6353,1974],"id":"Varas","tooltip":true},
+				{"coordinates":[5219,1239],"id":"ThunderBanser","tooltip":true},
+				{"coordinates":[4499,1469],"id":"BiggFrogga","tooltip":true},
+				{"coordinates":[4554,923],"id":"ThunderBanshee","tooltip":true},
+				{"coordinates":[3773,2388],"id":"DaitylSword","tooltip":true},
+				{"coordinates":[2878,655],"id":"Oruq","tooltip":true},
+				{"coordinates":[1794,3037],"id":"DaitylAxe","tooltip":true},
+				{"coordinates":[676,3959],"id":"Nogleth","tooltip":true},
+				{"coordinates":[1007,4484],"id":"ArdBanshee","tooltip":true},
+				{"coordinates":[2488,3915],"id":"ArdBanser","tooltip":true},
+				{"coordinates":[3778,5122],"id":"CragBear","tooltip":true},
+				{"coordinates":[4933,5248],"id":"Waulon","tooltip":true},
+				{"coordinates":[363,415],"id":"NexAelio","tooltip":true}
 			],
 			"gigantix": [
 				{"coordinates":[1337,1488],"id":"g-1","tooltip":true},
@@ -147,8 +161,8 @@
 			"turnip": "mapTurnipTitle"
 		},
 		"enemies": {
-			"veteran": "testString1",
-			"gigantix": "testString2"
+			"veteran": "mapEmenyTypeVet",
+			"gigantix": "mapEnemyTypeGig"
 		}
 	},
 	"map_names_strings": {
@@ -195,13 +209,30 @@
 			}
 		},
 		"enemies": {
-			"gigantix": {
-				"g-1": "testString3",
-				"g-2": "testString4"
-			},
 			"veteran": {
-				"v-1": "testString5",
-				"v-2": "testString6"
+				"ArdBanser": "mapEnemyArdBanser",
+				"ArdBanshee": "mapEnemyArdBanshee",
+				"BiggFrogga": "mapEnemyBiggFrogga",
+				"Bujin": "mapEnemyBujin",
+				"Chiacurio": "mapEnemyChiacurio",
+				"CragBear": "mapEnemyCragBear",
+				"DaitylAxe": "mapEnemyDaitylAxe",
+				"DaitylSword": "mapEnemyDaitylSword",
+				"EldiSkythe": "mapEnemyEldiSkythe",
+				"NexAelio": "mapEnemyNexAelio",
+				"Nogleth": "mapEnemyNogleth",
+				"Oruq": "mapEnemyOruq",
+				"ThunderBanser": "mapEnemyThunderBanser",
+				"ThunderBanshee": "mapEnemyThunderBanshee",
+				"Varas": "mapEnemyVaras",
+				"Waulon": "mapEnemyWaulon"
+			},
+			"gigantix": {
+				"DaitylAxe": "mapEnemyDaitylAxe",
+				"DaitylSword": "mapEnemyDaitylSword",
+				"Nogleth": "mapEnemyNogleth",
+				"Oruq": "mapEnemyOruq",
+				"Varas": "mapEnemyVaras"
 			}
 		},
 		"sections":{
