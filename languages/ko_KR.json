@@ -168,5 +168,44 @@
 	"mapMagTitle": "리전 마그",
 	"mapMagName1": "숙달의 리전 마그",
 	"mapMagName2": "천금의 리전 마그",
-	"mapMagName3": "상승의 리전 마그"
+	"mapMagName3": "상승의 리전 마그",
+	
+	
+	"mapSectionCentralAelio": "Central Aelio",
+	"mapSectionSouthAelio": "South Aelio",
+	"mapSectionNorthAelio": "North Aelio",
+	"mapSectionWestAelio": "West Aelio",
+	"mapSectionHalphaLake": "Halphia Lake",
+	"mapSectionMtMagnus": "Mt. Magnus",
+	"mapSectionLaboratoryRuins": "Vanford Laboratory Ruins",
+	"mapSectionResolForest": "Resol Forest",
+	"mapSectionCentralCity": "Central City",
+	
+	"mapPopupSectionTypes": "Type of section",
+	"mapPopupSectionsTypeLobby": "Lobby Area",
+	"mapPopupSectionsTypeGathering": "Exploration Area",
+	"mapPopupSectionsTypeCombat": "Combat Area",
+	"mapPopupSectionAvgEnemyLvl": "Average Enemy Level",
+	"mapPopupSectionTier": "Rank",
+
+
+	"mapEmenyTitle": "Enemies",
+	"mapEmenyTypeVet": "Veteran",
+	"mapEnemyTypeGig": "Malevolent",
+	"mapEnemyArdBanser": "Ard Banser",
+	"mapEnemyArdBanshee": "Ard Banshee",
+	"mapEnemyBiggFrogga": "Bigg Frogga",
+	"mapEnemyBujin": "Bujin",
+	"mapEnemyChiacurio": "Chiacurio",
+	"mapEnemyCragBear": "Crag Bear",
+	"mapEnemyDaitylSword": "Daityl Sword",
+	"mapEnemyDaitylAxe": "Daityl Axe",
+	"mapEnemyEldiSkythe": "Eldi Skythe",
+	"mapEnemyNexAelio": "Nex Aelio",
+	"mapEnemyNogleth": "Nogleth",
+	"mapEnemyOruq": "Oruq",
+	"mapEnemyThunderBanser": "Thunder Banser",
+	"mapEnemyThunderBanshee": "Thunder Banshee",
+	"mapEnemyVaras": "Varas",
+	"mapEnemyWaulon": "Waulon"
 }

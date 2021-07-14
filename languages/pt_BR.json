@@ -168,5 +168,44 @@
 	"mapMagTitle": "Mag de Região",
 	"mapMagName1": "Especialista Mag de Região",
 	"mapMagName2": "Inestimável Mag de Região",
-	"mapMagName3": "Invencível Mag de Região"
+	"mapMagName3": "Invencível Mag de Região",
+	
+
+	"mapSectionCentralAelio": "Central Aelio",
+	"mapSectionSouthAelio": "South Aelio",
+	"mapSectionNorthAelio": "North Aelio",
+	"mapSectionWestAelio": "West Aelio",
+	"mapSectionHalphaLake": "Halphia Lake",
+	"mapSectionMtMagnus": "Mt. Magnus",
+	"mapSectionLaboratoryRuins": "Vanford Laboratory Ruins",
+	"mapSectionResolForest": "Resol Forest",
+	"mapSectionCentralCity": "Central City",
+	
+	"mapPopupSectionTypes": "Type of section",
+	"mapPopupSectionsTypeLobby": "Lobby Area",
+	"mapPopupSectionsTypeGathering": "Exploration Area",
+	"mapPopupSectionsTypeCombat": "Combat Area",
+	"mapPopupSectionAvgEnemyLvl": "Average Enemy Level",
+	"mapPopupSectionTier": "Rank",
+
+	
+	"mapEmenyTitle": "Enemies",
+	"mapEmenyTypeVet": "Veteran",
+	"mapEnemyTypeGig": "Malevolent",
+	"mapEnemyArdBanser": "Ard Banser",
+	"mapEnemyArdBanshee": "Ard Banshee",
+	"mapEnemyBiggFrogga": "Bigg Frogga",
+	"mapEnemyBujin": "Bujin",
+	"mapEnemyChiacurio": "Chiacurio",
+	"mapEnemyCragBear": "Crag Bear",
+	"mapEnemyDaitylSword": "Daityl Sword",
+	"mapEnemyDaitylAxe": "Daityl Axe",
+	"mapEnemyEldiSkythe": "Eldi Skythe",
+	"mapEnemyNexAelio": "Nex Aelio",
+	"mapEnemyNogleth": "Nogleth",
+	"mapEnemyOruq": "Oruq",
+	"mapEnemyThunderBanser": "Thunder Banser",
+	"mapEnemyThunderBanshee": "Thunder Banshee",
+	"mapEnemyVaras": "Varas",
+	"mapEnemyWaulon": "Waulon"
 }
