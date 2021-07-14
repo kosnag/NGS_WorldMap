@@ -188,10 +188,11 @@
 	"mapPopupSectionAvgEnemyLvl": "Average Enemy Level",
 	"mapPopupSectionTier": "Rank",
 
-	
+
 	"mapEmenyTitle": "Enemies",
 	"mapEmenyTypeVet": "Veteran",
 	"mapEnemyTypeGig": "Malevolent",
+	
 	"mapEnemyArdBanser": "Ard Banser",
 	"mapEnemyArdBanshee": "Ard Banshee",
 	"mapEnemyBiggFrogga": "Bigg Frogga",

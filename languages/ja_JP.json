@@ -170,7 +170,7 @@
 	"mapMagName2": "千金のリージョンマグ",
 	"mapMagName3": "常勝のリージョンマグ",
 	
-	
+
 	"mapSectionCentralAelio": "Central Aelio",
 	"mapSectionSouthAelio": "South Aelio",
 	"mapSectionNorthAelio": "North Aelio",
@@ -192,6 +192,7 @@
 	"mapEmenyTitle": "Enemies",
 	"mapEmenyTypeVet": "Veteran",
 	"mapEnemyTypeGig": "Malevolent",
+	
 	"mapEnemyArdBanser": "Ard Banser",
 	"mapEnemyArdBanshee": "Ard Banshee",
 	"mapEnemyBiggFrogga": "Bigg Frogga",
