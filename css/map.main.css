@@ -651,7 +651,7 @@ map-app map-localebox .map_localebox_text {
 
 #side_map_menu {
 	overflow-y: scroll;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 60px);
     position: relative;
 }
 #side_map_menu::-webkit-scrollbar {

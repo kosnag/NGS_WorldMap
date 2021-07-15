@@ -682,7 +682,7 @@ var map_app = new nekoapp({
                                 text: nekoapp.create.localizedString(map_app, "mapHeader")
                             }),
                             map_menu_body: nekoapp.create.element(map_app,"div",{
-                                class: "px-3 py-2",
+                                class: "px-3",
                                 id: "side_map_menu"
                             }),
                                 menu_landmarks_body: nekoapp.create.element(map_app,"div",{
@@ -690,6 +690,7 @@ var map_app = new nekoapp({
                                 }),
                                     menu_landmarks_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
+                                        text: nekoapp.create.localizedString(map_app, "mapLandmarksTitle")
                                     }),
                                     menu_landmarksButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex",
@@ -785,6 +786,7 @@ var map_app = new nekoapp({
                                 }),
                                     menu_boxes_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
+                                        text: nekoapp.create.localizedString(map_app, "mapBoxesTitle")
                                     }),
                                     menu_boxesButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex justify-content-center",
@@ -846,6 +848,7 @@ var map_app = new nekoapp({
                                 }),
                                     menu_minerals_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
+                                        text: nekoapp.create.localizedString(map_app, "mapMineralsTitle")
                                     }),
                                     menu_mineralsButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex justify-content-center",
@@ -940,6 +943,7 @@ var map_app = new nekoapp({
                                 }),
                                     menu_food_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
+                                        text: nekoapp.create.localizedString(map_app, "mapFoodTitle")
                                     }),
                                     menu_foodButton_group1: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex justify-content-center",
@@ -1161,6 +1165,7 @@ var map_app = new nekoapp({
                                 }),
                                     menu_other_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
+                                        text: nekoapp.create.localizedString(map_app, "mapOtherTitle")
                                     }),
                                     menu_otherButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex justify-content-center",
@@ -1206,6 +1211,7 @@ var map_app = new nekoapp({
                                 }),
                                     menu_enemy_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
+                                        text: nekoapp.create.localizedString(map_app, "mapEmenyTitle")
                                     }),
                                     menu_enemyButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex justify-content-center",
@@ -1254,7 +1260,6 @@ var map_app = new nekoapp({
 
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
                                     elements.menu_landmarks_body.appendChild(elements.menu_landmarks_desc)
-                                        elements.menu_landmarks_desc.appendChild(nekoapp.create.localizedString(map_app, "mapLandmarksTitle"))
                                     elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group)
                                         elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_1)
                                         elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_2)
@@ -1270,7 +1275,6 @@ var map_app = new nekoapp({
 
                                 elements.map_menu_body.appendChild(elements.menu_boxes_body)
                                     elements.menu_boxes_body.appendChild(elements.menu_boxes_desc)
-                                        elements.menu_boxes_desc.appendChild(nekoapp.create.localizedString(map_app, "mapBoxesTitle"))
                                     elements.menu_boxes_body.appendChild(elements.menu_boxesButton_group)
                                         elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_whiteBox_1)
                                         elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_whiteBox_2)
@@ -1282,7 +1286,6 @@ var map_app = new nekoapp({
 
                                 elements.map_menu_body.appendChild(elements.menu_minerals_body)
                                     elements.menu_minerals_body.appendChild(elements.menu_minerals_desc)
-                                        elements.menu_minerals_desc.appendChild(nekoapp.create.localizedString(map_app, "mapMineralsTitle"))
                                     elements.menu_minerals_body.appendChild(elements.menu_mineralsButton_group)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_1)
                                         elements.menu_mineralsButton_group.appendChild(elements.menu_mineralsButton_monotite_2)
@@ -1298,7 +1301,6 @@ var map_app = new nekoapp({
 
                                 elements.map_menu_body.appendChild(elements.menu_food_body)
                                     elements.menu_food_body.appendChild(elements.menu_food_desc)
-                                        elements.menu_food_desc.appendChild(nekoapp.create.localizedString(map_app, "mapFoodTitle"))
                                     elements.menu_food_body.appendChild(elements.menu_foodButton_group1)
                                         elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_apple_1)
                                         elements.menu_foodButton_group1.appendChild(elements.menu_foodButton_apple_2)
@@ -1330,7 +1332,6 @@ var map_app = new nekoapp({
 
                                 elements.map_menu_body.appendChild(elements.menu_other_body)
                                     elements.menu_other_body.appendChild(elements.menu_other_desc)
-                                        elements.menu_other_desc.appendChild(nekoapp.create.localizedString(map_app, "mapOtherTitle"))
                                     elements.menu_other_body.appendChild(elements.menu_otherButton_group)
                                         elements.menu_otherButton_group.appendChild(elements.menu_otherButton_datapod_1)
                                         elements.menu_otherButton_group.appendChild(elements.menu_otherButton_datapod_2)
@@ -1340,7 +1341,6 @@ var map_app = new nekoapp({
 
                                 elements.map_menu_body.appendChild(elements.menu_enemy_body)
                                     elements.menu_enemy_body.appendChild(elements.menu_enemy_desc)
-                                        elements.menu_enemy_desc.appendChild(nekoapp.create.localizedString(map_app, "mapEmenyTitle"))
                                     elements.menu_enemy_body.appendChild(elements.menu_enemyButton_group)
                                         elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_veteran_1)
                                         elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_veteran_2)
