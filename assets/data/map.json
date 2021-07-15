@@ -40,6 +40,10 @@
 		"enemies": {
 			"veteran": {"iconUrl": "assets/markers/veterans/ui/vet.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]},
 			"gigantix": {"iconUrl": "assets/markers/veterans/ui/giga.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]}
+		},
+		"other": {
+			"alphaReactor": {"iconUrl": "assets/markers/other/alphaReactor.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"datapod": {"iconUrl": "assets/markers/other/dataPod.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]}
 		}
 	},
 	"map_sections": {
@@ -126,6 +130,30 @@
 				{"coordinates":[1337,1488],"id":"g-1","tooltip":true},
 				{"coordinates":[9000,9000],"id":"g-2","tooltip":true}
 			]
+		},
+		"other": {
+			"datapod": [
+				{"coordinates":[5951,2027],"tooltip":true},
+				{"coordinates":[5469,1807],"tooltip":true},
+				{"coordinates":[5010,1784],"tooltip":true},
+				{"coordinates":[4543,1866],"tooltip":true},
+				{"coordinates":[4311,2597],"tooltip":true},
+				{"coordinates":[4546,3703],"tooltip":true},
+				{"coordinates":[4398,4815],"tooltip":true},
+				{"coordinates":[4261,5546],"tooltip":true},
+				{"coordinates":[3741,4245],"tooltip":true},
+				{"coordinates":[3568,2944],"tooltip":true},
+				{"coordinates":[3287,3078],"tooltip":true},
+				{"coordinates":[2832,3130],"tooltip":true},
+				{"coordinates":[2300,3762],"tooltip":true},
+				{"coordinates":[2199,3209],"tooltip":true},
+				{"coordinates":[2159,3675],"tooltip":true},
+				{"coordinates":[1252,4144],"tooltip":true},
+				{"coordinates":[641,3909],"tooltip":true},
+				{"coordinates":[596,4157],"tooltip":true},
+				{"coordinates":[2649,4174],"tooltip":true},
+				{"coordinates":[1802,5408],"tooltip":true}
+			]
 		}
 	},
 	"map_category_strings": {
@@ -163,6 +191,10 @@
 		"enemies": {
 			"veteran": "mapEmenyTypeVet",
 			"gigantix": "mapEnemyTypeGig"
+		},
+		"other": {
+			"alphaReactor": "mapOtherAlphaReactors",
+			"datapod": "mapOtherDatapods"
 		}
 	},
 	"map_names_strings": {
@@ -553,11 +585,17 @@
 			"turnip": false
 		},
 		"boxes": {
-			"redBox": false
+			"redBox": false,
+			"goldBox": false,
+			"whiteBox": false
 		},
 		"enemies": {
 			"gigantix": false,
 			"veteran": false
+		},
+		"other": {
+			"datapod": false,
+			"alphaReactor": false
 		}
 	}
 }
