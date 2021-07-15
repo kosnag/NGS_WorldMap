@@ -10,10 +10,6 @@
     
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "メニュー",
-
-    "mapSections": "セクション",
-    "mapSectionsOn": "表示する",
-    "mapSectionsOff": "隠す",
 	
     "mapMineralsTitle" : "鉱石",
 	"mapMonotiteTitle": "モノタイト",
