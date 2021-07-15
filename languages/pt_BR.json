@@ -169,17 +169,22 @@
 	"mapMagName1": "Especialista Mag de Região",
 	"mapMagName2": "Inestimável Mag de Região",
 	"mapMagName3": "Invencível Mag de Região",
+
+
+	"mapOtherTitle": "その他",
+	"mapOtherDatapods": "メッセージパック",
+	"mapOtherAlphaReactors": "アルファリアクター",
 	
 
-	"mapSectionCentralAelio": "Central Aelio",
-	"mapSectionSouthAelio": "South Aelio",
-	"mapSectionNorthAelio": "North Aelio",
-	"mapSectionWestAelio": "West Aelio",
-	"mapSectionHalphaLake": "Halphia Lake",
-	"mapSectionMtMagnus": "Mt. Magnus",
-	"mapSectionLaboratoryRuins": "Vanford Laboratory Ruins",
-	"mapSectionResolForest": "Resol Forest",
-	"mapSectionCentralCity": "Central City",
+	"mapSectionCentralAelio": "Aelio Central",
+	"mapSectionSouthAelio": "Aelio Sul",
+	"mapSectionNorthAelio": "Aelio Norte",
+	"mapSectionWestAelio": "Aelio Oeste",
+	"mapSectionHalphaLake": "Lago Halpha",
+	"mapSectionMtMagnus": "Monte Magnus",
+	"mapSectionLaboratoryRuins": "Ruinas do Laboratório",
+	"mapSectionResolForest": "Floresta Resol",
+	"mapSectionCentralCity": "Cidade Central",
 	
 	"mapPopupSectionTypes": "Type of section",
 	"mapPopupSectionsTypeLobby": "Lobby Area",
