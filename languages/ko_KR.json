@@ -10,10 +10,6 @@
     
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "메뉴",
-
-    "mapSections": "섹션",
-    "mapSectionsOn": "숨김 해제",
-    "mapSectionsOff": "숨김",
 	
     "mapMineralsTitle" : "광석",
 	"mapMonotiteTitle": "모노타이트",
