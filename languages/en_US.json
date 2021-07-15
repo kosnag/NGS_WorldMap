@@ -10,10 +10,6 @@
     
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "Menu",
-
-    "mapSections": "Sections",
-    "mapSectionsOn": "Unhide",
-    "mapSectionsOff": "Hide",
 	
     "mapMineralsTitle" : "Minerals",
 	"mapMonotiteTitle": "Monotite",
