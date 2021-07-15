@@ -169,6 +169,11 @@
 	"mapMagName1": "Expert Region Mag",
 	"mapMagName2": "Priceless Region Mag",
 	"mapMagName3": "Invincible Region Mag",
+
+
+	"mapOtherTitle": "Other",
+	"mapOtherDatapods": "Datapod",
+	"mapOtherAlphaReactors": "Alpha Reactor",
 	
 
 	"mapSectionCentralAelio": "Central Aelio",
