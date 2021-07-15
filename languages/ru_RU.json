@@ -10,10 +10,6 @@
 
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "Меню",
-
-    "mapSections": "Секции",
-    "mapSectionsOn": "Показать",
-    "mapSectionsOff": "Спрятать",
 	
     "mapMineralsTitle" : "Минералы",
 	"mapMonotiteTitle": "Монотайт",
