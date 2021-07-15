@@ -34,7 +34,7 @@
 
     "mapBoxesTitle" : "Containers",
 	"mapRedBoxTitle": "Item Container [Red]",
-	"mapWhiteBoxTitle": "Item Container [White]",
+	"mapWhiteBoxTitle": "Item Container [Green]",
 	"mapGoldBoxTitle": "Item Container [Gold]",
 
 	"mapLandmarksTitle": "Landmarks",
