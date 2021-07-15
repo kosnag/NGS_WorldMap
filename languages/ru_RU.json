@@ -170,22 +170,27 @@
 	"mapMagName2": "Бесценный Mag региона",
 	"mapMagName3": "Непобедимый Mag региона",
 
+
+	"mapOtherTitle": "Другое",
+	"mapOtherDatapods": "Сообщение",
+	"mapOtherAlphaReactors": "Альфа Реактор",
+
 	
-	"mapSectionCentralAelio": "Central Aelio",
-	"mapSectionSouthAelio": "South Aelio",
-	"mapSectionNorthAelio": "North Aelio",
-	"mapSectionWestAelio": "West Aelio",
-	"mapSectionHalphaLake": "Halphia Lake",
-	"mapSectionMtMagnus": "Mt. Magnus",
-	"mapSectionLaboratoryRuins": "Vanford Laboratory Ruins",
-	"mapSectionResolForest": "Resol Forest",
-	"mapSectionCentralCity": "Central City",
+	"mapSectionCentralAelio": "Центр Эарио",
+	"mapSectionSouthAelio": "Юг Эарио",
+	"mapSectionNorthAelio": "Север Эарио",
+	"mapSectionWestAelio": "Запад Эарио",
+	"mapSectionHalphaLake": "Озеро Хальфия",
+	"mapSectionMtMagnus": "Гора Магнус",
+	"mapSectionLaboratoryRuins": "Руины лаборатории Ванфорд",
+	"mapSectionResolForest": "Лес Резол",
+	"mapSectionCentralCity": "Централ-Сити",
 	
-	"mapPopupSectionTypes": "Type of section",
+	"mapPopupSectionTypes": "Тип секции",
 	"mapPopupSectionsTypeLobby": "Lobby Area",
 	"mapPopupSectionsTypeGathering": "Exploration Area",
 	"mapPopupSectionsTypeCombat": "Combat Area",
-	"mapPopupSectionAvgEnemyLvl": "Average Enemy Level",
+	"mapPopupSectionAvgEnemyLvl": "Средний уровень врагов",
 	"mapPopupSectionTier": "Rank",
 
 
