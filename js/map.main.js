@@ -690,7 +690,6 @@ var map_app = new nekoapp({
                                 }),
                                     menu_landmarks_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
-                                        text: "<i class='fas fa-map-marker-alt'></i> "
                                     }),
                                     menu_landmarksButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex",
@@ -786,7 +785,6 @@ var map_app = new nekoapp({
                                 }),
                                     menu_boxes_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
-                                        text: "<i class='fas fa-box'></i> "
                                     }),
                                     menu_boxesButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex justify-content-center",
@@ -848,7 +846,6 @@ var map_app = new nekoapp({
                                 }),
                                     menu_minerals_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
-                                        text: "<i class='fas fa-gem'></i> "
                                     }),
                                     menu_mineralsButton_group: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex justify-content-center",
@@ -943,7 +940,6 @@ var map_app = new nekoapp({
                                 }),
                                     menu_food_desc: nekoapp.create.element(map_app,"div",{
                                         class: "h5 text-light text-center mb-3",
-                                        text: "<i class='fas fa-apple-alt'></i> "
                                     }),
                                     menu_foodButton_group1: nekoapp.create.element(map_app,"button-group",{
                                         class: "d-flex justify-content-center",
@@ -1159,7 +1155,97 @@ var map_app = new nekoapp({
                                                 "data-bs-placement": "bottom"
                                             },
                                             text: "<img width='48px' src='assets/markers/food/aelioTurnip.png'>"
-                                        })
+                                        }),
+                            menu_other_body: nekoapp.create.element(map_app,"div",{
+                                    class: "my-3"
+                                }),
+                                    menu_other_desc: nekoapp.create.element(map_app,"div",{
+                                        class: "h5 text-light text-center mb-3",
+                                    }),
+                                    menu_otherButton_group: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex justify-content-center",
+                                    }),
+                                        menu_otherButton_datapod_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "datapodCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_otherButton_datapod_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "datapodCheckbox",
+                                                "data-bs-toogle": "tooltip",
+                                                "data-bs-placement": "bottom",
+                                                "data-bs-html": "true"
+                                            },
+                                            text: "<img width='48px' src='assets/markers/other/dataPod.png'>"
+                                        }),
+                                        menu_otherButton_reactor_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "reactorCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_otherButton_reactor_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1 disabled",
+                                            attr: {
+                                                "for": "reactorCheckbox",
+                                                "data-bs-toogle": "tooltip",
+                                                "data-bs-placement": "bottom",
+                                                "data-bs-html": "true"
+                                            },
+                                            text: "<img width='48px' src='assets/markers/other/alphaReactor.png'>"
+                                        }),
+                            menu_enemy_body: nekoapp.create.element(map_app,"div",{
+                                    class: "my-3"
+                                }),
+                                    menu_enemy_desc: nekoapp.create.element(map_app,"div",{
+                                        class: "h5 text-light text-center mb-3",
+                                    }),
+                                    menu_enemyButton_group: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex justify-content-center",
+                                    }),
+                                        menu_enemyButton_veteran_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "veteranCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_enemyButton_veteran_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1",
+                                            attr: {
+                                                "for": "veteranCheckbox",
+                                                "data-bs-toogle": "tooltip",
+                                                "data-bs-placement": "bottom",
+                                                "data-bs-html": "true"
+                                            },
+                                            text: "<img width='48px' src='assets/markers/veterans/ui/vet.png'>"
+                                        }),
+                                        menu_enemyButton_gigant_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "gigantCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_enemyButton_gigant_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1 disabled",
+                                            attr: {
+                                                "for": "gigantCheckbox",
+                                                "data-bs-toogle": "tooltip",
+                                                "data-bs-placement": "bottom",
+                                                "data-bs-html": "true"
+                                            },
+                                            text: "<img width='48px' src='assets/markers/veterans/ui/giga.png'>"
+                                        }),
 
                 };
                         elements.ngs_map.appendChild(elements.map_menu)
@@ -1241,6 +1327,25 @@ var map_app = new nekoapp({
                                         elements.menu_foodButton_group3.appendChild(elements.menu_foodButton_turnip_1)
                                         elements.menu_foodButton_group3.appendChild(elements.menu_foodButton_turnip_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
+
+                                elements.map_menu_body.appendChild(elements.menu_other_body)
+                                    elements.menu_other_body.appendChild(elements.menu_other_desc)
+                                        elements.menu_other_desc.appendChild(nekoapp.create.localizedString(map_app, "mapOtherTitle"))
+                                    elements.menu_other_body.appendChild(elements.menu_otherButton_group)
+                                        elements.menu_otherButton_group.appendChild(elements.menu_otherButton_datapod_1)
+                                        elements.menu_otherButton_group.appendChild(elements.menu_otherButton_datapod_2)
+                                        elements.menu_otherButton_group.appendChild(elements.menu_otherButton_reactor_1)
+                                        elements.menu_otherButton_group.appendChild(elements.menu_otherButton_reactor_2)
+                                elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
+
+                                elements.map_menu_body.appendChild(elements.menu_enemy_body)
+                                    elements.menu_enemy_body.appendChild(elements.menu_enemy_desc)
+                                        elements.menu_enemy_desc.appendChild(nekoapp.create.localizedString(map_app, "mapEmenyTitle"))
+                                    elements.menu_enemy_body.appendChild(elements.menu_enemyButton_group)
+                                        elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_veteran_1)
+                                        elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_veteran_2)
+                                        elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_gigant_1)
+                                        elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_gigant_2)
 
 				// BIND MAP MENU BUTTONS EVENTS  -- SVGvsevolod
                 elements.menu_landmarksButton_cocoon_1.addEventListener("change",function(){
@@ -1443,6 +1548,38 @@ var map_app = new nekoapp({
                         map.user_settings.boxes.goldBox = true;
                     map.save_settings();
                 });*/
+                elements.menu_enemyButton_veteran_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.enemies.veteran);
+                    if(map.user_settings.enemies.veteran)
+                        map.user_settings.enemies.veteran = false;
+                    else
+                        map.user_settings.enemies.veteran = true;
+                    map.save_settings();
+                });
+                elements.menu_enemyButton_gigant_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.enemies.gigantix);
+                    if(map.user_settings.enemies.gigantix)
+                        map.user_settings.enemies.gigantix = false;
+                    else
+                        map.user_settings.enemies.gigantix = true;
+                    map.save_settings();
+                });
+                elements.menu_otherButton_datapod_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.other.datapod);
+                    if(map.user_settings.other.datapod)
+                        map.user_settings.other.datapod = false;
+                    else
+                        map.user_settings.other.datapod = true;
+                    map.save_settings();
+                });
+                elements.menu_otherButton_reactor_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.other.alphaReactor);
+                    if(map.user_settings.other.alphaReactor)
+                        map.user_settings.other.alphaReactor = false;
+                    else
+                        map.user_settings.other.alphaReactor = true;
+                    map.save_settings();
+                });
 				
                 return [elements, [/*elements.alert_element,*/elements.ngs_map]];
             },
@@ -1476,6 +1613,12 @@ var map_app = new nekoapp({
                 new bootstrap.Tooltip(this.moduleContents.menu_foodButton_tomato_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_foodButton_shell_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_foodButton_turnip_2)
+
+                new bootstrap.Tooltip(this.moduleContents.menu_otherButton_datapod_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_otherButton_reactor_2)
+                
+                new bootstrap.Tooltip(this.moduleContents.menu_enemyButton_veteran_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_enemyButton_gigant_2)
                 //this.moduleContents.alert_element.init();
 				// INITIALIZE MAP AND MAP MENU  -- SVGvsevolod
 				map.init(function(){
@@ -1507,6 +1650,12 @@ var map_app = new nekoapp({
                         if(map.user_settings.food.tomato)map_app.modules.map_module.moduleContents.menu_foodButton_tomato_1.setAttribute("checked","");
                         if(map.user_settings.food.shell)map_app.modules.map_module.moduleContents.menu_foodButton_shell_1.setAttribute("checked","");
                         if(map.user_settings.food.turnip)map_app.modules.map_module.moduleContents.menu_foodButton_turnip_1.setAttribute("checked","");
+                        
+                        if(map.user_settings.enemies.gigantix)map_app.modules.map_module.moduleContents.menu_enemyButton_gigant_1.setAttribute("checked","");
+                        if(map.user_settings.enemies.veteran)map_app.modules.map_module.moduleContents.menu_enemyButton_veteran_1.setAttribute("checked","");
+
+                        //if(map.user_settings.other.alphaReactor)map_app.modules.map_module.moduleContents.menu_otherButton_reactor_1.setAttribute("checked","");
+                        if(map.user_settings.other.datapod)map_app.modules.map_module.moduleContents.menu_otherButton_datapod_1.setAttribute("checked","");
                     });
             },
             onLocaleChange: function(){
@@ -1542,6 +1691,12 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_foodButton_shell_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapShellTitle)
                 this.moduleContents.menu_foodButton_turnip_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapTurnipTitle)
                 
+                this.moduleContents.menu_otherButton_datapod_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherDatapods)
+                this.moduleContents.menu_otherButton_reactor_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherAlphaReactors)
+                
+                this.moduleContents.menu_enemyButton_veteran_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapEmenyTypeVet)
+                this.moduleContents.menu_enemyButton_gigant_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapEnemyTypeGig)
+                
 				// UPDATE MAP STRINGS  -- SVGvsevolod
 				map.update_locale();
             }
@@ -1561,14 +1716,14 @@ var map_app = new nekoapp({
                         {
                         label: "localeString@github_button",
                         hyperlink: {
-                            URL: "//github.com/kosnag/NGS_InterMap",
+                            URL: "//github.com/kosnag/NGS_WorldMap",
                             useDefaultNavigation: true,
                             target: "_blank"
                         }},
                         {
                         label: "localeString@changelog_button",
                         hyperlink: {
-                            URL: "//github.com/kosnag/NGS_InterMap/commits/main",
+                            URL: "//github.com/kosnag/NGS_WorldMap/commits/test",
                             useDefaultNavigation: true,
                             target: "_blank"
                         }},
@@ -1591,7 +1746,7 @@ var map_app = new nekoapp({
     },
     applicationLocalization: {
         "en-US": {URL: "languages/en_US.json"},
-        "en-AL": {URL: "languages/en_al.json"},
+        //"en-AL": {URL: "languages/en_al.json"},
         "ru-RU": {URL: "languages/ru_RU.json"},
         "ko-KR": {URL: "languages/ko_KR.json"},
         "ja-JP": {URL: "languages/ja_JP.json"},
