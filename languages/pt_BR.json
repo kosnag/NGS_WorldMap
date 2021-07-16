@@ -103,7 +103,7 @@
 
 	"mapCocoonName8": "Runway",
 	"mapCocoonDesc8": "Use Photon Dash para chegar no destino final.",
-	"mapCocoonMain8": "Alcane a linha de chegada",
+	"mapCocoonMain8": "Alcance a linha de chegada",
 	"mapCocoonSide8a": "Complete antes de 1:55",
 	"mapCocoonSide8b": "Complete antes de 2:35",
 	"mapCocoonSide8c": "Obtenha 5 Point Cubes",
@@ -167,9 +167,9 @@
 	"mapMagName3": "Invencível Mag de Região",
 
 
-	"mapOtherTitle": "その他",
-	"mapOtherDatapods": "メッセージパック",
-	"mapOtherAlphaReactors": "アルファリアクター",
+	"mapOtherTitle": "Título",
+	"mapOtherDatapods": "Datapod",
+	"mapOtherAlphaReactors": "Reatores Alpha",
 	
 
 	"mapSectionCentralAelio": "Aelio Central",
@@ -182,16 +182,16 @@
 	"mapSectionResolForest": "Floresta Resol",
 	"mapSectionCentralCity": "Cidade Central",
 	
-	"mapPopupSectionTypes": "Type of section",
-	"mapPopupSectionsTypeLobby": "Lobby Area",
-	"mapPopupSectionsTypeGathering": "Exploration Area",
-	"mapPopupSectionsTypeCombat": "Combat Area",
-	"mapPopupSectionAvgEnemyLvl": "Average Enemy Level",
+	"mapPopupSectionTypes": "Tipo de Seção",
+	"mapPopupSectionsTypeLobby": "Área do Lobby",
+	"mapPopupSectionsTypeGathering": "Área de Exploração",
+	"mapPopupSectionsTypeCombat": "Área de Combate",
+	"mapPopupSectionAvgEnemyLvl": "Nível Médio dos Inimigos",
 	"mapPopupSectionTier": "Rank",
 
 
-	"mapEmenyTitle": "Enemies",
-	"mapEmenyTypeVet": "Veteran",
+	"mapEmenyTitle": "Inimigos",
+	"mapEmenyTypeVet": "Veterano",
 	"mapEnemyTypeGig": "Malevolent",
 	
 	"mapEnemyArdBanser": "Ard Banser",
