@@ -10,10 +10,6 @@
     
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "메뉴",
-
-    "mapSections": "섹션",
-    "mapSectionsOn": "숨김 해제",
-    "mapSectionsOff": "숨김",
 	
     "mapMineralsTitle" : "광석",
 	"mapMonotiteTitle": "모노타이트",
@@ -168,5 +164,50 @@
 	"mapMagTitle": "리전 마그",
 	"mapMagName1": "숙달의 리전 마그",
 	"mapMagName2": "천금의 리전 마그",
-	"mapMagName3": "상승의 리전 마그"
+	"mapMagName3": "상승의 리전 마그",
+
+
+	"mapOtherTitle": "기타",
+	"mapOtherDatapods": "메시지 팩",
+	"mapOtherAlphaReactors": "알파 리액터",
+	
+
+	"mapSectionCentralAelio": "중앙 에아리오",
+	"mapSectionSouthAelio": "남부 에아리오",
+	"mapSectionNorthAelio": "북부 에아리오",
+	"mapSectionWestAelio": "서부 에아리오",
+	"mapSectionHalphaLake": "할피리아 호수",
+	"mapSectionMtMagnus": "마그너스산",
+	"mapSectionLaboratoryRuins": "반포드 연구소 유적",
+	"mapSectionResolForest": "레졸의 숲",
+	"mapSectionCentralCity": "센트럴 시티",
+	
+	"mapPopupSectionTypes": "섹션 종류",
+	"mapPopupSectionsTypeLobby": "로비 에어리어",
+	"mapPopupSectionsTypeGathering": "탐험 에어리어",
+	"mapPopupSectionsTypeCombat": "전투 에어리어",
+	"mapPopupSectionAvgEnemyLvl": "에너미 평균 레벨",
+	"mapPopupSectionTier": "랭크",
+
+
+	"mapEmenyTitle": "에너미",
+	"mapEmenyTypeVet": "베테랑",
+	"mapEnemyTypeGig": "기간틱스",
+	
+	"mapEnemyArdBanser": "어드 밴서",
+	"mapEnemyArdBanshee": "어드 밴시",
+	"mapEnemyBiggFrogga": "비그 프롯가",
+	"mapEnemyBujin": "부진",
+	"mapEnemyChiacurio": "치아큐리오",
+	"mapEnemyCragBear": "크래그 베어",
+	"mapEnemyDaitylSword": "다이달 소드",
+	"mapEnemyDaitylAxe": "다이달 액스",
+	"mapEnemyEldiSkythe": "엘디 사이즈",
+	"mapEnemyNexAelio": "넥스 에아리오",
+	"mapEnemyNogleth": "나그루스",
+	"mapEnemyOruq": "오르크",
+	"mapEnemyThunderBanser": "썬더 밴서",
+	"mapEnemyThunderBanshee": "썬더 밴시",
+	"mapEnemyVaras": "바라스",
+	"mapEnemyWaulon": "와우론"
 }

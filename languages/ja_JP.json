@@ -10,10 +10,6 @@
     
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "メニュー",
-
-    "mapSections": "セクション",
-    "mapSectionsOn": "表示する",
-    "mapSectionsOff": "隠す",
 	
     "mapMineralsTitle" : "鉱石",
 	"mapMonotiteTitle": "モノタイト",
@@ -45,7 +41,7 @@
 
 	"mapPopupMaxPlayers": "人数",
 	"mapPopupRecomendedBP": "推奨戦闘力",
-	"mapPopupRequiredBP": "Recommended Battle Power",
+	"mapPopupRequiredBP": "Required Battle Power",
 	"mapPopupDescription": "説明",
 	"mapPopupMainMission": "メインミッション",
 	"mapPopupSideMissions": "サイドミッション",
@@ -168,5 +164,50 @@
 	"mapMagTitle": "リージョンマグ",
 	"mapMagName1": "練達のリージョンマグ",
 	"mapMagName2": "千金のリージョンマグ",
-	"mapMagName3": "常勝のリージョンマグ"
+	"mapMagName3": "常勝のリージョンマグ",
+
+
+	"mapOtherTitle": "その他",
+	"mapOtherDatapods": "メッセージパック",
+	"mapOtherAlphaReactors": "アルファリアクター",
+
+
+	"mapSectionCentralAelio": "中央エアリオ",
+	"mapSectionSouthAelio": "南エアリオ",
+	"mapSectionNorthAelio": "北エアリオ",
+	"mapSectionWestAelio": "西エアリオ",
+	"mapSectionHalphaLake": "ハルフィリア湖",
+	"mapSectionMtMagnus": "マグナス山",
+	"mapSectionLaboratoryRuins": "ウァンフォード研究所跡",
+	"mapSectionResolForest": "レゾルの森林",
+	"mapSectionCentralCity": "セントラルシティ",
+	
+	"mapPopupSectionTypes": "セクションの種類",
+	"mapPopupSectionsTypeLobby": "ロビーエリア",
+	"mapPopupSectionsTypeGathering": "探索セクション",
+	"mapPopupSectionsTypeCombat": "戦闘セクション",
+	"mapPopupSectionAvgEnemyLvl": "平均的なエネミーレベル",
+	"mapPopupSectionTier": "RANK",
+
+
+	"mapEmenyTitle": "エネミー",
+	"mapEmenyTypeVet": "老練の",
+	"mapEnemyTypeGig": "絶望の",
+	
+	"mapEnemyArdBanser": "アードバンサー",
+	"mapEnemyArdBanshee": "アードバンシー",
+	"mapEnemyBiggFrogga": "ビグフロッガ",
+	"mapEnemyBujin": "ブジン",
+	"mapEnemyChiacurio": "チアキュリオ",
+	"mapEnemyCragBear": "クラッグベア",
+	"mapEnemyDaitylSword": "ダイダル・ソード",
+	"mapEnemyDaitylAxe": "ダイダル・アックス",
+	"mapEnemyEldiSkythe": "エルディサイズ",
+	"mapEnemyNexAelio": "ネクス・エアリオ",
+	"mapEnemyNogleth": "ナグルス",
+	"mapEnemyOruq": "オルク",
+	"mapEnemyThunderBanser": "サンダバンサー",
+	"mapEnemyThunderBanshee": "サンダバンシー",
+	"mapEnemyVaras": "ヴァラス",
+	"mapEnemyWaulon": "ワウロン"
 }

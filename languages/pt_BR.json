@@ -10,10 +10,6 @@
     
     "__MENU__": "DON'T TOUCH THAT STRING",
     "mapHeader": "Menu",
-
-    "mapSections": "Seções",
-    "mapSectionsOn": "Esconder",
-    "mapSectionsOff": "Visualizar",
 	
     "mapMineralsTitle" : "Minerais",
 	"mapMonotiteTitle": "Monotite",
@@ -107,7 +103,7 @@
 
 	"mapCocoonName8": "Runway",
 	"mapCocoonDesc8": "Use Photon Dash para chegar no destino final.",
-	"mapCocoonMain8": "Alcane a linha de chegada",
+	"mapCocoonMain8": "Alcance a linha de chegada",
 	"mapCocoonSide8a": "Complete antes de 1:55",
 	"mapCocoonSide8b": "Complete antes de 2:35",
 	"mapCocoonSide8c": "Obtenha 5 Point Cubes",
@@ -168,5 +164,50 @@
 	"mapMagTitle": "Mag de Região",
 	"mapMagName1": "Especialista Mag de Região",
 	"mapMagName2": "Inestimável Mag de Região",
-	"mapMagName3": "Invencível Mag de Região"
+	"mapMagName3": "Invencível Mag de Região",
+
+
+	"mapOtherTitle": "Título",
+	"mapOtherDatapods": "Datapod",
+	"mapOtherAlphaReactors": "Reatores Alpha",
+	
+
+	"mapSectionCentralAelio": "Aelio Central",
+	"mapSectionSouthAelio": "Aelio Sul",
+	"mapSectionNorthAelio": "Aelio Norte",
+	"mapSectionWestAelio": "Aelio Oeste",
+	"mapSectionHalphaLake": "Lago Halpha",
+	"mapSectionMtMagnus": "Monte Magnus",
+	"mapSectionLaboratoryRuins": "Ruinas do Laboratório",
+	"mapSectionResolForest": "Floresta Resol",
+	"mapSectionCentralCity": "Cidade Central",
+	
+	"mapPopupSectionTypes": "Tipo de Seção",
+	"mapPopupSectionsTypeLobby": "Área do Lobby",
+	"mapPopupSectionsTypeGathering": "Área de Exploração",
+	"mapPopupSectionsTypeCombat": "Área de Combate",
+	"mapPopupSectionAvgEnemyLvl": "Nível Médio dos Inimigos",
+	"mapPopupSectionTier": "Rank",
+
+
+	"mapEmenyTitle": "Inimigos",
+	"mapEmenyTypeVet": "Veterano",
+	"mapEnemyTypeGig": "Malevolent",
+	
+	"mapEnemyArdBanser": "Ard Banser",
+	"mapEnemyArdBanshee": "Ard Banshee",
+	"mapEnemyBiggFrogga": "Bigg Frogga",
+	"mapEnemyBujin": "Bujin",
+	"mapEnemyChiacurio": "Chiacurio",
+	"mapEnemyCragBear": "Crag Bear",
+	"mapEnemyDaitylSword": "Daityl Sword",
+	"mapEnemyDaitylAxe": "Daityl Axe",
+	"mapEnemyEldiSkythe": "Eldi Skythe",
+	"mapEnemyNexAelio": "Nex Aelio",
+	"mapEnemyNogleth": "Nogleth",
+	"mapEnemyOruq": "Oruq",
+	"mapEnemyThunderBanser": "Thunder Banser",
+	"mapEnemyThunderBanshee": "Thunder Banshee",
+	"mapEnemyVaras": "Varas",
+	"mapEnemyWaulon": "Waulon"
 }
