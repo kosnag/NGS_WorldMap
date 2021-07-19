@@ -38,8 +38,8 @@
 			"goldBox": {"iconUrl": "assets/markers/containers/goldBox.png", "iconSize": [18,18], "iconAnchor": [9,9], "popupAnchor": [0,-9]}
 		},
 		"enemies": {
-			"veteran": {"iconUrl": "assets/markers/veterans/ui/vet.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]},
-			"gigantix": {"iconUrl": "assets/markers/veterans/ui/giga.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]}
+			"veteran": {"iconUrl": "assets/markers/enemies/vet.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]},
+			"gigantix": {"iconUrl": "assets/markers/enemies/giga.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]}
 		},
 		"other": {
 			"alphaReactor": {"iconUrl": "assets/markers/other/alphaReactor.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
@@ -127,8 +127,15 @@
 				{"coordinates":[363,415],"id":"NexAelio","tooltip":true}
 			],
 			"gigantix": [
-				{"coordinates":[1337,1488],"id":"g-1","tooltip":true},
-				{"coordinates":[9000,9000],"id":"g-2","tooltip":true}
+				{"coordinates":[4869,3244],"id":"Nogleth","tooltip":true},
+				{"coordinates":[2983,3518],"id":"Nogleth","tooltip":true},
+				{"coordinates":[1260,3681],"id":"Oruq","tooltip":true},
+				{"coordinates":[4562,1943],"id":"DaitylAxe","tooltip":true},
+				{"coordinates":[5812,1881],"id":"DaitylAxe","tooltip":true},
+				{"coordinates":[5897,5987],"id":"DaitylSword","tooltip":true},
+				{"coordinates":[2772,454],"id":"Varas","tooltip":true},
+				{"coordinates":[2360,1195],"id":"Varas","tooltip":true},
+				{"coordinates":[3084,1496],"id":"Varas","tooltip":true}
 			]
 		},
 		"other": {

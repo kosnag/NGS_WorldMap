@@ -10,7 +10,7 @@ var map_app = new nekoapp({
         default: "css/map.main.css",
         colors: "css/map.colors.css",
         ui: "css/map.ui.css",
-        bs: "css/bootstrap.min.css",
+        bs: "css/bootstrap.css",
         leaflet: "css/leaflet.css"
     },
     applicationClasses: {
@@ -448,8 +448,8 @@ var map_app = new nekoapp({
 					popup_req3_space.style = "flex:1";
 					popup_tiers_left.className = "carousel-control-prev-icon";
 					popup_tiers_right.className = "carousel-control-next-icon";
-					popup_tiers_left.style = "filter:invert(1);width:20px;height:20px;cursor:pointer";
-					popup_tiers_right.style = "filter:invert(1);width:20px;height:20px;cursor:pointer";
+					popup_tiers_left.style = "width:20px;height:20px;cursor:pointer;";
+					popup_tiers_right.style = "width:20px;height:20px;cursor:pointer;";
 					popup_type.appendChild(popup_type_label);
 					popup_type.appendChild(popup_type_space);
 					popup_type.appendChild(popup_type_value);
@@ -1232,7 +1232,7 @@ var map_app = new nekoapp({
                                                 "data-bs-placement": "bottom",
                                                 "data-bs-html": "true"
                                             },
-                                            text: "<img width='48px' src='assets/markers/veterans/ui/vet.png'>"
+                                            text: "<img width='48px' src='assets/markers/enemies/vet.png'>"
                                         }),
                                         menu_enemyButton_gigant_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -1243,14 +1243,14 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_enemyButton_gigant_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1 disabled",
+                                            class: "btn btn-outline-custom-blue mx-1",
                                             attr: {
                                                 "for": "gigantCheckbox",
                                                 "data-bs-toogle": "tooltip",
                                                 "data-bs-placement": "bottom",
                                                 "data-bs-html": "true"
                                             },
-                                            text: "<img width='48px' src='assets/markers/veterans/ui/giga.png'>"
+                                            text: "<img width='48px' src='assets/markers/enemies/giga.png'>"
                                         }),
 
                 };
