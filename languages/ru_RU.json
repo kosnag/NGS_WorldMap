@@ -1,15 +1,10 @@
 {
     "language_title": "Интерактивная Карта PSO2NGS",
 
-    "__NAVBAR__": "DON'T TOUCH THAT STRING",
     "contribute_button": "<i class='fab fa-discord'></i> Помочь",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "changelog_button": "<i class='fab fa-github'></i> Изменения",
+    "donate_button": "<i class='fab fa-kofi'></i> Поддержать",
     "laguages_button": "<i class='fas fa-language'></i> Язык",
-
-
-    "__MENU__": "DON'T TOUCH THAT STRING",
-    "mapHeader": "Меню",
 	
     "mapMineralsTitle" : "Минералы",
 	"mapMonotiteTitle": "Монотит",
@@ -49,6 +44,7 @@
 	"mapPopupRewards": "Награды",
 	"mapPopupRewardMeseta": "N-месета",
 	"mapPopupRewardSP": "SP",
+	"mapPopupRewardSeasonPoints": "",
 
     "mapCocoonTitle": "Кокон",
 	

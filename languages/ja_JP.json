@@ -1,15 +1,10 @@
 {
     "language_title": "PSO2NGS Interactive Map",
 
-    "__NAVBAR__": "DON'T TOUCH THAT STRING",
     "contribute_button": "<i class='fab fa-discord'></i> 貢献する",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "changelog_button": "<i class='fab fa-github'></i> 変更ログ",
-    "laguages_button": "<i class='fas fa-language'></i> 言語",
-
-    
-    "__MENU__": "DON'T TOUCH THAT STRING",
-    "mapHeader": "メニュー",
+    "donate_button": "<i class='fab fa-kofi'></i> 変更ログ",
+    "laguages_button": "<i class='fas fa-language'></i> 寄付",
 	
     "mapMineralsTitle" : "鉱石",
 	"mapMonotiteTitle": "モノタイト",
@@ -49,6 +44,7 @@
 	"mapPopupRewards": "報酬",
 	"mapPopupRewardMeseta": "N-メセタ",
 	"mapPopupRewardSP": "SP",
+	"mapPopupRewardSeasonPoints": "",
 
     "mapCocoonTitle": "コクーン",
 	

@@ -1,15 +1,10 @@
 {
     "language_title": "PSO2NGS 인터렉티브 맵",
 
-    "__NAVBAR__": "DON'T TOUCH THAT STRING",
     "contribute_button": "<i class='fab fa-discord'></i> 기증하기",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "changelog_button": "<i class='fab fa-github'></i> 변경사항",
-    "laguages_button": "<i class='fas fa-language'></i> 언어",
-
-    
-    "__MENU__": "DON'T TOUCH THAT STRING",
-    "mapHeader": "메뉴",
+    "donate_button": "<i class='fab fa-kofi'></i> 변경사항",
+    "laguages_button": "<i class='fas fa-language'></i> 기부하다",
 	
     "mapMineralsTitle" : "광석",
 	"mapMonotiteTitle": "모노타이트",
@@ -49,6 +44,7 @@
 	"mapPopupRewards": "보상",
 	"mapPopupRewardMeseta": "N-메세타",
 	"mapPopupRewardSP": "SP",
+	"mapPopupRewardSeasonPoints": "",
 
     "mapCocoonTitle": "코쿤",
 	

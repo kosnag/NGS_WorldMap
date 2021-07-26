@@ -1,15 +1,10 @@
 {
     "language_title": "PSO2NGS Interactive Map",
 
-    "__NAVBAR__": "DON'T TOUCH THAT STRING",
     "contribute_button": "<i class='fab fa-discord'></i> Contribute",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "changelog_button": "<i class='fab fa-github'></i> Changlelog",
+    "donate_button": "<i class='fab fa-kofi'></i> Donate",
     "laguages_button": "<i class='fas fa-language'></i> Language",
-
-    
-    "__MENU__": "DON'T TOUCH THAT STRING",
-    "mapHeader": "Menu",
 	
     "mapMineralsTitle" : "Minerals",
 	"mapMonotiteTitle": "Monotite",
@@ -49,6 +44,7 @@
 	"mapPopupRewards": "Rewards",
 	"mapPopupRewardMeseta": "N-Meseta",
 	"mapPopupRewardSP": "SP",
+	"mapPopupRewardSeasonPoints": "",
 
     "mapCocoonTitle": "Cocoon",
 	
