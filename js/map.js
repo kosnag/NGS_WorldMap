@@ -17,6 +17,32 @@ var map = {
 			for(var i in category)
 				map.toogle_marker(category[i]);
 	},
+	switch_marker: function(marker){
+		if(marker.id.includes("box")){
+			if(marker.getIcon()===map.map_icons.boxes.redBox){
+				marker.setIcon(map.map_icons.boxes.redBoxChecked);
+				map.user_settings.checked.redBox[map.user_settings.checked.redBox.length]=marker.id;
+				map.save_settings();
+			}else{
+				marker.setIcon(map.map_icons.boxes.redBox);
+				var mark = map.user_settings.checked.redBox.indexOf(marker.id);
+				map.user_settings.checked.redBox.splice(mark,1);
+				map.save_settings();
+			}
+		}
+		if(marker.id.includes("datapod")){
+			if(marker.getIcon()===map.map_icons.other.datapod){
+				marker.setIcon(map.map_icons.other.datapodChecked);
+				map.user_settings.checked.datapod[map.user_settings.checked.datapod.length]=marker.id;
+				map.save_settings();
+			}else{
+				marker.setIcon(map.map_icons.other.datapod);
+				var mark = map.user_settings.checked.datapod.indexOf(marker.id);
+				map.user_settings.checked.datapod.splice(mark,1);
+				map.save_settings();
+			}
+		}
+	},
 	update_locale: function(){
 		for(var i in Object.keys(map.map_markers))
 			for(var j in Object.keys(map.map_markers[Object.keys(map.map_markers)[i]]))
@@ -49,6 +75,20 @@ var map = {
 			var data = JSON.parse(localStorage.getItem("user_settings"));
 			for(var i in Object.keys(data))
 				map.user_settings[Object.keys(data)[i]] = data[Object.keys(data)[i]];
+		}
+		for(var i in map.user_settings.checked.redBox){
+			for(var j in map.map_markers.boxes.redBox){
+				if(map.map_markers.boxes.redBox[j].id===map.user_settings.checked.redBox[i]){
+					map.map_markers.boxes.redBox[j].setIcon(map.map_icons.boxes.redBoxChecked);
+				}
+			}
+		}
+		for(var i in map.user_settings.checked.datapod){
+			for(var j in map.map_markers.other.datapod){
+				if(map.map_markers.other.datapod[j].id===map.user_settings.checked.datapod[i]){
+					map.map_markers.other.datapod[j].setIcon(map.map_icons.other.datapodChecked);
+				}
+			}
 		}
 	},
 	save_settings: function(){
@@ -85,6 +125,8 @@ var map = {
 							if(marker.id && typeof marker.id === "string")map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id = marker.id;
 							if(marker.tooltip)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindTooltip(map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k],{"direction":"top"});
 							if(marker.popup)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element));
+							if(marker.markable)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].on("contextmenu",function(){map.switch_marker(this);})
+							map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].on("dblclick",function(){console.log(this)})
 						}
 				// INITIALIZE SECTIONS
 				for(var i in Object.keys(map.map_sections))
