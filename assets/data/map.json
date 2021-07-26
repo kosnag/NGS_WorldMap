@@ -382,11 +382,22 @@
 				"Waulon": "mapEnemyWaulon"
 			},
 			"gigantix": {
+				"ArdBanser": "mapEnemyArdBanser",
+				"ArdBanshee": "mapEnemyArdBanshee",
+				"BiggFrogga": "mapEnemyBiggFrogga",
+				"Bujin": "mapEnemyBujin",
+				"Chiacurio": "mapEnemyChiacurio",
+				"CragBear": "mapEnemyCragBear",
 				"DaitylAxe": "mapEnemyDaitylAxe",
 				"DaitylSword": "mapEnemyDaitylSword",
+				"EldiSkythe": "mapEnemyEldiSkythe",
+				"NexAelio": "mapEnemyNexAelio",
 				"Nogleth": "mapEnemyNogleth",
 				"Oruq": "mapEnemyOruq",
-				"Varas": "mapEnemyVaras"
+				"ThunderBanser": "mapEnemyThunderBanser",
+				"ThunderBanshee": "mapEnemyThunderBanshee",
+				"Varas": "mapEnemyVaras",
+				"Waulon": "mapEnemyWaulon"
 			}
 		},
 		"sections":{
