@@ -1700,7 +1700,6 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_enemyButton_veteran_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapEmenyTypeVet)
                 this.moduleContents.menu_enemyButton_gigant_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapEnemyTypeGig)
                 
-				// UPDATE MAP STRINGS  -- SVGvsevolod
 				map.update_locale();
             }
         },
@@ -1775,7 +1774,6 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
         map_app.modules.map_header.children[0].children[0].setText();
         document.body.className = "bg-secondary";
 		
-		// LANGUAGE CHANGE WINDOW INSIDE APP OBJECT INSTEAD OF APP MODULE OBJECT  -- SVGvsevolod
 		map_app.languageMenu = nekoapp.create.object(map_app,map_app.preferences.elements.language_menu,{
 			id: "languageModal",
 			class: "modal fade",
