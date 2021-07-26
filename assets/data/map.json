@@ -218,7 +218,8 @@
 				{"coordinates":[3594,4816],"tooltip":true,"id":"box-110"},
 				{"coordinates":[3480,4821],"tooltip":true,"id":"box-111"},
 				{"coordinates":[3547,4719],"tooltip":true,"id":"box-112"},
-				{"coordinates":[597,376],"tooltip":true,"id":"box-113"}]
+				{"coordinates":[597,376],"tooltip":true,"id":"box-113"}
+			]
 		},
 		"enemies": {
 			"veteran": [
@@ -254,26 +255,26 @@
 		},
 		"other": {
 			"datapod": [
-				{"coordinates":[5951,2027],"tooltip":true},
-				{"coordinates":[5469,1807],"tooltip":true},
-				{"coordinates":[5010,1784],"tooltip":true},
-				{"coordinates":[4543,1866],"tooltip":true},
-				{"coordinates":[4311,2597],"tooltip":true},
-				{"coordinates":[4546,3703],"tooltip":true},
-				{"coordinates":[4398,4815],"tooltip":true},
-				{"coordinates":[4261,5546],"tooltip":true},
-				{"coordinates":[3741,4245],"tooltip":true},
-				{"coordinates":[3568,2944],"tooltip":true},
-				{"coordinates":[3287,3078],"tooltip":true},
-				{"coordinates":[2832,3130],"tooltip":true},
-				{"coordinates":[2300,3762],"tooltip":true},
-				{"coordinates":[2199,3209],"tooltip":true},
-				{"coordinates":[2159,3675],"tooltip":true},
-				{"coordinates":[1252,4144],"tooltip":true},
-				{"coordinates":[641,3909],"tooltip":true},
-				{"coordinates":[596,4157],"tooltip":true},
-				{"coordinates":[2649,4174],"tooltip":true},
-				{"coordinates":[1802,5408],"tooltip":true}
+				{"coordinates":[5951,2027],"tooltip":true,"id":"datapod-1"},
+				{"coordinates":[5469,1807],"tooltip":true,"id":"datapod-2"},
+				{"coordinates":[5010,1784],"tooltip":true,"id":"datapod-3"},
+				{"coordinates":[4543,1866],"tooltip":true,"id":"datapod-4"},
+				{"coordinates":[4311,2597],"tooltip":true,"id":"datapod-5"},
+				{"coordinates":[4546,3703],"tooltip":true,"id":"datapod-6"},
+				{"coordinates":[4398,4815],"tooltip":true,"id":"datapod-7"},
+				{"coordinates":[4261,5546],"tooltip":true,"id":"datapod-8"},
+				{"coordinates":[3741,4245],"tooltip":true,"id":"datapod-9"},
+				{"coordinates":[3568,2944],"tooltip":true,"id":"datapod-10"},
+				{"coordinates":[3287,3078],"tooltip":true,"id":"datapod-11"},
+				{"coordinates":[2832,3130],"tooltip":true,"id":"datapod-12"},
+				{"coordinates":[2300,3762],"tooltip":true,"id":"datapod-13"},
+				{"coordinates":[2199,3209],"tooltip":true,"id":"datapod-14"},
+				{"coordinates":[2159,3675],"tooltip":true,"id":"datapod-15"},
+				{"coordinates":[1252,4144],"tooltip":true,"id":"datapod-16"},
+				{"coordinates":[641,3909],"tooltip":true,"id":"datapod-17"},
+				{"coordinates":[596,4157],"tooltip":true,"id":"datapod-18"},
+				{"coordinates":[2649,4174],"tooltip":true,"id":"datapod-19"},
+				{"coordinates":[1802,5408],"tooltip":true,"id":"datapod-20"}
 			]
 		}
 	},
