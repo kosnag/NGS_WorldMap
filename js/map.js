@@ -103,7 +103,7 @@ var map = {
 								case "combat":
 									var sectionColorByType = "red"
 									break;
-								case "special":
+								case "cave":
 									var sectionColorByType = "orange"
 									break;
 							}
@@ -168,7 +168,7 @@ var map = {
 						
 						// ADDITIONAL INIT FROM CALLBACK FUNCTION  -- SVGvsevolod
 						additional_init();
-					},300);
+					},350);
 					// INITIALIZE AND LOADING LOCALES
 					map.update_locale();
 				}
