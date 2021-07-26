@@ -3,7 +3,7 @@ var map_app = new nekoapp({
     applicationInfo: {
         nekoappID: "18",
         applicationTitle: "PSO2NGS Interactive Map",
-        applicationVersion: "v1.999",
+        applicationVersion: "v2.0",
         applicationURL: "//ngs-map.kosnag.ru/"
     },
     applicationStylesheets: {
@@ -599,6 +599,9 @@ var map_app = new nekoapp({
                                 	case "meseta":
                                     	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapPopupRewardMeseta;
                                     	break;
+                                	case "seasonPoints":
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapPopupRewardSeasonPoints;
+                                    	break;
 								}
 								this.children[17].appendChild(item);
 							}
@@ -629,8 +632,8 @@ var map_app = new nekoapp({
 		}
     },
     applicationGraphics: {                                                                     //  SVG Graphics used for your application
-        resourceName: "MAP GRAPHICS",
-        URL: "html/html.html"
+        resourceName: "SVGs",
+        URL: "assets/svg.html"
     },
     applicationAnimations: {																	//  Animations used by your application
 		UIWaveAnimation: {																		//  Wave animation
@@ -1707,37 +1710,40 @@ var map_app = new nekoapp({
                 headerLogo: {},
                 headerNavigation: {
                     items: [{
-                        label: "localeString@contribute_button",
-                        hyperlink: {
-                            URL: "//discord.gg/AvgmpuX",
-                            useDefaultNavigation: true,
-                            target: "_blank"
-                        }},
-                        {
-                        label: "localeString@github_button",
-                        hyperlink: {
-                            URL: "//github.com/kosnag/NGS_WorldMap",
-                            useDefaultNavigation: true,
-                            target: "_blank"
-                        }},
-                        {
-                        label: "localeString@changelog_button",
-                        hyperlink: {
-                            URL: "//github.com/kosnag/NGS_WorldMap/commits/test",
-                            useDefaultNavigation: true,
-                            target: "_blank"
-                        }},
-                        {
-                        label: "localeString@laguages_button",
-                        hyperlink: {
-                            URL: "#",
-                            event: function(openLangMenu){
-                                if (!(openLangMenu.hasAttribute("data-bs-toggle") && openLangMenu.hasAttribute("data-bs-target"))){
-                                    openLangMenu.setAttribute("data-bs-toggle","modal"),
-                                    openLangMenu.setAttribute("data-bs-target","#languageModal")
-                                    openLangMenu.click()
+                            label: "localeString@contribute_button",
+                            hyperlink: {
+                                URL: "//discord.gg/AvgmpuX",
+                                useDefaultNavigation: true,
+                                target: "_blank"
                                 }
-                            }
+                            },
+                        {
+                            label: "localeString@github_button",
+                            hyperlink: {
+                                URL: "//github.com/kosnag/NGS_WorldMap",
+                                useDefaultNavigation: true,
+                                target: "_blank"
+                                }
+                            },
+                        {
+                            label: "localeString@donate_button",
+                            hyperlink: {
+                                URL: "//ko-fi.com/kosnag",
+                                useDefaultNavigation: true,
+                                target: "_blank"
+                                }
+                            },
+                        {
+                            label: "localeString@laguages_button",
+                            hyperlink: {
+                                URL: "#",
+                                event: function(openLangMenu){
+                                    if (!(openLangMenu.hasAttribute("data-bs-toggle") && openLangMenu.hasAttribute("data-bs-target"))){
+                                        openLangMenu.setAttribute("data-bs-toggle","modal"),
+                                        openLangMenu.setAttribute("data-bs-target","#languageModal")
+                                        openLangMenu.click()
+                                    }
+                                }
                         }}
                     ]
                 }
