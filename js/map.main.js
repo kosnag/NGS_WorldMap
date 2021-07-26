@@ -1784,6 +1784,7 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
 			}
 		});
 		map_app.app.appendChild(map_app.languageMenu);
+        map_app.app.addEventListener("contextmenu",function(e){e.preventDefault();});
 	}
 });
 nekoapp.system.scripts.add({application:map_app, url: "js/bootstrap.bundle.min.js"});
