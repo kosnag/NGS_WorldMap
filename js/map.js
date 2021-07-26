@@ -71,107 +71,103 @@ var map = {
 			onload: function(){
 				set_data(JSON.parse(this.responseText),map);
 				
-				var init2 = function(data,additional_init){	
-					set_data(data,map);
-
-					// INITIALIZE ICONS  -- SVGvsevolod
-					for(var i in Object.keys(map.map_icons))
-						for(var j in Object.keys(map.map_icons[Object.keys(map.map_icons)[i]]))
-							map.map_icons[Object.keys(map.map_icons)[i]][Object.keys(map.map_icons[Object.keys(map.map_icons)[i]])[j]] = L.icon(map.map_icons[Object.keys(map.map_icons)[i]][Object.keys(map.map_icons[Object.keys(map.map_icons)[i]])[j]]);
+				// INITIALIZE ICONS  -- SVGvsevolod
+				for(var i in Object.keys(map.map_icons))
+					for(var j in Object.keys(map.map_icons[Object.keys(map.map_icons)[i]]))
+						map.map_icons[Object.keys(map.map_icons)[i]][Object.keys(map.map_icons[Object.keys(map.map_icons)[i]])[j]] = L.icon(map.map_icons[Object.keys(map.map_icons)[i]][Object.keys(map.map_icons[Object.keys(map.map_icons)[i]])[j]]);
 					
-					// INITIALIZE MARKERS  -- SVGvsevolod
-					for(var i in Object.keys(map.map_markers))
-						for(var j in Object.keys(map.map_markers[Object.keys(map.map_markers)[i]]))
-							for(var k in map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]){
-								var marker = map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k];
-								map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k] = L.marker(marker.coordinates,{icon:map.map_icons[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]});
-								if(marker.id && typeof marker.id === "string")map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id = marker.id;
-								if(marker.tooltip)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindTooltip(map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k],{"direction":"top"});
-								if(marker.popup)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element));
-							}
-					// INITIALIZE SECTIONS
-					for(var i in Object.keys(map.map_sections))
-						for(var j in Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])){
-							var section = map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]];
-							switch(section.type){
-								case "lobby":
-									var sectionColorByType = "blue"
-									break;
-								case "gathering":
-									var sectionColorByType = "green"
-									break;
-								case "combat":
-									var sectionColorByType = "red"
-									break;
-								case "cave":
-									var sectionColorByType = "orange"
-									break;
-							}
-							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]] = L.polygon(section.coordinates,{fillColor:sectionColorByType,color:"lightblue",weight:"1"});
-							if(section.id && typeof section.id)map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id = section.id;
-							if(section.popup){
-								var popup = nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element);
-								map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].bindPopup(popup);
-								popup.popup_id = section.id;
-								popup.popup_tier = 0;
-								popup.setAttribute("popup-id",section.id);
-								popup.initTiers({
-									name: map.map_names_strings.sections[Object.keys(map.map_sections)[i]][map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id],
-									popup_data: map.map_popup_data.sections[Object.keys(map.map_sections)[i]][map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id]
-								});
-							}
-							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].setStyle({fillOpacity:0,opacity:.25});
-							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})});
-							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})});
+				// INITIALIZE MARKERS  -- SVGvsevolod
+				for(var i in Object.keys(map.map_markers))
+					for(var j in Object.keys(map.map_markers[Object.keys(map.map_markers)[i]]))
+						for(var k in map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]){
+							var marker = map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k];
+							map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k] = L.marker(marker.coordinates,{icon:map.map_icons[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]});
+							if(marker.id && typeof marker.id === "string")map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].id = marker.id;
+							if(marker.tooltip)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindTooltip(map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k],{"direction":"top"});
+							if(marker.popup)map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]][k].bindPopup(nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element));
 						}
-					// INITIALIZE MAP  -- SVGvsevolod
-					map.map_object = L.map("leaflet-map",{
-						crs: L.CRS.Simple,
-						minZoom: "-3",
-						maxZoom: "0",
-						zoomControl: false,
-						attributionControl: false,
-						keyboard: false,
-						maxBoundsViscosity: "0.5", 
-						boxZoom: false,
-						zoomDelta: "0.5"
-					});
-					L.imageOverlay("assets/map_v3.png",map.constants.map_bounds).addTo(map.map_object);
-					map.map_object.fitBounds(map.constants.map_bounds);
-					map.map_object.setMaxBounds(map.constants.map_max_bounds);
+				// INITIALIZE SECTIONS
+				for(var i in Object.keys(map.map_sections))
+					for(var j in Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])){
+						var section = map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]];
+						switch(section.type){
+							case "lobby":
+								var sectionColorByType = "blue"
+								break;
+							case "gathering":
+								var sectionColorByType = "green"
+								break;
+							case "combat":
+								var sectionColorByType = "red"
+								break;
+							case "cave":
+								var sectionColorByType = "orange"
+								break;
+						}
+						map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]] = L.polygon(section.coordinates,{fillColor:sectionColorByType,color:"lightblue",weight:"1"});
+						if(section.id && typeof section.id)map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id = section.id;
+						if(section.popup){
+							var popup = nekoapp.create.object(map_app,map_app.preferences.elements.map_popup_element);
+							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].bindPopup(popup);
+							popup.popup_id = section.id;
+							popup.popup_tier = 0;
+							popup.setAttribute("popup-id",section.id);
+							popup.initTiers({
+								name: map.map_names_strings.sections[Object.keys(map.map_sections)[i]][map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id],
+								popup_data: map.map_popup_data.sections[Object.keys(map.map_sections)[i]][map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].id]
+							});
+						}
+						map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].setStyle({fillOpacity:0,opacity:.25});
+						map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})});
+						map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})});
+					}
+				// INITIALIZE MAP  -- SVGvsevolod
+				map.map_object = L.map("leaflet-map",{
+					crs: L.CRS.Simple,
+					minZoom: "-3",
+					maxZoom: "0",
+					zoomControl: false,
+					attributionControl: false,
+					keyboard: false,
+					maxBoundsViscosity: "0.5", 
+					boxZoom: false,
+					zoomDelta: "0.5"
+				});
+				L.imageOverlay("assets/map_v3.png",map.constants.map_bounds).addTo(map.map_object);
+				map.map_object.fitBounds(map.constants.map_bounds);
+				map.map_object.setMaxBounds(map.constants.map_max_bounds);
 			
-					// LOAD USER SETTINGS  -- SVGvsevolod
-					map.load_settings();
+				// LOAD USER SETTINGS  -- SVGvsevolod
+				map.load_settings();
 			
-					// DISPLAY ALL MARKERS ENABLED IN USER SETTINGS  -- SVGvsevolod
-					for(var i in Object.keys(map.map_markers))
-						for(var j in Object.keys(map.map_markers[Object.keys(map.map_markers)[i]]))
-							if(map.user_settings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]])
-								map.toogle_markers(map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]);
+				// DISPLAY ALL MARKERS ENABLED IN USER SETTINGS  -- SVGvsevolod
+				for(var i in Object.keys(map.map_markers))
+					for(var j in Object.keys(map.map_markers[Object.keys(map.map_markers)[i]]))
+						if(map.user_settings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]])
+							map.toogle_markers(map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]);
 			
-					for(var i in Object.keys(map.map_sections))
-						for(var j in Object.keys(map.map_sections[Object.keys(map.map_sections)[i]]))
-							map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].addTo(map.map_object)
+				for(var i in Object.keys(map.map_sections))
+					for(var j in Object.keys(map.map_sections[Object.keys(map.map_sections)[i]]))
+						map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].addTo(map.map_object)
 
-					setTimeout(function(){
-						// SET MAP VIEW AND ZOOM FROM USER SETTINGS  -- SVGvsevolod
-						map.map_object.setView(map.user_settings.map_view.center);
-						map.map_object.setZoom(map.user_settings.map_view.zoom);
-						map.map_object.invalidateSize(true);
+				setTimeout(function(){
+					// SET MAP VIEW AND ZOOM FROM USER SETTINGS  -- SVGvsevolod
+					map.map_object.setView(map.user_settings.map_view.center);
+					map.map_object.setZoom(map.user_settings.map_view.zoom);
+					map.map_object.invalidateSize(true);
+				
+					// EVENT TO GET MAP VIEW CENTER AND ZOOM  -- SVGvsevolod
+					map.map_object.on("moveend",function(event){
+						map.user_settings.map_view.center = [event.target.getCenter().lat,event.target.getCenter().lng];
+						map.user_settings.map_view.zoom = event.target.getZoom();
+						map.save_settings();
+					});
 					
-						// EVENT TO GET MAP VIEW CENTER AND ZOOM  -- SVGvsevolod
-						map.map_object.on("moveend",function(event){
-							map.user_settings.map_view.center = [event.target.getCenter().lat,event.target.getCenter().lng];
-							map.user_settings.map_view.zoom = event.target.getZoom();
-							map.save_settings();
-						});
-						
-						// ADDITIONAL INIT FROM CALLBACK FUNCTION  -- SVGvsevolod
-						additional_init();
-					},350);
-					// INITIALIZE AND LOADING LOCALES
-					map.update_locale();
-				}
+					// ADDITIONAL INIT FROM CALLBACK FUNCTION  -- SVGvsevolod
+					additional_init();
+				},350);
+				// INITIALIZE AND LOADING LOCALES
+				map.update_locale();
 				/*
 				if (new Date().getUTCHours()>7) // если время большк семи часов
 					var day = new Date().getUTCDay(); // то сегодняшний день
@@ -181,7 +177,6 @@ var map = {
 				var days = ["7_sunday","1_monday","2_tuesday","3_wednesday","4_thursday","5_friday","6_saturday"];
 				nekoapp.system.xhr().load("assets/data/"+days[day]+".json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 				*/
-				init2(void 0,additional_init)
 			}
 		});
 	}
