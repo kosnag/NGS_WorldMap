@@ -6,6 +6,8 @@
     "donate_button": "<i class='fab fa-kofi'></i> 変更ログ",
     "laguages_button": "<i class='fas fa-language'></i> 寄付",
 	
+	"mapRightButtonTip": "アイテムコンテナ[赤]とメッセージパックのチェックを確認するには、それらを右クリックしてください。",
+	
     "mapMineralsTitle" : "鉱石",
 	"mapMonotiteTitle": "モノタイト",
 	"mapDualomiteTitle": "デュアロマイト",
@@ -36,7 +38,7 @@
 
 	"mapPopupMaxPlayers": "人数",
 	"mapPopupRecomendedBP": "推奨戦闘力",
-	"mapPopupRequiredBP": "Required Battle Power",
+	"mapPopupRequiredBP": "必要戦闘力",
 	"mapPopupDescription": "説明",
 	"mapPopupMainMission": "メインミッション",
 	"mapPopupSideMissions": "サイドミッション",
@@ -44,7 +46,7 @@
 	"mapPopupRewards": "報酬",
 	"mapPopupRewardMeseta": "N-メセタ",
 	"mapPopupRewardSP": "SP",
-	"mapPopupRewardSeasonPoints": "",
+	"mapPopupRewardSeasonPoints": "シーズナルポイント",
 
     "mapCocoonTitle": "コクーン",
 	
