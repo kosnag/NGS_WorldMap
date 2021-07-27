@@ -256,7 +256,7 @@ var map_app = new nekoapp({
                                             
                                         let modal_content_body_button2 = document.createElement("button")
                                             modal_content_body_button2.setAttribute("type","button")
-                                            modal_content_body_button2.className = "btn btn-custom-blue btn-lg disabled"
+                                            modal_content_body_button2.className = "btn btn-custom-blue btn-lg"
                                             modal_content_body_button2.style = "position: relative;"
                                             modal_content_body_button2.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/en-US.svg' height='32px'> <img src='assets/flags/en-UK.svg' height='32px'></span> English (Fan-patch)"
                                             modal_content_body_button2.setAttribute("data-bs-dismiss","modal")
