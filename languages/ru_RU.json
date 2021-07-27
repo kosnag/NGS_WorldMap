@@ -6,6 +6,8 @@
     "donate_button": "<i class='fab fa-kofi'></i> Поддержать",
     "laguages_button": "<i class='fas fa-language'></i> Язык",
 	
+	"mapRightButtonTip": "Для того чтобы отметить красные контейреры или сообщения найденными, нажмите по ним правой кнопкой мышки.",
+
     "mapMineralsTitle" : "Минералы",
 	"mapMonotiteTitle": "Монотит",
 	"mapDualomiteTitle": "Дуаломит",
@@ -44,7 +46,7 @@
 	"mapPopupRewards": "Награды",
 	"mapPopupRewardMeseta": "N-месета",
 	"mapPopupRewardSP": "SP",
-	"mapPopupRewardSeasonPoints": "",
+	"mapPopupRewardSeasonPoints": "Очки Сезона",
 
     "mapCocoonTitle": "Кокон",
 	
