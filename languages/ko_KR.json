@@ -6,7 +6,7 @@
     "donate_button": "<i class='fab fa-kofi'></i> 변경사항",
     "laguages_button": "<i class='fas fa-language'></i> 기부하다",
 	
-	"mapRightButtonTip": "For check/uncheck red containers and datapods press right mouse button on them.",
+	"mapRightButtonTip": "아이템 컨테이너 [적]과 메시지 팩을 우클릭으로 표시/비표시를 선택해 주세요.",
 	
     "mapMineralsTitle" : "광석",
 	"mapMonotiteTitle": "모노타이트",
@@ -46,7 +46,7 @@
 	"mapPopupRewards": "보상",
 	"mapPopupRewardMeseta": "N-메세타",
 	"mapPopupRewardSP": "SP",
-	"mapPopupRewardSeasonPoints": "Seasonal Points",
+	"mapPopupRewardSeasonPoints": "시즈널 포인트",
 
     "mapCocoonTitle": "코쿤",
 	
