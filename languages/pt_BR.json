@@ -6,7 +6,7 @@
     "donate_button": "<i class='fab fa-kofi'></i> Doar",
     "laguages_button": "<i class='fas fa-language'></i> Idioma",
 	
-	"mapRightButtonTip": "For check/uncheck red containers and datapods press right mouse button on them.",
+	"mapRightButtonTip": "Para marcar/desmarcar os recipientes de itens e datapods, pressione o botão direito do mouse sobre eles.",
 	
     "mapMineralsTitle" : "Minerais",
 	"mapMonotiteTitle": "Monotite",
@@ -46,7 +46,7 @@
 	"mapPopupRewards": "Recompensas",
 	"mapPopupRewardMeseta": "N-Meseta",
 	"mapPopupRewardSP": "SP",
-	"mapPopupRewardSeasonPoints": "Seasonal Points",
+	"mapPopupRewardSeasonPoints": "Pontos de Temporada",
 
     "mapCocoonTitle": "Cocoon",
 	
