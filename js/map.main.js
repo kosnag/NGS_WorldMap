@@ -260,7 +260,7 @@ var map_app = new nekoapp({
                                             modal_content_body_button2.style = "position: relative;"
                                             modal_content_body_button2.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/en-US.svg' height='32px'> <img src='assets/flags/en-UK.svg' height='32px'></span> English (Fan-patch)"
                                             modal_content_body_button2.setAttribute("data-bs-dismiss","modal")
-                                            modal_content_body_button2.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-AL')");
+                                            modal_content_body_button2.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'en-fan')");
                                         
                                         let modal_content_body_button3 = document.createElement("button")
                                             modal_content_body_button3.setAttribute("type","button")
@@ -1751,7 +1751,7 @@ var map_app = new nekoapp({
     },
     applicationLocalization: {
         "en-US": {URL: "languages/en_US.json"},
-        //"en-AL": {URL: "languages/en_al.json"},
+        "en-fan": {URL: "languages/en_fan.json"},
         "ru-RU": {URL: "languages/ru_RU.json"},
         "ko-KR": {URL: "languages/ko_KR.json"},
         "ja-JP": {URL: "languages/ja_JP.json"},
