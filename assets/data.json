@@ -444,7 +444,7 @@
 			"cocoon": {
 				"c-1": {
 					"max_players": 4,
-					"recomended_bp": 835,	
+					"recomended_bp": 894,	
 					"description": "mapCocoonDesc1",
 					"main_mission": "mapCocoonMain1",
 					"side_missions": ["mapCocoonSide1a","mapCocoonSide1b","mapCocoonSide1c","mapCocoonSideF"],
@@ -649,8 +649,8 @@
 				"northAelio": {
 					"image": "assets/sections/northAelio.png",
 					"type": "gathering",
-					"recomended_bp": 987,
-					"recomended_lv": 10
+					"recomended_bp": 1045,
+					"recomended_lv": 12
 				},
 				"westAelio": {
 					"image": "assets/sections/westAelio.png",
