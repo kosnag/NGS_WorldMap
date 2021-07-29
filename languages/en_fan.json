@@ -6,7 +6,7 @@
     "donate_button": "<i class='fab fa-kofi'></i> Donate",
     "laguages_button": "<i class='fas fa-language'></i> Language",
 	
-	"mapRightButtonTip": "For check/uncheck red containers and datapods press right mouse button on them.",
+	"mapRightButtonTip": "For check/uncheck Red Containers and Message Packs press right mouse button on them.",
 	
     "mapMineralsTitle" : "Minerals",
 	"mapMonotiteTitle": "Monotite",
@@ -36,12 +36,12 @@
 
 	"mapLandmarksTitle": "Landmarks",
 
-	"mapPopupMaxPlayers": "Number of players",
-	"mapPopupRecomendedBP": "Recommended Battle Power",
-	"mapPopupRequiredBP": "Required Battle Power",
+	"mapPopupMaxPlayers": "Number of Players",
+	"mapPopupRecomendedBP": "Recommended Power Level",
+	"mapPopupRequiredBP": "Required Power Level",
 	"mapPopupDescription": "Description",
 	"mapPopupMainMission": "Main Mission",
-	"mapPopupSideMissions": "Sub Mission",
+	"mapPopupSideMissions": "Sub Missions",
 	"mapPopupClearReward": "First Clear Reward",
 	"mapPopupRewards": "Reward",
 	"mapPopupRewardMeseta": "N-Meseta",
@@ -54,18 +54,18 @@
 	"mapCocoonDesc1": "Use your combat skills to take out the Enhanced Pedas Sword.",
 	"mapCocoonMain1": "Defeat: Pedas Sword",
 	"mapCocoonSide1a": "Clear in under 0:55",
-	"mapCocoonSide1b": "Clear in under 5 death",
+	"mapCocoonSide1b": "Clear in under 5 deaths",
 	"mapCocoonSide1c": "Clear while taking damage fewer than 10 times",
 
 	"mapCocoonName2": "Swift Jump",
-	"mapCocoonDesc2": "Use Jump & Double Jump to reach the target goal.",
+	"mapCocoonDesc2": "Use Jump & Double Jump to reach the target point.",
 	"mapCocoonMain2": "Reach the Finish Point",
 	"mapCocoonSide2a": "Clear in under 1:25",
 	"mapCocoonSide2b": "Clear while falling fewer than 5 times",
-	"mapCocoonSide2c": "Clear while using no more than 5 Glide(s)",
+	"mapCocoonSide2c": "Clear while using fewer than 5 Glides",
 
-	"mapCocoonName3": "First Steps",
-	"mapCocoonDesc3": "By following the instructions, one can learn new abilities while reaching the targeted goal.",
+	"mapCocoonName3": "First Step",
+	"mapCocoonDesc3": "By following the instructions, one can learn new abilities while reaching the target point.",
 	"mapCocoonMain3": "Reach the Finish Point",
 	"mapCocoonSide3a": "Clear in under 5:00",
 	"mapCocoonSide3b": "Clear in under 10:00",
@@ -79,9 +79,9 @@
 	"mapCocoonSide4c": "Clear after obtaining 5 Point Cubes",
 
 	"mapCocoonName5": "Rolling Rush",
-	"mapCocoonDesc5": "Use your skills to defeat the Gororox",
-	"mapCocoonMain5": "Defeat all enemies",
-	"mapCocoonSide5a": "Clear in under 1:45",
+	"mapCocoonDesc5": "Use your skills to defeat the Gororox.",
+	"mapCocoonMain5": "Defeat All Enemies",
+	"mapCocoonSide5a": "Clear in under 6:30",
 	"mapCocoonSide5b": "Clear in under 2 deaths",
 	"mapCocoonSide5c": "Clear while taking damage fewer than 15 times",
 
@@ -93,8 +93,8 @@
 	"mapCocoonSide6c": "Clear after obtaining 5 Point Cubes",
 
 	"mapCocoonName7": "Setsuna no Issen",
-	"mapCocoonDesc7": "Make use of your battle skills to defeat the Bujin.",
-	"mapCocoonMain7": "Defeat the Bujin",
+	"mapCocoonDesc7": "Use your skills to defeat the Bujin.",
+	"mapCocoonMain7": "Defeat: Bujin",
 	"mapCocoonSide7a": "Clear in under 5:00",
 	"mapCocoonSide7b": "Clear in under 5 deaths",
 	"mapCocoonSide7c": "Clear while taking damage fewer than 20 times",
@@ -106,27 +106,27 @@
 	"mapCocoonSide8b": "Clear in under 2:35",
 	"mapCocoonSide8c": "Clear after obtaining 5 Point Cubes",
 
-	"mapCocoonSideF": "Complete Side Missions",
+	"mapCocoonSideF": "Complete Sub Missions",
 
 	"mapTowerTitle": "Tower",
 	
 	"mapTowerName1": "Aero Runner",
-	"mapTowerDesc1": "Use the Photon Glide to reach the point target.",
+	"mapTowerDesc1": "Use the Photon Glide to reach the target point.",
 	"mapTowerMain1": "Reach the Finish Point",
 	"mapTowerSide1a": "Clear in under 2:05",
 	"mapTowerSide1b": "Clear while falling fewer than 5 times",
 	"mapTowerSide1c": "Clear after obtaining 10 Point Cubes",
 
 	"mapTowerName2": "Alters Rush",
-	"mapTowerDesc2": "Avoid fighting other enemies as much as possible and defeat the Cicurio that awaits in the final area.",
-	"mapTowerMain2": "Reach the Finish Point",
+	"mapTowerDesc2": "Avoid fighting other enemies as much as possible and defeat the Ciacurio that awaits in the final area.",
+	"mapTowerMain2": "Defeat: Ciacurio",
 	"mapTowerSide2a": "Clear in under 8:00",
 	"mapTowerSide2b": "Defeat fewer than 4 enemies",
 	"mapTowerSide2c": "Clear in under 5 deaths",
 
 	"mapTowerName3": "Great Wall",
 	"mapTowerDesc3": "Make full use of your combat abilities as a Daedal Sword awaits you in the final area.",
-	"mapTowerMain3": "Reach the Finish Point",
+	"mapTowerMain3": "Defeat: Daedal Sword",
 	"mapTowerSide3a": "Clear in under 23:00",
 	"mapTowerSide3b": "Clear in under 5 deaths",
 	"mapTowerSide3c": "Clear after obtaining 5 Point Cubes",
@@ -135,21 +135,21 @@
 
 	"mapUrgentTitle": "Emergency Quest",
 	
-	"mapUrgentName1": "Subdue the Overseer-type DOLLS",
-	"mapUrgentMain1": "Defeat Pedas Vera",
+	"mapUrgentName1": "Subdue the Overseer-type DOLL",
+	"mapUrgentMain1": "Defeat the Overseer-type DOLL!",
 
 	"mapUrgentName2": "Nex Vera Subjugation",
 	"mapUrgentMain2": "Defeat the Nex Vera",
 
 
 	"mapRyukerTitle": "Ryuker Device",
-	"mapRyukerName1": "Balflow Waterfall",
+	"mapRyukerName1": "Barflow Waterfall",
 	"mapRyukerName2": "Mt. Magnus",
-	"mapRyukerName3": "Mt. Piccott",
-	"mapRyukerName4": "Halphana Grasslands: West",
+	"mapRyukerName3": "Mt. Picott",
+	"mapRyukerName4": "Halpha Grasslands: West",
 	"mapRyukerName5": "Central City",
-	"mapRyukerName6": "Halphana Grasslands: East",
-	"mapRyukerName7": "Halphana Marshlands",
+	"mapRyukerName6": "Halpha Grasslands: East",
+	"mapRyukerName7": "Halpha Marshlands",
 	"mapRyukerName8": "Alto Lani Plateau",
 	"mapRyukerName9": "Craiano Cliffs",
 	"mapRyukerName10": "Lakau Coast",
@@ -160,9 +160,9 @@
 
 
 	"mapMagTitle": "Regional Mag",
-	"mapMagName1": "Skillful Regional Mag",
-	"mapMagName2": "Prosperous Regional Mag",
-	"mapMagName3": "Invincible Regional Mag",
+	"mapMagName1": "The Skillful Regional Mag",
+	"mapMagName2": "The Prosperous Regional Mag",
+	"mapMagName3": "The Invincible Regional Mag",
 
 
 	"mapOtherTitle": "Other",
@@ -180,10 +180,10 @@
 	"mapSectionResolForest": "Resol Forest",
 	"mapSectionCentralCity": "Central City",
 	
-	"mapPopupSectionTypes": "Type of section",
+	"mapPopupSectionTypes": "Type of Section",
 	"mapPopupSectionsTypeLobby": "Lobby Area",
-	"mapPopupSectionsTypeGathering": "Exploration Area",
-	"mapPopupSectionsTypeCombat": "Combat Area",
+	"mapPopupSectionsTypeGathering": "Exploration Section",
+	"mapPopupSectionsTypeCombat": "Combat Section",
 	"mapPopupSectionAvgEnemyLvl": "Average Enemy Level",
 	"mapPopupSectionTier": "Rank",
 
