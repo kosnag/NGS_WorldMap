@@ -1575,14 +1575,6 @@ var map_app = new nekoapp({
                         map.user_settings.other.datapod = true;
                     map.save_settings();
                 });
-                elements.menu_otherButton_reactor_1.addEventListener("change",function(){
-                    map.toogle_markers(map.map_markers.other.alphaReactor);
-                    if(map.user_settings.other.alphaReactor)
-                        map.user_settings.other.alphaReactor = false;
-                    else
-                        map.user_settings.other.alphaReactor = true;
-                    map.save_settings();
-                });
 				
                 return [elements, [/*elements.alert_element,*/elements.ngs_map]];
             },
@@ -1657,7 +1649,6 @@ var map_app = new nekoapp({
                         if(map.user_settings.enemies.gigantix)map_app.modules.map_module.moduleContents.menu_enemyButton_gigant_1.setAttribute("checked","");
                         if(map.user_settings.enemies.veteran)map_app.modules.map_module.moduleContents.menu_enemyButton_veteran_1.setAttribute("checked","");
 
-                        //if(map.user_settings.other.alphaReactor)map_app.modules.map_module.moduleContents.menu_otherButton_reactor_1.setAttribute("checked","");
                         if(map.user_settings.other.datapod)map_app.modules.map_module.moduleContents.menu_otherButton_datapod_1.setAttribute("checked","");
                     });
             },
