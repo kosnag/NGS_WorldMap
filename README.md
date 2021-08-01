@@ -15,9 +15,9 @@ URL: [https://map.phantasystar.ru](https://map.phantasystar.ru/)
 * Booma1191 for Food locations
 * [Remalytics](https://twitter.com/remalytics) and her alliance/team for Veterans locations
 * Weather in Saint-Petersburg for Gigantix locations
-* [Sinitsaa](https://twitter.com/SinitsaHikari) for Russian localisation
+* [Sinitsaa](https://twitter.com/SinitsaHikari) for Russian localisation and translating some strings to Japanese
 * [PSO2 Brazil](https://pso2brasil.com/) for Portuguese localisation
 * [focuslite](https://github.com/focuslite) for Korean localisation
 * [Arks-Layer](https://arks-layer.com/) translators for fan-patch localisation
-* [SVGvsevolod](https://www.youtube.com/channel/UCFfIIgnu42VLMDh25pjcTqw) for big help with JavaScript and [his framework](https://github.com/nekowebsoftware/nekoapp)
+* [SVGvsevolod](https://www.youtube.com/user/vsevolod98subbotkin) for big help with JavaScript and [his framework](https://github.com/nekowebsoftware/nekoapp)
 * you

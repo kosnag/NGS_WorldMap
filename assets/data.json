@@ -43,7 +43,6 @@
 			"gigantix": {"iconUrl": "assets/markers/enemies/giga.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]}
 		},
 		"other": {
-			"alphaReactor": {"iconUrl": "assets/markers/other/alphaReactor.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
 			"datapod": {"iconUrl": "assets/markers/other/dataPod.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
 			"datapodChecked": {"iconUrl": "assets/markers/other/dataPodChecked.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]}
 		}
@@ -752,8 +751,7 @@
 			"veteran": false
 		},
 		"other": {
-			"datapod": false,
-			"alphaReactor": false
+			"datapod": false
 		},
 		"checked": {
 			"redBox": [],

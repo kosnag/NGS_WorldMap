@@ -324,67 +324,7 @@ var map_app = new nekoapp({
 
                         return[leaflet_div]
                     }
-                ),
-                init: function(){
-
-                    setTimeout(function(){map.invalidateSize(true);}, 300)
-                    // LANDMARKS
-                    // IF FOR CHECKBOXES
-                    if (localStorage.getItem('landmarks')){
-                        map_app.landmarks = JSON.parse(localStorage.getItem('landmarks'))
-                    } else {
-                        localStorage.setItem("landmarks", JSON.stringify(map_app.landmarks))
-                    }
-                    if(JSON.parse(localStorage.getItem("landmarks")).cocoon == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_cocoon_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).cocoon == "0"){}
-                    if(JSON.parse(localStorage.getItem("landmarks")).mag == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_mag_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).mag == "0"){}
-                    if(JSON.parse(localStorage.getItem("landmarks")).ryuker == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_ryuker_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).ryuker == "0"){}
-                    if(JSON.parse(localStorage.getItem("landmarks")).tower == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_tower_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).tower == "0"){}
-                    if(JSON.parse(localStorage.getItem("landmarks")).urgent == "1"){map_app.modules.map_module.moduleContents.menu_landmarksButton_urgent_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("landmarks")).urgent == "0"){}
-
-                    // CONTAINERS
-                    // IF FOR CHECKBOXES
-                    if (localStorage.getItem('boxes')){
-                        map_app.boxes = JSON.parse(localStorage.getItem('boxes'))
-                    } else {
-                        localStorage.setItem("boxes", JSON.stringify(map_app.boxes))
-                    }
-                    //if(JSON.parse(localStorage.getItem("boxes")).whiteBox == "1"){map_app.modules.map_module.moduleContents.menu_boxesButton_whiteBox_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("boxes")).whiteBox == "0"){}
-                    if(JSON.parse(localStorage.getItem("boxes")).redBox == "1"){map_app.modules.map_module.moduleContents.menu_boxesButton_redBox_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("boxes")).redBox == "0"){}
-                    //if(JSON.parse(localStorage.getItem("boxes")).goldBox == "1"){map_app.modules.map_module.moduleContents.menu_boxesButton_goldBox_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("boxes")).goldBox == "0"){}
-                    
-                    // MINERALS
-                    // IF FOR CHECKBOXES
-                    if (localStorage.getItem('minerals')){
-                        map_app.minerals = JSON.parse(localStorage.getItem('minerals'))
-                    } else {
-                        localStorage.setItem("minerals", JSON.stringify(map_app.minerals))
-                    }
-                    if(JSON.parse(localStorage.getItem("minerals")).monotite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).monotite == "0"){}
-                    if(JSON.parse(localStorage.getItem("minerals")).dualomite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).dualomite == "0"){}
-                    if(JSON.parse(localStorage.getItem("minerals")).trinite == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_trinite_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).trinite == "0"){}
-                    if(JSON.parse(localStorage.getItem("minerals")).photonChunk == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_photonChunk_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).photonChunk == "0"){}
-                    if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "1"){map_app.modules.map_module.moduleContents.menu_mineralsButton_photonQuartz_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("minerals")).photonQuartz == "0"){}
-
-                    // FOOD
-                    // IF FOR CHECKBOXES
-                    if (localStorage.getItem('food')){
-                        map_app.food = JSON.parse(localStorage.getItem('food'))
-                    } else {
-                        localStorage.setItem("food", JSON.stringify(map_app.food))
-                    }
-                    if(JSON.parse(localStorage.getItem("food")).apple == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_apple_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).apple == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).banana == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_banana_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).banana == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).clam == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_clam_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).clam == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).crab == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_crab_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).crab == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).herb == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_herb_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).herb == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).lobster == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_lobster_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).lobster == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).mushroom == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_mushroom_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).mushroom == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).peach == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_peach_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).peach == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).pear == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_pear_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).pear == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).tomato == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_tomato_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).tomato == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).shell == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_shell_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).shell == "0"){}
-                    if(JSON.parse(localStorage.getItem("food")).turnip == "1"){map_app.modules.map_module.moduleContents.menu_foodButton_turnip_1.setAttribute("checked","")}else if(JSON.parse(localStorage.getItem("food")).turnip == "0"){}
-                }
+                )
             }
         },
 		// MAP MENU ELEMENT  -- SVGvsevolod
@@ -677,16 +617,63 @@ var map_app = new nekoapp({
                         }
                     }),
                         map_menu: nekoapp.create.object(map_app,map_app.preferences.elements.map_menu_element,{
-                            class: "col-3 bg-menu"
+                            class: "col-3 bg-menu",
+                            id: "side_map_menu"
                         }),
                             menu_header: nekoapp.create.element(map_app,"div",{
                                 class: "h3 text-center text-light mt-3", 
                                 attr: {"hidden": ""},
                                 text: nekoapp.create.localizedString(map_app, "mapHeader")
                             }),
+                            menu_tip: nekoapp.create.element(map_app,"div",{
+                                class: "border rounded-3 border-primary text-light text-center mt-3 mx-3",
+                                text: nekoapp.create.localizedString(map_app, "mapRightButtonTip")
+                            }),
+                            menu_rappyburst: nekoapp.create.element(map_app,"div",{
+                                class: "d-grid gap-2 mx-3",
+                            }),
+                                menu_rappyburst_button: nekoapp.create.element(map_app,"button",{
+                                    class: "btn btn-custom-blue btn-lg mt-4 mb-2",
+                                    attr: {
+                                        "onclick": "window.open('https://twitter.com/search?q=%22Alpha%20Reactors%20Location%22%20(from%3ARappyBurst)&src=typed_query&f=live')"
+                                    },
+                                    style: {
+                                        "position": "relative",
+                                        "height": "64px"
+                                    }
+                                }),
+                                    menu_rappyburst_button_image1: nekoapp.create.element(map_app,"img",{
+                                        attr: {
+                                            "src": "assets/markers/other/alphaReactor.png"
+                                        },
+                                        style: {
+                                            "width": "48px",
+                                            "position": "absolute",
+                                            "top": "8px",
+                                            "left": "20px"
+                                        }
+                                    }),
+                                    menu_rappyburst_button_text1: nekoapp.create.element(map_app,"span",{
+                                        text: nekoapp.create.localizedString(map_app, "mapOtherAlphaReactors")
+                                    }),
+                                    menu_rappyburst_button_text2: nekoapp.create.element(map_app,"span",{
+                                        text: " (Twitter)"
+                                    }),
+                                    menu_rappyburst_button_image2: nekoapp.create.element(map_app,"img",{
+                                        attr: {
+                                            "src": "assets/rappyburst.png"
+                                        },
+                                        style: {
+                                            "width": "48px",
+                                            "position": "absolute",
+                                            "top": "8px",
+                                            "right": "20px",
+                                            "filter": "drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white)"
+                                        }
+                                    }),
+
                             map_menu_body: nekoapp.create.element(map_app,"div",{
-                                class: "px-3",
-                                id: "side_map_menu"
+                                class: "px-3"
                             }),
                                 menu_landmarks_body: nekoapp.create.element(map_app,"div",{
                                     class: "my-3"
@@ -1191,24 +1178,6 @@ var map_app = new nekoapp({
                                             },
                                             text: "<img width='48px' src='assets/markers/other/dataPod.png'>"
                                         }),
-                                        menu_otherButton_reactor_1: nekoapp.create.element(map_app,"input",{
-                                            class: "btn-check",
-                                            id: "reactorCheckbox",
-                                            attr: {
-                                                "type": "checkbox",
-                                                "autocomplete": "off"
-                                            }
-                                        }),
-                                        menu_otherButton_reactor_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1 disabled",
-                                            attr: {
-                                                "for": "reactorCheckbox",
-                                                "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom",
-                                                "data-bs-html": "true"
-                                            },
-                                            text: "<img width='48px' src='assets/markers/other/alphaReactor.png'>"
-                                        }),
                             menu_enemy_body: nekoapp.create.element(map_app,"div",{
                                     class: "my-3"
                                 }),
@@ -1259,6 +1228,14 @@ var map_app = new nekoapp({
                 };
                         elements.ngs_map.appendChild(elements.map_menu)
                             elements.map_menu.appendChild(elements.menu_header)
+                            elements.map_menu.appendChild(elements.menu_tip)
+                            elements.map_menu.appendChild(elements.menu_rappyburst)
+                                elements.menu_rappyburst.appendChild(elements.menu_rappyburst_button)
+                                    elements.menu_rappyburst_button.appendChild(elements.menu_rappyburst_button_image1)
+                                    elements.menu_rappyburst_button.appendChild(elements.menu_rappyburst_button_text1)
+                                    elements.menu_rappyburst_button.appendChild(elements.menu_rappyburst_button_text2)
+                                    elements.menu_rappyburst_button.appendChild(elements.menu_rappyburst_button_image2)
+                            elements.map_menu.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
                             elements.map_menu.appendChild(elements.map_menu_body)
 
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
@@ -1338,8 +1315,6 @@ var map_app = new nekoapp({
                                     elements.menu_other_body.appendChild(elements.menu_otherButton_group)
                                         elements.menu_otherButton_group.appendChild(elements.menu_otherButton_datapod_1)
                                         elements.menu_otherButton_group.appendChild(elements.menu_otherButton_datapod_2)
-                                        elements.menu_otherButton_group.appendChild(elements.menu_otherButton_reactor_1)
-                                        elements.menu_otherButton_group.appendChild(elements.menu_otherButton_reactor_2)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
                                 elements.map_menu_body.appendChild(elements.menu_enemy_body)
@@ -1610,7 +1585,6 @@ var map_app = new nekoapp({
                 new bootstrap.Tooltip(this.moduleContents.menu_foodButton_turnip_2)
 
                 new bootstrap.Tooltip(this.moduleContents.menu_otherButton_datapod_2)
-                new bootstrap.Tooltip(this.moduleContents.menu_otherButton_reactor_2)
                 
                 new bootstrap.Tooltip(this.moduleContents.menu_enemyButton_veteran_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_enemyButton_gigant_2)
@@ -1686,7 +1660,6 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_foodButton_turnip_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapTurnipTitle)
                 
                 this.moduleContents.menu_otherButton_datapod_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherDatapods)
-                this.moduleContents.menu_otherButton_reactor_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherAlphaReactors)
                 
                 this.moduleContents.menu_enemyButton_veteran_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapEmenyTypeVet)
                 this.moduleContents.menu_enemyButton_gigant_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapEnemyTypeGig)

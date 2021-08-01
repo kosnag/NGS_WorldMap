@@ -655,8 +655,8 @@ map-app map-localebox .map_localebox_text {
     position: relative;
 }
 #side_map_menu::-webkit-scrollbar {
-	width: 0.1em;
-	background-color: rgba(0,123,255,0);
+	width: .4em;
+	background-color: rgba(0,123,255,.2);
 }
 #side_map_menu::-webkit-scrollbar-thumb {
 	background-color: rgba(0,123,255,1);
