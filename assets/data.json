@@ -600,11 +600,7 @@
 					"rewards": [
 						{
 							"reward_type": "meseta",
-							"reward_count": 2000
-						},
-						{
-							"reward_type": "seasonPoints",
-							"reward_count": 1000
+							"reward_count": 10000
 						}
 					]
 				},
@@ -621,11 +617,7 @@
 					"rewards": [
 						{
 							"reward_type": "meseta",
-							"reward_count": 2000
-						},
-						{
-							"reward_type": "seasonPoints",
-							"reward_count": 1000
+							"reward_count": 10000
 						}
 					]
 				}

@@ -207,7 +207,8 @@ var map = {
 					
 					// ADDITIONAL INIT FROM CALLBACK FUNCTION  -- SVGvsevolod
 					additional_init();
-				},350);
+				},250);
+				
 				// INITIALIZE AND LOADING LOCALES
 				map.update_locale();
 				/*
