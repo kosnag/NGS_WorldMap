@@ -276,6 +276,7 @@ var map_app = new nekoapp({
                                             modal_content_body_button4.style = "position: relative;"
                                             modal_content_body_button4.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/ru-RU.svg' height='32px'></span> Русский"
                                             modal_content_body_button4.setAttribute("data-bs-dismiss","modal")
+                                            modal_content_body_button4.setAttribute("disabled","")
                                             modal_content_body_button4.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ru-RU')");
 
                                         let modal_content_body_button5 = document.createElement("button")
@@ -1716,7 +1717,7 @@ var map_app = new nekoapp({
     applicationLocalization: {
         "en-US": {URL: "languages/en_US.json"},
         "en-fan": {URL: "languages/en_fan.json"},
-        "ru-RU": {URL: "languages/ru_RU.json"},
+        //"ru-RU": {URL: "languages/ru_RU.json"},
         "ko-KR": {URL: "languages/ko_KR.json"},
         "ja-JP": {URL: "languages/ja_JP.json"},
         "pt-BR": {URL: "languages/pt_BR.json"}
