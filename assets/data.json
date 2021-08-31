@@ -80,7 +80,8 @@
 			],
 			"urgent": [
 				{"coordinates":[5984,1772],"id":"uq-1","popup":true,"tooltip":true},
-				{"coordinates":[5201,3144],"id":"uq-2","popup":true,"tooltip":true}
+				{"coordinates":[5201,3144],"id":"uq-2","popup":true,"tooltip":true},
+				{"coordinates":[4299,4983],"id":"uq-3","popup":true,"tooltip":true}
 			],
 			"ryuker": [
 				{"coordinates":[1547,4074],"id":"r-1","tooltip":true},
@@ -362,7 +363,8 @@
 			},
 			"urgent": {
 				"uq-1": "mapUrgentName1",
-				"uq-2": "mapUrgentName2"
+				"uq-2": "mapUrgentName2",
+				"uq-3": "mapUrgentName3"
 			},
 			"ryuker": {
 				"r-1": "mapRyukerName1",
@@ -608,6 +610,23 @@
 					"max_players": 8,
 					"required_bp": 1184,
 					"main_mission": "mapUrgentMain2",
+					"clear_reward": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 5000
+						}
+					],
+					"rewards": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 10000
+						}
+					]
+				},
+				"uq-3": {
+					"max_players": 8,
+					"required_bp": 1243,
+					"main_mission": "mapUrgentMain3",
 					"clear_reward": [
 						{
 							"reward_type": "meseta",
