@@ -4,7 +4,7 @@ var map_app = new nekoapp({
         nekoappID: "18",
         applicationTitle: "PSO2NGS Interactive Map",
         applicationVersion: "v2.0",
-        applicationURL: "//ngs-map.kosnag.ru/"
+        applicationURL: "//map.phantasystar.ru/"
     },
     applicationStylesheets: {
         default: "css/map.main.css",
