@@ -636,7 +636,7 @@ var map_app = new nekoapp({
                                 menu_rappyburst_button: nekoapp.create.element(map_app,"button",{
                                     class: "btn btn-custom-blue btn-lg mt-4 mb-2",
                                     attr: {
-                                        "onclick": "window.open('https://twitter.com/search?q=%22Alpha%20Reactors%20Location%22%20(from%3ARappyBurst)&src=typed_query&f=live')"
+                                        "onclick": "window.open('https://twitter.com/search?q=%22%23AlphaReactors%22%20(from%3AAphyAmarantha)')"
                                     },
                                     style: {
                                         "position": "relative",
@@ -662,13 +662,14 @@ var map_app = new nekoapp({
                                     }),
                                     menu_rappyburst_button_image2: nekoapp.create.element(map_app,"img",{
                                         attr: {
-                                            "src": "assets/rappyburst.png"
+                                            "src": "https://pbs.twimg.com/profile_images/1439840107977011203/ujeizkz9_400x400.jpg"
                                         },
                                         style: {
                                             "width": "48px",
                                             "position": "absolute",
                                             "top": "8px",
                                             "right": "20px",
+                                            "border-radius": "50%",
                                             "filter": "drop-shadow(1px 1px 0 white) drop-shadow(-1px -1px 0 white)"
                                         }
                                     }),
@@ -1718,6 +1719,7 @@ var map_app = new nekoapp({
         "en-US": {URL: "languages/en_US.json"},
         "en-fan": {URL: "languages/en_fan.json"},
         //"ru-RU": {URL: "languages/ru_RU.json"},
+        "ru-RU": {URL: "languages/en_US.json"},
         "ko-KR": {URL: "languages/ko_KR.json"},
         "ja-JP": {URL: "languages/ja_JP.json"},
         "pt-BR": {URL: "languages/pt_BR.json"}
