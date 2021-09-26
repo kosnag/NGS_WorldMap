@@ -1,7 +1,7 @@
 # PSO2NGS Interactive Map
 Interactive map of world of Phantasy Star Online 2: New Genesis with location of everything.
 
-URL: [https://map.phantasystar.ru](https://map.phantasystar.ru/)
+URL: [map.phantasystar.ru](https://map.phantasystar.ru/)
 
 ## Tech Stack
 - Map Library: [LeafletJS](https://leafletjs.com/)
