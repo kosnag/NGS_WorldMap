@@ -321,7 +321,6 @@ var map_app = new nekoapp({
                         let leaflet_div = document.createElement("div")
                             leaflet_div.className = "col-9"
                             leaflet_div.id = "leaflet-map"
-                            leaflet_div.style = "background-color:rgba(31,57,90,1.00); height: calc(100vh - 60px); border-right: 1px solid var(--bs-light);"
 
                         return[leaflet_div]
                     }
@@ -601,15 +600,15 @@ var map_app = new nekoapp({
                             role: "alert"
                         },
                         style: {
-                            display: "block", 
-                            margin: "0 auto",
-                            position: "absolute",
-                            top: "75px",
-                            left: "0",
-                            right: "0",
-                            width: "75%",
+                            "display": "block", 
+                            "margin": "0 auto",
+                            "position": "absolute",
+                            "top": "75px",
+                            "left": "0",
+                            "right": "0",
+                            "width": "75%",
                             "z-index": "8492"
-                            }
+                        }
                     }),
                     ngs_map: nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
                         class: "container-fluid row",
@@ -634,38 +633,37 @@ var map_app = new nekoapp({
                                 class: "d-grid gap-2 mx-3",
                             }),
                                 menu_alphareactor_researcher_button: nekoapp.create.element(map_app,"button",{
-                                    class: "btn btn-custom-blue btn-lg mt-4 mb-2",
+                                    class: "btn btn-custom-blue btn-lg mt-4 mb-2 adaptive-size-img-ar",
                                     attr: {
                                         "onclick": "window.open('https://twitter.com/search?q=%22%23AlphaReactors%20%23%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%20%23PSO2NGS%22%20(from%3AAphyAmarantha)')"
                                     },
                                     style: {
-                                        "position": "relative",
-                                        "height": "64px"
+                                        "position": "relative"
                                     }
                                 }),
                                     menu_alphareactor_researcher_button_image1: nekoapp.create.element(map_app,"img",{
+                                        class: "adaptive-size-img-ar",
                                         attr: {
                                             "src": "assets/markers/other/alphaReactor.png"
                                         },
                                         style: {
-                                            "width": "48px",
                                             "position": "absolute",
                                             "top": "8px",
                                             "left": "20px"
                                         }
                                     }),
                                     menu_alphareactor_researcher_button_text1: nekoapp.create.element(map_app,"span",{
-                                        text: nekoapp.create.localizedString(map_app, "mapOtherAlphaReactors")
+                                        text: nekoapp.create.localizedString(map_app, "mapOtherAlphaReactors"),
                                     }),
                                     menu_alphareactor_researcher_button_text2: nekoapp.create.element(map_app,"span",{
-                                        text: " (Twitter)"
+                                        text: " (Twitter)",
                                     }),
                                     menu_alphareactor_researcher_button_image2: nekoapp.create.element(map_app,"img",{
+                                        class: "adaptive-size-img-ar",
                                         attr: {
                                             "src": "https://pbs.twimg.com/profile_images/1439840107977011203/ujeizkz9_400x400.jpg"
                                         },
                                         style: {
-                                            "width": "48px",
                                             "position": "absolute",
                                             "top": "8px",
                                             "right": "20px",
@@ -698,7 +696,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_landmarksButton_cocoon_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "cocoonCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -706,7 +704,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_landmarksButton_cocoon_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/landmarks/cocoon.png"
                                                 }
@@ -720,7 +717,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_landmarksButton_tower_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "towerCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -728,7 +725,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_landmarksButton_tower_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/landmarks/tower.png"
                                                 }
@@ -742,7 +738,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_landmarksButton_ryuker_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "ryukerCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -750,7 +746,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_landmarksButton_ryuker_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/landmarks/ryuker.png"
                                                 }
@@ -764,7 +759,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_landmarksButton_mag_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "magCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -772,7 +767,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_landmarksButton_mag_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/landmarks/mag.png"
                                                 }
@@ -786,7 +780,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_landmarksButton_urgent_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "urgentCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -794,7 +788,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_landmarksButton_urgent_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/landmarks/urgent.png"
                                                 }
@@ -819,7 +812,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_boxesButton_whiteBox_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "whiteBoxCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -827,7 +820,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_boxesButton_whiteBox_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/containers/whiteBox.png"
                                                 }
@@ -841,7 +833,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_boxesButton_redBox_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "redBoxCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -849,7 +841,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_boxesButton_redBox_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/containers/redBox.png"
                                                 }
@@ -863,15 +854,15 @@ var map_app = new nekoapp({
                                                 }
                                             }),
                                         menu_boxesButton_goldBox_2: nekoapp.create.element(map_app,"label",{
-                                                class: "btn btn-outline-custom-blue mx-1 disabled",
+                                                class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                                 attr: {
                                                     "for": "goldBoxCheckbox",
                                                     "data-bs-toogle": "tooltip",
-                                                    "data-bs-placement": "bottom"
+                                                    "data-bs-placement": "bottom",
+                                                    "disabled": ""
                                                 }
                                         }),
                                             menu_boxesButton_goldBox_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/containers/goldBox.png"
                                                 }
@@ -896,7 +887,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_mineralsButton_monotite_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "monotiteCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -904,7 +895,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_mineralsButton_monotite_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/minerals/monotite.png"
                                                 }
@@ -918,7 +908,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_mineralsButton_dualomite_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "dualomiteCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -926,7 +916,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_mineralsButton_dualomite_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/minerals/dualomite.png"
                                                 }
@@ -940,7 +929,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_mineralsButton_trinite_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "triniteCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -948,7 +937,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_mineralsButton_trinite_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/minerals/trinite.png"
                                                 }
@@ -962,7 +950,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_mineralsButton_phChunk_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "phChunkCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -970,7 +958,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_mineralsButton_phChunk_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/minerals/photonChunk.png"
                                                 }
@@ -984,7 +971,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_mineralsButton_phQuartz_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "phQuartzCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -992,7 +979,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_mineralsButton_phQuartz_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/minerals/photonQuartz.png"
                                                 }
@@ -1016,7 +1002,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_apple_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "appleCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1025,7 +1011,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_apple_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioApple.png"
                                                 }
@@ -1039,7 +1024,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_banana_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "bananaCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1048,7 +1033,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_banana_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioBanana.png"
                                                 }
@@ -1062,7 +1046,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_clam_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "clamCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1070,7 +1054,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_clam_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioClam.png"
                                                 }
@@ -1084,7 +1067,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_crab_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "crabCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1092,7 +1075,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_crab_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioCrab.png"
                                                 }
@@ -1109,7 +1091,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_herb_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "herbCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1117,7 +1099,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_herb_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioHerb.png"
                                                 }
@@ -1131,7 +1112,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_lobster_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "lobsterCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1139,7 +1120,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_lobster_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioLobster.png"
                                                 }
@@ -1153,7 +1133,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_mushroom_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "mushroomCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1161,7 +1141,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_mushroom_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioMushroom.png"
                                                 }
@@ -1175,7 +1154,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_peach_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "peachCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1183,7 +1162,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_peach_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioPeach.png"
                                                 }
@@ -1200,7 +1178,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_pear_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "pearCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1208,7 +1186,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_pear_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioPear.png"
                                                 }
@@ -1222,7 +1199,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_tomato_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "tomatoCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1230,7 +1207,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_tomato_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioTomato.png"
                                                 }
@@ -1244,7 +1220,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_shell_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "shellCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1252,7 +1228,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_shell_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioTurbanShell.png"
                                                 }
@@ -1266,7 +1241,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_foodButton_turnip_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "turnipCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1274,7 +1249,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_foodButton_turnip_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/food/aelioTurnip.png"
                                                 }
@@ -1298,7 +1272,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_otherButton_datapod_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "datapodCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1307,7 +1281,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_otherButton_datapod_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/other/dataPod.png"
                                                 }
@@ -1331,7 +1304,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_enemyButton_veteran_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "veteranCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1340,7 +1313,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_enemyButton_veteran_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/enemies/vet.png"
                                                 }
@@ -1354,7 +1326,7 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                         menu_enemyButton_gigant_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1",
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "gigantCheckbox",
                                                 "data-bs-toogle": "tooltip",
@@ -1363,7 +1335,6 @@ var map_app = new nekoapp({
                                             }
                                         }),
                                             menu_enemyButton_gigant_img: nekoapp.create.element(map_app,"img",{
-                                                class: "adaptive-size-img",
                                                 attr: {
                                                     "src": "assets/markers/enemies/giga.png"
                                                 }

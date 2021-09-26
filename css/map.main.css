@@ -649,6 +649,12 @@ map-app map-localebox .map_localebox_text {
 	font-size: 1.15em
 }
 
+#leaflet-map {
+    background-color:rgba(31,57,90,1.00);
+    border-right: 1px solid var(--bs-light);
+    height: calc(100vh - 60px);
+}
+
 #side_map_menu {
 	overflow-y: scroll;
     height: calc(100vh - 60px);
@@ -661,23 +667,43 @@ map-app map-localebox .map_localebox_text {
 #side_map_menu::-webkit-scrollbar-thumb {
 	background-color: rgba(0,123,255,1);
 }
-@media (min-width:320px)  {
-    /*.btn {
-        width: 64px;
-        height: 64px;
-    }*/
-	.adaptive-size-img {
-        width: 50px;
-        height: 50px;
+
+@media (min-width:1px) {
+    #leaflet-map {
+        width: 70%;
     }
-}	
-@media (min-width:961px)  {
-    /*.btn {
-        width: 64px;
+    #side_map_menu {
+        width: 30%;
+    }
+
+    button.adaptive-size-img-ar {
+        width: auto;
         height: 64px;
-    }*/
+    }
+	img.adaptive-size-img-ar {
+        width: 32px;
+    }
     .adaptive-size-img {
-        width: 50px;
+        width: 60px;
         height: 50px;
     }
+}
+@media (min-width:1100px) {
+    #leaflet-map {
+        width: 75%;
+    }
+    #side_map_menu {
+        width: 25%;
+    }
+
+    button.adaptive-size-img-ar {
+        width: auto;
+        height: 64px;
+    }
+	img.adaptive-size-img-ar {
+        width: 48px;
+    }
+    .adaptive-size-img {
+        width: 72px;
+        height: 64px;}
 }
