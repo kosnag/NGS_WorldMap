@@ -1482,7 +1482,7 @@
 	"user_settings": {
 		"map_view": {
 			"center": [3660,3660],
-			"zoom": -2
+			"zoom": -1
 		},
 		"landmarks": {
 			"ryuker": true,
