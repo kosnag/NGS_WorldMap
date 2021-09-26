@@ -1,11 +1,11 @@
-// MAP MAIN JS OBJECT  -- SVGvsevolod
+// MAP MAIN JS OBJECT
 var map = {
-	// MAP DATA LOADED FROM JSON  -- SVGvsevolod
+	// MAP DATA LOADED FROM JSON
 	
-	// MAP MAIN OBJECT  -- SVGvsevolod
+	// MAP MAIN OBJECT
 	map_object: undefined,
 	
-	// MAP FUNCTIONS  -- SVGvsevolod
+	// MAP FUNCTIONS
 	toogle_marker: function(marker){
 		if(map.map_object.hasLayer(marker))
 			map.map_object.removeLayer(marker);
@@ -95,7 +95,7 @@ var map = {
 		localStorage.setItem("user_settings",JSON.stringify(map.user_settings));
 	},
 	init: function(additional_init){
-		// UNIVERSAL PARSE DATA FUNCTION  -- SVGvsevolod
+		// UNIVERSAL PARSE DATA FUNCTION
 		var set_data = function(data,target){
 			for(var i in Object.keys(data)){
 				if(!target[Object.keys(data)[i]])
@@ -106,17 +106,17 @@ var map = {
 					target[Object.keys(data)[i]]=data[Object.keys(data)[i]];
 			}
 		};
-		// LOAD POPUP DATA  -- SVGvsevolod
+		// LOAD POPUP DATA
 		nekoapp.system.xhr().load("assets/data.json",{
 			onload: function(){
 				set_data(JSON.parse(this.responseText),map);
 				
-				// INITIALIZE ICONS  -- SVGvsevolod
+				// INITIALIZE ICONS
 				for(var i in Object.keys(map.map_icons))
 					for(var j in Object.keys(map.map_icons[Object.keys(map.map_icons)[i]]))
 						map.map_icons[Object.keys(map.map_icons)[i]][Object.keys(map.map_icons[Object.keys(map.map_icons)[i]])[j]] = L.icon(map.map_icons[Object.keys(map.map_icons)[i]][Object.keys(map.map_icons[Object.keys(map.map_icons)[i]])[j]]);
 					
-				// INITIALIZE MARKERS  -- SVGvsevolod
+				// INITIALIZE MARKERS
 				for(var i in Object.keys(map.map_markers))
 					for(var j in Object.keys(map.map_markers[Object.keys(map.map_markers)[i]]))
 						for(var k in map.map_markers[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]]){
@@ -163,7 +163,7 @@ var map = {
 						map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].on("mouseover",function(){this.setStyle({fillOpacity:.2,opacity:.75})});
 						map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].on("mouseout",function(){this.setStyle({fillOpacity:0,opacity:.25})});
 					}
-				// INITIALIZE MAP  -- SVGvsevolod
+				// INITIALIZE MAP
 				map.map_object = L.map("leaflet-map",{
 					crs: L.CRS.Simple,
 					minZoom: "-3",
@@ -179,10 +179,10 @@ var map = {
 				map.map_object.fitBounds(map.constants.map_bounds);
 				map.map_object.setMaxBounds(map.constants.map_max_bounds);
 			
-				// LOAD USER SETTINGS  -- SVGvsevolod
+				// LOAD USER SETTINGS
 				map.load_settings();
 			
-				// DISPLAY ALL MARKERS ENABLED IN USER SETTINGS  -- SVGvsevolod
+				// DISPLAY ALL MARKERS ENABLED IN USER SETTINGS
 				for(var i in Object.keys(map.map_markers))
 					for(var j in Object.keys(map.map_markers[Object.keys(map.map_markers)[i]]))
 						if(map.user_settings[Object.keys(map.map_markers)[i]][Object.keys(map.map_markers[Object.keys(map.map_markers)[i]])[j]])
@@ -193,19 +193,19 @@ var map = {
 						map.map_sections[Object.keys(map.map_sections)[i]][Object.keys(map.map_sections[Object.keys(map.map_sections)[i]])[j]].addTo(map.map_object)
 
 				setTimeout(function(){
-					// SET MAP VIEW AND ZOOM FROM USER SETTINGS  -- SVGvsevolod
+					// SET MAP VIEW AND ZOOM FROM USER SETTINGS
 					map.map_object.setView(map.user_settings.map_view.center);
 					map.map_object.setZoom(map.user_settings.map_view.zoom);
 					map.map_object.invalidateSize(true);
 				
-					// EVENT TO GET MAP VIEW CENTER AND ZOOM  -- SVGvsevolod
+					// EVENT TO GET MAP VIEW CENTER AND ZOOM
 					map.map_object.on("moveend",function(event){
 						map.user_settings.map_view.center = [event.target.getCenter().lat,event.target.getCenter().lng];
 						map.user_settings.map_view.zoom = event.target.getZoom();
 						map.save_settings();
 					});
 					
-					// ADDITIONAL INIT FROM CALLBACK FUNCTION  -- SVGvsevolod
+					// ADDITIONAL INIT FROM CALLBACK FUNCTION
 					additional_init();
 				},250);
 				
@@ -216,7 +216,7 @@ var map = {
 					var day = new Date().getUTCDay(); // то сегодняшний день
 				else
 					var day = !new Date().getUTCDay()?6:new Date().getUTCDay()-1 // иначе вчерашний
-				// DAY DATA CHOOSING OPTIMIZATION  -- SVGvsevolod 
+				// DAY DATA CHOOSING OPTIMIZATION 
 				var days = ["7_sunday","1_monday","2_tuesday","3_wednesday","4_thursday","5_friday","6_saturday"];
 				nekoapp.system.xhr().load("assets/data/"+days[day]+".json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
 				*/
