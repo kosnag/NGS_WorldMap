@@ -682,8 +682,8 @@ map-app map-localebox .map_localebox_text {
         width: 48px;
     }
     .adaptive-size-img {
-        width: 62px;
-        height: 54px;
+        width: 60px;
+        height: 48px;
     }
 }
 @media (min-width:1601px) {
