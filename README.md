@@ -1,7 +1,7 @@
 # PSO2NGS Interactive Map
 Interactive map of world of Phantasy Star Online 2: New Genesis with location of everything.
 
-URL: [map.phantasystar.ru](https://map.phantasystar.ru/)
+URL: [map.phantasystar.ru](https://map.phantasystar.ru/) / [kosnag.github.io/NGS_WorldMap](https://kosnag.github.io/NGS_WorldMap/)
 
 ## Tech Stack
 - Map Library: [LeafletJS](https://leafletjs.com/)
@@ -9,7 +9,7 @@ URL: [map.phantasystar.ru](https://map.phantasystar.ru/)
 - Others: [FontAwesome](https://fontawesome.com/)
 
 ## Thanks to...
-* [PSO2 Modding](https://discord.gg/BFr3TA9AM4) Discord server for idea, datamine of icons, map image, locations of red containers and etc
+* [PSO2 Modding Discord](https://discord.gg/BFr3TA9AM4) server for idea, datamine of icons, map image, locations of red containers and etc
 * [RoboArks](https://pso2roboarks.jp/ngs/) and [RappyBurst](https://new-gen.rappy-burst.com) for Materials locations
 * ~~[RappyBurst](https://new-gen.rappy-burst.com) for Alpha Reactors locations~~ (Big F to [Ani](https://twitter.com/Ani_PSO2GL), we'll remember you forever!)
 * [AphraelAmarantha](https://twitter.com/AphyAmarantha) for Alpha Reactors locations
