@@ -196,7 +196,7 @@ var map = {
 					// SET MAP VIEW AND ZOOM FROM USER SETTINGS
 					map.map_object.setView(map.user_settings.map_view.center);
 					map.map_object.setZoom(map.user_settings.map_view.zoom);
-					map.map_object.invalidateSize(true);
+					map.map_object.invalidateSize();
 				
 					// EVENT TO GET MAP VIEW CENTER AND ZOOM
 					map.map_object.on("moveend",function(event){
