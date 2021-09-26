@@ -319,7 +319,6 @@ var map_app = new nekoapp({
                 template: nekoapp.create.template(
                     function(){
                         let leaflet_div = document.createElement("div")
-                            leaflet_div.className = "col-9"
                             leaflet_div.id = "leaflet-map"
 
                         return[leaflet_div]
@@ -617,7 +616,7 @@ var map_app = new nekoapp({
                         }
                     }),
                         map_menu: nekoapp.create.object(map_app,map_app.preferences.elements.map_menu_element,{
-                            class: "col-3 bg-menu",
+                            class: "bg-menu",
                             id: "side_map_menu"
                         }),
                             menu_header: nekoapp.create.element(map_app,"div",{
