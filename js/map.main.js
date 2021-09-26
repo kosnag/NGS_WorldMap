@@ -276,7 +276,6 @@ var map_app = new nekoapp({
                                             modal_content_body_button4.style = "position: relative;"
                                             modal_content_body_button4.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/ru-RU.svg' height='32px'></span> Русский"
                                             modal_content_body_button4.setAttribute("data-bs-dismiss","modal")
-                                            //modal_content_body_button4.setAttribute("disabled","")
                                             modal_content_body_button4.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ru-RU')");
 
                                         let modal_content_body_button5 = document.createElement("button")
@@ -633,9 +632,6 @@ var map_app = new nekoapp({
                             }),
                                 menu_alphareactor_researcher_button: nekoapp.create.element(map_app,"button",{
                                     class: "btn btn-custom-blue btn-lg mt-4 mb-2 adaptive-size-img-ar",
-                                    attr: {
-                                        "onclick": "window.open('https://twitter.com/search?q=%22%23AlphaReactors%20%23%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%20%23PSO2NGS%22%20(from%3AAphyAmarantha)')"
-                                    },
                                     style: {
                                         "position": "relative"
                                     }
@@ -655,6 +651,7 @@ var map_app = new nekoapp({
                                         text: nekoapp.create.localizedString(map_app, "mapOtherAlphaReactors"),
                                     }),
                                     menu_alphareactor_researcher_button_text2: nekoapp.create.element(map_app,"span",{
+                                        class: "adaptive-size-img-ar",
                                         text: " (Twitter)",
                                     }),
                                     menu_alphareactor_researcher_button_image2: nekoapp.create.element(map_app,"img",{
@@ -1696,7 +1693,8 @@ var map_app = new nekoapp({
                 return [elements, [/*elements.alert_element,*/elements.ngs_map]];
             },
             onModuleChange: function(){
-                
+
+                this.moduleContents.menu_alphareactor_researcher_button.addEventListener("click",function(){window.open('https://twitter.com/search?q=%22%23AlphaReactors%20%23%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%20%23PSO2NGS%22%20(from%3AAphyAmarantha)&f=live')})
                 new bootstrap.Tooltip(this.moduleContents.menu_alphareactor_researcher_button_image2)
                 this.moduleContents.menu_alphareactor_researcher_button_image2.setAttribute("data-bs-original-title","AphraelAmarantha (@AphyAmarantha)")
 
