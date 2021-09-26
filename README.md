@@ -11,10 +11,11 @@ URL: [https://map.phantasystar.ru](https://map.phantasystar.ru/)
 ## Thanks to...
 * [PSO2 Modding](https://discord.gg/BFr3TA9AM4) Discord server for idea, datamine of icons, map image, locations of red containers and etc
 * [RoboArks](https://pso2roboarks.jp/ngs/) and [RappyBurst](https://new-gen.rappy-burst.com) for Materials locations
-* [RappyBurst](https://new-gen.rappy-burst.com) for Alpha Reactors locations
+* ~~[RappyBurst](https://new-gen.rappy-burst.com) for Alpha Reactors locations~~ (Big F to [Ani](https://twitter.com/Ani_PSO2GL), we'll remember you forever!)
+* [AphraelAmarantha](https://twitter.com/AphyAmarantha) for Alpha Reactors locations
 * Booma1191 for Food locations
 * [Remalytics](https://twitter.com/remalytics) and her alliance/team for Veterans locations
-* Weather in Saint-Petersburg for Gigantix locations
+* Weather in Saint-Petersburg for Gigantix locations (тупая шутка про дожди в Питере, знаю)
 * [Sinitsaa](https://twitter.com/SinitsaHikari) for Russian localisation and translating some strings to Japanese
 * [PSO2 Brazil](https://pso2brasil.com/) for Portuguese localisation
 * [focuslite](https://github.com/focuslite) for Korean localisation
