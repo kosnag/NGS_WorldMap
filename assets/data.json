@@ -38,61 +38,58 @@
 			"redBoxChecked": {"iconUrl": "assets/markers/containers/redBoxChecked.png", "iconSize": [22,22], "iconAnchor": [11,11], "popupAnchor": [0,-11]},
 			"goldBox": {"iconUrl": "assets/markers/containers/goldBox.png", "iconSize": [22,22], "iconAnchor": [11,11], "popupAnchor": [0,-11]}
 		},
-		"enemies": {
-			"veteran": {"iconUrl": "assets/markers/enemies/vet.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]},
-			"gigantix": {"iconUrl": "assets/markers/enemies/giga.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]}
-		},
 		"other": {
 			"datapod": {"iconUrl": "assets/markers/other/dataPod.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
-			"datapodChecked": {"iconUrl": "assets/markers/other/dataPodChecked.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]}
+			"datapodChecked": {"iconUrl": "assets/markers/other/dataPodChecked.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
+			"veteran": {"iconUrl": "assets/markers/other/vet.png", "iconSize": [32,32], "iconAnchor": [16,16], "popupAnchor": [0,-16]}
 		}
 	},
 	"map_sections": {
 		"aelio": {
 			"centralAeilo": {
-				"id":"centralAeilo",
-				"type":"gathering",
-				"popup":true,
+				"id": "centralAeilo",
+				"type": "gathering",
+				"popup": true,
 				"coordinates":[[6198,2886],[6038,2730],[5721,2730],[5565,2921],[5444,2963],[5261,2945],[4935,3158],[4746,3107],[4262,2811],[3816,2170],[3882,1960],[4160,1696],[4126,1515],[4081,1579],[3889,1496],[3754,1352],[3651,1165],[3482,1314],[3417,1321],[3384,1288],[3267,1309],[3165,1541],[3080,1562],[2938,1501],[2853,1546],[2812,1656],[2728,1701],[2238,1619],[2120,1537],[2093,1634],[2208,1784],[2386,2160],[2223,2165],[2203,2383],[2252,2728],[2398,2888],[2502,3182],[2545,3215],[2530,3632],[3013,3950],[3099,4133],[3065,4266],[3548,4787],[3604,5033],[3465,5410],[3351,5500],[3426,5559],[3539,5560],[3696,5668],[3802,5667],[3868,5735],[4144,5678],[4270,5772],[4272,5843],[4303,5873],[4402,5952],[4421,6207],[4585,6426],[4558,6708],[4408,7164],[4619,7178],[4782,7030],[5018,6740],[4970,6335],[4721,6077],[4615,5995],[4633,5878],[4692,5836],[4764,5622],[4898,5527],[5032,5601],[5078,5581],[5050,5212],[4987,4978],[4597,4524],[4612,4316],[4833,4076],[4868,4008],[4907,3543],[4979,3445],[5129,3413],[5244,3439],[5311,3422],[5412,3199],[5645,3023],[5734,2883],[5829,2844],[5949,2862],[6114,3000],[6160,3028]]},
 			"southAelio": {
-				"id":"southAelio",
-				"type":"gathering",
-				"popup":true,
+				"id": "southAelio",
+				"type": "gathering",
+				"popup": true,
 				"coordinates":[[2252,2728],[2398,2888],[2502,3182],[2545,3215],[2530,3632],[2667,3721],[2592,3834],[2608,3964],[2568,4123],[2295,4283],[2209,4408],[1977,4557],[2052,4639],[2041,4725],[1855,4849],[1632,5027],[1451,5475],[1184,5918],[1232,6080],[1375,6394],[0,6359],[0,3057],[523,3044],[749,2844],[1047,2811],[1355,2679],[1598,2652],[1720,2700],[1912,2714],[2088,2800]]},
 			"northAelio": {
-				"id":"northAelio",
-				"type":"gathering",
-				"popup":true,
+				"id": "northAelio",
+				"type": "gathering",
+				"popup": true,
 				"coordinates":[[6198,2886],[6038,2730],[5721,2730],[5565,2921],[5444,2963],[5261,2945],[4935,3158],[4746,3107],[4262,2811],[3816,2170],[3882,1960],[4160,1696],[4126,1515],[4358,1354],[4516,1303],[4565,1417],[4787,1559],[5001,1562],[5159,1439],[5258,1405],[5316,1429],[5370,1409],[5417,1307],[5880,1269],[6046,1273],[6108,1224],[6158,1155],[6595,1586],[6587,2086],[6225,2445],[6111,2674]]},
 			"westAelio": {
-				"id":"westAelio",
-				"type":"gathering",
-				"popup":true,
+				"id": "westAelio",
+				"type": "gathering",
+				"popup": true,
 				"coordinates":[[0,3057],[523,3044],[749,2844],[1047,2811],[1355,2679],[1598,2652],[1720,2700],[1912,2714],[2088,2800],[2252,2728],[2203,2383],[2223,2165],[2386,2160],[2208,1784],[2093,1634],[2120,1537],[2238,1619],[2728,1701],[2812,1656],[2853,1546],[2938,1501],[3080,1562],[3165,1541],[3267,1309],[3384,1288],[3417,1321],[3482,1314],[3651,1165],[3754,1352],[3889,1496],[4081,1579],[4126,1515],[4358,1354],[4516,1303],[4565,1417],[4787,1559],[5001,1562],[5159,1439],[5258,1405],[5316,1429],[5370,1409],[5417,1307],[5880,1269],[6046,1273],[6108,1224],[6158,1155],[6158,0],[0,0]]},
 			"halphaLake": {
-				"id":"halphaLake",
-				"type":"gathering",
-				"popup":true,
+				"id": "halphaLake",
+				"type": "gathering",
+				"popup": true,
 				"coordinates":[[6303,5203],[6340,5452],[6591,5697],[6804,5690],[6904,5840],[6906,6336],[6771,6694],[6535,6935],[6270,6931],[6039,6795],[5878,6820],[5592,6588],[5523,6693],[5538,6880],[5255,6930],[5018,6740],[4970,6335],[4721,6077],[4615,5995],[4633,5878],[4692,5836],[4764,5622],[4898,5527],[5032,5601],[5078,5581],[5070,5474],[5241,5340],[5488,5338],[5683,5306],[5771,5327],[5995,5316]]},
 			"mtMagnus": {
-				"id":"mtMagnus",
-				"type":"combat",
-				"popup":true,
+				"id": "mtMagnus",
+				"type": "combat",
+				"popup": true,
 				"coordinates":[[2667,3721],[3013,3950],[3099,4133],[3065,4266],[3548,4787],[3604,5033],[3465,5410],[3351,5500],[3426,5559],[3074,5991],[3001,6577],[2645,6497],[1862,6587],[1375,6394],[1232,6080],[1184,5918],[1451,5475],[1632,5027],[1855,4849],[2041,4725],[2052,4639],[1977,4557],[2209,4408],[2295,4283],[2568,4123],[2608,3964],[2592,3834]]},
 			"laboratoryRuins": {
-				"id":"laboratoryRuins",
-				"type":"combat",
-				"popup":true,
+				"id": "laboratoryRuins",
+				"type": "combat",
+				"popup": true,
 				"coordinates":[[3426,5559],[3539,5560],[3696,5668],[3802,5667],[3868,5735],[4144,5678],[4270,5772],[4272,5843],[4303,5873],[4402,5952],[4421,6207],[4585,6426],[4558,6708],[4408,7164],[4193,7210],[3849,7192],[3450,6979],[3001,6577],[3074,5991]]},
 			"resolForest": {
-				"id":"resolForest",
-				"type":"combat",
-				"popup":true,
+				"id": "resolForest",
+				"type": "combat",
+				"popup": true,
 				"coordinates":[[5070,5474],[5050,5212],[4987,4978],[4597,4524],[4612,4316],[4833,4076],[4868,4008],[4907,3543],[4979,3445],[5129,3413],[5244,3439],[5311,3422],[5412,3199],[5645,3023],[5734,2883],[5829,2844],[5949,2862],[6114,3000],[6160,3028],[6300,3337],[6309,3540],[6129,3930],[6346,4179],[6345,4346],[6429,4499],[6434,4862],[6421,5065],[6303,5203],[5995,5316],[5771,5327],[5683,5306],[5488,5338],[5241,5340]]},
 			"centralCity": {
-				"id":"centralCity",
-				"type":"lobby",
-				"popup":true,
+				"id": "centralCity",
+				"type": "lobby",
+				"popup": true,
 				"coordinates":[[3579,3295],[3799,3363],[3901,3594],[3868,3680],[3882,3737],[3739,4110],[3696,4129],[3300,3982],[3269,3917],[3162,3864],[3103,3692],[3183,3466]]}
 		}
 	},
@@ -772,7 +769,8 @@
 			]
         },
 		"boxes": {
-            "whiteBox": [{"coordinates":[6454,1945],"tooltip":true},
+            "whiteBox": [
+				{"coordinates":[6454,1945],"tooltip":true},
 				{"coordinates":[6350,1514],"tooltip":true},
 				{"coordinates":[5894,2746],"tooltip":true},
 				{"coordinates":[5743,2385],"tooltip":true},
@@ -1005,7 +1003,7 @@
 			],
             "goldBox": []
 		},
-		"enemies": {
+		"other": {
 			"veteran": [
 				{"coordinates":[5275,3405],"id":"EldiSkythe","tooltip":true},
 				{"coordinates":[4922,2997],"id":"Bujin","tooltip":true},
@@ -1024,20 +1022,6 @@
 				{"coordinates":[4933,5248],"id":"Waulon","tooltip":true},
 				{"coordinates":[363,415],"id":"NexAelio","tooltip":true}
 			],
-			"gigantix": [
-				{"coordinates":[4869,3244],"id":"Nogleth","tooltip":true},
-				{"coordinates":[2983,3518],"id":"Nogleth","tooltip":true},
-				{"coordinates":[1260,3681],"id":"NexAelio","tooltip":true},
-				{"coordinates":[806,4657],"id":"NexAelio","tooltip":true},
-				{"coordinates":[4562,1943],"id":"DaitylAxe","tooltip":true},
-				{"coordinates":[5812,1881],"id":"DaitylAxe","tooltip":true},
-				{"coordinates":[5897,5987],"id":"DaitylSword","tooltip":true},
-				{"coordinates":[2772,454],"id":"Varas","tooltip":true},
-				{"coordinates":[2360,1195],"id":"Varas","tooltip":true},
-				{"coordinates":[3084,1496],"id":"Varas","tooltip":true}
-			]
-		},
-		"other": {
 			"datapod": [
 				{"coordinates":[5951,2027],"tooltip":true,"id":"datapod-1","markable":true},
 				{"coordinates":[5469,1807],"tooltip":true,"id":"datapod-2","markable":true},
@@ -1095,13 +1079,10 @@
 			"shell": "mapShellTitle",
 			"turnip": "mapTurnipTitle"
 		},
-		"enemies": {
-			"veteran": "mapEmenyTypeVet",
-			"gigantix": "mapEnemyTypeGig"
-		},
 		"other": {
 			"alphaReactor": "mapOtherAlphaReactors",
-			"datapod": "mapOtherDatapods"
+			"datapod": "mapOtherDatapods",
+			"veteran": "mapOtherVeteran"
 		}
 	},
 	"map_names_strings": {
@@ -1148,7 +1129,7 @@
 				"m-3": "mapMagName3"
 			}
 		},
-		"enemies": {
+		"other": {
 			"veteran": {
 				"ArdBanser": "mapEnemyArdBanser",
 				"ArdBanshee": "mapEnemyArdBanshee",
@@ -1167,24 +1148,7 @@
 				"Varas": "mapEnemyVaras",
 				"Waulon": "mapEnemyWaulon"
 			},
-			"gigantix": {
-				"ArdBanser": "mapEnemyArdBanser",
-				"ArdBanshee": "mapEnemyArdBanshee",
-				"BiggFrogga": "mapEnemyBiggFrogga",
-				"Bujin": "mapEnemyBujin",
-				"Chiacurio": "mapEnemyChiacurio",
-				"CragBear": "mapEnemyCragBear",
-				"DaitylAxe": "mapEnemyDaitylAxe",
-				"DaitylSword": "mapEnemyDaitylSword",
-				"EldiSkythe": "mapEnemyEldiSkythe",
-				"NexAelio": "mapEnemyNexAelio",
-				"Nogleth": "mapEnemyNogleth",
-				"Oruq": "mapEnemyOruq",
-				"ThunderBanser": "mapEnemyThunderBanser",
-				"ThunderBanshee": "mapEnemyThunderBanshee",
-				"Varas": "mapEnemyVaras",
-				"Waulon": "mapEnemyWaulon"
-			}
+			"datapod": {}
 		},
 		"sections":{
 			"aelio":{
@@ -1408,31 +1372,36 @@
 					"image": "assets/sections/centralAelio.png",
 					"type": "gathering",
 					"recomended_bp": 800,
-					"recomended_lv": 1
+					"recomended_lv": 1,
+					"gigantix": "nogleth"
 				},
 				"southAelio": {
 					"image": "assets/sections/southAelio.png",
 					"type": "gathering",
 					"recomended_bp": 835,
-					"recomended_lv": 3
+					"recomended_lv": 3,
+					"gigantix": "nexAelio"
 				},
 				"northAelio": {
 					"image": "assets/sections/northAelio.png",
 					"type": "gathering",
 					"recomended_bp": 1045,
-					"recomended_lv": 12
+					"recomended_lv": 12,
+					"gigantix": "daitylAxe"
 				},
 				"westAelio": {
 					"image": "assets/sections/westAelio.png",
 					"type": "gathering",
 					"recomended_bp": 933,
-					"recomended_lv": 7
+					"recomended_lv": 7,
+					"gigantix": "varas"
 				},
 				"halphaLake": {
 					"image": "assets/sections/halphaLake.png",
 					"type": "gathering",
 					"recomended_bp": 9999,
-					"recomended_lv": 60
+					"recomended_lv": 60,
+					"gigantix": "daitylSword"
 				},
 				"mtMagnus": {
 					"image": "assets/sections/mtMagnus.png",
@@ -1517,12 +1486,9 @@
 			"goldBox": false,
 			"whiteBox": false
 		},
-		"enemies": {
-			"gigantix": false,
-			"veteran": false
-		},
 		"other": {
-			"datapod": false
+			"datapod": false,
+			"veteran": false
 		},
 		"checked": {
 			"redBox": [],

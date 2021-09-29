@@ -171,6 +171,7 @@
 	"mapOtherTitle": "Other",
 	"mapOtherDatapods": "Message Pack",
 	"mapOtherAlphaReactors": "Alpha Reactor",
+	"mapOtherVeteran": "Battle-Hardened",
 	
 
 	"mapSectionCentralAelio": "Central Aerio",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "Enemies",
-	"mapEmenyTypeVet": "Battle-Hardened",
 	"mapEnemyTypeGig": "Despaired",
 	
 	"mapEnemyArdBanser": "Ard Banther",

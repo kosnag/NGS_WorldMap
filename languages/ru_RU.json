@@ -171,6 +171,7 @@
 	"mapOtherTitle": "Другое",
 	"mapOtherDatapods": "Сообщение",
 	"mapOtherAlphaReactors": "Альфа Реактор",
+	"mapOtherVeteran": "Ветераны",
 
 	
 	"mapSectionCentralAelio": "Центр Эарио",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "Враги",
-	"mapEmenyTypeVet": "Ветераны",
 	"mapEnemyTypeGig": "Отчаявшиеся",
 	
 	"mapEnemyArdBanser": "Ард Бансер",

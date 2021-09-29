@@ -171,6 +171,7 @@
 	"mapOtherTitle": "Other",
 	"mapOtherDatapods": "Datapod",
 	"mapOtherAlphaReactors": "Alpha Reactor",
+	"mapOtherVeteran": "Veteran",
 	
 
 	"mapSectionCentralAelio": "Central Aelio",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "Enemies",
-	"mapEmenyTypeVet": "Veteran",
 	"mapEnemyTypeGig": "Malevolent",
 	
 	"mapEnemyArdBanser": "Ard Banser",

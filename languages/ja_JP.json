@@ -171,6 +171,7 @@
 	"mapOtherTitle": "その他",
 	"mapOtherDatapods": "メッセージパック",
 	"mapOtherAlphaReactors": "アルファリアクター",
+	"mapOtherVeteran": "老練の",
 
 
 	"mapSectionCentralAelio": "中央エアリオ",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "エネミー",
-	"mapEmenyTypeVet": "老練の",
 	"mapEnemyTypeGig": "絶望の",
 	
 	"mapEnemyArdBanser": "アードバンサー",
