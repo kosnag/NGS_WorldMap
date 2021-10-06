@@ -1758,44 +1758,55 @@ var map_app = new nekoapp({
     loadingScreen: {
         customLoadScreen: function(){
             let localeLoadStrings = {
-                "customLoadScreenString1En": "",
-                "customLoadScreenString2En": "",
+                "customLoadScreenStringTitleEn": "PSO2NGS Interactive Map",
+                "customLoadScreenString1En": "Map are not designed for mobile devices",
+                "customLoadScreenString2En": "If you see that screen more than 5 seconds - please reload a page",
                 
-                "customLoadScreenString1Ru": "",
-                "customLoadScreenString2Ru": "",
+                "customLoadScreenStringTitleRu": "Интерактивная Карта PSO2NGS",
+                "customLoadScreenString1Ru": "На мобильных устройства карта будет отображаться некорректно",
+                "customLoadScreenString2Ru": "Если вы видите данный экран более 5 секунд - перезагрузите страницу",
 
-                "customLoadScreenString1Kr": "",
-                "customLoadScreenString2Kr": "",
+                "customLoadScreenStringTitleKr": "PSO2NGS 인터렉티브 맵",
+                "customLoadScreenString1Kr": "지도는 모바일 장치 용으로 설계되지 않았습니다",
+                "customLoadScreenString2Kr": "해당 화면이 5 초 이상 표시되는 경우-페이지를 다시로드하십시오",
 
-                "customLoadScreenString1Jp": "",
-                "customLoadScreenString2Jp": "",
+                "customLoadScreenStringTitleJp": "PSO2NGS インタラクティブ マップ",
+                "customLoadScreenString1Jp": "このマップはモバイルデバイスでは実際のものではありません",
+                "customLoadScreenString2Jp": "この画面が5秒以上表示される場合は、ページをリロードしてください ",
 
-                "customLoadScreenString1Pt": "",
-                "customLoadScreenString2Pt": ""
+                "customLoadScreenStringTitlePt": "Mapa Interactivo PSO2NGS",
+                "customLoadScreenString1Pt": "Os mapas não são projetados para dispositivos móveis",
+                "customLoadScreenString2Pt": "Se você vir essa tela mais de 5 segundos - por favor, recarregue uma página"
             }
             if(localStorage.getItem("nekoapp.locale") && JSON.parse(localStorage.getItem("nekoapp.locale")).language){
                 switch(JSON.parse(localStorage.getItem("nekoapp.locale")).language){
                     case "en-US":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
                         break;
                     case "en-fan":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
                         break;
                     case "ru-RU":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleRu
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Ru
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Ru
                         break;
                     case "ko-KR":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleKr
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Kr
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Kr
                         break;
                     case "ja-JP":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleJp
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Jp
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Jp
                         break;
                     case "pt-BR":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitlePt
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Pt
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Pt
                         break;
@@ -1803,28 +1814,72 @@ var map_app = new nekoapp({
             }else{
                 switch(navigator.language){
                     case "ru-RU":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleRu
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Ru
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Ru
                         break;
                     case "ko-KR":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleKr
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Kr
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Kr
                         break;
                     case "ja-JP":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleJp
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Jp
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Jp
                         break;
                     case "pt-BR":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitlePt
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Pt
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Pt
                         break;
                     default:
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
                         break;
                     }
             }
+            switch(Math.floor(Math.random() * 3)){
+                case 0:
+                    var loadingScreenGifSrc = "assets/loadscreen/rappy1.gif",
+                        loadingScreenGifSize = "320"
+                    break;
+                case 1:
+                    var loadingScreenGifSrc = "assets/loadscreen/rappy2.gif",
+                        loadingScreenGifSize = "240"
+                    break;
+                case 2:
+                    var loadingScreenGifSrc = "assets/loadscreen/rappy3.gif",
+                        loadingScreenGifSize = "240"
+                    break;
+            }
             let loadingScreenElement = document.createElement("div")
+
+                loadingScreenGifCenter = document.createElement("center")
+
+                        loadingScreenGif = document.createElement("img")
+                            loadingScreenGif.setAttribute("src", loadingScreenGifSrc)
+                            loadingScreenGif.width = loadingScreenGifSize
+                
+                    loadingScreenStringTitle = document.createElement("div")
+                        loadingScreenStringTitle.innerHTML = customLoadScreenStringTitle
+                        loadingScreenStringTitle.className = "navbar-brand text-light text-center"
+                        loadingScreenStringTitle.style = "padding-bottom: 32px;"
+                
+                    loadingScreenString1 = document.createElement("div")
+                        loadingScreenString1.innerHTML = customLoadScreenString1
+                        loadingScreenString1.className = "text-light text-center"
+                
+                    loadingScreenString2 = document.createElement("div")
+                        loadingScreenString2.innerHTML = customLoadScreenString2
+                        loadingScreenString2.className = "text-light text-center"
+                
+            loadingScreenElement.appendChild(loadingScreenGifCenter)
+                loadingScreenGifCenter.appendChild(loadingScreenGif)
+            loadingScreenElement.appendChild(loadingScreenStringTitle)
+            loadingScreenElement.appendChild(loadingScreenString1)
+            loadingScreenElement.appendChild(loadingScreenString2)
 
             return loadingScreenElement
         }
