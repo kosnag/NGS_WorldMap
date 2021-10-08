@@ -1458,7 +1458,8 @@
 			"cocoon": true,
 			"tower": true,
 			"mag": true,
-			"urgent": true
+			"urgent": true,
+			"trigger": true
 		},
 		"minerals": {
 			"monotite": false,

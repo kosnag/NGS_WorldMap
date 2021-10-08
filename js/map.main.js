@@ -650,8 +650,8 @@ var map_app = new nekoapp({
                                         class: "h5 text-light text-center mb-3",
                                         text: nekoapp.create.localizedString(map_app, "mapLandmarksTitle")
                                     }),
-                                    menu_landmarksButton_group: nekoapp.create.element(map_app,"button-group",{
-                                        class: "d-flex justify-content-center",
+                                    menu_landmarksButton_group1: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex justify-content-center mb-2",
                                     }),
                                         menu_landmarksButton_cocoon_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -716,6 +716,9 @@ var map_app = new nekoapp({
                                                     "src": "assets/markers/landmarks/ryuker.png"
                                                 }
                                             }),
+                                    menu_landmarksButton_group2: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex justify-content-center",
+                                    }),
                                         menu_landmarksButton_mag_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
                                             id: "magCheckbox",
@@ -756,6 +759,27 @@ var map_app = new nekoapp({
                                             menu_landmarksButton_urgent_img: nekoapp.create.element(map_app,"img",{
                                                 attr: {
                                                     "src": "assets/markers/landmarks/urgent.png"
+                                                }
+                                            }),
+                                        menu_landmarksButton_trigger_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "triggerCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_landmarksButton_trigger_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
+                                            attr: {
+                                                "for": "triggerCheckbox",
+                                                "data-bs-toogle": "tooltip",
+                                                "data-bs-placement": "bottom"
+                                            }
+                                        }),
+                                            menu_landmarksButton_trigger_img: nekoapp.create.element(map_app,"img",{
+                                                attr: {
+                                                    "src": "assets/markers/landmarks/trigger.png"
                                                 }
                                             }),
                                 
@@ -1267,22 +1291,26 @@ var map_app = new nekoapp({
 
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
                                     elements.menu_landmarks_body.appendChild(elements.menu_landmarks_desc)
-                                    elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_2)
+                                    elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group1)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_cocoon_1)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_cocoon_2)
                                             elements.menu_landmarksButton_cocoon_2.appendChild(elements.menu_landmarksButton_cocoon_img)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_tower_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_tower_2)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_tower_1)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_tower_2)
                                             elements.menu_landmarksButton_tower_2.appendChild(elements.menu_landmarksButton_tower_img)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_urgent_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_urgent_2)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_urgent_1)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_urgent_2)
                                             elements.menu_landmarksButton_urgent_2.appendChild(elements.menu_landmarksButton_urgent_img)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_ryuker_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_ryuker_2)
+                                    elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group2)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_ryuker_1)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_ryuker_2)
                                             elements.menu_landmarksButton_ryuker_2.appendChild(elements.menu_landmarksButton_ryuker_img)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_mag_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_mag_2)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_mag_1)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_mag_2)
                                             elements.menu_landmarksButton_mag_2.appendChild(elements.menu_landmarksButton_mag_img)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_trigger_1)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_trigger_2)
+                                            elements.menu_landmarksButton_trigger_2.appendChild(elements.menu_landmarksButton_trigger_img)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
                                 elements.map_menu_body.appendChild(elements.menu_boxes_body)
@@ -1634,10 +1662,10 @@ var map_app = new nekoapp({
                         if(map.user_settings.landmarks.ryuker)map_app.modules.map_module.moduleContents.menu_landmarksButton_ryuker_1.setAttribute("checked","");
                         if(map.user_settings.landmarks.tower)map_app.modules.map_module.moduleContents.menu_landmarksButton_tower_1.setAttribute("checked","");
                         if(map.user_settings.landmarks.urgent)map_app.modules.map_module.moduleContents.menu_landmarksButton_urgent_1.setAttribute("checked","");
+                        if(map.user_settings.landmarks.trigger)map_app.modules.map_module.moduleContents.menu_landmarksButton_trigger_1.setAttribute("checked","");
                         
                         if(map.user_settings.boxes.whiteBox)map_app.modules.map_module.moduleContents.menu_boxesButton_whiteBox_1.setAttribute("checked","");
                         if(map.user_settings.boxes.redBox)map_app.modules.map_module.moduleContents.menu_boxesButton_redBox_1.setAttribute("checked","");
-                        //if(map.user_settings.boxes.goldBox)map_app.modules.map_module.moduleContents.menu_boxesButton_goldBox_1.setAttribute("checked","");
                         
                         if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
                         if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
@@ -1671,6 +1699,7 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_landmarksButton_urgent_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapUrgentTitle)
                 this.moduleContents.menu_landmarksButton_ryuker_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRyukerTitle)
                 this.moduleContents.menu_landmarksButton_mag_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapMagTitle)
+                this.moduleContents.menu_landmarksButton_trigger_2.setAttribute("data-bs-original-title",map_app.locale.strings.language_title)
                 
                 this.moduleContents.menu_boxesButton_whiteBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapWhiteBoxTitle)
                 this.moduleContents.menu_boxesButton_redBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRedBoxTitle)
