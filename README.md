@@ -15,10 +15,8 @@ URL: [map.phantasystar.ru](https://map.phantasystar.ru/) / [kosnag.github.io/NGS
 * [AphraelAmarantha](https://twitter.com/AphyAmarantha) for Alpha Reactors locations
 * Booma1191 for Food locations
 * [Remalytics](https://twitter.com/remalytics) and her alliance/team for Veterans locations
-* Weather in Saint-Petersburg for Gigantix locations (тупая шутка про дожди в Питере, знаю)
-* [Sinitsaa](https://twitter.com/SinitsaHikari) for Russian localisation and translating some strings to Japanese
-* [PSO2 Brazil](https://pso2brasil.com/) for Portuguese localisation
-* [focuslite](https://github.com/focuslite) for Korean localisation
-* [Arks-Layer](https://arks-layer.com/) translators for fan-patch localisation
+* [Sinitsaa](https://twitter.com/SinitsaHikari) for Russian localization and translating some strings to Japanese
+* [PSO2 Brazil](https://pso2brasil.com/) for Portuguese localization
+* [focuslite](https://github.com/focuslite) for Korean localization
+* [Arks-Layer](https://arks-layer.com/) translators for fan-patch localization
 * [SVGvsevolod](https://www.youtube.com/user/vsevolod98subbotkin) for big help with JavaScript and [his framework](https://github.com/nekowebsoftware/nekoapp)
-* you
