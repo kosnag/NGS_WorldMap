@@ -211,15 +211,6 @@ var map = {
 				
 				// INITIALIZE AND LOADING LOCALES
 				map.update_locale();
-				/*
-				if (new Date().getUTCHours()>7) // если время большк семи часов
-					var day = new Date().getUTCDay(); // то сегодняшний день
-				else
-					var day = !new Date().getUTCDay()?6:new Date().getUTCDay()-1 // иначе вчерашний
-				// DAY DATA CHOOSING OPTIMIZATION 
-				var days = ["7_sunday","1_monday","2_tuesday","3_wednesday","4_thursday","5_friday","6_saturday"];
-				nekoapp.system.xhr().load("assets/data/"+days[day]+".json",{onload: function(){init2(JSON.parse(this.responseText),additional_init)}});
-				*/
 			}
 		});
 	}
