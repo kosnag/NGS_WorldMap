@@ -9,7 +9,8 @@
 			"mag": {"iconUrl": "assets/markers/landmarks/mag.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
 			"ryuker": {"iconUrl": "assets/markers/landmarks/ryuker.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
 			"tower": {"iconUrl": "assets/markers/landmarks/tower.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
-			"urgent": {"iconUrl": "assets/markers/landmarks/urgent.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]}
+			"urgent": {"iconUrl": "assets/markers/landmarks/urgent.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]},
+			"trigger": {"iconUrl": "assets/markers/landmarks/trigger.png", "iconSize": [40,40], "iconAnchor":[20,20], "popupAnchor": [0,-20]}
 		},
 		"minerals": {
 			"monotite": {"iconUrl": "assets/markers/minerals/monotite.png", "iconSize": [26,26], "iconAnchor":[13,13], "popupAnchor": [0,-13]},
@@ -137,6 +138,10 @@
 				{"coordinates":[554,3860],"id":"m-2","tooltip":true},
 				{"coordinates":[2809,1037],"id":"m-3","tooltip":true}
 
+			],
+			"trigger": [
+				{"coordinates":[5069,2507],"id":"trig-purple","tooltip":true},
+				{"coordinates":[3363,221],"id":"trig-orange","tooltip":true}
 			]
 		},
         "minerals": {
@@ -1052,7 +1057,8 @@
 			"tower": "mapTowerTitle",
 			"urgent": "mapUrgentTitle",
 			"ryuker": "mapRyukerTitle",
-			"mag": "mapMagTitle"
+			"mag": "mapMagTitle",
+			"trigger": "mapTriggerTitle"
 		},
 		"boxes": {
 			"redBox": "mapRedBoxTitle",
@@ -1127,6 +1133,10 @@
 				"m-1": "mapMagName1",
 				"m-2": "mapMagName2",
 				"m-3": "mapMagName3"
+			},
+			"trigger": {
+				"trig-purple": "mapTriggerNamePurple",
+				"trig-orange": "mapTriggerNameOrange"
 			}
 		},
 		"other": {
@@ -1361,6 +1371,45 @@
 						{
 							"reward_type": "meseta",
 							"reward_count": 10000
+						}
+					]
+				}
+			},
+			"trigger": {
+				"trig-purple": {
+					"max_players": 816,
+					"required_bp": 8492,
+					"description": "mapTriggerDescPurple",
+					"main_mission": "mapTriggerMainPurple",
+					"side_missions": ["mapTriggerSidePurple_a","mapTriggerSidePurple_b"],
+					"clear_reward":
+						{
+							"reward_type": "meseta",
+							"reward_count": 5
+						},
+					"rewards": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 10
+						}
+					]
+				},
+				"trig-orange": {
+					"max_players": 816,
+					"required_bp": 8492,
+					"description": "mapTriggerDescOrange",
+					"main_mission": "mapTriggerMainOrange",
+					"side_missions": ["mapTriggerSideOrange_a","mapTriggerSideOrange_b"],
+					"clear_reward": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 5
+						}
+					],
+					"rewards": [
+						{
+							"reward_type": "meseta",
+							"reward_count": 10
 						}
 					]
 				}
