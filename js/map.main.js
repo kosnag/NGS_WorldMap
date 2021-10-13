@@ -1437,6 +1437,14 @@ var map_app = new nekoapp({
                     else
                         map.user_settings.landmarks.urgent = true;
                     map.save_settings();
+                });        
+                elements.menu_landmarksButton_trigger_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.landmarks.trigger);
+                    if(map.user_settings.landmarks.trigger)
+                        map.user_settings.landmarks.trigger = false;
+                    else
+                        map.user_settings.landmarks.trigger = true;
+                    map.save_settings();
                 });                
 				elements.menu_mineralsButton_monotite_1.addEventListener("change",function(){
                     map.toogle_markers(map.map_markers.minerals.monotite);
@@ -1628,6 +1636,7 @@ var map_app = new nekoapp({
                 new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_ryuker_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_tower_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_urgent_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_trigger_2)
                 
                 new bootstrap.Tooltip(this.moduleContents.menu_boxesButton_whiteBox_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_boxesButton_redBox_2)
@@ -1699,7 +1708,7 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_landmarksButton_urgent_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapUrgentTitle)
                 this.moduleContents.menu_landmarksButton_ryuker_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRyukerTitle)
                 this.moduleContents.menu_landmarksButton_mag_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapMagTitle)
-                this.moduleContents.menu_landmarksButton_trigger_2.setAttribute("data-bs-original-title",map_app.locale.strings.language_title)
+                this.moduleContents.menu_landmarksButton_trigger_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapUrgentTitle)
                 
                 this.moduleContents.menu_boxesButton_whiteBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapWhiteBoxTitle)
                 this.moduleContents.menu_boxesButton_redBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRedBoxTitle)
@@ -1788,24 +1797,24 @@ var map_app = new nekoapp({
         customLoadScreen: function(){
             let localeLoadStrings = {
                 "customLoadScreenStringTitleEn": "PSO2NGS Interactive Map",
-                "customLoadScreenString1En": "Map are not designed for mobile devices",
-                "customLoadScreenString2En": "If you see that screen more than 5 seconds - please reload a page",
+                "customLoadScreenString1En": "Map is not designed for mobile devices",
+                "customLoadScreenString2En": "If you see that screen more than 3 seconds - please reload a page",
                 
                 "customLoadScreenStringTitleRu": "Интерактивная Карта PSO2NGS",
                 "customLoadScreenString1Ru": "На мобильных устройства карта будет отображаться некорректно",
-                "customLoadScreenString2Ru": "Если вы видите данный экран более 5 секунд - перезагрузите страницу",
+                "customLoadScreenString2Ru": "Если вы видите данный экран более 3 секунд - перезагрузите страницу",
 
                 "customLoadScreenStringTitleKr": "PSO2NGS 인터렉티브 맵",
                 "customLoadScreenString1Kr": "지도는 모바일 장치 용으로 설계되지 않았습니다",
-                "customLoadScreenString2Kr": "해당 화면이 5 초 이상 표시되는 경우-페이지를 다시로드하십시오",
+                "customLoadScreenString2Kr": "해당 화면이 3 초 이상 표시되는 경우-페이지를 다시로드하십시오",
 
                 "customLoadScreenStringTitleJp": "PSO2NGS インタラクティブ マップ",
                 "customLoadScreenString1Jp": "このマップはモバイルデバイスでは実際のものではありません",
-                "customLoadScreenString2Jp": "この画面が5秒以上表示される場合は、ページをリロードしてください ",
+                "customLoadScreenString2Jp": "この画面が3秒以上表示される場合は、ページをリロードしてください ",
 
                 "customLoadScreenStringTitlePt": "Mapa Interactivo PSO2NGS",
                 "customLoadScreenString1Pt": "Os mapas não são projetados para dispositivos móveis",
-                "customLoadScreenString2Pt": "Se você vir essa tela mais de 5 segundos - por favor, recarregue uma página"
+                "customLoadScreenString2Pt": "Se você vir essa tela mais de 3 segundos - por favor, recarregue uma página"
             }
             if(localStorage.getItem("nekoapp.locale") && JSON.parse(localStorage.getItem("nekoapp.locale")).language){
                 switch(JSON.parse(localStorage.getItem("nekoapp.locale")).language){
@@ -1903,12 +1912,22 @@ var map_app = new nekoapp({
                     loadingScreenString2 = document.createElement("div")
                         loadingScreenString2.innerHTML = customLoadScreenString2
                         loadingScreenString2.className = "text-light text-center"
+
+                    loadingScreenFrameworkCopyright1 = document.createElement("div")
+                        loadingScreenFrameworkCopyright1.style = "position: absolute; bottom: 5px; left: 50%;"
+
+                        loadingScreenFrameworkCopyright2 = document.createElement("div")
+                            loadingScreenFrameworkCopyright2.innerHTML = "Powered by <a href='' target='_blank' class='text-info'>NekoApp</a> JS framework"
+                            loadingScreenFrameworkCopyright2.className = "text-light"
+                            loadingScreenFrameworkCopyright2.style = "position: relative; left: -50%;"
                 
             loadingScreenElement.appendChild(loadingScreenGifCenter)
                 loadingScreenGifCenter.appendChild(loadingScreenGif)
             loadingScreenElement.appendChild(loadingScreenStringTitle)
             loadingScreenElement.appendChild(loadingScreenString1)
             loadingScreenElement.appendChild(loadingScreenString2)
+            loadingScreenElement.appendChild(loadingScreenFrameworkCopyright1)
+                loadingScreenFrameworkCopyright1.appendChild(loadingScreenFrameworkCopyright2)
 
             return loadingScreenElement
         }
