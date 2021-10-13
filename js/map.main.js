@@ -1708,7 +1708,7 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_landmarksButton_urgent_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapUrgentTitle)
                 this.moduleContents.menu_landmarksButton_ryuker_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRyukerTitle)
                 this.moduleContents.menu_landmarksButton_mag_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapMagTitle)
-                this.moduleContents.menu_landmarksButton_trigger_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapUrgentTitle)
+                this.moduleContents.menu_landmarksButton_trigger_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapTriggerTitle)
                 
                 this.moduleContents.menu_boxesButton_whiteBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapWhiteBoxTitle)
                 this.moduleContents.menu_boxesButton_redBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRedBoxTitle)

@@ -140,8 +140,8 @@
 
 			],
 			"trigger": [
-				{"coordinates":[5069,2507],"id":"trig-purple","tooltip":true},
-				{"coordinates":[3363,221],"id":"trig-orange","tooltip":true}
+				{"coordinates":[5069,2507],"id":"trig-purple","popup":true,"tooltip":true},
+				{"coordinates":[3363,221],"id":"trig-orange","popup":true,"tooltip":true}
 			]
 		},
         "minerals": {
