@@ -210,5 +210,20 @@
 	"mapEnemyThunderBanser": "サンダバンサー",
 	"mapEnemyThunderBanshee": "サンダバンシー",
 	"mapEnemyVaras": "ヴァラス",
-	"mapEnemyWaulon": "ワウロン"
+	"mapEnemyWaulon": "ワウロン",
+
+	
+    "mapTriggerTitle": "mapTriggerTitle",
+	
+	"mapTriggerNamePurple": "mapTriggerNamePurple",
+	"mapTriggerDescPurple": "mapTriggerDescPurple",
+	"mapTriggerMainPurple": "mapTriggerMainPurple",
+	"mapTriggerSidePurple_a": "mapTriggerSidePurple_a",
+	"mapTriggerSidePurple_b": "mapTriggerSidePurple_b",
+
+	"mapTriggerNameOrange": "mapTriggerNameOrange",
+	"mapTriggerDescOrange": "mapTriggerDescOrange",
+	"mapTriggerMainOrange": "mapTriggerMainOrange",
+	"mapTriggerSideOrange_a": "mapTriggerSideOrange_a",
+	"mapTriggerSideOrange_b": "mapTriggerSideOrange_b"
 }

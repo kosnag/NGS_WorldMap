@@ -210,5 +210,20 @@
 	"mapEnemyThunderBanser": "Thunder Banser",
 	"mapEnemyThunderBanshee": "Thunder Banshee",
 	"mapEnemyVaras": "Varas",
-	"mapEnemyWaulon": "Waulon"
+	"mapEnemyWaulon": "Waulon",
+
+	
+    "mapTriggerTitle": "mapTriggerTitle",
+	
+	"mapTriggerNamePurple": "mapTriggerNamePurple",
+	"mapTriggerDescPurple": "mapTriggerDescPurple",
+	"mapTriggerMainPurple": "mapTriggerMainPurple",
+	"mapTriggerSidePurple_a": "mapTriggerSidePurple_a",
+	"mapTriggerSidePurple_b": "mapTriggerSidePurple_b",
+
+	"mapTriggerNameOrange": "mapTriggerNameOrange",
+	"mapTriggerDescOrange": "mapTriggerDescOrange",
+	"mapTriggerMainOrange": "mapTriggerMainOrange",
+	"mapTriggerSideOrange_a": "mapTriggerSideOrange_a",
+	"mapTriggerSideOrange_b": "mapTriggerSideOrange_b"
 }

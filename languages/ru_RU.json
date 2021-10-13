@@ -210,5 +210,20 @@
 	"mapEnemyThunderBanser": "Санд Банса",
 	"mapEnemyThunderBanshee": "Санд Банши",
 	"mapEnemyVaras": "Варас",
-	"mapEnemyWaulon": "Ваурон"
+	"mapEnemyWaulon": "Ваурон",
+
+
+    "mapTriggerTitle": "mapTriggerTitle",
+	
+	"mapTriggerNamePurple": "mapTriggerNamePurple",
+	"mapTriggerDescPurple": "mapTriggerDescPurple",
+	"mapTriggerMainPurple": "mapTriggerMainPurple",
+	"mapTriggerSidePurple_a": "mapTriggerSidePurple_a",
+	"mapTriggerSidePurple_b": "mapTriggerSidePurple_b",
+
+	"mapTriggerNameOrange": "mapTriggerNameOrange",
+	"mapTriggerDescOrange": "mapTriggerDescOrange",
+	"mapTriggerMainOrange": "mapTriggerMainOrange",
+	"mapTriggerSideOrange_a": "mapTriggerSideOrange_a",
+	"mapTriggerSideOrange_b": "mapTriggerSideOrange_b"
 }
