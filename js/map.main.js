@@ -472,12 +472,13 @@ var map_app = new nekoapp({
 							this.children[9].innerHTML = map_app.locale.strings.mapTriggerReqItem + ":";
 							switch(info.popup_data.req_item){
                                 case "purpleTrigger":
-                                    this.children[10].innerHTML = map_app.locale.strings.mapTriggerReqItemPurple;
+                                    var triggerType = map_app.locale.strings.mapTriggerReqItemPurple;
                                     break;
                                 case "yellowTrigger":
-                                    this.children[10].innerHTML = map_app.locale.strings.mapTriggerReqItemYellow;
+                                    var triggerType = map_app.locale.strings.mapTriggerReqItemYellow;
                                     break;
 							}
+                            this.children[10].innerHTML = "5x " + triggerType;
 							nekoapp.system.hiddenStatus.set(this.children[9],false);
 							nekoapp.system.hiddenStatus.set(this.children[10],false);
 						}else {
@@ -555,16 +556,16 @@ var map_app = new nekoapp({
                                     	break;
 
                                     case "itemGoldSword":
-                                        item.innerHTML = map_app.locale.strings.mapItemGoldSword;
+                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldSword;
                                         break;
                                     case "itemSilverSword":
-                                        item.innerHTML = map_app.locale.strings.mapItemSilverSword;
+                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverSword;
                                         break;
                                 	case "itemGoldArmor":
-                                    	item.innerHTML = map_app.locale.strings.mapItemGoldArmor;
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldArmor;
                                     	break;
                                 	case "itemSilverArmor":
-                                    	item.innerHTML = map_app.locale.strings.mapItemSilverArmor;
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverArmor;
                                     	break;
 								}
 								this.children[20].appendChild(item);
