@@ -213,21 +213,21 @@
 	"mapEnemyWaulon": "ワウロン",
 
 
-    "mapTriggerTitle": "mapTriggerTitle",
-	"mapTriggerReqItem": "mapTriggerReqItem",
+    "mapTriggerTitle": "バトルディア",
+	"mapTriggerReqItem": "で起動",
 	
-	"mapTriggerNamePurple": "mapTriggerNamePurple",
-	"mapTriggerReqItemPurple": "mapTriggerNamePurple",
-	"mapTriggerDescPurple": "mapTriggerDescPurple",
-	"mapTriggerMainPurple": "mapTriggerMainPurple",
+	"mapTriggerNamePurple": "エアリオデバステーターズ",
+	"mapTriggerReqItemPurple": "Bトリガー/エアルパープル",
+	"mapTriggerDescPurple": "戦闘技術を駆使して、次々と現れるギガンティクスを撃破せよ。",
+	"mapTriggerMainPurple": "エネミーを倒す",
 
-	"mapTriggerNameYellow": "mapTriggerNameYellow",
-	"mapTriggerReqItemYellow": "mapTriggerNameYellow",
-	"mapTriggerDescYellow": "mapTriggerDescYellow",
-	"mapTriggerMainYellow": "mapTriggerMainYellow",
+	"mapTriggerNameYellow": "エアリオトルーパーズ",
+	"mapTriggerReqItemYellow": "Bトリガー/エアルイエロー",
+	"mapTriggerDescYellow": "戦闘技術を駆使して、全てのエネミーを撃破せよ。",
+	"mapTriggerMainYellow": "エネミーを倒す",
 
-	"mapItemGoldSword": "mapItemGoldSword",
-	"mapItemSilverSword": "mapItemSilverSword",
-	"mapItemGoldArmor": "mapItemGoldArmor",
-	"mapItemSilverArmor": "mapItemSilverArmor"
+	"mapItemGoldSword": "ゴルドプリムソード",
+	"mapItemSilverSword": "シルヴァプリムソード",
+	"mapItemGoldArmor": "ゴルドプリムアーマ",
+	"mapItemSilverArmor": "シルヴァプリムアーマ"
 }
