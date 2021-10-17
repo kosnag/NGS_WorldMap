@@ -212,18 +212,22 @@
 	"mapEnemyVaras": "ヴァラス",
 	"mapEnemyWaulon": "ワウロン",
 
-	
+
     "mapTriggerTitle": "mapTriggerTitle",
+	"mapTriggerReqItem": "mapTriggerReqItem",
 	
 	"mapTriggerNamePurple": "mapTriggerNamePurple",
+	"mapTriggerReqItemPurple": "mapTriggerNamePurple",
 	"mapTriggerDescPurple": "mapTriggerDescPurple",
 	"mapTriggerMainPurple": "mapTriggerMainPurple",
-	"mapTriggerSidePurple_a": "mapTriggerSidePurple_a",
-	"mapTriggerSidePurple_b": "mapTriggerSidePurple_b",
 
-	"mapTriggerNameOrange": "mapTriggerNameOrange",
-	"mapTriggerDescOrange": "mapTriggerDescOrange",
-	"mapTriggerMainOrange": "mapTriggerMainOrange",
-	"mapTriggerSideOrange_a": "mapTriggerSideOrange_a",
-	"mapTriggerSideOrange_b": "mapTriggerSideOrange_b"
+	"mapTriggerNameYellow": "mapTriggerNameYellow",
+	"mapTriggerReqItemYellow": "mapTriggerNameYellow",
+	"mapTriggerDescYellow": "mapTriggerDescYellow",
+	"mapTriggerMainYellow": "mapTriggerMainYellow",
+
+	"mapItemGoldSword": "mapItemGoldSword",
+	"mapItemSilverSword": "mapItemSilverSword",
+	"mapItemGoldArmor": "mapItemGoldArmor",
+	"mapItemSilverArmor": "mapItemSilverArmor"
 }
