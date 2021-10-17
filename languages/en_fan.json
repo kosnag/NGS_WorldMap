@@ -212,18 +212,24 @@
 	"mapEnemyVaras": "Vallas",
 	"mapEnemyWaulon": "Wauron",
 
-	
-    "mapTriggerTitle": "mapTriggerTitle",
-	
-	"mapTriggerNamePurple": "mapTriggerNamePurple",
-	"mapTriggerDescPurple": "mapTriggerDescPurple",
-	"mapTriggerMainPurple": "mapTriggerMainPurple",
-	"mapTriggerSidePurple_a": "mapTriggerSidePurple_a",
-	"mapTriggerSidePurple_b": "mapTriggerSidePurple_b",
 
-	"mapTriggerNameOrange": "mapTriggerNameOrange",
-	"mapTriggerDescOrange": "mapTriggerDescOrange",
-	"mapTriggerMainOrange": "mapTriggerMainOrange",
-	"mapTriggerSideOrange_a": "mapTriggerSideOrange_a",
-	"mapTriggerSideOrange_b": "mapTriggerSideOrange_b"
+    "mapTriggerTitle": "Battledia",
+	"mapTriggerReqItem": "Required item for launch",
+	"mapTriggerEvemyLevel": "Ememy level",
+	
+	"mapTriggerNamePurple": "Aerio Devastators",
+	"mapTriggerReqItemPurple": "B. Trigger/Aerio Purple",
+	"mapTriggerDescPurple": "Show off your skills and defeat the Gigantix that appear before you one by one.",
+	"mapTriggerMainPurple": "Subdue Target Enemy",
+
+	"mapTriggerNameYellow": "Aario Troopers",
+	"mapTriggerReqItemYellow": "B. Trigger/Aerio Yellow",
+	"mapTriggerDescYellow": "Show off your skills and defeat all of the enemies.",
+	"mapTriggerMainYellow": "Defeat the target enemy",
+
+	"mapItemGoldSword": "Gold Prim Sword",
+	"mapItemSilverSword": "Silver Prim Sword",
+	"mapItemGoldArmor": "Gold Prim Armor",
+	"mapItemSilverArmor": "Silver Prim Armor"
+
 }
