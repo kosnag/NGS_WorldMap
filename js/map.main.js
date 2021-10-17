@@ -258,112 +258,161 @@ var map_app = new nekoapp({
 			prototype: {
 				template: nekoapp.create.template(function(){
 					var popup_image = document.createElement("img"), // this.children[0]
+
 						popup_category = document.createElement("h4"), // this.children[1]
+
 						popup_name = document.createElement("h5"), // this.children[2]
+
 						popup_type = document.createElement("p"), // this.children[3]
-						popup_tiers = document.createElement("p"), // this.children[4]
-						popup_req1 = document.createElement("div"), // this.children[5]
-						popup_req2 = document.createElement("div"), // this.children[6]
-						popup_req3 = document.createElement("div"), // this.children[7]
 						popup_type_label = document.createElement("span"), // this.children[3].children[0]
 						popup_type_space = document.createElement("span"),
 						popup_type_value = document.createElement("span"), // this.children[3].children[2]
+
+						popup_tiers = document.createElement("p"), // this.children[4]
 						popup_tiers_left = document.createElement("span"), // this.children[4].children[0]
 						popup_tiers_label = document.createElement("span"), // this.children[4].children[1]
 						popup_tiers_right = document.createElement("span"), // this.children[4].children[2]
+
+						popup_req1 = document.createElement("div"), // this.children[5]
 						popup_req1_label = document.createElement("span"), // this.children[5].children[0]
 						popup_req1_space = document.createElement("span"),
 						popup_req1_value = document.createElement("span"), // this.children[5].children[2]
+
+						popup_req2 = document.createElement("div"), // this.children[6]
 						popup_req2_label = document.createElement("span"), // this.children[6].children[0]
 						popup_req2_space = document.createElement("span"),
 						popup_req2_value = document.createElement("span"), // this.children[6].children[2]
+
+						popup_req3 = document.createElement("div"), // this.children[7]
 						popup_req3_label = document.createElement("span"), // this.children[7].children[0]
 						popup_req3_space = document.createElement("span"),
 						popup_req3_value = document.createElement("span"), // this.children[7].children[2]
-						popup_desc_label = document.createElement("p"), // this.children[8]
-						popup_desc_value = document.createElement("div"), // this.children[9]
-						popup_main_label = document.createElement("p"), // this.children[10]
-						popup_main_value = document.createElement("div"), // this.children[11]
-						popup_side_label = document.createElement("p"), // this.children[12]
-						popup_side_value = document.createElement("ul"), // this.children[13]
-						popup_clear_reward_label = document.createElement("p"), // this.children[14]
-						popup_clear_reward_value = document.createElement("ul"), // this.children[15]
-						popup_rewards_label = document.createElement("p"), // this.children[16]
-						popup_rewards_value = document.createElement("ul"), // this.children[17]
-						popup_gigantix = document.createElement("div"), // this.children[18]
-						popup_gigantix_label = document.createElement("span"), // this.children[18].children[0]
+
+						popup_enemylv = document.createElement("div"), // this.children[8]
+						popup_enemylv_label = document.createElement("span"), // this.children[8].children[0]
+						popup_enemylv_space = document.createElement("span"),
+						popup_enemylv_value = document.createElement("span"); // this.children[8].children[2]
+
+						popup_reqitem_label = document.createElement("p"), // this.children[9]
+						popup_reqitem_value = document.createElement("div"), // this.children[10]
+
+						popup_desc_label = document.createElement("p"), // this.children[11]
+						popup_desc_value = document.createElement("div"), // this.children[12]
+
+						popup_main_label = document.createElement("p"), // this.children[13]
+						popup_main_value = document.createElement("div"), // this.children[14]
+
+						popup_side_label = document.createElement("p"), // this.children[15]
+						popup_side_value = document.createElement("ul"), // this.children[16]
+
+						popup_clear_reward_label = document.createElement("p"), // this.children[17]
+						popup_clear_reward_value = document.createElement("ul"), // this.children[18]
+
+						popup_rewards_label = document.createElement("p"), // this.children[19]
+						popup_rewards_value = document.createElement("ul"), // this.children[20]
+
+						popup_gigantix = document.createElement("div"), // this.children[21]
+						popup_gigantix_label = document.createElement("span"), // this.children[21].children[0]
 						popup_gigantix_space = document.createElement("span"),
-						popup_gigantix_value = document.createElement("span"); // this.children[18].children[2]
+						popup_gigantix_value = document.createElement("span"); // this.children[21].children[2]
+
+
 					popup_image.className = "text-center mb-1";
-                    popup_image.style = "min-width:300px";
+                        popup_image.style = "min-width:300px";
+
 					popup_category.className = "text-center mb-1";
-					popup_category.style = "font-weight:bold";
+					    popup_category.style = "font-weight:bold";
+
 					popup_name.className = "text-center";
-					popup_name.style = "font-weight:bold";
+					    popup_name.style = "font-weight:bold";
+
 					popup_type.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_type_space.style = "flex:1";
+                        popup_type.appendChild(popup_type_label);
+                        popup_type.appendChild(popup_type_space);
+                        popup_type.appendChild(popup_type_value);
+
 					popup_tiers.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_tiers_left.className = "carousel-control-prev-icon";
+                        popup_tiers_left.style = "width:20px;height:20px;cursor:pointer;";
+                        popup_tiers_label.className = "text-center";
+                        popup_tiers_label.style = "flex:1";
+                        popup_tiers_right.className = "carousel-control-next-icon";
+                        popup_tiers_right.style = "width:20px;height:20px;cursor:pointer;";
+                        popup_tiers.appendChild(popup_tiers_left);
+                        popup_tiers.appendChild(popup_tiers_label);
+                        popup_tiers.appendChild(popup_tiers_right);
+
 					popup_req1.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_req1_space.style = "flex:1";
+                        popup_req1.appendChild(popup_req1_label);
+                        popup_req1.appendChild(popup_req1_space);
+                        popup_req1.appendChild(popup_req1_value);
+
 					popup_req2.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_req2.appendChild(popup_req2_label);
+                        popup_req2.appendChild(popup_req2_space);
+                        popup_req2.appendChild(popup_req2_value);
+                        popup_req2_space.style = "flex:1";
+
 					popup_req3.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
-					popup_type_space.style = "flex:1";
-					popup_tiers_label.className = "text-center";
-					popup_tiers_label.style = "flex:1";
-					popup_req1_space.style = "flex:1";
-					popup_req2_space.style = "flex:1";
-					popup_req3_space.style = "flex:1";
-					popup_tiers_left.className = "carousel-control-prev-icon";
-					popup_tiers_right.className = "carousel-control-next-icon";
-					popup_tiers_left.style = "width:20px;height:20px;cursor:pointer;";
-					popup_tiers_right.style = "width:20px;height:20px;cursor:pointer;";
-					popup_type.appendChild(popup_type_label);
-					popup_type.appendChild(popup_type_space);
-					popup_type.appendChild(popup_type_value);
-					popup_tiers.appendChild(popup_tiers_left);
-					popup_tiers.appendChild(popup_tiers_label);
-					popup_tiers.appendChild(popup_tiers_right);
-					popup_req1.appendChild(popup_req1_label);
-					popup_req1.appendChild(popup_req1_space);
-					popup_req1.appendChild(popup_req1_value);
-					popup_req2.appendChild(popup_req2_label);
-					popup_req2.appendChild(popup_req2_space);
-					popup_req2.appendChild(popup_req2_value);
-					popup_req3.appendChild(popup_req3_label);
-					popup_req3.appendChild(popup_req3_space);
-					popup_req3.appendChild(popup_req3_value);
+                        popup_req3_space.style = "flex:1";
+                        popup_req3.appendChild(popup_req3_label);
+                        popup_req3.appendChild(popup_req3_space);
+                        popup_req3.appendChild(popup_req3_value);
+
+                    popup_enemylv.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_enemylv_space.style = "flex:1";
+                        popup_enemylv.appendChild(popup_enemylv_label);
+                        popup_enemylv.appendChild(popup_enemylv_space);
+                        popup_enemylv.appendChild(popup_enemylv_value);
+
+                    popup_reqitem_label.className = "mb-0";
+                        popup_reqitem_label.style = "font-weight:bold";
+
 					popup_desc_label.className = "mb-0";
-					popup_desc_label.style = "font-weight:bold";
+					    popup_desc_label.style = "font-weight:bold";
+
 					popup_main_label.className = "mb-0";
-					popup_main_label.style = "font-weight:bold";
+					    popup_main_label.style = "font-weight:bold";
+
 					popup_side_label.className = "mb-0";
-					popup_side_label.style = "font-weight:bold";
-					popup_side_value.style = "padding:0";
+                        popup_side_label.style = "font-weight:bold";
+                        popup_side_value.style = "padding:0";
+
 					popup_clear_reward_label.className = "mb-0";
-					popup_clear_reward_label.style = "font-weight:bold";
-					popup_clear_reward_value.style = "padding:0";
+                        popup_clear_reward_label.style = "font-weight:bold";
+                        popup_clear_reward_value.style = "padding:0";
+
 					popup_rewards_label.className = "mb-0";
-					popup_rewards_label.style = "font-weight:bold";
-					popup_rewards_value.style = "padding:0";
+                        popup_rewards_label.style = "font-weight:bold";
+                        popup_rewards_value.style = "padding:0";
+
 					popup_gigantix.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
-					popup_gigantix_space.style = "flex:1";
-					popup_gigantix.appendChild(popup_gigantix_label);
-					popup_gigantix.appendChild(popup_gigantix_space);
-					popup_gigantix.appendChild(popup_gigantix_value);
-					return[popup_image,popup_category,popup_name,popup_type,popup_tiers,popup_req1,popup_req2,popup_req3,popup_desc_label,popup_desc_value,popup_main_label,popup_main_value,popup_side_label,popup_side_value,popup_clear_reward_label,popup_clear_reward_value,popup_rewards_label,popup_rewards_value,popup_gigantix];
+                        popup_gigantix_space.style = "flex:1";
+                        popup_gigantix.appendChild(popup_gigantix_label);
+                        popup_gigantix.appendChild(popup_gigantix_space);
+                        popup_gigantix.appendChild(popup_gigantix_value);
+                    
+					return[popup_image,popup_category,popup_name,popup_type,popup_tiers,popup_req1,popup_req2,popup_req3,popup_enemylv,popup_reqitem_label,popup_reqitem_value,popup_desc_label,popup_desc_value,popup_main_label,popup_main_value,popup_side_label,popup_side_value,popup_clear_reward_label,popup_clear_reward_value,popup_rewards_label,popup_rewards_value,popup_gigantix];
 				}),
 				setInfo: function(info){
 					if(typeof info.category === "string"){
 						this.children[1].innerHTML = map_app.locale.strings[info.category];
 						nekoapp.system.hiddenStatus.set(this.children[1],false);
 					}else nekoapp.system.hiddenStatus.set(this.children[1],true);
+
 					if(typeof info.name === "string"){
 						this.children[2].innerHTML = map_app.locale.strings[info.name];
 						nekoapp.system.hiddenStatus.set(this.children[2],false);
 					}else nekoapp.system.hiddenStatus.set(this.children[2],true);
+
 					if(typeof info.popup_data === "object"){
 						if(typeof info.popup_data.image === "string"){
 							this.children[0].src = info.popup_data.image;
 							nekoapp.system.hiddenStatus.set(this.children[0],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[0],true);
+
 						if(typeof info.popup_data.type === "string"){
 							this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupSectionTypes + ":";
 							switch(info.popup_data.type){
@@ -379,10 +428,12 @@ var map_app = new nekoapp({
 							}
 							nekoapp.system.hiddenStatus.set(this.children[3],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[3],true);
+
 						if(info.popup_data.tiers instanceof Array && info.popup_data.tiers.length > 1 && typeof this.popup_tier === "number"){
 							this.children[4].children[1].innerHTML = map_app.locale.strings.mapPopupSectionTier + " " + (this.popup_tier + 1);
 							nekoapp.system.hiddenStatus.set(this.children[4],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[4],true);
+
 						if(typeof info.popup_data.type === "string" || typeof info.popup_data.max_players === "number"){
 							this.children[5].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
 							if(typeof info.popup_data.type === "string")switch(info.popup_data.type){
@@ -398,50 +449,79 @@ var map_app = new nekoapp({
 							}else this.children[5].children[2].innerHTML = info.popup_data.max_players;
 							nekoapp.system.hiddenStatus.set(this.children[5],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[5],true);
+
 						if(typeof info.popup_data.required_bp === "number" || typeof info.popup_data.recomended_bp === "number" || (info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && (typeof info.popup_data.tiers[this.popup_tier].recomended_bp === "number" || typeof info.popup_data.tiers[this.popup_tier].required_bp === "number")) || (info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_bp === "number")){
 							this.children[6].children[0].innerHTML = info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].required_bp === "number"?map_app.locale.strings.mapPopupRequiredBP:info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].recomended_bp === "number"?map_app.locale.strings.mapPopupRecomendedBP:info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_bp === "number"?map_app.locale.strings.mapPopupRecomendedBP:typeof info.popup_data.required_bp === "number"?map_app.locale.strings.mapPopupRequiredBP + ":":map_app.locale.strings.mapPopupRecomendedBP + ":";
 							this.children[6].children[2].innerHTML = info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].required_bp === "number"?info.popup_data.tiers[this.popup_tier].required_bp:info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].recomended_bp === "number"?info.popup_data.tiers[this.popup_tier].recomended_bp:info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_bp === "number"?info.popup_data.tiers[0].recomended_bp:typeof info.popup_data.required_bp === "number"?info.popup_data.required_bp:info.popup_data.recomended_bp;
 							nekoapp.system.hiddenStatus.set(this.children[6],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[6],true);
+
 						if(typeof info.popup_data.recomended_lv === "number" || (info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].recomended_lv === "number") || (info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_lv === "number")){
 							this.children[7].children[0].innerHTML = map_app.locale.strings.mapPopupSectionAvgEnemyLvl + ":";
 							this.children[7].children[2].innerHTML = info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].recomended_lv === "number"?info.popup_data.tiers[this.popup_tier].recomended_lv:info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_lv === "number"?info.popup_data.tiers[0].recomended_lv:info.popup_data.recomended_lv;
 							nekoapp.system.hiddenStatus.set(this.children[7],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[7],true);
-						if(typeof info.popup_data.description === "string"){
-							this.children[8].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
-						    this.children[9].innerHTML = map_app.locale.strings[info.popup_data.description];
+
+						if(typeof info.popup_data.enemy_lv === "number"){
+							this.children[8].children[0].innerHTML = map_app.locale.strings.mapTriggerEvemyLevel + ":";
+							this.children[8].children[2].innerHTML = info.popup_data.enemy_lv
 							nekoapp.system.hiddenStatus.set(this.children[8],false);
+						}else nekoapp.system.hiddenStatus.set(this.children[8],true);
+
+						if(typeof info.popup_data.req_item === "string"){
+							this.children[9].innerHTML = map_app.locale.strings.mapTriggerReqItem + ":";
+							switch(info.popup_data.req_item){
+                                case "purpleTrigger":
+                                    this.children[10].innerHTML = map_app.locale.strings.mapTriggerReqItemPurple;
+                                    break;
+                                case "yellowTrigger":
+                                    this.children[10].innerHTML = map_app.locale.strings.mapTriggerReqItemYellow;
+                                    break;
+							}
 							nekoapp.system.hiddenStatus.set(this.children[9],false);
-						}else{
-							nekoapp.system.hiddenStatus.set(this.children[8],true);
-							nekoapp.system.hiddenStatus.set(this.children[9],true);
-						}
-                        if(typeof info.popup_data.main_mission === "string"){
-							this.children[10].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
-						    this.children[11].innerHTML = map_app.locale.strings[info.popup_data.main_mission];
 							nekoapp.system.hiddenStatus.set(this.children[10],false);
-							nekoapp.system.hiddenStatus.set(this.children[11],false);
-						}else{
-							nekoapp.system.hiddenStatus.set(this.children[10],true);
-							nekoapp.system.hiddenStatus.set(this.children[11],true);
+						}else {
+                            nekoapp.system.hiddenStatus.set(this.children[9],true);
+                            nekoapp.system.hiddenStatus.set(this.children[10],true);
 						}
+
+						if(typeof info.popup_data.description === "string"){
+							this.children[11].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
+						    this.children[12].innerHTML = map_app.locale.strings[info.popup_data.description];
+							nekoapp.system.hiddenStatus.set(this.children[11],false);
+							nekoapp.system.hiddenStatus.set(this.children[12],false);
+						}else{
+							nekoapp.system.hiddenStatus.set(this.children[11],true);
+							nekoapp.system.hiddenStatus.set(this.children[12],true);
+						}
+
+                        if(typeof info.popup_data.main_mission === "string"){
+							this.children[13].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
+						    this.children[14].innerHTML = map_app.locale.strings[info.popup_data.main_mission];
+							nekoapp.system.hiddenStatus.set(this.children[13],false);
+							nekoapp.system.hiddenStatus.set(this.children[14],false);
+						}else{
+							nekoapp.system.hiddenStatus.set(this.children[13],true);
+							nekoapp.system.hiddenStatus.set(this.children[14],true);
+						}
+
 						if(info.popup_data.side_missions instanceof Array){
-							this.children[12].innerHTML = map_app.locale.strings.mapPopupSideMissions + ":";
-							nekoapp.system.clear(this.children[13]);
+							this.children[15].innerHTML = map_app.locale.strings.mapPopupSideMissions + ":";
+							nekoapp.system.clear(this.children[16]);
 							for(var i in info.popup_data.side_missions){
 								var item = document.createElement("li");
-								this.children[13].appendChild(item).innerHTML = map_app.locale.strings[info.popup_data.side_missions[i]];
+								this.children[16].appendChild(item).innerHTML = map_app.locale.strings[info.popup_data.side_missions[i]];
 							}
-							nekoapp.system.hiddenStatus.set(this.children[12],false);
-							nekoapp.system.hiddenStatus.set(this.children[13],false);
+							nekoapp.system.hiddenStatus.set(this.children[15],false);
+							nekoapp.system.hiddenStatus.set(this.children[16],false);
 						}else{
-							nekoapp.system.hiddenStatus.set(this.children[12],true);
-							nekoapp.system.hiddenStatus.set(this.children[13],true);
+							nekoapp.system.hiddenStatus.set(this.children[15],true);
+							nekoapp.system.hiddenStatus.set(this.children[16],true);
 						}
+
 						if(info.popup_data.clear_reward instanceof Array){
-							this.children[14].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
-							nekoapp.system.clear(this.children[15]);
+							this.children[17].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
+							nekoapp.system.clear(this.children[18]);
 							for(var i in info.popup_data.clear_reward){
 								var item = document.createElement("li");
 								switch(info.popup_data.clear_reward[i].reward_type){
@@ -452,17 +532,18 @@ var map_app = new nekoapp({
 										item.innerHTML = info.popup_data.clear_reward[i].reward_count + " " + map_app.locale.strings.mapPopupRewardMeseta;
                                     	break;
 								}
-								this.children[15].appendChild(item);
+								this.children[18].appendChild(item);
 							}
-							nekoapp.system.hiddenStatus.set(this.children[14],false);
-							nekoapp.system.hiddenStatus.set(this.children[15],false);
+							nekoapp.system.hiddenStatus.set(this.children[17],false);
+							nekoapp.system.hiddenStatus.set(this.children[18],false);
 						}else{
-							nekoapp.system.hiddenStatus.set(this.children[14],true);
-							nekoapp.system.hiddenStatus.set(this.children[15],true);
+							nekoapp.system.hiddenStatus.set(this.children[17],true);
+							nekoapp.system.hiddenStatus.set(this.children[18],true);
 						}
+
                         if(info.popup_data.rewards instanceof Array){
-							this.children[16].innerHTML = map_app.locale.strings.mapPopupRewards + ":";
-							nekoapp.system.clear(this.children[17]);
+							this.children[19].innerHTML = map_app.locale.strings.mapPopupRewards + ":";
+							nekoapp.system.clear(this.children[20]);
 							for(var i in info.popup_data.rewards){
 								var item = document.createElement("li");
 								switch(info.popup_data.rewards[i].reward_type){
@@ -472,69 +553,83 @@ var map_app = new nekoapp({
                                 	case "seasonPoints":
                                     	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapPopupRewardSeasonPoints;
                                     	break;
+
+                                    case "itemGoldSword":
+                                        item.innerHTML = map_app.locale.strings.mapItemGoldSword;
+                                        break;
+                                    case "itemSilverSword":
+                                        item.innerHTML = map_app.locale.strings.mapItemSilverSword;
+                                        break;
+                                	case "itemGoldArmor":
+                                    	item.innerHTML = map_app.locale.strings.mapItemGoldArmor;
+                                    	break;
+                                	case "itemSilverArmor":
+                                    	item.innerHTML = map_app.locale.strings.mapItemSilverArmor;
+                                    	break;
 								}
-								this.children[17].appendChild(item);
+								this.children[20].appendChild(item);
 							}
-							nekoapp.system.hiddenStatus.set(this.children[16],false);
-							nekoapp.system.hiddenStatus.set(this.children[17],false);
+							nekoapp.system.hiddenStatus.set(this.children[19],false);
+							nekoapp.system.hiddenStatus.set(this.children[20],false);
 						}else{
-							nekoapp.system.hiddenStatus.set(this.children[16],true);
-							nekoapp.system.hiddenStatus.set(this.children[17],true);
+							nekoapp.system.hiddenStatus.set(this.children[19],true);
+							nekoapp.system.hiddenStatus.set(this.children[20],true);
 						}
+
 						if(typeof info.popup_data.gigantix === "string"){
-							this.children[18].children[0].innerHTML = map_app.locale.strings.mapEnemyTypeGig + ":";
+							this.children[21].children[0].innerHTML = map_app.locale.strings.mapEnemyTypeGig + ":";
 							switch(info.popup_data.gigantix){
                                     case "ardBanser":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyArdBanser;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyArdBanser;
                                         break;
                                     case "ardBanshee":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyArdBanshee;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyArdBanshee;
                                         break;
                                     case "biggFrogga":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyBiggFrogga;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyBiggFrogga;
                                         break;
                                     case "bujin":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyBujin;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyBujin;
                                         break;
                                     case "chiacurio":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyChiacurio;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyChiacurio;
                                         break;
                                     case "cragBear":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyCragBear;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyCragBear;
                                         break;
                                     case "daitylAxe":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyDaitylAxe;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyDaitylAxe;
                                         break;
                                     case "daitylSword":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyDaitylSword;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyDaitylSword;
                                         break;
                                     case "eldiSkythe":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyEldiSkythe;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyEldiSkythe;
                                         break;
                                     case "nexAelio": 
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyNexAelio;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyNexAelio;
                                         break;
                                     case "nogleth":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyNogleth;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyNogleth;
                                         break;
                                     case "oruq":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyOruq;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyOruq;
                                         break;
                                     case "thunderBanser":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyThunderBanser;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyThunderBanser;
                                         break;
                                     case "thunderBanshee":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyThunderBanshee;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyThunderBanshee;
                                         break;
                                     case "varas":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyVaras;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyVaras;
                                         break;
                                     case "waulon":
-                                        this.children[18].children[2].innerHTML = map_app.locale.strings.mapEnemyWaulon;
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyWaulon;
                                         break;
 							}
-							nekoapp.system.hiddenStatus.set(this.children[18],false);
-						}else nekoapp.system.hiddenStatus.set(this.children[18],true);
+							nekoapp.system.hiddenStatus.set(this.children[21],false);
+						}else nekoapp.system.hiddenStatus.set(this.children[21],true);
 					}
 				},
 				initTiers: function(info){
@@ -1913,21 +2008,31 @@ var map_app = new nekoapp({
                         loadingScreenString2.innerHTML = customLoadScreenString2
                         loadingScreenString2.className = "text-light text-center"
 
-                    loadingScreenFrameworkCopyright1 = document.createElement("div")
-                        loadingScreenFrameworkCopyright1.style = "position: absolute; bottom: 5px; left: 50%;"
+                    loadingScreenCopyright11 = document.createElement("div")
+                        loadingScreenCopyright11.style = "position: absolute; bottom: 25px; left: 50%;"
 
-                        loadingScreenFrameworkCopyright2 = document.createElement("div")
-                            loadingScreenFrameworkCopyright2.innerHTML = "Powered by <a href='' target='_blank' class='text-info'>NekoApp</a> JS framework"
-                            loadingScreenFrameworkCopyright2.className = "text-light"
-                            loadingScreenFrameworkCopyright2.style = "position: relative; left: -50%;"
+                        loadingScreenCopyright12 = document.createElement("div")
+                            loadingScreenCopyright12.innerHTML = "Powered by <a href='https://github.com/nekowebsoftware/nekoapp' target='_blank' class='text-info'>NekoApp</a> JS framework"
+                            loadingScreenCopyright12.className = "text-light"
+                            loadingScreenCopyright12.style = "position: relative; left: -50%;"
+
+                    loadingScreenCopyright21 = document.createElement("div")
+                        loadingScreenCopyright21.style = "position: absolute; bottom: 5px; left: 50%;"
+
+                        loadingScreenCopyright22 = document.createElement("div")
+                            loadingScreenCopyright22.innerHTML = "Developed by <a href='https://github.com/kosnag' target='_blank' class='text-info'>kosnag</a>"
+                            loadingScreenCopyright22.className = "text-light"
+                            loadingScreenCopyright22.style = "position: relative; left: -50%;"
                 
             loadingScreenElement.appendChild(loadingScreenGifCenter)
                 loadingScreenGifCenter.appendChild(loadingScreenGif)
             loadingScreenElement.appendChild(loadingScreenStringTitle)
             loadingScreenElement.appendChild(loadingScreenString1)
             loadingScreenElement.appendChild(loadingScreenString2)
-            loadingScreenElement.appendChild(loadingScreenFrameworkCopyright1)
-                loadingScreenFrameworkCopyright1.appendChild(loadingScreenFrameworkCopyright2)
+            loadingScreenElement.appendChild(loadingScreenCopyright11)
+                loadingScreenCopyright11.appendChild(loadingScreenCopyright12)
+            loadingScreenElement.appendChild(loadingScreenCopyright21)
+                loadingScreenCopyright21.appendChild(loadingScreenCopyright22)
 
             return loadingScreenElement
         }
