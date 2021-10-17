@@ -556,16 +556,16 @@ var map_app = new nekoapp({
                                     	break;
 
                                     case "itemGoldSword":
-                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldSword;
+                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldSword + " +20";
                                         break;
                                     case "itemSilverSword":
-                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverSword;
+                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverSword + " +20";
                                         break;
                                 	case "itemGoldArmor":
-                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldArmor;
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldArmor + " +20";
                                     	break;
                                 	case "itemSilverArmor":
-                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverArmor;
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverArmor + " +20";
                                     	break;
 								}
 								this.children[20].appendChild(item);
