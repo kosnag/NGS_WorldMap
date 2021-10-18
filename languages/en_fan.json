@@ -171,6 +171,7 @@
 	"mapOtherTitle": "Other",
 	"mapOtherDatapods": "Message Pack",
 	"mapOtherAlphaReactors": "Alpha Reactor",
+	"mapOtherVeteran": "Battle-Hardened",
 	
 
 	"mapSectionCentralAelio": "Central Aerio",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "Enemies",
-	"mapEmenyTypeVet": "Battle-Hardened",
 	"mapEnemyTypeGig": "Despaired",
 	
 	"mapEnemyArdBanser": "Ard Banther",
@@ -210,5 +210,26 @@
 	"mapEnemyThunderBanser": "Thunder Banther",
 	"mapEnemyThunderBanshee": "Thunder Banshee",
 	"mapEnemyVaras": "Vallas",
-	"mapEnemyWaulon": "Wauron"
+	"mapEnemyWaulon": "Wauron",
+
+
+    "mapTriggerTitle": "Battledia",
+	"mapTriggerReqItem": "Required item for launch",
+	"mapTriggerEvemyLevel": "Level of enemies",
+	
+	"mapTriggerNamePurple": "Aerio Devastators",
+	"mapTriggerReqItemPurple": "B. Trigger/Aerio Purple",
+	"mapTriggerDescPurple": "Show off your skills and defeat the Gigantix that appear before you one by one.",
+	"mapTriggerMainPurple": "Subdue Target Enemy",
+
+	"mapTriggerNameYellow": "Aario Troopers",
+	"mapTriggerReqItemYellow": "B. Trigger/Aerio Yellow",
+	"mapTriggerDescYellow": "Show off your skills and defeat all of the enemies.",
+	"mapTriggerMainYellow": "Defeat the target enemy",
+
+	"mapItemGoldSword": "Gold Prim Sword",
+	"mapItemSilverSword": "Silver Prim Sword",
+	"mapItemGoldArmor": "Gold Prim Armor",
+	"mapItemSilverArmor": "Silver Prim Armor"
+
 }

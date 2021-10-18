@@ -171,6 +171,7 @@
 	"mapOtherTitle": "기타",
 	"mapOtherDatapods": "메시지 팩",
 	"mapOtherAlphaReactors": "알파 리액터",
+	"mapOtherVeteran": "노련의",
 	
 
 	"mapSectionCentralAelio": "중앙 에아리오",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "에너미",
-	"mapEmenyTypeVet": "노련의",
 	"mapEnemyTypeGig": "기간틱스",
 	
 	"mapEnemyArdBanser": "어드 밴서",
@@ -210,5 +210,25 @@
 	"mapEnemyThunderBanser": "썬더 밴서",
 	"mapEnemyThunderBanshee": "썬더 밴시",
 	"mapEnemyVaras": "바라스",
-	"mapEnemyWaulon": "와우론"
+	"mapEnemyWaulon": "와우론",
+
+
+    "mapTriggerTitle": "mapTriggerTitle",
+	"mapTriggerReqItem": "mapTriggerReqItem",
+	"mapTriggerEvemyLevel": "mapTriggerEvemyLevel",
+	
+	"mapTriggerNamePurple": "mapTriggerNamePurple",
+	"mapTriggerReqItemPurple": "mapTriggerNamePurple",
+	"mapTriggerDescPurple": "mapTriggerDescPurple",
+	"mapTriggerMainPurple": "mapTriggerMainPurple",
+
+	"mapTriggerNameYellow": "mapTriggerNameYellow",
+	"mapTriggerReqItemYellow": "mapTriggerNameYellow",
+	"mapTriggerDescYellow": "mapTriggerDescYellow",
+	"mapTriggerMainYellow": "mapTriggerMainYellow",
+
+	"mapItemGoldSword": "mapItemGoldSword",
+	"mapItemSilverSword": "mapItemSilverSword",
+	"mapItemGoldArmor": "mapItemGoldArmor",
+	"mapItemSilverArmor": "mapItemSilverArmor"
 }

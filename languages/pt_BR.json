@@ -171,6 +171,7 @@
 	"mapOtherTitle": "Título",
 	"mapOtherDatapods": "Datapod",
 	"mapOtherAlphaReactors": "Reatores Alpha",
+	"mapOtherVeteran": "Veterano",
 	
 
 	"mapSectionCentralAelio": "Aelio Central",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "Inimigos",
-	"mapEmenyTypeVet": "Veterano",
 	"mapEnemyTypeGig": "Malevolent",
 	
 	"mapEnemyArdBanser": "Ard Banser",
@@ -210,5 +210,25 @@
 	"mapEnemyThunderBanser": "Thunder Banser",
 	"mapEnemyThunderBanshee": "Thunder Banshee",
 	"mapEnemyVaras": "Varas",
-	"mapEnemyWaulon": "Waulon"
+	"mapEnemyWaulon": "Waulon",
+
+
+    "mapTriggerTitle": "mapTriggerTitle",
+	"mapTriggerReqItem": "mapTriggerReqItem",
+	"mapTriggerEvemyLevel": "mapTriggerEvemyLevel",
+	
+	"mapTriggerNamePurple": "mapTriggerNamePurple",
+	"mapTriggerReqItemPurple": "mapTriggerNamePurple",
+	"mapTriggerDescPurple": "mapTriggerDescPurple",
+	"mapTriggerMainPurple": "mapTriggerMainPurple",
+
+	"mapTriggerNameYellow": "mapTriggerNameYellow",
+	"mapTriggerReqItemYellow": "mapTriggerNameYellow",
+	"mapTriggerDescYellow": "mapTriggerDescYellow",
+	"mapTriggerMainYellow": "mapTriggerMainYellow",
+
+	"mapItemGoldSword": "mapItemGoldSword",
+	"mapItemSilverSword": "mapItemSilverSword",
+	"mapItemGoldArmor": "mapItemGoldArmor",
+	"mapItemSilverArmor": "mapItemSilverArmor"
 }

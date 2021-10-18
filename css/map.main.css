@@ -653,12 +653,14 @@ map-app map-localebox .map_localebox_text {
     background-color:rgba(31,57,90,1.00);
     border-right: 1px solid var(--bs-light);
     height: calc(100vh - 60px);
+    width: 75%;
 }
 
 #side_map_menu {
 	overflow-y: scroll;
     height: calc(100vh - 60px);
     position: relative;
+    width: 25%;
 }
 #side_map_menu::-webkit-scrollbar {
 	width: .4em;
@@ -669,33 +671,25 @@ map-app map-localebox .map_localebox_text {
 }
 
 @media (min-width:1px) {
-    #leaflet-map {
-        width: 70%;
+    span.adaptive-size-img-ar {
+        display: none;
     }
-    #side_map_menu {
-        width: 30%;
-    }
-
     button.adaptive-size-img-ar {
         width: auto;
         height: 64px;
     }
 	img.adaptive-size-img-ar {
-        width: 32px;
+        width: 48px;
     }
     .adaptive-size-img {
         width: 60px;
-        height: 50px;
+        height: 48px;
     }
 }
-@media (min-width:1100px) {
-    #leaflet-map {
-        width: 75%;
+@media (min-width:1601px) {
+    span.adaptive-size-img-ar {
+        display: inline;
     }
-    #side_map_menu {
-        width: 25%;
-    }
-
     button.adaptive-size-img-ar {
         width: auto;
         height: 64px;

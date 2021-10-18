@@ -171,6 +171,7 @@
 	"mapOtherTitle": "Other",
 	"mapOtherDatapods": "Datapod",
 	"mapOtherAlphaReactors": "Alpha Reactor",
+	"mapOtherVeteran": "Veteran",
 	
 
 	"mapSectionCentralAelio": "Central Aelio",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "Enemies",
-	"mapEmenyTypeVet": "Veteran",
 	"mapEnemyTypeGig": "Malevolent",
 	
 	"mapEnemyArdBanser": "Ard Banser",
@@ -210,5 +210,25 @@
 	"mapEnemyThunderBanser": "Thunder Banser",
 	"mapEnemyThunderBanshee": "Thunder Banshee",
 	"mapEnemyVaras": "Varas",
-	"mapEnemyWaulon": "Waulon"
+	"mapEnemyWaulon": "Waulon",
+
+
+    "mapTriggerTitle": "Battledia",
+	"mapTriggerReqItem": "Required item for launch",
+	"mapTriggerEvemyLevel": "Level of enemies",
+	
+	"mapTriggerNamePurple": "Aelio Devastators",
+	"mapTriggerReqItemPurple": "B-Trigger/Ael Purple",
+	"mapTriggerDescPurple": "Make use of your combat abilities to defeat the Gigantix one after the other.",
+	"mapTriggerMainPurple": "Defeat the target enemies",
+
+	"mapTriggerNameYellow": "Aelio Troopers",
+	"mapTriggerReqItemYellow": "B-Trigger/Ael Yellow",
+	"mapTriggerDescYellow": "Make use of your battle skill to defeat all of the enemies.",
+	"mapTriggerMainYellow": "Defeat the target enemies",
+
+	"mapItemGoldSword": "Gold Primm Sword",
+	"mapItemSilverSword": "Silver Primm Sword",
+	"mapItemGoldArmor": "Gold Primm Armor",
+	"mapItemSilverArmor": "Silver Primm Armor"
 }

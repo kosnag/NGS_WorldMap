@@ -4,7 +4,7 @@ var map_app = new nekoapp({
         nekoappID: "18",
         applicationTitle: "PSO2NGS Interactive Map",
         applicationVersion: "v2.0",
-        applicationURL: "//map.phantasystar.ru/"
+        applicationURL: "//map.pso2.ru/"
     },
     applicationStylesheets: {
         default: "css/map.main.css",
@@ -148,83 +148,6 @@ var map_app = new nekoapp({
             tag: "map-progress",
             prototype: {}
         },
-        alert_element: {
-            tag: "alert-window",
-            prototype: {
-                template: nekoapp.create.template(
-                    function(){
-                        let alert_h = document.createElement("h4")
-                            alert_h.className = "alert-heading"
-                            alert_h.innerHTML = "WORK IN PROGRESS";
-
-                        let alert_p1 = document.createElement("p")
-                            alert_p1.innerHTML = "This interactive map are currently in development.";
-
-                        let alert_p2 = document.createElement("hr");
-
-                        let alert_a_style = "color: #1266f1;text-decoration: underline;"
-
-                        let alert_p3 = document.createElement("p");
-                            alert_p3.className = "mb-0";
-                            let alert_span1 = document.createElement("span")
-                                alert_span1.innerHTML = "If you want to help me, please contact with me in "
-                            let alert_a1 = document.createElement("a")
-                                alert_a1.style = alert_a_style
-                                alert_a1.href = "https://twitter.com/kosnag"
-                                alert_a1.target = "_blank"
-                                alert_a1.innerHTML = "Twitter";
-                            let alert_span2 = document.createElement("span")
-                                alert_span2.innerHTML = ", ";
-                            let alert_a2 = document.createElement("a")
-                                alert_a2.style = alert_a_style
-                                alert_a2.href = "https://vk.com/kosnag"
-                                alert_a2.target = "_blank"
-                                alert_a2.innerHTML = "VK";
-                            let alert_span3 = document.createElement("span")
-                                alert_span3.innerHTML = " or ";
-                            let alert_a3 = document.createElement("a")
-                                alert_a3.style = alert_a_style
-                                alert_a3.innerHTML = "Discord (kosnag#1730)"
-                                alert_a3.href = "#"
-                                alert_a3.setAttribute("data-bs-toogle","tooltip")
-                                alert_a3.setAttribute("data-bs-placement","bottom")
-                                alert_a3.setAttribute("data-bs-html","true")
-                                alert_a3.setAttribute("data-bs-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/418391120914022401/846113050695827456/unknown.png' height='100'>");
-                            let alert_span4 = document.createElement("span")
-                                alert_span4.innerHTML = ". I will be very happy, if you help me! "
-                            let alert_a4 = document.createElement("a")
-                                alert_a4.style = alert_a_style
-                                alert_a4.innerHTML = "Take a hug by Matoi!"
-                                alert_a4.href = "#"
-                                alert_a4.setAttribute("data-bs-toogle","tooltip")
-                                alert_a4.setAttribute("data-bs-placement","bottom")
-                                alert_a4.setAttribute("data-bs-html","true")
-                                alert_a4.setAttribute("data-bs-original-title","<img class='d-block m-1 mx-auto' src='https://cdn.discordapp.com/attachments/762945798064570398/827230435662233671/2021-04-01_10-08-46-250_Talim_-_Air.png' height='100'>");
-                        
-                        alert_p3.appendChild(alert_span1)
-                        alert_p3.appendChild(alert_a1)
-                        alert_p3.appendChild(alert_span2)
-                        alert_p3.appendChild(alert_a2)
-                        alert_p3.appendChild(alert_span3)
-                        alert_p3.appendChild(alert_a3)
-                        alert_p3.appendChild(alert_span4)
-                        alert_p3.appendChild(alert_a4)
-
-                        let alert_button_close = document.createElement("button")
-                            alert_button_close.className = "btn-close"
-                            alert_button_close.setAttribute("type", "button")
-                            alert_button_close.setAttribute("data-bs-dismiss", "alert")
-                            alert_button_close.setAttribute("aria-label", "close");
-
-                        return[alert_h,alert_p1,alert_p2,alert_p3,alert_button_close]
-                    }
-                ),
-                init: function(){
-                    new bootstrap.Tooltip(alert_a3),
-                    new bootstrap.Tooltip(alert_a4);
-                }
-            }
-        },
         language_menu: {
             tag: "language-menu",
             prototype: {
@@ -276,7 +199,6 @@ var map_app = new nekoapp({
                                             modal_content_body_button4.style = "position: relative;"
                                             modal_content_body_button4.innerHTML = "<span style='position: absolute; left: 16px; top: 6px;'><img src='assets/flags/ru-RU.svg' height='32px'></span> Русский"
                                             modal_content_body_button4.setAttribute("data-bs-dismiss","modal")
-                                            //modal_content_body_button4.setAttribute("disabled","")
                                             modal_content_body_button4.setAttribute("onclick","nekoapp.locale.changeLanguage(map_app,'ru-RU')");
 
                                         let modal_content_body_button5 = document.createElement("button")
@@ -319,7 +241,6 @@ var map_app = new nekoapp({
                 template: nekoapp.create.template(
                     function(){
                         let leaflet_div = document.createElement("div")
-                            leaflet_div.className = "col-9"
                             leaflet_div.id = "leaflet-map"
 
                         return[leaflet_div]
@@ -337,103 +258,161 @@ var map_app = new nekoapp({
 			prototype: {
 				template: nekoapp.create.template(function(){
 					var popup_image = document.createElement("img"), // this.children[0]
+
 						popup_category = document.createElement("h4"), // this.children[1]
+
 						popup_name = document.createElement("h5"), // this.children[2]
+
 						popup_type = document.createElement("p"), // this.children[3]
-						popup_tiers = document.createElement("p"), // this.children[4]
-						popup_req1 = document.createElement("div"), // this.children[5]
-						popup_req2 = document.createElement("div"), // this.children[6]
-						popup_req3 = document.createElement("div"), // this.children[7]
 						popup_type_label = document.createElement("span"), // this.children[3].children[0]
 						popup_type_space = document.createElement("span"),
 						popup_type_value = document.createElement("span"), // this.children[3].children[2]
+
+						popup_tiers = document.createElement("p"), // this.children[4]
 						popup_tiers_left = document.createElement("span"), // this.children[4].children[0]
 						popup_tiers_label = document.createElement("span"), // this.children[4].children[1]
 						popup_tiers_right = document.createElement("span"), // this.children[4].children[2]
+
+						popup_req1 = document.createElement("div"), // this.children[5]
 						popup_req1_label = document.createElement("span"), // this.children[5].children[0]
 						popup_req1_space = document.createElement("span"),
 						popup_req1_value = document.createElement("span"), // this.children[5].children[2]
+
+						popup_req2 = document.createElement("div"), // this.children[6]
 						popup_req2_label = document.createElement("span"), // this.children[6].children[0]
 						popup_req2_space = document.createElement("span"),
 						popup_req2_value = document.createElement("span"), // this.children[6].children[2]
+
+						popup_req3 = document.createElement("div"), // this.children[7]
 						popup_req3_label = document.createElement("span"), // this.children[7].children[0]
 						popup_req3_space = document.createElement("span"),
 						popup_req3_value = document.createElement("span"), // this.children[7].children[2]
-						popup_desc_label = document.createElement("p"), // this.children[8]
-						popup_desc_value = document.createElement("div"), // this.children[9]
-						popup_main_label = document.createElement("p"), // this.children[10]
-						popup_main_value = document.createElement("div"), // this.children[11]
-						popup_side_label = document.createElement("p"), // this.children[12]
-						popup_side_value = document.createElement("ul"), // this.children[13]
-						popup_clear_reward_label = document.createElement("p"), // this.children[14]
-						popup_clear_reward_value = document.createElement("ul"), // this.children[15]
-						popup_rewards_label = document.createElement("p"), // this.children[16]
-						popup_rewards_value = document.createElement("ul"); // this.children[17]
+
+						popup_enemylv = document.createElement("div"), // this.children[8]
+						popup_enemylv_label = document.createElement("span"), // this.children[8].children[0]
+						popup_enemylv_space = document.createElement("span"),
+						popup_enemylv_value = document.createElement("span"); // this.children[8].children[2]
+
+						popup_reqitem_label = document.createElement("p"), // this.children[9]
+						popup_reqitem_value = document.createElement("div"), // this.children[10]
+
+						popup_desc_label = document.createElement("p"), // this.children[11]
+						popup_desc_value = document.createElement("div"), // this.children[12]
+
+						popup_main_label = document.createElement("p"), // this.children[13]
+						popup_main_value = document.createElement("div"), // this.children[14]
+
+						popup_side_label = document.createElement("p"), // this.children[15]
+						popup_side_value = document.createElement("ul"), // this.children[16]
+
+						popup_clear_reward_label = document.createElement("p"), // this.children[17]
+						popup_clear_reward_value = document.createElement("ul"), // this.children[18]
+
+						popup_rewards_label = document.createElement("p"), // this.children[19]
+						popup_rewards_value = document.createElement("ul"), // this.children[20]
+
+						popup_gigantix = document.createElement("div"), // this.children[21]
+						popup_gigantix_label = document.createElement("span"), // this.children[21].children[0]
+						popup_gigantix_space = document.createElement("span"),
+						popup_gigantix_value = document.createElement("span"); // this.children[21].children[2]
+
+
 					popup_image.className = "text-center mb-1";
-                    popup_image.style = "min-width:300px";
+                        popup_image.style = "min-width:300px";
+
 					popup_category.className = "text-center mb-1";
-					popup_category.style = "font-weight:bold";
+					    popup_category.style = "font-weight:bold";
+
 					popup_name.className = "text-center";
-					popup_name.style = "font-weight:bold";
+					    popup_name.style = "font-weight:bold";
+
 					popup_type.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_type_space.style = "flex:1";
+                        popup_type.appendChild(popup_type_label);
+                        popup_type.appendChild(popup_type_space);
+                        popup_type.appendChild(popup_type_value);
+
 					popup_tiers.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_tiers_left.className = "carousel-control-prev-icon";
+                        popup_tiers_left.style = "width:20px;height:20px;cursor:pointer;";
+                        popup_tiers_label.className = "text-center";
+                        popup_tiers_label.style = "flex:1";
+                        popup_tiers_right.className = "carousel-control-next-icon";
+                        popup_tiers_right.style = "width:20px;height:20px;cursor:pointer;";
+                        popup_tiers.appendChild(popup_tiers_left);
+                        popup_tiers.appendChild(popup_tiers_label);
+                        popup_tiers.appendChild(popup_tiers_right);
+
 					popup_req1.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_req1_space.style = "flex:1";
+                        popup_req1.appendChild(popup_req1_label);
+                        popup_req1.appendChild(popup_req1_space);
+                        popup_req1.appendChild(popup_req1_value);
+
 					popup_req2.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_req2.appendChild(popup_req2_label);
+                        popup_req2.appendChild(popup_req2_space);
+                        popup_req2.appendChild(popup_req2_value);
+                        popup_req2_space.style = "flex:1";
+
 					popup_req3.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
-					popup_type_space.style = "flex:1";
-					popup_tiers_label.className = "text-center";
-					popup_tiers_label.style = "flex:1";
-					popup_req1_space.style = "flex:1";
-					popup_req2_space.style = "flex:1";
-					popup_req3_space.style = "flex:1";
-					popup_tiers_left.className = "carousel-control-prev-icon";
-					popup_tiers_right.className = "carousel-control-next-icon";
-					popup_tiers_left.style = "width:20px;height:20px;cursor:pointer;";
-					popup_tiers_right.style = "width:20px;height:20px;cursor:pointer;";
-					popup_type.appendChild(popup_type_label);
-					popup_type.appendChild(popup_type_space);
-					popup_type.appendChild(popup_type_value);
-					popup_tiers.appendChild(popup_tiers_left);
-					popup_tiers.appendChild(popup_tiers_label);
-					popup_tiers.appendChild(popup_tiers_right);
-					popup_req1.appendChild(popup_req1_label);
-					popup_req1.appendChild(popup_req1_space);
-					popup_req1.appendChild(popup_req1_value);
-					popup_req2.appendChild(popup_req2_label);
-					popup_req2.appendChild(popup_req2_space);
-					popup_req2.appendChild(popup_req2_value);
-					popup_req3.appendChild(popup_req3_label);
-					popup_req3.appendChild(popup_req3_space);
-					popup_req3.appendChild(popup_req3_value);
+                        popup_req3_space.style = "flex:1";
+                        popup_req3.appendChild(popup_req3_label);
+                        popup_req3.appendChild(popup_req3_space);
+                        popup_req3.appendChild(popup_req3_value);
+
+                    popup_enemylv.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_enemylv_space.style = "flex:1";
+                        popup_enemylv.appendChild(popup_enemylv_label);
+                        popup_enemylv.appendChild(popup_enemylv_space);
+                        popup_enemylv.appendChild(popup_enemylv_value);
+
+                    popup_reqitem_label.className = "mb-0";
+                        popup_reqitem_label.style = "font-weight:bold";
+
 					popup_desc_label.className = "mb-0";
-					popup_desc_label.style = "font-weight:bold";
+					    popup_desc_label.style = "font-weight:bold";
+
 					popup_main_label.className = "mb-0";
-					popup_main_label.style = "font-weight:bold";
+					    popup_main_label.style = "font-weight:bold";
+
 					popup_side_label.className = "mb-0";
-					popup_side_label.style = "font-weight:bold";
-					popup_side_value.style = "padding:0";
+                        popup_side_label.style = "font-weight:bold";
+                        popup_side_value.style = "padding:0";
+
 					popup_clear_reward_label.className = "mb-0";
-					popup_clear_reward_label.style = "font-weight:bold";
-					popup_clear_reward_value.style = "padding:0";
+                        popup_clear_reward_label.style = "font-weight:bold";
+                        popup_clear_reward_value.style = "padding:0";
+
 					popup_rewards_label.className = "mb-0";
-					popup_rewards_label.style = "font-weight:bold";
-					popup_rewards_value.style = "padding:0";
-					return[popup_image,popup_category,popup_name,popup_type,popup_tiers,popup_req1,popup_req2,popup_req3,popup_desc_label,popup_desc_value,popup_main_label,popup_main_value,popup_side_label,popup_side_value,popup_clear_reward_label,popup_clear_reward_value,popup_rewards_label,popup_rewards_value];
+                        popup_rewards_label.style = "font-weight:bold";
+                        popup_rewards_value.style = "padding:0";
+
+					popup_gigantix.style = "display:flex;flex-direction:row;padding:0 0px;font-size:14px;font-weight:bold";
+                        popup_gigantix_space.style = "flex:1";
+                        popup_gigantix.appendChild(popup_gigantix_label);
+                        popup_gigantix.appendChild(popup_gigantix_space);
+                        popup_gigantix.appendChild(popup_gigantix_value);
+                    
+					return[popup_image,popup_category,popup_name,popup_type,popup_tiers,popup_req1,popup_req2,popup_req3,popup_enemylv,popup_reqitem_label,popup_reqitem_value,popup_desc_label,popup_desc_value,popup_main_label,popup_main_value,popup_side_label,popup_side_value,popup_clear_reward_label,popup_clear_reward_value,popup_rewards_label,popup_rewards_value,popup_gigantix];
 				}),
 				setInfo: function(info){
 					if(typeof info.category === "string"){
 						this.children[1].innerHTML = map_app.locale.strings[info.category];
 						nekoapp.system.hiddenStatus.set(this.children[1],false);
 					}else nekoapp.system.hiddenStatus.set(this.children[1],true);
+
 					if(typeof info.name === "string"){
 						this.children[2].innerHTML = map_app.locale.strings[info.name];
 						nekoapp.system.hiddenStatus.set(this.children[2],false);
 					}else nekoapp.system.hiddenStatus.set(this.children[2],true);
+
 					if(typeof info.popup_data === "object"){
 						if(typeof info.popup_data.image === "string"){
 							this.children[0].src = info.popup_data.image;
 							nekoapp.system.hiddenStatus.set(this.children[0],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[0],true);
+
 						if(typeof info.popup_data.type === "string"){
 							this.children[3].children[0].innerHTML = map_app.locale.strings.mapPopupSectionTypes + ":";
 							switch(info.popup_data.type){
@@ -449,10 +428,12 @@ var map_app = new nekoapp({
 							}
 							nekoapp.system.hiddenStatus.set(this.children[3],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[3],true);
+
 						if(info.popup_data.tiers instanceof Array && info.popup_data.tiers.length > 1 && typeof this.popup_tier === "number"){
 							this.children[4].children[1].innerHTML = map_app.locale.strings.mapPopupSectionTier + " " + (this.popup_tier + 1);
 							nekoapp.system.hiddenStatus.set(this.children[4],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[4],true);
+
 						if(typeof info.popup_data.type === "string" || typeof info.popup_data.max_players === "number"){
 							this.children[5].children[0].innerHTML = map_app.locale.strings.mapPopupMaxPlayers + ":";
 							if(typeof info.popup_data.type === "string")switch(info.popup_data.type){
@@ -468,50 +449,80 @@ var map_app = new nekoapp({
 							}else this.children[5].children[2].innerHTML = info.popup_data.max_players;
 							nekoapp.system.hiddenStatus.set(this.children[5],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[5],true);
+
 						if(typeof info.popup_data.required_bp === "number" || typeof info.popup_data.recomended_bp === "number" || (info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && (typeof info.popup_data.tiers[this.popup_tier].recomended_bp === "number" || typeof info.popup_data.tiers[this.popup_tier].required_bp === "number")) || (info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_bp === "number")){
 							this.children[6].children[0].innerHTML = info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].required_bp === "number"?map_app.locale.strings.mapPopupRequiredBP:info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].recomended_bp === "number"?map_app.locale.strings.mapPopupRecomendedBP:info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_bp === "number"?map_app.locale.strings.mapPopupRecomendedBP:typeof info.popup_data.required_bp === "number"?map_app.locale.strings.mapPopupRequiredBP + ":":map_app.locale.strings.mapPopupRecomendedBP + ":";
 							this.children[6].children[2].innerHTML = info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].required_bp === "number"?info.popup_data.tiers[this.popup_tier].required_bp:info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].recomended_bp === "number"?info.popup_data.tiers[this.popup_tier].recomended_bp:info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_bp === "number"?info.popup_data.tiers[0].recomended_bp:typeof info.popup_data.required_bp === "number"?info.popup_data.required_bp:info.popup_data.recomended_bp;
 							nekoapp.system.hiddenStatus.set(this.children[6],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[6],true);
+
 						if(typeof info.popup_data.recomended_lv === "number" || (info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].recomended_lv === "number") || (info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_lv === "number")){
 							this.children[7].children[0].innerHTML = map_app.locale.strings.mapPopupSectionAvgEnemyLvl + ":";
 							this.children[7].children[2].innerHTML = info.popup_data.tiers instanceof Array && typeof this.popup_tier === "number" && typeof info.popup_data.tiers[this.popup_tier].recomended_lv === "number"?info.popup_data.tiers[this.popup_tier].recomended_lv:info.popup_data.tiers instanceof Array && typeof info.popup_data.tiers[0].recomended_lv === "number"?info.popup_data.tiers[0].recomended_lv:info.popup_data.recomended_lv;
 							nekoapp.system.hiddenStatus.set(this.children[7],false);
 						}else nekoapp.system.hiddenStatus.set(this.children[7],true);
-						if(typeof info.popup_data.description === "string"){
-							this.children[8].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
-						    this.children[9].innerHTML = map_app.locale.strings[info.popup_data.description];
+
+						if(typeof info.popup_data.enemy_lv === "number"){
+							this.children[8].children[0].innerHTML = map_app.locale.strings.mapTriggerEvemyLevel + ":";
+							this.children[8].children[2].innerHTML = info.popup_data.enemy_lv
 							nekoapp.system.hiddenStatus.set(this.children[8],false);
+						}else nekoapp.system.hiddenStatus.set(this.children[8],true);
+
+						if(typeof info.popup_data.req_item === "string"){
+							this.children[9].innerHTML = map_app.locale.strings.mapTriggerReqItem + ":";
+							switch(info.popup_data.req_item){
+                                case "purpleTrigger":
+                                    var triggerType = map_app.locale.strings.mapTriggerReqItemPurple;
+                                    break;
+                                case "yellowTrigger":
+                                    var triggerType = map_app.locale.strings.mapTriggerReqItemYellow;
+                                    break;
+							}
+                            this.children[10].innerHTML = "5x " + triggerType;
 							nekoapp.system.hiddenStatus.set(this.children[9],false);
-						}else{
-							nekoapp.system.hiddenStatus.set(this.children[8],true);
-							nekoapp.system.hiddenStatus.set(this.children[9],true);
-						}
-                        if(typeof info.popup_data.main_mission === "string"){
-							this.children[10].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
-						    this.children[11].innerHTML = map_app.locale.strings[info.popup_data.main_mission];
 							nekoapp.system.hiddenStatus.set(this.children[10],false);
-							nekoapp.system.hiddenStatus.set(this.children[11],false);
-						}else{
-							nekoapp.system.hiddenStatus.set(this.children[10],true);
-							nekoapp.system.hiddenStatus.set(this.children[11],true);
+						}else {
+                            nekoapp.system.hiddenStatus.set(this.children[9],true);
+                            nekoapp.system.hiddenStatus.set(this.children[10],true);
 						}
+
+						if(typeof info.popup_data.description === "string"){
+							this.children[11].innerHTML = map_app.locale.strings.mapPopupDescription + ":";
+						    this.children[12].innerHTML = map_app.locale.strings[info.popup_data.description];
+							nekoapp.system.hiddenStatus.set(this.children[11],false);
+							nekoapp.system.hiddenStatus.set(this.children[12],false);
+						}else{
+							nekoapp.system.hiddenStatus.set(this.children[11],true);
+							nekoapp.system.hiddenStatus.set(this.children[12],true);
+						}
+
+                        if(typeof info.popup_data.main_mission === "string"){
+							this.children[13].innerHTML = map_app.locale.strings.mapPopupMainMission + ":";
+						    this.children[14].innerHTML = map_app.locale.strings[info.popup_data.main_mission];
+							nekoapp.system.hiddenStatus.set(this.children[13],false);
+							nekoapp.system.hiddenStatus.set(this.children[14],false);
+						}else{
+							nekoapp.system.hiddenStatus.set(this.children[13],true);
+							nekoapp.system.hiddenStatus.set(this.children[14],true);
+						}
+
 						if(info.popup_data.side_missions instanceof Array){
-							this.children[12].innerHTML = map_app.locale.strings.mapPopupSideMissions + ":";
-							nekoapp.system.clear(this.children[13]);
+							this.children[15].innerHTML = map_app.locale.strings.mapPopupSideMissions + ":";
+							nekoapp.system.clear(this.children[16]);
 							for(var i in info.popup_data.side_missions){
 								var item = document.createElement("li");
-								this.children[13].appendChild(item).innerHTML = map_app.locale.strings[info.popup_data.side_missions[i]];
+								this.children[16].appendChild(item).innerHTML = map_app.locale.strings[info.popup_data.side_missions[i]];
 							}
-							nekoapp.system.hiddenStatus.set(this.children[12],false);
-							nekoapp.system.hiddenStatus.set(this.children[13],false);
+							nekoapp.system.hiddenStatus.set(this.children[15],false);
+							nekoapp.system.hiddenStatus.set(this.children[16],false);
 						}else{
-							nekoapp.system.hiddenStatus.set(this.children[12],true);
-							nekoapp.system.hiddenStatus.set(this.children[13],true);
+							nekoapp.system.hiddenStatus.set(this.children[15],true);
+							nekoapp.system.hiddenStatus.set(this.children[16],true);
 						}
+
 						if(info.popup_data.clear_reward instanceof Array){
-							this.children[14].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
-							nekoapp.system.clear(this.children[15]);
+							this.children[17].innerHTML = map_app.locale.strings.mapPopupClearReward + ":";
+							nekoapp.system.clear(this.children[18]);
 							for(var i in info.popup_data.clear_reward){
 								var item = document.createElement("li");
 								switch(info.popup_data.clear_reward[i].reward_type){
@@ -522,17 +533,18 @@ var map_app = new nekoapp({
 										item.innerHTML = info.popup_data.clear_reward[i].reward_count + " " + map_app.locale.strings.mapPopupRewardMeseta;
                                     	break;
 								}
-								this.children[15].appendChild(item);
+								this.children[18].appendChild(item);
 							}
-							nekoapp.system.hiddenStatus.set(this.children[14],false);
-							nekoapp.system.hiddenStatus.set(this.children[15],false);
+							nekoapp.system.hiddenStatus.set(this.children[17],false);
+							nekoapp.system.hiddenStatus.set(this.children[18],false);
 						}else{
-							nekoapp.system.hiddenStatus.set(this.children[14],true);
-							nekoapp.system.hiddenStatus.set(this.children[15],true);
+							nekoapp.system.hiddenStatus.set(this.children[17],true);
+							nekoapp.system.hiddenStatus.set(this.children[18],true);
 						}
+
                         if(info.popup_data.rewards instanceof Array){
-							this.children[16].innerHTML = map_app.locale.strings.mapPopupRewards + ":";
-							nekoapp.system.clear(this.children[17]);
+							this.children[19].innerHTML = map_app.locale.strings.mapPopupRewards + ":";
+							nekoapp.system.clear(this.children[20]);
 							for(var i in info.popup_data.rewards){
 								var item = document.createElement("li");
 								switch(info.popup_data.rewards[i].reward_type){
@@ -542,15 +554,83 @@ var map_app = new nekoapp({
                                 	case "seasonPoints":
                                     	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapPopupRewardSeasonPoints;
                                     	break;
+
+                                    case "itemGoldSword":
+                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldSword + " +20";
+                                        break;
+                                    case "itemSilverSword":
+                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverSword + " +20";
+                                        break;
+                                	case "itemGoldArmor":
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldArmor + " +20";
+                                    	break;
+                                	case "itemSilverArmor":
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverArmor + " +20";
+                                    	break;
 								}
-								this.children[17].appendChild(item);
+								this.children[20].appendChild(item);
 							}
-							nekoapp.system.hiddenStatus.set(this.children[16],false);
-							nekoapp.system.hiddenStatus.set(this.children[17],false);
+							nekoapp.system.hiddenStatus.set(this.children[19],false);
+							nekoapp.system.hiddenStatus.set(this.children[20],false);
 						}else{
-							nekoapp.system.hiddenStatus.set(this.children[16],true);
-							nekoapp.system.hiddenStatus.set(this.children[17],true);
+							nekoapp.system.hiddenStatus.set(this.children[19],true);
+							nekoapp.system.hiddenStatus.set(this.children[20],true);
 						}
+
+						if(typeof info.popup_data.gigantix === "string"){
+							this.children[21].children[0].innerHTML = map_app.locale.strings.mapEnemyTypeGig + ":";
+							switch(info.popup_data.gigantix){
+                                    case "ardBanser":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyArdBanser;
+                                        break;
+                                    case "ardBanshee":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyArdBanshee;
+                                        break;
+                                    case "biggFrogga":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyBiggFrogga;
+                                        break;
+                                    case "bujin":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyBujin;
+                                        break;
+                                    case "chiacurio":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyChiacurio;
+                                        break;
+                                    case "cragBear":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyCragBear;
+                                        break;
+                                    case "daitylAxe":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyDaitylAxe;
+                                        break;
+                                    case "daitylSword":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyDaitylSword;
+                                        break;
+                                    case "eldiSkythe":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyEldiSkythe;
+                                        break;
+                                    case "nexAelio": 
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyNexAelio;
+                                        break;
+                                    case "nogleth":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyNogleth;
+                                        break;
+                                    case "oruq":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyOruq;
+                                        break;
+                                    case "thunderBanser":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyThunderBanser;
+                                        break;
+                                    case "thunderBanshee":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyThunderBanshee;
+                                        break;
+                                    case "varas":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyVaras;
+                                        break;
+                                    case "waulon":
+                                        this.children[21].children[2].innerHTML = map_app.locale.strings.mapEnemyWaulon;
+                                        break;
+							}
+							nekoapp.system.hiddenStatus.set(this.children[21],false);
+						}else nekoapp.system.hiddenStatus.set(this.children[21],true);
 					}
 				},
 				initTiers: function(info){
@@ -594,22 +674,6 @@ var map_app = new nekoapp({
             moduleURL: "/",
             moduleContents: function(){
                 var elements = {
-                    alert_element: nekoapp.create.object(map_app,map_app.preferences.elements.alert_element,{
-                        class: "alert alert-danger mt-1 alert-dismissible fade show", 
-                        attr: {
-                            role: "alert"
-                        },
-                        style: {
-                            "display": "block", 
-                            "margin": "0 auto",
-                            "position": "absolute",
-                            "top": "75px",
-                            "left": "0",
-                            "right": "0",
-                            "width": "75%",
-                            "z-index": "8492"
-                        }
-                    }),
                     ngs_map: nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
                         class: "container-fluid row",
                         style: {
@@ -617,7 +681,7 @@ var map_app = new nekoapp({
                         }
                     }),
                         map_menu: nekoapp.create.object(map_app,map_app.preferences.elements.map_menu_element,{
-                            class: "col-3 bg-menu",
+                            class: "bg-menu",
                             id: "side_map_menu"
                         }),
                             menu_header: nekoapp.create.element(map_app,"div",{
@@ -634,9 +698,6 @@ var map_app = new nekoapp({
                             }),
                                 menu_alphareactor_researcher_button: nekoapp.create.element(map_app,"button",{
                                     class: "btn btn-custom-blue btn-lg mt-4 mb-2 adaptive-size-img-ar",
-                                    attr: {
-                                        "onclick": "window.open('https://twitter.com/search?q=%22%23AlphaReactors%20%23%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%20%23PSO2NGS%22%20(from%3AAphyAmarantha)')"
-                                    },
                                     style: {
                                         "position": "relative"
                                     }
@@ -656,6 +717,7 @@ var map_app = new nekoapp({
                                         text: nekoapp.create.localizedString(map_app, "mapOtherAlphaReactors"),
                                     }),
                                     menu_alphareactor_researcher_button_text2: nekoapp.create.element(map_app,"span",{
+                                        class: "adaptive-size-img-ar",
                                         text: " (Twitter)",
                                     }),
                                     menu_alphareactor_researcher_button_image2: nekoapp.create.element(map_app,"img",{
@@ -684,8 +746,8 @@ var map_app = new nekoapp({
                                         class: "h5 text-light text-center mb-3",
                                         text: nekoapp.create.localizedString(map_app, "mapLandmarksTitle")
                                     }),
-                                    menu_landmarksButton_group: nekoapp.create.element(map_app,"button-group",{
-                                        class: "d-flex justify-content-center",
+                                    menu_landmarksButton_group1: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex justify-content-center mb-2",
                                     }),
                                         menu_landmarksButton_cocoon_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
@@ -750,6 +812,9 @@ var map_app = new nekoapp({
                                                     "src": "assets/markers/landmarks/ryuker.png"
                                                 }
                                             }),
+                                    menu_landmarksButton_group2: nekoapp.create.element(map_app,"button-group",{
+                                        class: "d-flex justify-content-center",
+                                    }),
                                         menu_landmarksButton_mag_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
                                             id: "magCheckbox",
@@ -790,6 +855,27 @@ var map_app = new nekoapp({
                                             menu_landmarksButton_urgent_img: nekoapp.create.element(map_app,"img",{
                                                 attr: {
                                                     "src": "assets/markers/landmarks/urgent.png"
+                                                }
+                                            }),
+                                        menu_landmarksButton_trigger_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "triggerCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_landmarksButton_trigger_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
+                                            attr: {
+                                                "for": "triggerCheckbox",
+                                                "data-bs-toogle": "tooltip",
+                                                "data-bs-placement": "bottom"
+                                            }
+                                        }),
+                                            menu_landmarksButton_trigger_img: nekoapp.create.element(map_app,"img",{
+                                                attr: {
+                                                    "src": "assets/markers/landmarks/trigger.png"
                                                 }
                                             }),
                                 
@@ -843,28 +929,6 @@ var map_app = new nekoapp({
                                             menu_boxesButton_redBox_img: nekoapp.create.element(map_app,"img",{
                                                 attr: {
                                                     "src": "assets/markers/containers/redBox.png"
-                                                }
-                                            }),
-                                        menu_boxesButton_goldBox_1: nekoapp.create.element(map_app,"input",{
-                                                class: "btn-check",
-                                                id: "goldBoxCheckbox",
-                                                attr: {
-                                                    "type": "checkbox",
-                                                    "autocomplete": "off"
-                                                }
-                                            }),
-                                        menu_boxesButton_goldBox_2: nekoapp.create.element(map_app,"label",{
-                                                class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
-                                                attr: {
-                                                    "for": "goldBoxCheckbox",
-                                                    "data-bs-toogle": "tooltip",
-                                                    "data-bs-placement": "bottom",
-                                                    "disabled": ""
-                                                }
-                                        }),
-                                            menu_boxesButton_goldBox_img: nekoapp.create.element(map_app,"img",{
-                                                attr: {
-                                                    "src": "assets/markers/containers/goldBox.png"
                                                 }
                                             }),
                                 
@@ -1285,17 +1349,7 @@ var map_app = new nekoapp({
                                                     "src": "assets/markers/other/dataPod.png"
                                                 }
                                             }),
-                            menu_enemy_body: nekoapp.create.element(map_app,"div",{
-                                    class: "my-3"
-                                }),
-                                    menu_enemy_desc: nekoapp.create.element(map_app,"div",{
-                                        class: "h5 text-light text-center mb-3",
-                                        text: nekoapp.create.localizedString(map_app, "mapEmenyTitle")
-                                    }),
-                                    menu_enemyButton_group: nekoapp.create.element(map_app,"button-group",{
-                                        class: "d-flex justify-content-center",
-                                    }),
-                                        menu_enemyButton_veteran_1: nekoapp.create.element(map_app,"input",{
+                                        menu_otherButton_veteran_1: nekoapp.create.element(map_app,"input",{
                                             class: "btn-check",
                                             id: "veteranCheckbox",
                                             attr: {
@@ -1303,40 +1357,18 @@ var map_app = new nekoapp({
                                                 "autocomplete": "off"
                                             }
                                         }),
-                                        menu_enemyButton_veteran_2: nekoapp.create.element(map_app,"label",{
+                                        menu_otherButton_veteran_2: nekoapp.create.element(map_app,"label",{
                                             class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
                                             attr: {
                                                 "for": "veteranCheckbox",
                                                 "data-bs-toogle": "tooltip",
                                                 "data-bs-placement": "bottom",
-                                                "data-bs-html": "true"
+                                                 "data-bs-html": "true"
                                             }
                                         }),
-                                            menu_enemyButton_veteran_img: nekoapp.create.element(map_app,"img",{
+                                            menu_otherButton_veteran_img: nekoapp.create.element(map_app,"img",{
                                                 attr: {
-                                                    "src": "assets/markers/enemies/vet.png"
-                                                }
-                                            }),
-                                        menu_enemyButton_gigant_1: nekoapp.create.element(map_app,"input",{
-                                            class: "btn-check",
-                                            id: "gigantCheckbox",
-                                            attr: {
-                                                "type": "checkbox",
-                                                "autocomplete": "off"
-                                            }
-                                        }),
-                                        menu_enemyButton_gigant_2: nekoapp.create.element(map_app,"label",{
-                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
-                                            attr: {
-                                                "for": "gigantCheckbox",
-                                                "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom",
-                                                "data-bs-html": "true"
-                                            }
-                                        }),
-                                            menu_enemyButton_gigant_img: nekoapp.create.element(map_app,"img",{
-                                                attr: {
-                                                    "src": "assets/markers/enemies/giga.png"
+                                                    "src": "assets/markers/other/vet.png"
                                                 }
                                             }),
 
@@ -1355,22 +1387,26 @@ var map_app = new nekoapp({
 
                                 elements.map_menu_body.appendChild(elements.menu_landmarks_body)
                                     elements.menu_landmarks_body.appendChild(elements.menu_landmarks_desc)
-                                    elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_cocoon_2)
+                                    elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group1)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_cocoon_1)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_cocoon_2)
                                             elements.menu_landmarksButton_cocoon_2.appendChild(elements.menu_landmarksButton_cocoon_img)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_tower_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_tower_2)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_tower_1)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_tower_2)
                                             elements.menu_landmarksButton_tower_2.appendChild(elements.menu_landmarksButton_tower_img)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_urgent_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_urgent_2)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_urgent_1)
+                                        elements.menu_landmarksButton_group1.appendChild(elements.menu_landmarksButton_urgent_2)
                                             elements.menu_landmarksButton_urgent_2.appendChild(elements.menu_landmarksButton_urgent_img)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_ryuker_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_ryuker_2)
+                                    elements.menu_landmarks_body.appendChild(elements.menu_landmarksButton_group2)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_ryuker_1)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_ryuker_2)
                                             elements.menu_landmarksButton_ryuker_2.appendChild(elements.menu_landmarksButton_ryuker_img)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_mag_1)
-                                        elements.menu_landmarksButton_group.appendChild(elements.menu_landmarksButton_mag_2)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_mag_1)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_mag_2)
                                             elements.menu_landmarksButton_mag_2.appendChild(elements.menu_landmarksButton_mag_img)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_trigger_1)
+                                        elements.menu_landmarksButton_group2.appendChild(elements.menu_landmarksButton_trigger_2)
+                                            elements.menu_landmarksButton_trigger_2.appendChild(elements.menu_landmarksButton_trigger_img)
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
                                 elements.map_menu_body.appendChild(elements.menu_boxes_body)
@@ -1382,9 +1418,6 @@ var map_app = new nekoapp({
                                         elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_redBox_1)
                                         elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_redBox_2)
                                             elements.menu_boxesButton_redBox_2.appendChild(elements.menu_boxesButton_redBox_img)
-                                        /*elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_goldBox_1)
-                                        elements.menu_boxesButton_group.appendChild(elements.menu_boxesButton_goldBox_2)
-                                            elements.menu_boxesButton_goldBox_2.appendChild(elements.menu_boxesButton_goldBox_img)*/
                                 elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
 
                                 elements.map_menu_body.appendChild(elements.menu_minerals_body)
@@ -1456,17 +1489,9 @@ var map_app = new nekoapp({
                                         elements.menu_otherButton_group.appendChild(elements.menu_otherButton_datapod_1)
                                         elements.menu_otherButton_group.appendChild(elements.menu_otherButton_datapod_2)
                                             elements.menu_otherButton_datapod_2.appendChild(elements.menu_otherButton_datapod_img)
-                                elements.map_menu_body.appendChild(nekoapp.create.element(map_app,"hr",{class:"bg-light mx-2"}))
-
-                                elements.map_menu_body.appendChild(elements.menu_enemy_body)
-                                    elements.menu_enemy_body.appendChild(elements.menu_enemy_desc)
-                                    elements.menu_enemy_body.appendChild(elements.menu_enemyButton_group)
-                                        elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_veteran_1)
-                                        elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_veteran_2)
-                                            elements.menu_enemyButton_veteran_2.appendChild(elements.menu_enemyButton_veteran_img)
-                                        elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_gigant_1)
-                                        elements.menu_enemyButton_group.appendChild(elements.menu_enemyButton_gigant_2)
-                                            elements.menu_enemyButton_gigant_2.appendChild(elements.menu_enemyButton_gigant_img)
+                                        elements.menu_otherButton_group.appendChild(elements.menu_otherButton_veteran_1)
+                                        elements.menu_otherButton_group.appendChild(elements.menu_otherButton_veteran_2)
+                                            elements.menu_otherButton_veteran_2.appendChild(elements.menu_otherButton_veteran_img)
 
 				// BIND MAP MENU BUTTONS EVENTS
                 elements.menu_landmarksButton_cocoon_1.addEventListener("change",function(){
@@ -1507,6 +1532,14 @@ var map_app = new nekoapp({
                         map.user_settings.landmarks.urgent = false;
                     else
                         map.user_settings.landmarks.urgent = true;
+                    map.save_settings();
+                });        
+                elements.menu_landmarksButton_trigger_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.landmarks.trigger);
+                    if(map.user_settings.landmarks.trigger)
+                        map.user_settings.landmarks.trigger = false;
+                    else
+                        map.user_settings.landmarks.trigger = true;
                     map.save_settings();
                 });                
 				elements.menu_mineralsButton_monotite_1.addEventListener("change",function(){
@@ -1669,20 +1702,12 @@ var map_app = new nekoapp({
                         map.user_settings.boxes.goldBox = true;
                     map.save_settings();
                 });*/
-                elements.menu_enemyButton_veteran_1.addEventListener("change",function(){
-                    map.toogle_markers(map.map_markers.enemies.veteran);
-                    if(map.user_settings.enemies.veteran)
-                        map.user_settings.enemies.veteran = false;
+                elements.menu_otherButton_veteran_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.other.veteran);
+                    if(map.user_settings.other.veteran)
+                        map.user_settings.other.veteran = false;
                     else
-                        map.user_settings.enemies.veteran = true;
-                    map.save_settings();
-                });
-                elements.menu_enemyButton_gigant_1.addEventListener("change",function(){
-                    map.toogle_markers(map.map_markers.enemies.gigantix);
-                    if(map.user_settings.enemies.gigantix)
-                        map.user_settings.enemies.gigantix = false;
-                    else
-                        map.user_settings.enemies.gigantix = true;
+                        map.user_settings.other.veteran = true;
                     map.save_settings();
                 });
                 elements.menu_otherButton_datapod_1.addEventListener("change",function(){
@@ -1694,10 +1719,11 @@ var map_app = new nekoapp({
                     map.save_settings();
                 });
 				
-                return [elements, [/*elements.alert_element,*/elements.ngs_map]];
+                return [elements, [elements.ngs_map]];
             },
             onModuleChange: function(){
-                
+
+                this.moduleContents.menu_alphareactor_researcher_button.addEventListener("click",function(){window.open('https://twitter.com/search?q=%22%23AlphaReactors%20%23%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%20%23PSO2NGS%22%20(from%3AAphyAmarantha)&f=live')})
                 new bootstrap.Tooltip(this.moduleContents.menu_alphareactor_researcher_button_image2)
                 this.moduleContents.menu_alphareactor_researcher_button_image2.setAttribute("data-bs-original-title","AphraelAmarantha (@AphyAmarantha)")
 
@@ -1706,6 +1732,7 @@ var map_app = new nekoapp({
                 new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_ryuker_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_tower_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_urgent_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_landmarksButton_trigger_2)
                 
                 new bootstrap.Tooltip(this.moduleContents.menu_boxesButton_whiteBox_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_boxesButton_redBox_2)
@@ -1731,10 +1758,8 @@ var map_app = new nekoapp({
                 new bootstrap.Tooltip(this.moduleContents.menu_foodButton_turnip_2)
 
                 new bootstrap.Tooltip(this.moduleContents.menu_otherButton_datapod_2)
-                
-                new bootstrap.Tooltip(this.moduleContents.menu_enemyButton_veteran_2)
-                new bootstrap.Tooltip(this.moduleContents.menu_enemyButton_gigant_2)
-                //this.moduleContents.alert_element.init();
+                new bootstrap.Tooltip(this.moduleContents.menu_otherButton_veteran_2)
+
 				// INITIALIZE MAP AND MAP MENU
 				map.init(function(){
                         if(map.user_settings.landmarks.cocoon)map_app.modules.map_module.moduleContents.menu_landmarksButton_cocoon_1.setAttribute("checked","");
@@ -1742,10 +1767,10 @@ var map_app = new nekoapp({
                         if(map.user_settings.landmarks.ryuker)map_app.modules.map_module.moduleContents.menu_landmarksButton_ryuker_1.setAttribute("checked","");
                         if(map.user_settings.landmarks.tower)map_app.modules.map_module.moduleContents.menu_landmarksButton_tower_1.setAttribute("checked","");
                         if(map.user_settings.landmarks.urgent)map_app.modules.map_module.moduleContents.menu_landmarksButton_urgent_1.setAttribute("checked","");
+                        if(map.user_settings.landmarks.trigger)map_app.modules.map_module.moduleContents.menu_landmarksButton_trigger_1.setAttribute("checked","");
                         
                         if(map.user_settings.boxes.whiteBox)map_app.modules.map_module.moduleContents.menu_boxesButton_whiteBox_1.setAttribute("checked","");
                         if(map.user_settings.boxes.redBox)map_app.modules.map_module.moduleContents.menu_boxesButton_redBox_1.setAttribute("checked","");
-                        //if(map.user_settings.boxes.goldBox)map_app.modules.map_module.moduleContents.menu_boxesButton_goldBox_1.setAttribute("checked","");
                         
                         if(map.user_settings.minerals.monotite)map_app.modules.map_module.moduleContents.menu_mineralsButton_monotite_1.setAttribute("checked","");
                         if(map.user_settings.minerals.dualomite)map_app.modules.map_module.moduleContents.menu_mineralsButton_dualomite_1.setAttribute("checked","");
@@ -1766,9 +1791,7 @@ var map_app = new nekoapp({
                         if(map.user_settings.food.shell)map_app.modules.map_module.moduleContents.menu_foodButton_shell_1.setAttribute("checked","");
                         if(map.user_settings.food.turnip)map_app.modules.map_module.moduleContents.menu_foodButton_turnip_1.setAttribute("checked","");
                         
-                        if(map.user_settings.enemies.gigantix)map_app.modules.map_module.moduleContents.menu_enemyButton_gigant_1.setAttribute("checked","");
-                        if(map.user_settings.enemies.veteran)map_app.modules.map_module.moduleContents.menu_enemyButton_veteran_1.setAttribute("checked","");
-
+                        if(map.user_settings.other.veteran)map_app.modules.map_module.moduleContents.menu_otherButton_veteran_1.setAttribute("checked","");
                         if(map.user_settings.other.datapod)map_app.modules.map_module.moduleContents.menu_otherButton_datapod_1.setAttribute("checked","");
                     });
             },
@@ -1781,6 +1804,7 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_landmarksButton_urgent_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapUrgentTitle)
                 this.moduleContents.menu_landmarksButton_ryuker_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRyukerTitle)
                 this.moduleContents.menu_landmarksButton_mag_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapMagTitle)
+                this.moduleContents.menu_landmarksButton_trigger_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapTriggerTitle)
                 
                 this.moduleContents.menu_boxesButton_whiteBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapWhiteBoxTitle)
                 this.moduleContents.menu_boxesButton_redBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRedBoxTitle)
@@ -1806,9 +1830,7 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_foodButton_turnip_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapTurnipTitle)
                 
                 this.moduleContents.menu_otherButton_datapod_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherDatapods)
-                
-                this.moduleContents.menu_enemyButton_veteran_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapEmenyTypeVet)
-                this.moduleContents.menu_enemyButton_gigant_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapEnemyTypeGig)
+                this.moduleContents.menu_otherButton_veteran_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherVeteran)
                 
 				map.update_locale();
             }
@@ -1866,16 +1888,157 @@ var map_app = new nekoapp({
         "ko-KR": {URL: "languages/ko_KR.json"},
         "ja-JP": {URL: "languages/ja_JP.json"},
         "pt-BR": {URL: "languages/pt_BR.json"}
+    },
+    loadingScreen: {
+        customLoadScreen: function(){
+            let localeLoadStrings = {
+                "customLoadScreenStringTitleEn": "PSO2NGS Interactive Map",
+                "customLoadScreenString1En": "Map is not designed for mobile devices",
+                "customLoadScreenString2En": "If you see that screen more than 3 seconds - please reload a page",
+                
+                "customLoadScreenStringTitleRu": "Интерактивная Карта PSO2NGS",
+                "customLoadScreenString1Ru": "На мобильных устройства карта будет отображаться некорректно",
+                "customLoadScreenString2Ru": "Если вы видите данный экран более 3 секунд - перезагрузите страницу",
 
+                "customLoadScreenStringTitleKr": "PSO2NGS 인터렉티브 맵",
+                "customLoadScreenString1Kr": "지도는 모바일 장치 용으로 설계되지 않았습니다",
+                "customLoadScreenString2Kr": "해당 화면이 3 초 이상 표시되는 경우-페이지를 다시로드하십시오",
+
+                "customLoadScreenStringTitleJp": "PSO2NGS インタラクティブ マップ",
+                "customLoadScreenString1Jp": "このマップはモバイルデバイスでは実際のものではありません",
+                "customLoadScreenString2Jp": "この画面が3秒以上表示される場合は、ページをリロードしてください ",
+
+                "customLoadScreenStringTitlePt": "Mapa Interactivo PSO2NGS",
+                "customLoadScreenString1Pt": "Os mapas não são projetados para dispositivos móveis",
+                "customLoadScreenString2Pt": "Se você vir essa tela mais de 3 segundos - por favor, recarregue uma página"
+            }
+            if(localStorage.getItem("nekoapp.locale") && JSON.parse(localStorage.getItem("nekoapp.locale")).language){
+                switch(JSON.parse(localStorage.getItem("nekoapp.locale")).language){
+                    case "en-US":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
+                        break;
+                    case "en-fan":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
+                        break;
+                    case "ru-RU":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleRu
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Ru
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Ru
+                        break;
+                    case "ko-KR":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleKr
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Kr
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Kr
+                        break;
+                    case "ja-JP":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleJp
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Jp
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Jp
+                        break;
+                    case "pt-BR":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitlePt
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Pt
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Pt
+                        break;
+                }
+            }else{
+                switch(navigator.language){
+                    case "ru-RU":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleRu
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Ru
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Ru
+                        break;
+                    case "ko-KR":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleKr
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Kr
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Kr
+                        break;
+                    case "ja-JP":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleJp
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Jp
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Jp
+                        break;
+                    case "pt-BR":
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitlePt
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Pt
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Pt
+                        break;
+                    default:
+                        var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
+                        var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
+                        var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
+                        break;
+                    }
+            }
+            switch(Math.floor(Math.random() * 3)){
+                case 0:
+                    var loadingScreenGifSrc = "assets/loadscreen/rappy1.gif",
+                        loadingScreenGifSize = "320"
+                    break;
+                case 1:
+                    var loadingScreenGifSrc = "assets/loadscreen/rappy2.gif",
+                        loadingScreenGifSize = "240"
+                    break;
+                case 2:
+                    var loadingScreenGifSrc = "assets/loadscreen/rappy3.gif",
+                        loadingScreenGifSize = "240"
+                    break;
+            }
+            let loadingScreenElement = document.createElement("div")
+
+                loadingScreenGifCenter = document.createElement("center")
+
+                        loadingScreenGif = document.createElement("img")
+                            loadingScreenGif.setAttribute("src", loadingScreenGifSrc)
+                            loadingScreenGif.width = loadingScreenGifSize
+                
+                    loadingScreenStringTitle = document.createElement("div")
+                        loadingScreenStringTitle.innerHTML = customLoadScreenStringTitle
+                        loadingScreenStringTitle.className = "navbar-brand text-light text-center"
+                        loadingScreenStringTitle.style = "padding-bottom: 32px;"
+                
+                    loadingScreenString1 = document.createElement("div")
+                        loadingScreenString1.innerHTML = customLoadScreenString1
+                        loadingScreenString1.className = "text-light text-center"
+                
+                    loadingScreenString2 = document.createElement("div")
+                        loadingScreenString2.innerHTML = customLoadScreenString2
+                        loadingScreenString2.className = "text-light text-center"
+
+                    loadingScreenCopyright11 = document.createElement("div")
+                        loadingScreenCopyright11.style = "position: absolute; bottom: 25px; left: 50%;"
+
+                        loadingScreenCopyright12 = document.createElement("div")
+                            loadingScreenCopyright12.innerHTML = "Powered by <a href='https://github.com/nekowebsoftware/nekoapp' target='_blank' class='text-info'>NekoApp</a> JS framework"
+                            loadingScreenCopyright12.className = "text-light"
+                            loadingScreenCopyright12.style = "position: relative; left: -50%;"
+
+                    loadingScreenCopyright21 = document.createElement("div")
+                        loadingScreenCopyright21.style = "position: absolute; bottom: 5px; left: 50%;"
+
+                        loadingScreenCopyright22 = document.createElement("div")
+                            loadingScreenCopyright22.innerHTML = "Developed by <a href='https://github.com/kosnag' target='_blank' class='text-info'>kosnag</a>"
+                            loadingScreenCopyright22.className = "text-light"
+                            loadingScreenCopyright22.style = "position: relative; left: -50%;"
+                
+            loadingScreenElement.appendChild(loadingScreenGifCenter)
+                loadingScreenGifCenter.appendChild(loadingScreenGif)
+            loadingScreenElement.appendChild(loadingScreenStringTitle)
+            loadingScreenElement.appendChild(loadingScreenString1)
+            loadingScreenElement.appendChild(loadingScreenString2)
+            loadingScreenElement.appendChild(loadingScreenCopyright11)
+                loadingScreenCopyright11.appendChild(loadingScreenCopyright12)
+            loadingScreenElement.appendChild(loadingScreenCopyright21)
+                loadingScreenCopyright21.appendChild(loadingScreenCopyright22)
+
+            return loadingScreenElement
+        }
     }
 });
-map_app.loadScreen.spinner = nekoapp.create.element(map_app, "spinner", {
-    text: nekoapp.create.element(map_app, "div", {
-        class: "spinner-border text-primary",
-        attr: {role: "status"},
-        style: "width: 6rem; height: 6rem;"
-    }),
-    class: "d-flex justify-content-center"})
 map_app.preferences.events.onAppInit = new nekoapp.event({
 	target: map_app,
 	oninit: function() {
@@ -1888,7 +2051,7 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
 			id: "languageModal",
 			class: "modal fade",
 			attr: {
-				tabindex: "-1",
+				"tabindex": "-1",
 				"aria-labelledby": "languageModalLabel",
 				"aria-hidden": "true"
 			}

@@ -171,6 +171,7 @@
 	"mapOtherTitle": "その他",
 	"mapOtherDatapods": "メッセージパック",
 	"mapOtherAlphaReactors": "アルファリアクター",
+	"mapOtherVeteran": "老練の",
 
 
 	"mapSectionCentralAelio": "中央エアリオ",
@@ -192,7 +193,6 @@
 
 
 	"mapEmenyTitle": "エネミー",
-	"mapEmenyTypeVet": "老練の",
 	"mapEnemyTypeGig": "絶望の",
 	
 	"mapEnemyArdBanser": "アードバンサー",
@@ -210,5 +210,25 @@
 	"mapEnemyThunderBanser": "サンダバンサー",
 	"mapEnemyThunderBanshee": "サンダバンシー",
 	"mapEnemyVaras": "ヴァラス",
-	"mapEnemyWaulon": "ワウロン"
+	"mapEnemyWaulon": "ワウロン",
+
+
+    "mapTriggerTitle": "バトルディア",
+	"mapTriggerReqItem": "で起動",
+	"mapTriggerEvemyLevel": "出現エネミー",
+	
+	"mapTriggerNamePurple": "エアリオデバステーターズ",
+	"mapTriggerReqItemPurple": "Bトリガー/エアルパープル",
+	"mapTriggerDescPurple": "戦闘技術を駆使して、次々と現れるギガンティクスを撃破せよ。",
+	"mapTriggerMainPurple": "エネミーを倒す",
+
+	"mapTriggerNameYellow": "エアリオトルーパーズ",
+	"mapTriggerReqItemYellow": "Bトリガー/エアルイエロー",
+	"mapTriggerDescYellow": "戦闘技術を駆使して、全てのエネミーを撃破せよ。",
+	"mapTriggerMainYellow": "エネミーを倒す",
+
+	"mapItemGoldSword": "ゴルドプリムソード",
+	"mapItemSilverSword": "シルヴァプリムソード",
+	"mapItemGoldArmor": "ゴルドプリムアーマ",
+	"mapItemSilverArmor": "シルヴァプリムアーマ"
 }
