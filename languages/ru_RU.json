@@ -218,14 +218,14 @@
 	"mapTriggerEvemyLevel": "Уровень врагов",
 	
 	"mapTriggerNamePurple": "Опустошители Эарио",
-	"mapTriggerReqItemPurple": "БТ: Эарио (Фиолетовый)",
+	"mapTriggerReqItemPurple": "ТБ: Эарио (Фиолетовый)",
 	"mapTriggerDescPurple": "Используйте свои боевые навыки, чтобы одолеть появляющихся друг за другом гигантиксов.",
-	"mapTriggerMainPurple": "Одолейте целевых врагов",
+	"mapTriggerMainPurple": "Одолейте врагов",
 
 	"mapTriggerNameYellow": "Солдаты Эарио",
-	"mapTriggerReqItemYellow": "БТ: Эарио (Жёлтый)",
+	"mapTriggerReqItemYellow": "ТБ: Эарио (Жёлтый)",
 	"mapTriggerDescYellow": "Используйте свои боевые навыки, чтобы одолеть всех врагов.",
-	"mapTriggerMainYellow": "Одолейте целевых врагов",
+	"mapTriggerMainYellow": "Одолейте врагов",
 
 	"mapItemGoldSword": "Gold Prim Sword",
 	"mapItemSilverSword": "Silver Prim Sword",
