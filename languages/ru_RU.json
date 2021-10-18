@@ -213,22 +213,22 @@
 	"mapEnemyWaulon": "Ваурон",
 
 
-    "mapTriggerTitle": "mapTriggerTitle",
-	"mapTriggerReqItem": "mapTriggerReqItem",
-	"mapTriggerEvemyLevel": "mapTriggerEvemyLevel",
+    "mapTriggerTitle": "Батлдиа",
+	"mapTriggerReqItem": "Требуемый предмет для запуска",
+	"mapTriggerEvemyLevel": "Уровень врагов",
 	
-	"mapTriggerNamePurple": "mapTriggerNamePurple",
-	"mapTriggerReqItemPurple": "mapTriggerNamePurple",
-	"mapTriggerDescPurple": "mapTriggerDescPurple",
-	"mapTriggerMainPurple": "mapTriggerMainPurple",
+	"mapTriggerNamePurple": "Опустошители Эарио",
+	"mapTriggerReqItemPurple": "БТ: Эарио (Фиолетовый)",
+	"mapTriggerDescPurple": "Используйте свои боевые навыки, чтобы одолеть появляющихся друг за другом гигантиксов.",
+	"mapTriggerMainPurple": "Одолейте целевых врагов",
 
-	"mapTriggerNameYellow": "mapTriggerNameYellow",
-	"mapTriggerReqItemYellow": "mapTriggerNameYellow",
-	"mapTriggerDescYellow": "mapTriggerDescYellow",
-	"mapTriggerMainYellow": "mapTriggerMainYellow",
+	"mapTriggerNameYellow": "Солдаты Эарио",
+	"mapTriggerReqItemYellow": "БТ: Эарио (Жёлтый)",
+	"mapTriggerDescYellow": "Используйте свои боевые навыки, чтобы одолеть всех врагов.",
+	"mapTriggerMainYellow": "Одолейте целевых врагов",
 
-	"mapItemGoldSword": "mapItemGoldSword",
-	"mapItemSilverSword": "mapItemSilverSword",
-	"mapItemGoldArmor": "mapItemGoldArmor",
-	"mapItemSilverArmor": "mapItemSilverArmor"
+	"mapItemGoldSword": "Gold Prim Sword",
+	"mapItemSilverSword": "Silver Prim Sword",
+	"mapItemGoldArmor": "Gold Prim Armor",
+	"mapItemSilverArmor": "Silver Prim Armor"
 }
