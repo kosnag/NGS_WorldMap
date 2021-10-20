@@ -556,16 +556,16 @@ var map_app = new nekoapp({
                                     	break;
 
                                     case "itemGoldSword":
-                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldSword + " +20";
+                                        item.innerHTML = info.popup_data.rewards[i].reward_count + "x " + map_app.locale.strings.mapItemGoldSword + "+20";
                                         break;
                                     case "itemSilverSword":
-                                        item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverSword + " +20";
+                                        item.innerHTML = info.popup_data.rewards[i].reward_count + "x " + map_app.locale.strings.mapItemSilverSword + "+20";
                                         break;
                                 	case "itemGoldArmor":
-                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemGoldArmor + " +20";
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + "x " + map_app.locale.strings.mapItemGoldArmor + "+20";
                                     	break;
                                 	case "itemSilverArmor":
-                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + " " + map_app.locale.strings.mapItemSilverArmor + " +20";
+                                    	item.innerHTML = info.popup_data.rewards[i].reward_count + "x " + map_app.locale.strings.mapItemSilverArmor + "+20";
                                     	break;
 								}
 								this.children[20].appendChild(item);
@@ -673,6 +673,13 @@ var map_app = new nekoapp({
             moduleType: "pageModule",
             moduleURL: "/",
             moduleContents: function(){
+                let tooltip_menu_pos = {
+                    "landmarks": "bottom",
+                    "containers": "bottom",
+                    "minerals": "left",
+                    "food": "left",
+                    "other": "bottom",
+                }
                 var elements = {
                     ngs_map: nekoapp.create.object(map_app,map_app.preferences.elements.ngs_map,{
                         class: "container-fluid row",
@@ -762,7 +769,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "cocoonCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.landmarks,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_landmarksButton_cocoon_img: nekoapp.create.element(map_app,"img",{
@@ -783,7 +791,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "towerCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.landmarks,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_landmarksButton_tower_img: nekoapp.create.element(map_app,"img",{
@@ -804,7 +813,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "ryukerCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.landmarks,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_landmarksButton_ryuker_img: nekoapp.create.element(map_app,"img",{
@@ -828,7 +838,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "magCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.landmarks,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_landmarksButton_mag_img: nekoapp.create.element(map_app,"img",{
@@ -849,7 +860,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "urgentCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.landmarks,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_landmarksButton_urgent_img: nekoapp.create.element(map_app,"img",{
@@ -870,7 +882,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "triggerCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.landmarks,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_landmarksButton_trigger_img: nekoapp.create.element(map_app,"img",{
@@ -902,7 +915,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "whiteBoxCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.containers,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_boxesButton_whiteBox_img: nekoapp.create.element(map_app,"img",{
@@ -923,7 +937,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "redBoxCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.containers,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_boxesButton_redBox_img: nekoapp.create.element(map_app,"img",{
@@ -955,7 +970,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "monotiteCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.minerals,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_mineralsButton_monotite_img: nekoapp.create.element(map_app,"img",{
@@ -976,7 +992,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "dualomiteCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.minerals,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_mineralsButton_dualomite_img: nekoapp.create.element(map_app,"img",{
@@ -997,7 +1014,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "triniteCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.minerals,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_mineralsButton_trinite_img: nekoapp.create.element(map_app,"img",{
@@ -1018,7 +1036,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "phChunkCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.minerals,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_mineralsButton_phChunk_img: nekoapp.create.element(map_app,"img",{
@@ -1039,7 +1058,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "phQuartzCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.minerals,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_mineralsButton_phQuartz_img: nekoapp.create.element(map_app,"img",{
@@ -1070,7 +1090,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "appleCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom",
+                                                "data-bs-placement": tooltip_menu_pos.food,
                                                 "data-bs-html": "true"
                                             }
                                         }),
@@ -1092,7 +1112,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "bananaCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom",
+                                                "data-bs-placement": tooltip_menu_pos.food,
                                                 "data-bs-html": "true"
                                             }
                                         }),
@@ -1114,7 +1134,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "clamCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_clam_img: nekoapp.create.element(map_app,"img",{
@@ -1135,7 +1156,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "crabCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_crab_img: nekoapp.create.element(map_app,"img",{
@@ -1159,7 +1181,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "herbCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_herb_img: nekoapp.create.element(map_app,"img",{
@@ -1180,7 +1203,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "lobsterCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_lobster_img: nekoapp.create.element(map_app,"img",{
@@ -1201,7 +1225,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "mushroomCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_mushroom_img: nekoapp.create.element(map_app,"img",{
@@ -1222,7 +1247,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "peachCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_peach_img: nekoapp.create.element(map_app,"img",{
@@ -1246,7 +1272,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "pearCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_pear_img: nekoapp.create.element(map_app,"img",{
@@ -1267,7 +1294,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "tomatoCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_tomato_img: nekoapp.create.element(map_app,"img",{
@@ -1288,7 +1316,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "shellCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_shell_img: nekoapp.create.element(map_app,"img",{
@@ -1309,7 +1338,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "turnipCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom"
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_foodButton_turnip_img: nekoapp.create.element(map_app,"img",{
@@ -1340,7 +1370,7 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "datapodCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom",
+                                                "data-bs-placement": tooltip_menu_pos.other,
                                                 "data-bs-html": "true"
                                             }
                                         }),
@@ -1362,8 +1392,8 @@ var map_app = new nekoapp({
                                             attr: {
                                                 "for": "veteranCheckbox",
                                                 "data-bs-toogle": "tooltip",
-                                                "data-bs-placement": "bottom",
-                                                 "data-bs-html": "true"
+                                                "data-bs-placement": tooltip_menu_pos.other,
+                                                "data-bs-html": "true"
                                             }
                                         }),
                                             menu_otherButton_veteran_img: nekoapp.create.element(map_app,"img",{
@@ -1810,24 +1840,24 @@ var map_app = new nekoapp({
                 this.moduleContents.menu_boxesButton_redBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapRedBoxTitle)
                 //this.moduleContents.menu_boxesButton_goldBox_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapGoldBoxTitle)
                 
-                this.moduleContents.menu_mineralsButton_monotite_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapMonotiteTitle)
-                this.moduleContents.menu_mineralsButton_dualomite_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapDualomiteTitle)
-                this.moduleContents.menu_mineralsButton_trinite_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapTriniteTitle)
-                this.moduleContents.menu_mineralsButton_phChunk_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapPhChunkTitle)
-                this.moduleContents.menu_mineralsButton_phQuartz_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapPhQuartzTitle)
+                this.moduleContents.menu_mineralsButton_monotite_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapMonotiteTitle + "</div><div>" + map_app.locale.strings.mapMonotiteDesc + "</div>")
+                this.moduleContents.menu_mineralsButton_dualomite_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapDualomiteTitle + "</div><div>" + map_app.locale.strings.mapDualomiteDesc + "</div>")
+                this.moduleContents.menu_mineralsButton_trinite_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapTriniteTitle + "</div><div>" + map_app.locale.strings.mapTriniteDesc + "</div>")
+                this.moduleContents.menu_mineralsButton_phChunk_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapPhChunkTitle + "</div><div>" + map_app.locale.strings.mapPhChunkDesc + "</div>")
+                this.moduleContents.menu_mineralsButton_phQuartz_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapPhQuartzTitle + "</div><div>" + map_app.locale.strings.mapPhQuartzDesc + "</div>")
 
-                this.moduleContents.menu_foodButton_apple_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapAppleTitle)
-                this.moduleContents.menu_foodButton_banana_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapBananaTitle)
-                this.moduleContents.menu_foodButton_clam_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapClamTitle)
-                this.moduleContents.menu_foodButton_crab_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapCrabTitle)
-                this.moduleContents.menu_foodButton_herb_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapHerbTitle)
-                this.moduleContents.menu_foodButton_lobster_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapLobsterTitle)
-                this.moduleContents.menu_foodButton_mushroom_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapMushroomTitle)
-                this.moduleContents.menu_foodButton_peach_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapPeachTitle)
-                this.moduleContents.menu_foodButton_pear_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapPearTitle)
-                this.moduleContents.menu_foodButton_tomato_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapTomatoTitle)
-                this.moduleContents.menu_foodButton_shell_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapShellTitle)
-                this.moduleContents.menu_foodButton_turnip_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapTurnipTitle)
+                this.moduleContents.menu_foodButton_apple_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapAppleTitle + "</div><div>" + map_app.locale.strings.mapAppleDesc + "</div>")
+                this.moduleContents.menu_foodButton_banana_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapBananaTitle + "</div><div>" + map_app.locale.strings.mapBananaDesc + "</div>")
+                this.moduleContents.menu_foodButton_clam_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapClamTitle + "</div><div>" + map_app.locale.strings.mapClamDesc + "</div>")
+                this.moduleContents.menu_foodButton_crab_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapCrabTitle + "</div><div>" + map_app.locale.strings.mapCrabDesc + "</div>")
+                this.moduleContents.menu_foodButton_herb_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapHerbTitle + "</div><div>" + map_app.locale.strings.mapHerbDesc + "</div>")
+                this.moduleContents.menu_foodButton_lobster_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapLobsterTitle + "</div><div>" + map_app.locale.strings.mapLobsterDesc + "</div>")
+                this.moduleContents.menu_foodButton_mushroom_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapMushroomTitle + "</div><div>" + map_app.locale.strings.mapMushroomDesc + "</div>")
+                this.moduleContents.menu_foodButton_peach_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapPeachTitle + "</div><div>" + map_app.locale.strings.mapPeachDesc + "</div>")
+                this.moduleContents.menu_foodButton_pear_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapPearTitle + "</div><div>" + map_app.locale.strings.mapPearDesc + "</div>")
+                this.moduleContents.menu_foodButton_tomato_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapTomatoTitle + "</div><div>" + map_app.locale.strings.mapTomatoDesc + "</div>")
+                this.moduleContents.menu_foodButton_shell_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapShellTitle + "</div><div>" + map_app.locale.strings.mapShellDesc + "</div>")
+                this.moduleContents.menu_foodButton_turnip_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapTurnipTitle + "</div><div>" + map_app.locale.strings.mapTurnipDesc + "</div>")
                 
                 this.moduleContents.menu_otherButton_datapod_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherDatapods)
                 this.moduleContents.menu_otherButton_veteran_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherVeteran)
