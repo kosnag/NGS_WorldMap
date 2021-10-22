@@ -164,7 +164,7 @@ var map_app = new nekoapp({
                                     modal_content_title.innerHTML = "<h5 class='modal-title text-center' id='languageModalLabel'>Choose a language</h5>";
                                 
                                 let modal_content_body = document.createElement("div")
-                                    modal_content_title.className = "modal-body";
+                                    modal_content_body.className = "modal-body";
                                     
                                     let modal_content_body_buttons = document.createElement("div")
                                         modal_content_body_buttons.className = "d-grid gap-2 mb-3 mx-5"
@@ -228,6 +228,57 @@ var map_app = new nekoapp({
                                         modal_content_body_buttons.appendChild(modal_content_body_button4)
                                         modal_content_body_buttons.appendChild(modal_content_body_button5)
                                         modal_content_body_buttons.appendChild(modal_content_body_button6)
+
+                            return[modal_modelDialog]
+                    }
+                ),
+
+            }
+        },
+        donate_menu: {
+            tag: "donate-menu",
+            prototype: {
+                template: nekoapp.create.template(
+                    function(){
+                        let modal_modelDialog = document.createElement("div")
+                            modal_modelDialog.className = "modal-dialog modal-dialog-centered";
+
+                            let modal_modalContent = document.createElement("div")
+                                modal_modalContent.className = "modal-content"
+                                
+                                let modal_content_body = document.createElement("div")
+                                    modal_content_body.className = "modal-body";
+                                    
+                                    let modal_content_body_iframe = document.createElement("div")
+                                        modal_content_body_iframe.className = "m-3"
+
+                                        let modal_content_body_donate = document.createElement("iframe")
+                                            modal_content_body_donate.setAttribute("id","kofiframe")
+                                            modal_content_body_donate.setAttribute("src","https://ko-fi.com/kosnag/?hidefeed=true&widget=true&embed=true&preview=true");
+                                            modal_content_body_donate.setAttribute("height","712");
+                                            modal_content_body_donate.style = "display:block;width:100%;";
+
+                                        let modal_content_body_donate_ru = document.createElement("iframe")
+                                            modal_content_body_donate_ru.setAttribute("src","https://widget.qiwi.com/widgets/middle-widget-300x300?publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPyr9iWQjzW1n3wciwKE9cC3NQi2PG7BV8CNzW7MSFyMJjkBnGmJVSZMcEDYZPWxVTWC8wkwzAcWWtRjU2LXRtUJwA9XUjp46ZY3BqphuKx&noCache=true");
+                                            modal_content_body_donate_ru.setAttribute("width","300");
+                                            modal_content_body_donate_ru.setAttribute("height","300");
+                                            modal_content_body_donate_ru.setAttribute("allowTransparency","true");
+                                            modal_content_body_donate_ru.setAttribute("scrolling","no");
+                                            modal_content_body_donate_ru.setAttribute("frameBorder","0");
+                                            modal_content_body_donate_ru.style = "display:block;margin: 0 auto;";
+                            
+                            modal_modelDialog.appendChild(modal_modalContent)
+                                modal_modalContent.appendChild(modal_content_body)
+                                    modal_content_body.appendChild(modal_content_body_iframe)
+                                    if (localStorage.getItem("nekoapp.locale") && JSON.parse(localStorage.getItem("nekoapp.locale")).language){
+                                        if (JSON.parse(localStorage.getItem("nekoapp.locale")).language == "ru-RU"){
+                                            modal_content_body_iframe.appendChild(modal_content_body_donate_ru)
+                                        }else{
+                                            modal_content_body_iframe.appendChild(modal_content_body_donate)
+                                        }
+                                    }
+                                        
+                                        
 
                             return[modal_modelDialog]
                     }
@@ -1870,7 +1921,8 @@ var map_app = new nekoapp({
             headerLayout: {
                 headerLogo: {},
                 headerNavigation: {
-                    items: [{
+                    items: [
+                        {
                             label: "localeString@contribute_button",
                             hyperlink: {
                                 URL: "//discord.gg/AvgmpuX",
@@ -1889,11 +1941,14 @@ var map_app = new nekoapp({
                         {
                             label: "localeString@donate_button",
                             hyperlink: {
-                                URL: "//ko-fi.com/kosnag",
-                                useDefaultNavigation: true,
-                                target: "_blank"
+                                URL: "#",
+                                event: function (donateMenu){  
+                                    donateMenu.setAttribute("data-bs-toggle","modal"),
+                                    donateMenu.setAttribute("data-bs-target","#donateModal")
+                                    donateMenu.click()
                                 }
-                            },
+                            }
+                        },
                         {
                             label: "localeString@laguages_button",
                             hyperlink: {
@@ -1905,7 +1960,8 @@ var map_app = new nekoapp({
                                         openLangMenu.click()
                                     }
                                 }
-                        }}
+                            }
+                        }
                     ]
                 }
             }
@@ -2002,7 +2058,7 @@ var map_app = new nekoapp({
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
                         break;
-                    }
+                }
             }
             switch(Math.floor(Math.random() * 3)){
                 case 0:
@@ -2087,6 +2143,18 @@ map_app.preferences.events.onAppInit = new nekoapp.event({
 			}
 		});
 		map_app.app.appendChild(map_app.languageMenu);
+		
+		map_app.donateMenu = nekoapp.create.object(map_app,map_app.preferences.elements.donate_menu,{
+			id: "donateModal",
+			class: "modal fade",
+			attr: {
+				"tabindex": "-1",
+				"aria-labelledby": "donateModalLabel",
+				"aria-hidden": "true"
+			}
+		});
+		map_app.app.appendChild(map_app.donateMenu);
+
         map_app.app.addEventListener("contextmenu",function(e){e.preventDefault();});
 	}
 });
