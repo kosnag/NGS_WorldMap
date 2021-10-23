@@ -3,7 +3,7 @@
 
     "contribute_button": "<i class='fab fa-discord'></i> Помочь",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "donate_button": "<i class='fab fa-kofi'></i> Поддержать",
+    "donate_button": "<i class='fab fa-qiwi'></i> Поддержать",
     "laguages_button": "<i class='fas fa-language'></i> Язык",
 	
 	"mapRightButtonTip": "Для того чтобы отметить красные контейреры или сообщения найденными, нажмите по ним правой кнопкой мышки.",
