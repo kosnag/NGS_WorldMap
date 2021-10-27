@@ -1452,6 +1452,28 @@ var map_app = new nekoapp({
                                                     "src": "assets/markers/other/vet.png"
                                                 }
                                             }),
+                                        menu_otherButton_seasonGathering_1: nekoapp.create.element(map_app,"input",{
+                                            class: "btn-check",
+                                            id: "seasonGatheringCheckbox",
+                                            attr: {
+                                                "type": "checkbox",
+                                                "autocomplete": "off"
+                                            }
+                                        }),
+                                        menu_otherButton_seasonGathering_2: nekoapp.create.element(map_app,"label",{
+                                            class: "btn btn-outline-custom-blue mx-1 adaptive-size-img",
+                                            attr: {
+                                                "for": "seasonGatheringCheckbox",
+                                                "data-bs-toogle": "tooltip",
+                                                "data-bs-placement": tooltip_menu_pos.food,
+                                                "data-bs-html": "true"
+                                            }
+                                        }),
+                                            menu_otherButton_seasonGathering_img: nekoapp.create.element(map_app,"img",{
+                                                attr: {
+                                                    "src": "assets/markers/other/seasonGathering.png"
+                                                }
+                                            }),
 
                 };
                         elements.ngs_map.appendChild(elements.map_menu)
@@ -1799,6 +1821,14 @@ var map_app = new nekoapp({
                         map.user_settings.other.datapod = true;
                     map.save_settings();
                 });
+                elements.menu_otherButton_seasonGathering_1.addEventListener("change",function(){
+                    map.toogle_markers(map.map_markers.other.seasonGathering);
+                    if(map.user_settings.other.seasonGathering)
+                        map.user_settings.other.seasonGathering = false;
+                    else
+                        map.user_settings.other.seasonGathering = true;
+                    map.save_settings();
+                });
 				
                 return [elements, [elements.ngs_map]];
             },
@@ -1840,6 +1870,7 @@ var map_app = new nekoapp({
 
                 new bootstrap.Tooltip(this.moduleContents.menu_otherButton_datapod_2)
                 new bootstrap.Tooltip(this.moduleContents.menu_otherButton_veteran_2)
+                new bootstrap.Tooltip(this.moduleContents.menu_otherButton_seasonGathering_2)
 
 				// INITIALIZE MAP AND MAP MENU
 				map.init(function(){
@@ -1874,6 +1905,7 @@ var map_app = new nekoapp({
                         
                         if(map.user_settings.other.veteran)map_app.modules.map_module.moduleContents.menu_otherButton_veteran_1.setAttribute("checked","");
                         if(map.user_settings.other.datapod)map_app.modules.map_module.moduleContents.menu_otherButton_datapod_1.setAttribute("checked","");
+                        if(map.user_settings.other.seasonGathering)map_app.modules.map_module.moduleContents.menu_otherButton_seasonGathering_1.setAttribute("checked","");
                     });
             },
             onLocaleChange: function(){
@@ -1912,6 +1944,7 @@ var map_app = new nekoapp({
                 
                 this.moduleContents.menu_otherButton_datapod_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherDatapods)
                 this.moduleContents.menu_otherButton_veteran_2.setAttribute("data-bs-original-title",map_app.locale.strings.mapOtherVeteran)
+                this.moduleContents.menu_otherButton_seasonGathering_2.setAttribute("data-bs-original-title","<div>" + map_app.locale.strings.mapSeasonFoodTitle + "</div><hr><div>" + map_app.locale.strings.mapSeasonFoodDesc + "</div>")
                 
 				map.update_locale();
             }
