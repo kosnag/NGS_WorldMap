@@ -46,6 +46,9 @@
 	"mapTurnipTitle": "갓츠 에아루카브라나",
 		"mapTurnipDesc": "데미지 내성 / HP 회복량 증가",
 
+	"mapSeasonFoodTitle": "mapSeasonFoodTitle",
+		"mapSeasonFoodDesc": "mapSeasonFoodDesc",
+
     "mapBoxesTitle" : "컨테이너",
 	"mapRedBoxTitle": "아이템 컨테이너 [적]",
 	"mapWhiteBoxTitle": "아이템 컨테이너 [녹]",

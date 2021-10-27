@@ -46,6 +46,9 @@
 	"mapTurnipTitle": "ガッツ・エアルカブラナ",
 		"mapTurnipDesc": "ダメージ耐性 / HP回復量増加",
 
+	"mapSeasonFoodTitle": "mapSeasonFoodTitle",
+		"mapSeasonFoodDesc": "mapSeasonFoodDesc",
+
     "mapBoxesTitle" : "コンテナ",
 	"mapRedBoxTitle": "アイテムコンテナ[赤]",
 	"mapWhiteBoxTitle": "アイテムコンテナ[緑]",
