@@ -2006,7 +2006,7 @@ var map_app = new nekoapp({
         "ru-RU": {URL: "languages/ru_RU.json"},
         "ko-KR": {URL: "languages/ko_KR.json"},
         "ja-JP": {URL: "languages/ja_JP.json"},
-        "pt-BR": {URL: "languages/pt_BR.json"}
+        "pt-BR": {URL: "languages/en_US.json"}
     },
     loadingScreen: {
         customLoadScreen: function(){
@@ -2014,22 +2014,27 @@ var map_app = new nekoapp({
                 "customLoadScreenStringTitleEn": "PSO2NGS Interactive Map",
                 "customLoadScreenString1En": "Map is not designed for mobile devices",
                 "customLoadScreenString2En": "If you see that screen more than 3 seconds - please reload a page",
+                "customLoadScreenReloadEn": "Reload page",
                 
                 "customLoadScreenStringTitleRu": "Интерактивная Карта PSO2NGS",
                 "customLoadScreenString1Ru": "На мобильных устройства карта будет отображаться некорректно",
                 "customLoadScreenString2Ru": "Если вы видите данный экран более 3 секунд - перезагрузите страницу",
+                "customLoadScreenReloadRu": "Перезагрузить страницу",
 
                 "customLoadScreenStringTitleKr": "PSO2NGS 인터렉티브 맵",
                 "customLoadScreenString1Kr": "지도는 모바일 장치 용으로 설계되지 않았습니다",
                 "customLoadScreenString2Kr": "해당 화면이 3 초 이상 표시되는 경우-페이지를 다시로드하십시오",
+                "customLoadScreenReloadKr": "페이지 다시로드",
 
                 "customLoadScreenStringTitleJp": "PSO2NGS インタラクティブ マップ",
                 "customLoadScreenString1Jp": "このマップはモバイルデバイスでは実際のものではありません",
                 "customLoadScreenString2Jp": "この画面が3秒以上表示される場合は、ページをリロードしてください ",
+                "customLoadScreenReloadJp": "ページの再読み込み",
 
                 "customLoadScreenStringTitlePt": "Mapa Interactivo PSO2NGS",
                 "customLoadScreenString1Pt": "Os mapas não são projetados para dispositivos móveis",
-                "customLoadScreenString2Pt": "Se você vir essa tela mais de 3 segundos - por favor, recarregue uma página"
+                "customLoadScreenString2Pt": "Se você vir essa tela mais de 3 segundos - por favor, recarregue uma página",
+                "customLoadScreenReloadPt": "Recarregar página"
             }
             if(localStorage.getItem("nekoapp.locale") && JSON.parse(localStorage.getItem("nekoapp.locale")).language){
                 switch(JSON.parse(localStorage.getItem("nekoapp.locale")).language){
@@ -2037,31 +2042,37 @@ var map_app = new nekoapp({
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadEn
                         break;
                     case "en-fan":
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadEn
                         break;
                     case "ru-RU":
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleRu
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Ru
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Ru
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadRu
                         break;
                     case "ko-KR":
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleKr
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Kr
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Kr
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadKr
                         break;
                     case "ja-JP":
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleJp
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Jp
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Jp
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadJp
                         break;
                     case "pt-BR":
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitlePt
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Pt
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Pt
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadPt
                         break;
                 }
             }else{
@@ -2070,26 +2081,31 @@ var map_app = new nekoapp({
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleRu
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Ru
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Ru
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadRu
                         break;
                     case "ko-KR":
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleKr
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Kr
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Kr
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadKr
                         break;
                     case "ja-JP":
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleJp
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Jp
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Jp
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadJp
                         break;
                     case "pt-BR":
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitlePt
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1Pt
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2Pt
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadPt
                         break;
                     default:
                         var customLoadScreenStringTitle = localeLoadStrings.customLoadScreenStringTitleEn
                         var customLoadScreenString1 = localeLoadStrings.customLoadScreenString1En
                         var customLoadScreenString2 = localeLoadStrings.customLoadScreenString2En
+                        var customLoadScreenReload = localeLoadStrings.customLoadScreenReloadEn
                         break;
                 }
             }
@@ -2127,6 +2143,13 @@ var map_app = new nekoapp({
                     loadingScreenString2 = document.createElement("div")
                         loadingScreenString2.innerHTML = customLoadScreenString2
                         loadingScreenString2.className = "text-light text-center"
+                
+                    loadingScreenReload = document.createElement("button")
+                        loadingScreenReload.innerHTML = "<i style='margin-right: 10px; margin-top: 5px;' class='fas fa-sync'></i>" + customLoadScreenReload
+                        loadingScreenReload.setAttribute("onclick", "window.location.reload();")
+                        loadingScreenReload.setAttribute("type", "button;")
+                        loadingScreenReload.className = "btn btn-outline-info text-light text-center btn-lg d-flex justify-content-center"
+                        loadingScreenReload.style = "margin-top: 35px;"
 
                     loadingScreenCopyright11 = document.createElement("div")
                         loadingScreenCopyright11.style = "position: absolute; bottom: 25px; left: 50%;"
@@ -2149,6 +2172,8 @@ var map_app = new nekoapp({
             loadingScreenElement.appendChild(loadingScreenStringTitle)
             loadingScreenElement.appendChild(loadingScreenString1)
             loadingScreenElement.appendChild(loadingScreenString2)
+            loadingScreenElement.appendChild(loadingScreenReload)
+
             loadingScreenElement.appendChild(loadingScreenCopyright11)
                 loadingScreenCopyright11.appendChild(loadingScreenCopyright12)
             loadingScreenElement.appendChild(loadingScreenCopyright21)
