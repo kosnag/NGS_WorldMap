@@ -46,6 +46,9 @@
 	"mapTurnipTitle": "Robust Aelio Turnip",
 		"mapTurnipDesc": "mapTurnipDesc",
 
+	"mapSeasonFoodTitle": "mapSeasonFoodTitle",
+		"mapSeasonFoodDesc": "mapSeasonFoodDesc",
+
     "mapBoxesTitle" : "Recipientes",
 	"mapRedBoxTitle": "Recipiente de Item [Vermelho]",
 	"mapWhiteBoxTitle": "Recipiente de Item [Branco]",
