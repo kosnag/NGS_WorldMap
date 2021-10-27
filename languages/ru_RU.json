@@ -46,6 +46,9 @@
 	"mapTurnipTitle": "Гатцу кабурана Эарио",
 		"mapTurnipDesc": "Увеличивает сопротивление урону / Увеличивает восстановление HP",
 
+	"mapSeasonFoodTitle": "mapSeasonFoodTitle",
+		"mapSeasonFoodDesc": "Увеличивает сопротивление урону / Увеличивает урон по слабым точкам",
+
     "mapBoxesTitle" : "Контейнеры",
 	"mapRedBoxTitle": "Контейнер с предметами [Красный]",
 	"mapWhiteBoxTitle": "Контейнер с предметами [Зелёный]",
