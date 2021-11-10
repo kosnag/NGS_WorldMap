@@ -2011,30 +2011,31 @@ var map_app = new nekoapp({
     },
     loadingScreen: {
         customLoadScreen: function(){
+            let secondsLoadScreen = "3"
             let localeLoadStrings = {
                 "customLoadScreenStringTitleEn": "PSO2NGS Interactive Map",
                 "customLoadScreenString1En": "Map is not designed for mobile devices",
-                "customLoadScreenString2En": "If you see that screen more than 3 seconds - please reload a page",
+                "customLoadScreenString2En": "If you see that screen more than " + secondsLoadScreen + " seconds - please reload a page",
                 "customLoadScreenReloadEn": "Reload page",
                 
                 "customLoadScreenStringTitleRu": "Интерактивная Карта PSO2NGS",
                 "customLoadScreenString1Ru": "На мобильных устройства карта будет отображаться некорректно",
-                "customLoadScreenString2Ru": "Если вы видите данный экран более 3 секунд - перезагрузите страницу",
+                "customLoadScreenString2Ru": "Если вы видите данный экран более " + secondsLoadScreen + " секунд - перезагрузите страницу",
                 "customLoadScreenReloadRu": "Перезагрузить страницу",
 
                 "customLoadScreenStringTitleKr": "PSO2NGS 인터렉티브 맵",
                 "customLoadScreenString1Kr": "지도는 모바일 장치 용으로 설계되지 않았습니다",
-                "customLoadScreenString2Kr": "해당 화면이 3 초 이상 표시되는 경우-페이지를 다시로드하십시오",
+                "customLoadScreenString2Kr": "해당 화면이 " + secondsLoadScreen + " 초 이상 표시되는 경우-페이지를 다시로드하십시오",
                 "customLoadScreenReloadKr": "페이지 다시로드",
 
                 "customLoadScreenStringTitleJp": "PSO2NGS インタラクティブ マップ",
                 "customLoadScreenString1Jp": "このマップはモバイルデバイスでは実際のものではありません",
-                "customLoadScreenString2Jp": "この画面が3秒以上表示される場合は、ページをリロードしてください ",
+                "customLoadScreenString2Jp": "この画面が" + secondsLoadScreen + "秒以上表示される場合は、ページをリロードしてください ",
                 "customLoadScreenReloadJp": "ページの再読み込み",
 
                 "customLoadScreenStringTitlePt": "Mapa Interactivo PSO2NGS",
                 "customLoadScreenString1Pt": "Os mapas não são projetados para dispositivos móveis",
-                "customLoadScreenString2Pt": "Se você vir essa tela mais de 3 segundos - por favor, recarregue uma página",
+                "customLoadScreenString2Pt": "Se você vir essa tela mais de " + secondsLoadScreen + " segundos - por favor, recarregue uma página",
                 "customLoadScreenReloadPt": "Recarregar página"
             }
             if(localStorage.getItem("nekoapp.locale") && JSON.parse(localStorage.getItem("nekoapp.locale")).language){
@@ -2179,7 +2180,7 @@ var map_app = new nekoapp({
             loadingScreenElement.appendChild(loadingScreenString2)
             loadingScreenElement.appendChild(loadingScreenReloadDiv)
                 loadingScreenReloadDiv.appendChild(loadingScreenReloadCenter)
-                loadingScreenReloadCenter.appendChild(loadingScreenReloadButton)
+                    loadingScreenReloadCenter.appendChild(loadingScreenReloadButton)
 
             loadingScreenElement.appendChild(loadingScreenCopyright11)
                 loadingScreenCopyright11.appendChild(loadingScreenCopyright12)
