@@ -113,9 +113,9 @@
 
 			],
 			"urgent": [
-				{"coordinates":[5984,1772],"id":"uq-1","popup":true,"tooltip":true},
-				{"coordinates":[5201,3144],"id":"uq-2","popup":true,"tooltip":true},
-				{"coordinates":[4299,4983],"id":"uq-3","popup":true,"tooltip":true}
+				{"coordinates":[5984,1772],"id":"uq-pedas","popup":true,"tooltip":true},
+				{"coordinates":[5201,3144],"id":"uq-nexvera","popup":true,"tooltip":true},
+				{"coordinates":[4299,4983],"id":"uq-mining1","popup":true,"tooltip":true}
 			],
 			"ryuker": [
 				{"coordinates":[1547,4074],"id":"r-1","tooltip":true},
@@ -1272,9 +1272,9 @@
 				"t-3": "mapTowerName3"
 			},
 			"urgent": {
-				"uq-1": "mapUrgentName1",
-				"uq-2": "mapUrgentName2",
-				"uq-3": "mapUrgentName3"
+				"uq-pedas": "mapUrgentName1",
+				"uq-nexvera": "mapUrgentName2",
+				"uq-mining1": "mapUrgentName3"
 			},
 			"ryuker": {
 				"r-1": "mapRyukerName1",
@@ -1487,7 +1487,7 @@
 				}
 			},
 			"urgent": {
-				"uq-1": {
+				"uq-pedas": {
 					"max_players": 8,
 					"required_bp": 1184,
 					"main_mission": "mapUrgentMain1",
@@ -1503,7 +1503,7 @@
 						}
 					]
 				},
-				"uq-2": {
+				"uq-nexvera": {
 					"max_players": 8,
 					"required_bp": 1184,
 					"main_mission": "mapUrgentMain2",
@@ -1511,16 +1511,24 @@
 						{
 							"reward_type": "meseta",
 							"reward_count": 5000
+						},
+						{
+							"reward_type": "seasonPoints",
+							"reward_count": 1000
 						}
 					],
 					"rewards": [
 						{
 							"reward_type": "meseta",
 							"reward_count": 10000
+						},
+						{
+							"reward_type": "seasonPoints",
+							"reward_count": 1000
 						}
 					]
 				},
-				"uq-3": {
+				"uq-mining1": {
 					"max_players": 8,
 					"required_bp": 1243,
 					"main_mission": "mapUrgentMain3",
@@ -1534,6 +1542,10 @@
 						{
 							"reward_type": "meseta",
 							"reward_count": 10000
+						},
+						{
+							"reward_type": "seasonPoints",
+							"reward_count": 1500
 						}
 					]
 				}
@@ -1582,21 +1594,21 @@
 					"type": "gathering",
 					"recomended_bp": 800,
 					"recomended_lv": 1,
-					"gigantix": "nogleth"
+					"gigantix": "eldiSkythe"
 				},
 				"southAelio": {
 					"image": "assets/sections/southAelio.png",
 					"type": "gathering",
 					"recomended_bp": 835,
 					"recomended_lv": 3,
-					"gigantix": "nexAelio"
+					"gigantix": "ardBanser"
 				},
 				"northAelio": {
 					"image": "assets/sections/northAelio.png",
 					"type": "gathering",
 					"recomended_bp": 1045,
 					"recomended_lv": 12,
-					"gigantix": "daitylAxe"
+					"gigantix": "nexAelio"
 				},
 				"westAelio": {
 					"image": "assets/sections/westAelio.png",
