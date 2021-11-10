@@ -2146,13 +2146,15 @@ var map_app = new nekoapp({
                         loadingScreenString2.className = "text-light text-center"
 
                     loadingScreenReloadDiv = document.createElement("div")
-                        loadingScreenReloadDiv.className = "text-center"                       
+                        loadingScreenReloadDiv.className = "mt-5"
+
+                        loadingScreenReloadCenter = document.createElement("center")
                 
-                        loadingScreenReloadButton = document.createElement("button")
-                            loadingScreenReloadButton.innerHTML = "<i style='margin-right: 10px; margin-top: 5px;' class='fas fa-sync'></i>" + customLoadScreenReload
-                            loadingScreenReloadButton.setAttribute("onclick", "window.location.reload();")
-                            loadingScreenReloadButton.setAttribute("type", "button;")
-                            loadingScreenReloadButton.className = "btn btn-outline-info text-light text-center btn-lg d-flex justify-content-center"
+                            loadingScreenReloadButton = document.createElement("button")
+                                loadingScreenReloadButton.innerHTML = "<i style='margin-right: 10px; margin-top: 5px;' class='fas fa-sync'></i>" + customLoadScreenReload
+                                loadingScreenReloadButton.setAttribute("onclick", "window.location.reload();")
+                                loadingScreenReloadButton.setAttribute("type", "button;")
+                                loadingScreenReloadButton.className = "btn btn-outline-info text-light btn-lg"
 
                     loadingScreenCopyright11 = document.createElement("div")
                         loadingScreenCopyright11.style = "position: absolute; bottom: 25px; left: 50%;"
@@ -2176,7 +2178,8 @@ var map_app = new nekoapp({
             loadingScreenElement.appendChild(loadingScreenString1)
             loadingScreenElement.appendChild(loadingScreenString2)
             loadingScreenElement.appendChild(loadingScreenReloadDiv)
-                loadingScreenReloadDiv.appendChild(loadingScreenReloadButton)
+                loadingScreenReloadDiv.appendChild(loadingScreenReloadCenter)
+                loadingScreenReloadCenter.appendChild(loadingScreenReloadButton)
 
             loadingScreenElement.appendChild(loadingScreenCopyright11)
                 loadingScreenCopyright11.appendChild(loadingScreenCopyright12)
