@@ -3,7 +3,7 @@
 
     "contribute_button": "<i class='fab fa-discord'></i> 貢献する",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "donate_button": "<i class='fab fa-kofi'></i> 変更ログ",
+    "donate_button": "<i class='fas fa-coins'></i> 変更ログ",
     "laguages_button": "<i class='fas fa-language'></i> 寄付",
 	
 	"mapRightButtonTip": "アイテムコンテナ[赤]とメッセージパックのチェックを確認するには、それらを右クリックしてください。",

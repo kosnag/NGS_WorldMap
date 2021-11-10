@@ -3,7 +3,7 @@
 
     "contribute_button": "<i class='fab fa-discord'></i> Contribuir",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "donate_button": "<i class='fab fa-kofi'></i> Doar",
+    "donate_button": "<i class='fas fa-coins'></i> Doar",
     "laguages_button": "<i class='fas fa-language'></i> Idioma",
 	
 	"mapRightButtonTip": "Para marcar/desmarcar os recipientes de itens e datapods, pressione o botão direito do mouse sobre eles.",

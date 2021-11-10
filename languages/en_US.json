@@ -3,7 +3,7 @@
 
     "contribute_button": "<i class='fab fa-discord'></i> Contribute",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "donate_button": "<i class='fab fa-kofi'></i> Donate",
+    "donate_button": "<i class='fas fa-coins'></i> Donate",
     "laguages_button": "<i class='fas fa-language'></i> Language",
 	
 	"mapRightButtonTip": "For check/uncheck red containers and datapods press right mouse button on them.",

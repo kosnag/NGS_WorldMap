@@ -3,7 +3,7 @@
 
     "contribute_button": "<i class='fab fa-discord'></i> 기증하기",
     "github_button": "<i class='fab fa-github'></i> Github",
-    "donate_button": "<i class='fab fa-kofi'></i> 변경사항",
+    "donate_button": "<i class='fas fa-coins'></i> 변경사항",
     "laguages_button": "<i class='fas fa-language'></i> 기부하다",
 	
 	"mapRightButtonTip": "아이템 컨테이너 [적]과 메시지 팩을 우클릭으로 표시/비표시를 선택해 주세요.",
