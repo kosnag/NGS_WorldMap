@@ -272,11 +272,12 @@ var map_app = new nekoapp({
                                     modal_content_body.appendChild(modal_content_body_iframe)
                                     if (localStorage.getItem("nekoapp.locale") && JSON.parse(localStorage.getItem("nekoapp.locale")).language){
                                         if (JSON.parse(localStorage.getItem("nekoapp.locale")).language == "ru-RU"){
-                                            modal_content_body_iframe.appendChild(modal_content_body_donate_ru)
+                                            var donateMenuByLanguage = modal_content_body_donate_ru
                                         }else{
-                                            modal_content_body_iframe.appendChild(modal_content_body_donate)
+                                            var donateMenuByLanguage = modal_content_body_donate
                                         }
                                     }
+                                    modal_content_body_iframe.appendChild(donateMenuByLanguage)
                                         
                                         
 
@@ -2006,7 +2007,7 @@ var map_app = new nekoapp({
         "ru-RU": {URL: "languages/ru_RU.json"},
         "ko-KR": {URL: "languages/ko_KR.json"},
         "ja-JP": {URL: "languages/ja_JP.json"},
-        "pt-BR": {URL: "languages/en_US.json"}
+        "pt-BR": {URL: "languages/pt_BR.json"}
     },
     loadingScreen: {
         customLoadScreen: function(){
@@ -2143,13 +2144,15 @@ var map_app = new nekoapp({
                     loadingScreenString2 = document.createElement("div")
                         loadingScreenString2.innerHTML = customLoadScreenString2
                         loadingScreenString2.className = "text-light text-center"
+
+                    loadingScreenReloadDiv = document.createElement("div")
+                        loadingScreenReloadDiv.className = "text-center"                       
                 
-                    loadingScreenReload = document.createElement("button")
-                        loadingScreenReload.innerHTML = "<i style='margin-right: 10px; margin-top: 5px;' class='fas fa-sync'></i>" + customLoadScreenReload
-                        loadingScreenReload.setAttribute("onclick", "window.location.reload();")
-                        loadingScreenReload.setAttribute("type", "button;")
-                        loadingScreenReload.className = "btn btn-outline-info text-light text-center btn-lg d-flex justify-content-center"
-                        loadingScreenReload.style = "margin-top: 35px;"
+                        loadingScreenReloadButton = document.createElement("button")
+                            loadingScreenReloadButton.innerHTML = "<i style='margin-right: 10px; margin-top: 5px;' class='fas fa-sync'></i>" + customLoadScreenReload
+                            loadingScreenReloadButton.setAttribute("onclick", "window.location.reload();")
+                            loadingScreenReloadButton.setAttribute("type", "button;")
+                            loadingScreenReloadButton.className = "btn btn-outline-info text-light text-center btn-lg d-flex justify-content-center"
 
                     loadingScreenCopyright11 = document.createElement("div")
                         loadingScreenCopyright11.style = "position: absolute; bottom: 25px; left: 50%;"
@@ -2172,7 +2175,8 @@ var map_app = new nekoapp({
             loadingScreenElement.appendChild(loadingScreenStringTitle)
             loadingScreenElement.appendChild(loadingScreenString1)
             loadingScreenElement.appendChild(loadingScreenString2)
-            loadingScreenElement.appendChild(loadingScreenReload)
+            loadingScreenElement.appendChild(loadingScreenReloadDiv)
+                loadingScreenReloadDiv.appendChild(loadingScreenReloadButton)
 
             loadingScreenElement.appendChild(loadingScreenCopyright11)
                 loadingScreenCopyright11.appendChild(loadingScreenCopyright12)
