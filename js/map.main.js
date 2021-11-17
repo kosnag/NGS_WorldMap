@@ -2151,9 +2151,9 @@ var map_app = new nekoapp({
 
                         loadingScreenReloadCenter = document.createElement("center")
                 
-                            loadingScreenReloadButton = document.createElement("button")
+                            loadingScreenReloadButton = document.createElement("a")
                                 loadingScreenReloadButton.innerHTML = "<i style='margin-right: 10px; margin-top: 5px;' class='fas fa-sync'></i>" + customLoadScreenReload
-                                loadingScreenReloadButton.setAttribute("onclick", "window.location.reload();")
+                                loadingScreenReloadButton.setAttribute("href", "/")
                                 loadingScreenReloadButton.setAttribute("type", "button;")
                                 loadingScreenReloadButton.className = "btn btn-outline-info text-light btn-lg"
 
