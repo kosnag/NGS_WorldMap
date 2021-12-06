@@ -1511,20 +1511,12 @@
 						{
 							"reward_type": "meseta",
 							"reward_count": 5000
-						},
-						{
-							"reward_type": "seasonPoints",
-							"reward_count": 1000
 						}
 					],
 					"rewards": [
 						{
 							"reward_type": "meseta",
 							"reward_count": 10000
-						},
-						{
-							"reward_type": "seasonPoints",
-							"reward_count": 1000
 						}
 					]
 				},
@@ -1542,10 +1534,6 @@
 						{
 							"reward_type": "meseta",
 							"reward_count": 10000
-						},
-						{
-							"reward_type": "seasonPoints",
-							"reward_count": 1500
 						}
 					]
 				}
@@ -1594,21 +1582,21 @@
 					"type": "gathering",
 					"recomended_bp": 800,
 					"recomended_lv": 1,
-					"gigantix": "eldiSkythe"
+					"gigantix": "nogleth"
 				},
 				"southAelio": {
 					"image": "assets/sections/southAelio.png",
 					"type": "gathering",
 					"recomended_bp": 835,
 					"recomended_lv": 3,
-					"gigantix": "ardBanser"
+					"gigantix": "nexAelio"
 				},
 				"northAelio": {
 					"image": "assets/sections/northAelio.png",
 					"type": "gathering",
 					"recomended_bp": 1045,
 					"recomended_lv": 12,
-					"gigantix": "nexAelio"
+					"gigantix": "daitylAxe"
 				},
 				"westAelio": {
 					"image": "assets/sections/westAelio.png",
