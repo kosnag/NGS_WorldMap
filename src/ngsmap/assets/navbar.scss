@@ -1,0 +1,51 @@
+@import 'styles';
+
+$navbar-button-scale: 1.35;
+
+$navbar-button-height: calc(130px * #{$navbar-button-scale});
+$navbar-button-width: calc(60px * #{$navbar-button-scale});
+.bar-container {
+    //border-top: solid 2px $border-color;
+    //background-color: $menu-color;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-button {
+    position: relative;
+    width: $navbar-button-height;
+    height: $navbar-button-width;
+    background-color: rgba($bg-color, 0.85);
+    border: solid 2px rgba($border-color, 0.85);
+    margin-left: 4px;
+    margin-right: 4px;
+    &:hover {
+        background-color: rgba($hover-color, 0.85);
+        border: solid 2px rgba($border-hover-color, 0.85);
+        background-image: url('./ngs_ui/bg_button.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &:active {
+        background-color: rgba($click-color, 0.85);
+        border: solid 2px rgba($border-hover-color, 0.85);
+        background-image: url('./ngs_ui/bg_button.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    svg, img {
+        position: absolute;
+        width: auto;
+        transform: translate(-50%, -50%);
+        height: 64px;
+        top: 40%;
+    }
+    div, span {
+        position: absolute;
+        color: white;
+        bottom: 5px;
+        width: calc(100% - 12px);
+    }
+}

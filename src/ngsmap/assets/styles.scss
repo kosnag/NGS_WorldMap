@@ -1,0 +1,53 @@
+@import 'cursor';
+
+@font-face {
+    font-family: "NGS Font";
+    src: url("./ngs_ui/ngsfont.woff") format("woff");
+}
+
+$bg-color: rgb(26, 67, 121);
+$menu-color: rgb(22, 31, 44, 0.85);
+$border-color: rgb(29, 33, 42);
+$hover-color: rgb(45, 97, 144);
+$border-hover-color: rgb(54, 255, 255);
+$click-color: rgb(129, 122, 23);
+$window-color: rgba(26, 39, 43, 0.85);
+$window-header-color: rgb(40, 131, 211);
+
+* {
+    font-family: "NGS Font";
+    color: white;
+    $outline: 1px;
+    text-shadow: 0px $outline 0 rgb(0,0,0),0px calc(0px - $outline) 0 rgb(0,0,0),$outline 0px 0 rgb(0,0,0),calc(0px - $outline) 0px 0 rgb(0,0,0),$outline $outline 0 rgb(0,0,0),$outline calc(0px - $outline) 0 rgb(0,0,0),calc(0px - $outline) $outline 0 rgb(0,0,0),calc(0px - $outline) calc(0px - $outline) 0 rgb(0,0,0);
+    .ignore-outline {
+        text-shadow: initial;
+    }
+}
+body {
+    margin: 0px;
+}
+.leaflet-container {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+.bar-container {
+    position: absolute;
+    background-image: url('./ngs_ui/navbar.png');
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: center;
+    bottom: 0;
+    height: 12%;
+    width: 100%;
+    z-index: 11;
+}
+.menu-freespace-container {
+    $margin: 2.5%;
+    position: absolute;
+    top: 0;
+    height: calc(88% - 2px);
+    width: calc(100% - $margin * 2);
+    margin: $margin;
+}
