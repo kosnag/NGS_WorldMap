@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { showhidemenu } from '../../assets/js/functions';
+import Functions from '../../assets/js/functions';
 import "./stylesheet.scss";
 
 import imageMapLegend from './../../assets/ui/icons/mapLegend.png';
@@ -17,10 +17,7 @@ class NavBar extends Component {
             window.open("https://ko-fi.com/kosnag");
           }}
         >
-          <img alt="" 
-            src={imageKofi}
-            style={{height: "50px"}}
-          />
+          <img alt="" src={imageKofi}/>
           <div>Kofi</div>
         </button>
         <button 
@@ -34,22 +31,16 @@ class NavBar extends Component {
         </button>
         <button 
           className="navbar-button"
-          onClick={showhidemenu}
+          onClick={Functions.showhidemenu('menu-mapLegend')}
         >
-          <img alt=""
-            src={imageMapLegend}
-            style={{height: "50px"}}
-          />
+          <img alt="" src={imageMapLegend}/>
           <div>Map Legend</div>
         </button>
         <button 
           className="navbar-button"
-          onClick={showhidemenu}
+          onClick={Functions.showhidemenu('menu-settings')}
         >
-          <img alt=""
-            src={imageSettings}
-            style={{height: "50px"}}
-          />
+          <img alt="" src={imageSettings}/>
           <div>Settings</div>
         </button>
       </div>

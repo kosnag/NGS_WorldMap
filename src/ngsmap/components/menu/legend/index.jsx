@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
-import Draggable from 'react-draggable';
-import { showhidemenu } from '../../../assets/js/functions';
 import "./../stylesheet.scss";
+import Draggable from 'react-draggable';
+import Functions from './../../../assets/js/functions';
 
-class Menu extends Component {
+class MenuLegend extends Component {
   render() {
     return (
-      <div className='menu-freespace-container'>
         <Draggable
           bounds='.menu-freespace-container'
-          handle='.menu-header'
+          handle='.menu-header-mapLegend'
         >
-          <div className='menu-window' 
+          <div className='menu-window menu-mapLegend' 
           //style={{display: 'none'}}
           >
-            <div className='menu-header'><span className='menu-header-text'><span className="ignore-outline">◆︎</span> Map Legend</span><span className='menu-closebutton' onClick={showhidemenu}>x</span></div>
+            <div className='menu-header menu-header-mapLegend'><span className='menu-header-text'><span className="ignore-outline">◆︎</span> Map Legend</span><span className='menu-closebutton' 
+            onClick={Functions.showhidemenu('menu-mapLegend')}
+            >x</span></div>
               <div className='menu-columns'>
                 <div className='menu-col-cat'>
                   <button className='menu-button'>i18.menu.landmarks</button>
@@ -41,9 +42,8 @@ class Menu extends Component {
               </div>
           </div>
         </Draggable>
-      </div>
     );
   };
 };
 
-export default Menu;
+export default MenuLegend;
