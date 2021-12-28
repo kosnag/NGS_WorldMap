@@ -1,9 +1,9 @@
 * {
-    $cursor: url('./ngs_ui/cursor.png') 0 0, auto;
+    $cursor: url('./cursors/default.png') 0 0, auto;
     cursor: $cursor;
 }
 .navbar-button:hover, .navbar-button:active, .navbar-button:focus, .leaflet-popup-close-button:hover, .leaflet-popup-close-button:active, .leaflet-popup-close-button:focus {
-    $cursor_active: url('./ngs_ui/cursor_active.png') 0 0, auto !important;
+    $cursor_active: url('./cursors/active.png') 0 0, auto !important;
     cursor: $cursor_active;
     img, svg, div {
         cursor: $cursor_active;
@@ -11,15 +11,15 @@
     }
 }
 .leaflet-disabled, *:disabled {
-    $cursor_inactive: url('./ngs_ui/cursor_inactive.png') 0 0, auto !important;
+    $cursor_inactive: url('./cursors/disabled.png') 0 0, auto !important;
     cursor: $cursor_inactive;
 }
 
 .leaflet-grab, .leaflet-dragging, .leaflet-grab {
-    $cursormap: url('./ngs_ui/cursormap.png') 32 32, auto !important;
+    $cursormap: url('./cursors/default-map.png') 32 32, auto !important;
     cursor: $cursormap;
 }
 .leaflet-marker-icon:hover, .leaflet-marker-icon:active {
-    $cursormap_active: url('./ngs_ui/cursormap_active.png') 32 32, auto !important;
+    $cursormap_active: url('./cursors/active-map.png') 32 32, auto !important;
     cursor: $cursormap_active;
 }

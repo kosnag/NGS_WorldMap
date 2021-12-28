@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
-import "./assets/map.scss";
-//import IconLibrary from './iconlib.js';
+import "./stylesheet.scss";
 
 const boundNorth = 0; 
 const boundEast = 12288/6;
@@ -37,7 +36,7 @@ class MapHalpha extends Component {
                 })
             ]
         });
-      }
+    }
     render() {
         return (
             <div id="map"/>

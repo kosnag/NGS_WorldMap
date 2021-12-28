@@ -1,8 +1,8 @@
 import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
-import MapHalpha from './ngsmap/map';
-import NavBar from './ngsmap/navbar';
-import Menu from './ngsmap/menu';
+import MapHalpha from './ngsmap/components/map';
+import NavBar from './ngsmap/components/navbar';
+import Menu from './ngsmap/components/menu/legend';
 
 ReactDOM.render(
     <Fragment>

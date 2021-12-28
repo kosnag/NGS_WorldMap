@@ -2,17 +2,32 @@
 
 @font-face {
     font-family: "NGS Font";
-    src: url("./ngs_ui/ngsfont.woff") format("woff");
+    src: url("./ngsfont.woff") format("woff");
 }
 
-$bg-color: rgb(26, 67, 121);
-$menu-color: rgb(22, 31, 44, 0.85);
-$border-color: rgb(29, 33, 42);
-$hover-color: rgb(45, 97, 144);
-$border-hover-color: rgb(54, 255, 255);
-$click-color: rgb(129, 122, 23);
-$window-color: rgba(26, 39, 43, 0.85);
+$map-bg-color: rgb(26, 67, 121);
+$menu-color: rgba(22, 31, 44, 0.85);
+
+$navbar-button-default: rgba(26, 67, 121, 0.85);
+$navbar-button-hover: rgba(52, 98, 142, 0.85);
+$navbar-button-active: rgba(129, 122, 23, 0.85);
+$navbar-button-border-default: rgba(29, 33, 42, 0.85);
+$navbar-button-border-hover: rgba(54, 255, 255, 0.85);
+$navbar-button-border-active: rgba(129, 122, 23, 0.85);
+
+
+
+
 $window-header-color: rgb(40, 131, 211);
+$window-color: rgba(26, 39, 43, 0.85);
+$window-border-color: rgb(54, 255, 255);
+
+$window-button-default: rgba(34, 63, 94, 0.85);
+$window-button-hover: rgba(63, 95, 142, 0.85);
+$window-button-active: rgba(133, 91, 29, 0.85);
+$window-button-border-default: $window-button-default;
+$window-button-border-hover: rgba(48, 222, 254, 0.85);
+$window-button-border-active: rgba(223, 171, 6, 0.85);
 
 * {
     font-family: "NGS Font";
@@ -34,7 +49,7 @@ body {
 }
 .bar-container {
     position: absolute;
-    background-image: url('./ngs_ui/navbar.png');
+    background-image: url('./navbar.png');
     background-repeat: no-repeat;
     background-attachment: local;
     background-position: center;

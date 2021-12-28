@@ -1,10 +1,10 @@
-@import 'styles';
+@import './../../assets/ui/general.scss';
 
 .menu-window {
     z-index: 8492;
     position: absolute;
     background-color: $window-color;
-    border: solid 1px $border-hover-color;
+    border: solid 1px $window-border-color;
 }
 .menu-header {
     $widthpadding: 7px;
@@ -38,7 +38,7 @@
         padding-left: 4px;
         padding-right: 4px;
     }
-    .menu-closebutton:hover, .menu-closebutton:focus, .menu-closebutton:active {
+    .menu-closebutton:hover, .menu-closebutton:active {
         background-color: #A30000;
         border: 2px solid #FF0000;
     }
@@ -50,28 +50,32 @@
     display: flex;
     flex-flow: row;
     padding-top: 10px;
-    .menu-col1, .menu-col2, .menu-col3 {
+    .menu-col-cat {
         flex-grow: 5;
         display: flex;
         flex-flow: column;
         .menu-button {
-            //background-color: ;
             width: 300px;
             height: 40px;
             margin-left: 6px;
             margin-right: 6px;
             margin-top: 3px;
             margin-bottom: 3px;
-            background-color: rgba($bg-color, 0.85);
-            border: solid 2px rgba($border-color, 0.85);
+            background-color: rgba($window-button-default, 0.85);
+            border: solid 2px rgba($window-button-border-default, 0.85);
             &:hover {
-                background-color: rgba($hover-color, 0.85);
-                border: solid 2px rgba($border-hover-color, 0.85);
+                background-color: rgba($window-button-hover, 0.85);
+                border: solid 2px rgba($window-button-border-hover, 0.85);
             }
             &:active {
-                background-color: rgba($click-color, 0.85);
-                border: solid 2px rgba($border-hover-color, 0.85);
+                background-color: rgba($window-button-active, 0.85);
+                border: solid 2px rgba($window-button-border-active, 0.85);
             }
         }
+    }
+    .menu-col-item, .menu-col-info {
+        flex-grow: 5;
+        display: flex;
+        flex-flow: column;
     }
 }
