@@ -6,10 +6,7 @@ import MenuSettings from './settings';
 class Menu extends Component {
     render() {
       return (
-        <div className='menu-freespace-container'>
-            <MenuLegend />
-            <MenuSettings />
-        </div>
+        <div className='menu-freespace-container'><MenuLegend/><MenuSettings/></div>
         );
       };
     };

@@ -10,12 +10,8 @@ class MenuLegend extends Component {
           bounds='.menu-freespace-container'
           handle='.menu-header-mapLegend'
         >
-          <div className='menu-window menu-mapLegend' 
-          //style={{display: 'none'}}
-          >
-            <div className='menu-header menu-header-mapLegend'><span className='menu-header-text'><span className="ignore-outline">◆︎</span> Map Legend</span><span className='menu-closebutton' 
-            onClick={Functions.showhidemenu('menu-mapLegend')}
-            >x</span></div>
+          <div className='menu-window menu-mapLegend'>
+            <div className='menu-header menu-header-mapLegend'><span className='menu-header-text'><span className="ignore-outline">◆︎</span> Map Legend</span><span className='menu-closebutton' onClick={Functions.showhidemenu('menu-mapLegend')}>x</span></div>
               <div className='menu-columns'>
                 <div className='menu-col-cat'>
                   <button className='menu-button'>i18.menu.landmarks</button>
