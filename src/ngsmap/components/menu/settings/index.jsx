@@ -11,21 +11,26 @@ class MenuSettings extends Component {
           handle='.menu-header-settings'
           defaultPosition={{x: 1000, y: 0}}
         >
-          <div className='menu-window menu-settings'>
+          <div
+            className='menu-window'
+            id='menu-settings'
+            //style={{display: "none"}}
+          >
             <div className='menu-header menu-header-settings'>
-                <span className='menu-header-text'><span className="ignore-outline">◆︎</span> Options</span>
-                <span className='menu-closebutton' onClick={() => {Functions.showhidemenu("menu-settings")}}>x</span>
+                <span className='menu-header-text'><span className="menu-icon"/> Options</span>
+                <span className='menu-closebutton' onClick={() => {Functions.showhidemenu("menu-settings")}}/>
             </div>
             <div className='menu-columns'>
               <div className='menu-col-cat'>
-                <button className='menu-button'>i18.options.language</button>
-                <button className='menu-button'>i18.options.reset</button>
-                <button className='menu-button'>i18.options.debug</button>
+                <button className='menu-button-cat'>i18.options.language</button>
+                <button className='menu-button-cat'>i18.options.reset</button>
+                <button className='menu-button-cat'>i18.options.debug</button>
+                <button className='menu-button-cat'>i18.options.mapping</button>
               </div>
               <div className='menu-col-item'>
-                <button className='menu-button'>Item 1</button>
-                <button className='menu-button'>Item 2</button>
-                <button className='menu-button'>Item 3</button>
+                <button className='menu-button-item'>Item 1</button>
+                <button className='menu-button-item'>Item 2</button>
+                <button className='menu-button-item'>Item 3</button>
               </div>
             </div>
           </div>

@@ -5,7 +5,6 @@
     position: absolute;
     background-color: $window-color;
     border: solid 1px $window-border-color;
-    //&.menu-settings, &.menu-mapLegend {display: none;}
 }
 .menu-header {
     $widthpadding: 7px;
@@ -22,11 +21,15 @@
         display: inline-flex;
         flex: 1;
         float: left;
-        .ignore-outline {
+        .menu-icon {
             margin-right: 8px;
             font-size: 16px;
             margin-top: auto;
             margin-bottom: auto;
+            text-shadow: initial;
+            &::before {
+                content: "◆︎";
+            }
         }
     }
     .menu-closebutton {
@@ -38,10 +41,13 @@
         padding-bottom: 0px;
         padding-left: 4px;
         padding-right: 4px;
-    }
-    .menu-closebutton:hover, .menu-closebutton:active {
-        background-color: #A30000;
-        border: 2px solid #FF0000;
+        &:hover, &:active {
+            background-color: #A30000;
+            border: 2px solid #FF0000;
+        }
+        &::before {
+            content: 'x';
+        }
     }
 }
 
@@ -51,30 +57,68 @@
     display: flex;
     flex-flow: row;
     padding-top: 10px;
+    padding-bottom: 6px;
     .menu-col-cat {
         flex-grow: 5;
         display: flex;
         flex-flow: column;
-        .menu-button {
-            width: 300px;
+        .menu-button-cat {
+            width: 250px;
             height: 40px;
             margin-left: 6px;
             margin-right: 6px;
             margin-top: 3px;
             margin-bottom: 3px;
-            background-color: rgba($window-button-default, 0.85);
-            border: solid 2px rgba($window-button-border-default, 0.85);
+            background-color: rgba($window-button-default, .85);
+            border: solid 2px rgba($window-button-border-default, .85);
             &:hover {
-                background-color: rgba($window-button-hover, 0.85);
-                border: solid 2px rgba($window-button-border-hover, 0.85);
+                background-color: rgba($window-button-hover, .85);
+                border: solid 2px rgba($window-button-border-hover, .85);
             }
             &:active {
-                background-color: rgba($window-button-active, 0.85);
-                border: solid 2px rgba($window-button-border-active, 0.85);
+                background-color: rgba($window-button-active, .85);
+                border: solid 2px rgba($window-button-border-active, .85);
             }
         }
     }
-    .menu-col-item, .menu-col-info {
+    .menu-col-item {
+        flex-grow: 5;
+        display: flex;
+        flex-flow: column;
+        .menu-button-item {
+            width: 300px;
+            height: 30px;
+            margin-left: 6px;
+            margin-right: 6px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-color: rgba(rgb(52, 56, 60), .75);
+            border: solid 2px rgba(rgb(52, 56, 60), .75);
+            &:hover {
+                background-color: rgba($window-button-hover, .75);
+                border: solid 2px rgba($window-button-border-hover, .75);
+            }
+            &:active {
+                background-color: rgba($window-button-active, .75);
+                border: solid 2px rgba($window-button-border-active, .75);
+            }
+            span {
+                background-color: #32393F;
+                width: 12px;
+                height: 12px;
+                border: 1px solid white;
+                border-radius: 4px;
+                display: inline-block;
+                vertical-align: bottom;
+                //&[checked] {}
+                &[checked]::before {
+                    background-color: $window-button-hover;
+                    content: "✔";
+                }
+            }
+        }
+    }
+    .menu-col-info {
         flex-grow: 5;
         display: flex;
         flex-flow: column;

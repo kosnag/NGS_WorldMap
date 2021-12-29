@@ -15,9 +15,6 @@ $navbar-button-border-default: rgba(29, 33, 42, 0.85);
 $navbar-button-border-hover: rgba(54, 255, 255, 0.85);
 $navbar-button-border-active: rgba(129, 122, 23, 0.85);
 
-
-
-
 $window-header-color: rgb(40, 131, 211);
 $window-color: rgba(26, 39, 43, 0.85);
 $window-border-color: rgb(54, 255, 255);
@@ -35,9 +32,6 @@ $window-button-border-active: rgba(223, 171, 6, 0.85);
     color: white;
     $outline: 1px;
     text-shadow: 0px $outline 0 rgb(0,0,0),0px calc(0px - $outline) 0 rgb(0,0,0),$outline 0px 0 rgb(0,0,0),calc(0px - $outline) 0px 0 rgb(0,0,0),$outline $outline 0 rgb(0,0,0),$outline calc(0px - $outline) 0 rgb(0,0,0),calc(0px - $outline) $outline 0 rgb(0,0,0),calc(0px - $outline) calc(0px - $outline) 0 rgb(0,0,0);
-    .ignore-outline {
-        text-shadow: initial;
-    }
 }
 body {
     margin: 0px;
