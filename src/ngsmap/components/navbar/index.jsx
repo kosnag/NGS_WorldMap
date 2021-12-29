@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Functions from '../../assets/js/functions';
 import "./stylesheet.scss";
+import Functions from '../../assets/js/functions';
 
 import imageMapLegend from './../../assets/ui/icons/mapLegend.png';
 import imageSettings from './../../assets/ui/icons/settings.png';
@@ -31,14 +31,14 @@ class NavBar extends Component {
         </button>
         <button 
           className="navbar-button"
-          onClick={Functions.showhidemenu('menu-mapLegend')}
+          onClick={() => {Functions.showhidemenu("menu-mapLegend")}}
         >
           <img alt="" src={imageMapLegend}/>
           <div>Map Legend</div>
         </button>
         <button 
           className="navbar-button"
-          onClick={Functions.showhidemenu('menu-settings')}
+          onClick={() => {Functions.showhidemenu("menu-settings")}}
         >
           <img alt="" src={imageSettings}/>
           <div>Settings</div>

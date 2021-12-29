@@ -5,7 +5,7 @@
     position: absolute;
     background-color: $window-color;
     border: solid 1px $window-border-color;
-    &.menu-settings, &.menu-mapLegend {display: none;}
+    //&.menu-settings, &.menu-mapLegend {display: none;}
 }
 .menu-header {
     $widthpadding: 7px;
