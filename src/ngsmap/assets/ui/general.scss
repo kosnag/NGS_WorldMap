@@ -31,6 +31,7 @@ $window-button-border-active: rgba(223, 171, 6, 0.85);
 
 * {
     font-family: "NGS Font";
+    user-select: none;
     color: white;
     $outline: 1px;
     text-shadow: 0px $outline 0 rgb(0,0,0),0px calc(0px - $outline) 0 rgb(0,0,0),$outline 0px 0 rgb(0,0,0),calc(0px - $outline) 0px 0 rgb(0,0,0),$outline $outline 0 rgb(0,0,0),$outline calc(0px - $outline) 0 rgb(0,0,0),calc(0px - $outline) $outline 0 rgb(0,0,0),calc(0px - $outline) calc(0px - $outline) 0 rgb(0,0,0);
