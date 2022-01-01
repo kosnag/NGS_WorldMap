@@ -86,6 +86,12 @@
         display: flex;
         flex-flow: column;
         .menu-button-item {
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: left;
+            align-items: baseline;
+
+            font-size: 13px;
             width: 300px;
             height: 30px;
             margin-left: 6px;
@@ -102,18 +108,30 @@
                 background-color: rgba($window-button-active, .75);
                 border: solid 2px rgba($window-button-border-active, .75);
             }
-            span {
-                background-color: #32393F;
-                width: 12px;
-                height: 12px;
-                border: 1px solid white;
-                border-radius: 4px;
-                display: inline-block;
-                vertical-align: bottom;
-                //&[checked] {}
-                &[checked]::before {
-                    background-color: $window-button-hover;
-                    content: "✔";
+            label {
+                height: 100%;
+                margin: 0;
+                div {
+                    color: white !important;
+                    width: 14px !important;
+                    height: 14px !important;
+                    border: 1px solid white !important;
+                    border-radius: 3px !important;
+                    margin-right: 6px !important;
+                    span {
+                        display: inline-block;
+                        background-color: #30F3FF;
+                        height: 100%;
+                        text-align: center;
+                        font-size: 18px;
+                        text-shadow: initial;
+                        color: #3567A9;
+                        line-height: calc(100% - 2px);
+                        border-radius: 1px;
+                        &::before {
+                            content: "✔";
+                        }
+                    }
                 }
             }
         }

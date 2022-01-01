@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import "./../stylesheet.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
+import Checkbox from "react-custom-checkbox";
+import Tabs, { TabPane } from 'rc-tabs';
 
 class MenuLegend extends Component {
   
@@ -29,14 +31,31 @@ class MenuLegend extends Component {
                 <button className='menu-button-cat'>i18.menu.cat.other</button>
               </div>
               <div className='menu-col-item'>
-                <button className='menu-button-item'><span checked={true}/>Item 1</button>
-                <button className='menu-button-item'>Item 2</button>
-                <button className='menu-button-item'>Item 3</button>
-                <button className='menu-button-item'>Item 4</button>
-                <button className='menu-button-item'>Item 5</button>
-                <button className='menu-button-item'>Item 6</button>
-                <button className='menu-button-item'>Item 7</button>
-                <button className='menu-button-item'>Item 8</button>
+                <button className='menu-button-item'><Checkbox
+                    checked={false}
+                    icon={<span></span>}
+                    label="Item 1"
+                  /></button>
+                <button className='menu-button-item'><Checkbox
+                    checked={true}
+                    icon={<span></span>}
+                    label="Item 2"
+                  /></button>
+                <button className='menu-button-item'><Checkbox
+                    checked={true}
+                    icon={<span></span>}
+                    label="Item 3"
+                  /></button>
+                <button className='menu-button-item'><Checkbox
+                    checked={false}
+                    icon={<span></span>}
+                    label="Item 4"
+                  /></button>
+                <button className='menu-button-item'><Checkbox
+                    checked={true}
+                    icon={<span></span>}
+                    label="Item 5"
+                  /></button>
               </div>
               <div className='menu-col-info'>
                 <div className='menu-button'>Preview icon</div>
