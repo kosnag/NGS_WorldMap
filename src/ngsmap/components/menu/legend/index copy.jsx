@@ -6,6 +6,7 @@ import Checkbox from "react-custom-checkbox";
 import Tabs, { TabPane } from 'rc-tabs';
 
 class MenuLegend extends Component {
+  
   render() {
     return (
         <Draggable
