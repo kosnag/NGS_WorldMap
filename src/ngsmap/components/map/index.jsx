@@ -28,6 +28,9 @@ class MapHalpha extends Component {
             center: center,
             zoomControl: false,
             attributionControl: false,
+            keyboard: false,
+            zoomDelta: 0.5,
+            maxBoundsViscosity: 0.5,
             layers: [
                 L.tileLayer("./assets/images/tiles/{z}/{y}-{x}.png", {
                     bounds: bounds,

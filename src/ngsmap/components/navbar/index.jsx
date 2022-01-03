@@ -31,17 +31,17 @@ class NavBar extends Component {
         </button>
         <button 
           className="navbar-button"
-          onClick={() => {Functions.showhidemenu("menu-mapLegend")}}
+          onClick={() => {Functions.menuShowHide("menu-mapLegend")}}
         >
           <img alt="" src={imageMapLegend}/>
           <div>Map Legend</div>
         </button>
         <button 
           className="navbar-button"
-          onClick={() => {Functions.showhidemenu("menu-settings")}}
+          onClick={() => {Functions.menuShowHide("menu-settings")}}
         >
           <img alt="" src={imageSettings}/>
-          <div>Settings</div>
+          <div>Options</div>
         </button>
       </div>
     );
