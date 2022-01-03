@@ -2098,7 +2098,7 @@ var map_app = new nekoapp({
                 
                             loadingScreenReloadButton = document.createElement("a")
                                 loadingScreenReloadButton.innerHTML = "<i style='margin-right: 10px; margin-top: 5px;' class='fas fa-sync'></i>" + customLoadScreenReload
-                                loadingScreenReloadButton.setAttribute("href", "/")
+                                loadingScreenReloadButton.setAttribute("href", "https://kosnag.github.io/NGS_WorldMap_Neko/")
                                 loadingScreenReloadButton.setAttribute("type", "button;")
                                 loadingScreenReloadButton.className = "btn btn-outline-info text-light btn-lg"
 
