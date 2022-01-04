@@ -11,11 +11,12 @@ const IconLib = {
     mag: new Settings.Landmarks({iconUrl:'./assets/images/icons/landmarks/mag.png'}),
     ryuker: new Settings.Landmarks({iconUrl:'./assets/images/icons/landmarks/ryuker.png'}),
     tower: new Settings.Landmarks({iconUrl:'./assets/images/icons/landmarks/tower.png'}),
-    battledia: new Settings.Landmarks({iconUrl:'./assets/images/icons/landmarks/battledia.png'}),
+    battledia: new Settings.Landmarks({iconUrl:'./assets/images/icons/landmarks/battledia.svg'}),
     uq: new Settings.Landmarks({iconUrl:'./assets/images/icons/landmarks/urgent.png'}),
     
-    redBox: new Settings.Containers({iconUrl:'./assets/images/icons/containers/redBox.png'}),
-    greenBox: new Settings.Containers({iconUrl:'./assets/images/icons/containers/greenBox.png'}),
+    redBox: new Settings.Containers({iconUrl:'./assets/images/icons/containers/redBox.svg'}),
+    redBoxCheck: new Settings.Containers({iconUrl:'./assets/images/icons/containers/redBoxChecked.svg'}),
+    greenBox: new Settings.Containers({iconUrl:'./assets/images/icons/containers/greenBox.svg'}),
     
     mineralMonotite: new Settings.Materials({iconUrl:'./assets/images/icons/minerals/monotite.png'}),
     mineralDualomite: new Settings.Materials({iconUrl:'./assets/images/icons/minerals/dualomite.png'}),
