@@ -7,12 +7,11 @@ import Checkbox from "react-custom-checkbox";
 function MenuLegend(){
 
   const [toggleLegendTab, setToggleLegendTab] = useState('landmarks');
-  const clickToggleLegendTab = (index) => {
-    setToggleLegendTab(index);
-  };
-
+  function clickToggleLegendTab(index){setToggleLegendTab(index);};
+  
+  var previewIcon = require('./../../../assets/ui/icons/preview/alphaReactor.png');
   useEffect(() => {
-    document.getElementById('menu-mapLegend').classList.add('hidden-window');
+    //document.getElementById('menu-mapLegend').classList.add('hidden-window');
   });
 
   return (
@@ -394,9 +393,13 @@ function MenuLegend(){
             </div>
           </Fragment>
           <div className='menu-col-info'>
-            <div className='menu-button'>Preview icon</div>
-            <div className='menu-button'>Name </div>
-            <div className='menu-button'>Short information</div>
+            <div className='menu-col-info-icon red'/>
+            <img alt=""
+              className='menu-col-info-icon'
+              src={previewIcon}
+            />
+            <div className='menu-col-info-title'>Title</div>
+            <div className='menu-col-info-thesis'>something something</div>
           </div>
         </div>
       </div>

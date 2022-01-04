@@ -4,13 +4,14 @@ import Functions from '../../assets/js/functions';
 
 import imageMapLegend from './../../assets/ui/icons/mapLegend.png';
 import imageSettings from './../../assets/ui/icons/settings.png';
-const imageAlphaReactor = process.env.PUBLIC_URL + '/assets/images/icons/png/other/alphaReactor.png';
+import imageAlphaReactor from './../../assets/ui/icons/preview/alphaReactor.png';
 const imageKofi = "https://storage.ko-fi.com/cdn/cup-border.png";
 
 class NavBar extends Component {
   render() {
     return (
       <div className="bar-container">
+        <div className='bar-inner'>
         <button 
           className="navbar-button"
           onClick={() => {
@@ -43,6 +44,7 @@ class NavBar extends Component {
           <img alt="" src={imageSettings}/>
           <div>Options</div>
         </button>
+        </div>
       </div>
     );
   };

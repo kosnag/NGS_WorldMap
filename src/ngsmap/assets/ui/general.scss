@@ -43,16 +43,45 @@ body {
     z-index: 10;
 }
 .bar-container {
-    position: absolute;
-    background-image: url('./navbar.png');
-    background-repeat: no-repeat;
-    background-attachment: local;
-    background-position: center;
-    bottom: 0;
-    height: 12%;
-    width: 100%;
     z-index: 11;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    $inner-color: rgba(8, 25, 40, 0.75);
+    .bar-inner {
+        background: $inner-color;
+        width: 882px;
+        height: 114px;
+        margin: -114px auto 0;
+        position: relative
+    }
+    .bar-inner::before {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent transparent $inner-color;
+        border-width: 0 0 114px 114px;
+        position: absolute;
+        top: 0;
+        left: -114px;
+        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    }
+    .bar-inner::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-color: transparent transparent transparent $inner-color;
+        border-width: 114px 0 0 114px;
+        position: absolute;
+        top: 0;
+        right: -114px;
+        clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    }
 }
+
 .menu-freespace-container {
     $margin: 2.5%;
     position: absolute;

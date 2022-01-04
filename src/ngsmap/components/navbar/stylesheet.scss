@@ -5,7 +5,7 @@ $navbar-button-scale: 1.35;
 $navbar-button-height: calc(130px * #{$navbar-button-scale});
 $navbar-button-width: calc(60px * #{$navbar-button-scale});
 
-.bar-container {
+.bar-inner {
     display: flex;
     flex-direction: row; 
     justify-content: center;
