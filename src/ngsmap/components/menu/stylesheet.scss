@@ -196,12 +196,13 @@
                 background-color: rgba(198, 10, 52, .35);
             }
         }
-        img.menu-col-info-icon {
+        img {
             border: solid 2px rgba(0,0,0,0);
             position: absolute;
             width: 96px;
             height: 96px;
             opacity: 0.9;
+            pointer-events: none;
         }
         .menu-col-info-title {
             font-size: 18px;
