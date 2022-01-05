@@ -1,6 +1,6 @@
 var Functions = {
-  menuShowHide: function (element) { 
-    switch (element) {
+  menuShowHide: function(element){ 
+    switch(element){
       case 'menu-mapLegend':
         if (document.getElementById('menu-mapLegend').classList.contains('hidden-window')) {
           document.getElementById('menu-mapLegend').classList.remove('hidden-window');
@@ -20,6 +20,8 @@ var Functions = {
       default:
         break;
     }
+  },
+  updatePreview: function(element){
   }
 }
 
