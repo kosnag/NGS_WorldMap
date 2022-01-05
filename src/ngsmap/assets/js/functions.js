@@ -20,8 +20,6 @@ var Functions = {
       default:
         break;
     }
-  },
-  updatePreview: function(element){
   }
 }
 
