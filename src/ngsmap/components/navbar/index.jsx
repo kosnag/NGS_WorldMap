@@ -4,7 +4,7 @@ import Functions from '../../assets/js/functions';
 
 import imageMapLegend from './../../assets/ui/icons/mapLegend.png';
 import imageSettings from './../../assets/ui/icons/settings.png';
-import imageAlphaReactor from './../../assets/ui/icons/preview/alphaReactor.png';
+import imageAlphaReactor from './../../assets/ui/icons/alphaReactor.png';
 const imageKofi = "https://storage.ko-fi.com/cdn/cup-border.png";
 
 class NavBar extends Component {
