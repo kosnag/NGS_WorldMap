@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./stylesheet.scss";
 import MenuLegend from './legend';
 import MenuSettings from './settings';
+import './../../assets/js/i18n';
 
 class Menu extends Component {
   componentDidMount() {

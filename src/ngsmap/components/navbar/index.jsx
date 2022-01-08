@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./stylesheet.scss";
 import Functions from '../../assets/js/functions';
+import './../../assets/js/i18n';
 
 import imageMapLegend from './../../assets/ui/icons/mapLegend.png';
 import imageSettings from './../../assets/ui/icons/settings.png';

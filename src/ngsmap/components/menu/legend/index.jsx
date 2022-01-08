@@ -3,6 +3,7 @@ import "./../stylesheet.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
 import Checkbox from "react-custom-checkbox";
+import './../../../assets/js/i18n';
 
 function MenuLegend(){
   const [previewIcon, setPreviewIcon] = useState(process.env.PUBLIC_URL+"/assets/images/icons/empty.png");

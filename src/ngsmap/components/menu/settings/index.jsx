@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import "./../stylesheet.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
+import './../../../assets/js/i18n';
 
 function MenuSettings(){
   useEffect(() => {

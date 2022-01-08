@@ -1,0 +1,17 @@
+{
+    "NavBar": {
+        "donate": "",
+        "alphaReactor": "",
+        "mapLegend": "",
+        "options": ""
+    },
+    "LegendMenu": {
+        "Categories": {
+            "landmarks": "",
+            "minerals": "",
+            "food": "",
+            "containers": "",
+            "other": ""
+        }
+    }
+}
