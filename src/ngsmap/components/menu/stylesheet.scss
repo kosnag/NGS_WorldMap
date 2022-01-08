@@ -191,13 +191,13 @@
                 border: solid 2px rgba(196, 0, 171, 1);
                 background-color: rgba(196, 0, 171, .35);
             }
-            &.matoi {
-                border: solid 2px rgba(198, 10, 52, 1);
-                background-color: rgba(198, 10, 52, .35);
-            }
             &.lightblue {
                 border: solid 2px rgb(40, 131, 211);
                 background-color: rgba(40, 131, 211, .35);
+            }
+            &.matoi {
+                border: solid 2px rgba(198, 10, 52, 1);
+                background-color: rgba(198, 10, 52, .35);
             }
         }
         img {
