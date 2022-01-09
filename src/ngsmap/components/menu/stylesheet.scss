@@ -209,13 +209,15 @@
             pointer-events: none;
         }
         .menu-col-info-title {
-            font-size: 18px;
+            font-size: 17px;
             margin-top: 4px;
             margin-bottom: 4px;
+            overflow-wrap: break-word;
         }
         .menu-col-info-thesis {
-            font-size: 15px;
+            font-size: 14px;
             height: 104px;
+            overflow-wrap: break-word;
         }
     }
 }

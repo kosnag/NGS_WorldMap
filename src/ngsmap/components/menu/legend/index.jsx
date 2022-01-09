@@ -7,16 +7,17 @@ import './../../../assets/js/i18n';
 
 function MenuLegend(){
   const [previewIcon, setPreviewIcon] = useState(process.env.PUBLIC_URL+"/assets/images/icons/empty.png");
+  const [previewTitle, setPreviewTitle] = useState(process.env.PUBLIC_URL+"/assets/images/icons/empty.png");
+  const [previewShortInfo, setPreviewShortInfo] = useState(process.env.PUBLIC_URL+"/assets/images/icons/empty.png");
 
   function setPreview(index){
     setPreviewIcon(process.env.PUBLIC_URL+"/assets/images/icons/"+index+".png");
+    setPreviewTitle("Title."+index);
+    setPreviewShortInfo("ShortInfo."+index);
   };
 
   const [toggleLegendTab, setToggleLegendTab] = useState('landmarks');
   function clickToggleLegendTab(index){setToggleLegendTab(index);};
-  
-  var title = "";
-  var shortinfo = "";
 
   useEffect(() => {
     //document.getElementById('menu-mapLegend').classList.add('hidden-window');
@@ -451,8 +452,8 @@ function MenuLegend(){
           <div className='menu-col-info'>
             <div className='menu-col-info-icon lightblue'/>
             <img alt="" src={previewIcon}/>
-            <div className='menu-col-info-title'>{title}</div>
-            <div className='menu-col-info-thesis'>{shortinfo}</div>
+            <div className='menu-col-info-title'>{previewTitle}</div>
+            <div className='menu-col-info-thesis'>{previewShortInfo}</div>
           </div>
         </div>
       </div>

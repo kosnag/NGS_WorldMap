@@ -25,7 +25,9 @@ i18n
     interpolation: {
       escapeValue: false, // not needed for react as it escapes by default
     },
-    loadPath: '/assets/langs/{{lng}}/{{ns}}.json'
+    backend: {
+      loadPath: '/assets/langs/{{lng}}/{{ns}}.json'
+    }
   });
 
 
