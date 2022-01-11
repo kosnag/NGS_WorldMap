@@ -1,0 +1,18 @@
+{
+    "page_title": "",
+    "NavBar": {
+        "donate": "Support",
+        "alphaReactor": "Alpha Reactors",
+        "mapLegend": "Map Legend",
+        "options": "Options"
+    },
+    "LegendMenu": {
+        "Categories": {
+            "landmarks": "Landmarks",
+            "minerals": "Minerals",
+            "food": "Food",
+            "containers": "Containers",
+            "other": "Other"
+        }
+    }
+}

@@ -3,17 +3,25 @@ import "./../stylesheet.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
 import Checkbox from "react-custom-checkbox";
+
 import './../../../assets/js/i18n';
+import { useTranslation } from "react-i18next";
 
 function MenuLegend(){
-  const [previewIcon, setPreviewIcon] = useState(process.env.PUBLIC_URL+"/assets/images/icons/empty.png");
-  const [previewTitle, setPreviewTitle] = useState(process.env.PUBLIC_URL+"/assets/images/icons/empty.png");
-  const [previewShortInfo, setPreviewShortInfo] = useState(process.env.PUBLIC_URL+"/assets/images/icons/empty.png");
+  const { t, i18n } = useTranslation(["items","ui"]);
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
+  const [previewIcon, setPreviewIcon] = useState("/assets/images/icons/null.png");
+  const [previewTitle, setPreviewTitle] = useState("");
+  const [previewShortInfo, setPreviewShortInfo] = useState("");
 
   function setPreview(index){
     setPreviewIcon(process.env.PUBLIC_URL+"/assets/images/icons/"+index+".png");
-    setPreviewTitle("Title."+index);
-    setPreviewShortInfo("ShortInfo."+index);
+    setPreviewTitle(t("items:Title."+index, {framework:'React'}));
+    setPreviewShortInfo(t("items:ShortInfo."+index, {framework:'React'}));
   };
 
   const [toggleLegendTab, setToggleLegendTab] = useState('landmarks');
@@ -41,7 +49,7 @@ function MenuLegend(){
             <button 
               className={toggleLegendTab === 'landmarks' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleLegendTab('landmarks')}
-            >Landmarks</button>
+            >{t("ShortInfo.empty")}</button>
             <button 
               className={toggleLegendTab === 'minerals' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleLegendTab('minerals')}
@@ -58,6 +66,8 @@ function MenuLegend(){
               className={toggleLegendTab === 'other' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleLegendTab('other')}
             >Other</button>
+            <button onClick={() => changeLanguage("en_JP")}>EN</button>
+            <button onClick={() => changeLanguage("ru_RU")}>RU</button>
           </div>
           <Fragment>
             <div 
@@ -66,7 +76,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_ryuker")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Ryuker Devices"
@@ -74,7 +84,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_cocoon")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Cocoons"
@@ -82,7 +92,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_tower")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Towers"
@@ -90,7 +100,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_battledia")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Battledias"
@@ -98,7 +108,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_mag")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Region Mags"
@@ -106,7 +116,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_urgent")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Urgent Quests"
@@ -118,7 +128,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_monotite")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Monotite"
@@ -126,7 +136,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_dualomite")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Dualomite"
@@ -134,7 +144,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_trinite")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Trinite"
@@ -142,7 +152,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_tetracite")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Tetracite"
@@ -150,7 +160,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_photonQuartz")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Photon Quartz"
@@ -158,7 +168,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_photonChunk")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Photon Chunk"
@@ -166,7 +176,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_photonScale")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Photon Scale"
@@ -178,7 +188,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_apple")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Nourishing Aelio Apple"
@@ -186,7 +196,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_banana")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Healthy Aelio Banana"
@@ -194,7 +204,7 @@ function MenuLegend(){
              <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_clam")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Nourishing Aelio Clam"
@@ -202,7 +212,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_crab")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Sharp Aelio Crab"
@@ -210,7 +220,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_herb")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Nourishing Aelio Herb"
@@ -218,7 +228,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_lobster")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Healthy Aelio Lobster"
@@ -226,7 +236,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_mushroom")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Refreshing Aelio Mushroom"
@@ -234,7 +244,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_peach")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Refreshing Aelio Peach"
@@ -242,7 +252,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_pear")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Sharp Aelio Pear"
@@ -250,7 +260,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_snail")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Refreshing Aelio Snail"
@@ -258,7 +268,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_tomato")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Sharp Aelio Tomato"
@@ -266,7 +276,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_turnip")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Healthy Aelio Turnip"
@@ -274,7 +284,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_cauliflower")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Healthy Retem Cauliflower"
@@ -282,7 +292,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_cherries")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Nourishing Retem Cherries"
@@ -290,7 +300,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_cranberries")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Refreshing Retem Cranberries"
@@ -298,7 +308,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_eggplant")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Nourishing Retem Eggplant"
@@ -306,7 +316,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_fruit")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Sharp Retem Star Fruit"
@@ -314,7 +324,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_hermitCrab")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Healthy Retem Hermit Crab"
@@ -322,7 +332,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_mango")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Refreshing Retem Mango"
@@ -330,7 +340,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_mushroom")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Sharp Retem Mushroom"
@@ -338,7 +348,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_scallop")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Nourishing Retem Scallop"
@@ -346,7 +356,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_seaSlug")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Refreshing Retem Sea Slug"
@@ -354,7 +364,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_strawberry")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Healthy Retem Strawberry"
@@ -362,7 +372,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_urchin")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
                 label="Sharp Retem Sea Urchin"
@@ -374,7 +384,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("containers_redBox")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Item Container [Red]"
@@ -382,7 +392,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("containers_greenBox")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Item Container [Green]"
@@ -390,7 +400,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("containers_goldBox")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Item Container [Gold]"
@@ -402,7 +412,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_veteran")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Veterans"
@@ -410,7 +420,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Music places"
@@ -418,7 +428,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_alphaReactor")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Alpha Reactors"
@@ -426,7 +436,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_stellarSeed")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Stellar Seeds"
@@ -434,7 +444,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Stellar Graces"
@@ -442,7 +452,7 @@ function MenuLegend(){
               <button 
                 className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_dataPod")}}
-                onMouseLeave={() => {setPreview("empty")}}
+                onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Datapods"

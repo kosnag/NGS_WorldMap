@@ -19,15 +19,16 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    fallbackLng: 'en',
+    lng: 'en_JP',
+    fallbackLng: 'en_JP',
     debug: true,
-
-    interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+    react: {
+       wait: true,
+       useSuspense: false,
     },
     backend: {
-      loadPath: '/assets/langs/{{lng}}/{{ns}}.json'
-    }
+      loadPath: '/assets/locales/{{lng}}/{{ns}}.json'
+    },
   });
 
 
