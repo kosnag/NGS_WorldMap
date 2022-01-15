@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import "./../stylesheet.scss";
+import "../stylesheet.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
 import Checkbox from "react-custom-checkbox";
@@ -28,21 +28,21 @@ function MenuLegend(){
   function clickToggleLegendTab(index){setToggleLegendTab(index);};
 
   useEffect(() => {
-    //document.getElementById('menu-mapLegend').classList.add('hidden-window');
-  });
+    document.getElementById('menu-legend').classList.add('hidden-window');
+  }, []);
 
   return (
     <Draggable
       bounds='.menu-freespace-container'
-      handle='.menu-header-mapLegend'
+      handle='.menu-header'
     >
       <div 
         className='menu-window'
-        id='menu-mapLegend'
+        id='menu-legend'
       >
-        <div className='menu-header menu-header-mapLegend'>
+        <div className='menu-header'>
           <span className='menu-header-text'><span className="menu-icon"/> Map Legend</span>
-          <span className='menu-closebutton' onClick={() => {Functions.menuShowHide("menu-mapLegend")}}/>
+          <span className='menu-closebutton' onClick={() => {Functions.menuShowHide("menu-legend")}}/>
         </div>
         <div className='menu-columns'>
           <div className='menu-col-cat'>
@@ -419,14 +419,6 @@ function MenuLegend(){
               /></button>
               <button 
                 className='menu-button-item'
-                onMouseEnter={() => {setPreview("")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={false}
-                label="Music places"
-              /></button>
-              <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_alphaReactor")}}
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
@@ -456,6 +448,14 @@ function MenuLegend(){
                 ><Checkbox icon={<span></span>}
                 checked={false}
                 label="Datapods"
+              /></button>
+              <button 
+                className='menu-button-item'
+                onMouseEnter={() => {setPreview("")}}
+                onMouseLeave={() => {setPreview("null")}}
+                ><Checkbox icon={<span></span>}
+                checked={false}
+                label="Music places"
               /></button>
             </div>
           </Fragment>

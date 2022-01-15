@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import "./../stylesheet.scss";
+import "../stylesheet.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
 import './../../../assets/js/i18n';
@@ -7,17 +7,18 @@ import './../../../assets/js/i18n';
 function MenuSettings(){
   useEffect(() => {
     document.getElementById('menu-settings').classList.add('hidden-window');
-  });
+  }, []);
+
   return (
     <Draggable
       bounds='.menu-freespace-container'
-      handle='.menu-header-settings'
+      handle='.menu-header'
     >
       <div
         className='menu-window'
         id='menu-settings'
       >
-        <div className='menu-header menu-header-settings'>
+        <div className='menu-header'>
           <span className='menu-header-text'><span className="menu-icon"/> Options</span>
           <span className='menu-closebutton' onClick={() => {Functions.menuShowHide("menu-settings")}}/>
         </div>

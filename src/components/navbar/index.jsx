@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import "./stylesheet.scss";
 import Functions from '../../assets/js/functions';
 import './../../assets/js/i18n';
@@ -8,16 +8,14 @@ import imageSettings from './../../assets/ui/icons/settings.png';
 import imageAlphaReactor from './../../assets/ui/icons/alphaReactor.png';
 const imageKofi = "https://storage.ko-fi.com/cdn/cup-border.png";
 
-class NavBar extends Component {
-  render() {
+function NavBar(){
     return (
       <div className="bar-container">
         <div className='bar-inner'>
         <button 
           className="navbar-button"
-          onClick={() => {
-            window.open("https://ko-fi.com/kosnag");
-          }}
+          onClick={() => {window.open("https://ko-fi.com/kosnag");}}
+          //onClick={() => {Functions.menuShowHide("menu-donate")}}
         >
           <img alt="" src={imageKofi}/>
           <div>Kofi</div>
@@ -33,7 +31,7 @@ class NavBar extends Component {
         </button>
         <button 
           className="navbar-button"
-          onClick={() => {Functions.menuShowHide("menu-mapLegend")}}
+          onClick={() => {Functions.menuShowHide("menu-legend")}}
         >
           <img alt="" src={imageMapLegend}/>
           <div>Map Legend</div>
@@ -48,7 +46,6 @@ class NavBar extends Component {
         </div>
       </div>
     );
-  };
 };
 
 export default NavBar;

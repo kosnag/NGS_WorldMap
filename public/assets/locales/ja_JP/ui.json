@@ -13,6 +13,24 @@
             "food": "Food",
             "containers": "Containers",
             "other": "Other"
+        },
+        "Items": {
+            "landmarks": {
+                "battledia": "Battledias",
+                "cocoon": "Cocoons",
+                "mag": "Region Mags",
+                "ryuker": "Ryuker Devices",
+                "tower": "Towers",
+                "urgent": "Urgent Quests"
+            },
+            "other": {
+                "alphaReactor": "Alpha Reactors",
+                "dataPod": "Datapods",
+                "stellarSeed": "Stellar Seeds",
+                "veteran": "Veterans",
+                "stellarGrace": "Stellar Graces",
+                "musicPlace": "BGM Easter Eggs"
+            }
         }
     }
 }

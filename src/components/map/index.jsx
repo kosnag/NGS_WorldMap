@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {useEffect} from 'react';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import "./stylesheet.scss";
@@ -18,8 +18,8 @@ const bounds = [[boundSouth, boundWest], [boundNorth, boundEast]];
 const maxbounds = [[boundSouth-100, boundWest], [boundSouth/2+250, boundEast]];
 const center = [boundSouth/4*3, boundEast/2];
 
-class MapHalpha extends Component {
-    componentDidMount() {
+function MapHalpha(){
+    useEffect(() => {
         window.map = L.map('map', {
             zoom: 0,
             minZoom: 0,
@@ -39,12 +39,10 @@ class MapHalpha extends Component {
                 })
             ]
         });
-    }
-    render() {
-        return (
-            <div id="map"/>
-        );
-    };
+    })
+    return (
+        <div id="map"/>
+    );
 };
 
 export default MapHalpha;

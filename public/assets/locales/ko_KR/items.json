@@ -1,11 +1,11 @@
 {
     "Title": {
-        "landmarks_battledia": "1",
-        "landmarks_cocoon": "",
-        "landmarks_mag": "",
-        "landmarks_ryuker": "",
-        "landmarks_tower": "",
-        "landmarks_urgent": "",
+        "landmarks_battledia": "Battledia",
+        "landmarks_cocoon": "Cocoon",
+        "landmarks_mag": "Region Mag",
+        "landmarks_ryuker": "Ryuker Device",
+        "landmarks_tower": "Tower",
+        "landmarks_urgent": "Urgent Quest",
 
         "mineral_dualomite": "Dualomite",
         "mineral_monotite": "Monotite",
@@ -48,16 +48,18 @@
         "other_dataPod": "Datapod",
         "other_stellarSeed": "Stellar Seed",
         "other_veteran": "Veteran",
+        "other_stellarGrace": "Stellar Graces",
+        "other_musicPlace": "BGM Easter Eggs",
 
         "null": ""
     },
     "ShortInfo": {
-        "landmarks_battledia": "",
-        "landmarks_cocoon": "",
+        "landmarks_battledia": "Battledia Quests are unique quests that can be accessed through a Trigger Portal",
+        "landmarks_cocoon": "Cocoons are smaller challenges designed to test players",
         "landmarks_mag": "",
-        "landmarks_ryuker": "",
-        "landmarks_tower": "",
-        "landmarks_urgent": "",
+        "landmarks_ryuker": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel",
+        "landmarks_tower": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2",
+        "landmarks_urgent": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs",
 
         "mineral_dualomite": "Used for unlocking Potentials Lv2 and Limit Breaking at the Item Lab",
         "mineral_monotite": "Used for unlocking Potentials Lv1 and Limit Breaking at the Item Lab",
@@ -100,6 +102,8 @@
         "other_dataPod": "",
         "other_stellarSeed": "",
         "other_veteran": "",
+        "other_stellarGrace": "",
+        "other_musicPlace": "",
 
         "null": ""
     }
