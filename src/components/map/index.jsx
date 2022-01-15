@@ -18,7 +18,7 @@ const bounds = [[boundSouth, boundWest], [boundNorth, boundEast]];
 const maxbounds = [[boundSouth-100, boundWest], [boundSouth/2+250, boundEast]];
 const center = [boundSouth/4*3, boundEast/2];
 
-function MapHalpha(){
+function Map(){
     useEffect(() => {
         window.map = L.map('map', {
             zoom: 0,
@@ -39,10 +39,10 @@ function MapHalpha(){
                 })
             ]
         });
-    })
+    }, [])
     return (
         <div id="map"/>
     );
 };
 
-export default MapHalpha;
+export default Map;
