@@ -20,8 +20,8 @@ function MenuLegend(){
     setPreviewShortInfo(t("items:ShortInfo."+index, {framework:'React'}));
   };
 
-  const [toggleLegendTab, setToggleLegendTab] = useState('landmarks');
-  function clickToggleLegendTab(index){setToggleLegendTab(index);};
+  const [toggleTab, setToggleTab] = useState('landmarks');
+  function clickToggleTab(index){setToggleTab(index);};
 
   useEffect(() => {
     document.getElementById('menu-legend').classList.add('hidden-window');
@@ -43,29 +43,29 @@ function MenuLegend(){
         <div className='menu-columns'>
           <div className='menu-col-cat'>
             <button 
-              className={toggleLegendTab === 'landmarks' ? "menu-button-cat active-category" : "menu-button-cat"}
-              onClick={() => clickToggleLegendTab('landmarks')}
+              className={toggleTab === 'landmarks' ? "menu-button-cat active-category" : "menu-button-cat"}
+              onClick={() => clickToggleTab('landmarks')}
             >{t("ui:LegendMenu.Categories.landmarks",{framework:"React"})}</button>
             <button 
-              className={toggleLegendTab === 'minerals' ? "menu-button-cat active-category" : "menu-button-cat"}
-              onClick={() => clickToggleLegendTab('minerals')}
+              className={toggleTab === 'minerals' ? "menu-button-cat active-category" : "menu-button-cat"}
+              onClick={() => clickToggleTab('minerals')}
             >{t("ui:LegendMenu.Categories.minerals",{framework:"React"})}</button>
             <button 
-              className={toggleLegendTab === 'food' ? "menu-button-cat active-category" : "menu-button-cat"}
-              onClick={() => clickToggleLegendTab('food')}
+              className={toggleTab === 'food' ? "menu-button-cat active-category" : "menu-button-cat"}
+              onClick={() => clickToggleTab('food')}
             >{t("ui:LegendMenu.Categories.food",{framework:"React"})}</button>
             <button 
-              className={toggleLegendTab === 'containers' ? "menu-button-cat active-category" : "menu-button-cat"}
-              onClick={() => clickToggleLegendTab('containers')}
+              className={toggleTab === 'containers' ? "menu-button-cat active-category" : "menu-button-cat"}
+              onClick={() => clickToggleTab('containers')}
             >{t("ui:LegendMenu.Categories.containers",{framework:"React"})}</button>
             <button 
-              className={toggleLegendTab === 'other' ? "menu-button-cat active-category" : "menu-button-cat"}
-              onClick={() => clickToggleLegendTab('other')}
+              className={toggleTab === 'other' ? "menu-button-cat active-category" : "menu-button-cat"}
+              onClick={() => clickToggleTab('other')}
             >{t("ui:LegendMenu.Categories.other",{framework:"React"})}</button>
           </div>
           <Fragment>
             <div 
-              className={toggleLegendTab === 'landmarks' ? "menu-col-item active-tab" : "menu-col-item"}
+              className={toggleTab === 'landmarks' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
                 className='menu-button-item'
@@ -117,7 +117,7 @@ function MenuLegend(){
               /></button>
             </div>
             <div 
-              className={toggleLegendTab === 'minerals' ? "menu-col-item active-tab" : "menu-col-item"}
+              className={toggleTab === 'minerals' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
                 className='menu-button-item'
@@ -177,7 +177,7 @@ function MenuLegend(){
               /></button>
             </div>
             <div 
-              className={toggleLegendTab === 'food' ? "menu-col-item active-tab" : "menu-col-item"}
+              className={toggleTab === 'food' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
                 className='menu-button-item'
@@ -373,7 +373,7 @@ function MenuLegend(){
               /></button>
             </div>
             <div 
-              className={toggleLegendTab === 'containers' ? "menu-col-item active-tab" : "menu-col-item"}
+              className={toggleTab === 'containers' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
                 className='menu-button-item'
@@ -401,7 +401,7 @@ function MenuLegend(){
               /></button>
             </div>
             <div 
-              className={toggleLegendTab === 'other' ? "menu-col-item active-tab" : "menu-col-item"}
+              className={toggleTab === 'other' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
                 className='menu-button-item'

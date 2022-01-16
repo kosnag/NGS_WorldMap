@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./stylesheet.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
@@ -13,8 +13,8 @@ function MenuSettings(){
     i18n.changeLanguage(language);
   };
 
-  const [toggleLegendTab, setToggleLegendTab] = useState('languages');
-  function clickToggleLegendTab(index){setToggleLegendTab(index);};
+  const [toggleTab, setToggleTab] = useState('languages');
+  function clickToggleTab(index){setToggleTab(index);};
 
   useEffect(() => {
     //document.getElementById('menu-settings').classList.add('hidden-window');
