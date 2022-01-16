@@ -1,4 +1,4 @@
-@import './../../assets/ui/general.scss';
+@import './../../../assets/ui/general.scss';
 
 .menu-window {
     z-index: 8492;
@@ -156,68 +156,6 @@
                     }
                 }
             }
-        }
-    }
-    .menu-col-info {
-        flex-grow: 5;
-        display: flex;
-        flex-flow: column;
-        margin-left: 12px;
-        margin-right: 6px;
-        width: 220px;
-        div.menu-col-info-icon {
-            width: 96px;
-            height: 96px;
-            background-image: url(./../../assets/ui/bg_icon.png);
-            background-size: cover;
-            opacity: 0.5;
-            &.red {
-                border: solid 2px rgb(255, 0, 0);
-                background-color: rgba(255, 0, 0, .35);
-            }
-            &.green {
-                border: solid 2px rgba(0, 255, 0, 1);
-                background-color: rgba(0, 255, 0, .35);
-            }
-            &.blue {
-                border: solid 2px rgba(0, 0, 255, 1);
-                background-color: rgba(0, 0, 255, .35);
-            }
-            &.gold {
-                border: solid 2px rgba(255,215, 1);
-                background-color: rgba(255,215, .35);
-            }
-            &.purple {
-                border: solid 2px rgba(196, 0, 171, 1);
-                background-color: rgba(196, 0, 171, .35);
-            }
-            &.lightblue {
-                border: solid 2px rgb(40, 131, 211);
-                background-color: rgba(40, 131, 211, .35);
-            }
-            &.matoi {
-                border: solid 2px rgba(198, 10, 52, 1);
-                background-color: rgba(198, 10, 52, .35);
-            }
-        }
-        img {
-            border: solid 2px rgba(0,0,0,0);
-            position: absolute;
-            width: 96px;
-            height: 96px;
-            opacity: 0.9;
-            pointer-events: none;
-        }
-        .menu-col-info-title {
-            font-size: 17px;
-            margin-top: 4px;
-            margin-bottom: 4px;
-            overflow-wrap: break-word;
-        }
-        .menu-col-info-thesis {
-            font-size: 14px;
-            height: 104px;
-            overflow-wrap: break-word;
         }
     }
 }

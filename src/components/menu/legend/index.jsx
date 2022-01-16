@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import "../stylesheet.scss";
+import "./stylesheet.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
 import Checkbox from "react-custom-checkbox";
@@ -8,11 +8,7 @@ import './../../../assets/js/i18n';
 import { useTranslation } from "react-i18next";
 
 function MenuLegend(){
-  const { t, i18n } = useTranslation(["items","ui"]);
-
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
+  const { t } = useTranslation(["items","ui"]);
 
   const [previewIcon, setPreviewIcon] = useState("/assets/images/icons/null.png");
   const [previewTitle, setPreviewTitle] = useState("");
@@ -49,25 +45,23 @@ function MenuLegend(){
             <button 
               className={toggleLegendTab === 'landmarks' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleLegendTab('landmarks')}
-            >{t("ui:LegendMenu.Categories.landmarks", {framework: "React"})}</button>
+            >{t("ui:LegendMenu.Categories.landmarks",{framework:"React"})}</button>
             <button 
               className={toggleLegendTab === 'minerals' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleLegendTab('minerals')}
-            >{t("ui:LegendMenu.Categories.minerals", {framework: "React"})}</button>
+            >{t("ui:LegendMenu.Categories.minerals",{framework:"React"})}</button>
             <button 
               className={toggleLegendTab === 'food' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleLegendTab('food')}
-            >{t("ui:LegendMenu.Categories.food", {framework: "React"})}</button>
+            >{t("ui:LegendMenu.Categories.food",{framework:"React"})}</button>
             <button 
               className={toggleLegendTab === 'containers' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleLegendTab('containers')}
-            >{t("ui:LegendMenu.Categories.containers", {framework: "React"})}</button>
+            >{t("ui:LegendMenu.Categories.containers",{framework:"React"})}</button>
             <button 
               className={toggleLegendTab === 'other' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleLegendTab('other')}
-            >{t("ui:LegendMenu.Categories.other", {framework: "React"})}</button>
-            <button onClick={() => changeLanguage("en_JP")}>EN</button>
-            <button onClick={() => changeLanguage("ru_RU")}>RU</button>
+            >{t("ui:LegendMenu.Categories.other",{framework:"React"})}</button>
           </div>
           <Fragment>
             <div 
@@ -79,7 +73,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.ryuker", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.landmarks.ryuker",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -87,7 +81,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.cocoon", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.landmarks.cocoon",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -95,7 +89,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.tower", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.landmarks.tower",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -103,7 +97,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.battledia", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.landmarks.battledia",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -111,7 +105,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.mag", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.landmarks.mag",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -119,7 +113,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.urgent", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.landmarks.urgent",{framework:"React"})}
               /></button>
             </div>
             <div 
@@ -131,7 +125,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.mineral_monotite", {framework: "React"})}
+                label={t("items:Title.mineral_monotite",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -139,7 +133,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.mineral_dualomite", {framework: "React"})}
+                label={t("items:Title.mineral_dualomite",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -147,7 +141,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.mineral_trinite", {framework: "React"})}
+                label={t("items:Title.mineral_trinite",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -155,7 +149,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.mineral_tetracite", {framework: "React"})}
+                label={t("items:Title.mineral_tetracite",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -163,7 +157,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.mineral_photonQuartz", {framework: "React"})}
+                label={t("items:Title.mineral_photonQuartz",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -171,7 +165,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.mineral_photonChunk", {framework: "React"})}
+                label={t("items:Title.mineral_photonChunk",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -179,7 +173,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.mineral_photonScale", {framework: "React"})}
+                label={t("items:Title.mineral_photonScale",{framework:"React"})}
               /></button>
             </div>
             <div 
@@ -191,7 +185,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_apple", {framework: "React"})}
+                label={t("items:Title.food_aelio_apple",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -199,7 +193,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_banana", {framework: "React"})}
+                label={t("items:Title.food_aelio_banana",{framework:"React"})}
               /></button>
              <button 
                 className='menu-button-item'
@@ -207,7 +201,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_clam", {framework: "React"})}
+                label={t("items:Title.food_aelio_clam",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -215,7 +209,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_crab", {framework: "React"})}
+                label={t("items:Title.food_aelio_crab",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -223,7 +217,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_herb", {framework: "React"})}
+                label={t("items:Title.food_aelio_herb",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -231,7 +225,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_lobster", {framework: "React"})}
+                label={t("items:Title.food_aelio_lobster",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -239,7 +233,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_mushroom", {framework: "React"})}
+                label={t("items:Title.food_aelio_mushroom",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -247,7 +241,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_peach", {framework: "React"})}
+                label={t("items:Title.food_aelio_peach",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -255,7 +249,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_pear", {framework: "React"})}
+                label={t("items:Title.food_aelio_pear",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -263,7 +257,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_snail", {framework: "React"})}
+                label={t("items:Title.food_aelio_snail",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -271,7 +265,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_tomato", {framework: "React"})}
+                label={t("items:Title.food_aelio_tomato",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -279,7 +273,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_aelio_turnip", {framework: "React"})}
+                label={t("items:Title.food_aelio_turnip",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -287,7 +281,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_cauliflower", {framework: "React"})}
+                label={t("items:Title.food_retem_cauliflower",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -295,7 +289,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_cherries", {framework: "React"})}
+                label={t("items:Title.food_retem_cherries",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -303,7 +297,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_cranberries", {framework: "React"})}
+                label={t("items:Title.food_retem_cranberries",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -311,7 +305,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_eggplant", {framework: "React"})}
+                label={t("items:Title.food_retem_eggplant",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -319,7 +313,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_fruit", {framework: "React"})}
+                label={t("items:Title.food_retem_fruit",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -327,7 +321,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_hermitCrab", {framework: "React"})}
+                label={t("items:Title.food_retem_hermitCrab",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -335,7 +329,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_mango", {framework: "React"})}
+                label={t("items:Title.food_retem_mango",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -343,7 +337,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_mushroom", {framework: "React"})}
+                label={t("items:Title.food_retem_mushroom",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -351,7 +345,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_scallop", {framework: "React"})}
+                label={t("items:Title.food_retem_scallop",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -359,7 +353,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_seaSlug", {framework: "React"})}
+                label={t("items:Title.food_retem_seaSlug",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -367,7 +361,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_strawberry", {framework: "React"})}
+                label={t("items:Title.food_retem_strawberry",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -375,7 +369,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={true}
-                label={t("items:Title.food_retem_urchin", {framework: "React"})}
+                label={t("items:Title.food_retem_urchin",{framework:"React"})}
               /></button>
             </div>
             <div 
@@ -387,7 +381,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("items:Title.containers_redBox", {framework: "React"})}
+                label={t("items:Title.containers_redBox",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -395,7 +389,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("items:Title.containers_greenBox", {framework: "React"})}
+                label={t("items:Title.containers_greenBox",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -403,7 +397,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("items:Title.containers_goldBox", {framework: "React"})}
+                label={t("items:Title.containers_goldBox",{framework:"React"})}
               /></button>
             </div>
             <div 
@@ -415,7 +409,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.veteran", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.other.veteran",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -423,7 +417,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.alphaReactor", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.other.alphaReactor",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -431,7 +425,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.stellarSeed", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.other.stellarSeed",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -439,7 +433,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.stellarGrace", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.other.stellarGrace",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -447,7 +441,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.dataPod", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.other.dataPod",{framework:"React"})}
               /></button>
               <button 
                 className='menu-button-item'
@@ -455,7 +449,7 @@ function MenuLegend(){
                 onMouseLeave={() => {setPreview("null")}}
                 ><Checkbox icon={<span></span>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.musicPlace", {framework: "React"})}
+                label={t("ui:LegendMenu.Items.other.musicPlace",{framework:"React"})}
               /></button>
             </div>
           </Fragment>

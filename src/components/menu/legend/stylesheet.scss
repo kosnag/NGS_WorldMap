@@ -1,0 +1,223 @@
+@import './../../../assets/ui/general.scss';
+
+.menu-window {
+    z-index: 8492;
+    position: absolute;
+    background-color: $window-color;
+    border: solid 1px $window-border-color;
+    display: inherit;
+    &.hidden-window {
+        display: none;
+    }
+}
+.menu-header {
+    $widthpadding: 7px;
+    background-color: $window-header-color;
+    width: calc(100% - $widthpadding * 2);
+    padding-left: $widthpadding;
+    padding-right: $widthpadding;
+    height: 32px;
+    display: flex;
+    .menu-header-text {
+        font-size: 22px;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: inline-flex;
+        flex: 1;
+        float: left;
+        .menu-icon {
+            margin-right: 8px;
+            font-size: 16px;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-shadow: initial;
+            &::before {
+                content: "◆︎";
+            }
+        }
+    }
+    .menu-closebutton {
+        float: right;
+        font-size: 26px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 4px;
+        padding-right: 4px;
+        &:hover, &:active {
+            background-color: #A30000;
+            border: 2px solid #FF0000;
+        }
+        &::before {
+            content: 'x';
+        }
+    }
+}
+
+.menu-columns {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    .menu-col-cat {
+        flex-grow: 5;
+        display: flex;
+        flex-flow: column;
+        .menu-button-cat {
+            width: 250px;
+            height: 40px;
+            margin-left: 6px;
+            margin-right: 9px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-color: rgba($window-button-default, .85);
+            border: solid 2px rgba($window-button-border-default, .85);
+            &:hover {
+                background-color: rgba($window-button-hover, .85);
+                border: solid 2px rgba($window-button-border-hover, .85);
+            }
+            &:active {
+                background-color: rgba($window-button-active, .85);
+                border: solid 2px rgba($window-button-border-active, .85);
+            }
+            &.active-category {
+                background-color: lighten(rgba($window-button-hover, .85), 12%) !important;
+                border: solid 2px lighten(rgba($window-button-border-hover, .85), 12%) !important;
+            }
+        }
+    }
+    .menu-col-item {
+        display: none;
+        &.active-tab {
+            flex-grow: 5;
+            display: flex;
+            flex-flow: column;
+            display: flex !important;
+            height: 230px;
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+                width: 3px;
+                background-color: rgba(169, 169, 169, 0.5);
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: darkgray;
+            }
+        }
+        .menu-button-item {
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: left;
+            align-items: baseline;
+
+            font-size: 13px;
+            width: 300px;
+            height: 30px;
+            margin-left: 3px;
+            margin-right: 3px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+            background-color: rgba(rgb(52, 56, 60), .75);
+            border: solid 2px rgba(rgb(52, 56, 60), .75);
+            &:hover {
+                background-color: rgba($window-button-hover, .75);
+                border: solid 2px rgba($window-button-border-hover, .75);
+            }
+            &:active {
+                background-color: rgba($window-button-active, .75);
+                border: solid 2px rgba($window-button-border-active, .75);
+            }
+            label {
+                height: 100%;
+                margin: 0;
+                height: 24px;
+                div {
+                    color: white !important;
+                    width: 14px !important;
+                    height: 14px !important;
+                    border: 1px solid white !important;
+                    border-radius: 3px !important;
+                    margin-right: 6px !important;
+                    span {
+                        display: inline-block;
+                        background-color: #30F3FF;
+                        height: 100%;
+                        text-align: center;
+                        font-size: 18px;
+                        text-shadow: initial;
+                        color: #3567A9;
+                        line-height: calc(100% - 2px);
+                        border-radius: 1px;
+                        &::before {
+                            content: "✔";
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .menu-col-info {
+        flex-grow: 5;
+        display: flex;
+        flex-flow: column;
+        margin-left: 12px;
+        margin-right: 6px;
+        width: 220px;
+        div.menu-col-info-icon {
+            width: 96px;
+            height: 96px;
+            background-image: url(./../../../assets/ui/bg_icon.png);
+            background-size: cover;
+            opacity: 0.5;
+            &.red {
+                border: solid 2px rgb(255, 0, 0);
+                background-color: rgba(255, 0, 0, .35);
+            }
+            &.green {
+                border: solid 2px rgba(0, 255, 0, 1);
+                background-color: rgba(0, 255, 0, .35);
+            }
+            &.blue {
+                border: solid 2px rgba(0, 0, 255, 1);
+                background-color: rgba(0, 0, 255, .35);
+            }
+            &.gold {
+                border: solid 2px rgba(255,215, 1);
+                background-color: rgba(255,215, .35);
+            }
+            &.purple {
+                border: solid 2px rgba(196, 0, 171, 1);
+                background-color: rgba(196, 0, 171, .35);
+            }
+            &.lightblue {
+                border: solid 2px rgb(40, 131, 211);
+                background-color: rgba(40, 131, 211, .35);
+            }
+            &.matoi {
+                border: solid 2px rgba(198, 10, 52, 1);
+                background-color: rgba(198, 10, 52, .35);
+            }
+        }
+        img {
+            border: solid 2px rgba(0,0,0,0);
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            opacity: 0.9;
+            pointer-events: none;
+        }
+        .menu-col-info-title {
+            font-size: 17px;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            overflow-wrap: break-word;
+        }
+        .menu-col-info-thesis {
+            font-size: 14px;
+            height: 104px;
+            overflow-wrap: break-word;
+        }
+    }
+}

@@ -19,11 +19,10 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    lng: 'en_JP',
-    fallbackLng: 'en_JP',
+    fallbackLng: 'en_US',
     debug: true,
     react: {
-       wait: true,
+       //wait: true,
        useSuspense: false,
     },
     backend: {
