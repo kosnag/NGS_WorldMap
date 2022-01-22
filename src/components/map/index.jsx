@@ -2,7 +2,6 @@ import React, {useEffect} from 'react';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import "./stylesheet.scss";
-import './../../assets/js/i18n';
 
 const boundNorth = 0; 
 const boundEast = 12288/6;
