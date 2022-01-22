@@ -51,7 +51,7 @@
             },
             "mapping": {
                 "discord": "Join to Discord",
-                "statt": "Go to mapping mode"
+                "start": "Go to mapping mode"
             },
             "debug": {
                 "langReset": "Reset language",
