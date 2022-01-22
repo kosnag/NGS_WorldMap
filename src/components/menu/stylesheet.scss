@@ -1,0 +1,56 @@
+@import './../../assets/ui/general.scss';
+
+.menu-window {
+    z-index: 8492;
+    position: absolute;
+    background-color: $window-color;
+    border: solid 1px $window-border-color;
+    display: inherit;
+    &.hidden-window {
+        display: none;
+    }
+}
+.menu-header {
+    $widthpadding: 7px;
+    background-color: $window-header-color;
+    width: calc(100% - $widthpadding * 2);
+    padding-left: $widthpadding;
+    padding-right: $widthpadding;
+    height: 32px;
+    display: flex;
+    .menu-header-text {
+        font-size: 22px;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: inline-flex;
+        flex: 1;
+        float: left;
+        .menu-icon {
+            margin-right: 8px;
+            font-size: 16px;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-shadow: initial;
+            &::before {
+                content: "◆︎";
+            }
+        }
+    }
+    .menu-closebutton {
+        float: right;
+        font-size: 26px;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 4px;
+        padding-right: 4px;
+        &:hover, &:active {
+            background-color: #A30000;
+            border: 2px solid #FF0000;
+        }
+        &::before {
+            content: 'x';
+        }
+    }
+}
