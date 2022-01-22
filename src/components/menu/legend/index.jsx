@@ -8,7 +8,7 @@ import './../../../assets/js/i18n';
 import { useTranslation } from "react-i18next";
 
 function MenuLegend(){
-  const { t } = useTranslation(["items","ui"]);
+  const {t} = useTranslation(["items","ui"]);
 
   const [previewIcon, setPreviewIcon] = useState("/assets/images/icons/null.png");
   const [previewTitle, setPreviewTitle] = useState("");
@@ -16,8 +16,8 @@ function MenuLegend(){
 
   function setPreview(index){
     setPreviewIcon(process.env.PUBLIC_URL+"/assets/images/icons/"+index+".png");
-    setPreviewTitle(t("items:Title."+index, {framework:'React'}));
-    setPreviewShortInfo(t("items:ShortInfo."+index, {framework:'React'}));
+    setPreviewTitle(t("items:Title."+index));
+    setPreviewShortInfo(t("items:ShortInfo."+index));
   };
 
   const [toggleTab, setToggleTab] = useState('landmarks');
@@ -25,7 +25,8 @@ function MenuLegend(){
 
   useEffect(() => {
     document.getElementById('menu-legend').classList.add('hidden-window');
-  }, []);
+    setPreviewTitle(t("items:Title.nothing"));
+  }, [t]);
 
   return (
     <Draggable
@@ -37,419 +38,331 @@ function MenuLegend(){
         id='menu-legend'
       >
         <div className='menu-header'>
-          <span className='menu-header-text'><span className="menu-icon"/> Map Legend</span>
-          <span className='menu-closebutton' onClick={() => {Functions.menuShowHide("menu-legend")}}/>
+          <span className='menu-header-text'>
+            <span className="menu-icon"/> {t("ui:NavBar.mapLegend")}
+          </span>
+          <span className='menu-closebutton'
+            onClick={() => {Functions.menuShowHide("menu-legend")}}
+          />
         </div>
-        <div className='menu-columns'>
+        <div className='menu-columns' id='legend'>
           <div className='menu-col-cat'>
             <button 
               className={toggleTab === 'landmarks' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleTab('landmarks')}
-            >{t("ui:LegendMenu.Categories.landmarks",{framework:"React"})}</button>
+            >{t("ui:LegendMenu.Categories.landmarks")}</button>
             <button 
               className={toggleTab === 'minerals' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleTab('minerals')}
-            >{t("ui:LegendMenu.Categories.minerals",{framework:"React"})}</button>
+            >{t("ui:LegendMenu.Categories.minerals")}</button>
             <button 
               className={toggleTab === 'food' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleTab('food')}
-            >{t("ui:LegendMenu.Categories.food",{framework:"React"})}</button>
+            >{t("ui:LegendMenu.Categories.food")}</button>
             <button 
               className={toggleTab === 'containers' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleTab('containers')}
-            >{t("ui:LegendMenu.Categories.containers",{framework:"React"})}</button>
+            >{t("ui:LegendMenu.Categories.containers")}</button>
             <button 
               className={toggleTab === 'other' ? "menu-button-cat active-category" : "menu-button-cat"}
               onClick={() => clickToggleTab('other')}
-            >{t("ui:LegendMenu.Categories.other",{framework:"React"})}</button>
+            >{t("ui:LegendMenu.Categories.other")}</button>
           </div>
           <Fragment>
             <div 
               className={toggleTab === 'landmarks' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_ryuker")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.ryuker",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("ui:LegendMenu.Items.landmarks.ryuker")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_cocoon")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.cocoon",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("ui:LegendMenu.Items.landmarks.cocoon")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_tower")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.tower",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("ui:LegendMenu.Items.landmarks.tower")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_battledia")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.battledia",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("ui:LegendMenu.Items.landmarks.battledia")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_mag")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.mag",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("ui:LegendMenu.Items.landmarks.mag")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("landmarks_urgent")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("ui:LegendMenu.Items.landmarks.urgent",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("ui:LegendMenu.Items.landmarks.urgent")}
               /></button>
             </div>
             <div 
               className={toggleTab === 'minerals' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_monotite")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.mineral_monotite",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.mineral_monotite")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_dualomite")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.mineral_dualomite",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.mineral_dualomite")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_trinite")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.mineral_trinite",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.mineral_trinite")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_tetracite")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.mineral_tetracite",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.mineral_tetracite")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_photonQuartz")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.mineral_photonQuartz",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.mineral_photonQuartz")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_photonChunk")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.mineral_photonChunk",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.mineral_photonChunk")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("mineral_photonScale")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.mineral_photonScale",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.mineral_photonScale")}
               /></button>
             </div>
             <div 
               className={toggleTab === 'food' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_apple")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_apple",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_apple")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_banana")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_banana",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_banana")}
               /></button>
              <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_clam")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_clam",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_clam")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_crab")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_crab",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_crab")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_herb")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_herb",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_herb")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_lobster")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_lobster",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_lobster")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_mushroom")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_mushroom",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_mushroom")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_peach")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_peach",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_peach")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_pear")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_pear",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_pear")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_snail")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_snail",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_snail")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_tomato")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_tomato",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_tomato")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_aelio_turnip")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_aelio_turnip",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_aelio_turnip")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_cauliflower")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_cauliflower",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_cauliflower")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_cherries")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_cherries",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_cherries")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_cranberries")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_cranberries",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_cranberries")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_eggplant")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_eggplant",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_eggplant")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_fruit")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_fruit",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_fruit")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_hermitCrab")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_hermitCrab",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_hermitCrab")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_mango")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_mango",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_mango")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_mushroom")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_mushroom",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_mushroom")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_scallop")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_scallop",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_scallop")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_seaSlug")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_seaSlug",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_seaSlug")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_strawberry")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_strawberry",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_strawberry")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("food_retem_urchin")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
-                checked={true}
-                label={t("items:Title.food_retem_urchin",{framework:"React"})}
+                ><Checkbox icon={<span/>}
+                checked={false}
+                label={t("items:Title.food_retem_urchin")}
               /></button>
             </div>
             <div 
               className={toggleTab === 'containers' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("containers_redBox")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("items:Title.containers_redBox",{framework:"React"})}
+                label={t("items:Title.containers_redBox")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("containers_greenBox")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("items:Title.containers_greenBox",{framework:"React"})}
+                label={t("items:Title.containers_greenBox")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("containers_goldBox")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("items:Title.containers_goldBox",{framework:"React"})}
+                label={t("items:Title.containers_goldBox")}
               /></button>
             </div>
             <div 
               className={toggleTab === 'other' ? "menu-col-item active-tab" : "menu-col-item"}
             >
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_veteran")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.veteran",{framework:"React"})}
+                label={t("ui:LegendMenu.Items.other.veteran")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_alphaReactor")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.alphaReactor",{framework:"React"})}
+                label={t("ui:LegendMenu.Items.other.alphaReactor")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_stellarSeed")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.stellarSeed",{framework:"React"})}
+                label={t("ui:LegendMenu.Items.other.stellarSeed")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.stellarGrace",{framework:"React"})}
+                label={t("ui:LegendMenu.Items.other.stellarGrace")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("other_dataPod")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.dataPod",{framework:"React"})}
+                label={t("ui:LegendMenu.Items.other.dataPod")}
               /></button>
               <button 
-                className='menu-button-item'
                 onMouseEnter={() => {setPreview("")}}
-                onMouseLeave={() => {setPreview("null")}}
-                ><Checkbox icon={<span></span>}
+                ><Checkbox icon={<span/>}
                 checked={false}
-                label={t("ui:LegendMenu.Items.other.musicPlace",{framework:"React"})}
+                label={t("ui:LegendMenu.Items.other.musicPlace")}
               /></button>
             </div>
           </Fragment>
