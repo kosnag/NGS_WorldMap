@@ -51,7 +51,7 @@
         "other_stellarGrace": "Stellar Graces",
         "other_musicPlace": "BGM Easter Eggs",
 
-        "null": ""
+        "nothing": "Select item"
     },
     "ShortInfo": {
         "landmarks_battledia": "Battledia Quests are unique quests that can be accessed through a Trigger Portal",
@@ -103,8 +103,6 @@
         "other_stellarSeed": "",
         "other_veteran": "",
         "other_stellarGrace": "",
-        "other_musicPlace": "",
-
-        "null": ""
+        "other_musicPlace": ""
     }
 }
