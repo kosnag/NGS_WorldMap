@@ -1,61 +1,6 @@
-@import './../../../assets/ui/general.scss';
+@import './../stylesheet.scss';
 
-.menu-window {
-    z-index: 8492;
-    position: absolute;
-    background-color: $window-color;
-    border: solid 1px $window-border-color;
-    display: inherit;
-    &.hidden-window {
-        display: none;
-    }
-}
-.menu-header {
-    $widthpadding: 7px;
-    background-color: $window-header-color;
-    width: calc(100% - $widthpadding * 2);
-    padding-left: $widthpadding;
-    padding-right: $widthpadding;
-    height: 32px;
-    display: flex;
-    .menu-header-text {
-        font-size: 22px;
-        margin-top: auto;
-        margin-bottom: auto;
-        display: inline-flex;
-        flex: 1;
-        float: left;
-        .menu-icon {
-            margin-right: 8px;
-            font-size: 16px;
-            margin-top: auto;
-            margin-bottom: auto;
-            text-shadow: initial;
-            &::before {
-                content: "◆︎";
-            }
-        }
-    }
-    .menu-closebutton {
-        float: right;
-        font-size: 26px;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding-top: 0px;
-        padding-bottom: 0px;
-        padding-left: 4px;
-        padding-right: 4px;
-        &:hover, &:active {
-            background-color: #A30000;
-            border: 2px solid #FF0000;
-        }
-        &::before {
-            content: 'x';
-        }
-    }
-}
-
-.menu-columns {
+.menu-columns#settings {
     width: 100%;
     height: auto;
     display: flex;
@@ -70,7 +15,7 @@
             width: 250px;
             height: 40px;
             margin-left: 6px;
-            margin-right: 9px;
+            margin-right: 6px;
             margin-top: 3px;
             margin-bottom: 3px;
             background-color: rgba($window-button-default, .85);
@@ -97,63 +42,34 @@
             flex-flow: column;
             display: flex !important;
             height: 230px;
-            overflow-y: scroll;
-            &::-webkit-scrollbar {
-                width: 3px;
-                background-color: rgba(169, 169, 169, 0.5);
-            }
-            &::-webkit-scrollbar-thumb {
-                background-color: darkgray;
-            }
         }
-        .menu-button-item {
-            box-sizing: border-box;
-            display: inline-block;
-            text-align: left;
-            align-items: baseline;
-
-            font-size: 13px;
-            width: 300px;
-            height: 30px;
-            margin-left: 3px;
-            margin-right: 3px;
-            margin-top: 3px;
-            margin-bottom: 3px;
-            background-color: rgba(rgb(52, 56, 60), .75);
-            border: solid 2px rgba(rgb(52, 56, 60), .75);
-            &:hover {
-                background-color: rgba($window-button-hover, .75);
-                border: solid 2px rgba($window-button-border-hover, .75);
-            }
-            &:active {
-                background-color: rgba($window-button-active, .75);
-                border: solid 2px rgba($window-button-border-active, .75);
-            }
-            label {
-                height: 100%;
-                margin: 0;
-                height: 24px;
+        &#languages {
+            button {
+                box-sizing: border-box;
+                display: inline-block;
+                text-align: left;
+                align-items: baseline;
+    
+                font-size: 13px;
+                width: 300px;
+                height: 30px;
+                margin-left: 6px;
+                margin-right: 6px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                background-color: rgba(rgb(52, 56, 60), .75);
+                border: solid 2px rgba(rgb(52, 56, 60), .75);
+                &:hover {
+                    background-color: rgba($window-button-hover, .75);
+                    border: solid 2px rgba($window-button-border-hover, .75);
+                }
+                &:active {
+                    background-color: rgba($window-button-active, .75);
+                    border: solid 2px rgba($window-button-border-active, .75);
+                }
                 div {
-                    color: white !important;
-                    width: 14px !important;
-                    height: 14px !important;
-                    border: 1px solid white !important;
-                    border-radius: 3px !important;
-                    margin-right: 6px !important;
-                    span {
-                        display: inline-block;
-                        background-color: #30F3FF;
-                        height: 100%;
-                        text-align: center;
-                        font-size: 18px;
-                        text-shadow: initial;
-                        color: #3567A9;
-                        line-height: calc(100% - 2px);
-                        border-radius: 1px;
-                        &::before {
-                            content: "✔";
-                        }
-                    }
+                    display: flex;
+                    align-items: center;
                 }
             }
         }
