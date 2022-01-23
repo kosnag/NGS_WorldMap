@@ -8,7 +8,7 @@ import imageSettings from './../../assets/ui/icons/settings.png';
 import imageAlphaReactor from './../../assets/ui/icons/alphaReactor.png';
 const imageKofi = "https://storage.ko-fi.com/cdn/cup-border.png";
 
-function NavBar(){
+const NavBar = () => {
     return (
       <div className="bar-container">
         <div className='bar-inner'>
