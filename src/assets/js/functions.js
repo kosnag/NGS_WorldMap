@@ -1,5 +1,5 @@
 var Functions = {
-  menuShowHide: function(element){ 
+  menuShowHide: (element) => { 
     switch(element){
       case 'menu-legend':
         if (document.getElementById('menu-legend').classList.contains('hidden-window')) {
