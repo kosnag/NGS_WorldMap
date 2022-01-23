@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 function MenuLegend(){
   const {t} = useTranslation(["items","ui"]);
 
-  const [previewIcon, setPreviewIcon] = useState("/assets/images/icons/null.png");
+  const [previewIcon, setPreviewIcon] = useState(process.env.PUBLIC_URL+"/assets/images/icons/null.png");
   const [previewTitle, setPreviewTitle] = useState("");
   const [previewShortInfo, setPreviewShortInfo] = useState("");
 
