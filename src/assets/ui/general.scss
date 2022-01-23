@@ -82,7 +82,8 @@ body {
     }
 }
 
-.menu-freespace-container {
+container {
+    display: block;
     $margin: 2.5%;
     position: absolute;
     top: 0;

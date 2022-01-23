@@ -26,24 +26,22 @@ function MenuLegend(){
   };
 
   useEffect(() => {
-    document.getElementById('menu-legend').classList.add('hidden-window');
+    document.getElementById('menu-legend').classList.add('hidden');
     setPreviewTitle(t("items:Title.nothing"));
   }, [t]);
 
   return (
     <Draggable
-      bounds='.menu-freespace-container'
-      handle='.menu-header'
+      bounds='container'
+      handle='header'
     >
-      <div className='menu-window' id='menu-legend'>
-        <div className='menu-header'>
-          <span className='menu-header-text'>
-            <span className="menu-icon"/> {t("ui:NavBar.mapLegend")}
-          </span>
-          <span className='menu-closebutton' onClick={() => {Functions.menuShowHide("menu-legend")}}/>
-        </div>
-        <div className='menu-columns' id='legend'>
-          <div className='menu-col-cat'>
+      <window id='menu-legend'>
+        <header>
+          <span><menu-icon/> {t("ui:NavBar.mapLegend")}</span>
+          <closebutton onClick={() => {Functions.menuShowHide("menu-legend")}}/>
+        </header>
+        <columns id='legend'>
+          <category>
             <button 
               className={toggleTab === 'landmarks' ? "active" : ""}
               onClick={() => clickToggleTab('landmarks')}
@@ -64,9 +62,9 @@ function MenuLegend(){
               className={toggleTab === 'other' ? "active" : ""}
               onClick={() => clickToggleTab('other')}
             >{t("ui:LegendMenu.Categories.other")}</button>
-          </div>
+          </category>
           <Fragment>
-            <div className={toggleTab === 'landmarks' ? "menu-col-item active" : "menu-col-item"}>
+            <items className={toggleTab === 'landmarks' ? "active" : ""}>
               <button 
                 onMouseEnter={() => {setPreview("landmarks_ryuker")}}
                 ><Checkbox icon={<span/>}
@@ -103,8 +101,8 @@ function MenuLegend(){
                 checked={false}
                 label={t("ui:LegendMenu.Items.landmarks.urgent")}
               /></button>
-            </div>
-            <div className={toggleTab === 'minerals' ? "menu-col-item active" : "menu-col-item"}>
+            </items>
+            <items className={toggleTab === 'minerals' ? "active" : ""}>
               <button 
                 onMouseEnter={() => {setPreview("mineral_monotite")}}
                 ><Checkbox icon={<span/>}
@@ -147,8 +145,8 @@ function MenuLegend(){
                 checked={false}
                 label={t("items:Title.mineral_photonScale")}
               /></button>
-            </div>
-            <div className={toggleTab === 'food' ? "menu-col-item active" : "menu-col-item"}>
+            </items>
+            <items className={toggleTab === 'food' ? "active" : ""}>
               <button 
                 onMouseEnter={() => {setPreview("food_aelio_apple")}}
                 ><Checkbox icon={<span/>}
@@ -293,8 +291,8 @@ function MenuLegend(){
                 checked={false}
                 label={t("items:Title.food_retem_urchin")}
               /></button>
-            </div>
-            <div className={toggleTab === 'containers' ? "menu-col-item active" : "menu-col-item"}>
+            </items>
+            <items className={toggleTab === 'containers' ? "active" : ""}>
               <button 
                 onMouseEnter={() => {setPreview("containers_redBox")}}
                 ><Checkbox icon={<span/>}
@@ -313,8 +311,8 @@ function MenuLegend(){
                 checked={false}
                 label={t("items:Title.containers_goldBox")}
               /></button>
-            </div>
-            <div className={toggleTab === 'other' ? "menu-col-item active" : "menu-col-item"}>
+            </items>
+            <items className={toggleTab === 'other' ? "active" : ""}>
               <button 
                 onMouseEnter={() => {setPreview("other_veteran")}}
                 ><Checkbox icon={<span/>}
@@ -351,16 +349,16 @@ function MenuLegend(){
                 checked={false}
                 label={t("ui:LegendMenu.Items.other.musicPlace")}
               /></button>
-            </div>
+            </items>
           </Fragment>
-          <div className='menu-col-info'>
-            <div className='menu-col-info-icon lightblue'/>
+          <info>
+            <background className='lightblue'/>
             <img alt="" src={previewIcon}/>
-            <div className='menu-col-info-title'>{previewTitle}</div>
-            <div className='menu-col-info-thesis'>{previewShortInfo}</div>
-          </div>
-        </div>
-      </div>
+            <name>{previewTitle}</name>
+            <thesis>{previewShortInfo}</thesis>
+          </info>
+        </columns>
+      </window>
     </Draggable>
   );
 };

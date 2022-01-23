@@ -1,13 +1,13 @@
 @import './../stylesheet.scss';
 
-.menu-columns#legend {
+columns#legend {
     width: 100%;
     height: auto;
     display: flex;
     flex-flow: row;
     padding-top: 10px;
     padding-bottom: 6px;
-    .menu-col-cat {
+    category {
         flex-grow: 5;
         display: flex;
         flex-flow: column;
@@ -34,7 +34,7 @@
             }
         }
     }
-    .menu-col-item {
+    items {
         display: none;
         &.active {
             flex-grow: 5;
@@ -103,14 +103,15 @@
             }
         }
     }
-    .menu-col-info {
+    info {
         flex-grow: 5;
         display: flex;
         flex-flow: column;
         margin-left: 12px;
         margin-right: 6px;
         width: 220px;
-        div.menu-col-info-icon {
+        background {
+            display: block;
             width: 96px;
             height: 96px;
             background-image: url(./../../../assets/ui/bg_icon.png);
@@ -153,13 +154,13 @@
             opacity: 0.9;
             pointer-events: none;
         }
-        .menu-col-info-title {
+        name {
             font-size: 17px;
             margin-top: 4px;
             margin-bottom: 4px;
             overflow-wrap: break-word;
         }
-        .menu-col-info-thesis {
+        thesis {
             font-size: 14px;
             height: 104px;
             overflow-wrap: break-word;

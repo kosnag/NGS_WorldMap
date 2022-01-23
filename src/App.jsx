@@ -22,10 +22,10 @@ const App = () => {
     <Fragment>
       <Map/>
       <NavBar/>
-      <div className='menu-freespace-container'>
+      <container>
         <MenuLegend/>
         <MenuSettings/>
-      </div>
+      </container>
     </Fragment>
   );
 }

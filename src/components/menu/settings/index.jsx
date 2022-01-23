@@ -21,24 +21,22 @@ const MenuSettings = () => {
   };
 
   useEffect(() => {
-    //document.getElementById('menu-settings').classList.add('hidden-window');
+    document.getElementById('menu-settings').classList.add('hidden');
     setToggleLang(localStorage.getItem("i18nextLng"));
   }, []);
 
   return (
     <Draggable
-      bounds='.menu-freespace-container'
-      handle='.menu-header'
+      bounds='container'
+      handle='header'
     >
-      <div className='menu-window' id='menu-settings'>
-        <div className='menu-header'>
-          <span className='menu-header-text'>
-            <span className="menu-icon"/> {t("ui:NavBar.options")}
-          </span>
-          <span className='menu-closebutton' onClick={() => {Functions.menuShowHide("menu-settings")}}/>
-        </div>
-        <div className='menu-columns' id='settings'>
-          <div className='menu-col-cat'>
+      <window id='menu-settings'>
+        <header>
+          <span><menu-icon/> {t("ui:NavBar.options")}</span>
+          <closebutton onClick={() => {Functions.menuShowHide("menu-settings")}}/>
+        </header>
+        <columns id='settings'>
+          <category>
             <button 
               className={toggleTab === 'languages' ? "active" : ""}
               onClick={() => clickToggleTab('languages')}
@@ -55,51 +53,51 @@ const MenuSettings = () => {
               className={toggleTab === 'about' ? "active" : ""}
               onClick={() => clickToggleTab('about')}
             >{t("ui:OptionsMenu.Categories.about")}</button>
-          </div>
+          </category>
           <Fragment>
-            <div id="languages" className={toggleTab === 'languages' ? "menu-col-item active" : "menu-col-item"}>
+            <items id="languages" className={toggleTab === 'languages' ? "active" : ""}>
               <button onClick={() => {clickToggleLang("en_US");}}>
-                <span className={toggleLang === 'en_US' ? "radio active" : "radio"}/>
-                <span className="text">{t("ui:OptionsMenu.Items.languages.english")} / English</span>
+                <span className={toggleLang === 'en_US' ? "active" : ""}/>
+                <div>{t("ui:OptionsMenu.Items.languages.english")} / English</div>
               </button>
               <button onClick={() => {clickToggleLang("ja_JP");}}>
-                <span className={toggleLang === 'ja_JP' ? "radio active" : "radio"}/>
-                <span className="text">{t("ui:OptionsMenu.Items.languages.japanese")} / 日本</span>
+                <span className={toggleLang === 'ja_JP' ? "active" : ""}/>
+                <div>{t("ui:OptionsMenu.Items.languages.japanese")} / 日本</div>
               </button>
               <button onClick={() => {clickToggleLang("en_JP");}}>
-                <span className={toggleLang === 'en_JP' ? "radio active" : "radio"}/>
-                <span className="text">{t("ui:OptionsMenu.Items.languages.english_jp")} / English (Fan-Patch)</span>
+                <span className={toggleLang === 'en_JP' ? "active" : ""}/>
+                <div>{t("ui:OptionsMenu.Items.languages.english_jp")} / English (Fan-Patch)</div>
               </button>
               <button onClick={() => {clickToggleLang("ru_RU");}}>
-                <span className={toggleLang === 'ru_RU' ? "radio active" : "radio"}/>
-                <span className="text">{t("ui:OptionsMenu.Items.languages.russian")} / Русский</span>
+                <span className={toggleLang === 'ru_RU' ? "active" : ""}/>
+                <div>{t("ui:OptionsMenu.Items.languages.russian")} / Русский</div>
               </button>
               <button onClick={() => {clickToggleLang("ko_KR");}}>
-                <span className={toggleLang === 'ko_KR' ? "radio active" : "radio"}/>
-                <span className="text">{t("ui:OptionsMenu.Items.languages.korean")} / 한국어</span>
+                <span className={toggleLang === 'ko_KR' ? "active" : ""}/>
+                <div>{t("ui:OptionsMenu.Items.languages.korean")} / 한국어</div>
               </button>
               <button onClick={() => {clickToggleLang("pr_BR");}}>
-                <span className={toggleLang === 'pr_BR' ? "radio active" : "radio"}/>
-                <span className="text">{t("ui:OptionsMenu.Items.languages.portuguse")} / Português</span>
+                <span className={toggleLang === 'pr_BR' ? "active" : ""}/>
+                <div>{t("ui:OptionsMenu.Items.languages.portuguse")} / Português</div>
               </button>
-            </div>
-            <div id="mapping" className={toggleTab === 'mapping' ? "menu-col-item active" : "menu-col-item"}>
+            </items>
+            <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
               <button onClick={()=>window.open("https://discord.gg/czK9HbxpDA")}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
               <button onClick={()=>window.open("/mapping")}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
-            </div>
-            <div id="debug" className={toggleTab === 'debug' ? "menu-col-item active" : "menu-col-item"}>
+            </items>
+            <items id="debug" className={toggleTab === 'debug' ? "active" : ""}>
               <button>{t("ui:OptionsMenu.Items.debug.langReset")}</button>
               <button>{t("ui:OptionsMenu.Items.debug.visibilityReset")}</button>
               <button>{t("ui:OptionsMenu.Items.debug.checkedReset")}</button>
               <button>{t("ui:OptionsMenu.Items.debug.clearCache")}</button>
               <button>{t("ui:OptionsMenu.Items.debug.resetAll")}</button>
-            </div>
-            <div id="about" className={toggleTab === 'about' ? "menu-col-item active" : "menu-col-item"}>
+            </items>
+            <items id="about" className={toggleTab === 'about' ? "active" : ""}>
               <p>Item 4</p>
-            </div>
+            </items>
           </Fragment>
-        </div>
-      </div>
+        </columns>
+      </window>
     </Draggable>
   );
 };

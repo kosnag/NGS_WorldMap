@@ -1,13 +1,13 @@
 @import './../stylesheet.scss';
 
-.menu-columns#settings {
+columns#settings {
     width: 100%;
     height: auto;
     display: flex;
     flex-flow: row;
     padding-top: 10px;
     padding-bottom: 6px;
-    .menu-col-cat {
+    category {
         flex-grow: 5;
         display: flex;
         flex-flow: column;
@@ -34,7 +34,7 @@
             }
         }
     }
-    .menu-col-item {
+    items {
         display: none;
         &.active {
             flex-grow: 5;
@@ -69,7 +69,7 @@
                     background-color: rgba($window-button-active, .75);
                     border: solid 2px rgba($window-button-border-active, .75);
                 }
-                .radio {
+                span {
                     box-sizing: border-box;
                     width: 14px;
                     height: 14px;
@@ -86,8 +86,8 @@
                         background-color: #30F3FF;
                     }
                 }
-                .text {
-                    padding-left: 26px;
+                div {
+                    margin-left: 26px;
                 }
             }
         }
