@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c9425e6c3afa31ca8752934c51a3f24e",
+    "revision": "90d2deef14953135ee392466fe90f64d",
     "url": "/NGS_WorldMap_React/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NGS_WorldMap_React/static/css/2.7d011da2.chunk.css"
   },
   {
-    "revision": "08c2578d20e25111f71f",
+    "revision": "f5c4cf30910f55a8a473",
     "url": "/NGS_WorldMap_React/static/css/main.8b2fc730.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/NGS_WorldMap_React/static/js/2.25e07ecd.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "08c2578d20e25111f71f",
-    "url": "/NGS_WorldMap_React/static/js/main.36e192e4.chunk.js"
+    "revision": "f5c4cf30910f55a8a473",
+    "url": "/NGS_WorldMap_React/static/js/main.d3775700.chunk.js"
   },
   {
     "revision": "23dfa8195d7d350f520b",
