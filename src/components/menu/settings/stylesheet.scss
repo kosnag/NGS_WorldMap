@@ -11,7 +11,7 @@
         flex-grow: 5;
         display: flex;
         flex-flow: column;
-        .menu-button-cat {
+        button {
             width: 250px;
             height: 40px;
             margin-left: 6px;
@@ -28,7 +28,7 @@
                 background-color: rgba($window-button-active, .85);
                 border: solid 2px rgba($window-button-border-active, .85);
             }
-            &.active-category {
+            &.active {
                 background-color: lighten(rgba($window-button-hover, .85), 12%) !important;
                 border: solid 2px lighten(rgba($window-button-border-hover, .85), 12%) !important;
             }
@@ -36,18 +36,20 @@
     }
     .menu-col-item {
         display: none;
-        &.active-tab {
+        &.active {
             flex-grow: 5;
             display: flex;
             flex-flow: column;
             display: flex !important;
             height: 230px;
+            width: 312px;
         }
         &#languages {
             button {
+                position: relative;
                 box-sizing: border-box;
                 display: inline-block;
-                text-align: left;
+                text-align: initial;
                 align-items: baseline;
     
                 font-size: 13px;
@@ -67,9 +69,45 @@
                     background-color: rgba($window-button-active, .75);
                     border: solid 2px rgba($window-button-border-active, .75);
                 }
-                div {
-                    display: flex;
-                    align-items: center;
+                .radio {
+                    box-sizing: border-box;
+                    width: 14px;
+                    height: 14px;
+                    border: 2px solid white;
+                    border-radius: 50%;
+                    margin-right: 11px;
+                    position: absolute;
+                    top: 6px;
+                    left: 6px;
+                    &::before {
+                        content: "ㅤ";
+                    }
+                    &.active {
+                        background-color: #30F3FF;
+                    }
+                }
+                .text {
+                    padding-left: 26px;
+                }
+            }
+        }
+        &#mapping, &#debug {
+            button {
+                width: 250px;
+                height: 40px;
+                margin-left: 6px;
+                margin-right: 6px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                background-color: rgba($window-button-default, .85);
+                border: solid 2px rgba($window-button-border-default, .85);
+                &:hover {
+                    background-color: rgba($window-button-hover, .85);
+                    border: solid 2px rgba($window-button-border-hover, .85);
+                }
+                &:active {
+                    background-color: rgba($window-button-active, .85);
+                    border: solid 2px rgba($window-button-border-active, .85);
                 }
             }
         }
