@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/NGS_WorldMap_React/precache-manifest.8c06a9889597bc5eb4c4787db8a55396.js"
+  "/NGS_WorldMap_React/precache-manifest.f1a3d47a66b0d2729f2f8ec2764eba05.js"
 );
 
 self.addEventListener('message', (event) => {
