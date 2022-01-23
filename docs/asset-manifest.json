@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/NGS_WorldMap_React/static/css/main.8b2fc730.chunk.css",
-    "main.js": "/NGS_WorldMap_React/static/js/main.ac63c81c.chunk.js",
-    "main.js.map": "/NGS_WorldMap_React/static/js/main.ac63c81c.chunk.js.map",
+    "main.js": "/NGS_WorldMap_React/static/js/main.36e192e4.chunk.js",
+    "main.js.map": "/NGS_WorldMap_React/static/js/main.36e192e4.chunk.js.map",
     "runtime-main.js": "/NGS_WorldMap_React/static/js/runtime-main.c64a049a.js",
     "runtime-main.js.map": "/NGS_WorldMap_React/static/js/runtime-main.c64a049a.js.map",
     "static/css/2.7d011da2.chunk.css": "/NGS_WorldMap_React/static/css/2.7d011da2.chunk.css",
     "static/js/2.25e07ecd.chunk.js": "/NGS_WorldMap_React/static/js/2.25e07ecd.chunk.js",
     "static/js/2.25e07ecd.chunk.js.map": "/NGS_WorldMap_React/static/js/2.25e07ecd.chunk.js.map",
     "index.html": "/NGS_WorldMap_React/index.html",
-    "precache-manifest.2650cff6c35dd07ba3d5b46ee037cdfe.js": "/NGS_WorldMap_React/precache-manifest.2650cff6c35dd07ba3d5b46ee037cdfe.js",
+    "precache-manifest.0dff90149215e659481f43a4294088f4.js": "/NGS_WorldMap_React/precache-manifest.0dff90149215e659481f43a4294088f4.js",
     "service-worker.js": "/NGS_WorldMap_React/service-worker.js",
     "static/css/2.7d011da2.chunk.css.map": "/NGS_WorldMap_React/static/css/2.7d011da2.chunk.css.map",
     "static/css/main.8b2fc730.chunk.css.map": "/NGS_WorldMap_React/static/css/main.8b2fc730.chunk.css.map",
@@ -23,6 +23,6 @@
     "static/css/2.7d011da2.chunk.css",
     "static/js/2.25e07ecd.chunk.js",
     "static/css/main.8b2fc730.chunk.css",
-    "static/js/main.ac63c81c.chunk.js"
+    "static/js/main.36e192e4.chunk.js"
   ]
 }
