@@ -26,7 +26,7 @@ i18n
        useSuspense: false,
     },
     backend: {
-      loadPath: process.env.PUBLIC_URL+'/assets/locales/{{lng}}/{{ns}}.json'
+      loadPath: './assets/locales/{{lng}}/{{ns}}.json'
     },
   });
 
