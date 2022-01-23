@@ -7,7 +7,7 @@ import NavBar from './components/navbar';
 import './assets/js/i18n';
 import { useTranslation } from "react-i18next";
 
-function App(){
+const App = () => {
   const {t} = useTranslation("ui");
 
   useEffect(() => {
