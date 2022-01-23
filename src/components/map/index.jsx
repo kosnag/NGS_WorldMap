@@ -17,9 +17,9 @@ const bounds = [[boundSouth, boundWest], [boundNorth, boundEast]];
 const maxbounds = [[boundSouth-100, boundWest], [boundSouth/2+250, boundEast]];
 const center = [boundSouth/4*3, boundEast/2];
 
-function Map(){
+const Map = () => {
     useEffect(() => {
-        window.map = L.map('map', {
+        window.gamemap = L.map('map', {
             zoom: 0,
             minZoom: 0,
             maxZoom: 3,
