@@ -11,7 +11,7 @@
         flex-grow: 5;
         display: flex;
         flex-flow: column;
-        .menu-button-cat {
+        button {
             width: 250px;
             height: 40px;
             margin-left: 6px;
@@ -28,7 +28,7 @@
                 background-color: rgba($window-button-active, .85);
                 border: solid 2px rgba($window-button-border-active, .85);
             }
-            &.active-category {
+            &.active {
                 background-color: lighten(rgba($window-button-hover, .85), 12%) !important;
                 border: solid 2px lighten(rgba($window-button-border-hover, .85), 12%) !important;
             }
@@ -36,7 +36,7 @@
     }
     .menu-col-item {
         display: none;
-        &.active-tab {
+        &.active {
             flex-grow: 5;
             display: flex;
             flex-flow: column;

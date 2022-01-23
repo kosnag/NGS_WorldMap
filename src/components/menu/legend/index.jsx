@@ -14,14 +14,16 @@ function MenuLegend(){
   const [previewTitle, setPreviewTitle] = useState("");
   const [previewShortInfo, setPreviewShortInfo] = useState("");
 
-  function setPreview(index){
-    setPreviewIcon(process.env.PUBLIC_URL+"/assets/images/icons/"+index+".png");
-    setPreviewTitle(t("items:Title."+index));
-    setPreviewShortInfo(t("items:ShortInfo."+index));
+  const setPreview = (item) => {
+    setPreviewIcon(process.env.PUBLIC_URL+"/assets/images/icons/"+item+".png");
+    setPreviewTitle(t("items:Title."+item));
+    setPreviewShortInfo(t("items:ShortInfo."+item));
   };
 
   const [toggleTab, setToggleTab] = useState('landmarks');
-  function clickToggleTab(index){setToggleTab(index);};
+  const clickToggleTab = (tab) => {
+    setToggleTab(tab);
+  };
 
   useEffect(() => {
     document.getElementById('menu-legend').classList.add('hidden-window');
@@ -33,45 +35,38 @@ function MenuLegend(){
       bounds='.menu-freespace-container'
       handle='.menu-header'
     >
-      <div 
-        className='menu-window'
-        id='menu-legend'
-      >
+      <div className='menu-window' id='menu-legend'>
         <div className='menu-header'>
           <span className='menu-header-text'>
             <span className="menu-icon"/> {t("ui:NavBar.mapLegend")}
           </span>
-          <span className='menu-closebutton'
-            onClick={() => {Functions.menuShowHide("menu-legend")}}
-          />
+          <span className='menu-closebutton' onClick={() => {Functions.menuShowHide("menu-legend")}}/>
         </div>
         <div className='menu-columns' id='legend'>
           <div className='menu-col-cat'>
             <button 
-              className={toggleTab === 'landmarks' ? "menu-button-cat active-category" : "menu-button-cat"}
+              className={toggleTab === 'landmarks' ? "active" : ""}
               onClick={() => clickToggleTab('landmarks')}
             >{t("ui:LegendMenu.Categories.landmarks")}</button>
             <button 
-              className={toggleTab === 'minerals' ? "menu-button-cat active-category" : "menu-button-cat"}
+              className={toggleTab === 'minerals' ? "active" : ""}
               onClick={() => clickToggleTab('minerals')}
             >{t("ui:LegendMenu.Categories.minerals")}</button>
             <button 
-              className={toggleTab === 'food' ? "menu-button-cat active-category" : "menu-button-cat"}
+              className={toggleTab === 'food' ? "active" : ""}
               onClick={() => clickToggleTab('food')}
             >{t("ui:LegendMenu.Categories.food")}</button>
             <button 
-              className={toggleTab === 'containers' ? "menu-button-cat active-category" : "menu-button-cat"}
+              className={toggleTab === 'containers' ? "active" : ""}
               onClick={() => clickToggleTab('containers')}
             >{t("ui:LegendMenu.Categories.containers")}</button>
             <button 
-              className={toggleTab === 'other' ? "menu-button-cat active-category" : "menu-button-cat"}
+              className={toggleTab === 'other' ? "active" : ""}
               onClick={() => clickToggleTab('other')}
             >{t("ui:LegendMenu.Categories.other")}</button>
           </div>
           <Fragment>
-            <div 
-              className={toggleTab === 'landmarks' ? "menu-col-item active-tab" : "menu-col-item"}
-            >
+            <div className={toggleTab === 'landmarks' ? "menu-col-item active" : "menu-col-item"}>
               <button 
                 onMouseEnter={() => {setPreview("landmarks_ryuker")}}
                 ><Checkbox icon={<span/>}
@@ -109,9 +104,7 @@ function MenuLegend(){
                 label={t("ui:LegendMenu.Items.landmarks.urgent")}
               /></button>
             </div>
-            <div 
-              className={toggleTab === 'minerals' ? "menu-col-item active-tab" : "menu-col-item"}
-            >
+            <div className={toggleTab === 'minerals' ? "menu-col-item active" : "menu-col-item"}>
               <button 
                 onMouseEnter={() => {setPreview("mineral_monotite")}}
                 ><Checkbox icon={<span/>}
@@ -155,9 +148,7 @@ function MenuLegend(){
                 label={t("items:Title.mineral_photonScale")}
               /></button>
             </div>
-            <div 
-              className={toggleTab === 'food' ? "menu-col-item active-tab" : "menu-col-item"}
-            >
+            <div className={toggleTab === 'food' ? "menu-col-item active" : "menu-col-item"}>
               <button 
                 onMouseEnter={() => {setPreview("food_aelio_apple")}}
                 ><Checkbox icon={<span/>}
@@ -303,9 +294,7 @@ function MenuLegend(){
                 label={t("items:Title.food_retem_urchin")}
               /></button>
             </div>
-            <div 
-              className={toggleTab === 'containers' ? "menu-col-item active-tab" : "menu-col-item"}
-            >
+            <div className={toggleTab === 'containers' ? "menu-col-item active" : "menu-col-item"}>
               <button 
                 onMouseEnter={() => {setPreview("containers_redBox")}}
                 ><Checkbox icon={<span/>}
@@ -325,9 +314,7 @@ function MenuLegend(){
                 label={t("items:Title.containers_goldBox")}
               /></button>
             </div>
-            <div 
-              className={toggleTab === 'other' ? "menu-col-item active-tab" : "menu-col-item"}
-            >
+            <div className={toggleTab === 'other' ? "menu-col-item active" : "menu-col-item"}>
               <button 
                 onMouseEnter={() => {setPreview("other_veteran")}}
                 ><Checkbox icon={<span/>}
