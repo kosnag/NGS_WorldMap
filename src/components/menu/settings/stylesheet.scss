@@ -112,6 +112,23 @@ window#menu-settings {
                     }
                 }
             }
+            &#about {
+                p {
+                    margin-block: 0;
+                    margin-left: 6px;
+                    margin-right: 3px;
+                    overflow-wrap: break-word;
+                    height: 230px;
+                    overflow-y: scroll;
+                    &::-webkit-scrollbar {
+                        width: 3px;
+                        background-color: rgba(169, 169, 169, 0.5);
+                    }
+                    &::-webkit-scrollbar-thumb {
+                        background-color: darkgray;
+                    }
+                }
+            }
         }
     }
 }
