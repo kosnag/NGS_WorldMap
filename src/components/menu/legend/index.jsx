@@ -40,7 +40,7 @@ function MenuLegend(){
           <span><menu-icon/> {t("ui:NavBar.mapLegend")}</span>
           <closebutton onClick={() => {Functions.menuShowHide("menu-legend")}}/>
         </header>
-        <columns id='legend'>
+        <columns>
           <category>
             <button 
               className={toggleTab === 'landmarks' ? "active" : ""}

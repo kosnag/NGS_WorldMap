@@ -2,10 +2,10 @@
     $cursor: url('./cursors/default.png') 0 0, auto;
     cursor: $cursor;
 }
-.navbar-button:hover, .navbar-button:active, .navbar-button:focus, .leaflet-popup-close-button:hover, .leaflet-popup-close-button:active, .leaflet-popup-close-button:focus {
+button:hover, button:active, button:focus, .leaflet-popup-close-button:hover, .leaflet-popup-close-button:active, .leaflet-popup-close-button:focus {
     $cursor_active: url('./cursors/active.png') 0 0, auto !important;
     cursor: $cursor_active;
-    img, svg, div {
+    * {
         cursor: $cursor_active;
         path {cursor: $cursor_active;}
     }

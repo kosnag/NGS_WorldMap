@@ -19,7 +19,7 @@ const center = [boundSouth/4*3, boundEast/2];
 
 const Map = () => {
     useEffect(() => {
-        window.gamemap = L.map('map', {
+        window.gamemap = L.map('halpha', {
             zoom: 0,
             minZoom: 0,
             maxZoom: 3,
@@ -40,7 +40,7 @@ const Map = () => {
         });
     }, [])
     return (
-        <div id="map"/>
+        <map id="halpha"/>
     );
 };
 

@@ -36,27 +36,29 @@ $window-button-border-active: rgba(223, 171, 6, 0.85);
 body {
     margin: 0px;
 }
-.leaflet-container {
+map {
+    display: block;
     position: absolute;
     height: 100%;
     width: 100%;
     z-index: 10;
 }
-.bar-container {
+
+navbar {
     z-index: 11;
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 0;
     $inner-color: rgba(8, 25, 40, 0.75);
-    .bar-inner {
+    buttons {
         background: $inner-color;
         width: 882px;
         height: 114px;
         margin: -114px auto 0;
         position: relative
     }
-    .bar-inner::before {
+    buttons::before {
         content: "";
         width: 0;
         height: 0;
@@ -68,7 +70,7 @@ body {
         left: -114px;
         clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     }
-    .bar-inner::after {
+    buttons::after {
         content: "";
         width: 0;
         height: 0;

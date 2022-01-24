@@ -35,7 +35,7 @@ const MenuSettings = () => {
           <span><menu-icon/> {t("ui:NavBar.options")}</span>
           <closebutton onClick={() => {Functions.menuShowHide("menu-settings")}}/>
         </header>
-        <columns id='settings'>
+        <columns>
           <category>
             <button 
               className={toggleTab === 'languages' ? "active" : ""}

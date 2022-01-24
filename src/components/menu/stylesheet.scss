@@ -37,22 +37,21 @@ window {
     &.hidden {
         display: none;
     }
-}
-
-header {
-    $widthpadding: 7px;
-    background-color: $window-header-color;
-    width: calc(100% - $widthpadding * 2);
-    padding-left: $widthpadding;
-    padding-right: $widthpadding;
-    height: 32px;
-    display: flex;
-    span {
-        font-size: 22px;
-        margin-top: auto;
-        margin-bottom: auto;
-        display: inline-flex;
-        flex: 1;
-        float: left;
+    header {
+        $widthpadding: 7px;
+        background-color: $window-header-color;
+        width: calc(100% - $widthpadding * 2);
+        padding-left: $widthpadding;
+        padding-right: $widthpadding;
+        height: 32px;
+        display: flex;
+        span {
+            font-size: 22px;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: inline-flex;
+            flex: 1;
+            float: left;
+        }
     }
 }
