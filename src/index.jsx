@@ -4,5 +4,5 @@ import App from './App'
 
 ReactDOM.render(
     <App/>,
-  document.getElementsByTagName('body')[0]
+  document.getElementsByTagName('ngsmap-react')[0]
 );
