@@ -24,8 +24,7 @@ const MenuSettings = () => {
     document.getElementById('menu-settings').classList.add('hidden');
     setTimeout(() => {
       setToggleLang(localStorage.getItem("i18nextLng"));
-    }, 100
-    )
+    }, 100)
   }, []);
 
   return (
@@ -85,15 +84,15 @@ const MenuSettings = () => {
               </button>
             </items>
             <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
-              <button onClick={()=>window.open("https://discord.gg/czK9HbxpDA")}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
-              <button onClick={()=>window.open("/mapping")}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
+              <button onClick={() => window.open("https://discord.gg/czK9HbxpDA")}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
+              <button onClick={() => window.open("/mapping")}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
             </items>
             <items id="debug" className={toggleTab === 'debug' ? "active" : ""}>
-              <button>{t("ui:OptionsMenu.Items.debug.langReset")}</button>
-              <button>{t("ui:OptionsMenu.Items.debug.visibilityReset")}</button>
-              <button>{t("ui:OptionsMenu.Items.debug.checkedReset")}</button>
-              <button>{t("ui:OptionsMenu.Items.debug.clearCache")}</button>
-              <button>{t("ui:OptionsMenu.Items.debug.resetAll")}</button>
+              <button onClick={() => {window.localStorage.removeItem("i18nextLng"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.langReset")}</button>
+              <button onClick={() => {window.localStorage.removeItem("settings"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.visibilityReset")}</button>
+              <button onClick={() => {window.localStorage.removeItem("checked"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.checkedReset")}</button>
+              <button style={{display: "none"}} onClick={() => {window.cache.delete(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.clearCache")}</button>
+              <button onClick={() => {window.localStorage.clear(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.resetAll")}</button>
             </items>
             <items id="about" className={toggleTab === 'about' ? "active" : ""}>
               <p>
@@ -105,8 +104,8 @@ const MenuSettings = () => {
                 • Sinitsa - {t("ui:OptionsMenu.Items.about.contributersList.sinitsa")}<br/>
                 • focuslite - {t("ui:OptionsMenu.Items.about.contributersList.focuslite")}<br/>
                 • MoonCat - {t("ui:OptionsMenu.Items.about.contributersList.mooncat")}<br/>
-                • SVGVsevolod - {t("ui:OptionsMenu.Items.about.contributersList.svgvsevolod")}<br/>
-                <br/><br/>
+                • SVGVsevolod - {t("ui:OptionsMenu.Items.about.contributersList.svgvsevolod")}
+                <br/><br/><br/>
                 {t("ui:OptionsMenu.Items.about.segaCopyright")}
               </p>
             </items>

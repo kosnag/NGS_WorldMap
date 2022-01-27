@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import "./stylesheet.scss";
@@ -18,8 +18,9 @@ const maxbounds = [[boundSouth-100, boundWest], [boundSouth/2+250, boundEast]];
 const center = [boundSouth/4*3, boundEast/2];
 
 const Map = () => {
+    const leafmap = useRef();
     useEffect(() => {
-        window.gamemap = L.map('halpha', {
+        window.gamemap = L.map(leafmap.current, {
             zoom: 0,
             minZoom: 0,
             maxZoom: 3,
@@ -40,7 +41,7 @@ const Map = () => {
         });
     }, [])
     return (
-        <map id="halpha"/>
+        <map ref={leafmap}/>
     );
 };
 

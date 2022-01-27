@@ -11,11 +11,15 @@ const App = () => {
   const {t} = useTranslation("ui");
 
   useEffect(() => {
-    document.title = t("ui:page_title", {framework: "React"})
+    document.title = t("ui:page_title")
   });
 
   useEffect(() => {
-
+    if (localStorage.getItem("settings") === null) {
+      fetch ("./assets/data/settings.json").then(response => response.json().then(data => { 
+        localStorage.setItem("settings", JSON.stringify(data))
+      }))
+    };
   }, []);
 
   return (
