@@ -1,33 +1,33 @@
 {
-    "page_title": "PSO2NGS Interactive Map",
+    "page_title": "Интерактивная Карта PSO2NGS",
     "NavBar": {
-        "donate": "Support",
-        "alphaReactor": "Alpha Reactors",
-        "mapLegend": "Map Legend",
-        "options": "Options"
+        "donate": "Поддежка",
+        "alphaReactor": "Альфа Реакторы",
+        "mapLegend": "Легенда Карты",
+        "options": "Настройки"
     },
     "LegendMenu": {
         "Categories": {
-            "landmarks": "Landmarks",
-            "minerals": "Minerals",
-            "food": "Food",
-            "containers": "Containers",
+            "landmarks": "Ориентиры",
+            "minerals": "Минералы",
+            "food": "Еда",
+            "containers": "Контейнеры",
             "other": "Other"
         },
         "Items": {
             "landmarks": {
-                "battledia": "Battledias",
-                "cocoon": "Cocoons",
-                "mag": "Region Mags",
-                "ryuker": "Ryuker Devices",
-                "tower": "Towers",
-                "urgent": "Urgent Quests"
+                "battledia": "Батлдии",
+                "cocoon": "Коконы",
+                "mag": "Mag'и региона",
+                "ryuker": "Устройства Рюкера",
+                "tower": "Башни",
+                "urgent": "Срочные квесты"
             },
             "other": {
-                "alphaReactor": "Alpha Reactors",
-                "dataPod": "Datapods",
+                "alphaReactor": "Альфа Реакторы",
+                "dataPod": "Сообщения",
                 "stellarSeed": "Stellar Seeds",
-                "veteran": "Veterans",
+                "veteran": "Ветераны",
                 "stellarGrace": "Stellar Graces",
                 "musicPlace": "BGM Easter Eggs"
             }
@@ -35,10 +35,10 @@
     },
     "OptionsMenu": {
         "Categories": {
-            "languages": "Languages",
-            "mapping": "Mapping",
-            "debug": "Debug",
-            "about": "About"
+            "languages": "Языки",
+            "mapping": "Маппинг",
+            "debug": "Отладка",
+            "about": "О приложении"
         },
         "Items": {
             "languages": {
@@ -50,26 +50,26 @@
                 "portuguse": "Португальский"
             },
             "mapping": {
-                "discord": "Join to Discord",
-                "start": "Go to mapping mode"
+                "discord": "Вступить в Discord",
+                "start": "В режим маппинга"
             },
             "debug": {
-                "langReset": "Reset language",
-                "visibilityReset": "Reset visibility",
-                "checkedReset": "Reset checked markers",
-                "clearCache": "Clear cache",
-                "resetAll": "Reset everything"
+                "langReset": "Сбросить язык",
+                "visibilityReset": "Сбросить маркеры",
+                "checkedReset": "Сбросить чеки",
+                "clearCache": "Очистить кеш",
+                "resetAll": "Сбросить всё"
             },
             "about": {
-                "author": "Author",
+                "author": "Автор",
                 "contributers": "Contributers",
                 "contributersList": {
-                    "sinitsa": "RU translate",
-                    "focuslite": "KR tranlate",
-                    "mooncat": "PT translate",
-                    "svgvsevolod": "Backend"
+                    "sinitsa": "RU перевод",
+                    "focuslite": "KR перевод",
+                    "mooncat": "PT перевод",
+                    "svgvsevolod": "бекенд"
                 },
-                "segaCopyright": "something something"
+                "segaCopyright": "Все права на материалы, представленные в приложении принадлежат их законным владельцам (Sega) и предназначены только для ознакомления."
             }
         }
     }
