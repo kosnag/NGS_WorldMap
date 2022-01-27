@@ -1,5 +1,5 @@
 {
-    "page_title": "PSO2NGS Interactive Map",
+    "page_title": "PSO2NGS インタラクティブ マップ",
     "NavBar": {
         "donate": "Support",
         "alphaReactor": "Alpha Reactors",
@@ -42,12 +42,12 @@
         },
         "Items": {
             "languages": {
-                "english": "영어",
-                "japanese": "일본어",
-                "english_jp": "영어 (팬 패치)",
-                "russian": "러시아인",
-                "korean": "한국인",
-                "portuguse": "포르투갈 인"
+                "english": "英語",
+                "japanese": "日本",
+                "english_jp": "英語 (ファンパッチ)",
+                "russian": "ロシア",
+                "korean": "韓国語",
+                "portuguse": "ポルトガル語"
             },
             "mapping": {
                 "discord": "Join to Discord",
