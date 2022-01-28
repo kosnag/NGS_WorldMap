@@ -13,28 +13,28 @@ const NavBar = () => {
       <navbar>
         <buttons>
           <button 
-            onClick={() => {window.open("https://ko-fi.com/kosnag");}}
+            onClick={() => window.open("https://ko-fi.com/kosnag")}
             //onClick={() => {Functions.menuShowHide("menu-donate")}}
           >
             <img alt="" src={imageKofi}/>
             <div>Kofi</div>
           </button>
           <button 
-            onClick={() => {
+            onClick={() => 
               window.open("https://twitter.com/search?q=%22%23AlphaReactors%20%23%E3%82%A2%E3%83%AB%E3%83%95%E3%82%A1%E3%83%AA%E3%82%A2%E3%82%AF%E3%82%BF%E3%83%BC%20%23PSO2NGS%22%20(from%3AAphyAmarantha)&f=live", "_blank")
-            }}
+            }
           >
             <img alt="" src={imageAlphaReactor}/>
             <div>Alpha Reactors</div>
           </button>
           <button 
-            onClick={() => {Functions.menuShowHide("menu-legend")}}
+            onClick={() => Functions.menuShowHide("menu-legend")}
           >
             <img alt="" src={imageMapLegend}/>
             <div>Map Legend</div>
           </button>
           <button 
-            onClick={() => {Functions.menuShowHide("menu-settings")}}
+            onClick={() => Functions.menuShowHide("menu-settings")}
           >
             <img alt="" src={imageSettings}/>
             <div>Options</div>

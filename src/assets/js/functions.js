@@ -1,6 +1,6 @@
 var Functions = {
-  menuShowHide: (element) => { 
-    switch(element){
+  menuShowHide: (id) => { 
+    switch(id){
       case 'menu-legend':
         if (document.getElementById('menu-legend').classList.contains('hidden')) {
           document.getElementById('menu-legend').classList.remove('hidden');

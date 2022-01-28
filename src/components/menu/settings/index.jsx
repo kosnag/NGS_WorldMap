@@ -28,14 +28,11 @@ const MenuSettings = () => {
   }, []);
 
   return (
-    <Draggable
-      bounds='container'
-      handle='header'
-    >
+    <Draggable bounds='container' handle='header'>
       <window id='menu-settings'>
         <header>
-          <span><menu-icon/> {t("ui:NavBar.options")}</span>
-          <closebutton onClick={() => {Functions.menuShowHide("menu-settings")}}/>
+          <span><menuicon/> {t("ui:NavBar.options")}</span>
+          <closebutton onClick={() => Functions.menuShowHide("menu-settings")}/>
         </header>
         <columns>
           <category>
@@ -58,27 +55,27 @@ const MenuSettings = () => {
           </category>
           <Fragment>
             <items id="languages" className={toggleTab === 'languages' ? "active" : ""}>
-              <button onClick={() => {clickToggleLang("en-US");}}>
+              <button onClick={() => clickToggleLang("en-US")}>
                 <span className={toggleLang === 'en-US' ? "active" : ""}/>
                 <div>{t("ui:OptionsMenu.Items.languages.english")} / English</div>
               </button>
-              <button onClick={() => {clickToggleLang("ja-JP");}}>
+              <button onClick={() => clickToggleLang("ja-JP")}>
                 <span className={toggleLang === 'ja-JP' ? "active" : ""}/>
                 <div>{t("ui:OptionsMenu.Items.languages.japanese")} / 日本</div>
               </button>
-              <button onClick={() => {clickToggleLang("en-JP");}}>
+              <button onClick={() => clickToggleLang("en-JP")}>
                 <span className={toggleLang === 'en-JP' ? "active" : ""}/>
                 <div>{t("ui:OptionsMenu.Items.languages.english_jp")} / English (Fan-Patch)</div>
               </button>
-              <button onClick={() => {clickToggleLang("ru-RU");}}>
+              <button onClick={() => clickToggleLang("ru-RU")}>
                 <span className={toggleLang === 'ru-RU' ? "active" : ""}/>
                 <div>{t("ui:OptionsMenu.Items.languages.russian")} / Русский</div>
               </button>
-              <button onClick={() => {clickToggleLang("ko-KR");}}>
+              <button onClick={() => clickToggleLang("ko-KR")}>
                 <span className={toggleLang === 'ko-KR' ? "active" : ""}/>
                 <div>{t("ui:OptionsMenu.Items.languages.korean")} / 한국어</div>
               </button>
-              <button onClick={() => {clickToggleLang("pr-BR");}}>
+              <button onClick={() => clickToggleLang("pr-BR")}>
                 <span className={toggleLang === 'pr-BR' ? "active" : ""}/>
                 <div>{t("ui:OptionsMenu.Items.languages.portuguse")} / Português</div>
               </button>
