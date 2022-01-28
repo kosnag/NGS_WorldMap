@@ -117,33 +117,36 @@ window#menu-legend {
                 background-image: url(./../../../assets/ui/bg_icon.png);
                 background-size: cover;
                 opacity: 0.5;
-                &.red {
-                    border: solid 2px rgb(255, 0, 0);
-                    background-color: rgba(255, 0, 0, .35);
-                }
-                &.green {
-                    border: solid 2px rgba(0, 255, 0, 1);
-                    background-color: rgba(0, 255, 0, .35);
-                }
-                &.blue {
-                    border: solid 2px rgba(0, 0, 255, 1);
-                    background-color: rgba(0, 0, 255, .35);
-                }
-                &.gold {
-                    border: solid 2px rgba(255,215, 1);
-                    background-color: rgba(255,215, .35);
-                }
-                &.purple {
-                    border: solid 2px rgba(196, 0, 171, 1);
-                    background-color: rgba(196, 0, 171, .35);
-                }
-                &.lightblue {
+                &.common {
                     border: solid 2px rgb(40, 131, 211);
                     background-color: rgba(40, 131, 211, .35);
                 }
+                &.rare {
+                    border: solid 2px rgb(192, 192, 192);
+                    background-color: rgba(192, 192, 192, .35);
+                }
+                &.very-rare {
+                    border: solid 2px rgb(255,215, 0);
+                    background-color: rgba(255,215, 0, .35);
+                }
+                
+                &.special {
+                    border: solid 2px rgb(255, 0, 0);
+                    background-color: rgba(255, 0, 0, .35);
+                }
+                &.places {
+                    border: solid 2px rgb(0, 255, 234);
+                    background-color: rgba(0, 255, 234, .35);
+                }
+
                 &.matoi {
-                    border: solid 2px rgba(198, 10, 52, 1);
+                    border: solid 2px rgb(198, 10, 52);
                     background-color: rgba(198, 10, 52, .35);
+                }
+
+                &.purple {
+                    border: solid 2px rgb(196, 0, 171);
+                    background-color: rgba(196, 0, 171, .35);
                 }
             }
             img {
