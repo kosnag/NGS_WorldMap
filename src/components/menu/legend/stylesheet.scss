@@ -39,7 +39,6 @@ window#menu-legend {
             display: none;
             &.active {
                 flex-grow: 5;
-                display: flex;
                 flex-flow: column;
                 display: flex !important;
                 height: 230px;
