@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/NGS_WorldMap_React/static/css/main.70c6c97a.chunk.css",
-    "main.js": "/NGS_WorldMap_React/static/js/main.16c532a0.chunk.js",
-    "main.js.map": "/NGS_WorldMap_React/static/js/main.16c532a0.chunk.js.map",
+    "main.css": "/NGS_WorldMap_React/static/css/main.f64d5969.chunk.css",
+    "main.js": "/NGS_WorldMap_React/static/js/main.b68b90bd.chunk.js",
+    "main.js.map": "/NGS_WorldMap_React/static/js/main.b68b90bd.chunk.js.map",
     "runtime-main.js": "/NGS_WorldMap_React/static/js/runtime-main.c64a049a.js",
     "runtime-main.js.map": "/NGS_WorldMap_React/static/js/runtime-main.c64a049a.js.map",
     "static/css/2.7d011da2.chunk.css": "/NGS_WorldMap_React/static/css/2.7d011da2.chunk.css",
-    "static/js/2.6761db3b.chunk.js": "/NGS_WorldMap_React/static/js/2.6761db3b.chunk.js",
-    "static/js/2.6761db3b.chunk.js.map": "/NGS_WorldMap_React/static/js/2.6761db3b.chunk.js.map",
+    "static/js/2.8caf8990.chunk.js": "/NGS_WorldMap_React/static/js/2.8caf8990.chunk.js",
+    "static/js/2.8caf8990.chunk.js.map": "/NGS_WorldMap_React/static/js/2.8caf8990.chunk.js.map",
     "index.html": "/NGS_WorldMap_React/index.html",
-    "precache-manifest.6dfc7cac0eb2c03759c4bbcbc3adaa2d.js": "/NGS_WorldMap_React/precache-manifest.6dfc7cac0eb2c03759c4bbcbc3adaa2d.js",
+    "precache-manifest.f9770ace7560908eab123dcef1654791.js": "/NGS_WorldMap_React/precache-manifest.f9770ace7560908eab123dcef1654791.js",
     "service-worker.js": "/NGS_WorldMap_React/service-worker.js",
     "static/css/2.7d011da2.chunk.css.map": "/NGS_WorldMap_React/static/css/2.7d011da2.chunk.css.map",
-    "static/css/main.70c6c97a.chunk.css.map": "/NGS_WorldMap_React/static/css/main.70c6c97a.chunk.css.map",
-    "static/js/2.6761db3b.chunk.js.LICENSE.txt": "/NGS_WorldMap_React/static/js/2.6761db3b.chunk.js.LICENSE.txt",
+    "static/css/main.f64d5969.chunk.css.map": "/NGS_WorldMap_React/static/css/main.f64d5969.chunk.css.map",
+    "static/js/2.8caf8990.chunk.js.LICENSE.txt": "/NGS_WorldMap_React/static/js/2.8caf8990.chunk.js.LICENSE.txt",
     "static/media/alphaReactor.png": "/NGS_WorldMap_React/static/media/alphaReactor.5d1a9d65.png",
     "static/media/getFetch.cjs": "/NGS_WorldMap_React/static/media/getFetch.51c934af.cjs",
     "static/media/stylesheet.scss": "/NGS_WorldMap_React/static/media/ngsfont.6ac604d0.woff"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.c64a049a.js",
     "static/css/2.7d011da2.chunk.css",
-    "static/js/2.6761db3b.chunk.js",
-    "static/css/main.70c6c97a.chunk.css",
-    "static/js/main.16c532a0.chunk.js"
+    "static/js/2.8caf8990.chunk.js",
+    "static/css/main.f64d5969.chunk.css",
+    "static/js/main.b68b90bd.chunk.js"
   ]
 }
