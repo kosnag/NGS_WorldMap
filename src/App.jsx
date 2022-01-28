@@ -12,9 +12,9 @@ const App = () => {
 
   const MenuLegendInit = () => {
     if (localStorage.getItem("settings")) {
-      return <MenuLegend/>
+      return <MenuLegend/>;
     } else {
-      fetch("./assets/data/settings.json").then(response => response.json().then((data) => {localStorage.setItem("settings", JSON.stringify(data))}));
+      fetch("./assets/data/settings.json").then(response => response.json().then((data) => localStorage.setItem("settings", JSON.stringify(data))));
       return <Fragment/>;
     }
   }

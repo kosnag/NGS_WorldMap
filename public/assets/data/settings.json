@@ -17,34 +17,31 @@
         "photonScale": 0
     },
     "food": {
-        "aelio": {
-            "apple": 0,
-            "banana": 0,
-            "clam": 0,
-            "crab": 0,
-            "herb": 0,
-            "lobster": 0,
-            "mushroom": 0,
-            "peach": 0,
-            "pear": 0,
-            "tomato": 0,
-            "turbanShell": 0,
-            "turnip": 0
-        },
-        "retem": {
-            "cauliflower": 0,
-            "cherries": 0,
-            "cranberries": 0,
-            "eggplant": 0,
-            "fruit": 0,
-            "hermitCrab": 0,
-            "mango": 0,
-            "mushroom": 0,
-            "scallop": 0,
-            "seaSlug": 0,
-            "strawberry": 0,
-            "urchin": 0
-        }
+        "aelio_apple": 0,
+        "aelio_banana": 0,
+        "aelio_clam": 0,
+        "aelio_crab": 0,
+        "aelio_herb": 0,
+        "aelio_lobster": 0,
+        "aelio_mushroom": 0,
+        "aelio_peach": 0,
+        "aelio_pear": 0,
+        "aelio_tomato": 0,
+        "aelio_turbanShell": 0,
+        "aelio_turnip": 0,
+
+        "retem_cauliflower": 0,
+        "retem_cherries": 0,
+        "retem_cranberries": 0,
+        "retem_eggplant": 0,
+        "retem_fruit": 0,
+        "retem_hermitCrab": 0,
+        "retem_mango": 0,
+        "retem_mushroom": 0,
+        "retem_scallop": 0,
+        "retem_seaSlug": 0,
+        "retem_strawberry": 0,
+        "retem_urchin": 0
     },
     "containers": {
         "redBox": 0,
@@ -57,6 +54,6 @@
         "stellarSeed": 0,
         "stellarGrace": 0,
         "datapod": 0,
-        "bgm": 0
+        "musicPlace": 0
     }
 }
