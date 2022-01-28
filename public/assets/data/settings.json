@@ -7,11 +7,6 @@
         "battledia": 1,
         "uq": 1
     },
-    "containers": {
-        "redBox": 0,
-        "greenBox": 0,
-        "goldBox": 0
-    },
     "minerals": {
         "monotite": 0,
         "dualomite": 0,
@@ -22,33 +17,46 @@
         "photonScale": 0
     },
     "food": {
-        "aelioApple": 0,
-        "aelioBanana": 0,
-        "aelioClam": 0,
-        "aelioCrab": 0,
-        "aelioHerb": 0,
-        "aelioLobster": 0,
-        "aelioMushroom": 0,
-        "aelioPeach": 0,
-        "aelioPear": 0,
-        "aelioTomato": 0,
-        "aelioTurbanShell": 0,
-        "aelioTurnip": 0,
-        "retemCherry": 0,
-        "retemCrab": 0,
-        "retemFruit": 0,
-        "retemMango": 0,
-        "retemScallop": 0,
-        "retemSeaSlug": 0,
-        "retemStrawberry": 0,
-        "retemUrchin": 0
+        "aelio": {
+            "apple": 0,
+            "banana": 0,
+            "clam": 0,
+            "crab": 0,
+            "herb": 0,
+            "lobster": 0,
+            "mushroom": 0,
+            "peach": 0,
+            "pear": 0,
+            "tomato": 0,
+            "turbanShell": 0,
+            "turnip": 0
+        },
+        "retem": {
+            "cauliflower": 0,
+            "cherries": 0,
+            "cranberries": 0,
+            "eggplant": 0,
+            "fruit": 0,
+            "hermitCrab": 0,
+            "mango": 0,
+            "mushroom": 0,
+            "scallop": 0,
+            "seaSlug": 0,
+            "strawberry": 0,
+            "urchin": 0
+        }
+    },
+    "containers": {
+        "redBox": 0,
+        "greenBox": 0,
+        "goldBox": 0
     },
     "other": {
-        "datapod": 0,
+        "veteran": 0,
         "alphaReactor": 0,
         "stellarSeed": 0,
         "stellarGrace": 0,
-        "veteran": 0,
+        "datapod": 0,
         "bgm": 0
     }
 }
