@@ -1,0 +1,73 @@
+@import './../stylesheet.scss';
+
+window#menu-support {
+    columns {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-flow: column;
+        padding-top: 10px;
+        padding-bottom: 6px;
+        category {
+            display: block;
+            button {
+                width: 250px;
+                height: 40px;
+                margin-left: 6px;
+                margin-right: 6px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                background-color: rgba($window-button-default, .85);
+                border: solid 2px rgba($window-button-border-default, .85);
+                &:hover {
+                    background-color: rgba($window-button-hover, .85);
+                    border: solid 2px rgba($window-button-border-hover, .85);
+                }
+                &:active {
+                    background-color: rgba($window-button-active, .85);
+                    border: solid 2px rgba($window-button-border-active, .85);
+                }
+                &.active {
+                    background-color: lighten(rgba($window-button-hover, .85), 12%) !important;
+                    border: solid 2px lighten(rgba($window-button-border-hover, .85), 12%) !important;
+                }
+            }
+        }
+        items {
+            display: none;
+            &.active {
+                display: block !important;
+                height: 512px;
+                width: 100%;
+                &#kofi {
+                    div {
+                        width: calc(100% - 12px);
+                        height: calc(100% - 6px);
+                        margin: 6px auto;
+                        iframe {
+                            border: none;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                &#qiwi {
+                    div {
+                        width: calc(100% - 12px);
+                        height: calc(100% - 6px);
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        iframe {
+                            border: none;
+                            display: block;
+                            width: 300px;
+                            height: 300px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

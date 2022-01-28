@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import Init from "./components/init.jsx";
 import NavBar from "./components/navbar";
 import MenuSettings from "./components/menu/settings";
+import MenuSupport from "./components/menu/support";
 
 const App = () => {
   const {t} = useTranslation("ui");
@@ -24,6 +25,7 @@ const App = () => {
       <container>
         <Init.MenuLegend/>
         <MenuSettings/>
+        <MenuSupport/>
       </container>
     </Fragment>
   );
