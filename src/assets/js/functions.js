@@ -32,12 +32,14 @@ var Functions = {
         break;
     }
   },
+
   checkLocalStorage: (category, item) => {
     if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1)
       {return true}
     else
       {return false}
   },
+
   setLocalStorage: (category, item) => {
     if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1)
       {
@@ -48,6 +50,15 @@ var Functions = {
       {
         window.localStorage_Settings[category][item]=1
         localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
+      }
+  },
+
+  placeMarker: (category, item, id) => {
+    if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1)
+      {
+      }
+    else 
+      {
       }
   }
 }
