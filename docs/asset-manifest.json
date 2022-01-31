@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.26f59ba5.chunk.css",
+    "main.js": "/static/js/main.dcb1e729.chunk.js",
+    "main.js.map": "/static/js/main.dcb1e729.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3803121a.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3803121a.js.map",
+    "static/css/2.7d011da2.chunk.css": "/static/css/2.7d011da2.chunk.css",
+    "static/js/2.8caf8990.chunk.js": "/static/js/2.8caf8990.chunk.js",
+    "static/js/2.8caf8990.chunk.js.map": "/static/js/2.8caf8990.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4bddc58bda73262dbad6b2d7b81d59c5.js": "/precache-manifest.4bddc58bda73262dbad6b2d7b81d59c5.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.7d011da2.chunk.css.map": "/static/css/2.7d011da2.chunk.css.map",
+    "static/css/main.26f59ba5.chunk.css.map": "/static/css/main.26f59ba5.chunk.css.map",
+    "static/js/2.8caf8990.chunk.js.LICENSE.txt": "/static/js/2.8caf8990.chunk.js.LICENSE.txt",
+    "static/media/alphaReactor.png": "/static/media/alphaReactor.5d1a9d65.png",
+    "static/media/getFetch.cjs": "/static/media/getFetch.51c934af.cjs",
+    "static/media/stylesheet.scss": "/static/media/ngsfont.6ac604d0.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3803121a.js",
+    "static/css/2.7d011da2.chunk.css",
+    "static/js/2.8caf8990.chunk.js",
+    "static/css/main.26f59ba5.chunk.css",
+    "static/js/main.dcb1e729.chunk.js"
+  ]
+}
