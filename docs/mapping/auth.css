@@ -14,12 +14,6 @@ body {
     margin: 0px !important;
 }
 
-ngsmap-mapping {
-    display: block;
-    height: 100%;
-    width: 100%;
-}
-
 map {
     display: block;
     position: absolute;

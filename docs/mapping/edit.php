@@ -1,3 +1,12 @@
+<?php
+include "../api/mysql.php";
+
+$query = $link->query("select session from kosnag_map.auth_sessions where session='".$_COOKIE["session"]."' ");
+$session_check = $query->fetch_assoc();
+if (!isset($session_check["session"])){
+    header("Location: /mapping");
+}
+?>
 <!DOCTYPE html>
 <html>
   	<head>
@@ -5,7 +14,7 @@
 
 		<meta charset="utf-8"/>
 
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="auth.css" />
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 		
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
@@ -15,7 +24,7 @@
 			<container>
 				<window>
 					<header>
-						<span><menuicon></menuicon> Login</span>
+						<span><menuicon></menuicon> Login2</span>
 					</header>
 					<content>
 						<form method="post">
