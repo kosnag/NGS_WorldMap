@@ -82,7 +82,7 @@ const MenuSettings = () => {
             </items>
             <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
               <button onClick={() => window.open("https://discord.gg/czK9HbxpDA")}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
-              <button onClick={() => window.open("/mapping.php")}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
+              <button onClick={() => window.open("/mapping")}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
             </items>
             <items id="debug" className={toggleTab === 'debug' ? "active" : ""}>
               <button onClick={() => {window.localStorage.removeItem("i18nextLng"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.langReset")}</button>

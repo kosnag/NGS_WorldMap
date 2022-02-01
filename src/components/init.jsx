@@ -6,7 +6,7 @@ import Map from "./map";
 import MenuLegend from "./menu/legend";
 
 const Init = {
-    MenuLegend: ()=>{
+    MenuLegend:()=>{
         if (localStorage.getItem("settings")) {
           return <MenuLegend/>;
         } else {
@@ -14,7 +14,7 @@ const Init = {
           return <Fragment/>;
         }
     },
-    Map: ()=>{
+    Map:()=>{
         if (localStorage.getItem("checked")) {
           return <Map/>;
         } else {

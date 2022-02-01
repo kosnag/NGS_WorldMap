@@ -10,15 +10,15 @@ $result = array(
 );
 
 
-$query = $link->query("select * from auth_users where id='".$data->{"user"}."' and pass='".$data->{"pass"}."'");
+$query = $mysql -> query("select * from ".$datatables["auth"]["users"]." where id='".$data->{"user"}."' and pass='".$data->{"pass"}."'");
 
-$login_data = $query->fetch_assoc();
+$login_data = $query -> fetch_assoc();
 
 
 if(isset($login_data["id"]) && isset($login_data["pass"])){
 
     $session = md5(uniqid(rand(),true));
-    $query = $link->query("insert auth_sessions (id, session) values ('".$login_data["id"]."', '".$session."')");
+    $query = $mysql -> query("insert ".$datatables["auth"]["sessions"]." (id, session) values ('".$login_data["id"]."', '".$session."')");
 
     setcookie("session", $session, time()+60*20, "/");
 
@@ -31,7 +31,7 @@ if(isset($login_data["id"]) && isset($login_data["pass"])){
     
 }
 
-$link -> close();
+$mysql -> close();
 
 echo json_encode($result);
 

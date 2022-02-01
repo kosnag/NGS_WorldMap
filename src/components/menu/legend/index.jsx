@@ -226,18 +226,18 @@ const MenuLegend = () => {
                 label={t("items:Title.food_aelio_pear")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_snail","common")}
-                ><Checkbox icon={<span/>}
-                checked={Functions.checkLocalStorage("food","aelio_snail")}
-                onChange={() => Functions.setLocalStorage("food","aelio_snail")}
-                label={t("items:Title.food_aelio_snail")}
-              /></button>
-              <button 
                 onMouseEnter={() => setPreview("food_aelio_tomato","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_tomato")}
                 onChange={() => Functions.setLocalStorage("food","aelio_tomato")}
                 label={t("items:Title.food_aelio_tomato")}
+              /></button>
+              <button 
+                onMouseEnter={() => setPreview("food_aelio_turbanShell","common")}
+                ><Checkbox icon={<span/>}
+                checked={Functions.checkLocalStorage("food","aelio_turbanShell")}
+                onChange={() => Functions.setLocalStorage("food","aelio_turbanShell")}
+                label={t("items:Title.food_aelio_turbanShell")}
               /></button>
               <button 
                 onMouseEnter={() => setPreview("food_aelio_turnip","common")}

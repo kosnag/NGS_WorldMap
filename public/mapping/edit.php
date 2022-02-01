@@ -1,7 +1,7 @@
 <?php
 include "../api/mysql.php";
 
-$query = $link->query("select session from kosnag_map.auth_sessions where session='".$_COOKIE["session"]."' ");
+$query = $mysql->query("select session from kosnag_map.".$datatables["auth"]["sessions"]." where session='".$_COOKIE["session"]."' ");
 $session_check = $query->fetch_assoc();
 if (!isset($session_check["session"])){
     header("Location: /mapping");
@@ -47,24 +47,6 @@ if (!isset($session_check["session"])){
 			</container>
 			<map></map>
 		</ngsmap-mapping-auth>
-		
-		<script>
-			const formObject = document.getElementsByTagName("form")[0];
-
-			formObject.addEventListener("submit",function(event){
-				event.preventDefault();
-				console.log(event)
-				
-				const loginData = {
-					"user": event.target[0].value,
-					"pass": event.target[1].value
-				}
-
-				var request = new XMLHttpRequest;
-				request.open("POST","login.php");
-				request.send(JSON.stringify(loginData));
-			});
-		</script>
 
 		<script>
 			L.map(document.getElementsByTagName("ngsmap-mapping-edit")[0].getElementsByTagName("map")[0], {
