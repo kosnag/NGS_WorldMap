@@ -39,7 +39,7 @@ const MenuSupport = () => {
             <items id="kofi" className={toggleTab === 'kofi' ? "active" : ""}>
               <div>
                 <iframe
-                  src={"https://ko-fi.com/kosnag/?hidefeed=true&widget=true&embed=true&preview=true"}
+                  src={"https://ko-fi.com/kosnag/?&widget=true&embed=true&preview=true"}
                   title="kofi"
                 />
               </div>
