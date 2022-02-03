@@ -51,6 +51,7 @@
             },
             "mapping": {
                 "discord": "Join to Discord",
+                "translate": "Help with tranlating",
                 "start": "Go to mapping mode"
             },
             "debug": {

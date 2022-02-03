@@ -51,6 +51,7 @@
             },
             "mapping": {
                 "discord": "Вступить в Discord",
+                "translate": "Помочь с переводом",
                 "start": "В режим маппинга"
             },
             "debug": {
