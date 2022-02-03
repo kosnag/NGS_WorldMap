@@ -14,60 +14,79 @@ if (!isset($session_check["session"])){
 
 		<meta charset="utf-8"/>
 
-		<link rel="stylesheet" href="auth.css" />
+		<link rel="stylesheet" href="edit.css" />
 		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
 		
 		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
 	</head>
 	<body>
 		<ngsmap-mapping-edit>
-			<container>
-				<window>
-					<header>
-						<span><menuicon></menuicon> Login2</span>
-					</header>
-					<content>
-						<form method="post">
-							<div>ID:</div>
-							<border></border>
-							<input type="text" required></input>
-							<br>
-							<div>Password:</div>
-							<border></border>
-							<input type="password" required></input>
-							<br>
-							<buttons>
-								<a href="https://map.pso2.ru/">Back</a>
-								<a href="https://map.pso2.ru/">Get access</a>
-								<button type="submit">Auth</button>
-							</buttons>
-						</form>
-					</content>
-				</window>
-			</container>
 			<map></map>
-		</ngsmap-mapping-auth>
-
+		</ngsmap-mapping-edit>
 		<script>
-			L.map(document.getElementsByTagName("ngsmap-mapping-edit")[0].getElementsByTagName("map")[0], {
+			const boundNorth = 0; 
+			const boundEast = 12288/6;
+			const boundWest = 0;
+			const boundSouth = -12288/6;
+			const bounds = [[boundSouth, boundWest], [boundNorth, boundEast]];
+			const center = [boundSouth/2, boundEast/2];
+			var map = L.map(document.getElementsByTagName("map")[0], {
 				zoom: 0,
 				minZoom: 0,
-				maxZoom: 0,
+				maxZoom: 3,
 				crs: L.CRS.Simple,
-				maxBounds: [[-12288/6-100, 0], [-12288/6/2+250, 12288/6]],
-				center: [-12288/6/4*3, 12288/6/2],
-				zoomControl: false,
+				maxBounds: bounds,
+				center: center,
+				zoomControl: true,
 				attributionControl: false,
-				keyboard: false,
+				keyboard: true,
 				maxBoundsViscosity: 0.5,
+            	doubleClickZoom: false,
 				layers: [
 					L.tileLayer("../assets/images/tiles/{z}/{y}-{x}.png", {
-						bounds: [[-12288/6, 0], [0, 12288/6]],
+						bounds: bounds,
 						tileSize: 1024,
 						noWrap: true
 					})
 				]
 			});
+
+
+			const popup_content_form = document.createElement("form")
+				popup_content_form.setAttribute("method","post");
+			
+			const popup_content_select = document.createElement("select")
+				popup_content_select.addEventListener("change", ()=>{});
+				popup_content_form.appendChild(popup_content_select)
+
+			const popup_content_options = [
+				{"value":"1", "inner":"1"},
+				{"value":"2", "inner":"2"},
+				{"value":"3", "inner":"3"},
+				{"value":"4", "inner":"4"},
+				{"value":"5", "inner":"5"}
+			]
+			for (let i = 0; i < popup_content_options.length; i++){
+				var element = document.createElement("option")
+					element.setAttribute("value",popup_content_options[i]["value"])
+					element.innerHTML=popup_content_options[i]["inner"]
+					popup_content_select.appendChild(element)
+			}
+
+			var latlng_cont = document.createElement("div")
+				popup_content_form.appendChild(latlng_cont)
+			var popup = L.popup();
+			function onMapClick(e) {
+				latlng_variable = "Lat:"+e.latlng.lat+"<br>"+"Lng:"+e.latlng.lng
+				latlng_cont.innerHTML=latlng_variable
+				//latlng_cont.innerHTML=e.latlng.toString()
+				popup
+					.setLatLng(e.latlng)
+					.setContent(popup_content_form)
+					//.setContent(popup_content_form + e.latlng.toString())
+					.openOn(map);
+			}
+			map.on('click', onMapClick);
 		</script>
 	</body>
 </html>
