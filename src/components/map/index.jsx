@@ -31,6 +31,7 @@ const Map = () => {
             attributionControl: false,
             keyboard: false,
             maxBoundsViscosity: 0.5,
+            doubleClickZoom: false,
             layers: [
                 L.tileLayer("./assets/images/tiles/{z}/{y}-{x}.png", {
                     bounds: bounds,
