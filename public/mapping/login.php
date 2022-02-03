@@ -20,7 +20,7 @@ if(isset($login_data["id"]) && isset($login_data["pass"])){
     $session = md5(uniqid(rand(),true));
     $query = $mysql -> query("insert ".$datatables["auth"]["sessions"]." (id, session) values ('".$login_data["id"]."', '".$session."')");
 
-    setcookie("session", $session, time()+60*20, "/");
+    setcookie("session", $session, time()+60*60*24, "/");
 
     $result["username"] = $login_data["id"];
     $result["session"] = $session;

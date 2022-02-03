@@ -9,6 +9,6 @@ if (isset($session_check["session"])){
 	$session_data = $query -> fetch_assoc();
 	include "edit.php";
 } else {
-	include "auth.html";
+	include "index.html";
 }
 ?>
