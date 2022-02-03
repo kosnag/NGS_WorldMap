@@ -29,7 +29,7 @@
 							<br>
 							<buttons>
 								<a href="https://map.pso2.ru/">Back</a>
-								<a href="https://map.pso2.ru/">Get access</a>
+								<a href="https://map.pso2.ru/" target="_blank">Get access</a>
 								<button type="submit">Auth</button>
 							</buttons>
 						</form>
@@ -38,27 +38,30 @@
 			</container>
 			<map></map>
 		</ngsmap-mapping-auth>
-		
 		<script>
 			const formObject = document.getElementsByTagName("form")[0];
 
-			formObject.addEventListener("submit",function(event){
+			formObject.addEventListener("submit",(event) => {
 				event.preventDefault();
-				console.log(event)
 				
 				const loginData = {
 					"user": event.target[0].value,
 					"pass": event.target[1].value
 				}
-
-				var request = new XMLHttpRequest;
+				
+				const request = new XMLHttpRequest;
 				request.open("POST","login.php");
+				request.onreadystatechange = function(){
+					if (this.readyState === 4 && this.status === 200){
+						if (JSON.parse(this.responseText).status === "success"){
+							setTimeout(location.href = "/mapping", 1000)
+						}
+					}
+				};
 				request.send(JSON.stringify(loginData));
 			});
-		</script>
 
-		<script>
-			L.map(document.getElementsByTagName("ngsmap-mapping-auth")[0].getElementsByTagName("map")[0], {
+			L.map(document.getElementsByTagName("map")[0], {
 				zoom: 0,
 				minZoom: 0,
 				maxZoom: 0,
@@ -69,6 +72,7 @@
 				attributionControl: false,
 				keyboard: false,
 				maxBoundsViscosity: 0.5,
+            	doubleClickZoom: false,
 				layers: [
 					L.tileLayer("../assets/images/tiles/{z}/{y}-{x}.png", {
 						bounds: [[-12288/6, 0], [0, 12288/6]],
