@@ -3,7 +3,7 @@ const boundEast = 2048;
 const boundWest = 0;
 const boundSouth = -2048;
 
-const optionslist = [
+const optionsList = [
     {"value":"1", "inner":"1"},
     {"value":"2", "inner":"2"},
     {"value":"3", "inner":"3"},
