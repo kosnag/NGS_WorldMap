@@ -34,5 +34,3 @@ if(isset($login_data["id"]) && isset($login_data["pass"])){
 $mysql -> close();
 
 echo json_encode($result);
-
-?>

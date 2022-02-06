@@ -1,0 +1,17 @@
+* {
+    cursor: url('default.png') 0 0, auto;
+}
+button:hover, button:active, button:focus, .leaflet-popup-close-button:hover, .leaflet-popup-close-button:active, .leaflet-popup-close-button:focus {
+    cursor:url('active.png') 0 0, auto !important;
+}
+.leaflet-disabled, *:disabled {
+    cursor: url('disabled.png') 0 0, auto !important;
+}
+
+.leaflet-grab, .leaflet-dragging, .leaflet-grab {
+    cursor: url('default.png') 0 0, auto !important;
+}
+
+.leaflet-marker-icon:hover, .leaflet-marker-icon:active {
+    cursor: url('active.png') 0 0, auto !important;
+}

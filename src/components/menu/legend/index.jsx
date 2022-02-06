@@ -68,42 +68,42 @@ const MenuLegend = () => {
           <Fragment>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
               <button 
-                onMouseEnter={() => setPreview("landmarks_ryuker","places")}
+                onMouseEnter={() => setPreview("landmarks__ryuker","places")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("landmarks","ryuker")}
                 onChange={() => Functions.setLocalStorage("landmarks","ryuker")}
                 label={t("ui:LegendMenu.Items.landmarks.ryuker")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("landmarks_cocoon","places")}
+                onMouseEnter={() => setPreview("landmarks__cocoon","places")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("landmarks","cocoon")}
                 onChange={() => Functions.setLocalStorage("landmarks","cocoon")}
                 label={t("ui:LegendMenu.Items.landmarks.cocoon")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("landmarks_tower","places")}
+                onMouseEnter={() => setPreview("landmarks__tower","places")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("landmarks","tower")}
                 onChange={() => Functions.setLocalStorage("landmarks","tower")}
                 label={t("ui:LegendMenu.Items.landmarks.tower")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("landmarks_battledia","places")}
+                onMouseEnter={() => setPreview("landmarks__battledia","places")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("landmarks","battledia")}
                 onChange={() => Functions.setLocalStorage("landmarks","battledia")}
                 label={t("ui:LegendMenu.Items.landmarks.battledia")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("landmarks_mag","places")}
+                onMouseEnter={() => setPreview("landmarks__mag","places")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("landmarks","mag")}
                 onChange={() => Functions.setLocalStorage("landmarks","mag")}
                 label={t("ui:LegendMenu.Items.landmarks.mag")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("landmarks_urgent","places")}
+                onMouseEnter={() => setPreview("landmarks__urgent","places")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("landmarks","uq")}
                 onChange={() => Functions.setLocalStorage("landmarks","uq")}
@@ -112,287 +112,287 @@ const MenuLegend = () => {
             </items>
             <items className={toggleTab === 'minerals' ? "active" : ""}>
               <button 
-                onMouseEnter={() => setPreview("mineral_monotite","common")}
+                onMouseEnter={() => setPreview("mineral__monotite","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("minerals","monotite")}
                 onChange={() => Functions.setLocalStorage("minerals","monotite")}
-                label={t("items:Title.mineral_monotite")}
+                label={t("items:Title.mineral__monotite")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("mineral_dualomite","common")}
+                onMouseEnter={() => setPreview("mineral__dualomite","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("minerals","dualomite")}
                 onChange={() => Functions.setLocalStorage("minerals","dualomite")}
-                label={t("items:Title.mineral_dualomite")}
+                label={t("items:Title.mineral__dualomite")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("mineral_trinite","common")}
+                onMouseEnter={() => setPreview("mineral__trinite","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("minerals","trinite")}
                 onChange={() => Functions.setLocalStorage("minerals","trinite")}
-                label={t("items:Title.mineral_trinite")}
+                label={t("items:Title.mineral__trinite")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("mineral_tetracite","common")}
+                onMouseEnter={() => setPreview("mineral__tetracite","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("minerals","tetracite")}
                 onChange={() => Functions.setLocalStorage("minerals","tetracite")}
-                label={t("items:Title.mineral_tetracite")}
+                label={t("items:Title.mineral__tetracite")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("mineral_photonQuartz","common")}
+                onMouseEnter={() => setPreview("mineral__photonQuartz","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("minerals","photonQuartz")}
                 onChange={() => Functions.setLocalStorage("minerals","photonQuartz")}
-                label={t("items:Title.mineral_photonQuartz")}
+                label={t("items:Title.mineral__photonQuartz")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("mineral_photonChunk","common")}
+                onMouseEnter={() => setPreview("mineral__photonChunk","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("minerals","photonChunk")}
                 onChange={() => Functions.setLocalStorage("minerals","photonChunk")}
-                label={t("items:Title.mineral_photonChunk")}
+                label={t("items:Title.mineral__photonChunk")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("mineral_photonScale","very-rare")}
+                onMouseEnter={() => setPreview("mineral__photonScale","very-rare")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("minerals","photonScale")}
                 onChange={() => Functions.setLocalStorage("minerals","photonScale")}
-                label={t("items:Title.mineral_photonScale")}
+                label={t("items:Title.mineral__photonScale")}
               /></button>
             </items>
             <items className={toggleTab === 'food' ? "active" : ""}>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_apple","common")}
+                onMouseEnter={() => setPreview("food__aelio_apple","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_apple")}
                 onChange={() => Functions.setLocalStorage("food","aelio_apple")}
-                label={t("items:Title.food_aelio_apple")}
+                label={t("items:Title.food__aelio_apple")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_banana","common")}
+                onMouseEnter={() => setPreview("food__aelio_banana","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_banana")}
                 onChange={() => Functions.setLocalStorage("food","aelio_banana")}
-                label={t("items:Title.food_aelio_banana")}
+                label={t("items:Title.food__aelio_banana")}
               /></button>
              <button 
-                onMouseEnter={() => setPreview("food_aelio_clam","common")}
+                onMouseEnter={() => setPreview("food__aelio_clam","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_clam")}
                 onChange={() => Functions.setLocalStorage("food","aelio_clam")}
-                label={t("items:Title.food_aelio_clam")}
+                label={t("items:Title.food__aelio_clam")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_crab","common")}
+                onMouseEnter={() => setPreview("food__aelio_crab","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_crab")}
                 onChange={() => Functions.setLocalStorage("food","aelio_crab")}
-                label={t("items:Title.food_aelio_crab")}
+                label={t("items:Title.food__aelio_crab")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_herb","common")}
+                onMouseEnter={() => setPreview("food__aelio_herb","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_herb")}
                 onChange={() => Functions.setLocalStorage("food","aelio_herb")}
-                label={t("items:Title.food_aelio_herb")}
+                label={t("items:Title.food__aelio_herb")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_lobster","common")}
+                onMouseEnter={() => setPreview("food__aelio_lobster","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_lobster")}
                 onChange={() => Functions.setLocalStorage("food","aelio_lobster")}
-                label={t("items:Title.food_aelio_lobster")}
+                label={t("items:Title.food__aelio_lobster")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_mushroom","common")}
+                onMouseEnter={() => setPreview("food__aelio_mushroom","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_mushroom")}
                 onChange={() => Functions.setLocalStorage("food","aelio_mushroom")}
-                label={t("items:Title.food_aelio_mushroom")}
+                label={t("items:Title.food__aelio_mushroom")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_peach","common")}
+                onMouseEnter={() => setPreview("food__aelio_peach","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_peach")}
                 onChange={() => Functions.setLocalStorage("food","aelio_peach")}
-                label={t("items:Title.food_aelio_peach")}
+                label={t("items:Title.food__aelio_peach")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_pear","common")}
+                onMouseEnter={() => setPreview("food__aelio_pear","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_pear")}
                 onChange={() => Functions.setLocalStorage("food","aelio_pear")}
-                label={t("items:Title.food_aelio_pear")}
+                label={t("items:Title.food__aelio_pear")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_tomato","common")}
+                onMouseEnter={() => setPreview("food__aelio_tomato","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_tomato")}
                 onChange={() => Functions.setLocalStorage("food","aelio_tomato")}
-                label={t("items:Title.food_aelio_tomato")}
+                label={t("items:Title.food__aelio_tomato")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_turbanShell","common")}
+                onMouseEnter={() => setPreview("food__aelio_turbanShell","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_turbanShell")}
                 onChange={() => Functions.setLocalStorage("food","aelio_turbanShell")}
-                label={t("items:Title.food_aelio_turbanShell")}
+                label={t("items:Title.food__aelio_turbanShell")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_aelio_turnip","common")}
+                onMouseEnter={() => setPreview("food__aelio_turnip","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","aelio_turnip")}
                 onChange={() => Functions.setLocalStorage("food","aelio_turnip")}
-                label={t("items:Title.food_aelio_turnip")}
+                label={t("items:Title.food__aelio_turnip")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_cauliflower","common")}
+                onMouseEnter={() => setPreview("food__retem_cauliflower","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_cauliflower")}
                 onChange={() => Functions.setLocalStorage("food","retem_cauliflower")}
-                label={t("items:Title.food_retem_cauliflower")}
+                label={t("items:Title.food__retem_cauliflower")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_cherries","common")}
+                onMouseEnter={() => setPreview("food__retem_cherries","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_cherries")}
                 onChange={() => Functions.setLocalStorage("food","retem_cherries")}
-                label={t("items:Title.food_retem_cherries")}
+                label={t("items:Title.food__retem_cherries")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_cranberries","common")}
+                onMouseEnter={() => setPreview("food__retem_cranberries","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_cranberries")}
                 onChange={() => Functions.setLocalStorage("food","retem_cranberries")}
-                label={t("items:Title.food_retem_cranberries")}
+                label={t("items:Title.food__retem_cranberries")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_eggplant","common")}
+                onMouseEnter={() => setPreview("food__retem_eggplant","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_eggplant")}
                 onChange={() => Functions.setLocalStorage("food","retem_eggplant")}
-                label={t("items:Title.food_retem_eggplant")}
+                label={t("items:Title.food__retem_eggplant")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_fruit","common")}
+                onMouseEnter={() => setPreview("food__retem_fruit","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_fruit")}
                 onChange={() => Functions.setLocalStorage("food","retem_fruit")}
-                label={t("items:Title.food_retem_fruit")}
+                label={t("items:Title.food__retem_fruit")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_hermitCrab","common")}
+                onMouseEnter={() => setPreview("food__retem_hermitCrab","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_hermitCrab")}
                 onChange={() => Functions.setLocalStorage("food","retem_hermitCrab")}
-                label={t("items:Title.food_retem_hermitCrab")}
+                label={t("items:Title.food__retem_hermitCrab")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_mango","common")}
+                onMouseEnter={() => setPreview("food__retem_mango","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_mango")}
                 onChange={() => Functions.setLocalStorage("food","retem_mango")}
-                label={t("items:Title.food_retem_mango")}
+                label={t("items:Title.food__retem_mango")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_mushroom","common")}
+                onMouseEnter={() => setPreview("food__retem_mushroom","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_mushroom")}
                 onChange={() => Functions.setLocalStorage("food","retem_mushroom")}
-                label={t("items:Title.food_retem_mushroom")}
+                label={t("items:Title.food__retem_mushroom")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_scallop","common")}
+                onMouseEnter={() => setPreview("food__retem_scallop","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_scallop")}
                 onChange={() => Functions.setLocalStorage("food","retem_scallop")}
-                label={t("items:Title.food_retem_scallop")}
+                label={t("items:Title.food__retem_scallop")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_seaSlug","common")}
+                onMouseEnter={() => setPreview("food__retem_seaSlug","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_seaSlug")}
                 onChange={() => Functions.setLocalStorage("food","retem_seaSlug")}
-                label={t("items:Title.food_retem_seaSlug")}
+                label={t("items:Title.food__retem_seaSlug")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_strawberry","common")}
+                onMouseEnter={() => setPreview("food__retem_strawberry","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_strawberry")}
                 onChange={() => Functions.setLocalStorage("food","retem_strawberry")}
-                label={t("items:Title.food_retem_strawberry")}
+                label={t("items:Title.food__retem_strawberry")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("food_retem_urchin","common")}
+                onMouseEnter={() => setPreview("food__retem_urchin","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("food","retem_urchin")}
                 onChange={() => Functions.setLocalStorage("food","retem_urchin")}
-                label={t("items:Title.food_retem_urchin")}
+                label={t("items:Title.food__retem_urchin")}
               /></button>
             </items>
             <items className={toggleTab === 'containers' ? "active" : ""}>
               <button 
-                onMouseEnter={() => setPreview("containers_redBox","special")}
+                onMouseEnter={() => setPreview("containers__redBox","special")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("containers","redBox")}
                 onChange={() => Functions.setLocalStorage("containers","redBox")}
-                label={t("items:Title.containers_redBox")}
+                label={t("items:Title.containers__redBox")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("containers_greenBox","common")}
+                onMouseEnter={() => setPreview("containers__greenBox","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("containers","greenBox")}
                 onChange={() => Functions.setLocalStorage("containers","greenBox")}
-                label={t("items:Title.containers_greenBox")}
+                label={t("items:Title.containers__greenBox")}
               /></button>
               <button 
                 style={{display: "none"}}
-                onMouseEnter={() => setPreview("containers_goldBox","common")}
+                onMouseEnter={() => setPreview("containers__goldBox","common")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("containers","goldBox")}
                 onChange={() => Functions.setLocalStorage("containers","goldBox")}
-                label={t("items:Title.containers_goldBox")}
+                label={t("items:Title.containers__goldBox")}
               /></button>
             </items>
             <items className={toggleTab === 'other' ? "active" : ""}>
               <button 
-                onMouseEnter={() => setPreview("other_veteran","rare")}
+                onMouseEnter={() => setPreview("other__veteran","rare")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("other","veteran")}
                 onChange={() => Functions.setLocalStorage("other","veteran")}
                 label={t("ui:LegendMenu.Items.other.veteran")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("other_alphaReactor","very-rare")}
+                onMouseEnter={() => setPreview("other__alphaReactor","very-rare")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("other","alphaReactor")}
                 onChange={() => Functions.setLocalStorage("other","alphaReactor")}
                 label={t("ui:LegendMenu.Items.other.alphaReactor")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("other_stellarSeed","rare")}
+                onMouseEnter={() => setPreview("other__stellarSeed","rare")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("other","stellarSeed")}
                 onChange={() => Functions.setLocalStorage("other","stellarSeed")}
                 label={t("ui:LegendMenu.Items.other.stellarSeed")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("other_stellarGrace","special")}
+                onMouseEnter={() => setPreview("other__stellarGrace","special")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("other","stellarGrace")}
                 onChange={() => Functions.setLocalStorage("other","stellarGrace")}
                 label={t("ui:LegendMenu.Items.other.stellarGrace")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("other_dataPod","places")}
+                onMouseEnter={() => setPreview("other__dataPod","places")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("other","datapod")}
                 onChange={() => Functions.setLocalStorage("other","datapod")}
                 label={t("ui:LegendMenu.Items.other.dataPod")}
               /></button>
               <button 
-                onMouseEnter={() => setPreview("other_musicPlace","places")}
+                onMouseEnter={() => setPreview("other__musicPlace","places")}
                 ><Checkbox icon={<span/>}
                 checked={Functions.checkLocalStorage("other","musicPlace")}
                 onChange={() => Functions.setLocalStorage("other","musicPlace")}
