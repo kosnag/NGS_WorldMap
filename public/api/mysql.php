@@ -12,8 +12,3 @@ $mysql = mysqli_connect(
     "root",             // pass
     "kosnag_map"        // db
 );
-
-if (!$mysql) {
-    printf("Невозможно подключиться к базе данных. Код ошибки: %s\n", mysqli_connect_error());
-    exit;
-}

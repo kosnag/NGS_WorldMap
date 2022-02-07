@@ -1,5 +1,5 @@
 <?php
-include_once "../api/mysql.php";
+include "mysql.php";
 
 $data = json_decode(file_get_contents("php://input"));
 
@@ -25,10 +25,8 @@ if(isset($login_data["id"]) && isset($login_data["pass"])){
     $result["username"] = $login_data["id"];
     $result["session"] = $session;
     $result["status"] = "success";
-
 } else {
     $result["status"] = "error";
-    
 }
 
 $mysql -> close();

@@ -1,5 +1,5 @@
 <?php
-include_once "mysql.php";
+include "mysql.php";
 
 $data = json_decode(file_get_contents("php://input"));
 
