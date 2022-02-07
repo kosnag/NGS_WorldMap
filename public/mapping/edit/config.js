@@ -5,8 +5,8 @@ const boundSouth = -2048;
 
 const optionsList = [
     {"category":"Containers"},
-    {"table":"containers__greenbox", "text":"Green Container"},
-    {"table":"containers__redbox", "text":"Red Container"},
+    {"table":"containers__greenBox", "text":"Green Container"},
+    {"table":"containers__redBox", "text":"Red Container"},
     {"hr":""},
     {"category":"Food"},
     {"table":"food__aelio_apple", "text":"Rich Aelio Apple"},

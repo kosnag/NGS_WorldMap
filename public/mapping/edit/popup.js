@@ -114,16 +114,14 @@ function openPopup(e) {
         .openOn(map);
 };
 map.on('click', openPopup);
-
-
 popup_window_content_form.addEventListener("submit",(event) => {
     event.preventDefault();
-                    
     const markerData = {
-        "table": popup_window_content_form_select.target.value,
+        "table": popup_window_content_form_select.value,
         "lat": lat_variable,
         "lng": lng_variable,
-        "text": ""
+        "text": popup_window_content_form_inputSub.value,
+        "type": popup_window_content_form_selectSub.value
     }
     const request = new XMLHttpRequest;
     request.open("POST","../../api/record.php");
