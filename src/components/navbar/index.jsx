@@ -1,5 +1,5 @@
 import React from 'react';
-import "./stylesheet.scss";
+import "./style.scss";
 import Functions from '../../assets/js/functions';
 import './../../assets/js/i18n';
 

@@ -1,5 +1,5 @@
 import React, { Fragment, useEffect, useState } from 'react';
-import "./stylesheet.scss";
+import "./style.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
 import Checkbox from "react-custom-checkbox";

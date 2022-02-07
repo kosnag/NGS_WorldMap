@@ -1,5 +1,5 @@
 import React, { useEffect, useState, Fragment } from 'react';
-import "./stylesheet.scss";
+import "./style.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../assets/js/functions';
 
