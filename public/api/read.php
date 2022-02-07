@@ -1,5 +1,6 @@
 <?php
 include "mysql.php";
+header('Content-Type: application/json; charset=utf-8');
 
 //$response=array();
 $read=array();
