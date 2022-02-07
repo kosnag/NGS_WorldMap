@@ -6,12 +6,10 @@ var map = L.map(document.getElementsByTagName("map")[0], {
 	minZoom: 0,
 	maxZoom: 3,
     crs: L.CRS.Simple,
-    maxBounds: bounds,
     center: center,
     zoomControl: true,
     attributionControl: false,
     keyboard: true,
-    maxBoundsViscosity: 0.5,
     doubleClickZoom: false,
     layers: [
         L.tileLayer("../../assets/images/tiles/{z}/{y}-{x}.png", {
