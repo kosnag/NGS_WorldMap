@@ -1,7 +1,4 @@
 import React, { Fragment } from 'react';
-
-//import LoadingScreen from "./components/loadscreen";
-
 import Map from "./map";
 import MenuLegend from "./menu/legend";
 
