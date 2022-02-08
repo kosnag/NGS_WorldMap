@@ -2,6 +2,22 @@
     font-family: "NGS Font";
     src: url("../ngsfont.woff") format("woff");
 }
+.leaflet-popup-content {
+    margin: initial !important;
+    line-height: initial !important;
+}
+.leaflet-popup-close-button {
+    display: none !important;
+}
+.leaflet-popup-content-wrapper {
+    background: rgb(255 255 255 / 0%) !important;
+    box-shadow: none !important;
+}
+.leaflet-popup-tip {
+    background: rgb(54 255 255) !important;
+    box-shadow: none !important;
+}
+
 * {
     font-family: "NGS Font";
     user-select: none;
@@ -23,35 +39,39 @@ map {
     z-index: 100;
 }
 
-container {
-    width: 100%;
-    height: 100%;
-    display: block;
-    position: absolute;
-}
-
 window {
     display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-
-    z-index: 8492;
     background-color: rgb(26 39 43 / 85%);
     border: 1px solid rgb(54 255 255);
 }
 
 menuicon {
     margin-right: 8px;
-    font-size: 16px;
+    font-size: 15px;
     margin-top: auto;
     margin-bottom: auto;
     text-shadow: initial;
 }
 menuicon::before {
     content: "◆︎";
+}
+
+closebutton {
+    float: right;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+closebutton:hover, closebutton:active {
+    background-color: #A30000;
+    border: 2px solid #FF0000;
+}
+closebutton::before {
+    content: 'x';
 }
 
 
@@ -64,13 +84,14 @@ header {
     display: flex;
 }
 header > span {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: auto;
     margin-bottom: auto;
     display: inline-flex;
     flex: 1;
     float: left;
 }
+
 content {
     width: 100%;
     height: auto;
@@ -79,7 +100,7 @@ content {
     padding-bottom: 6px;
 }
 
-form {
+form, latlng {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -89,7 +110,7 @@ form > div {
     font-size: 18px;
 }
 
-form > border {
+border {
     position: relative;
     display: block;
     height: 1px;
@@ -99,7 +120,7 @@ form > border {
     margin-left: -5px;
     margin-right: -5px;
 }
-form > border::before {
+border::before {
     position: absolute;
     left: 0;
     top: -1px;
@@ -108,7 +129,7 @@ form > border::before {
     height: 3px;
     content: "";
 }
-form > border::after {
+border::after {
     position: absolute;
     right: 0;
     top: -1px;
@@ -118,31 +139,26 @@ form > border::after {
     content: "";
 }
 
-form > input {
+input {
     background-color: rgba(0, 0, 0, 0.85);
     border: 3px solid rgba(177, 187, 188, 0.85);
     font-size: 14px;
     height: 24px;
-    width: 324px;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: calc(250px - 7px*2 - 3px*2);
     padding-left: 7px;
     padding-right: 7px;
     margin-bottom: 10px;
+    margin-top: 10px;
 }
-form > input:hover {
+input:hover {
     border: 3px solid rgba(59, 208, 225, 0.85) !important;
 }
-form > input:focus, form > input:focus-visible {
+input:focus, input:focus-visible {
     border: 3px solid rgba(255, 201, 3, 0.85) !important;
     outline: none;
 }
 
-form > buttons {
-    margin-top: 5px;
-}
-
-buttons > button, buttons > a {
+button {
     display: inline-flex;
     align-items: flex-start;
     cursor: default;
@@ -153,19 +169,74 @@ buttons > button, buttons > a {
     align-items: center;
 }
 
-buttons > button, buttons > a {
+button {
     font-size: 15px;
-    width: 118px;
+    width: 100%;
     height: 40px ;
     background-color: rgba(34, 63, 94, .85);
     border: solid 2px rgba(34, 63, 94, .85);
 }
 
-buttons > button:hover, buttons > a:hover {
+button:hover {
     background-color: rgba(63, 95, 142, .85);
     border: solid 2px rgba(48, 222, 254, .85);
 }
-buttons > button:active, buttons > a:active {
+button:active {
     background-color: rgba(133, 91, 29, .85);
     border: solid 2px rgba(223, 171, 6, .85);
+}
+
+select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    /* Personalize */
+    width: 250px;
+    height: 35px;
+    padding: 0 4em 0 1em;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg")
+        no-repeat right 0.8em center / 1.4em,
+        linear-gradient(to left, rgba(129, 124, 120, 0.7) 3em, rgba(93, 107, 112, 0.7) 3em);
+    color: white;
+    border-radius: 0;
+    border: solid 2px rgba(129, 124, 120, 0.7);
+}
+select::-webkit-scrollbar {
+    width: 5px;
+    background-color: rgba(119, 117, 117, 0.75);
+}
+select::-webkit-scrollbar-thumb {
+    background-color: rgb(231, 231, 231);
+}
+option {
+    color: rgb(211, 211, 211);
+    background-color: #081744;
+}
+select:focus, select:focus-visible {
+    outline: none;
+}
+select:hover {
+    border: 3px solid rgba(59, 208, 225, 0.85) !important;
+}
+select:active {
+    border: 3px solid rgba(255, 201, 3, 0.85) !important;
+}
+
+latlng {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+l {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+}
+r {
+    width: 50%;
+    display: inline-block;
+    text-align: right;
 }

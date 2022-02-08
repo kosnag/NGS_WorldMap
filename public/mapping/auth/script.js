@@ -9,7 +9,7 @@ formObject.addEventListener("submit",(event) => {
     }
                     
     const request = new XMLHttpRequest;
-    request.open("POST","../../api/login.php");
+    request.open("POST","../../api/auth.php");
     request.onreadystatechange = function(){
         if (this.readyState === 4 && this.status === 200){
                 if (JSON.parse(this.responseText).status === "success"){
