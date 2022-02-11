@@ -6,8 +6,8 @@ import Functions from '../../../assets/js/functions';
 import i18n from './../../../assets/js/i18n';
 import { useTranslation } from "react-i18next";
 
-const MenuSettings = () => {
-  const {t} = useTranslation("ui");
+export default function MenuSettings(){
+  const {t} = useTranslation();
 
   const [toggleLang, setToggleLang] = useState("");
   const clickToggleLang = (lang) => {
@@ -113,5 +113,3 @@ const MenuSettings = () => {
     </Draggable>
   );
 };
-
-export default MenuSettings;

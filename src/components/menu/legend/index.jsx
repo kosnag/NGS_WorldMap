@@ -7,9 +7,9 @@ import Checkbox from "react-custom-checkbox";
 import './../../../assets/js/i18n';
 import { useTranslation } from "react-i18next";
 
-const MenuLegend = () => {
+export default function MenuLegend(){
 
-  const {t} = useTranslation(["items","ui"]);
+  const {t} = useTranslation();
 
   const [previewIcon, setPreviewIcon] = useState(process.env.PUBLIC_URL+"/assets/images/icons/null.png");
   const [previewRarity, setPreviewRarity] = useState("matoi");
@@ -411,5 +411,3 @@ const MenuLegend = () => {
     </Draggable>
   );
 };
-
-export default MenuLegend;

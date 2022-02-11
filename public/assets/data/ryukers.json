@@ -1,0 +1,18 @@
+[
+	{"latlng":[-1024,0],"string":"landmarks__battledia"},
+	{"latlng":[-679,257],"string":"landmarks__cocoon"},
+    {"latlng":[-695,427],"string":"landmarks__mag"},
+    {"latlng":[-883,101],"string":"landmarks__ryuker"},
+    {"latlng":[-449,515],"string":"r-4"},
+    {"latlng":[-585,556],"string":"r-5"},
+    {"latlng":[-751,675],"string":"r-6"},
+    {"latlng":[-375,716],"string":"r-7"},
+    {"latlng":[-249,917],"string":"r-8"},	
+
+    {"latlng":[-134,804],"string":"r-9"},
+    {"latlng":[-137,433],"string":"r-10"},
+    {"latlng":[-313,294],"string":"r-11"},
+    {"latlng":[-1018,693],"string":"r-12"},
+    {"latlng":[-954,911],"string":"r-13"},
+    {"latlng":[-653,882],"string":"r-14"}
+]

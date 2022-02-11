@@ -36,7 +36,7 @@ $window-button-border-active: rgba(223, 171, 6, 0.85);
 body {
     margin: 0px;
 }
-map {
+.leaflet-container {
     display: block;
     position: absolute;
     height: 100%;

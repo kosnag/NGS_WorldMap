@@ -9,8 +9,8 @@ import imageAlphaReactor from './../../assets/ui/icons/alphaReactor.png';
 
 import { useTranslation } from "react-i18next";
 
-const NavBar = () => {
-  const {t} = useTranslation("ui");
+export default function NavBar(){
+  const {t} = useTranslation();
   return (
     <navbar>
       <buttons>
@@ -38,5 +38,3 @@ const NavBar = () => {
     </navbar>
   );
 };
-
-export default NavBar;

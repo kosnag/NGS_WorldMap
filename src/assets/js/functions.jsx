@@ -53,7 +53,7 @@ var Functions = {
       }
   },
 
-  placeMarker: (category, item, id) => {
+  placeMarker: (category, item) => {
     if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1)
       {
       }

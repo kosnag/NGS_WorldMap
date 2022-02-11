@@ -5,8 +5,8 @@ import Functions from '../../../assets/js/functions';
 
 import { useTranslation } from "react-i18next";
 
-const MenuSupport = () => {
-  const {t} = useTranslation("ui");
+export default function MenuSupport(){
+  const {t} = useTranslation();
 
   const [toggleTab, setToggleTab] = useState('kofi');
   const clickToggleTab = (tab) => {
@@ -58,5 +58,3 @@ const MenuSupport = () => {
     </Draggable>
   );
 };
-
-export default MenuSupport;

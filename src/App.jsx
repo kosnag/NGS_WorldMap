@@ -1,4 +1,4 @@
-import React, { Fragment, Suspense, useEffect } from 'react';
+import React, { Fragment, useEffect } from 'react';
 import "./assets/js/i18n";
 import { useTranslation } from "react-i18next";
 
@@ -9,7 +9,7 @@ import NavBar from "./components/navbar";
 import MenuSettings from "./components/menu/settings";
 import MenuSupport from "./components/menu/support";
 
-const App = () => {
+export default function App(){
   const {t} = useTranslation("ui");
 
   useEffect(() => {
@@ -30,5 +30,3 @@ const App = () => {
     </Fragment>
   );
 }
-
-export default App;
