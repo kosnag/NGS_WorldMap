@@ -1,24 +1,14 @@
 import React, { Fragment, useEffect } from 'react';
-import { useTranslation } from "react-i18next";
-
-//import LoadingScreen from "./components/loadscreen";
-
-import Init from "./components/init.jsx";
+import { useTranslation } from "react-i18next";import Init from "./components/init.jsx";
 import NavBar from "./components/navbar";
 import MenuSettings from "./components/menu/settings";
 import MenuSupport from "./components/menu/support";
 
 export default function App(){
   const {t} = useTranslation();
-
-  useEffect(() => {
-    document.title = t("ui:page_title")
-  });
-
+  useEffect(() => {document.title = t("ui:page_title")});
   return (
-    <Fragment
-      //fallback={<LoadingScreen/>}
-    >
+    <Fragment>
       <Init.Map/>
       <NavBar/>
       <container>

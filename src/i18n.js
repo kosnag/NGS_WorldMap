@@ -18,8 +18,6 @@ i18n
     //debug: true,
     react: {
       useSuspense: false,
-      //bindI18n: false,
-      bindI18nStore: false,
       //wait: false,
       escapeValue: false,
     },
