@@ -1,14 +1,11 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.scss";
 import Draggable from 'react-draggable';
-import Functions from '../../../assets/js/functions';
+import Functions from '../../../functions';
 import Checkbox from "react-custom-checkbox";
-
-import './../../../assets/js/i18n';
 import { useTranslation } from "react-i18next";
 
 export default function MenuLegend(){
-
   const {t} = useTranslation();
 
   const [previewIcon, setPreviewIcon] = useState(process.env.PUBLIC_URL+"/assets/images/icons/null.png");
@@ -32,8 +29,6 @@ export default function MenuLegend(){
     document.getElementById('menu-legend').classList.add('hidden');
     setPreviewTitle(t("items:Title.nothing"));
   }, [t]);
-    
-  window.localStorage_Settings = JSON.parse(localStorage.getItem("settings"));
 
   return (
     <Draggable bounds='container' handle='header'>
@@ -65,7 +60,7 @@ export default function MenuLegend(){
               onClick={() => clickToggleTab('other')}
             >{t("ui:LegendMenu.Categories.other")}</button>
           </category>
-          <Fragment>
+          <>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
               <button 
                 onMouseEnter={() => setPreview("landmarks__ryuker","places")}
@@ -399,7 +394,7 @@ export default function MenuLegend(){
                 label={t("ui:LegendMenu.Items.other.musicPlace")}
               /></button>
             </items>
-          </Fragment>
+          </>
           <info>
             <background className={previewRarity}/>
             <img alt="" src={previewIcon}/>

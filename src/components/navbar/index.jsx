@@ -1,16 +1,14 @@
 import React from 'react';
 import "./style.scss";
-import Functions from '../../assets/js/functions';
-import './../../assets/js/i18n';
-
-import imageMapLegend from './../../assets/ui/icons/mapLegend.png';
-import imageSettings from './../../assets/ui/icons/settings.png';
-import imageAlphaReactor from './../../assets/ui/icons/alphaReactor.png';
-
+import Functions from '../../functions';
 import { useTranslation } from "react-i18next";
+
+import imageMapLegend from '../../assets/icons/mapLegend.png';
+import imageSettings from '../../assets/icons/settings.png';
 
 export default function NavBar(){
   const {t} = useTranslation();
+  const imageAlphaReactor = "./assets/images/icons/other__alphaReactor.png"
   return (
     <navbar>
       <buttons>

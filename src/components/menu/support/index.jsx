@@ -1,8 +1,7 @@
-import React, { useEffect, useState, Fragment } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.scss";
 import Draggable from 'react-draggable';
-import Functions from '../../../assets/js/functions';
-
+import Functions from '../../../functions';
 import { useTranslation } from "react-i18next";
 
 export default function MenuSupport(){
@@ -35,7 +34,7 @@ export default function MenuSupport(){
               onClick={() => clickToggleTab('qiwi')}
             >Qiwi</button>
           </category>
-          <Fragment>
+          <>
             <items id="kofi" className={toggleTab === 'kofi' ? "active" : ""}>
               <div>
                 <iframe
@@ -52,7 +51,7 @@ export default function MenuSupport(){
                 />
               </div>
             </items>
-          </Fragment>
+          </>
         </columns>
       </window>
     </Draggable>

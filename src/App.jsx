@@ -1,5 +1,4 @@
 import React, { Fragment, useEffect } from 'react';
-import "./assets/js/i18n";
 import { useTranslation } from "react-i18next";
 
 //import LoadingScreen from "./components/loadscreen";
@@ -10,7 +9,7 @@ import MenuSettings from "./components/menu/settings";
 import MenuSupport from "./components/menu/support";
 
 export default function App(){
-  const {t} = useTranslation("ui");
+  const {t} = useTranslation();
 
   useEffect(() => {
     document.title = t("ui:page_title")

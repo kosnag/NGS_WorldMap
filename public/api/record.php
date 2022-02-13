@@ -21,7 +21,7 @@ if(isset($_COOKIE["session"])){
     $result["lng"] = $data->{"lng"};
     $result["contributer"] = $user["id"];
     if(isset($data->{"text"}) && (
-            $result["table"]=="other__veteran" || $result["table"]=="other__musicPlace" || $result["table"]=="other__datapod"
+        $result["table"]=="other__veteran" || $result["table"]=="other__musicPlace" || $result["table"]=="other__datapod"
     )){
         $result["text"] = $data->{"text"};
         $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, text) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["text"]."')");

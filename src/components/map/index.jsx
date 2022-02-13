@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, Fragment} from 'react';
+import React, {useRef} from 'react';
 import L from 'leaflet';
 import "leaflet/dist/leaflet.css";
 import "./style.scss";

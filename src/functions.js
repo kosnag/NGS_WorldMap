@@ -1,3 +1,5 @@
+window.localStorage_Settings = JSON.parse(localStorage.getItem("settings"));
+
 var Functions = {
   menuShowHide: (id) => { 
     switch(id){
