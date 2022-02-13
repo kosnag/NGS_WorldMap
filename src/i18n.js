@@ -11,7 +11,13 @@ i18n
   .init({
     ns: [
       'ui',
-      'items'
+      'items',
+      'battledias',
+      'cocoons',
+      'ryuker',
+      'sections',
+      'towers',
+      'uq'
     ],
     framework: "React",
     fallbackLng: 'en_US',
