@@ -1,9 +1,8 @@
-import React, { useEffect, useState, Fragment } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.scss";
 import Draggable from 'react-draggable';
-import Functions from '../../../assets/js/functions';
-
-import i18n from './../../../assets/js/i18n';
+import Functions from '../../../functions';
+import i18n from '../../../i18n';
 import { useTranslation } from "react-i18next";
 
 export default function MenuSettings(){
@@ -53,7 +52,7 @@ export default function MenuSettings(){
               onClick={() => clickToggleTab('about')}
             >{t("ui:OptionsMenu.Categories.about")}</button>
           </category>
-          <Fragment>
+          <>
             <items id="languages" className={toggleTab === 'languages' ? "active" : ""}>
               <button onClick={() => clickToggleLang("en-US")}>
                 <span className={toggleLang === 'en-US' ? "active" : ""}/>
@@ -61,7 +60,7 @@ export default function MenuSettings(){
               </button>
               <button onClick={() => clickToggleLang("ja-JP")}>
                 <span className={toggleLang === 'ja-JP' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.japanese")} / 日本</div>
+                <div>{t("ui:OptionsMenu.Items.languages.japanese")} / 日本語</div>
               </button>
               <button onClick={() => clickToggleLang("en-JP")}>
                 <span className={toggleLang === 'en-JP' ? "active" : ""}/>
@@ -107,7 +106,7 @@ export default function MenuSettings(){
                 {t("ui:OptionsMenu.Items.about.segaCopyright")}
               </p>
             </items>
-          </Fragment>
+          </>
         </columns>
       </window>
     </Draggable>
