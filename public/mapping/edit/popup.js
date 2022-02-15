@@ -110,6 +110,7 @@ var popup_window_content_form_select = document.createElement("select")
         }
         switch(e.target.value){
             case "other__stellarGrace":
+                while(popup_window_content_form_selectSub.firstChild){popup_window_content_form_selectSub.removeChild(popup_window_content_form_selectSub.firstChild)}
                 subList = [
                     {"type":"gold","text":"Gold"},
                     {"type":"silver","text":"Silver"},
@@ -123,6 +124,7 @@ var popup_window_content_form_select = document.createElement("select")
                 }
                 break;
             case "landmarks__mags":
+                while(popup_window_content_form_selectSub.firstChild){popup_window_content_form_selectSub.removeChild(popup_window_content_form_selectSub.firstChild)}
                 subList = [
                     {"type":"invincible","text":"Invincible"},
                     {"type":"priceless","text":"Priceless"},
