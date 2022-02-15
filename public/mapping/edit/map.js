@@ -1,3 +1,8 @@
+const boundNorth = 0; 
+const boundEast = 2048;
+const boundWest = 0;
+const boundSouth = -2048;
+
 const bounds = [[boundSouth, boundWest], [boundNorth, boundEast]];
 const center = [boundSouth/2, boundEast/2];
 

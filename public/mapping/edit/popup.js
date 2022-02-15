@@ -1,3 +1,55 @@
+var optionsList = [
+    {"category":"Landmarks"},
+    {"table":"landmarks__ryukers","text":"Ryuker Devices"},
+    {"table":"landmarks__mags","text":"Region Mags"},
+    {"hr":""},
+    {"category":"Containers"},
+    {"table":"containers__greenBox","text":"Green Container"},
+    {"table":"containers__redBox","text":"Red Container"},
+    {"hr":""},
+    {"category":"Food"},
+    {"table":"food__aelio_apple","text":"Rich Aelio Apple"},
+    {"table":"food__aelio_banana","text":"Robust Aelio Banana"},
+    {"table":"food__aelio_clam","text":"Rich Aelio Clam"},
+    {"table":"food__aelio_crab","text":"Crisp Aelio Crab"},
+    {"table":"food__aelio_herb","text":"Rich Aelio Herb"},
+    {"table":"food__aelio_lobster","text":"Robust Aelio Lobster"},
+    {"table":"food__aelio_mushroom","text":"Light Aelio Mushroom"},
+    {"table":"food__aelio_peach","text":"Light Aelio Peach"},
+    {"table":"food__aelio_pear","text":"Crisp Aelio Pear"},
+    {"table":"food__aelio_tomato","text":"Crisp Aelio Tomato"},
+    {"table":"food__aelio_turbanShell","text":"Light Aelio Turban Shell"},
+    {"table":"food__aelio_turnip","text":"Robust Aelio Turnip"},
+    {"table":"food__retem_cauliflower","text":"Robust Retem Cauliflower"},
+    {"table":"food__retem_cherries","text":"Rich Retem Cherry"},
+    {"table":"food__retem_cranberries","text":"Light Retem Cranberries"},
+    {"table":"food__retem_eggplant","text":"Rich Retem Round Eggplant"},
+    {"table":"food__retem_fruit","text":"Crisp Retem Carambola"},
+    {"table":"food__retem_hermitCrab","text":"Robust Retem Hermit Crab"},
+    {"table":"food__retem_mango","text":"Light Retem Mango"},
+    {"table":"food__retem_mushroom","text":"Crisp Retem Mushroom"},
+    {"table":"food__retem_scallop","text":"Rich Retem Scallop"},
+    {"table":"food__retem_seaSlug","text":"Light Retem Sea Slug"},
+    {"table":"food__retem_strawberry","text":"Robust Retem Strawberry"},
+    {"table":"food__retem_urchin","text":"Crisp Retem Sea Urchin"},
+    {"hr":""},
+    {"category":"Minerals"},
+    {"table":"mineral__dualomite","text":"Dualomite"},
+    {"table":"mineral__monotite","text":"Monotite"},
+    {"table":"mineral__photonChunk","text":"Photon Chunk"},
+    {"table":"mineral__photonQuartz","text":"Photon Quartz"},
+    {"table":"mineral__photonScale","text":"Photon Scate"},
+    {"table":"mineral__tetracite","text":"Tetracite"},
+    {"table":"mineral__trinite","text":"Trinite"},
+    {"hr":""},
+    {"category":"Other"},
+    {"table":"other__alphaReactor","text":"Alpha Reactor"},
+    {"table":"other__datapod","text":"Datapod"},
+    {"table":"other__veteran","text":"Veteran"},
+    {"table":"other__stellarGrace","text":"Stellar Grace"},
+    {"table":"other__musicPlace","text":"BGM Easter Egg"}
+];
+
 function openPopup(e) {
     var popup = L.popup()
         popup.setLatLng(e.latlng),
@@ -34,23 +86,57 @@ var popup_window_content_form = document.createElement("form");
 var popup_window_content_form_divMain = document.createElement("div");
 
 var popup_window_content_form_select = document.createElement("select")
-    popup_window_content_form_select.setAttribute("required", "")
-    popup_window_content_form_select.setAttribute("autocomplete", "hidden")
-    popup_window_content_form_select.addEventListener("change", (e)=>{
+    popup_window_content_form_select.setAttribute("required","")
+    popup_window_content_form_select.setAttribute("autocomplete","hidden")
+    popup_window_content_form_select.addEventListener("change",(e)=>{
         switch (e.target.value) {
             case "other__veteran":
             case "other__datapod":
             case "other__musicPlace":
-                popup_window_content_form_inputSub.style.display = "initial"
+            case "landmarks__ryukers":
+            case "containers__redBox":
                 popup_window_content_form_selectSub.style.display = "none"
+                popup_window_content_form_inputSub.style.display = "initial"
                 break;
+            case "landmarks__mags":
             case "other__stellarGrace":
-                popup_window_content_form_selectSub.style.display = "initial"
                 popup_window_content_form_inputSub.style.display = "none"
+                popup_window_content_form_selectSub.style.display = "initial"
                 break;
             default:
                 popup_window_content_form_selectSub.style.display = "none"
                 popup_window_content_form_inputSub.style.display = "none"
+                break;
+        }
+        switch(e.target.value){
+            case "other__stellarGrace":
+                subList = [
+                    {"type":"gold","text":"Gold"},
+                    {"type":"silver","text":"Silver"},
+                    {"type":"normal","text":"Standard"}
+                ];
+                for (i=0;i<subList.length;i++){
+                    e = document.createElement("option")
+                    e.setAttribute("value",subList[i]["type"])
+                    e.innerHTML=subList[i]["text"]
+                    popup_window_content_form_selectSub.appendChild(e)
+                }
+                break;
+            case "landmarks__mags":
+                subList = [
+                    {"type":"invincible","text":"Invincible"},
+                    {"type":"priceless","text":"Priceless"},
+                    {"type":"expert","text":"Expert"}
+                ];
+                for (i=0;i<subList.length;i++){
+                    e = document.createElement("option")
+                    e.setAttribute("value",subList[i]["type"])
+                    e.innerHTML=subList[i]["text"]
+                    popup_window_content_form_selectSub.appendChild(e)
+                }
+                break;
+            default:
+                subList = [];
                 break;
         }
     });
@@ -58,26 +144,28 @@ var popup_window_content_form_select = document.createElement("select")
 var popup_window_content_form_divSub = document.createElement("div");
 
 var popup_window_content_form_selectSub = document.createElement("select")
-    popup_window_content_form_selectSub.setAttribute("autocomplete", "hidden")
-    popup_window_content_form_selectSub.style.display = "none"
+    popup_window_content_form_selectSub.setAttribute("autocomplete","hidden")
     popup_window_content_form_selectSub.style.marginTop = "10px";
+    popup_window_content_form_selectSub.style.display = "none"
 
 var popup_window_content_form_inputSub = document.createElement("input")
-    popup_window_content_form_inputSub.setAttribute("autocomplete", "hidden")
-    popup_window_content_form_inputSub.setAttribute("type", "text")
-    popup_window_content_form_inputSub.style.display = "none";
+    popup_window_content_form_inputSub.setAttribute("autocomplete","hidden")
+    popup_window_content_form_inputSub.setAttribute("type","text")
+    //popup_window_content_form_inputSub.style.display = "none";
 
 var popup_window_content_border2 = document.createElement("border");
 
-var popup_window_content_form_button_latlng = document.createElement("button")
-    popup_window_content_form_button_latlng.setAttribute("type", "button")
+var popup_window_content_form_button_latlng = document.createElement("a")
     popup_window_content_form_button_latlng.innerHTML="Copy LatLng"
-    popup_window_content_form_button_latlng.addEventListener("onclick", ()=>{
-        navigator.clipboard.writeText("["+lat_variable+","+lng_variable+"]")
+    popup_window_content_form_button_latlng.style.marginBottom = "5px"
+    popup_window_content_form_button_latlng.setAttribute("href","#")
+    popup_window_content_form_button_latlng.addEventListener("click",()=>{
+        navigator.clipboard.writeText("lat:"+lat_variable+", lng:"+lng_variable)
+        console.log("lat:"+lat_variable+", lng:"+lng_variable)
     });
 
 var popup_window_content_form_button_submit = document.createElement("button")
-    popup_window_content_form_button_submit.setAttribute("type", "submit")
+    popup_window_content_form_button_submit.setAttribute("type","submit")
     popup_window_content_form_button_submit.innerHTML="Place marker";
 
 
@@ -111,25 +199,15 @@ popup_window.appendChild(popup_window_content)
                 popup_window_content_form_select.appendChild(e)
             }
         popup_window_content_form.appendChild(popup_window_content_form_divSub)
-        popup_window_content_form.appendChild(popup_window_content_form_selectSub)
-            const subList = [
-                {"type":"gold","text":"Gold"},
-                {"type":"silver","text":"Silver"},
-                {"type":"normal","text":"Standard"}
-            ]
-            for (let i = 0; i < subList.length; i++){
-                var e = document.createElement("option")
-                    e.setAttribute("value",subList[i]["type"])
-                    e.innerHTML=subList[i]["text"]
-                popup_window_content_form_selectSub.appendChild(e)
-            }
+        popup_window_content_form.appendChild(popup_window_content_form_selectSub)  
+            
         popup_window_content_form.appendChild(popup_window_content_form_inputSub)
         popup_window_content_form.appendChild(popup_window_content_border2)
         popup_window_content_form.appendChild(popup_window_content_form_button_latlng)
         popup_window_content_form.appendChild(popup_window_content_form_button_submit);
 
-popup_window_content_form.addEventListener("submit",() => {
-    popup_window_content_form_button_submit.preventDefault();
+popup_window_content_form.addEventListener("submit",(e) => {
+    e.preventDefault();
     const markerData = {
         "table": popup_window_content_form_select.value,
         "lat": lat_variable,

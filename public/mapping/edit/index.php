@@ -19,7 +19,6 @@ if (!isset($session_check["session"])){
 	</head>
 	<body>
 		<ngsmap-mapping-edit><map></map></ngsmap-mapping-edit>
-		<script src="edit/config.js"></script>
 		<script src="edit/map.js"></script>
 		<script src="edit/popup.js"></script>
 	</body>
