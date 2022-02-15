@@ -17,7 +17,7 @@ i18n
       'ryuker',
       'sections',
       'towers',
-      'uq'
+      'urgents'
     ],
     framework: "React",
     fallbackLng: 'en_US',
