@@ -1,4 +1,5 @@
 window.localStorage_Settings = JSON.parse(localStorage.getItem("settings"));
+window.localStorage_Checked = JSON.parse(localStorage.getItem("checked"));
 
 const Functions = {
   menuShowHide: (id) => { 
