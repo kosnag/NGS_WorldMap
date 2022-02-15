@@ -22,7 +22,7 @@ const Init = {
             .then(data => localStorage.setItem("checked", JSON.stringify(data))));
           return <Fragment/>;
         }
-      }
+    }
 }
 
 export default Init;

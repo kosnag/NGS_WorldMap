@@ -13,40 +13,38 @@ export default function MenuLegend(){
   const [previewTitle, setPreviewTitle] = useState("");
   const [previewShortInfo, setPreviewShortInfo] = useState("");
 
-  const setPreview = (item,rarity) => {
+  function setPreview(item,rarity){
     setPreviewIcon(process.env.PUBLIC_URL+"/assets/images/icons/"+item+".png")
     setPreviewRarity(rarity)
     setPreviewTitle(t("items:Title."+item))
     setPreviewShortInfo(t("items:ShortInfo."+item))
   };
 
-  const checkLocalStorage = (category, item) => {
+  function checkLocalStorage(category,item){
     if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1)
-      return true;
+      {return true}
     else
-      return false;
+      {return false}
   }
 
-  const setLocalStorage = (category, item) => {
-    if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1)
-      {
-        window.localStorage_Settings[category][item]=0
-        localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
-      }
-    else 
-      {
-        window.localStorage_Settings[category][item]=1
-        localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
-      }
+  function setLocalStorage(category,item){
+    if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1){
+      window.localStorage_Settings[category][item]=0
+      localStorage.setItem("settings",JSON.stringify(window.localStorage_Settings))
+    }else{
+      window.localStorage_Settings[category][item]=1
+      localStorage.setItem("settings",JSON.stringify(window.localStorage_Settings))
+    };
+    
   }
 
   const [toggleTab, setToggleTab] = useState('landmarks');
-  const clickToggleTab = (tab) => {setToggleTab(tab)};
+  function clickToggleTab(tab){setToggleTab(tab)};
 
   useEffect(() => {
     document.getElementById('menu-legend').classList.add('hidden');
     setPreviewTitle(t("items:Title.nothing"));
-  }, [t]);
+  },[t]);
 
   return (
     <Draggable bounds='container' handle='header'>

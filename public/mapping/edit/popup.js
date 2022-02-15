@@ -69,9 +69,16 @@ var popup_window_content_form_inputSub = document.createElement("input")
 
 var popup_window_content_border2 = document.createElement("border");
 
-var popup_window_content_form_button = document.createElement("button")
-    popup_window_content_form_button.setAttribute("type", "submit")
-    popup_window_content_form_button.innerHTML="Place marker";
+var popup_window_content_form_button_latlng = document.createElement("button")
+    popup_window_content_form_button_latlng.setAttribute("type", "button")
+    popup_window_content_form_button_latlng.innerHTML="Copy LatLng"
+    popup_window_content_form_button_latlng.addEventListener("onclick", ()=>{
+        navigator.clipboard.writeText("["+lat_variable+","+lng_variable+"]")
+    });
+
+var popup_window_content_form_button_submit = document.createElement("button")
+    popup_window_content_form_button_submit.setAttribute("type", "submit")
+    popup_window_content_form_button_submit.innerHTML="Place marker";
 
 
 popup_window.appendChild(popup_window_header)
@@ -118,10 +125,11 @@ popup_window.appendChild(popup_window_content)
             }
         popup_window_content_form.appendChild(popup_window_content_form_inputSub)
         popup_window_content_form.appendChild(popup_window_content_border2)
-        popup_window_content_form.appendChild(popup_window_content_form_button);
+        popup_window_content_form.appendChild(popup_window_content_form_button_latlng)
+        popup_window_content_form.appendChild(popup_window_content_form_button_submit);
 
-popup_window_content_form.addEventListener("submit",(event) => {
-    event.preventDefault();
+popup_window_content_form.addEventListener("submit",() => {
+    popup_window_content_form_button_submit.preventDefault();
     const markerData = {
         "table": popup_window_content_form_select.value,
         "lat": lat_variable,

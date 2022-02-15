@@ -10,7 +10,7 @@ const IconLib = {
     landmarks__mag: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__mag.png'}),
     landmarks__ryuker: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__ryuker.png'}),
     landmarks__tower: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__tower.png'}),
-    landmarks__battledia: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__battledia.svg'}),
+    landmarks__battledia: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__battledia.png'}),
     landmarks__uq: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__urgent.png'}),
     
 
@@ -23,7 +23,7 @@ const IconLib = {
     mineral__dualomite: new Setup.Materials({iconUrl:'./assets/images/icons/mineral__dualomite.png'}),
     mineral__trinite: new Setup.Materials({iconUrl:'./assets/images/icons/mineral__trinite.png'}),
     mineral__tetracite: new Setup.Materials({iconUrl:'./assets/images/icons/mineral__tetracite.png'}),
-    mineral__photonQuarz: new Setup.Materials({iconUrl:'./assets/images/icons/mineral__photonQuartz.png'}),
+    mineral__photonQuartz: new Setup.Materials({iconUrl:'./assets/images/icons/mineral__photonQuartz.png'}),
     mineral__photonScale: new Setup.Materials({iconUrl:'./assets/images/icons/mineral__photonScale.png'}),
     mineral__photonChunk: new Setup.Materials({iconUrl:'./assets/images/icons/mineral__photonChunk.png'}),
     
@@ -38,7 +38,7 @@ const IconLib = {
     food__aelio_peach: new Setup.Materials({iconUrl:'./assets/images/icons/food__aelio_peach.png'}),
     food__aelio_pear: new Setup.Materials({iconUrl:'./assets/images/icons/food__aelio_pear.png'}),
     food__aelio_tomato: new Setup.Materials({iconUrl:'./assets/images/icons/food__aelio_tomato.png'}),
-    food__aelio_tuberShell: new Setup.Materials({iconUrl:'./assets/images/icons/food__aelio_tuberShell.png'}),
+    food__aelio_turbanShell: new Setup.Materials({iconUrl:'./assets/images/icons/food__aelio_turbanShell.png'}),
     food__aelio_turnip: new Setup.Materials({iconUrl:'./assets/images/icons/food__aelio_turnip.png'}),
 
     food__retem_cauliflower: new Setup.Materials({iconUrl:'./assets/images/icons/food__retem_cauliflower.png'}),
@@ -58,7 +58,9 @@ const IconLib = {
     other__datapod: new Setup.Materials({iconUrl:'./assets/images/icons/other__dataPod.png'}),
     other__alphaReactor: new Setup.Materials({iconUrl:'./assets/images/icons/other__alphaReactor.png'}),
     other__stellarSeed: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarSeed.png'}),
-    other__stellarGrace: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
+    other__stellarGrace_Standard: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
+    other__stellarGrace_Silver: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
+    other__stellarGrace_Gold: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
     other__veteran: new L.icon({iconSize:[32,32],iconAnchor:[16,16],popupAnchor:[0,-16],iconUrl:'./assets/images/icons/other__veteran.png'})
 };
 

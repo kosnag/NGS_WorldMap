@@ -1,9 +1,9 @@
-import React, {useRef} from 'react';
+import React from 'react';
 import L from 'leaflet';
+import { MapContainer, TileLayer } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 import "./style.scss";
-import FromJSON from './markers/fromJSON.jsx';
-import { MapContainer, TileLayer } from 'react-leaflet';
+import Init from './init';
 
 const boundNorth = 0; 
 const boundEast = 12288/6;
@@ -20,10 +20,8 @@ const maxbounds = [[boundSouth-100, boundWest], [boundSouth/2+250, boundEast]];
 const center = [boundSouth/4*3, boundEast/2];
 
 export default function Map(){
-    const leafmap = useRef();
     return (
         <MapContainer
-            ref={leafmap}
             zoom={0}
             minZoom={0}
             maxZoom={3}
@@ -42,7 +40,7 @@ export default function Map(){
                 tileSize={1024}
                 noWrap={true}
             />
-            <FromJSON/>
+            <Init/>
         </MapContainer>
     );
 };
