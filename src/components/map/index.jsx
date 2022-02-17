@@ -30,7 +30,7 @@ export default function Map(){
             minZoom={0}
             maxZoom={3}
             crs={L.CRS.Simple}
-            maxBounds={[[bounds.South-100,bounds.West-100],[bounds.South/2+250,bounds.East+100]]}
+            maxBounds={[[bounds.South-150,bounds.West-150],[bounds.South/2+250,bounds.East+150]]}
             center={[bounds.South/4*3,bounds.East/2]}
             zoomControl={false}
             attributionControl={false}
