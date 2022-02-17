@@ -14,14 +14,14 @@ while($data=$query->fetch_assoc()){
         'lat' => $data["lat"],
         'lng' => $data["lng"],
         'contributer' => $data["contributer"],
-        'text' => null,
-        'type' => null
+        'string' => null,
+        'reward' => null
     );
-    if(isset($data["text"])){
-        $table[$length]["text"] = $data["text"];
+    if(isset($data["string"])){
+        $table[$length]["string"] = $data["string"];
     };
-    if(isset($data["type"])){
-        $table[$length]["type"] = $data["type"];
+    if(isset($data["reward"])){
+        $table[$length]["reward"] = $data["reward"];
     };
     $length++;
 }
