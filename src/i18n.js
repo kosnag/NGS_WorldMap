@@ -14,7 +14,7 @@ i18n
       'items',
       'battledias',
       'cocoons',
-      'ryuker',
+      'ryukers',
       'sections',
       'towers',
       'urgents'
