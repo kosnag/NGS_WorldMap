@@ -8,8 +8,8 @@ $result = array(
     "lat" => null,
     "lng" => null,
     "contributer" => null,
-    "text" => null,
-    "type" => null
+    "string" => null,
+    "reward" => null
 );
 
 if(isset($_COOKIE["session"])){
@@ -20,16 +20,14 @@ if(isset($_COOKIE["session"])){
     $result["lat"] = $data->{"lat"};
     $result["lng"] = $data->{"lng"};
     $result["contributer"] = $user["id"];
-    if(isset($data->{"text"}) && (
-        $result["table"]=="other__veteran" || $result["table"]=="other__musicPlace" || $result["table"]=="other__datapod" || $result["table"]=="landmarks__ryukers"
+    if(isset($data->{"string"}) && (
+        $result["table"]=="other__veteran" || $result["table"]=="other__musicPlace" || $result["table"]=="other__datapod" || $result["table"]=="landmarks__ryukers" || $result["table"]=="other__stellarGrace" || $result["table"]=="landmarks__mags"
     )){
-        $result["text"] = $data->{"text"};
-        $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, text) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["text"]."')");
-    }elseif(isset($data->{"type"}) && (
-        $result["table"]=="other__stellarGrace" || $result["table"]=="landmarks__mags"
-    )){
-        $result["type"] = $data->{"type"};
-        $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, type) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["type"]."')");
+        $result["string"] = $data->{"string"};
+        $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, string) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["string"]."')");
+    }elseif(isset($data->{"string"}) && ($result["table"]=="containers__redBox")){
+        $result["reward"] = $data->{"string"};
+        $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, reward) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["reward"]."')");
     }else{
         $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."')");
     }

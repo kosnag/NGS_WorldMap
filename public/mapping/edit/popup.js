@@ -51,10 +51,11 @@ var optionsList = [
 ];
 
 function openPopup(e) {
-    var popup = L.popup()
-        popup.setLatLng(e.latlng),
-        popup.setContent(popup_window),
-        popup.openOn(map);
+    popup = L.popup()
+    popup.setLatLng(e.latlng),
+    popup.setContent(popup_window),
+    popup.openOn(map);
+
     lat_variable = e.latlng.lat;
     lng_variable = e.latlng.lng;
     popup_window_content_latlng_lat.innerHTML = "<l>Lat:</l><r>"+lat_variable+"</r>";
@@ -214,8 +215,7 @@ popup_window_content_form.addEventListener("submit",(e) => {
         "table": popup_window_content_form_select.value,
         "lat": lat_variable,
         "lng": lng_variable,
-        "text": popup_window_content_form_inputSub.value,
-        "type": popup_window_content_form_selectSub.value
+        "string": popup_window_content_form_inputSub.value || popup_window_content_form_selectSub.value
     }
     const request = new XMLHttpRequest;
     request.open("POST","../../api/record.php");
