@@ -12,7 +12,7 @@ $result = array(
 );
 
 if(isset($_COOKIE["session"])){
-    $query = $mysql -> query("select auth__users.id from auth__users inner join auth__sessions on auth__users.id=auth__sessions.id where session='".$_COOKIE["session"]."'");
+    $query = $mysql -> query("select ".$datatables["auth"]["users"].".id from ".$datatables["auth"]["users"]." inner join ".$datatables["auth"]["sessions"]." on ".$datatables["auth"]["users"].".id=".$datatables["auth"]["sessions"].".id where session='".$_COOKIE["session"]."'");
     $user = $query -> fetch_assoc();
 
     $result["table"] = $data->{"table"};
