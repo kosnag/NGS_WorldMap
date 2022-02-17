@@ -1,8 +1,8 @@
 var optionsList = [
-    {"category":"Landmarks"},
-    {"table":"landmarks__ryukers","text":"Ryuker Devices"},
-    {"table":"landmarks__mags","text":"Region Mags"},
-    {"hr":""},
+    //{"category":"Landmarks"},
+    //{"table":"landmarks__ryukers","text":"Ryuker Devices"},
+    //{"table":"landmarks__mags","text":"Region Mags"},
+    //{"hr":""},
     {"category":"Containers"},
     {"table":"containers__greenBox","text":"Green Container"},
     {"table":"containers__redBox","text":"Red Container"},
@@ -164,7 +164,7 @@ var popup_window_content_form_button_latlng = document.createElement("a")
     popup_window_content_form_button_latlng.setAttribute("href","#")
     popup_window_content_form_button_latlng.addEventListener("click",()=>{
         navigator.clipboard.writeText("lat:"+lat_variable+", lng:"+lng_variable)
-        console.log("lat:"+lat_variable+", lng:"+lng_variable)
+        console.log("lat:"+lat_variable+", lng:"+lng_variable+",")
     });
 
 var popup_window_content_form_button_submit = document.createElement("button")
