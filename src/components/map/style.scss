@@ -14,43 +14,18 @@
         margin-bottom: -6px;
     }
 }
-
-
-
-
-tooltipwindow {
-    width: 320px;
-    display: block;
-    background-color: $window-color;
-    border: 1px solid $window-border-color;
-    header {
-        $widthpadding: 7px;
-        background-color: $window-header-color;
-        width: calc(100% - $widthpadding * 2);
-        padding-left: $widthpadding;;
-        padding-right: $widthpadding;;
-        height: 32px;
-        display: flex;
-        span {
-            font-size: 22px;
-            margin-top: auto;
-            margin-bottom: auto;
-            display: inline-flex;
-            flex: 1;
-            float: left;
-            menuicon::before {
-                content: "◆︎";
-            }
+.leaflet-popup {
+    .leaflet-popup-content-wrapper {
+        background-color: rgba(0, 0, 0, 0);
+        border: initial;
+        color: initial;
+        box-shadow: initial;
+        border-radius: initial;
+        .leaflet-popup-content {
+            width: initial !important;
         }
     }
-    content {
-        padding-left: 10px;
-        padding-right: 10px;
-        width: calc(100% - 20px);
-        height: auto;
-        display: block;
-        padding-top: 10px;
-        padding-bottom: 6px;
-        font-size: 14px;
+    .leaflet-popup-close-button {
+        display: none;
     }
 }
