@@ -23,8 +23,15 @@
         border-radius: initial;
         .leaflet-popup-content {
             width: initial !important;
+            margin: -1px 19px;
         }
     }
+    .leaflet-popup-tip-container {
+        .leaflet-popup-tip {
+        background: $window-border-color;
+        color: initial;
+        box-shadow: initial;
+    }}
     .leaflet-popup-close-button {
         display: none;
     }
