@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App'
+import Init from './App'
 
-ReactDOM.render(<App/>,document.getElementsByTagName('ngsmap-react')[0]);
+ReactDOM.render(<Init/>,document.getElementsByTagName('ngsmap-react')[0]);
