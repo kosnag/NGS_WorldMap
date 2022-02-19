@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 
 import NavBar from "./components/navbar";
