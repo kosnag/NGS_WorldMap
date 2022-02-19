@@ -5,11 +5,13 @@ import "leaflet/dist/leaflet.css";
 import "./style.scss";
 
 import Landmarks from './markers/landmarks';
+import Food from './markers/food';
 
 
 function Init(){
     return (<>
         <Landmarks/>
+        <Food/>
     </>)
 }
 export default function Map(){
