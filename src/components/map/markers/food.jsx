@@ -13,18 +13,20 @@ const TemplateFood = (props) => {
         var i = setInterval(()=>setMarker(window.localStorage_Settings.food[props.id]));
         return ()=>clearInterval(i);
     });
-    return(marker?<>{(data.map((x=>
-    <Marker icon={IconLib[props.icon]} position={[x.lat,x.lng]} key={x.id}><Tooltip direction='top'><tooltip-window>
-    <header>
-        <span><menuicon/> {t("items:Title.food__"+props.id)}</span>
-    </header>
-    <content>
-        {t("ui:Map.foodType."+props.type)}
-        <br/>
-        {t("items:Title.landmarks__mag")}
-        <id>ID: {props.id}{x.id}</id>
-    </content>
-    </tooltip-window></Tooltip></Marker>)))}</>:<Fragment/>)
+    if (data != null){
+        return(marker?<>{(data.map((x=>
+            <Marker icon={IconLib[props.icon]} position={[x.lat,x.lng]} key={x.id}><Tooltip direction='top'><tooltip-window>
+            <header>
+                <span><menuicon/> {t("items:Title.food__"+props.id)}</span>
+            </header>
+            <content>
+                {t("ui:Map.foodType."+props.type)}
+                <br/>
+                {t("items:Title.landmarks__mag")}
+                <id>ID: {props.id}{x.id}</id>
+            </content>
+            </tooltip-window></Tooltip></Marker>)))}</>:<Fragment/>)
+    }else{return <Fragment/>}
 }
 const Load = {
     Aelio: {
