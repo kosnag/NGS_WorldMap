@@ -1,0 +1,178 @@
+@import './style.scss';
+
+popup-window {
+    width: 540px;
+    display: block;
+    background-color: $window-color;
+    border: 1px solid $window-border-color;
+    header {
+        $widthpadding: 7px;
+        background-color: $window-header-color;
+        width: calc(100% - $widthpadding * 2);
+        padding-left: $widthpadding;;
+        padding-right: $widthpadding;;
+        height: 32px;
+        display: flex;
+        span {
+            font-size: 22px;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: inline-flex;
+            flex: 1;
+            float: left;
+            menuicon {
+                margin-right: 8px;
+                font-size: 16px;
+                margin-top: auto;
+                margin-bottom: auto;
+                text-shadow: initial;
+                &::before {
+                    content: "◆︎";
+                }
+            }
+        }
+        closebutton {
+            float: right;
+            font-size: 20px;
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 4px;
+            padding-right: 4px;
+            &:hover, &:active {
+                background-color: #A30000;
+                border: 2px solid #FF0000;
+            }
+            &::before {
+                content: 'x';
+            }
+        }
+    }
+    content {
+        padding-left: 10px;
+        padding-right: 10px;
+        width: calc(100% - 20px);
+        height: auto;
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 6px;
+        font-size: 14px;
+        border {
+            position: relative;
+            display: block;
+            height: 1px;
+            background:rgba(79, 97, 109, 0.85);
+            margin-top: 3px;
+            margin-bottom: 3px;
+            margin-left: -5px;
+            margin-right: -5px;
+            &::before {
+                position: absolute;
+                left: 0;
+                top: -1px;
+                background:rgba(202, 202, 202, 0.85);
+                width: 3px;
+                height: 3px;
+                content: "";
+            }
+            &::after {
+                position: absolute;
+                right: 0;
+                top: -1px;
+                background:rgba(202, 202, 202, 0.85);
+                width: 3px;
+                height: 3px;
+                content: "";
+            }
+        }
+        select {
+            appearance: none;
+            font-size: 14px;
+            border: 0;
+            text-align: center;
+            outline: 0;
+            width: 100%;
+            height: 35px;
+            padding: 0 0 0 1em;
+            background:
+                url("../../assets/left.svg")
+                no-repeat left 0.4em center / 1.8em,
+                
+                url("../../assets/right.svg")
+                no-repeat right 0.4em center / 1.8em,
+
+                rgba($window-button-active, 0.7);
+            color: white;
+            border-radius: 0;
+            border: solid 2px rgba($window-button-border-active, 0.7);
+            &::-webkit-scrollbar {
+                width: 5px;
+                background-color: rgba(119, 117, 117, 0.75);
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: rgb(231, 231, 231);
+            }
+            &:focus, &:focus-visible {
+                outline: none;
+            }
+            &:hover {
+                border: 3px solid rgba(59, 208, 225, 0.85) !important;
+            }
+            &:active {
+                border: 3px solid rgba(255, 201, 3, 0.85) !important;
+            }
+            option {
+                color: rgb(230, 230, 230);
+                background-color: #081744;
+                font-size: 14px;
+            }
+        }
+        name {
+            font-size: 19px;
+        }
+        cont {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            align-content: stretch;
+            img {
+                height: 150px;
+                margin-right: 10px;
+                margin-bottom: 10px;
+            }
+            info {
+                width: 100%;
+                display: block;
+                &.hidden {
+                    display: none;
+                }
+                level, rewards {
+                    div {
+                        l {
+                            width: 80%;
+                            display: inline-block;
+                            text-align: left;
+                        }
+                        r {
+                            width: 20%;
+                            display: inline-block;
+                            text-align: right;
+                        }
+                        full {
+                            width: 100%;
+                            display: inline-block;
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+        span {
+            font-size: 12px;
+            color: lighten($map-bg-color,35%);
+        }
+    }
+}

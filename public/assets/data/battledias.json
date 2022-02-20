@@ -1,5 +1,61 @@
 [
-	{"latlng":[-679,257],"id":"landmarks__cocoon"},
-    {"latlng":[-695,427],"id":"landmarks__mag"},
-    {"latlng":[-883,101],"id":"landmarks__ryuker"}
+    {
+        "id": 1,
+        "lat":-1500, "lng":101,
+        "type": "purple",
+        "string": "aelioDevastators",
+        "players": 4,
+        "ranks": [
+            {
+                "rank": 1,
+                "minBP": 1363,
+                "enemyLv": 24,
+                "rewards": [
+                    {
+                        "item": "straga_weapons"
+                    },
+                    {
+                        "item": "geant_armor"
+                    },
+                    {
+                        "item": "qual_de_armor"
+                    },
+                    {
+                        "item": "gigas_ugments"
+                    },
+                    {
+                        "item": "soul_augments"
+                    },
+                    {
+                        "item": "special_scratch_ticket"
+                    }
+                ]
+            },
+            {
+                "rank": 2,
+                "minBP": 1957,
+                "enemyLv": 44,
+                "rewards": [
+                    {
+                        "item": "mtn_dash_fairy_b"
+                    },
+                    {
+                        "item": "straga_camoflauge"
+                    },
+                    {
+                        "item": "vijf_armor"
+                    },
+                    {
+                        "item": "gigas_ugments"
+                    },
+                    {
+                        "item": "soul_augments"
+                    },
+                    {
+                        "item": "special_scratch_ticket"
+                    }
+                ]
+            }
+        ]
+    }
 ]
