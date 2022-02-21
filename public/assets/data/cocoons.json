@@ -1,5 +1,16 @@
 [
-    {"latlng":[-751,675],"id":"r-6"},
-    {"latlng":[-375,716],"id":"r-7"},
-    {"latlng":[-249,917],"id":"r-8"}
+    {
+        "id": 1,
+        "lat":-1500, "lng":410,
+        "string": "firstRun",
+        "players": 1,
+        "minBP": 1363,
+        "enemyLv": 24,
+        "firstrewards": [
+            {
+                "item": "straga_weapons",
+                "count": 4
+            }
+        ]
+    }
 ]

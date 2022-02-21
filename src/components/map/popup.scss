@@ -174,5 +174,16 @@ popup-window {
             font-size: 12px;
             color: lighten($map-bg-color,35%);
         }
+        submission-divider {
+            margin-right: 3px;
+            font-size: 14px;
+            margin-top: auto;
+            margin-bottom: auto;
+            text-shadow: initial;
+            &::before {
+                content: "◆︎";
+                color: lighten($map-bg-color,50%);
+            }
+        }
     }
 }

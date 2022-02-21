@@ -32,11 +32,11 @@ Battledia:()=>{
                     <option value={y.rank}>{t("ui:Map.rank")} {y.rank}</option>
                 )))}
             </select>
-            <br/><br/>
+            <br/>
             <name>{t("battledias:"+x.string+".title")}</name>
             <border/>
             <cont>
-                <img src={"./assets/images/banners/urgents/df.jpg"} alt={""}/>
+                <img src={"./assets/images/banners/other/battledia.png"} alt={""}/>
                 {(x.ranks.map((y=>// eslint-disable-next-line
                     <info className={tier == y.rank ? "":"hidden"}>
                         <level>
@@ -116,8 +116,53 @@ Cocoon:()=>{
     <Tooltip direction='top'><tooltip-window>
     <header><span><menuicon/> {t("cocoons:"+x.string)}</span></header><content>{t("items:Title.landmarks__cocoon")}<id>ID: {x.string}</id></content>
     </tooltip-window></Tooltip>
-    <Popup><popup-window>
-
+    <Popup ref={popupRef}><popup-window>
+        <header><span><menuicon/> {t("items:Title.landmarks__cocoon")}</span><closebutton onClick={()=>close()}/></header>
+        <content>
+            <name>{t("cocoons:"+x.string+".title")}</name>
+            <border/>
+            <cont>
+                <img src={"./assets/images/banners/other/trainia.png"} alt={""}/>
+                <info>
+                    <level>
+                        <div>
+                            <l>{t("ui:Map.maxPlayers")}</l>
+                            <r>{x.players}</r>
+                        </div>
+                        <div>
+                            <l>{t("ui:Map.requiredBP")}</l>
+                            <r>{x.minBP}</r>
+                        </div>
+                        <div>
+                            <l>{t("ui:Map.enenyLv")}</l>
+                            <r>{x.enemyLv}</r>
+                        </div>
+                    </level>
+                    <br/>
+                    <span>{t("ui:Map.firstTimeRewards")}</span>
+                    <border/>
+                    <rewards>{(x.firstrewards.map((y=>// eslint-disable-next-line
+                        <div>
+                            <l>{t("rewards:"+y.item)}</l>
+                            <r>x{y.count}</r>
+                        </div>
+                    )))}</rewards>
+                    </info>
+            </cont>
+            <span>{t("ui:Map.clearCondition")}</span>
+            <border/>
+            {t("cocoons:clearCondition")}
+            <br/><br/>
+            <span>{t("ui:Map.subMissions")}</span>
+            <border/>
+            <submission-divider/> {t("cocoons:"+x.string+".subMission1")}<br/>
+            <submission-divider/> {t("cocoons:"+x.string+".subMission2")}<br/>
+            <submission-divider/> {t("cocoons:"+x.string+".subMission3")}
+            <br/><br/>
+            <span>{t("ui:Map.clearCondition")}</span>
+            <border/>
+            {t("cocoons:"+x.string+".description")}
+        </content>
     </popup-window></Popup>
     </Marker>)))}</>:<Fragment/>)
 },
@@ -170,8 +215,53 @@ Tower:()=>{
     <tooltip-window>
     <header><span><menuicon/> {t("towers:"+x.string)}</span></header><content>{t("items:Title.landmarks__tower")}<id>ID: {x.string}</id></content>
     </tooltip-window></Tooltip>
-    <Popup><popup-window>
-
+    <Popup ref={popupRef}><popup-window>
+        <header><span><menuicon/> {t("items:Title.landmarks__tower")}</span><closebutton onClick={()=>close()}/></header>
+        <content>
+            <name>{t("towers:"+x.string+".title")}</name>
+            <border/>
+            <cont>
+                <img src={"./assets/images/banners/other/trainia.png"} alt={""}/>
+                <info>
+                    <level>
+                        <div>
+                            <l>{t("ui:Map.maxPlayers")}</l>
+                            <r>{x.players}</r>
+                        </div>
+                        <div>
+                            <l>{t("ui:Map.requiredBP")}</l>
+                            <r>{x.minBP}</r>
+                        </div>
+                        <div>
+                            <l>{t("ui:Map.enenyLv")}</l>
+                            <r>{x.enemyLv}</r>
+                        </div>
+                    </level>
+                    <br/>
+                    <span>{t("ui:Map.firstTimeRewards")}</span>
+                    <border/>
+                    <rewards>{(x.firstrewards.map((y=>// eslint-disable-next-line
+                        <div>
+                            <l>{t("rewards:"+y.item)}</l>
+                            <r>x{y.count}</r>
+                        </div>
+                    )))}</rewards>
+                    </info>
+            </cont>
+            <span>{t("ui:Map.clearCondition")}</span>
+            <border/>
+            {t("towers:clearCondition")}
+            <br/><br/>
+            <span>{t("ui:Map.subMissions")}</span>
+            <border/>
+            <submission-divider/> {t("towers:"+x.string+".subMission1")}<br/>
+            <submission-divider/> {t("towers:"+x.string+".subMission2")}<br/>
+            <submission-divider/> {t("towers:"+x.string+".subMission3")}
+            <br/><br/>
+            <span>{t("ui:Map.clearCondition")}</span>
+            <border/>
+            {t("towers:"+x.string+".description")}
+        </content>
     </popup-window></Popup>
     </Marker>)))}</>:<Fragment/>)
 },
