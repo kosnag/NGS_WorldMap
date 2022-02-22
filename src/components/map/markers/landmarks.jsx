@@ -406,11 +406,11 @@ UQ:()=>{
                     </cont>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("battledias:"+x.id+".clearCondition")}
+                    {t("urgents:"+x.id+".clearCondition")}
                     <br/><br/>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("battledias:"+x.id+".description")}
+                    {t("urgents:"+x.id+".description")}
                 </content>
             </popup-window></Popup>
         </Marker>
