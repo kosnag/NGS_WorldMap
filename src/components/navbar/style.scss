@@ -44,6 +44,7 @@ buttons {
             transform: translate(-50%, -50%);
             height: 50px;
             top: 40%;
+            pointer-events: none;
         }
         div, span {
             position: absolute;

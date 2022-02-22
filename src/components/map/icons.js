@@ -11,7 +11,7 @@ const IconLib = {
     ryuker: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__ryuker.png'}),
     tower: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__tower.png'}),
     battledia: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__battledia.png'}),
-    uq: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__urgent.png'}),
+    urgent: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__urgent.png'}),
     
 
     redBox: new Setup.Containers({iconUrl:'./assets/images/icons/container__red.png'}),

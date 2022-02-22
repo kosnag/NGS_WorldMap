@@ -139,9 +139,13 @@ popup-window {
             align-items: flex-start;
             align-content: stretch;
             img {
-                height: 150px;
+                height: 160px;
                 margin-right: 10px;
                 margin-bottom: 10px;
+                pointer-events: none;
+                box-sizing: border-box;
+                border: 2px solid $window-border-color;
+                //align-self: center
             }
             info {
                 width: 100%;
@@ -152,12 +156,12 @@ popup-window {
                 level, rewards {
                     div {
                         l {
-                            width: 80%;
+                            width: 75%;
                             display: inline-block;
                             text-align: left;
                         }
                         r {
-                            width: 20%;
+                            width: 25%;
                             display: inline-block;
                             text-align: right;
                         }
@@ -181,8 +185,9 @@ popup-window {
             margin-bottom: auto;
             text-shadow: initial;
             &::before {
-                content: "◆︎";
-                color: lighten($map-bg-color,50%);
+                content: "★";
+                //color: lighten($map-bg-color,50%);
+                color: $window-button-border-active;
             }
         }
     }

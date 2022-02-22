@@ -1,9 +1,8 @@
 [
     {
-        "id": 1,
-        "lat":-1500, "lng":101,
+        "id": "aelioDevastators",
         "type": "purple",
-        "string": "aelioDevastators",
+        "lat":-1500, "lng":101,
         "players": 4,
         "ranks": [
             {

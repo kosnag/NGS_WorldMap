@@ -1,15 +1,14 @@
 [
     {
-        "id": 1,
+        "id": "firstRun",
         "lat":-1500, "lng":410,
-        "string": "firstRun",
         "players": 1,
         "minBP": 1363,
         "enemyLv": 24,
         "firstrewards": [
             {
-                "item": "straga_weapons",
-                "count": 4
+                "item": "skill_point",
+                "count": 1
             }
         ]
     }

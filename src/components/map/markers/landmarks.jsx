@@ -25,23 +25,25 @@ Battledia:()=>{
         <Marker icon={IconLib.battledia} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("battledias:"+x.string)}</span>
+                    <span><menuicon/> {t("battledias:"+x.id)}</span>
                 </header>
                 <content>
                     {t("items:Title.landmark__battledia")}
-                    <id>ID: {x.string}</id>
+                    <id>ID: {x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
-                <header><span><menuicon/> {t("items:Title.landmark__battledia")}</span><closebutton onClick={()=>close()}/></header>
+                <header>
+                    <span><menuicon/> {t("items:Title.landmark__battledia")}</span><closebutton onClick={()=>close()}/>
+                </header>
                 <content>
                     <select onChange={handleSelectChange}>
                         {(x.ranks.map((y=> 
                             <option value={y.rank}>{t("ui:Map.rank")} {y.rank}</option>
                         )))}
                     </select>
-                    <br/>
-                    <name>{t("battledias:"+x.string+".title")}</name>
+                    <br/><br/>
+                    <name>{t("battledias:"+x.id+".title")}</name>
                     <border/>
                     <cont>
                         <img src="./assets/images/banners/other/battledia.png" alt="" />
@@ -65,35 +67,28 @@ Battledia:()=>{
                                 <span>{(()=>{
                                     switch(x.type){
                                         case "purple":
-                                            return t("ui:Map.possibleRewards")
+                                            return t("ui:Map.rewards.possible")
                                         case "yellow":
-                                            return t("ui:Map.guaranteedRewards")
+                                            return t("ui:Map.rewards.guaranteed")
                                         default:
                                             return <Fragment/>
                                     }
                                 })()}</span>
                                 <border/>
-                                {(()=>{
-                                    switch(x.type){
-                                        case "yellow":
-                                            return (
-                                                <rewards>{(y.rewards.map((z=>
-                                                    <div>
-                                                        <l>{t("rewards:"+z.item)}</l>
-                                                        <r>x{z.count}</r>
-                                                    </div>
-                                                )))}</rewards>
-                                            );
-                                        default:
-                                            return (
-                                                <rewards>{(y.rewards.map((z=>
-                                                    <div>
-                                                        <full>{t("rewards:"+z.item)}</full>
-                                                    </div>
-                                                )))}</rewards>
-                                            );
-                                    }
-                                })()}
+                                <rewards>
+                                    <div>
+                                        {(y.rewards.map((z=><>
+                                            {(()=>{if (z.count != null){
+                                                return (<>
+                                                    <l>{t("rewards:"+z.item)}</l>
+                                                    <r>x{z.count}</r>
+                                                </>);
+                                            } else {
+                                                return (<full>{t("rewards:"+z.item)}</full>);
+                                            }})()}
+                                        </>)))}
+                                    </div>
+                                </rewards>
                             </info>
                         )))}
                     </cont>
@@ -126,11 +121,11 @@ Cocoon:()=>{
         <Marker icon={IconLib.cocoon} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("cocoons:"+x.string)}</span>
+                    <span><menuicon/> {t("cocoons:"+x.id)}</span>
                 </header>
                 <content>
                     {t("items:Title.landmark__cocoon")}
-                    <id>ID: {x.string}</id>
+                    <id>ID: {x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
@@ -138,7 +133,7 @@ Cocoon:()=>{
                     <span><menuicon/> {t("items:Title.landmark__cocoon")}</span><closebutton onClick={()=>close()}/>
                 </header>
                 <content>
-                    <name>{t("cocoons:"+x.string+".title")}</name>
+                    <name>{t("cocoons:"+x.id+".title")}</name>
                     <border/>
                     <cont>
                         <img src="./assets/images/banners/other/trainia.png" alt="" />
@@ -158,7 +153,7 @@ Cocoon:()=>{
                                 </div>
                             </level>
                             <br/>
-                            <span>{t("ui:Map.firstTimeRewards")}</span>
+                            <span>{t("ui:Map.rewards.firstTime")}</span>
                             <border/>
                             <rewards>{(x.firstrewards.map((y=>
                                 <div>
@@ -170,17 +165,19 @@ Cocoon:()=>{
                     </cont>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("cocoons:clearCondition")}
+                    {t("cocoons:"+x.id+".clearCondition")}
                     <br/><br/>
                     <span>{t("ui:Map.subMissions")}</span>
                     <border/>
-                    <submission-divider/> {t("cocoons:"+x.string+".subMission1")}<br/>
-                    <submission-divider/> {t("cocoons:"+x.string+".subMission2")}<br/>
-                    <submission-divider/> {t("cocoons:"+x.string+".subMission3")}
+                    <submission-divider/> {t("cocoons:"+x.id+".subMission1")}
+                    <br/>
+                    <submission-divider/> {t("cocoons:"+x.id+".subMission2")}
+                    <br/>
+                    <submission-divider/> {t("cocoons:"+x.id+".subMission3")}
                     <br/><br/>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("cocoons:"+x.string+".description")}
+                    {t("cocoons:"+x.id+".description")}
                 </content>
             </popup-window></Popup>
         </Marker>
@@ -253,11 +250,11 @@ Tower:()=>{
         <Marker icon={IconLib.tower} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("towers:"+x.string)}</span>
+                    <span><menuicon/> {t("towers:"+x.id)}</span>
                 </header>
                 <content>
                     {t("items:Title.landmark__tower")}
-                    <id>ID: {x.string}</id>
+                    <id>ID: {x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
@@ -265,7 +262,7 @@ Tower:()=>{
                     <span><menuicon/> {t("items:Title.landmark__tower")}</span><closebutton onClick={()=>close()}/>
                 </header>
                 <content>
-                    <name>{t("towers:"+x.string+".title")}</name>
+                    <name>{t("towers:"+x.id+".title")}</name>
                     <border/>
                     <cont>
                         <img src="./assets/images/banners/other/trainia.png" alt="" />
@@ -285,7 +282,7 @@ Tower:()=>{
                                 </div>
                             </level>
                             <br/>
-                            <span>{t("ui:Map.firstTimeRewards")}</span>
+                            <span>{t("ui:Map.rewards.firstTime")}</span>
                             <border/>
                             <rewards>{(x.firstrewards.map((y=>
                                 <div>
@@ -297,17 +294,19 @@ Tower:()=>{
                     </cont>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("towers:clearCondition")}
+                    {t("towers:"+x.id+".clearCondition")}
                     <br/><br/>
                     <span>{t("ui:Map.subMissions")}</span>
                     <border/>
-                    <submission-divider/> {t("towers:"+x.string+".subMission1")}<br/>
-                    <submission-divider/> {t("towers:"+x.string+".subMission2")}<br/>
-                    <submission-divider/> {t("towers:"+x.string+".subMission3")}
+                    <submission-divider/> {t("towers:"+x.id+".subMission1")}
+                    <br/>
+                    <submission-divider/> {t("towers:"+x.id+".subMission2")}
+                    <br/>
+                    <submission-divider/> {t("towers:"+x.id+".subMission3")}
                     <br/><br/>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("towers:"+x.string+".description")}
+                    {t("towers:"+x.id+".description")}
                 </content>
             </popup-window></Popup>
         </Marker>
@@ -327,18 +326,92 @@ UQ:()=>{
         return ()=>clearInterval(i);
     });
     return(marker ? (data.map((x=>
-        <Marker icon={IconLib.uq} position={[x.lat,x.lng]}>
+        <Marker icon={IconLib.urgent} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("urgents:"+x.string)}</span>
+                    <span><menuicon/> {t("urgents:"+x.id)}</span>
                 </header>
                 <content>
                     {t("items:Title.landmark__urgent")}
-                    <id>ID: {x.string}</id>
+                    <id>ID: {x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
-            <Popup><popup-window>
-
+            <Popup ref={popupRef}><popup-window>
+                <header>
+                    <span><menuicon/> {t("items:Title.landmark__urgent")}</span><closebutton onClick={()=>close()}/>
+                </header>
+                <content>
+                    <select onChange={handleSelectChange}>
+                        {(x.ranks.map((y=> 
+                            <option value={y.rank}>{t("ui:Map.rank")} {y.rank}</option>
+                        )))}
+                    </select>
+                    <br/><br/>
+                    <name>{t("urgents:"+x.id+".title")}</name>
+                    <border/>
+                    <cont>
+                        <img src={"./assets/images/banners/urgents/"+x.id+".png"} alt="" />
+                        {(x.ranks.map((y=>
+                            <info className={tier === y.rank.toString() ? "" : "hidden"}>
+                                <level>
+                                    <div>
+                                        <l>{t("ui:Map.maxPlayers")}</l>
+                                        <r>{x.players}</r>
+                                    </div>
+                                    <div>
+                                        <l>{t("ui:Map.requiredBP")}</l>
+                                        <r>{y.minBP}</r>
+                                    </div>
+                                    <div>
+                                        <l>{t("ui:Map.enenyLv")}</l>
+                                        <r>{y.enemyLv}</r>
+                                    </div>
+                                </level>
+                                <br/>
+                                <span>{t("ui:Map.rewards.firstTime")}</span>
+                                <border/>
+                                <rewards>{(x.firstRewards.map((z=>
+                                    <div>
+                                        <l>{t("rewards:"+z.item)}</l>
+                                        <r>{(()=>{switch (z.item){
+                                            case "meseta":
+                                            case "season_points":
+                                            case "experience":
+                                                return (<>{z.count}</>)
+                                            default:
+                                                return (<>x{z.count}</>)
+                                            }
+                                        })()}</r>
+                                        </div>
+                                )))}</rewards>
+                                <br/>
+                                <span>{t("ui:Map.rewards.guaranteed")}</span>
+                                <border/>
+                                <rewards>{(y.rewards.map((z=>
+                                    <div>
+                                        <l>{t("rewards:"+z.item)}</l>
+                                        <r>{(()=>{switch (z.item){
+                                            case "meseta":
+                                            case "season_points":
+                                            case "experience":
+                                                return (<>{z.count}</>)
+                                            default:
+                                                return (<>x{z.count}</>)
+                                            }
+                                        })()}</r>
+                                    </div>
+                                )))}</rewards>
+                            </info>
+                        )))}
+                    </cont>
+                    <span>{t("ui:Map.clearCondition")}</span>
+                    <border/>
+                    {t("battledias:"+x.id+".clearCondition")}
+                    <br/><br/>
+                    <span>{t("ui:Map.clearCondition")}</span>
+                    <border/>
+                    {t("battledias:"+x.id+".description")}
+                </content>
             </popup-window></Popup>
         </Marker>
     ))) : <Fragment/>)

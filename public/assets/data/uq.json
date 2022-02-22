@@ -1,3 +1,34 @@
 [
-    {"latlng":[-653,882],"id":"r-14"}
+    {
+        "id": "darkFalz",
+        "lat":-1500, "lng":1001,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "meseta",
+                "count": 10000
+            }
+        ],
+        "ranks": [
+            {
+                "rank": 1,
+                "minBP": 1898,
+                "enemyLv": 40,
+                "rewards": [
+                    {
+                        "item": "meseta",
+                        "count": 20000
+                    },
+                    {
+                        "item": "photon_scale",
+                        "count": 12
+                    },
+                    {
+                        "item": "season_points",
+                        "count": 1000
+                    }
+                ]
+            }
+        ]
+    }
 ]
