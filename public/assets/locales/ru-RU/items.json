@@ -1,11 +1,11 @@
 {
     "Title": {
-        "landmarks__battledia": "Батлдиа",
-        "landmarks__cocoon": "Кокон",
-        "landmarks__mag": "Mag региона",
-        "landmarks__ryuker": "Устройство Рюкера",
-        "landmarks__tower": "Башня",
-        "landmarks__urgent": "Срочный квест",
+        "landmark__battledia": "Батлдиа",
+        "landmark__cocoon": "Кокон",
+        "landmark__mag": "Mag региона",
+        "landmark__ryuker": "Устройство Рюкера",
+        "landmark__tower": "Башня",
+        "landmark__urgent": "Срочный квест",
 
         "mineral__dualomite": "Дуаломайт",
         "mineral__monotite": "Монотайт",
@@ -40,9 +40,9 @@
         "food__retem_strawberry": "",
         "food__retem_urchin": "",
 
-        "containers__goldBox": "Контейнер с предметами [Золотой]",
-        "containers__greenBox": "Контейнер с предметами [Зелёный]",
-        "containers__redBox": "Контейнер с предметами [Красный]",
+        "container__gold": "Контейнер с предметами [Золотой]",
+        "container__green": "Контейнер с предметами [Зелёный]",
+        "container__red": "Контейнер с предметами [Красный]",
 
         "other__alphaReactor": "Альфа Реактор",
         "other__dataPod": "Сообщение",
@@ -54,12 +54,12 @@
         "nothing": "Выберите..."
     },
     "ShortInfo": {
-        "landmarks__battledia": "Battledia Quests are unique quests that can be accessed through a Trigger Portal",
-        "landmarks__cocoon": "Cocoons are smaller challenges designed to test players",
-        "landmarks__mag": "",
-        "landmarks__ryuker": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel",
-        "landmarks__tower": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2",
-        "landmarks__urgent": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs",
+        "landmark__battledia": "Battledia Quests are unique quests that can be accessed through a Trigger Portal",
+        "landmark__cocoon": "Cocoons are smaller challenges designed to test players",
+        "landmark__mag": "",
+        "landmark__ryuker": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel",
+        "landmark__tower": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2",
+        "landmark__urgent": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs",
 
         "mineral__dualomite": "Used for unlocking Potentials Lv2 and Limit Breaking at the Item Lab",
         "mineral__monotite": "Used for unlocking Potentials Lv1 and Limit Breaking at the Item Lab",
@@ -94,9 +94,9 @@
         "food__retem_strawberry": "",
         "food__retem_urchin": "",
 
-        "containers__goldBox": "",
-        "containers__greenBox": "",
-        "containers__redBox": "",
+        "container__gold": "",
+        "container__green": "",
+        "container__red": "",
 
         "other__alphaReactor": "",
         "other__dataPod": "",

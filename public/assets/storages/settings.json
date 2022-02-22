@@ -1,13 +1,13 @@
 {
-    "landmarks": {
+    "landmark": {
         "cocoon": 1,
         "mag": 1,
         "ryuker": 1,
         "tower": 1,
         "battledia": 1,
-        "uq": 1
+        "urgent": 1
     },
-    "minerals": {
+    "mineral": {
         "monotite": 0,
         "dualomite": 0,
         "trinite": 0,
@@ -43,10 +43,10 @@
         "retem_strawberry": 0,
         "retem_urchin": 0
     },
-    "containers": {
-        "redBox": 0,
-        "greenBox": 0,
-        "goldBox": 0
+    "container": {
+        "red": 0,
+        "green": 0,
+        "gold": 0
     },
     "other": {
         "veteran": 0,

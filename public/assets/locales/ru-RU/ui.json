@@ -13,24 +13,6 @@
             "food": "Еда",
             "containers": "Контейнеры",
             "other": "Other"
-        },
-        "Items": {
-            "landmarks": {
-                "battledia": "Батлдии",
-                "cocoon": "Коконы",
-                "mag": "Mag'и региона",
-                "ryuker": "Устройства Рюкера",
-                "tower": "Башни",
-                "urgent": "Срочные квесты"
-            },
-            "other": {
-                "alphaReactor": "Альфа Реакторы",
-                "dataPod": "Сообщения",
-                "stellarSeed": "Stellar Seeds",
-                "veteran": "Ветераны",
-                "stellarGrace": "Stellar Graces",
-                "musicPlace": "BGM Easter Eggs"
-            }
         }
     },
     "OptionsMenu": {

@@ -6,17 +6,17 @@ const Setup = {
     Materials: L.Icon.extend({options:{iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-13]}}),
 };
 const IconLib = {
-    cocoon: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__cocoon.png'}),
-    mag: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__mag.png'}),
-    ryuker: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__ryuker.png'}),
-    tower: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__tower.png'}),
-    battledia: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__battledia.png'}),
-    uq: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmarks__urgent.png'}),
+    cocoon: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__cocoon.png'}),
+    mag: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__mag.png'}),
+    ryuker: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__ryuker.png'}),
+    tower: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__tower.png'}),
+    battledia: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__battledia.png'}),
+    uq: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark__urgent.png'}),
     
 
-    redBox: new Setup.Containers({iconUrl:'./assets/images/icons/containers__redBox.png'}),
-    redBoxChecked: new Setup.Containers({iconUrl:'./assets/images/icons/containers__redBoxChecked.png'}),
-    greenBox: new Setup.Containers({iconUrl:'./assets/images/icons/containers__greenBox.png'}),
+    redBox: new Setup.Containers({iconUrl:'./assets/images/icons/container__red.png'}),
+    redBoxChecked: new Setup.Containers({iconUrl:'./assets/images/icons/container__redChecked.png'}),
+    greenBox: new Setup.Containers({iconUrl:'./assets/images/icons/container__green.png'}),
     
 
     monotite: new Setup.Materials({iconUrl:'./assets/images/icons/mineral__monotite.png'}),

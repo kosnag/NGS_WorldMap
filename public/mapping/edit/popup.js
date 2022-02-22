@@ -1,11 +1,11 @@
 var optionsList = [
     //{"category":"Landmarks"},
-    //{"table":"landmarks__ryukers","text":"Ryuker Devices"},
-    //{"table":"landmarks__mags","text":"Region Mags"},
+    //{"table":"landmark__ryuker","text":"Ryuker Devices"},
+    //{"table":"landmark__mag","text":"Region Mags"},
     //{"hr":""},
     {"category":"Containers"},
-    {"table":"containers__greenBox","text":"Green Container"},
-    {"table":"containers__redBox","text":"Red Container"},
+    {"table":"container__green","text":"Green Container"},
+    {"table":"container__red","text":"Red Container"},
     {"hr":""},
     {"category":"Food"},
     {"table":"food__aelio_apple","text":"Rich Aelio Apple"},
@@ -94,12 +94,12 @@ var popup_window_content_form_select = document.createElement("select")
             case "other__veteran":
             case "other__datapod":
             case "other__musicPlace":
-            case "landmarks__ryukers":
-            case "containers__redBox":
+            case "landmark__ryuker":
+            case "container__red":
                 popup_window_content_form_selectSub.style.display = "none"
                 popup_window_content_form_inputSub.style.display = "initial"
                 break;
-            case "landmarks__mags":
+            case "landmark__mag":
             case "other__stellarGrace":
                 popup_window_content_form_inputSub.style.display = "none"
                 popup_window_content_form_selectSub.style.display = "initial"
@@ -124,7 +124,7 @@ var popup_window_content_form_select = document.createElement("select")
                     popup_window_content_form_selectSub.appendChild(e)
                 }
                 break;
-            case "landmarks__mags":
+            case "landmark__mag":
                 while(popup_window_content_form_selectSub.firstChild){popup_window_content_form_selectSub.removeChild(popup_window_content_form_selectSub.firstChild)}
                 subList = [
                     {"type":"invincible","text":"Invincible"},

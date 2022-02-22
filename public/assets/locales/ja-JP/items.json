@@ -1,11 +1,11 @@
 {
     "Title": {
-        "landmarks__battledia": "Battledia",
-        "landmarks__cocoon": "Cocoon",
-        "landmarks__mag": "Region Mag",
-        "landmarks__ryuker": "Ryuker Device",
-        "landmarks__tower": "Tower",
-        "landmarks__urgent": "Urgent Quest",
+        "landmark__battledia": "Battledia",
+        "landmark__cocoon": "Cocoon",
+        "landmark__mag": "Region Mag",
+        "landmark__ryuker": "Ryuker Device",
+        "landmark__tower": "Tower",
+        "landmark__urgent": "Urgent Quest",
 
         "mineral__dualomite": "Dualomite",
         "mineral__monotite": "Monotite",
@@ -40,9 +40,9 @@
         "food__retem_strawberry": "",
         "food__retem_urchin": "",
 
-        "containers__goldBox": "Item Container [Gold]",
-        "containers__greenBox": "Item Container [Green]",
-        "containers__redBox": "Item Container [Red]",
+        "container__gold": "Item Container [Gold]",
+        "container__green": "Item Container [Green]",
+        "container__red": "Item Container [Red]",
 
         "other__alphaReactor": "Alpha Reactor",
         "other__datapod": "Datapod",
@@ -54,12 +54,12 @@
         "nothing": "Select item"
     },
     "ShortInfo": {
-        "landmarks__battledia": "Battledia Quests are unique quests that can be accessed through a Trigger Portal",
-        "landmarks__cocoon": "Cocoons are smaller challenges designed to test players",
-        "landmarks__mag": "",
-        "landmarks__ryuker": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel",
-        "landmarks__tower": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2",
-        "landmarks__urgent": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs",
+        "landmark__battledia": "Battledia Quests are unique quests that can be accessed through a Trigger Portal",
+        "landmark__cocoon": "Cocoons are smaller challenges designed to test players",
+        "landmark__mag": "",
+        "landmark__ryuker": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel",
+        "landmark__tower": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2",
+        "landmark__urgent": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs",
 
         "mineral__dualomite": "Used for unlocking Potentials Lv2 and Limit Breaking at the Item Lab",
         "mineral__monotite": "Used for unlocking Potentials Lv1 and Limit Breaking at the Item Lab",
@@ -94,9 +94,9 @@
         "food__retem_strawberry": "",
         "food__retem_urchin": "",
 
-        "containers__goldBox": "",
-        "containers__greenBox": "",
-        "containers__redBox": "",
+        "container__gold": "",
+        "container__green": "",
+        "container__red": "",
 
         "other__alphaReactor": "",
         "other__datapod": "",

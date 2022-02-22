@@ -16,16 +16,16 @@ Battledia:()=>{
     const handleSelectChange=(e)=>setTier(e.target.value);
     useEffect(()=>{fetch("./assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmarks.battledia));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.battledia));
         return ()=>clearInterval(i);
     });
     return(marker?<>{(data.map((x=>
     <Marker icon={IconLib.battledia} position={[x.lat,x.lng]} key={x.id}>
     <Tooltip direction='top'><tooltip-window>
-    <header><span><menuicon/> {t("battledias:"+x.string)}</span></header><content>{t("items:Title.landmarks__battledia")}<id>ID: {x.string}</id></content>
+    <header><span><menuicon/> {t("battledias:"+x.string)}</span></header><content>{t("items:Title.landmark__battledia")}<id>ID: {x.string}</id></content>
     </tooltip-window></Tooltip>
     <Popup ref={popupRef}><popup-window>
-        <header><span><menuicon/> {t("items:Title.landmarks__battledia")}</span><closebutton onClick={()=>close()}/></header>
+        <header><span><menuicon/> {t("items:Title.landmark__battledia")}</span><closebutton onClick={()=>close()}/></header>
         <content>
             <select onChange={handleSelectChange}>
                 {(x.ranks.map((y=> 
@@ -108,16 +108,16 @@ Cocoon:()=>{
     const [marker,setMarker] = useState([]);
     useEffect(()=>{fetch("./assets/data/cocoons.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmarks.cocoon));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.cocoon));
         return ()=>clearInterval(i);
     });
     return(marker?<>{(data.map((x=>
     <Marker icon={IconLib.cocoon} position={[x.lat,x.lng]} key={x.id}>
     <Tooltip direction='top'><tooltip-window>
-    <header><span><menuicon/> {t("cocoons:"+x.string)}</span></header><content>{t("items:Title.landmarks__cocoon")}<id>ID: {x.string}</id></content>
+    <header><span><menuicon/> {t("cocoons:"+x.string)}</span></header><content>{t("items:Title.landmark__cocoon")}<id>ID: {x.string}</id></content>
     </tooltip-window></Tooltip>
     <Popup ref={popupRef}><popup-window>
-        <header><span><menuicon/> {t("items:Title.landmarks__cocoon")}</span><closebutton onClick={()=>close()}/></header>
+        <header><span><menuicon/> {t("items:Title.landmark__cocoon")}</span><closebutton onClick={()=>close()}/></header>
         <content>
             <name>{t("cocoons:"+x.string+".title")}</name>
             <border/>
@@ -170,15 +170,15 @@ Mag:()=>{
     const {t} = useTranslation();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./api/read.php?table=landmarks__mags").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("./api/read.php?table=landmark__mags").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmarks.mag));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.mag));
         return ()=>clearInterval(i);
     });
     return(marker?<>{(data.map((x=>
     <Marker icon={IconLib.mag} position={[x.lat,x.lng]} key={x.id}>
     <Tooltip direction='top'><tooltip-window>
-    <header><span><menuicon/> {t("mags:"+x.string)}</span></header><content>{t("items:Title.landmarks__mag")}<id>ID: {x.string}</id></content>
+    <header><span><menuicon/> {t("mags:"+x.string)}</span></header><content>{t("items:Title.landmark__mag")}<id>ID: {x.string}</id></content>
     </tooltip-window></Tooltip>
     </Marker>)))}</>:<Fragment/>)
 },
@@ -186,15 +186,15 @@ Ryuker:()=>{
     const {t} = useTranslation();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./api/read.php?table=landmarks__ryukers").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("./api/read.php?table=landmark__ryuker").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmarks.ryuker));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.ryuker));
         return ()=>clearInterval(i);
     });
     return(marker?<>{(data.map((x=>
     <Marker icon={IconLib.ryuker} position={[x.lat,x.lng]} key={x.id}>
     <Tooltip direction='top'><tooltip-window>
-    <header><span><menuicon/> {t("ryukers:"+x.string)}</span></header><content>{t("items:Title.landmarks__ryuker")}<id>ID: {x.string}</id></content>
+    <header><span><menuicon/> {t("ryukers:"+x.string)}</span></header><content>{t("items:Title.landmark__ryuker")}<id>ID: {x.string}</id></content>
     </tooltip-window></Tooltip>
     </Marker>)))}</>:<Fragment/>)
 },
@@ -206,17 +206,17 @@ Tower:()=>{
     const [marker,setMarker] = useState([]);
     useEffect(()=>{fetch("./assets/data/towers.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmarks.tower));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.tower));
         return ()=>clearInterval(i);
     });
     return(marker?<>{(data.map((x=>
     <Marker icon={IconLib.tower} position={[x.lat,x.lng]} key={x.id}>
     <Tooltip direction='top'>
     <tooltip-window>
-    <header><span><menuicon/> {t("towers:"+x.string)}</span></header><content>{t("items:Title.landmarks__tower")}<id>ID: {x.string}</id></content>
+    <header><span><menuicon/> {t("towers:"+x.string)}</span></header><content>{t("items:Title.landmark__tower")}<id>ID: {x.string}</id></content>
     </tooltip-window></Tooltip>
     <Popup ref={popupRef}><popup-window>
-        <header><span><menuicon/> {t("items:Title.landmarks__tower")}</span><closebutton onClick={()=>close()}/></header>
+        <header><span><menuicon/> {t("items:Title.landmark__tower")}</span><closebutton onClick={()=>close()}/></header>
         <content>
             <name>{t("towers:"+x.string+".title")}</name>
             <border/>
@@ -275,13 +275,13 @@ UQ:()=>{
     const handleSelectChange=(e)=>setTier(e.target.value);
     useEffect(()=>{fetch("./assets/data/uq.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmarks.uq));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.urgent));
         return ()=>clearInterval(i);
     });
     return(marker?<>{(data.map((x=>
     <Marker icon={IconLib.uq} position={[x.lat,x.lng]} key={x.id}>
     <Tooltip direction='top'><tooltip-window>
-    <header><span><menuicon/> {t("urgents:"+x.string)}</span></header><content>{t("items:Title.landmarks__urgent")}<id>ID: {x.string}</id></content>
+    <header><span><menuicon/> {t("urgents:"+x.string)}</span></header><content>{t("items:Title.landmark__urgent")}<id>ID: {x.string}</id></content>
     </tooltip-window></Tooltip>
     <Popup><popup-window>
 
