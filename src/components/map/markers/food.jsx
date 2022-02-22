@@ -13,50 +13,54 @@ const TemplateFood = (props) => {
         var i = setInterval(()=>setMarker(window.localStorage_Settings.food[props.id]));
         return ()=>clearInterval(i);
     });
-    if (data != null){
-        return(marker?<>{(data.map((x=>
-            <Marker icon={IconLib[props.icon]} position={[x.lat,x.lng]} key={x.id}><Tooltip direction='top'><tooltip-window>
-            <header>
-                <span><menuicon/> {t("items:Title.food__"+props.id)}</span>
-            </header>
-            <content>
-                {t("ui:Map.foodType."+props.type)}
-                <br/>
-                {t("items:Title.landmarks__mag")}
-                <id>ID: {props.id}{x.id}</id>
-            </content>
-            </tooltip-window></Tooltip></Marker>)))}</>:<Fragment/>)
-    }else{return <Fragment/>}
+    if (data !== null) {
+        return(marker ? (data.map((x=>
+            <Marker icon={IconLib[props.id]} position={[x.lat,x.lng]}>
+                <Tooltip direction='top'><tooltip-window>
+                    <header>
+                        <span><menuicon/> {t("items:Title.food__"+props.id)}</span>
+                    </header>
+                    <content>
+                        {t("ui:LegendMenu.Categories.food")}
+                        <br/>
+                        {t("ui:Map.type")}: {t("ui:Map.foodType."+props.type)}
+                        <id>ID: {props.id}{x.id}</id>
+                    </content>
+                </tooltip-window></Tooltip>
+            </Marker>
+            ))) : <Fragment/>)
+    } else {
+        return <Fragment/>
+    }
 }
 const Load = {
     Aelio: {
-        Apple:()=>{         return <TemplateFood id="aelio_apple" icon="aelioApple" type="" />},
-        Banana:()=>{        return <TemplateFood id="aelio_banana" icon="aelioBanana" type="" />},
-        Clam:()=>{          return <TemplateFood id="aelio_clam" icon="aelioClam" type="" />},
-        Crab:()=>{          return <TemplateFood id="aelio_crab" icon="aelioCrab" type="" />},
-        Herb:()=>{          return <TemplateFood id="aelio_herb" icon="aelioHerb" type="" />},
-        Lobster:()=>{       return <TemplateFood id="aelio_lobster" icon="aelioLobster" type="" />},
-        Mushroom:()=>{      return <TemplateFood id="aelio_mushroom" icon="aelioMushroom" type="" />},
-        Peach:()=>{         return <TemplateFood id="faelio_peach" icon="aelioPeach" type="" />},
-        Pear:()=>{          return <TemplateFood id="aelio_pear" icon="aelioPear" type="" />},
-        Tomato:()=>{        return <TemplateFood id="aelio_tomato" icon="aelioTomato" type="" />},
-        TurbanShell:()=>{   return <TemplateFood id="aelio_turbanShell" icon="aelioTurbanShell" type="" />},
-        Turnip:()=>{        return <TemplateFood id="aelio_turnip" icon="aelioTurnip" type="" />},
+        Apple:()=>{         return <TemplateFood id="aelio_apple" type="fruit" />},
+        Banana:()=>{        return <TemplateFood id="aelio_banana" type="fruit" />},
+        Clam:()=>{          return <TemplateFood id="aelio_clam" type="seafood" />},
+        Crab:()=>{          return <TemplateFood id="aelio_crab" type="seafood" />},
+        Herb:()=>{          return <TemplateFood id="aelio_herb" type="vegetables" />},
+        Lobster:()=>{       return <TemplateFood id="aelio_lobster" type="seafood" />},
+        Mushroom:()=>{      return <TemplateFood id="aelio_mushroom" type="vegetables" />},
+        Peach:()=>{         return <TemplateFood id="aelio_peach" type="fruit" />},
+        Pear:()=>{          return <TemplateFood id="aelio_pear" type="fruit" />},
+        Tomato:()=>{        return <TemplateFood id="aelio_tomato" type="vegetables" />},
+        TurbanShell:()=>{   return <TemplateFood id="aelio_turbanShell" type="seafood" />},
+        Turnip:()=>{        return <TemplateFood id="aelio_turnip" type="vegetables" />},
     },
     Retem: {
-        Cauliflower:()=>{   return <TemplateFood id="retem_cauliflower" icon="retemCauliflower" type="" />},
-        Cherries:()=>{      return <TemplateFood id="retem_cherries" icon="retemCherries" type="" />},
-        Cranberries:()=>{   return <TemplateFood id="retem_cranberries" icon="retemCranberries" type="" />},
-        Eggplant:()=>{      return <TemplateFood id="retem_eggplant" icon="retemEggplant" type="" />},
-        Fruit:()=>{         return <TemplateFood id="retem_fruit" icon="retemFruit" type="" />},
-        HermitCrab:()=>{    return <TemplateFood id="retem_hermitCrab" icon="retemHermitCrab" type="" />},
-        Mango:()=>{         return <TemplateFood id="retem_mango" icon="retemMango" type="" />},
-        Mushroom:()=>{      return <TemplateFood id="retem_mushroom" icon="retemMushroom" type="" />},
-        Scallop:()=>{       return <TemplateFood id="retem_scallop" icon="retemScallop" type="" />},
-        SeaSlug:()=>{       return <TemplateFood id="retem_seaSlug" icon="retemSeaSlug" type="" />},
-        Strawberry:()=>{    return <TemplateFood id="retem_strawberry" icon="retemStrawberry" type="" />},
-        Uchin:()=>{         return <TemplateFood id="retem_urchin" icon="retemUrchin" type="" />},
-        
+        Cauliflower:()=>{   return <TemplateFood id="retem_cauliflower" type="vegetables" />},
+        Cherries:()=>{      return <TemplateFood id="retem_cherries" type="fruit" />},
+        Cranberries:()=>{   return <TemplateFood id="retem_cranberries" type="vegetables" />},
+        Eggplant:()=>{      return <TemplateFood id="retem_eggplant" type="vegetables" />},
+        Carambola:()=>{     return <TemplateFood id="retem_carambola" type="fruit" />},
+        HermitCrab:()=>{    return <TemplateFood id="retem_hermitCrab" type="seafood" />},
+        Mango:()=>{         return <TemplateFood id="retem_mango" type="fruit" />},
+        Mushroom:()=>{      return <TemplateFood id="retem_mushroom" type="vegetables" />},
+        Scallop:()=>{       return <TemplateFood id="retem_scallop" type="seafood" />},
+        SeaSlug:()=>{       return <TemplateFood id="retem_seaSlug" type="seafood" />},
+        Strawberry:()=>{    return <TemplateFood id="retem_strawberry" type="fruit" />},
+        SeaUchin:()=>{      return <TemplateFood id="retem_seaUrchin" type="seafood" />},
     },
 }
 
@@ -80,14 +84,14 @@ export default function Food(){
             <Load.Retem.Cherries/>
             <Load.Retem.Cranberries/>
             <Load.Retem.Eggplant/>
-            <Load.Retem.Fruit/>
+            <Load.Retem.Carambola/>
             <Load.Retem.HermitCrab/>
             <Load.Retem.Mango/>
             <Load.Retem.Mushroom/>
             <Load.Retem.Scallop/>
             <Load.Retem.SeaSlug/>
             <Load.Retem.Strawberry/>
-            <Load.Retem.Uchin/>
+            <Load.Retem.SeaUchin/>
         </Fragment>
     )
 };

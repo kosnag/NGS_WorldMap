@@ -24,19 +24,14 @@ const App = () => {
   </>)
 }
 
-
 export default function Init(){
-  if (localStorage.getItem("settings") && localStorage.getItem("checked")){
+  if (localStorage.getItem("settings") != null && localStorage.getItem("checked") != null){
     return <App/>
-  }else{
-    fetch("./assets/storages/settings.json")
-      .then(response => response.json()
-      .then(data => localStorage.setItem("settings", JSON.stringify(data))));
-  
-    fetch("./assets/storages/checked.json")
-      .then(response => response.json()
-      .then(data => localStorage.setItem("checked", JSON.stringify(data))));
-
-    window.location.reload()
+  } else {
+    fetch("./assets/storages/settings.json").then(response => response.json().then(data => localStorage.setItem("settings", JSON.stringify(data))));
+    
+    fetch("./assets/storages/checked.json").then(response => response.json().then(data => localStorage.setItem("checked", JSON.stringify(data))));
+    
+    window.location.reload();
   }
 };

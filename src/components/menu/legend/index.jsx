@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./style.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../functions';
@@ -21,32 +21,31 @@ export default function MenuLegend(){
   };
 
   function checkLocalStorage(category,item){
-    if (window.localStorage_Settings[category][item] != undefined){
+    if (window.localStorage_Settings[category][item] !== null){
       if (window.localStorage_Settings[category][item] === 1){
         return true
       } else {
         return false
       }}
-    else
-      {return false}
+    else {
+      return false
+    }
   }
 
   function setLocalStorage(category,item){
     if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1){
-      window.localStorage_Settings[category][item]=0
+      window.localStorage_Settings[category][item] = 0
       localStorage.setItem("settings",JSON.stringify(window.localStorage_Settings))
-    }else{
-      window.localStorage_Settings[category][item]=1
+    } else {
+      window.localStorage_Settings[category][item] = 1
       localStorage.setItem("settings",JSON.stringify(window.localStorage_Settings))
     };
-    
   }
 
   const [toggleTab, setToggleTab] = useState('landmarks');
   function clickToggleTab(tab){setToggleTab(tab)};
 
   const Button = (props) => {
-    const {t} = useTranslation();
     return (
       <button 
         onMouseEnter={() => setPreview(props.cat+"__"+props.item,props.rarity)}
@@ -58,8 +57,10 @@ export default function MenuLegend(){
     )
   }
 
-  useEffect(() => {
+  useEffect(()=>{
     document.getElementById('menu-legend').classList.add('hidden');
+  },[]);
+  useEffect(() => {
     setPreviewTitle(t("items:Title.nothing"));
   },[t]);
 
@@ -93,7 +94,6 @@ export default function MenuLegend(){
               onClick={() => clickToggleTab('other')}
             >{t("ui:LegendMenu.Categories.other")}</button>
           </category>
-          <>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
               <Button cat="landmark" item="ryuker" rarity="places" />
               <Button cat="landmark" item="cocoon" rarity="places" />
@@ -150,7 +150,6 @@ export default function MenuLegend(){
               <Button cat="other" item="datapod" rarity="places" />
               <Button cat="other" item="musicPlace" rarity="places" />
             </items>
-          </>
           <info>
             <background className={previewRarity}/>
             <img alt="" src={previewIcon}/>
