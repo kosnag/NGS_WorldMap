@@ -74,6 +74,10 @@
             "possible": "",
             "guaranteed": "",
             "firstTime": ""
+        },
+        "enemyTypes": {
+            "dread": "",
+            "gigantix": ""
         }
     }
 }

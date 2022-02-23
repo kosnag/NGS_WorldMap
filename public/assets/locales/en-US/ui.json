@@ -52,28 +52,32 @@
                     "mooncat": "PT translate",
                     "svgvsevolod": "Backend"
                 },
-                "segaCopyright": "something something"
+                "segaCopyright": "All Rights Reserved by SEGA"
             }
         }
     },
     "Map": {
         "foodType": {
-            "fruit": "",
-            "seafood": "",
-            "vegetables": ""
+            "fruit": "Fruit",
+            "seafood": "Seafood",
+            "vegetables": "Vegetables"
         },
-        "rank": "",
-        "maxPlayers": "",
-        "requiredBP": "",
-        "recommendedBP": "",
-        "enenyLv": "",
-        "subMissions": "",
-        "clearCondition": "",
-        "description": "",
+        "rank": "Ranks",
+        "maxPlayers": "Max Players",
+        "requiredBP": "Required BP",
+        "recommendedBP": "Recommended BP",
+        "enenyLv": "Eneny Lvl",
+        "subMissions": "Sub Missions",
+        "clearCondition": "Clear Condition",
+        "description": "Description",
         "rewards": {
-            "possible": "",
-            "guaranteed": "",
-            "firstTime": ""
+            "possible": "Possible Rewards",
+            "guaranteed": "Guaranteed Rewards",
+            "firstTime": "First Time Rewards"
+        },
+        "enemyTypes": {
+            "dread": "Dread",
+            "gigantix": "Gigantix"
         }
     }
 }

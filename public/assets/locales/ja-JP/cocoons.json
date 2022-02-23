@@ -1,6 +1,6 @@
 {
     "firstStep": {
-        "title": "",
+        "title": "ファーストステップ",
         "description": "",
         "clearCondition": "",
         "subMission1": "",
@@ -8,7 +8,7 @@
         "subMission3": ""
     },
     "enchancedEnemy": {
-        "title": "",
+        "title": "エンハカンスドエネミー",
         "description": "",
         "clearCondition": "",
         "subMission1": "",
@@ -16,7 +16,7 @@
         "subMission3": ""
     },
     "swiftJump": {
-        "title": "",
+        "title": "エンハカンスドエネミー",
         "description": "",
         "clearCondition": "",
         "subMission1": "",
@@ -24,7 +24,7 @@
         "subMission3": ""
     },
     "wildRush": {
-        "title": "",
+        "title": "ワイルドラッシュ",
         "description": "",
         "clearCondition": "",
         "subMission1": "",

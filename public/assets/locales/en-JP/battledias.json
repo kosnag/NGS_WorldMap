@@ -1,12 +1,16 @@
 {
-    "clearCondition": "",
-    "description": "",
+    "clearCondition": "Defeat the target enemy",
+    "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies.",
     "aelioTroopers": {
-        "title": ""},
+        "title": "Aelio Troopers"
+    },
     "aelioDevastators": {
-        "title": ""},
+        "title": "Aelio Devastators"
+    },
     "retemTroopers": {
-        "title": ""},
+        "title": "Retem Troopers"
+    },
     "retemDevastators": {
-        "title": ""}
+        "title": "Retem Devastators"
+    }
 }

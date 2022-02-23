@@ -52,11 +52,33 @@
                     "mooncat": "PT translate",
                     "svgvsevolod": "Backend"
                 },
-                "segaCopyright": "something something"
+                "segaCopyright": "All Rights Reserved by SEGA"
             }
         }
     },
-    "SupportMenu": {
-
+    "Map": {
+        "foodType": {
+            "fruit": "",
+            "seafood": "",
+            "vegetables": ""
+        },
+        "rank": "",
+        "maxPlayers": "",
+        "requiredBP": "",
+        "recommendedBP": "",
+        "enenyLv": "",
+        "subMissions": "",
+        "clearCondition": "",
+        "description": "",
+        "rewards": {
+            "possible": "",
+            "guaranteed": "",
+            "firstTime": ""
+        },
+        "enemyTypes": {
+            "dread": "",
+            "gigantix": ""
+        }
+        
     }
 }
