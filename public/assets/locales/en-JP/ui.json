@@ -58,27 +58,26 @@
     },
     "Map": {
         "foodType": {
-            "fruit": "",
-            "seafood": "",
-            "vegetables": ""
+            "fruit": "Fruit",
+            "seafood": "Seafood",
+            "vegetables": "Vegetables"
         },
-        "rank": "",
-        "maxPlayers": "",
-        "requiredBP": "",
-        "recommendedBP": "",
-        "enemyLv": "",
-        "subMissions": "",
-        "clearCondition": "",
-        "description": "",
+        "rank": "Rank",
+        "maxPlayers": "Max Players",
+        "requiredBP": "Required Power Level",
+        "recommendedBP": "Recommend Power Level",
+        "enemyLv": "Enemy Level",
+        "subMissions": "Sub Missions",
+        "clearCondition": "Clear Condition",
+        "description": "Description",
         "rewards": {
-            "possible": "",
-            "guaranteed": "",
-            "firstTime": ""
+            "possible": "Possible Rewards",
+            "guaranteed": "Rewards",
+            "firstTime": "First Clear Reward"
         },
         "enemyTypes": {
-            "dread": "",
-            "gigantix": ""
+            "dread": "Battle-Hardened",
+            "gigantix": "Gigantix"
         }
-        
     }
 }
