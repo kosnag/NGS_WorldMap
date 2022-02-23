@@ -1,34 +1,34 @@
 {
     "altersRush": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "ALTERS Rush",
+        "description": "This is Trainia, where ARKS defenders can test their combat abilities. Avoid combat with enemies whenever possible and make use of your battle skills to defeat the Chiacurio in the final area.",
+        "clearCondition": "Defeat the Chiacurio.",
+        "subMission1": "Clear before 8:00",
+        "subMission2": "Clear having suppressed under 4 of the enemies",
+        "subMission3": "Clear without being incapacitated 5 times"
     },
     "greatWall": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Great Wall",
+        "description": "This is Trainia, where ARKS defenders can test their abilities. Defeat the Daityl Sword in the final area using your battle skills.",
+        "clearCondition": "Defeat the Daityl Sword.",
+        "subMission1": "Clear before 23:00",
+        "subMission2": "Clear without being incapacitated 5 times",
+        "subMission3": "Obtain 5 Point Cubes"
     },
     "aeroRunner": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Aero Runner",
+        "description": "This is Trainia, where ARKS defenders can test their gliding capabilities. Use Photon Glide to reach the target destination.",
+        "clearCondition": "Reach the finish point.",
+        "subMission1": "Clear before 2:05",
+        "subMission2": "Clear without falling 5 times",
+        "subMission3": "Obtain 10 Point Cubes"
     },
     "dollsBurrow": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "DOLLS Burrow",
+        "description": "This is Trainia, where ARKS defenders can test their combat abilities. Defeat the Destragras in the final area using your battle skills.",
+        "clearCondition": "Defeat the Destragras.",
+        "subMission1": "Obtain 5 Point Cubes",
+        "subMission2": "Clear without being incapacitated 3 times",
+        "subMission3": "Clear before 10:00"
     }
 }

@@ -1,32 +1,32 @@
 {
     "pettasVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Command DOLLS Suppression Op",
+        "description": "A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Veras, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
+        "clearCondition": "Defeat the Command DOLLS unit!"
     },
     "nexVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Nex Vera Suppression Op",
+        "description": "A powerful space-time flux has been detected in Resol Forest. Based on past data, we expect Nex Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
+        "clearCondition": "Defeat the target enemy!"
     },
     "miningRigDefenceAelio": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Mining Rig Defense: Aelio",
+        "description": "We've received an emergency support request from our active mining unit in Aelio Plains. Numerous enemy readings in the area suggest a major assault is likely. We need all ARKS defenders to hurry to the site and defend the Mining Rig.",
+        "clearCondition": "Defeat the target enemy"
     },
     "darkFalzInterception": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Dark Falz Interception",
+        "description": "Our data points to the imminent appearance of Dark Falz in the Central City area. All ARKS defenders report to the rerdezvous immediately and repel the enemy advance until the Central Cannon is operational.",
+        "clearCondition": "Defeat the target enemy!"
     },
     "dustylVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Dustyl Vera Suppression Op",
+        "description": "A powerful space-time flux has been detected in Murabba Canyon in North Retem. Based on past data, we expect Dustyl Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
+        "clearCondition": "Defeat the target enemy"
     },
     "renusVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Renus Vera Suppression Op",
+        "description": "A powerful space-time flux has been detected in the northern part of Central Retem. Based on past data, we expect Renus Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
+        "clearCondition": "Defeat the target enemy"
     }
 }

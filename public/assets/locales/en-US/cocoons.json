@@ -1,114 +1,114 @@
 {
     "firstStep": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "First Step",
+        "description": "This is Trainia, where ARKS defenders can test their abilities. Follow the instructions to reach the goal while learning the new action.",
+        "clearCondition": "Reach the finish point.",
+        "subMission1": "Clear before 5:00",
+        "subMission2": "Clear before 10:00",
+        "subMission3": "Obtain 10 Point Cubes"
     },
     "enchancedEnemy": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Enhanced Enemy",
+        "description": "This is Trainia, where ARKS defenders can test their abilities. Defeat the enhanced Pettas Sword using your battle skills.",
+        "clearCondition": "Defeat the Pettas Sword.",
+        "subMission1": " Clear before 0:55",
+        "subMission2": "Clear without being incapacitated 5 times",
+        "subMission3": "Clear having taken damage fewer than 10 times"
     },
     "swiftJump": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Swift Jump",
+        "description": "This is Trainia, where ARKS defenders can test their abilities. Reach the goal using \"Jump\" and \"Double Jump\".",
+        "clearCondition": "Reach the Goal!",
+        "subMission1": "Clear before 1:25",
+        "subMission2": "Clear without falling 5 times",
+        "subMission3": "Clear while using used Glide fewer than 5 times"
     },
     "wildRush": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Wild Rush",
+        "description": "This is Trainia, where ARKS defenders can test their abilities. Defeat all enemies using your battle skills.",
+        "clearCondition": "Defeat 42 Enemies.",
+        "subMission1": " Clear before 1:45",
+        "subMission2": "Clear without being incapacitated 5 times",
+        "subMission3": "Obtain 5 Point Cubes"
     },
     "testFlight": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Test Flight",
+        "description": "This is Trainia, where ARKS defenders can test their gliding capabilities. Use Photon Glide to reach the target destination.",
+        "clearCondition": "Reach the finish point.",
+        "subMission1": "Clear before 1:15",
+        "subMission2": "Clear without falling 5 times",
+        "subMission3": "Obtain 5 Point Cubes"
     },
     "roaringRush": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Roaring Rush",
+        "description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Gororox.",
+        "clearCondition": "Reach the finish point.",
+        "subMission1": "Clear before 6:30",
+        "subMission2": "Clear having taken damage fewer than 15 times",
+        "subMission3": "Clear without being incapacitated 2 times"
     },
     "fleetingFight": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Fleeting Fight",
+        "description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Bujin.",
+        "clearCondition": "Defeat the Bujin.",
+        "subMission1": "Clear before 5:00",
+        "subMission2": "Clear without being incapacitated 5 times",
+        "subMission3": "Clear having taken damage fewer than 20 times"
     },
     "runway": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Runway",
+        "description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination.",
+        "clearCondition": "Reach the finish point.",
+        "subMission1": "Clear before 1:55",
+        "subMission2": "Clear before 2:35",
+        "subMission3": "Obtain 5 Point Cubes"
     },
     "vanishingPath": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Vanishing Path",
+        "description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Defeat all the enemies while keeping an eye on Vanishing Blocks.",
+        "clearCondition": "Defeat the Fortos Laser.",
+        "subMission1": "Clear before 8:00",
+        "subMission2": "Obtain 5 Point Cubes",
+        "subMission3": "Clear without falling 3 times"
     },
     "narrowCage": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Narrow Cage",
+        "description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Make use of your battle skills to defeat all of the enemies.",
+        "clearCondition": "Defeat all enemies.",
+        "subMission1": "Clear without taken damage fewer than 20 times",
+        "subMission2": "Clear without being incapacitated 3 times",
+        "subMission3": "Clear before 6:00"
     },
     "buddyAttack": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Buddy Attack",
+        "description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Defeat all the enemies with support from Dromes.",
+        "clearCondition": "Defeat all enemies.",
+        "subMission1": "Maintain your hacked Drome's level to 3 to clear",
+        "subMission2": "Clear without being incapacitated 3 times",
+        "subMission3": "Clear without taken damage fewer than 20 times"
     },
     "dynaAssault": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Dyna Assault",
+        "description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Make use of your battle skills to defeat the Lizentos.",
+        "clearCondition": "Defeat all enemies.",
+        "subMission1": "Clear before 2:35",
+        "subMission2": "Clear without being incapacitated 5 times",
+        "subMission3": "Clear without taken damage fewer than 10 times"
     },
     "parkourMaster": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Parkour Master",
+        "description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Reach the goal using Jumps, Double Jumps, and Wall Kicks.",
+        "clearCondition": "Defeat all enemies.",
+        "subMission1": "Clear having used Glide fewer than 6 times",
+        "subMission2": "Obtain 10 Point Cubes",
+        "subMission3": "Clear before 2:20"
     },
     "runway2": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Runway II",
+        "description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Use Photon Dash to reach the target destination.",
+        "clearCondition": "Defeat all enemies.",
+        "subMission1": "Clear before 4:35",
+        "subMission2": "Clear before 5:15",
+        "subMission3": "Obtain 4 Point Cubes"
     }
 }

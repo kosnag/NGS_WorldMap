@@ -1,12 +1,12 @@
 {
-    "clearCondition": "",
-    "description": "",
-    "altersRush": {
-        "title": ""},
-    "greatWall": {
-        "title": ""},
-    "aeroRunner": {
-        "title": ""},
-    "dollsBurrow": {
-        "title": ""}
+    "clearCondition": "Defeat the enemies",
+    "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies.\nSome boosts will be disabled during this quest.",
+    "aelioTroopers": {
+        "title": "Aelio Troopers"},
+    "aelioDevastators": {
+        "title": "Aelio Devastators"},
+    "retemTroopers": {
+        "title": "Retem Troopers"},
+    "retemDevastators": {
+        "title": "Retem Devastators"}
 }
