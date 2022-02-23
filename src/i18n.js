@@ -17,14 +17,16 @@ i18n
       'ryukers',
       'sections',
       'towers',
-      'urgents'
+      'urgents',
+      'rewards',
+      'datapods'
     ],
     framework: "React",
     fallbackLng: 'en_US',
-    //debug: true,
+    debug: true,
     react: {
       useSuspense: false,
-      //wait: false,
+      wait: false,
       escapeValue: false,
     },
     backend: {
