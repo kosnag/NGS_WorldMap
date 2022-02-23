@@ -129,7 +129,7 @@ export default function MenuLegend(){
               <Button cat="food" item="retem_cherries" rarity="common" />
               <Button cat="food" item="retem_cranberries" rarity="common" />
               <Button cat="food" item="retem_eggplant" rarity="common" />
-              <Button cat="food" item="retem_fruit" rarity="common" />
+              <Button cat="food" item="retem_carambola" rarity="common" />
               <Button cat="food" item="retem_hermitCrab" rarity="common" />
               <Button cat="food" item="retem_mango" rarity="common" />
               <Button cat="food" item="retem_mushroom" rarity="common" />

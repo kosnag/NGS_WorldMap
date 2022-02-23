@@ -25,7 +25,7 @@ Battledia:()=>{
         <Marker icon={IconLib.battledia} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("battledias:"+x.id)}</span>
+                    <span><menuicon/> {t("battledias:"+x.id+".title")}</span>
                 </header>
                 <content>
                     {t("items:Title.landmark__battledia")}
@@ -121,7 +121,7 @@ Cocoon:()=>{
         <Marker icon={IconLib.cocoon} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("cocoons:"+x.id)}</span>
+                    <span><menuicon/> {t("cocoons:"+x.id+".title")}</span>
                 </header>
                 <content>
                     {t("items:Title.landmark__cocoon")}
@@ -250,7 +250,7 @@ Tower:()=>{
         <Marker icon={IconLib.tower} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("towers:"+x.id)}</span>
+                    <span><menuicon/> {t("towers:"+x.id+".title")}</span>
                 </header>
                 <content>
                     {t("items:Title.landmark__tower")}
@@ -329,7 +329,7 @@ UQ:()=>{
         <Marker icon={IconLib.urgent} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("urgents:"+x.id)}</span>
+                    <span><menuicon/> {t("urgents:"+x.id+".title")}</span>
                 </header>
                 <content>
                     {t("items:Title.landmark__urgent")}
