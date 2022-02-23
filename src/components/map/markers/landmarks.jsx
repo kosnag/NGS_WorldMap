@@ -44,26 +44,32 @@ Battledia:()=>{
                     </select>
                     <br/><br/>
                     <name>{t("battledias:"+x.id+".title")}</name>
-                    <border/>
+                    <br/>
+                    {(x.ranks.map((y=>
+                        <info className={tier === y.rank.toString() ? "" : "hidden"}>
+                            <div>
+                                <level>
+                                    <span>{t("ui:Map.maxPlayers")}</span>
+                                    <border/>
+                                    <value>{x.players}</value>
+                                </level>
+                                <level>
+                                    <span>{t("ui:Map.requiredBP")}</span>
+                                    <border/>
+                                    <value>{y.minBP}</value>
+                                </level>
+                                <level>
+                                    <span>{t("ui:Map.enemyLv")}</span>
+                                    <border/>
+                                    <value>{y.enemyLv}</value>
+                                </level>
+                            </div>
+                        </info>
+                    )))}
                     <cont>
                         <img src="./assets/images/banners/other/battledia.png" alt="" />
                         {(x.ranks.map((y=>
                             <info className={tier === y.rank.toString() ? "" : "hidden"}>
-                                <level>
-                                    <div>
-                                        <l>{t("ui:Map.maxPlayers")}</l>
-                                        <r>{x.players}</r>
-                                    </div>
-                                    <div>
-                                        <l>{t("ui:Map.requiredBP")}</l>
-                                        <r>{y.minBP}</r>
-                                    </div>
-                                    <div>
-                                        <l>{t("ui:Map.enenyLv")}</l>
-                                        <r>{y.enemyLv}</r>
-                                    </div>
-                                </level>
-                                <br/>
                                 <span>{(()=>{
                                     switch(x.type){
                                         case "purple":
@@ -134,25 +140,29 @@ Cocoon:()=>{
                 </header>
                 <content>
                     <name>{t("cocoons:"+x.id+".title")}</name>
-                    <border/>
+                    <br/>
+                    <info>
+                        <div>
+                            <level>
+                                <span>{t("ui:Map.maxPlayers")}</span>
+                                <border/>
+                                <value>{x.players}</value>
+                             </level>
+                            <level>
+                                <span>{t("ui:Map.requiredBP")}</span>
+                                <border/>
+                                <value>{x.minBP}</value>
+                            </level>
+                            <level>
+                                <span>{t("ui:Map.enemyLv")}</span>
+                                <border/>
+                                <value>{x.enemyLv}</value>
+                            </level>
+                        </div>
+                    </info>
                     <cont>
                         <img src="./assets/images/banners/other/trainia.png" alt="" />
                         <info>
-                            <level>
-                                <div>
-                                    <l>{t("ui:Map.maxPlayers")}</l>
-                                    <r>{x.players}</r>
-                                </div>
-                                <div>
-                                    <l>{t("ui:Map.requiredBP")}</l>
-                                    <r>{x.minBP}</r>
-                                </div>
-                                <div>
-                                    <l>{t("ui:Map.enenyLv")}</l>
-                                    <r>{x.enemyLv}</r>
-                                </div>
-                            </level>
-                            <br/>
                             <span>{t("ui:Map.rewards.firstTime")}</span>
                             <border/>
                             <rewards>{(x.firstrewards.map((y=>
@@ -263,25 +273,29 @@ Tower:()=>{
                 </header>
                 <content>
                     <name>{t("towers:"+x.id+".title")}</name>
-                    <border/>
+                    <br/>
+                    <info>
+                        <div>
+                            <level>
+                                <span>{t("ui:Map.maxPlayers")}</span>
+                                <border/>
+                                <value>{x.players}</value>
+                             </level>
+                            <level>
+                                <span>{t("ui:Map.requiredBP")}</span>
+                                <border/>
+                                <value>{x.minBP}</value>
+                            </level>
+                            <level>
+                                <span>{t("ui:Map.enemyLv")}</span>
+                                <border/>
+                                <value>{x.enemyLv}</value>
+                            </level>
+                        </div>
+                    </info>
                     <cont>
                         <img src="./assets/images/banners/other/trainia.png" alt="" />
                         <info>
-                            <level>
-                                <div>
-                                    <l>{t("ui:Map.maxPlayers")}</l>
-                                    <r>{x.players}</r>
-                                </div>
-                                <div>
-                                    <l>{t("ui:Map.requiredBP")}</l>
-                                    <r>{x.minBP}</r>
-                                </div>
-                                <div>
-                                    <l>{t("ui:Map.enenyLv")}</l>
-                                    <r>{x.enemyLv}</r>
-                                </div>
-                            </level>
-                            <br/>
                             <span>{t("ui:Map.rewards.firstTime")}</span>
                             <border/>
                             <rewards>{(x.firstrewards.map((y=>
@@ -348,26 +362,32 @@ UQ:()=>{
                     </select>
                     <br/><br/>
                     <name>{t("urgents:"+x.id+".title")}</name>
-                    <border/>
+                    <br/>
+                    {(x.ranks.map((y=>
+                        <info className={tier === y.rank.toString() ? "" : "hidden"}>
+                            <div>
+                                <level>
+                                    <span>{t("ui:Map.maxPlayers")}</span>
+                                    <border/>
+                                    <value>{x.players}</value>
+                                </level>
+                                <level>
+                                    <span>{t("ui:Map.requiredBP")}</span>
+                                    <border/>
+                                    <value>{y.minBP}</value>
+                                </level>
+                                <level>
+                                    <span>{t("ui:Map.enemyLv")}</span>
+                                    <border/>
+                                    <value>{y.enemyLv}</value>
+                                </level>
+                            </div>
+                        </info>
+                    )))}
                     <cont>
                         <img src={"./assets/images/banners/urgents/"+x.id+".png"} alt="" />
                         {(x.ranks.map((y=>
                             <info className={tier === y.rank.toString() ? "" : "hidden"}>
-                                <level>
-                                    <div>
-                                        <l>{t("ui:Map.maxPlayers")}</l>
-                                        <r>{x.players}</r>
-                                    </div>
-                                    <div>
-                                        <l>{t("ui:Map.requiredBP")}</l>
-                                        <r>{y.minBP}</r>
-                                    </div>
-                                    <div>
-                                        <l>{t("ui:Map.enenyLv")}</l>
-                                        <r>{y.enemyLv}</r>
-                                    </div>
-                                </level>
-                                <br/>
                                 <span>{t("ui:Map.rewards.firstTime")}</span>
                                 <border/>
                                 <rewards>{(x.firstRewards.map((z=>
