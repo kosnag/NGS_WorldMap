@@ -62,18 +62,18 @@
             "seafood": "Seafood",
             "vegetables": "Vegetables"
         },
-        "rank": "Ranks",
+        "rank": "Rank",
         "maxPlayers": "Max Players",
         "requiredBP": "Required BP",
         "recommendedBP": "Recommended BP",
-        "enenyLv": "Eneny Lvl",
+        "enemyLv": "Enemy Lvl",
         "subMissions": "Sub Missions",
         "clearCondition": "Clear Condition",
         "description": "Description",
         "rewards": {
             "possible": "Possible Rewards",
-            "guaranteed": "Guaranteed Rewards",
-            "firstTime": "First Time Rewards"
+            "guaranteed": "Rewards",
+            "firstTime": "First Clear Rewards"
         },
         "enemyTypes": {
             "dread": "Dread",
