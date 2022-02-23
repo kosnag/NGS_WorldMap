@@ -12,7 +12,7 @@
             "minerals": "Минералы",
             "food": "Еда",
             "containers": "Контейнеры",
-            "other": "Other"
+            "other": "Другое"
         }
     },
     "OptionsMenu": {
@@ -45,7 +45,7 @@
             },
             "about": {
                 "author": "Автор",
-                "contributers": "Contributers",
+                "contributers": "Вкладчики",
                 "contributersList": {
                     "sinitsa": "RU перевод",
                     "focuslite": "KR перевод",
@@ -58,26 +58,26 @@
     },
     "Map": {
         "foodType": {
-            "fruit": "",
-            "seafood": "",
-            "vegetables": ""
+            "fruit": "Фрукт",
+            "seafood": "Морепродукт",
+            "vegetables": "Овощь"
         },
-        "rank": "",
-        "maxPlayers": "",
-        "requiredBP": "",
-        "recommendedBP": "",
-        "enemyLv": "",
-        "subMissions": "",
-        "clearCondition": "",
-        "description": "",
+        "rank": "Ранк",
+        "maxPlayers": "Макс. кол-во игроков",
+        "requiredBP": "Требуемый БМ",
+        "recommendedBP": "Рекомендованный БМ",
+        "enemyLv": "Ур. врагов",
+        "subMissions": "Доп. миссии",
+        "clearCondition": "Осн. миссия",
+        "description": "Описание",
         "rewards": {
-            "possible": "",
-            "guaranteed": "",
-            "firstTime": ""
+            "possible": "Возвожные награды",
+            "guaranteed": "Награды",
+            "firstTime": "Награды за первое прохождение"
         },
         "enemyTypes": {
-            "dread": "",
-            "gigantix": ""
+            "dread": "Ветераны",
+            "gigantix": "Отчаявшиеся"
         }
     }
 }

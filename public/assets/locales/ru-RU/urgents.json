@@ -1,18 +1,18 @@
 {
     "pettasVera": {
-        "title": "",
+        "title": "Карательная экспедиция на контролирующего DOLLS",
         "description": "",
-        "clearCondition": ""
+        "clearCondition": "Одолейте контролирующую боевую еденицу!"
     },
     "nexVera": {
-        "title": "",
+        "title": "Карательная экспедиция на Некс Вера",
         "description": "",
-        "clearCondition": ""
+        "clearCondition": "Одолейте Некс Вера!"
     },
     "miningRigDefenceAelio": {
-        "title": "",
+        "title": "Оборона установок добычи: Эарио",
         "description": "",
-        "clearCondition": ""
+        "clearCondition": "Защитите установки добычи!"
     },
     "darkFalzInterception": {
         "title": "",

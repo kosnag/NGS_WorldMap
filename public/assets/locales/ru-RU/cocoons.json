@@ -1,67 +1,67 @@
 {
     "firstStep": {
-        "title": "",
+        "title": "Первые шаги",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Достигните цели!",
+        "subMission1": "Пройдите за 5:00",
+        "subMission2": "Пройдите за 10:00",
+        "subMission3": "Соберите 10 очков"
     },
     "enchancedEnemy": {
-        "title": "",
+        "title": "Усиленный враг",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте Педаса мечника!",
+        "subMission1": "Пройдите за 0:55",
+        "subMission2": "Пройдите менее чем с 5 смертями",
+        "subMission3": "Получите не более 10 ударов"
     },
     "swiftJump": {
-        "title": "",
+        "title": "Быстрый прыжок",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Достигните цели!",
+        "subMission1": "Пройдите за 1:25",
+        "subMission2": "Упасть не более 5 раз",
+        "subMission3": "Используйте парение менее 5 раз"
     },
     "wildRush": {
-        "title": "",
+        "title": "Дикая спешка",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте 42 врагов!",
+        "subMission1": "Пройдите за 1:45",
+        "subMission2": "Умрите не более 5 раз",
+        "subMission3": "Соберите 5 очков"
     },
     "testFlight": {
-        "title": "",
+        "title": "Тестовый полёт",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Достигните цели!",
+        "subMission1": "Пройдите за 1:15",
+        "subMission2": "Упасть не более 5 раз",
+        "subMission3": "Соберите 5 очков"
     },
     "roaringRush": {
-        "title": "",
+        "title": "Ревущий рывок",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте Горорокса!",
+        "subMission1": "Пройдите за 6:30",
+        "subMission2": "Умрите не более 2 раз",
+        "subMission3": "Получите не более 15 ударов"
     },
     "fleetingFight": {
-        "title": "",
+        "title": "Скоротечный бой",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте Буджина!",
+        "subMission1": "Пройдите за 5:00",
+        "subMission2": "Умрите не более 5 раз",
+        "subMission3": "Получите не более 20 ударов"
     },
     "runway": {
-        "title": "",
+        "title": "Скоростной забег",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Достигните цели!",
+        "subMission1": "Пройдите за 1:55",
+        "subMission2": "Пройдите за 2:35",
+        "subMission3": "Соберите 5 очков"
     },
     "vanishingPath": {
         "title": "",

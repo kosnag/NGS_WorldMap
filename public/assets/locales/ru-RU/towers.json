@@ -1,27 +1,27 @@
 {
     "altersRush": {
-        "title": "",
+        "title": "Спешка с альтерами",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте Чиа Курио!",
+        "subMission1": "Продите за 8:00",
+        "subMission2": "Одолейте не более 4-х врагов",
+        "subMission3": "Умрите не более 5 раз"
     },
     "greatWall": {
-        "title": "",
+        "title": "Великая стена",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте Дайдару!",
+        "subMission1": "Пройдите за 23:00",
+        "subMission2": "Умрите не более 5 раз",
+        "subMission3": "Соберите 5 очков"
     },
     "aeroRunner": {
-        "title": "",
+        "title": "Аэро-бегун",
         "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Достигните цели!",
+        "subMission1": "Продите за 2:05",
+        "subMission2": "Упасть не более 5 раз",
+        "subMission3": "Соберите 10 очков"
     },
     "dollsBurrow": {
         "title": "",

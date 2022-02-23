@@ -1,16 +1,16 @@
 {
-    "clearCondition": "",
-    "description": "",
+    "clearCondition": "Одолейте врагов",
+    "description": "Используйте свои боевые навыки, чтобы одолеть всех врагов",
     "aelioTroopers": {
-        "title": ""
+        "title": "Солдаты Эарио"
     },
     "aelioDevastators": {
-        "title": ""
+        "title": "Опустошители Эарио"
     },
     "retemTroopers": {
-        "title": ""
+        "title": "Солдаты Ритема"
     },
     "retemDevastators": {
-        "title": ""
+        "title": "Опустошители Ритема"
     }
 }
