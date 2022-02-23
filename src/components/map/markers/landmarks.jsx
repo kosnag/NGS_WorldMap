@@ -96,7 +96,7 @@ Battledia:()=>{
                     <border/>
                     {t("battledias:clearCondition")}
                     <br/><br/>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:Map.description")}</span>
                     <border/>
                     {t("battledias:description")}
                 </content>
@@ -175,7 +175,7 @@ Cocoon:()=>{
                     <br/>
                     <submission-divider/> {t("cocoons:"+x.id+".subMission3")}
                     <br/><br/>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:Map.description")}</span>
                     <border/>
                     {t("cocoons:"+x.id+".description")}
                 </content>
@@ -304,7 +304,7 @@ Tower:()=>{
                     <br/>
                     <submission-divider/> {t("towers:"+x.id+".subMission3")}
                     <br/><br/>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:Map.description")}</span>
                     <border/>
                     {t("towers:"+x.id+".description")}
                 </content>
@@ -408,7 +408,7 @@ UQ:()=>{
                     <border/>
                     {t("urgents:"+x.id+".clearCondition")}
                     <br/><br/>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:Map.description")}</span>
                     <border/>
                     {t("urgents:"+x.id+".description")}
                 </content>

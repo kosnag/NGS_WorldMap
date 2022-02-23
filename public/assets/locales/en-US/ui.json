@@ -55,5 +55,25 @@
                 "segaCopyright": "something something"
             }
         }
+    },
+    "Map": {
+        "foodType": {
+            "fruit": "",
+            "seafood": "",
+            "vegetables": ""
+        },
+        "rank": "",
+        "maxPlayers": "",
+        "requiredBP": "",
+        "recommendedBP": "",
+        "enenyLv": "",
+        "subMissions": "",
+        "clearCondition": "",
+        "description": "",
+        "rewards": {
+            "possible": "",
+            "guaranteed": "",
+            "firstTime": ""
+        }
     }
 }

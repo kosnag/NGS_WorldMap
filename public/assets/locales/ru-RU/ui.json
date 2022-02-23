@@ -55,5 +55,25 @@
                 "segaCopyright": "Все права на материалы, представленные в приложении принадлежат их законным владельцам (Sega) и предназначены только для ознакомления."
             }
         }
+    },
+    "Map": {
+        "foodType": {
+            "fruit": "",
+            "seafood": "",
+            "vegetables": ""
+        },
+        "rank": "",
+        "maxPlayers": "",
+        "requiredBP": "",
+        "recommendedBP": "",
+        "enenyLv": "",
+        "subMissions": "",
+        "clearCondition": "",
+        "description": "",
+        "rewards": {
+            "possible": "",
+            "guaranteed": "",
+            "firstTime": ""
+        }
     }
 }
