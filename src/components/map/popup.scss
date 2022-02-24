@@ -50,6 +50,7 @@ popup-window {
         }
     }
     content {
+        white-space: pre-wrap;
         padding-left: 10px;
         padding-right: 10px;
         width: calc(100% - 20px);
