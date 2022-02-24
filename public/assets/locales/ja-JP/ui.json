@@ -56,6 +56,12 @@
             "seafood": "",
             "vegetables": ""
         },
+        "stellarGraceType": {
+            "gold": "",
+            "silver": "",
+            "default": ""
+        },
+        "type": "",
         "rank": "",
         "maxPlayers": "",
         "requiredBP": "",

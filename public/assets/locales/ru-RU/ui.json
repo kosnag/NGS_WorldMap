@@ -56,6 +56,12 @@
             "seafood": "Морепродукт",
             "vegetables": "Овощь"
         },
+        "stellarGraceType": {
+            "gold": "Золотой",
+            "silver": "Серебрянный",
+            "default": "Обычный"
+        },
+        "type": "Тип",
         "rank": "Ранк",
         "maxPlayers": "Макс. кол-во игроков",
         "requiredBP": "Требуемыая Боевая Мощь",
