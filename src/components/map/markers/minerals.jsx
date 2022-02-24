@@ -40,27 +40,27 @@ const Template = (props) => {
 }
 
 const Load = {
-    Monotite:()=>{
-        return <Template id="monotite"/>
-    },
-    Dualomite:()=>{
-        return <Template id="dualomite"/>
-    },
-    Trinite:()=>{
-        return <Template id="trinite"/>
-    },
-    Tetracite:()=>{
-        return <Template id="Tetracite"/>
-    },
-    PhotonQuartz:()=>{
-        return <Template id="photonQuartz"/>
-    },
-    PhotonChunk:()=>{
-        return <Template id="photonChunk"/>
-    },
-    PhotonScale:()=>{
-        return <Template id="photonScale"/>
-    }
+    Monotite:()=>{return <Template 
+        id="monotite"
+    />},
+    Dualomite:()=>{return <Template 
+        id="dualomite"
+    />},
+    Trinite:()=>{return <Template 
+        id="trinite"
+    />},
+    Tetracite:()=>{return <Template 
+        id="Tetracite"
+    />},
+    PhotonQuartz:()=>{return <Template 
+        id="photonQuartz"
+    />},
+    PhotonChunk:()=>{return <Template 
+        id="photonChunk"
+    />},
+    PhotonScale:()=>{return <Template 
+        id="photonScale"
+    />}
 }
 export default function Minerals(){
     return (
