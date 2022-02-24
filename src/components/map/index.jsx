@@ -6,14 +6,16 @@ import "./style.scss";
 
 import Landmarks from './markers/landmarks';
 import Food from './markers/food';
+import Minerals from './markers/minerals';
+import Other from './markers/other';
 
+function Init(){return (<>
+<Landmarks/>
+<Food/>
+<Minerals/>
+<Other/>
+</>)}
 
-function Init(){
-    return (<>
-        <Landmarks/>
-        <Food/>
-    </>)
-}
 export default function Map(){
     const bounds = {
         North: 0,
