@@ -163,8 +163,10 @@ var popup_window_content_form_button_latlng = document.createElement("a")
     popup_window_content_form_button_latlng.style.marginBottom = "5px"
     popup_window_content_form_button_latlng.setAttribute("href","#")
     popup_window_content_form_button_latlng.addEventListener("click",()=>{
-        navigator.clipboard.writeText("lat:"+lat_variable+", lng:"+lng_variable)
-        console.log("lat:"+lat_variable+", lng:"+lng_variable+",")
+        console.log("lat:"+lat_variable+", lng:"+lng_variable+",");
+    });
+    popup_window_content_form_button_latlng.addEventListener("click",()=>{
+        navigator.clipboard.writeText("lat:"+lat_variable+", lng:"+lng_variable);
     });
 
 var popup_window_content_form_button_submit = document.createElement("button")
