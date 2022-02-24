@@ -1,58 +1,52 @@
 {
-    "page_title": "PSO2NGS Interactive Map",
+    "page_title": "",
     "NavBar": {
-        "support": "Support",
-        "alphaReactor": "Alpha Reactors",
-        "mapLegend": "Map Legend",
-        "options": "Options"
+        "support": "",
+        "alphaReactor": "",
+        "mapLegend": "",
+        "options": ""
     },
     "LegendMenu": {
         "Categories": {
-            "landmarks": "Landmarks",
-            "minerals": "Minerals",
-            "food": "Food",
-            "containers": "Containers",
-            "other": "Other"
+            "landmarks": "",
+            "minerals": "",
+            "food": "",
+            "containers": "",
+            "other": ""
         }
     },
     "OptionsMenu": {
         "Categories": {
-            "languages": "Languages",
-            "mapping": "Mapping",
-            "debug": "Debug",
-            "about": "About"
+            "languages": "",
+            "mapping": "",
+            "debug": "",
+            "about": ""
         },
         "Items": {
             "languages": {
-                "english": "Inglês",
-                "japanese": "Japonês",
-                "english_jp": "Inglês (Remendo do ventilador)",
-                "russian": "Russian",
-                "korean": "Coreana",
-                "portuguse": "Português"
+                "english": "",
+                "japanese": "",
+                "english_jp": "",
+                "russian": "",
+                "korean": "",
+                "portuguse": ""
             },
             "mapping": {
-                "discord": "Join to Discord",
-                "translate": "Help with tranlating",
-                "start": "Go to mapping mode"
+                "discord": "",
+                "translate": "",
+                "start": ""
             },
             "debug": {
-                "langReset": "Reset language",
-                "visibilityReset": "Reset visibility",
-                "checkedReset": "Reset checked markers",
-                "clearCache": "Clear cache",
-                "resetAll": "Reset everything"
+                "langReset": "",
+                "visibilityReset": "",
+                "checkedReset": "",
+                "clearCache": "",
+                "resetAll": ""
             },
             "about": {
-                "author": "Author",
-                "contributers": "Contributers",
-                "contributersList": {
-                    "sinitsa": "RU translate",
-                    "focuslite": "KR tranlate",
-                    "mooncat": "PT translate",
-                    "svgvsevolod": "Backend"
-                },
-                "segaCopyright": "something something"
+                "author": "",
+                "contributers": "",
+                "segaCopyright": ""
             }
         }
     },
