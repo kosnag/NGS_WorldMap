@@ -24,6 +24,8 @@ const Template= (props) => {
                         {t("ui:LegendMenu.Categories.food")}
                         <br/>
                         {t("ui:Map.type")}: {t("ui:Map.foodType."+props.type)}
+                        <br/>
+                        {t("ui:Map.placedBy")}: x.contributer
                         <id>ID: {props.id}{x.id}</id>
                     </content>
                 </tooltip-window></Tooltip>

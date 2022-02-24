@@ -22,13 +22,8 @@ const Template = (props) => {
                     </header>
                     <content>
                         {t("ui:LegendMenu.Categories.minerals")}
-                        {(()=>{if (props.id === "photonScale"){
-                            return (<><br/>
-                                {t("ui:Map.placedBy")}: x.contributer
-                            </>)
-                        } else { 
-                            return <Fragment/>
-                        }})()}
+                        <br/>
+                        {t("ui:Map.placedBy")}: x.contributer
                         <id>ID: {props.id}{x.id}</id>
                     </content>
                 </tooltip-window></Tooltip>
@@ -50,7 +45,7 @@ const Load = {
         id="trinite"
     />},
     Tetracite:()=>{return <Template 
-        id="Tetracite"
+        id="tetracite"
     />},
     PhotonQuartz:()=>{return <Template 
         id="photonQuartz"
