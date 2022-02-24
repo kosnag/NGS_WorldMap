@@ -23,7 +23,7 @@ i18n
     ],
     framework: "React",
     fallbackLng: 'en_US',
-    debug: true,
+    //debug: true,
     react: {
       useSuspense: false,
       wait: false,
