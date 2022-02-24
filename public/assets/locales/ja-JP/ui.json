@@ -64,6 +64,7 @@
         "subMissions": "",
         "clearCondition": "",
         "description": "",
+        "placedBy": "",
         "rewards": {
             "possible": "",
             "guaranteed": "",
