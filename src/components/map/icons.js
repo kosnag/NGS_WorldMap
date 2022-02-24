@@ -58,8 +58,9 @@ const IconLib = {
     datapod: new Setup.Materials({iconUrl:'./assets/images/icons/other__dataPod.png'}),
     datapodChecked: new Setup.Materials({iconUrl:'./assets/images/icons/other__dataPod.png'}),
     alphaReactor: new Setup.Materials({iconUrl:'./assets/images/icons/other__alphaReactor.png'}),
+    musicPlace: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
     stellarSeed: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarSeed.png'}),
-    stellarGrace_Standard: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
+    stellarGrace_Default: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
     stellarGrace_Silver: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
     stellarGrace_Gold: new Setup.Materials({iconUrl:'./assets/images/icons/other__stellarGrace.png'}),
     veteran: new L.icon({iconSize:[32,32],iconAnchor:[16,16],popupAnchor:[0,-16],iconUrl:'./assets/images/icons/other__veteran.png'})
