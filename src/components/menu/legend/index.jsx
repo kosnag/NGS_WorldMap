@@ -16,8 +16,8 @@ export default function MenuLegend(){
   function setPreview(item,rarity){
     setPreviewIcon(process.env.PUBLIC_URL+"/assets/images/icons/"+item+".png")
     setPreviewRarity(rarity)
-    setPreviewTitle(t("items:Title."+item))
-    setPreviewShortInfo(t("items:ShortInfo."+item))
+    setPreviewTitle(t("items:"+item+""))
+    setPreviewShortInfo(t("items:"+item+"desctiption"))
   };
 
   function checkLocalStorage(category,item){
@@ -52,7 +52,7 @@ export default function MenuLegend(){
         ><Checkbox icon={<span/>}
         checked={checkLocalStorage(props.cat,props.item)}
         onChange={() => setLocalStorage(props.cat,props.item)}
-        label={t("items:Title."+props.cat+"__"+props.item)}
+        label={t("items:"+props.cat+"__"+props.item+".title")}
       /></button>
     )
   }
@@ -61,7 +61,7 @@ export default function MenuLegend(){
     document.getElementById('menu-legend').classList.add('hidden');
   },[]);
   useEffect(() => {
-    setPreviewTitle(t("items:Title.nothing"));
+    setPreviewTitle(t("items:nothing.title"));
   },[t]);
 
   return (

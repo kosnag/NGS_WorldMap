@@ -17,7 +17,7 @@ const Template= (props) => {
         <Marker icon={IconLib[props.id]} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("items:Title.food__"+props.id)}</span>
+                    <span><menuicon/> {t("items:food__"+props.id+".title")}</span>
                 </header>
                 <content>
                     {t("ui:LegendMenu.Categories.food")}

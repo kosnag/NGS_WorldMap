@@ -18,7 +18,7 @@ Veteran:()=>{
         <Marker icon={IconLib.veteran} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("items:Title.other__veteran")}</span>
+                    <span><menuicon/> {t("items:other__veteran.title")}</span>
                 </header>
                 <content>
                     {t("ui:Map.enemyTypes.dread")} | {t("enemies:"+x.string)}
@@ -43,10 +43,10 @@ AlphaReactor:()=>{
         <Marker icon={IconLib.datapod} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("items:Title.other__alphaReactor")}</span>
+                    <span><menuicon/> {t("items:other__alphaReactor.title")}</span>
                 </header>
                 <content>
-                    {t("items:ShortInfo.other__alphaReactor")}
+                    {t("items:other__alphaReactor.desctiption")}
                     <br/>
                     {t("ui:Map.placedBy")}: x.contributer
                     <id>ID: alphareactor{x.id}</id>
@@ -74,10 +74,10 @@ StellarFragment:()=>{
         ><Marker icon={IconLib.stellarSeed} position={coords}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("items:Title.other__stellarSeed")}</span>
+                    <span><menuicon/> {t("items:other__stellarSeed.title")}</span>
                 </header>
                 <content>
-                    {t("items:ShortInfo.other__stellarSeed")}
+                    {t("items:other__stellarSeed.desctiption")}
                 </content>
             </tooltip-window></Tooltip>
         </Marker>
@@ -103,7 +103,7 @@ StellarGrace:()=>{
         }}} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("items:Title.other__stellarGrace")}</span>
+                    <span><menuicon/> {t("items:other__stellarGrace.title")}</span>
                 </header>
                 <content>
                     {t("ui:Map.type")}: {t("ui:Map.stellarGraceType."+x.string)}
@@ -128,7 +128,7 @@ Datapod:()=>{
         <Marker icon={IconLib.datapod} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                     <span><menuicon/> {t("items:Title.other__datapod")}</span>
+                     <span><menuicon/> {t("items:other__datapod.title")}</span>
                 </header>
                 <content>
                     {t("datapods:"+x.string)}
@@ -153,7 +153,7 @@ BGM:()=>{
         <Marker icon={IconLib.musicPlace} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("items:Title.other__musicPlace")}</span>
+                    <span><menuicon/> {t("items:other__musicPlace.title")}</span>
                 </header>
                 <content>
                     {x.string}
