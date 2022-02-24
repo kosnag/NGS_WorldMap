@@ -115,7 +115,7 @@ var popup_window_content_form_select = document.createElement("select")
                 subList = [
                     {"type":"gold","text":"Gold"},
                     {"type":"silver","text":"Silver"},
-                    {"type":"normal","text":"Standard"}
+                    {"type":"default","text":"Standard"}
                 ];
                 for (i=0;i<subList.length;i++){
                     e = document.createElement("option")
