@@ -1,8 +1,8 @@
 {
     "pettasVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Subdue the Overseer-type DOLL",
+        "description": "Powerful space-time fluctuations have been on the Alto Lani Plateau in Northern Aelio. Based on Past data, the Pedas Vera is expected to appear. All ARKS, head for the area & eliminate this threat.",
+        "clearCondition": "Defeat the target enemy"
     },
     "nexVera": {
         "title": "",
@@ -15,14 +15,14 @@
         "clearCondition": ""
     },
     "darkFalzInterception": {
-        "title": "",
+        "title": "Dark Falz Interception Battle",
         "description": "",
-        "clearCondition": ""
+        "clearCondition": "Defeat the target enemy"
     },
     "dustylVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Snidael Vera Subjugation",
+        "description": "Powerful space-time fluctuations have bæn at Morava Canyon in Northern Retem. Based on past data, the Snidael Vera is expected to appear. All ARKS, head for the area & eliminate this threat.",
+        "clearCondition": "Defeat the target enemy"
     },
     "renusVera": {
         "title": "",

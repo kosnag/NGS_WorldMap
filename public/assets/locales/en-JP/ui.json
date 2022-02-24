@@ -73,7 +73,7 @@
         "rewards": {
             "possible": "Possible Rewards",
             "guaranteed": "Rewards",
-            "firstTime": "First Clear Reward"
+            "firstTime": "First Clear Rewards"
         },
         "enemyTypes": {
             "dread": "Battle-Hardened",

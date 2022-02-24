@@ -12,15 +12,15 @@
         "description": "This Trainia tests the combat skills of each ARKS. Use your combat skills to take out the Enhanced Pedas Sword.",
         "clearCondition": "Defeat: Pedas Sword",
         "subMission1": "Clear in under 0:55",
-        "subMission2": "Clear in under 5 deaths",
-        "subMission3": "Clear while taking damage fewer than 10 times"
+        "subMission2": "Clear in under 5 incapacitation(s)",
+        "subMission3": "Clear while taking damage fewer than 10 time(s)"
     },
     "swiftJump": {
         "title": "Swift Jump",
         "description": "This Trainia tests the jumping abilities of every ARKS. Use \"Jump\" & \"Double Jump\" to reach the target goal.",
         "clearCondition": "Reach the Finish Point",
         "subMission1": "Clear in under 1:25",
-        "subMission2": "Clear while falling fewer than 5 times",
+        "subMission2": "Clear while falling fewer than 5 time(s)",
         "subMission3": "Clear while using no more than 5 Glide(s)"
     },
     "wildRush": {
@@ -28,32 +28,32 @@
         "description": "This Trainia tests the combat skills of each ARKS. Use your combat skills to take out every enemy.",
         "clearCondition": "Defeat 42 Enemies",
         "subMission1": "Clear in under 1:45",
-        "subMission2": "Clear in under 5 deaths",
-        "subMission3": "Clear after obtaining 5 Point Cubes"
+        "subMission2": "Clear in under 5 incapacitation(s)",
+        "subMission3": "Clear after obtaining 5 Point Cube(s)"
     },
     "testFlight": {
         "title": "Test Flight",
         "description": "This Trainia tests the flight skills of each ARKS. Use the \"Photon Glide\" to reach the target point.",
         "clearCondition": "Reach the Finish Point",
         "subMission1": "Clear in under 1:15",
-        "subMission2": "Clear while falling fewer than 5 times",
-        "subMission3": "Clear after obtaining 5 Point Cubes"
+        "subMission2": "Clear while falling fewer than 5 time(s)",
+        "subMission3": "Clear after obtaining 5 Point Cube(s)"
     },
     "roaringRush": {
         "title": "Rolling Rush",
         "description": "This Trainia tests the combat skills of each ARKS. Use your skills to defeat the \"Gororox\".",
-        "clearCondition": "Reach the Finish Point",
+        "clearCondition": "Defeat All Enemies",
         "subMission1": "Clear in under 6:30",
-        "subMission2": "Clear in under 2 deaths",
-        "subMission3": "Clear while taking damage fewer than 15 times"
+        "subMission2": "Clear in under 2 incapacitation(s)",
+        "subMission3": "Clear while taking damage fewer than 15 time(s)"
     },
     "fleetingFight": {
         "title": "Setsuna no Issen",
         "description": "This Trainia tests the combat skills of each ARKS. Use your skills to defeat the \"Bujin\".",
-        "clearCondition": "Reach the Finish Point",
+        "clearCondition": "Defeat: Bujin",
         "subMission1": "Clear in under 5:00",
-        "subMission2": "Clear in under 5 deaths",
-        "subMission3": "Clear while taking damage fewer than 20 times"
+        "subMission2": "Clear in under 5 incapacitation(s)",
+        "subMission3": "Clear while taking damage fewer than 20 time(s)"
     },
     "runway": {
         "title": "Lone Way",
@@ -69,14 +69,14 @@
         "clearCondition": "Defeat: Fortes Laser",
         "subMission1": "Clear in under 8:00",
         "subMission2": "Clear after obtain 5 Point Cube(s)",
-        "subMission3": "Clear while falling fewer than 3 (s)"
+        "subMission3": "Clear while falling fewer than 3 time(s)"
     },
     "narrowCage": {
         "title": "Narrow Cage",
         "description": "",
         "clearCondition": "Defeat All Enemies",
         "subMission1": "Clear while taking damage fewer than 20 time(s)",
-        "subMission2": "Clear in under 3 deaths(s)",
+        "subMission2": "Clear in under 3 incapacitation(s)",
         "subMission3": "Clear in under 6:00"
     },
     "buddyAttack": {
@@ -84,7 +84,7 @@
         "description": "",
         "clearCondition": "Defeat All Enemies",
         "subMission1": "",
-        "subMission2": "Clear in under 3 deaths(s)",
+        "subMission2": "Clear in under 3 incapacitation(s)",
         "subMission3": "Clear while taking damage fewer than 20 time(s)"
     },
     "dynaAssault": {
@@ -92,7 +92,7 @@
         "description": "",
         "clearCondition": "Defeat: Lysentos",
         "subMission1": "Clear in under 2:35",
-        "subMission2": "Clear in under 5 deaths(s)",
+        "subMission2": "Clear in under 5 incapacitation(s)",
         "subMission3": "Clear while taking damage fewer than 10 time(s)"
     },
     "parkourMaster": {
