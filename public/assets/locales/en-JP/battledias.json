@@ -1,16 +1,22 @@
 {
-    "clearCondition": "Defeat the target enemy",
-    "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies.",
     "aelioTroopers": {
-        "title": "Aelio Troopers"
+        "title": "Aelio Troopers",
+        "clearCondition": "Defeat the target enemy",
+        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
     },
     "aelioDevastators": {
-        "title": "Aelio Devastators"
+        "title": "Aelio Devastators",
+        "clearCondition": "Defeat the target enemy",
+        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
     },
     "retemTroopers": {
-        "title": "Retem Troopers"
+        "title": "Retem Troopers",
+        "clearCondition": "Defeat the target enemy",
+        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
     },
     "retemDevastators": {
-        "title": "Retem Devastators"
+        "title": "Retem Devastators",
+        "clearCondition": "Defeat the target enemy",
+        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
     }
 }

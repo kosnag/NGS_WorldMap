@@ -1,16 +1,22 @@
 {
-    "clearCondition": "",
-    "description": "",
     "aelioTroopers": {
-        "title": ""
+        "title": "エアリオトルーパーズ ",
+        "clearCondition": "対象エネミーの撃破",
+        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使してすべてのエネミーを撃破せよ。"
     },
     "aelioDevastators": {
-        "title": ""
+        "title": "エアリオデバステーターズ",
+        "clearCondition": "対象エネミーの撃破",
+        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使して、次々と現れるギガンティクスを撃破せよ。"
     },
     "retemTroopers": {
-        "title": ""
+        "title": "リテムトルーパーズ ",
+        "clearCondition": "対象エネミーの撃破",
+        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使してすべてのエネミーを撃破せよ。"
     },
     "retemDevastators": {
-        "title": ""
+        "title": "リテムデバステーターズ",
+        "clearCondition": "対象エネミーの撃破",
+        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使して、次々と現れるギガンティクスを撃破せよ。"
     }
 }

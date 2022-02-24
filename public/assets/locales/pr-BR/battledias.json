@@ -1,16 +1,22 @@
 {
-    "clearCondition": "",
-    "description": "",
     "aelioTroopers": {
-        "title": ""
+        "title": "",
+        "clearCondition": "",
+        "description": ""
     },
     "aelioDevastators": {
-        "title": ""
+        "title": "",
+        "clearCondition": "",
+        "description": ""
     },
     "retemTroopers": {
-        "title": ""
+        "title": "",
+        "clearCondition": "",
+        "description": ""
     },
     "retemDevastators": {
-        "title": ""
+        "title": "",
+        "clearCondition": "",
+        "description": ""
     }
 }

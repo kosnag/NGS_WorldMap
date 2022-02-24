@@ -1,16 +1,22 @@
 {
-    "clearCondition": "Defeat the enemies",
-    "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies.\nSome boosts will be disabled during this quest.",
     "aelioTroopers": {
-        "title": "Aelio Troopers"
+        "title": "Aelio Troopers",
+        "clearCondition": "Defeat the enemies",
+        "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
     },
     "aelioDevastators": {
-        "title": "Aelio Devastators"
+        "title": "Aelio Devastators",
+        "clearCondition": "Defeat the enemies",
+        "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
     },
     "retemTroopers": {
-        "title": "Retem Troopers"
+        "title": "Retem Troopers",
+        "clearCondition": "Defeat the enemies",
+        "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
     },
     "retemDevastators": {
-        "title": "Retem Devastators"
+        "title": "Retem Devastators",
+        "clearCondition": "Defeat the enemies",
+        "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
     }
 }
