@@ -96,13 +96,13 @@
 
         "container__gold": "Contains valuable items like minerals or Alpha Reactors",
         "container__green": "Contains grinders",
-        "container__red": "Contains very valuable items like Meseta, Star Gems, Units and etc. Can'be breaked only once for account.",
+        "container__red": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account.",
 
         "other__alphaReactor": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day.",
         "other__datapod": "Datapods contains a some messages by residents of Halpha",
         "other__stellarSeed": "Can be converted to 2000 N-Meseta. \n10 Stellar Fragments will spawn in West Retem every day.",
         "other__veteran": "Dread Enemies, better known as Veterans, are stronger high level versions of bosses that will only spawn in specific areas.",
         "other__stellarGrace": "Stellar Graces are part of World Trial. The objective of the World Trial is to gather all the pyramidal containers known as Stellar Graces hidden in each exploration sector.",
-        "other__musicPlace": "Places where playing OST from the old games of the franchise Phantasy Star"
+        "other__musicPlace": "Places that play music from older games of the Phantasy Star franchise."
     }
 }
