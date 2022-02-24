@@ -99,10 +99,10 @@ export default function MenuSettings(){
                 {t("ui:OptionsMenu.Items.about.author")}: kosnag
                 <br/><br/>
                 {t("ui:OptionsMenu.Items.about.contributers")}:<br/>
-                • Sinitsa - {t("ui:OptionsMenu.Items.about.contributersList.sinitsa")}<br/>
-                • focuslite - {t("ui:OptionsMenu.Items.about.contributersList.focuslite")}<br/>
-                • MoonCat - {t("ui:OptionsMenu.Items.about.contributersList.mooncat")}<br/>
-                • SVGVsevolod - {t("ui:OptionsMenu.Items.about.contributersList.svgvsevolod")}
+                • Sinitsa - RU translate<br/>
+                • focuslite - KR translate<br/>
+                • MoonCat - PT translate<br/>
+                • SVGVsevolod - Backend
                 <br/><br/><br/>
                 {t("ui:OptionsMenu.Items.about.segaCopyright")}
               </p>
