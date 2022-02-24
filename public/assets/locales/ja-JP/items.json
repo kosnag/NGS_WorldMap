@@ -1,108 +1,194 @@
 {
-    "Title": {
-        "landmark__battledia": "",
-        "landmark__cocoon": "",
-        "landmark__mag": "",
-        "landmark__ryuker": "",
-        "landmark__tower": "",
-        "landmark__urgent": "",
-
-        "mineral__dualomite": "",
-        "mineral__monotite": "",
-        "mineral__photonChunk": "",
-        "mineral__photonQuartz": "",
-        "mineral__photonScale": "",
-        "mineral__tetracite": "",
-        "mineral__trinite": "",
-
-        "food__aelio_apple": "",
-        "food__aelio_banana": "",
-        "food__aelio_clam": "",
-        "food__aelio_crab": "",
-        "food__aelio_herb": "",
-        "food__aelio_lobster": "",
-        "food__aelio_mushroom": "",
-        "food__aelio_peach": "",
-        "food__aelio_pear": "",
-        "food__aelio_tomato": "",
-        "food__aelio_turbanShell": "",
-        "food__aelio_turnip": "",
-        "food__retem_cauliflower": "",
-        "food__retem_cherries": "",
-        "food__retem_cranberries": "",
-        "food__retem_eggplant": "",
-        "food__retem_carambola": "",
-        "food__retem_hermitCrab": "",
-        "food__retem_mango": "",
-        "food__retem_mushroom": "",
-        "food__retem_scallop": "",
-        "food__retem_seaSlug": "",
-        "food__retem_strawberry": "",
-        "food__retem_urchin": "",
-
-        "container__gold": "",
-        "container__green": "",
-        "container__red": "",
-
-        "other__alphaReactor": "",
-        "other__datapod": "",
-        "other__stellarSeed": "",
-        "other__veteran": "",
-        "other__stellarGrace": "",
-        "other__musicPlace": "",
-
-        "nothing": "Select item"
+    "landmark__battledia": {
+        "title": "バトルディア",
+        "desctiption": ""
     },
-    "ShortInfo": {
-        "landmark__battledia": "",
-        "landmark__cocoon": "",
-        "landmark__mag": "",
-        "landmark__ryuker": "",
-        "landmark__tower": "",
-        "landmark__urgent": "",
+    "landmark__cocoon": {
+        "title": "コクーン",
+        "desctiption": ""
+    },
+    "landmark__mag": {
+        "title": "リージョンマグ",
+        "desctiption": ""
+    },
+    "landmark__ryuker": {
+        "title": "リューカーデバイス",
+        "desctiption": ""
+    },
+    "landmark__tower": {
+        "title": "タワー",
+        "desctiption": ""
+    },
+    "landmark__urgent": {
+        "title": "緊急クエスト",
+        "desctiption": ""
+    },
 
-        "mineral__dualomite": "",
-        "mineral__monotite": "",
-        "mineral__photonChunk": "",
-        "mineral__photonQuartz": "",
-        "mineral__photonScale": "",
-        "mineral__tetracite": "",
-        "mineral__trinite": "",
+    "mineral__dualomite": {
+        "title": "デュアロマイト",
+        "desctiption": ""
+    },
+    "mineral__monotite": {
+        "title": "モノタイト",
+        "desctiption": ""
+    },
+    "mineral__photonChunk": {
+        "title": "フォトンチャンク",
+        "desctiption": ""
+    },
+    "mineral__photonQuartz": {
+        "title": "フォトンクォーツ",
+        "desctiption": ""
+    },
+    "mineral__photonScale": {
+        "title": "フォトンスケイル",
+        "desctiption": ""
+    },
+    "mineral__tetracite": {
+        "title": "テドラサイト",
+        "desctiption": ""
+    },
+    "mineral__trinite": {
+        "title": "トライナイト",
+        "desctiption": ""
+    },
 
-        "food__aelio_apple": "",
-        "food__aelio_banana": "",
-        "food__aelio_clam": "",
-        "food__aelio_crab": "",
-        "food__aelio_herb": "",
-        "food__aelio_lobster": "",
-        "food__aelio_mushroom": "",
-        "food__aelio_peach": "",
-        "food__aelio_pear": "",
-        "food__aelio_tomato": "",
-        "food__aelio_turbanShell": "",
-        "food__aelio_turnip": "",
-        "food__retem_cauliflower": "",
-        "food__retem_cherries": "",
-        "food__retem_cranberries": "",
-        "food__retem_eggplant": "",
-        "food__retem_carambola": "",
-        "food__retem_hermitCrab": "",
-        "food__retem_mango": "",
-        "food__retem_mushroom": "",
-        "food__retem_scallop": "",
-        "food__retem_seaSlug": "",
-        "food__retem_strawberry": "",
-        "food__retem_urchin": "",
+    "food__aelio_apple": {
+        "title": "マッタ・エアルアッポウ",
+        "desctiption": "PP増加 / PP消費量軽減"
+    },
+    "food__aelio_banana": {
+        "title": "ガッツ・エアルバナン",
+        "desctiption": "PP増加 / HP回復量増加"
+    },
+    "food__aelio_clam": {
+        "title": "マッタ・エアルアザーリ",
+        "desctiption": "HP増加 / PP消費量軽減"
+    },
+    "food__aelio_crab": {
+        "title": "シャッキ・エアルクラーブ",
+        "desctiption": "HP増加 / 弱点部位ダメージ増加"
+    },
+    "food__aelio_herb": {
+        "title": "マッタ・エアルハーヴ",
+        "desctiption": "ダメージ耐性 / PP消費量軽減"
+    },
+    "food__aelio_lobster": {
+        "title": "ガッツ・エアルローブス",
+        "desctiption": "HP増加 / HP回復量増加"
+    },
+    "food__aelio_mushroom": {
+        "title": "サッパ・エアルマシュル",
+        "desctiption": "ダメージ耐性 / PP回復量増加"
+    },
+    "food__aelio_peach": {
+        "title": "サッパ・エアルピッチ",
+        "desctiption": "PP増加 / PP回復量増加"
+    },
+    "food__aelio_pear": {
+        "title": "シャッキ・エアルナッシィ",
+        "desctiption": "PP増加 / 弱点部位ダメージ増加"
+    },
+    "food__aelio_tomato": {
+        "title": "シャッキ・エアルトマーテ",
+        "desctiption": "ダメージ耐性 / 弱点部位ダメージ増加"
+    },
+    "food__aelio_turbanShell": {
+        "title": "サッパ・エアルサザイエ",
+        "desctiption": "HP増加 / PP回復量増加"
+    },
+    "food__aelio_turnip": {
+        "title": "ガッツ・エアルカブラナ",
+        "desctiption": "ダメージ耐性 / HP回復量増加"
+    },
+    "food__retem_cauliflower": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_cherries": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_cranberries": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_eggplant": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_carambola": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_hermitCrab": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_mango": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_mushroom": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_scallop": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_seaSlug": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_strawberry": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_urchin": {
+        "title": "",
+        "desctiption": ""
+    },
 
-        "container__gold": "",
-        "container__green": "",
-        "container__red": "",
+    "container__gold": {
+        "title": "アイテムコンテナ[金]",
+        "desctiption": ""
+    },
+    "container__green": {
+        "title": "アイテムコンテナ[緑]",
+        "desctiption": ""
+    },
+    "container__red": {
+        "title": "アイテムコンテナ[赤]",
+        "desctiption": ""
+    },
 
-        "other__alphaReactor": "",
-        "other__datapod": "",
-        "other__stellarSeed": "",
-        "other__veteran": "",
-        "other__stellarGrace": "",
-        "other__musicPlace": ""
+    "other__alphaReactor": {
+        "title": "アルファリアクター",
+        "desctiption": ""
+    },
+    "other__datapod": {
+        "title": "メッセージパック",
+        "desctiption": ""
+    },
+    "other__stellarSeed": {
+        "title": "ステラーシード",
+        "desctiption": ""
+    },
+    "other__veteran": {
+        "title": "老練の",
+        "desctiption": ""
+    },
+    "other__stellarGrace": {
+        "title": "",
+        "desctiption": ""
+    },
+    "other__musicPlace": {
+        "title": "",
+        "desctiption": ""
+    },
+    "nothing": {
+        "title": "Select item",
+        "desctiption": ""
     }
 }

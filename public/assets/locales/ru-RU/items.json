@@ -1,108 +1,195 @@
 {
-    "Title": {
-        "landmark__battledia": "Батлдиа",
-        "landmark__cocoon": "Кокон",
-        "landmark__mag": "Mag региона",
-        "landmark__ryuker": "Устройство Рюкера",
-        "landmark__tower": "Башня",
-        "landmark__urgent": "Срочный квест",
-
-        "mineral__dualomite": "Дуаломайт",
-        "mineral__monotite": "Монотайт",
-        "mineral__photonChunk": "Фрагмент фотона",
-        "mineral__photonQuartz": "Фотонный кварц",
-        "mineral__photonScale": "",
-        "mineral__tetracite": "",
-        "mineral__trinite": "Торанинайт",
-
-        "food__aelio_apple": "Матта яблоко Эарио",
-        "food__aelio_banana": "Гатцу банан Эарио",
-        "food__aelio_clam": "Матта моллюск Эарио",
-        "food__aelio_crab": "Шакки краб Эарио",
-        "food__aelio_herb": "Матта трава Эарио",
-        "food__aelio_lobster": "Гатцу лобстер Эарио",
-        "food__aelio_mushroom": "Саппа гриб Эарио",
-        "food__aelio_peach": "Саппа персик Эарио",
-        "food__aelio_pear": "Шакки груша Эарио",
-        "food__aelio_tomato": "Шакки томат Эарио",
-        "food__aelio_turbanShell": "Саппа тюрбан ракушка Эарио",
-        "food__aelio_turnip": "Гатцу кабурана Эарио",
-        "food__retem_cauliflower": "",
-        "food__retem_cherries": "",
-        "food__retem_cranberries": "",
-        "food__retem_eggplant": "",
-        "food__retem_carambola": "",
-        "food__retem_hermitCrab": "",
-        "food__retem_mango": "",
-        "food__retem_mushroom": "",
-        "food__retem_scallop": "",
-        "food__retem_seaSlug": "",
-        "food__retem_strawberry": "",
-        "food__retem_urchin": "",
-
-        "container__gold": "Контейнер с предметами [Золотой]",
-        "container__green": "Контейнер с предметами [Зелёный]",
-        "container__red": "Контейнер с предметами [Красный]",
-
-        "other__alphaReactor": "Альфа Реактор",
-        "other__dataPod": "Сообщение",
-        "other__stellarSeed": "",
-        "other__veteran": "Ветеран",
-        "other__stellarGrace": "",
-        "other__musicPlace": "",
-
-        "nothing": "Выберите..."
+    "landmark__battledia": {
+        "title": "Батлдиа",
+        "desctiption": ""
     },
-    "ShortInfo": {
-        "landmark__battledia": "",
-        "landmark__cocoon": "",
-        "landmark__mag": "",
-        "landmark__ryuker": "",
-        "landmark__tower": "",
-        "landmark__urgent": "",
+    "landmark__cocoon": {
+        "title": "Кокон",
+        "desctiption": ""
+    },
+    "landmark__mag": {
+        "title": "Mag региона",
+        "desctiption": ""
+    },
+    "landmark__ryuker": {
+        "title": "Устройство Рюкера",
+        "desctiption": ""
+    },
+    "landmark__tower": {
+        "title": "Башня",
+        "desctiption": ""
+    },
+    "landmark__urgent": {
+        "title": "Срочный квест",
+        "desctiption": ""
+    },
 
-        "mineral__dualomite": "",
-        "mineral__monotite": "",
-        "mineral__photonChunk": "",
-        "mineral__photonQuartz": "",
-        "mineral__photonScale": "",
-        "mineral__tetracite": "",
-        "mineral__trinite": "",
+    "mineral__dualomite": {
+        "title": "Дуаломайт",
+        "desctiption": ""
+    },
+    "mineral__monotite": {
+        "title": "Монотайт",
+        "desctiption": ""
+    },
+    "mineral__photonChunk": {
+        "title": "Фрагмент фотона",
+        "desctiption": ""
+    },
+    "mineral__photonQuartz": {
+        "title": "Фотонный кварц",
+        "desctiption": ""
+    },
+    "mineral__photonScale": {
+        "title": "",
+        "desctiption": ""
+    },
+    "mineral__tetracite": {
+        "title": "",
+        "desctiption": ""
+    },
+    "mineral__trinite": {
+        "title": "Торанинайт",
+        "desctiption": ""
+    },
 
-        "food__aelio_apple": "Увеличивает PP / Снижает расход PP",
-        "food__aelio_banana": "Увеличивает РР / Увеличивает восстановление HP",
-        "food__aelio_clam": "Увеличивает HP / Снижает расход PP",
-        "food__aelio_crab": "Увеличивает HP / Увеличивает урон по слабым точкам",
-        "food__aelio_herb": "Увеличивает сопротивление урону / Снижает расход PP",
-        "food__aelio_lobster": "Увеличивает HP / Увеличивает восстановление HP",
-        "food__aelio_mushroom": "Увеличивает сопротивление урону / Увеличивает восстановление PP",
-        "food__aelio_peach": "Увеличивает PP / Увеличивает объём восстанавливаемого PP",
-        "food__aelio_pear": "Увеличивает PP / Увеличивает урон по слабым точкам",
-        "food__aelio_tomato": "Увеличивает сопротивление урону / Увеличивает урон по слабым точкам",
-        "food__aelio_turbanShell": "Увеличивает HP / Увеличивает восстановление PP",
-        "food__aelio_turnip": "Увеличивает сопротивление урону / Увеличивает восстановление HP",
-        "food__retem_cauliflower": "",
-        "food__retem_cherries": "",
-        "food__retem_cranberries": "",
-        "food__retem_eggplant": "",
-        "food__retem_carambola": "",
-        "food__retem_hermitCrab": "",
-        "food__retem_mango": "",
-        "food__retem_mushroom": "",
-        "food__retem_scallop": "",
-        "food__retem_seaSlug": "",
-        "food__retem_strawberry": "",
-        "food__retem_urchin": "",
+    "food__aelio_apple": {
+        "title": "Матта яблоко Эарио",
+        "desctiption": "Увеличивает PP / Снижает расход PP"
+    },
+    "food__aelio_banana": {
+        "title": "Гатцу банан Эарио",
+        "desctiption": "Увеличивает РР / Увеличивает восстановление HP"
+    },
+    "food__aelio_clam": {
+        "title": "Матта моллюск Эарио",
+        "desctiption": "Увеличивает HP / Снижает расход PP"
+    },
+    "food__aelio_crab": {
+        "title": "Шакки краб Эарио",
+        "desctiption": "Увеличивает HP / Увеличивает урон по слабым точкам"
+    },
+    "food__aelio_herb": {
+        "title": "Матта трава Эарио",
+        "desctiption": "Увеличивает сопротивление урону / Снижает расход PP"
+    },
+    "food__aelio_lobster": {
+        "title": "Гатцу лобстер Эарио",
+        "desctiption": "Увеличивает HP / Увеличивает восстановление HP"
+    },
+    "food__aelio_mushroom": {
+        "title": "Саппа гриб Эарио",
+        "desctiption": "Увеличивает сопротивление урону / Увеличивает восстановление PP"
+    },
+    "food__aelio_peach": {
+        "title": "Саппа персик Эарио",
+        "desctiption": "Увеличивает PP / Увеличивает объём восстанавливаемого PP"
+    },
+    "food__aelio_pear": {
+        "title": "Шакки груша Эарио",
+        "desctiption": "Увеличивает PP / Увеличивает урон по слабым точкам"
+    },
+    "food__aelio_tomato": {
+        "title": "Шакки томат Эарио",
+        "desctiption": "Увеличивает сопротивление урону / Увеличивает урон по слабым точкам"
+    },
+    "food__aelio_turbanShell": {
+        "title": "Саппа тюрбан ракушка Эарио",
+        "desctiption": "Увеличивает HP / Увеличивает восстановление PP"
+    },
+    "food__aelio_turnip": {
+        "title": "Гатцу кабурана Эарио",
+        "desctiption": "Увеличивает сопротивление урону / Увеличивает восстановление HP"
+    },
+    "food__retem_cauliflower": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_cherries": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_cranberries": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_eggplant": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_carambola": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_hermitCrab": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_mango": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_mushroom": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_scallop": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_seaSlug": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_strawberry": {
+        "title": "",
+        "desctiption": ""
+    },
+    "food__retem_urchin": {
+        "title": "",
+        "desctiption": ""
+    },
 
-        "container__gold": "",
-        "container__green": "",
-        "container__red": "",
+    "container__gold": {
+        "title": "Контейнер с предметами [Золотой]",
+        "desctiption": ""
+    },
+    "container__green": {
+        "title": "Контейнер с предметами [Зелёный]",
+        "desctiption": ""
+    },
+    "container__red": {
+        "title": "Контейнер с предметами [Красный]",
+        "desctiption": ""
+    },
 
-        "other__alphaReactor": "",
-        "other__datapod": "",
-        "other__stellarSeed": "",
-        "other__veteran": "",
-        "other__stellarGrace": "",
-        "other__musicPlace": ""
+    "other__alphaReactor": {
+        "title": "Альфа Реактор",
+        "desctiption": ""
+    },
+    "other__datapod": {
+        "title": "Сообщение",
+        "desctiption": ""
+    },
+    "other__stellarSeed": {
+        "title": "",
+        "desctiption": ""
+    },
+    "other__veteran": {
+        "title": "Ветеран",
+        "desctiption": ""
+    },
+    "other__stellarGrace": {
+        "title": "",
+        "desctiption": ""
+    },
+    "other__musicPlace": {
+        "title": "",
+        "desctiption": ""
+    },
+
+    "nothing": {
+        "title": "Выберите...",
+        "desctiption": ""
     }
 }
