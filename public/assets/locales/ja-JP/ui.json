@@ -1,5 +1,5 @@
 {
-    "page_title": "",
+    "page_title": "PSO2NGS インタラクティブ マップ",
     "NavBar": {
         "support": "",
         "alphaReactor": "",
@@ -8,11 +8,11 @@
     },
     "LegendMenu": {
         "Categories": {
-            "landmarks": "",
-            "minerals": "",
-            "food": "",
-            "containers": "",
-            "other": ""
+            "landmarks": "ランドマーク",
+            "minerals": "鉱石",
+            "food": "フード",
+            "containers": "コンテナ",
+            "other": "その他"
         }
     },
     "OptionsMenu": {
@@ -62,23 +62,23 @@
             "default": ""
         },
         "type": "",
-        "rank": "",
-        "maxPlayers": "",
-        "requiredBP": "",
-        "recommendedBP": "",
-        "enemyLv": "",
-        "subMissions": "",
-        "clearCondition": "",
-        "description": "",
+        "rank": "RANK",
+        "maxPlayers": "人数",
+        "requiredBP": "必要戦闘力",
+        "recommendedBP": "推奨戦闘力",
+        "enemyLv": "出現エネミー",
+        "subMissions": "サイドミッション",
+        "clearCondition": "メインミッション",
+        "description": "説明",
         "placedBy": "",
         "rewards": {
             "possible": "",
-            "guaranteed": "",
-            "firstTime": ""
+            "guaranteed": "報酬",
+            "firstTime": "初回クリア報酬"
         },
         "enemyTypes": {
-            "dread": "",
-            "gigantix": ""
+            "dread": "老練の",
+            "gigantix": "絶望の"
         }
     }
 }

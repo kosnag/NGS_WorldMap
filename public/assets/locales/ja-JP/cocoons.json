@@ -1,70 +1,70 @@
 {
     "firstStep": {
         "title": "ファーストステップ",
-        "description": "",
+        "description": "指示に従い、新たなアクションを習得しつつ、目標地点に到達せよ。",
         "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "subMission1": "5:00 未満でクリア",
+        "subMission2": "10:00 未満でクリア",
+        "subMission3": "ポイントキューブを10個取得してクリア"
     },
     "enchancedEnemy": {
         "title": "エンハカンスドエネミー",
-        "description": "",
+        "description": "戦闘技術を駆使して、強化された“ペダス・ソード”を撃破せよ。",
         "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "subMission1": "0:55 未満でクリア",
+        "subMission2": "戦闘不能回数5回未満でクリア",
+        "subMission3": "ダメージ回数10回未満でクリア"
     },
     "swiftJump": {
         "title": "エンハカンスドエネミー",
-        "description": "",
+        "description": "“ジャンプ”、“2段ジャンプ”を用いて、目標地点に到達せよ。",
         "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "subMission1": "1:25 未満でクリア",
+        "subMission2": "落下回数5回未満でクリア",
+        "subMission3": "グライドの使用5回未満でクリア"
     },
     "wildRush": {
         "title": "ワイルドラッシュ",
-        "description": "",
+        "description": "戦闘技術を駆使して、全てのエネミーを撃破せよ。",
         "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "subMission1": "1:45 未満でクリア",
+        "subMission2": "戦闘不能回数5回未満でクリア",
+        "subMission3": "ポイントキューブを5個取得してクリア"
     },
     "testFlight": {
-        "title": "",
-        "description": "",
+        "title": "テストフライト",
+        "description": "“フォトングライド”を用いて、目標地点に到達せよ。",
         "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "subMission1": "1:15 未満でクリア",
+        "subMission2": "落下回数5回未満でクリア",
+        "subMission3": "ポイントキューブを5個取得してクリア"
     },
     "roaringRush": {
-        "title": "",
-        "description": "",
+        "title": "ローリングラッシュ",
+        "description": "戦闘技術を駆使して、“ゴロロクス”を撃破せよ。",
         "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "subMission1": "6:30 未満でクリア",
+        "subMission2": "戦闘不能回数2回未満でクリア",
+        "subMission3": "ダメージ回数15回未満でクリア"
     },
     "fleetingFight": {
-        "title": "",
-        "description": "",
+        "title": "セツナノイッセン",
+        "description": "戦闘技術を駆使して、“ブジン”を撃破せよ。",
         "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "subMission1": "5:00 未満でクリア",
+        "subMission2": "戦闘不能回数5回未満でクリア",
+        "subMission3": "ダメージ回数20回未満でクリア"
     },
     "runway": {
-        "title": "",
-        "description": "",
+        "title": "ローンウェイ",
+        "description": "“フォトンダッシュ”を用いて、目標地点に到達せよ。",
         "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "subMission1": "1:55未満でクリア",
+        "subMission2": "2:35未満でクリア",
+        "subMission3": "ポイントキューブを5個取得してクリア"
     },
     "vanishingPath": {
-        "title": "",
+        "title": "バニシングウェイ",
         "description": "",
         "clearCondition": "",
         "subMission1": "",
@@ -80,7 +80,7 @@
         "subMission3": ""
     },
     "buddyAttack": {
-        "title": "",
+        "title": "バディアタック",
         "description": "",
         "clearCondition": "",
         "subMission1": "",
@@ -96,7 +96,7 @@
         "subMission3": ""
     },
     "parkourMaster": {
-        "title": "",
+        "title": "パルクールマスター",
         "description": "",
         "clearCondition": "",
         "subMission1": "",
