@@ -15,7 +15,7 @@ button:hover, button:active, button:focus, .leaflet-popup-close-button:hover, .l
     cursor: $cursor_inactive;
 }
 
-.leaflet-grab, .leaflet-dragging, .leaflet-grab {
+.leaflet-grab, .leaflet-dragging, .leaflet-grab, .leaflet-interactive {
     $cursormap: url('./cursors/default-map.png') 32 32, auto !important;
     cursor: $cursormap;
 }
