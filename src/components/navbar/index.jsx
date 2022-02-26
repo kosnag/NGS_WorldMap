@@ -5,15 +5,16 @@ import { useTranslation } from "react-i18next";
 
 import imageMapLegend from '../../assets/icons/mapLegend.png';
 import imageSettings from '../../assets/icons/settings.png';
+import imageDonate from '../../assets/icons/donation.png';
 
 export default function NavBar(){
   const {t} = useTranslation();
-  const imageAlphaReactor = "./assets/images/icons/other__alphaReactor.png"
+  const imageAlphaReactor = "./assets/images/icons/other/alphaReactor.png"
   return (
     <navbar>
       <buttons>
         <button onClick={() => Functions.menuShowHide("menu-support")}>
-          <img alt="" src={"https://storage.ko-fi.com/cdn/cup-border.png"}/>
+          <img alt="" src={imageDonate}/>
           <div>{t("ui:NavBar.support")}</div>
         </button>
         <button 
