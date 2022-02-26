@@ -46,7 +46,7 @@ AlphaReactor:()=>{
                     <span><menuicon/> {t("items:other.alphaReactor.title")}</span>
                 </header>
                 <content>
-                    {t("items:other.alphaReactor.desctiption")}
+                    {t("items:other.alphaReactor.description")}
                     <br/>
                     {t("ui:Map.placedBy")}: x.contributer
                     <id>ID: alphareactor{x.id}</id>
@@ -77,7 +77,7 @@ StellarFragment:()=>{
                     <span><menuicon/> {t("items:other.stellarSeed.title")}</span>
                 </header>
                 <content>
-                    {t("items:other.stellarSeed.desctiption")}
+                    {t("items:other.stellarSeed.description")}
                 </content>
             </tooltip-window></Tooltip>
         </Marker>
