@@ -26,13 +26,13 @@ Battledia:()=>{
                     <span><menuicon/> {t("battledias:"+x.id+".title")}</span>
                 </header>
                 <content>
-                    {t("items:landmark__battledia.title")}
+                    {t("items:landmark.battledia.title")}
                     <id>ID: {x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("items:landmark__battledia.title")}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("items:landmark.battledia.title")}</span><closebutton onClick={()=>close()}/>
                 </header>
                 <content>
                     <select onChange={handleSelectChange}>
@@ -126,13 +126,13 @@ Cocoon:()=>{
                     <span><menuicon/> {t("cocoons:"+x.id+".title")}</span>
                 </header>
                 <content>
-                    {t("items:landmark__cocoon.title")}
+                    {t("items:landmark.cocoon.title")}
                     <id>ID: {x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("items:landmark__cocoon.title")}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("items:landmark.cocoon.title")}</span><closebutton onClick={()=>close()}/>
                 </header>
                 <content>
                     <name>{t("cocoons:"+x.id+".title")}</name>
@@ -205,7 +205,7 @@ Mag:()=>{
                 <span><menuicon/> {t("mags:"+x.string)}</span>
             </header>
             <content>
-                {t("items:landmark__mag.title")}
+                {t("items:landmark.mag.title")}
                 <id>ID: {x.string}</id>
             </content>
             </tooltip-window></Tooltip>
@@ -228,7 +228,7 @@ Ryuker:()=>{
                     <span><menuicon/> {t("ryukers:"+x.string)}</span>
                 </header>
                 <content>
-                    {t("items:landmark__ryuker.title")}
+                    {t("items:landmark.ryuker.title")}
                     <id>ID: {x.string}</id>
                 </content>
             </tooltip-window></Tooltip>
@@ -253,13 +253,13 @@ Tower:()=>{
                     <span><menuicon/> {t("towers:"+x.id+".title")}</span>
                 </header>
                 <content>
-                    {t("items:landmark__tower.title")}
+                    {t("items:landmark.tower.title")}
                     <id>ID: {x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("items:landmark__tower.title")}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("items:landmark.tower.title")}</span><closebutton onClick={()=>close()}/>
                 </header>
                 <content>
                     <name>{t("towers:"+x.id+".title")}</name>
@@ -336,13 +336,13 @@ UQ:()=>{
                     <span><menuicon/> {t("urgents:"+x.id+".title")}</span>
                 </header>
                 <content>
-                    {t("items:landmark__urgent.title")}
+                    {t("items:landmark.urgent.title")}
                     <id>ID: {x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("items:landmark__urgent.title")}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("items:landmark.urgent.title")}</span><closebutton onClick={()=>close()}/>
                 </header>
                 <content>
                     <select onChange={handleSelectChange}>

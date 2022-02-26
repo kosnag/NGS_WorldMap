@@ -7,7 +7,7 @@
     "aelioDevastators": {
         "title": "Aelio Devastators",
         "clearCondition": "Defeat the target enemy",
-        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
+        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat the Gigantix that appear before you one by one."
     },
     "retemTroopers": {
         "title": "Retem Troopers",
@@ -17,6 +17,6 @@
     "retemDevastators": {
         "title": "Retem Devastators",
         "clearCondition": "Defeat the target enemy",
-        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
+        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat the Gigantix that appear before you one by one."
     }
 }

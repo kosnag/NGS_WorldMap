@@ -1,194 +1,139 @@
 {
-    "landmark__battledia": {
-        "title": "バトルディア",
-        "desctiption": ""
+    "landmark": {
+        "battledia": {
+            "title": "バトルディア",
+            "description": ""
+        },
+        "cocoon": {
+            "title": "コクーン",
+            "description": ""
+        },
+        "mag": {
+            "title": "リージョンマグ",
+            "description": ""
+        },
+        "ryuker": {
+            "title": "リューカーデバイス",
+            "description": ""
+        },
+        "tower": {
+            "title": "タワー",
+            "description": ""
+        },
+        "urgent": {
+            "title": "緊急クエスト",
+            "description": ""
+        }
     },
-    "landmark__cocoon": {
-        "title": "コクーン",
-        "desctiption": ""
+    "mineral": {
+        "dualomite": {
+            "title": "デュアロマイト",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
+        },
+        "monotite": {
+            "title": "モノタイト",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
+        },
+        "photonChunk": {
+            "title": "フォトンチャンク",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放などに用いる。"
+        },
+        "photonQuartz": {
+            "title": "フォトンクォーツ",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでのマルチウェポン化に用いる。"
+        },
+        "photonScale": {
+            "title": "フォトンスケイル",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでのカプセル交換などに用いる。"
+        },
+        "tetracite": {
+            "title": "テドラサイト",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放などに用いる。"
+        },
+        "trinite": {
+            "title": "トライナイト",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
+        }
     },
-    "landmark__mag": {
-        "title": "リージョンマグ",
-        "desctiption": ""
+    "food": {
+        "aelio_apple": "マッタ・エアルアッポウ",
+        "aelio_banana": "ガッツ・エアルバナン",
+        "aelio_clam": "マッタ・エアルアザーリ",
+        "aelio_crab": "シャッキ・エアルクラーブ",
+        "aelio_herb": "マッタ・エアルハーヴ",
+        "aelio_lobster": "ガッツ・エアルローブス",
+        "aelio_mushroom": "サッパ・エアルマシュル",
+        "aelio_peach": "サッパ・エアルピッチ",
+        "aelio_pear": "シャッキ・エアルナッシィ",
+        "aelio_tomato": "シャッキ・エアルトマーテ",
+        "aelio_turbanShell": "サッパ・エアルサザイエ",
+        "aelio_turnip": "ガッツ・エアルカブラナ",
+        "retem_cauliflower": "ガッツ・リテナキャリブラ",
+        "retem_cherries": "マッタ・リテナッチェリ",
+        "retem_cranberries": "サッパ・リテナクランべ",
+        "retem_eggplant": "マッタ・リテナマルナース",
+        "retem_carambola": "シャッキ・リテナスターツ",
+        "retem_hermitCrab": "ガッツ・リテナヤドガーリ",
+        "retem_mango": "サッパ・リテナマルゴー",
+        "retem_mushroom": "シャッキ・リテナマシュル",
+        "retem_scallop": "マッタ・リテナボタッテ",
+        "retem_seaSlug": "サッパ・リテナウミッシー",
+        "retem_strawberry": "ガッツ・リテナストロンベリ",
+        "retem_urchin": "シャッキ・リテナウーニィ",
+        
+        "description": {
+            "prefix": {
+                "rich": "PP消費量軽減",
+                "light": "PP回復量増加",
+                "crisp": "弱点部位ダメージ増加",
+                "robust": "HP回復量増加"
+            },
+            "type": {
+                "fruit": "最大PP増加",
+                "seafood": "最大HP増加",
+                "vegetable": "ダメージ耐性上昇"
+            }
+        }
     },
-    "landmark__ryuker": {
-        "title": "リューカーデバイス",
-        "desctiption": ""
+    "container": {
+        "gold": {
+            "title": "アイテムコンテナ[金]",
+            "description": ""
+        },
+        "green": {
+            "title": "アイテムコンテナ[緑]",
+            "description": ""
+        },
+        "red": {
+            "title": "アイテムコンテナ[赤]",
+            "description": ""
+        }
     },
-    "landmark__tower": {
-        "title": "タワー",
-        "desctiption": ""
+    "other": {
+        "alphaReactor": {
+            "title": "アルファリアクター",
+            "description": ""
+        },
+        "datapod": {
+            "title": "メッセージパック",
+            "description": ""
+        },
+        "stellarSeed": {
+            "title": "ステラーシード",
+            "description": ""
+        },
+        "veteran": {
+            "title": "老練の",
+            "description": ""
+        },
+        "stellarGrace": {
+            "title": "",
+            "description": ""
+        },
+        "musicPlace": {
+            "title": "",
+            "description": ""
+        }
     },
-    "landmark__urgent": {
-        "title": "緊急クエスト",
-        "desctiption": ""
-    },
-
-    "mineral__dualomite": {
-        "title": "デュアロマイト",
-        "desctiption": ""
-    },
-    "mineral__monotite": {
-        "title": "モノタイト",
-        "desctiption": ""
-    },
-    "mineral__photonChunk": {
-        "title": "フォトンチャンク",
-        "desctiption": ""
-    },
-    "mineral__photonQuartz": {
-        "title": "フォトンクォーツ",
-        "desctiption": ""
-    },
-    "mineral__photonScale": {
-        "title": "フォトンスケイル",
-        "desctiption": ""
-    },
-    "mineral__tetracite": {
-        "title": "テドラサイト",
-        "desctiption": ""
-    },
-    "mineral__trinite": {
-        "title": "トライナイト",
-        "desctiption": ""
-    },
-
-    "food__aelio_apple": {
-        "title": "マッタ・エアルアッポウ",
-        "desctiption": "PP増加 / PP消費量軽減"
-    },
-    "food__aelio_banana": {
-        "title": "ガッツ・エアルバナン",
-        "desctiption": "PP増加 / HP回復量増加"
-    },
-    "food__aelio_clam": {
-        "title": "マッタ・エアルアザーリ",
-        "desctiption": "HP増加 / PP消費量軽減"
-    },
-    "food__aelio_crab": {
-        "title": "シャッキ・エアルクラーブ",
-        "desctiption": "HP増加 / 弱点部位ダメージ増加"
-    },
-    "food__aelio_herb": {
-        "title": "マッタ・エアルハーヴ",
-        "desctiption": "ダメージ耐性 / PP消費量軽減"
-    },
-    "food__aelio_lobster": {
-        "title": "ガッツ・エアルローブス",
-        "desctiption": "HP増加 / HP回復量増加"
-    },
-    "food__aelio_mushroom": {
-        "title": "サッパ・エアルマシュル",
-        "desctiption": "ダメージ耐性 / PP回復量増加"
-    },
-    "food__aelio_peach": {
-        "title": "サッパ・エアルピッチ",
-        "desctiption": "PP増加 / PP回復量増加"
-    },
-    "food__aelio_pear": {
-        "title": "シャッキ・エアルナッシィ",
-        "desctiption": "PP増加 / 弱点部位ダメージ増加"
-    },
-    "food__aelio_tomato": {
-        "title": "シャッキ・エアルトマーテ",
-        "desctiption": "ダメージ耐性 / 弱点部位ダメージ増加"
-    },
-    "food__aelio_turbanShell": {
-        "title": "サッパ・エアルサザイエ",
-        "desctiption": "HP増加 / PP回復量増加"
-    },
-    "food__aelio_turnip": {
-        "title": "ガッツ・エアルカブラナ",
-        "desctiption": "ダメージ耐性 / HP回復量増加"
-    },
-    "food__retem_cauliflower": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_cherries": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_cranberries": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_eggplant": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_carambola": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_hermitCrab": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_mango": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_mushroom": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_scallop": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_seaSlug": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_strawberry": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_urchin": {
-        "title": "",
-        "desctiption": ""
-    },
-
-    "container__gold": {
-        "title": "アイテムコンテナ[金]",
-        "desctiption": ""
-    },
-    "container__green": {
-        "title": "アイテムコンテナ[緑]",
-        "desctiption": ""
-    },
-    "container__red": {
-        "title": "アイテムコンテナ[赤]",
-        "desctiption": ""
-    },
-
-    "other__alphaReactor": {
-        "title": "アルファリアクター",
-        "desctiption": ""
-    },
-    "other__datapod": {
-        "title": "メッセージパック",
-        "desctiption": ""
-    },
-    "other__stellarSeed": {
-        "title": "ステラーシード",
-        "desctiption": ""
-    },
-    "other__veteran": {
-        "title": "老練の",
-        "desctiption": ""
-    },
-    "other__stellarGrace": {
-        "title": "",
-        "desctiption": ""
-    },
-    "other__musicPlace": {
-        "title": "",
-        "desctiption": ""
-    },
-    "nothing": {
-        "title": "Select item",
-        "desctiption": ""
-    }
+    "nothing": "Select item"
 }

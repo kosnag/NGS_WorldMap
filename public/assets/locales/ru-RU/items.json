@@ -1,195 +1,139 @@
 {
-    "landmark__battledia": {
-        "title": "Батлдиа",
-        "desctiption": ""
+    "landmark": {
+        "battledia": {
+            "title": "Батлдиа",
+            "description": ""
+        },
+        "cocoon": {
+            "title": "Кокон",
+            "description": ""
+        },
+        "mag": {
+            "title": "Mag региона",
+            "description": ""
+        },
+        "ryuker": {
+            "title": "Устройство Рюкера",
+            "description": ""
+        },
+        "tower": {
+            "title": "Башня",
+            "description": ""
+        },
+        "urgent": {
+            "title": "Срочный квест",
+            "description": ""
+        }
     },
-    "landmark__cocoon": {
-        "title": "Кокон",
-        "desctiption": ""
+    "mineral": {
+        "dualomite": {
+            "title": "Дуаломайт",
+            "description": ""
+        },
+        "monotite": {
+            "title": "Монотайт",
+            "description": ""
+        },
+        "photonChunk": {
+            "title": "Фрагмент фотона",
+            "description": ""
+        },
+        "photonQuartz": {
+            "title": "Фотонный кварц",
+            "description": ""
+        },
+        "photonScale": {
+            "title": "",
+            "description": ""
+        },
+        "tetracite": {
+            "title": "",
+            "description": ""
+        },
+        "trinite": {
+            "title": "Торанинайт",
+            "description": ""
+        }
     },
-    "landmark__mag": {
-        "title": "Mag региона",
-        "desctiption": ""
+    "food": {
+        "aelio_apple": "Матта яблоко Эарио",
+        "aelio_banana": "Гатцу банан Эарио",
+        "aelio_clam": "Матта моллюск Эарио",
+        "aelio_crab": "Шакки краб Эарио",
+        "aelio_herb": "Матта трава Эарио",
+        "aelio_lobster": "Гатцу лобстер Эарио",
+        "aelio_mushroom": "Саппа гриб Эарио",
+        "aelio_peach": "Саппа персик Эарио",
+        "aelio_pear": "Шакки груша Эарио",
+        "aelio_tomato": "Шакки томат Эарио",
+        "aelio_turbanShell": "Саппа тюрбан ракушка Эарио",
+        "aelio_turnip": "Гатцу кабурана Эарио",
+        "retem_cauliflower": "",
+        "retem_cherries": "",
+        "retem_cranberries": "",
+        "retem_eggplant": "",
+        "retem_carambola": "",
+        "retem_hermitCrab": "",
+        "retem_mango": "",
+        "retem_mushroom": "",
+        "retem_scallop": "",
+        "retem_seaSlug": "",
+        "retem_strawberry": "",
+        "retem_urchin": "",
+        
+        "description": {
+            "prefix": {
+                "rich": "",
+                "light": "",
+                "crisp": "",
+                "robust": ""
+            },
+            "type": {
+                "fruit": "",
+                "seafood": "",
+                "vegetable": ""
+            }
+        }
     },
-    "landmark__ryuker": {
-        "title": "Устройство Рюкера",
-        "desctiption": ""
+    "container": {
+        "gold": {
+            "title": "Контейнер с предметами [Золотой]",
+            "description": ""
+        },
+        "green": {
+            "title": "Контейнер с предметами [Зелёный]",
+            "description": ""
+        },
+        "red": {
+            "title": "Контейнер с предметами [Красный]",
+            "description": ""
+        }
     },
-    "landmark__tower": {
-        "title": "Башня",
-        "desctiption": ""
+    "other": {
+        "alphaReactor": {
+            "title": "Альфа Реактор",
+            "description": ""
+        },
+        "datapod": {
+            "title": "Сообщение",
+            "description": ""
+        },
+        "stellarSeed": {
+            "title": "",
+            "description": ""
+        },
+        "veteran": {
+            "title": "Ветеран",
+            "description": ""
+        },
+        "stellarGrace": {
+            "title": "",
+            "description": ""
+        },
+        "musicPlace": {
+            "title": "",
+            "description": ""
+        }
     },
-    "landmark__urgent": {
-        "title": "Срочный квест",
-        "desctiption": ""
-    },
-
-    "mineral__dualomite": {
-        "title": "Дуаломайт",
-        "desctiption": ""
-    },
-    "mineral__monotite": {
-        "title": "Монотайт",
-        "desctiption": ""
-    },
-    "mineral__photonChunk": {
-        "title": "Фрагмент фотона",
-        "desctiption": ""
-    },
-    "mineral__photonQuartz": {
-        "title": "Фотонный кварц",
-        "desctiption": ""
-    },
-    "mineral__photonScale": {
-        "title": "",
-        "desctiption": ""
-    },
-    "mineral__tetracite": {
-        "title": "",
-        "desctiption": ""
-    },
-    "mineral__trinite": {
-        "title": "Торанинайт",
-        "desctiption": ""
-    },
-
-    "food__aelio_apple": {
-        "title": "Матта яблоко Эарио",
-        "desctiption": "Увеличивает PP / Снижает расход PP"
-    },
-    "food__aelio_banana": {
-        "title": "Гатцу банан Эарио",
-        "desctiption": "Увеличивает РР / Увеличивает восстановление HP"
-    },
-    "food__aelio_clam": {
-        "title": "Матта моллюск Эарио",
-        "desctiption": "Увеличивает HP / Снижает расход PP"
-    },
-    "food__aelio_crab": {
-        "title": "Шакки краб Эарио",
-        "desctiption": "Увеличивает HP / Увеличивает урон по слабым точкам"
-    },
-    "food__aelio_herb": {
-        "title": "Матта трава Эарио",
-        "desctiption": "Увеличивает сопротивление урону / Снижает расход PP"
-    },
-    "food__aelio_lobster": {
-        "title": "Гатцу лобстер Эарио",
-        "desctiption": "Увеличивает HP / Увеличивает восстановление HP"
-    },
-    "food__aelio_mushroom": {
-        "title": "Саппа гриб Эарио",
-        "desctiption": "Увеличивает сопротивление урону / Увеличивает восстановление PP"
-    },
-    "food__aelio_peach": {
-        "title": "Саппа персик Эарио",
-        "desctiption": "Увеличивает PP / Увеличивает объём восстанавливаемого PP"
-    },
-    "food__aelio_pear": {
-        "title": "Шакки груша Эарио",
-        "desctiption": "Увеличивает PP / Увеличивает урон по слабым точкам"
-    },
-    "food__aelio_tomato": {
-        "title": "Шакки томат Эарио",
-        "desctiption": "Увеличивает сопротивление урону / Увеличивает урон по слабым точкам"
-    },
-    "food__aelio_turbanShell": {
-        "title": "Саппа тюрбан ракушка Эарио",
-        "desctiption": "Увеличивает HP / Увеличивает восстановление PP"
-    },
-    "food__aelio_turnip": {
-        "title": "Гатцу кабурана Эарио",
-        "desctiption": "Увеличивает сопротивление урону / Увеличивает восстановление HP"
-    },
-    "food__retem_cauliflower": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_cherries": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_cranberries": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_eggplant": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_carambola": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_hermitCrab": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_mango": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_mushroom": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_scallop": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_seaSlug": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_strawberry": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_urchin": {
-        "title": "",
-        "desctiption": ""
-    },
-
-    "container__gold": {
-        "title": "Контейнер с предметами [Золотой]",
-        "desctiption": ""
-    },
-    "container__green": {
-        "title": "Контейнер с предметами [Зелёный]",
-        "desctiption": ""
-    },
-    "container__red": {
-        "title": "Контейнер с предметами [Красный]",
-        "desctiption": ""
-    },
-
-    "other__alphaReactor": {
-        "title": "Альфа Реактор",
-        "desctiption": ""
-    },
-    "other__datapod": {
-        "title": "Сообщение",
-        "desctiption": ""
-    },
-    "other__stellarSeed": {
-        "title": "",
-        "desctiption": ""
-    },
-    "other__veteran": {
-        "title": "Ветеран",
-        "desctiption": ""
-    },
-    "other__stellarGrace": {
-        "title": "",
-        "desctiption": ""
-    },
-    "other__musicPlace": {
-        "title": "",
-        "desctiption": ""
-    },
-
-    "nothing": {
-        "title": "Выберите...",
-        "desctiption": ""
-    }
+    "nothing": "Выберите..."
 }

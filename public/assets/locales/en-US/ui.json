@@ -54,7 +54,7 @@
         "foodType": {
             "fruit": "Fruit",
             "seafood": "Seafood",
-            "vegetables": "Vegetables"
+            "vegetable": "Vegetables"
         },
         "stellarGraceType": {
             "gold": "Golden",

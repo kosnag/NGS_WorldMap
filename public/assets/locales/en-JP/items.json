@@ -1,195 +1,139 @@
 {
-    "landmark__battledia": {
-        "title": "Battledia",
-        "desctiption": "Battledia Quests are unique quests that can be accessed through a Trigger Portal"
+    "landmark": {
+        "battledia": {
+            "title": "Battledia",
+            "description": "Battledia Quests are unique quests that can be accessed through a Trigger Portal"
+        },
+        "cocoon": {
+            "title": "Cocoon",
+            "description": "Cocoons are smaller challenges designed to test players"
+        },
+        "mag": {
+            "title": "Regional Mag",
+            "description": ""
+        },
+        "ryuker": {
+            "title": "Ryuker Device",
+            "description": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel"
+        },
+        "tower": {
+            "title": "Tower",
+            "description": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2"
+        },
+        "urgent": {
+            "title": "Emergency Quest",
+            "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
+        }
+        },
+        "mineral": {
+        "dualomite": {
+            "title": "Dualomite",
+            "description": "Used for unlocking Potentials Lv2 and Limit Breaking at the Item Lab"
+        },
+        "monotite": {
+            "title": "Monotite",
+            "description": "Used for unlocking Potentials Lv1 and Limit Breaking at the Item Lab"
+        },
+        "photonChunk": {
+            "title": "Photon Chunk",
+            "description": "Used for Limit Breaking at the Item Lab"
+        },
+        "photonQuartz": {
+            "title": "Photon Quartz",
+            "description": "Used for Multi-weaponization at the Item Lab"
+        },
+        "photonScale": {
+            "title": "Photon Scale",
+            "description": ""
+        },
+        "tetracite": {
+            "title": "Tetracite",
+            "description": ""
+        },
+        "trinite": {
+            "title": "Trinite",
+            "description": "Used for unlocking Potentials Lv3 and Limit Breaking at the Item Lab"
+        }
     },
-    "landmark__cocoon": {
-        "title": "Cocoon",
-        "desctiption": "Cocoons are smaller challenges designed to test players"
+    "food": {
+        "aelio_apple": "Nourishing Aelio Apple",
+        "aelio_banana": "Healthy Aelio Banana",
+        "aelio_clam": "Nourishing Aelio Clam",
+        "aelio_crab": "Sharp Aelio Crab",
+        "aelio_herb": "Nourishing Aelio Herb",
+        "aelio_lobster": "Healthy Aelio Lobster",
+        "aelio_mushroom": "Refreshing Aelio Mushroom",
+        "aelio_peach": "Refreshing Aelio Peach",
+        "aelio_pear": "Sharp Aelio Pear",
+        "aelio_tomato": "Sharp Aelio Tomato",
+        "aelio_turbanShell": "Refreshing Aelio Snail",
+        "aelio_turnip": "Healthy Aelio Turnip",
+        "retem_cauliflower": "Healthy Retem Cauliflower",
+        "retem_cherries": "Nourishing Retem Cherries",
+        "retem_cranberries": "Refreshing Retem Cranberries",
+        "retem_eggplant": "Nourishing Retem Eggplant",
+        "retem_carambola": "Sharp Retem Star Fruit",
+        "retem_hermitCrab": "Healthy Retem Hermit Crab",
+        "retem_mango": "Refreshing Retem Mango",
+        "retem_mushroom": "Sharp Retem Mushroom",
+        "retem_scallop": "Nourishing Retem Scallop",
+        "retem_seaSlug": "Refreshing Retem Sea Slug",
+        "retem_strawberry": "Healthy Retem Strawberry",
+        "retem_urchin": "Sharp Retem Sea Urchin",
+        
+        "description": {
+            "prefix": {
+                "rich": "Reduces PP consumption",
+                "light": "Boosts PP recovery",
+                "crisp": "Boosts weakness damage",
+                "robust": "Boosts HP recovery"
+            },
+            "type": {
+                "fruit": "Boosts PP",
+                "seafood": "Boosts HP",
+                "vegetable": "Boosts damage resistance"
+            }
+        }
     },
-    "landmark__mag": {
-        "title": "Regional Mag",
-        "desctiption": ""
+    "container": {
+        "gold": {
+            "title": "Item Container [Gold]",
+            "description": "Contains valuable items like minerals or Alpha Reactors"
+        },
+        "green": {
+            "title": "Item Container [Green]",
+            "description": "Contains grinders"
+        },
+        "red": {
+            "title": "Item Container [Red]",
+            "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
+        }
     },
-    "landmark__ryuker": {
-        "title": "Ryuker Device",
-        "desctiption": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel"
+    "other": {
+        "alphaReactor": {
+            "title": "Alpha Reactor",
+            "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
+        },
+        "datapod": {
+            "title": "Datapod",
+            "description": "Message Packs contain messages from the residents of Halpha. Some also contain items."
+        },
+        "stellarSeed": {
+            "title": "Stellar Seed",
+            "description": "Can be converted to 2000 N-Meseta. \n10 Stellar Fragments will spawn in West Retem every day."
+        },
+        "veteran": {
+            "title": "Veteran",
+            "description": "\"Battle-Hardened\" enemies that spawn at fixed locations in Exploration Sections. Also known as \"Dread\" enemies or \"Veterans\"."
+        },
+        "stellarGrace": {
+            "title": "Stellar Grace",
+            "description": "Stellar Graces are part of the \"Stellar Grace Recovery Operation\" World Trial. The objective of the World Trial is to gather all the pyramidal containers known as Stellar Graces hidden in each Exploration Section."
+        },
+        "musicPlace": {
+            "title": "BGM Easter Egg",
+            "description": "Places that play music from older games of the Phantasy Star franchise."
+        }
     },
-    "landmark__tower": {
-        "title": "Tower",
-        "desctiption": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2"
-    },
-    "landmark__urgent": {
-        "title": "Emergency Quest",
-        "desctiption": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
-    },
-
-    "mineral__dualomite": {
-        "title": "Dualomite",
-        "desctiption": "Used for unlocking Potentials Lv2 and Limit Breaking at the Item Lab"
-    },
-    "mineral__monotite": {
-        "title": "Monotite",
-        "desctiption": "Used for unlocking Potentials Lv1 and Limit Breaking at the Item Lab"
-    },
-    "mineral__photonChunk": {
-        "title": "Photon Chunk",
-        "desctiption": "Used for Limit Breaking at the Item Lab"
-    },
-    "mineral__photonQuartz": {
-        "title": "Photon Quartz",
-        "desctiption": "Used for Multi-weaponization at the Item Lab"
-    },
-    "mineral__photonScale": {
-        "title": "Photon Scale",
-        "desctiption": ""
-    },
-    "mineral__tetracite": {
-        "title": "Tetracite",
-        "desctiption": ""
-    },
-    "mineral__trinite": {
-        "title": "Trinite",
-        "desctiption": "Used for unlocking Potentials Lv3 and Limit Breaking at the Item Lab"
-    },
-
-    "food__aelio_apple": {
-        "title": "Nourishing Aelio Apple",
-        "desctiption": "Increases PP / Reduces PP consumption"
-    },
-    "food__aelio_banana": {
-        "title": "Healthy Aelio Banana",
-        "desctiption": "Increases PP / Increases HP recovery"
-    },
-    "food__aelio_clam": {
-        "title": "Nourishing Aelio Clam",
-        "desctiption": "Increases HP / Reduces PP consumption"
-    },
-    "food__aelio_crab": {
-        "title": "Sharp Aelio Crab",
-        "desctiption": "Increases HP / Increases weak point damage"
-    },
-    "food__aelio_herb": {
-        "title": "Nourishing Aelio Herb",
-        "desctiption": "Damage Resistance / Reduces PP consumption"
-    },
-    "food__aelio_lobster": {
-        "title": "Healthy Aelio Lobster",
-        "desctiption": "Increases HP / Increases HP recovery"
-    },
-    "food__aelio_mushroom": {
-        "title": "Refreshing Aelio Mushroom",
-        "desctiption": "Damage Resistance / Increases PP recovery"
-    },
-    "food__aelio_peach": {
-        "title": "Refreshing Aelio Peach",
-        "desctiption": "Increases PP / Increases PP recovery"
-    },
-    "food__aelio_pear": {
-        "title": "Sharp Aelio Pear",
-        "desctiption": "Increases PP / Increases weak point damage"
-    },
-    "food__aelio_tomato": {
-        "title": "Sharp Aelio Tomato",
-        "desctiption": "Damage Resistance / Increases weak point damage"
-    },
-    "food__aelio_turbanShell": {
-        "title": "Refreshing Aelio Snail",
-        "desctiption": "Increases HP / Increases PP recovery"
-    },
-    "food__aelio_turnip": {
-        "title": "Healthy Aelio Turnip",
-        "desctiption": "Damage Resistance / Increases HP recovery"
-    },
-    "food__retem_cauliflower": {
-        "title": "Healthy Retem Cauliflower",
-        "desctiption": "Damage Resistance / Increases HP recovery"
-    },
-    "food__retem_cherries": {
-        "title": "Nourishing Retem Cherries",
-        "desctiption": "Increases PP / Reduces PP consumption"
-    },
-    "food__retem_cranberries": {
-        "title": "Refreshing Retem Cranberries",
-        "desctiption": "Damage Resistance / Increases PP recovery"
-    },
-    "food__retem_eggplant": {
-        "title": "Nourishing Retem Eggplant",
-        "desctiption": "Damage Resistance / Reduces PP consumption"
-    },
-    "food__retem_carambola": {
-        "title": "Sharp Retem Star Fruit",
-        "desctiption": "Increases PP / Increases weak point damage"
-    },
-    "food__retem_hermitCrab": {
-        "title": "Healthy Retem Hermit Crab",
-        "desctiption": "Increases HP / Increases HP recovery"
-    },
-    "food__retem_mango": {
-        "title": "Refreshing Retem Mango",
-        "desctiption": "Increases HP / Increases PP recovery"
-    },
-    "food__retem_mushroom": {
-        "title": "Sharp Retem Mushroom",
-        "desctiption": "Damage Resistance / Increases weak point damage"
-    },
-    "food__retem_scallop": {
-        "title": "Nourishing Retem Scallop",
-        "desctiption": "Increases HP / Reduces PP consumption"
-    },
-    "food__retem_seaSlug": {
-        "title": "Refreshing Retem Sea Slug",
-        "desctiption": "Increases HP / Increases PP recovery"
-    },
-    "food__retem_strawberry": {
-        "title": "Healthy Retem Strawberry",
-        "desctiption": "Increases PP / Increases HP recovery"
-    },
-    "food__retem_urchin": {
-        "title": "Sharp Retem Sea Urchin",
-        "desctiption": "Increases HP / Increases weak point damage"
-    },
-
-    "container__gold": {
-        "title": "Item Container [Gold]",
-        "desctiption": "Contains valuable items like minerals or Alpha Reactors"
-    },
-    "container__green": {
-        "title": "Item Container [Green]",
-        "desctiption": "Contains grinders"
-    },
-    "container__red": {
-        "title": "Item Container [Red]",
-        "desctiption": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
-    },
-
-    "other__alphaReactor": {
-        "title": "Alpha Reactor",
-        "desctiption": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
-    },
-    "other__datapod": {
-        "title": "Datapod",
-        "desctiption": "Message Packs contain messages from the residents of Halpha. Some also contain items."
-    },
-    "other__stellarSeed": {
-        "title": "Stellar Seed",
-        "desctiption": "Can be converted to 2000 N-Meseta. \n10 Stellar Fragments will spawn in West Retem every day."
-    },
-    "other__veteran": {
-        "title": "Veteran",
-        "desctiption": "\"Battle-Hardened\" enemies that spawn at fixed locations in Exploration Sections. Also known as \"Dread\" enemies or \"Veterans\"."
-    },
-    "other__stellarGrace": {
-        "title": "Stellar Grace",
-        "desctiption": "Stellar Graces are part of the \"Stellar Grace Recovery Operation\" World Trial. The objective of the World Trial is to gather all the pyramidal containers known as Stellar Graces hidden in each Exploration Section."
-    },
-    "other__musicPlace": {
-        "title": "BGM Easter Egg",
-        "desctiption": "Places that play music from older games of the Phantasy Star franchise."
-    },
-
-    "nothing": {
-        "title": "Select item",
-        "desctiption": ""
-    }
+    "nothing": "Select item"
 }

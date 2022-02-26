@@ -1,195 +1,139 @@
 {
-    "landmark__battledia": {
-        "title": "",
-        "desctiption": ""
+    "landmark": {
+        "battledia": {
+            "title": "",
+            "description": ""
+        },
+        "cocoon": {
+            "title": "",
+            "description": ""
+        },
+        "mag": {
+            "title": "",
+            "description": ""
+        },
+        "ryuker": {
+            "title": "",
+            "description": ""
+        },
+        "tower": {
+            "title": "",
+            "description": ""
+        },
+        "urgent": {
+            "title": "",
+            "description": ""
+        }
     },
-    "landmark__cocoon": {
-        "title": "",
-        "desctiption": ""
+    "mineral": {
+        "dualomite": {
+            "title": "",
+            "description": ""
+        },
+        "monotite": {
+            "title": "",
+            "description": ""
+        },
+        "photonChunk": {
+            "title": "",
+            "description": ""
+        },
+        "photonQuartz": {
+            "title": "",
+            "description": ""
+        },
+        "photonScale": {
+            "title": "",
+            "description": ""
+        },
+        "tetracite": {
+            "title": "",
+            "description": ""
+        },
+        "trinite": {
+            "title": "",
+            "description": ""
+        }
     },
-    "landmark__mag": {
-        "title": "",
-        "desctiption": ""
+    "food": {
+        "aelio_apple": "",
+        "aelio_banana": "",
+        "aelio_clam": "",
+        "aelio_crab": "",
+        "aelio_herb": "",
+        "aelio_lobster": "",
+        "aelio_mushroom": "",
+        "aelio_peach": "",
+        "aelio_pear": "",
+        "aelio_tomato": "",
+        "aelio_turbanShell": "",
+        "aelio_turnip": "",
+        "retem_cauliflower": "",
+        "retem_cherries": "",
+        "retem_cranberries": "",
+        "retem_eggplant": "",
+        "retem_carambola": "",
+        "retem_hermitCrab": "",
+        "retem_mango": "",
+        "retem_mushroom": "",
+        "retem_scallop": "",
+        "retem_seaSlug": "",
+        "retem_strawberry": "",
+        "retem_urchin": "",
+        
+        "description": {
+            "prefix": {
+                "rich": "",
+                "light": "",
+                "crisp": "",
+                "robust": ""
+            },
+            "type": {
+                "fruit": "",
+                "seafood": "",
+                "vegetable": ""
+            }
+        }
     },
-    "landmark__ryuker": {
-        "title": "",
-        "desctiption": ""
+    "container": {
+        "gold": {
+            "title": "",
+            "description": ""
+        },
+        "green": {
+            "title": "",
+            "description": ""
+        },
+        "red": {
+            "title": "",
+            "description": ""
+        }
     },
-    "landmark__tower": {
-        "title": "",
-        "desctiption": ""
+    "other": {
+        "alphaReactor": {
+            "title": "",
+            "description": ""
+        },
+        "datapod": {
+            "title": "",
+            "description": ""
+        },
+        "stellarSeed": {
+            "title": "",
+            "description": ""
+        },
+        "veteran": {
+            "title": "",
+            "description": ""
+        },
+        "stellarGrace": {
+            "title": "",
+            "description": ""
+        },
+        "musicPlace": {
+            "title": "",
+            "description": ""
+        }
     },
-    "landmark__urgent": {
-        "title": "",
-        "desctiption": ""
-    },
-
-    "mineral__dualomite": {
-        "title": "",
-        "desctiption": ""
-    },
-    "mineral__monotite": {
-        "title": "",
-        "desctiption": ""
-    },
-    "mineral__photonChunk": {
-        "title": "",
-        "desctiption": ""
-    },
-    "mineral__photonQuartz": {
-        "title": "",
-        "desctiption": ""
-    },
-    "mineral__photonScale": {
-        "title": "",
-        "desctiption": ""
-    },
-    "mineral__tetracite": {
-        "title": "",
-        "desctiption": ""
-    },
-    "mineral__trinite": {
-        "title": "",
-        "desctiption": ""
-    },
-
-    "food__aelio_apple": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_banana": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_clam": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_crab": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_herb": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_lobster": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_mushroom": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_peach": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_pear": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_tomato": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_turbanShell": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__aelio_turnip": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_cauliflower": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_cherries": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_cranberries": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_eggplant": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_carambola": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_hermitCrab": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_mango": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_mushroom": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_scallop": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_seaSlug": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_strawberry": {
-        "title": "",
-        "desctiption": ""
-    },
-    "food__retem_urchin": {
-        "title": "",
-        "desctiption": ""
-    },
-
-    "container__gold": {
-        "title": "",
-        "desctiption": ""
-    },
-    "container__green": {
-        "title": "",
-        "desctiption": ""
-    },
-    "container__red": {
-        "title": "",
-        "desctiption": ""
-    },
-
-    "other__alphaReactor": {
-        "title": "",
-        "desctiption": ""
-    },
-    "other__datapod": {
-        "title": "",
-        "desctiption": ""
-    },
-    "other__stellarSeed": {
-        "title": "",
-        "desctiption": ""
-    },
-    "other__veteran": {
-        "title": "",
-        "desctiption": ""
-    },
-    "other__stellarGrace": {
-        "title": "",
-        "desctiption": ""
-    },
-    "other__musicPlace": {
-        "title": "",
-        "desctiption": ""
-    },
-
-    "nothing": {
-        "title": "Select item",
-        "desctiption": ""
-    }
+    "nothing": "Select item"
 }
