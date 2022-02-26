@@ -1,10 +1,10 @@
 {
-    "page_title": "PSO2NGS インタラクティブ マップ",
+    "page_title": "PSO2NGSインタラクティブ・マップ",
     "NavBar": {
-        "support": "",
-        "alphaReactor": "",
-        "mapLegend": "",
-        "options": ""
+        "support": "寄付",
+        "alphaReactor": "アルファリアクター",
+        "mapLegend": "マップの凡例",
+        "options": "オプション"
     },
     "LegendMenu": {
         "Categories": {
@@ -17,51 +17,51 @@
     },
     "OptionsMenu": {
         "Categories": {
-            "languages": "",
-            "mapping": "",
-            "debug": "",
-            "about": ""
+            "languages": "寄付",
+            "mapping": "マッピング",
+            "debug": "デバッグ",
+            "about": "アプリケーションについて"
         },
         "Items": {
             "languages": {
-                "english": "",
-                "japanese": "",
-                "english_jp": "",
-                "russian": "",
-                "korean": "",
-                "portuguse": ""
+                "english": "英語",
+                "japanese": "日本",
+                "english_jp": "英語（ファン）",
+                "russian": "ロシア語",
+                "korean": "韓国語",
+                "portuguse": "ポルトガル語"
             },
             "mapping": {
-                "discord": "",
-                "translate": "",
-                "start": ""
+                "discord": "Discordに参加する",
+                "translate": "翻訳のお手伝い",
+                "start": "マッピングモード"
             },
             "debug": {
-                "langReset": "",
-                "visibilityReset": "",
-                "checkedReset": "",
-                "clearCache": "",
-                "resetAll": ""
+                "langReset": "言語をリセット",
+                "visibilityReset": "マーカーをリセット",
+                "checkedReset": "チェックをリセット",
+                "clearCache": "キャッシュをクリアする",
+                "resetAll": "すべてリセット"
             },
             "about": {
-                "author": "",
-                "contributers": "",
-                "segaCopyright": ""
+                "author": "著者",
+                "contributers": "貢献しました",
+                "segaCopyright": "このアプリに含まれるすべての素材の権利は、権利者（SEGA）に帰属し、情報提供のみを目的としています。"
             }
         }
     },
     "Map": {
         "foodType": {
-            "fruit": "",
-            "seafood": "",
-            "vegetable": ""
+            "fruit": "果物",
+            "seafood": "海鮮",
+            "vegetable": "野菜"
         },
         "stellarGraceType": {
-            "gold": "",
-            "silver": "",
-            "default": ""
+            "gold": "金色の",
+            "silver": "白銀の",
+            "default": "共通の"
         },
-        "type": "",
+        "type": "タイプ",
         "rank": "RANK",
         "maxPlayers": "人数",
         "requiredBP": "必要戦闘力",
@@ -70,9 +70,9 @@
         "subMissions": "サイドミッション",
         "clearCondition": "メインミッション",
         "description": "説明",
-        "placedBy": "",
+        "placedBy": "投稿者",
         "rewards": {
-            "possible": "",
+            "possible": "可能な報酬",
             "guaranteed": "報酬",
             "firstTime": "初回クリア報酬"
         },
