@@ -74,10 +74,6 @@ export default function MenuSettings(){
                 <span className={toggleLang === 'ko-KR' ? "active" : ""}/>
                 <div>{t("ui:OptionsMenu.Items.languages.korean")} / 한국어</div>
               </button>
-              <button onClick={() => clickToggleLang("pr-BR")}>
-                <span className={toggleLang === 'pr-BR' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.portuguse")} / Português</div>
-              </button>
             </items>
             <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
               <button onClick={() => window.open("https://discord.gg/czK9HbxpDA")}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>

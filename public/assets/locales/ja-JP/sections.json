@@ -1,0 +1,30 @@
+{
+    "sections": {
+        "aelio": {
+            "centralAelio": "中央エアリオ",
+            "centralCity": "セントラルシテイ",
+            "halphiaLake": "ハルフィリア湖",
+            "vanfordLaboratoryRuins": "ヴァンフォード研究所跡",
+            "mtMagnus": "マグナス山",
+            "northAelio": "北エアリオ",
+            "resolForest": "レゾルの森",
+            "southAelio": "南エアリオ",
+            "westAelio": "西エアリオ"
+        },
+        "retem": {
+            "centralRetem": "",
+            "rwhMaqead": "",
+            "maqeadLowerLevel": "",
+            "northRetem": "",
+            "retemAlnothe": "",
+            "retemCity": "",
+            "southRetem": "",
+            "westRetem": ""
+        }
+    },
+    "type": {
+        "lobby": "",
+        "gathering": "",
+        "combat": ""
+    }
+}

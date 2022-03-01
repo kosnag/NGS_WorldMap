@@ -28,8 +28,7 @@
                 "japanese": "日本",
                 "english_jp": "英語（ファン）",
                 "russian": "ロシア語",
-                "korean": "韓国語",
-                "portuguse": "ポルトガル語"
+                "korean": "韓国語"
             },
             "mapping": {
                 "discord": "Discordに参加する",
