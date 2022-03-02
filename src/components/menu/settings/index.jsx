@@ -84,7 +84,6 @@ export default function MenuSettings(){
               <button onClick={() => {window.localStorage.removeItem("i18nextLng"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.langReset")}</button>
               <button onClick={() => {window.localStorage.removeItem("settings"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.visibilityReset")}</button>
               <button onClick={() => {window.localStorage.removeItem("checked"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.checkedReset")}</button>
-              <button onClick={() => window.open("https://kosnag.github.io/NGS_WorldMap_Neko/")}>MAP V2</button>
               <button style={{display: "none"}} onClick={() => {window.cache.delete(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.clearCache")}</button>
               <button onClick={() => {window.localStorage.clear(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.resetAll")}</button>
             </items>
@@ -97,7 +96,6 @@ export default function MenuSettings(){
                 {t("ui:OptionsMenu.Items.about.contributers")}:<br/>
                 • Sinitsa - RU translate<br/>
                 • focuslite - KR translate<br/>
-                • MoonCat - PT translate<br/>
                 • SVGVsevolod - Backend
                 <br/><br/><br/>
                 {t("ui:OptionsMenu.Items.about.segaCopyright")}
