@@ -1,22 +1,22 @@
 {
     "aelioTroopers": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
+        "title": "에아리오 트루퍼즈",
+        "clearCondition": "대상 에너미 격파",
+        "description": "이곳은 각 아크스의 전투능력을 시험하는 배틀디아다. 전투 기술을 구사하여 모든 에너미를 격파하라. ※퀘스트 중에는 일부 부스트 효과가 무효"
     },
     "aelioDevastators": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
+        "title": "에아리오 데바스테이터즈",
+        "clearCondition": "대상 에너미 격파",
+        "description": "이곳은 각 아크스의 전투능력을 시험하는 배틀디아다. 전투 기술을 구사하여 차례대로 나타나는 기간틱스를 격파하라. ※퀘스트 중에는 일부 부스트 효과가 무효"
     },
     "retemTroopers": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
+        "title": "리템 트루퍼즈",
+        "clearCondition": "대상 에너미 격파",
+        "description": "여기는 각 아크스의 전투 능력을 시험하는 트레이니아다. 전투 기술을 구사하여, 모든 에너미를 격파하라. ※퀘스트 중에는 일부 부스트 효과가 무효 ※대상 아이템 환금이나 특정 창고로 이동하면 퀘스트 파기"
     },
     "retemDevastators": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
+        "title": "리템 데바스테이터즈",
+        "clearCondition": "대상 에너미 격파",
+        "description": "여기는 각 아크스의 전투 능력을 시험하는 트레이니아다. 전투 기술을 구사하여, 계속해서 나타나는 기간틱스를 격파하라. ※퀘스트 중에는 일부 부스트 효과가 무효 ※대상 아이템 환금이나 특정 창고로 이동하면 퀘스트 파기"
     }
 }
