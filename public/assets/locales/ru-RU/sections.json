@@ -1,30 +1,30 @@
 {
     "sections": {
         "aelio": {
-            "centralAelio": "",
-            "centralCity": "",
-            "halphiaLake": "",
-            "vanfordLaboratoryRuins": "",
-            "mtMagnus": "",
-            "northAelio": "",
-            "resolForest": "",
-            "southAelio": "",
-            "westAelio": ""
+            "centralAelio": "Центр Эарио",
+            "centralCity": "Централ-Сити",
+            "halphiaLake": "Озеро Хальфия",
+            "vanfordLaboratoryRuins": "Руины лаборатории Ванфорд",
+            "mtMagnus": "Гора Магнус",
+            "northAelio": "Север Эарио",
+            "resolForest": "Лес Резол",
+            "southAelio": "Юг Эарио",
+            "westAelio": "Запад Эарио"
         },
         "retem": {
-            "centralRetem": "",
-            "rwhMaqead": "",
-            "maqeadLowerLevel": "",
-            "northRetem": "",
-            "retemAlnothe": "",
-            "retemCity": "",
-            "southRetem": "",
-            "westRetem": ""
+            "centralRetem": "Центр Ритем",
+            "rwhMaqead": "Верхний Макуадо",
+            "maqeadLowerLevel": "Нижний Макуадо",
+            "northRetem": "Север Ритем",
+            "retemAlnothe": "Ритем Эрноза",
+            "retemCity": "Ритем-Сити",
+            "southRetem": "Юг Ритем",
+            "westRetem": "Запад Ритем"
         }
     },
     "type": {
-        "lobby": "",
-        "gathering": "",
-        "combat": ""
+        "lobby": "Лобби",
+        "gathering": "Секция для исследования",
+        "combat": "Секция для боёв"
     }
 }

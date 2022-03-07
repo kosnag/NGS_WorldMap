@@ -1,16 +1,16 @@
 {   
     "types": {
-        "invincible": "",
-        "priceless": "",
-        "expert": ""
+        "invincible": "常勝のリージョンマグ",
+        "priceless": "千金のリージョンマグ",
+        "expert": "練達のリージョンマグ"
     },
     "boostType": {
-        "social": "",
-        "personal": ""
+        "social": "Ｒマグブースト[全体]",
+        "personal": "Ｒマグブースト[個人]"
     },
     "boosts": {
-        "rdr": "",
-        "exp": "",
-        "attack": ""
+        "rdr": "レアドロップ倍率増加",
+        "exp": "獲得経験値増加",
+        "attack": "与ダメージ増加"
     }
 }
