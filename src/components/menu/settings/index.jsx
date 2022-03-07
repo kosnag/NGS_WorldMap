@@ -74,10 +74,6 @@ export default function MenuSettings(){
                 <span className={toggleLang === 'ko-KR' ? "active" : ""}/>
                 <div>{t("ui:OptionsMenu.Items.languages.korean")} / 한국어</div>
               </button>
-              <button onClick={() => clickToggleLang("pr-BR")}>
-                <span className={toggleLang === 'pr-BR' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.portuguse")} / Português</div>
-              </button>
             </items>
             <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
               <button onClick={() => window.open("https://discord.gg/czK9HbxpDA")}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
@@ -88,7 +84,6 @@ export default function MenuSettings(){
               <button onClick={() => {window.localStorage.removeItem("i18nextLng"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.langReset")}</button>
               <button onClick={() => {window.localStorage.removeItem("settings"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.visibilityReset")}</button>
               <button onClick={() => {window.localStorage.removeItem("checked"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.checkedReset")}</button>
-              <button onClick={() => window.open("https://kosnag.github.io/NGS_WorldMap_Neko/")}>MAP V2</button>
               <button style={{display: "none"}} onClick={() => {window.cache.delete(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.clearCache")}</button>
               <button onClick={() => {window.localStorage.clear(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.resetAll")}</button>
             </items>
@@ -101,7 +96,6 @@ export default function MenuSettings(){
                 {t("ui:OptionsMenu.Items.about.contributers")}:<br/>
                 • Sinitsa - RU translate<br/>
                 • focuslite - KR translate<br/>
-                • MoonCat - PT translate<br/>
                 • SVGVsevolod - Backend
                 <br/><br/><br/>
                 {t("ui:OptionsMenu.Items.about.segaCopyright")}

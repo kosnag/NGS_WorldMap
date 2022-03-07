@@ -1,0 +1,30 @@
+{
+    "sections": {
+        "aelio": {
+            "centralAelio": "Central Aelio",
+            "centralCity": "Central City",
+            "halphiaLake": "Lake Halphiria",
+            "vanfordLaboratoryRuins": "Vanford Laboratory Ruins",
+            "mtMagnus": "Mt. Magnus",
+            "northAelio": "Northern Aelio",
+            "resolForest": "Resol Forest",
+            "southAelio": "Southern Aelio",
+            "westAelio": "Western Aelio"
+        },
+        "retem": {
+            "centralRetem": "Central Retem",
+            "rwhMaqead": "Luf Maqaad",
+            "maqeadLowerLevel": "Lower Maqaad",
+            "northRetem": "Northern Retem",
+            "retemAlnothe": "Retem El-Nossa",
+            "retemCity": "Retem City",
+            "southRetem": "Southern Retem",
+            "westRetem": "Western Retem"
+        }
+    },
+    "type": {
+        "lobby": "Lobby Area",
+        "gathering": "Gathering Area",
+        "combat": "Combat Area"
+    }
+}

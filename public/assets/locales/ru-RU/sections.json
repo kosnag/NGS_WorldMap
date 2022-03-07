@@ -1,0 +1,30 @@
+{
+    "sections": {
+        "aelio": {
+            "centralAelio": "",
+            "centralCity": "",
+            "halphiaLake": "",
+            "vanfordLaboratoryRuins": "",
+            "mtMagnus": "",
+            "northAelio": "",
+            "resolForest": "",
+            "southAelio": "",
+            "westAelio": ""
+        },
+        "retem": {
+            "centralRetem": "",
+            "rwhMaqead": "",
+            "maqeadLowerLevel": "",
+            "northRetem": "",
+            "retemAlnothe": "",
+            "retemCity": "",
+            "southRetem": "",
+            "westRetem": ""
+        }
+    },
+    "type": {
+        "lobby": "",
+        "gathering": "",
+        "combat": ""
+    }
+}
