@@ -12,19 +12,19 @@
             "westAelio": "西エアリオ"
         },
         "retem": {
-            "centralRetem": "",
-            "rwhMaqead": "",
-            "maqeadLowerLevel": "",
-            "northRetem": "",
-            "retemAlnothe": "",
-            "retemCity": "",
-            "southRetem": "",
-            "westRetem": ""
+            "centralRetem": "中央リテム",
+            "rwhMaqead": "ルーフ・マクアド",
+            "maqeadLowerLevel": "マクアド下層",
+            "northRetem": "北リテム",
+            "retemAlnothe": "リテム・エルノザ",
+            "retemCity": "リテムシティ",
+            "southRetem": "南リテム",
+            "westRetem": "西リテム"
         }
     },
     "type": {
-        "lobby": "",
-        "gathering": "",
-        "combat": ""
+        "lobby": "ロビーエリア",
+        "gathering": "探索セクション",
+        "combat": "戦闘セクション"
     }
 }
