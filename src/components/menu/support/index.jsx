@@ -9,7 +9,7 @@ import boostyImg from "../../../assets/icons/boosty.png"
 export default function MenuSupport(){
   const {t} = useTranslation();
 
-  const [toggleTab, setToggleTab] = useState('bymeacoffee');
+  const [toggleTab, setToggleTab] = useState('boosty');
   const clickToggleTab = (tab) => {
     setToggleTab(tab)
   };
@@ -28,26 +28,19 @@ export default function MenuSupport(){
         <columns>
           <category>
             <button 
-              className={toggleTab === 'bymeacoffee' ? "active" : ""}
-              onClick={() => clickToggleTab('bymeacoffee')}
-            >By Me A Coffee</button>
+              className={toggleTab === 'boosty' ? "active" : ""}
+              onClick={() => clickToggleTab('boosty')}
+            >Boosty</button>
             <button 
               className={toggleTab === 'qiwi' ? "active" : ""}
               onClick={() => clickToggleTab('qiwi')}
             >Qiwi</button>
-            <button 
-              className={toggleTab === 'boosty' ? "active" : ""}
-              onClick={() => clickToggleTab('boosty')}
-            >Boosty</button>
           </category>
           <>
-            <items id="bymeacoffee" className={toggleTab === 'bymeacoffee' ? "active" : ""}>
+            <items id="boosty" className={toggleTab === 'boosty' ? "active" : ""}>
               <div>
-                <a href="https://www.buymeacoffee.com/kosnag" rel="noopener noreferrer" target="_blank">
-                  <img 
-                    alt=""
-                    src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=kosnag&button_colour=223f5e&font_colour=ffffff&font_family=Cookie&outline_colour=ffffff&coffee_colour=FFDD00"
-                  />
+                <a href="https://boosty.to/kosnag" rel="noopener noreferrer" target="_blank">
+                  <img alt=""src={boostyImg}/>
                 </a>
               </div>
             </items>
@@ -57,16 +50,6 @@ export default function MenuSupport(){
                   src={"https://widget.qiwi.com/widgets/middle-widget-300x300?publicKey=48e7qUxn9T7RyYE1MVZswX1FRSbE6iyCj2gCRwwF3Dnh5XrasNTx3BGPiMsyXQFNKQhvukniQG8RTVhYm3iPyr9iWQjzW1n3wciwKE9cC3NQi2PG7BV8CNzW7MSFyMJjkBnGmJVSZMcEDYZPWxVTWC8wkwzAcWWtRjU2LXRtUJwA9XUjp46ZY3BqphuKx"}
                   title="qiwi"
                 />
-              </div>
-            </items>
-            <items id="boosty" className={toggleTab === 'boosty' ? "active" : ""}>
-              <div>
-                <a href="https://boosty.to/kosnag" rel="noopener noreferrer" target="_blank">
-                  <img 
-                    alt=""
-                    src={boostyImg}
-                  />
-                </a>
               </div>
             </items>
           </>

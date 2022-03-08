@@ -11,7 +11,7 @@ window#menu-support {
         category {
             display: block;
             button {
-                width: 133px;
+                width: 250px;
                 height: 40px;
                 margin-left: 6px;
                 margin-right: 6px;
@@ -39,16 +39,6 @@ window#menu-support {
                 display: block !important;
                 height: 320px;
                 width: 100%;
-                &#bymeacoffee {
-                    div {
-                        width: calc(100% - 12px);
-                        height: calc(100% - 6px);
-                        margin: 6px auto;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                }
                 &#qiwi {
                     div {
                         width: calc(100% - 12px);
