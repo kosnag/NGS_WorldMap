@@ -7,6 +7,15 @@ var optionsList = [
     {"table":"container__green","text":"Green Container"},
     {"table":"container__red","text":"Red Container"},
     {"hr":""},
+    {"category":"Minerals"},
+    {"table":"mineral__dualomite","text":"Dualomite"},
+    {"table":"mineral__monotite","text":"Monotite"},
+    {"table":"mineral__photonChunk","text":"Photon Chunk"},
+    {"table":"mineral__photonQuartz","text":"Photon Quartz"},
+    {"table":"mineral__photonScale","text":"Photon Scate"},
+    {"table":"mineral__tetracite","text":"Tetracite"},
+    {"table":"mineral__trinite","text":"Trinite"},
+    {"hr":""},
     {"category":"Food"},
     {"table":"food__aelio_apple","text":"Rich Aelio Apple"},
     {"table":"food__aelio_banana","text":"Robust Aelio Banana"},
@@ -32,15 +41,6 @@ var optionsList = [
     {"table":"food__retem_seaSlug","text":"Light Retem Sea Slug"},
     {"table":"food__retem_strawberry","text":"Robust Retem Strawberry"},
     {"table":"food__retem_urchin","text":"Crisp Retem Sea Urchin"},
-    {"hr":""},
-    {"category":"Minerals"},
-    {"table":"mineral__dualomite","text":"Dualomite"},
-    {"table":"mineral__monotite","text":"Monotite"},
-    {"table":"mineral__photonChunk","text":"Photon Chunk"},
-    {"table":"mineral__photonQuartz","text":"Photon Quartz"},
-    {"table":"mineral__photonScale","text":"Photon Scate"},
-    {"table":"mineral__tetracite","text":"Tetracite"},
-    {"table":"mineral__trinite","text":"Trinite"},
     {"hr":""},
     {"category":"Other"},
     {"table":"other__alphaReactor","text":"Alpha Reactor"},
@@ -219,7 +219,7 @@ popup_window_content_form.addEventListener("submit",(e) => {
         "lng": lng_variable,
         "string": popup_window_content_form_inputSub.value || popup_window_content_form_selectSub.value
     }
-    const request = new XMLHttpRequest;
-    request.open("POST","../../api/record.php");
-    request.send(JSON.stringify(markerData));
+    const xhr = new XMLHttpRequest;
+    xhr.open("POST","../../api/record.php");
+    xhr.send(JSON.stringify(markerData));
 });
