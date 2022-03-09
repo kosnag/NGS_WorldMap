@@ -47,7 +47,8 @@ var optionsList = [
     {"table":"other__datapod","text":"Datapod"},
     {"table":"other__veteran","text":"Veteran"},
     {"table":"other__stellarGrace","text":"Stellar Grace"},
-    {"table":"other__musicPlace","text":"BGM Easter Egg"}
+    {"table":"other__musicPlace","text":"BGM Easter Egg"},
+    {"table":"other__mischief","text":"Mischief Symbols"}
 ];
 
 function openPopup(e) {
