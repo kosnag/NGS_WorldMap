@@ -133,6 +133,10 @@
         "musicPlace": {
             "title": "",
             "description": ""
+        },
+        "mischief": {
+            "title": "",
+            "description": ""
         }
     },
     "nothing": "Select item"

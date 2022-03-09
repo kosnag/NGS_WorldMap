@@ -133,6 +133,10 @@
         "musicPlace": {
             "title": "Музыкальная пасхалка",
             "description": "Места, где игрую музыкальные композиции из старых игр франшизы Phantasy Star."
+        },
+        "mischief": {
+            "title": "",
+            "description": ""
         }
     },
     "nothing": "Выберите..."
