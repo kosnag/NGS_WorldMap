@@ -1,4 +1,9 @@
 {
+    "variable": {
+        "title": "",
+        "clearCondition": "",
+        "description": ""
+    },
     "aelioTroopers": {
         "title": "Aelio Troopers",
         "clearCondition": "Defeat the target enemy",

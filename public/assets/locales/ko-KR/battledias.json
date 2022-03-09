@@ -1,4 +1,9 @@
 {
+    "variable": {
+        "title": "",
+        "clearCondition": "",
+        "description": ""
+    },
     "aelioTroopers": {
         "title": "",
         "clearCondition": "",
