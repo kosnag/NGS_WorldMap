@@ -1,32 +1,32 @@
 {
     "pettasVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "統制型ドールズ討伐戦",
+        "description": "북부 에아리오の알트 라니 고원で、強力な時空振動が確認された。過去のデータから、統制型ドールズ“ペダス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
+        "clearCondition": "統制型ドールズを撃破せよ！"
     },
     "nexVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "ネクス・ヴェラ討伐戦",
+        "description": "레졸의 숲で、強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“ネクス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
+        "clearCondition": "ネクス・ヴェラを討伐せよ！"
     },
     "miningRigDefenceAelio": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "資源採掘リグ防衛戦: エアリオ",
+        "description": "ハルファナ平原で活動中の資源回収部隊より、緊急支援の要請があった。周囲に多数のエネミー反応があり、大規模な攻勢が予想される。アークス各員は、当該ポイントに急行し、資源採掘リグを防衛せよ。",
+        "clearCondition": "資源採掘リグを防衛せよ！"
     },
     "darkFalzInterception": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "ダークファルス迎撃戦",
+        "description": "센트럴 시티周辺で、“ダークファルス”の出現予兆が確認された。アークス各員は、当該ポイントに急行し、セントラルキャノンの迎撃準備が完了するまで、エネミーの侵攻を阻止せよ。",
+        "clearCondition": "ダークファルスを迎撃せよ！"
     },
     "dustylVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "スナイダル・ヴェラ討伐戦",
+        "description": "北リテムの모라바 협곡で、強力な時空振動が確認された。過去のデータから、統制型ドールズ“スナイダル・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
+        "clearCondition": "スナイダル・ヴェラを撃破せよ！"
     },
     "renusVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "レヌス・ヴェラ討伐戦",
+        "description": "中央リテムの北部で、強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“レヌス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
+        "clearCondition": "レヌス・ヴェラを撃破せよ！"
     }
 }

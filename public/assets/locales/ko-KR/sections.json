@@ -1,30 +1,30 @@
 {
     "sections": {
         "aelio": {
-            "centralAelio": "",
-            "centralCity": "",
-            "halphiaLake": "",
-            "vanfordLaboratoryRuins": "",
-            "mtMagnus": "",
-            "northAelio": "",
-            "resolForest": "",
-            "southAelio": "",
-            "westAelio": ""
+            "centralAelio": "중앙 에아리오",
+            "centralCity": "센트럴 시티",
+            "halphiaLake": "할피리아 호수",
+            "vanfordLaboratoryRuins": "반포드 연구소 유적",
+            "mtMagnus": "마그너스 산",
+            "northAelio": "북부 에아리오",
+            "resolForest": "레졸의 숲",
+            "southAelio": "남부 에아리오",
+            "westAelio": "서부 에아리오"
         },
         "retem": {
-            "centralRetem": "",
-            "rwhMaqead": "",
-            "maqeadLowerLevel": "",
-            "northRetem": "",
-            "retemAlnothe": "",
-            "retemCity": "",
-            "southRetem": "",
-            "westRetem": ""
+            "centralRetem": "중앙 리템",
+            "rwhMaqead": "루프 마크아드",
+            "maqeadLowerLevel": "마크아드 하층",
+            "northRetem": "북부 리템",
+            "retemAlnothe": "리템 에르노자",
+            "retemCity": "리템 시티",
+            "southRetem": "남부 리템",
+            "westRetem": "서부 리템"
         }
     },
     "type": {
-        "lobby": "",
-        "gathering": "",
-        "combat": ""
+        "lobby": "로비",
+        "gathering": "개더링",
+        "combat": "전투"
     }
 }

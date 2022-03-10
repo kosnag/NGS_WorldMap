@@ -1,137 +1,137 @@
 {
     "landmark": {
         "battledia": {
-            "title": "",
-            "description": ""
+            "title": "バトルディア",
+            "description": "“バトルディア”は、“トリガーポータル”と呼ばれる特殊な端末に、専用のカギ“バトルトリガー”をセットすることでアクセスできる訓練施設の一種です。"
         },
         "cocoon": {
-            "title": "",
-            "description": ""
+            "title": "コクーン",
+            "description": "“コクーン”は各地に点在する、トレイニアと呼ばれる訓練施設の一種です。各コクーンには、さまざまなクリア目標が用意されています。クリア目標を達成すると、“スキルポイント”が得られます。"
         },
         "mag": {
-            "title": "",
-            "description": ""
+            "title": "リージョンマグ",
+            "description": "“リージョンマグ”は、ハルファの各地に設置された巨大なマグのような形状をした設備です。ギャザリングした素材を投入することで、他のアークスたちと共有できるブースト効果が得られます。ブーストの効果は、リージョンマグごとに異なります。"
         },
         "ryuker": {
-            "title": "",
-            "description": ""
+            "title": "リューカーデバイス",
+            "description": "“リューカーデバイス”は、各地に設置された多機能端末です。アクセスすると、“テレポート”や“フードスタンド”、“倉庫”といった各種機能が利用できます。"
         },
         "tower": {
-            "title": "",
-            "description": ""
+            "title": "タワー",
+            "description": "“タワー”は、各地に点在する、トレイニアと呼ばれる訓練施設の一種です。コクーンよりも施設の規模が大きく、難易度も高いですが、より多くのスキルポイントを入手できます。"
         },
         "urgent": {
-            "title": "",
-            "description": ""
+            "title": "緊急クエスト",
+            "description": "“緊急クエスト”は、他のプレイヤーと力を合わせて強力なエネミーと戦う、時間限定のクエストです。エネミーの出現予告と同時に、出現地点が表示されます。"
         }
     },
     "mineral": {
         "dualomite": {
-            "title": "",
-            "description": ""
+            "title": "デュアロマイト",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
         },
         "monotite": {
-            "title": "",
-            "description": ""
+            "title": "モノタイト",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
         },
         "photonChunk": {
-            "title": "",
-            "description": ""
+            "title": "フォトンチャンク",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放などに用いる。"
         },
         "photonQuartz": {
-            "title": "",
-            "description": ""
+            "title": "フォトンクォーツ",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでのマルチウェポン化に用いる。"
         },
         "photonScale": {
-            "title": "",
-            "description": ""
+            "title": "フォトンスケイル",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでのカプセル交換などに用いる。"
         },
         "tetracite": {
-            "title": "",
-            "description": ""
+            "title": "テドラサイト",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放などに用いる。"
         },
         "trinite": {
-            "title": "",
-            "description": ""
+            "title": "トライナイト",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
         }
     },
     "food": {
-        "aelio_apple": "",
-        "aelio_banana": "",
-        "aelio_clam": "",
-        "aelio_crab": "",
-        "aelio_herb": "",
-        "aelio_lobster": "",
-        "aelio_mushroom": "",
-        "aelio_peach": "",
-        "aelio_pear": "",
-        "aelio_tomato": "",
-        "aelio_turbanShell": "",
-        "aelio_turnip": "",
-        "retem_cauliflower": "",
-        "retem_cherries": "",
-        "retem_cranberries": "",
-        "retem_eggplant": "",
-        "retem_carambola": "",
-        "retem_hermitCrab": "",
-        "retem_mango": "",
-        "retem_mushroom": "",
-        "retem_scallop": "",
-        "retem_seaSlug": "",
-        "retem_strawberry": "",
-        "retem_urchin": "",
+        "aelio_apple": "マッタ・エアルアッポウ",
+        "aelio_banana": "ガッツ・エアルバナン",
+        "aelio_clam": "マッタ・エアルアザーリ",
+        "aelio_crab": "シャッキ・エアルクラーブ",
+        "aelio_herb": "マッタ・エアルハーヴ",
+        "aelio_lobster": "ガッツ・エアルローブス",
+        "aelio_mushroom": "サッパ・エアルマシュル",
+        "aelio_peach": "サッパ・エアルピッチ",
+        "aelio_pear": "シャッキ・エアルナッシィ",
+        "aelio_tomato": "シャッキ・エアルトマーテ",
+        "aelio_turbanShell": "サッパ・エアルサザイエ",
+        "aelio_turnip": "ガッツ・エアルカブラナ",
+        "retem_cauliflower": "ガッツ・リテナキャリブラ",
+        "retem_cherries": "マッタ・リテナッチェリ",
+        "retem_cranberries": "サッパ・リテナクランベ",
+        "retem_eggplant": "マッタ・リテナマルナース",
+        "retem_carambola": "シャッキ・リテナスターツ",
+        "retem_hermitCrab": "ガッツ・リテナヤドガーリ",
+        "retem_mango": "サッパ・リテナマルゴー",
+        "retem_mushroom": "シャッキ・リテナマシュル",
+        "retem_scallop": "マッタ・リテナボタッテ",
+        "retem_seaSlug": "サッパ・リテナウミッシー",
+        "retem_strawberry": "ガッツ・リテナストロンベリ",
+        "retem_urchin": "シャッキ・リテナウーニィ",
         
         "description": {
             "prefix": {
-                "rich": "",
-                "light": "",
-                "crisp": "",
-                "robust": ""
+                "rich": "PP消費量軽減",
+                "light": "PP回復量増加",
+                "crisp": "弱点部位ダメージ増加",
+                "robust": "HP回復量増加"
             },
             "type": {
-                "fruit": "",
-                "seafood": "",
-                "vegetable": ""
+                "fruit": "最大PP増加",
+                "seafood": "最大HP増加",
+                "vegetable": "ダメージ耐性上昇"
             }
         }
     },
     "container": {
         "gold": {
-            "title": "",
+            "title": "アイテムコンテナ[金]",
             "description": ""
         },
         "green": {
-            "title": "",
+            "title": "アイテムコンテナ[緑]",
             "description": ""
         },
         "red": {
-            "title": "",
+            "title": "アイテムコンテナ[赤]",
             "description": ""
         }
     },
     "other": {
         "alphaReactor": {
-            "title": "",
+            "title": "알파 리액터",
             "description": ""
         },
         "datapod": {
-            "title": "",
+            "title": "메시지 팩",
             "description": ""
         },
         "stellarSeed": {
-            "title": "",
+            "title": "스텔라 시드",
             "description": ""
         },
         "veteran": {
-            "title": "",
+            "title": "노련의 ",
             "description": ""
         },
         "stellarGrace": {
-            "title": "",
+            "title": "스텔라 그레이스",
             "description": ""
         },
         "musicPlace": {
-            "title": "",
+            "title": "BGM 이스터 에그",
             "description": ""
         }
     },
