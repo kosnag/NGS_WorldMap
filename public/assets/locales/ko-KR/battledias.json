@@ -1,4 +1,9 @@
 {
+    "variable": {
+        "title": "",
+        "clearCondition": "",
+        "description": ""
+    },
     "aelioTroopers": {
         "title": "에아리오 트루퍼즈",
         "clearCondition": "대상 에너미 격파",

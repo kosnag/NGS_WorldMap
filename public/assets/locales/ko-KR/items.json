@@ -133,6 +133,10 @@
         "musicPlace": {
             "title": "BGM 이스터 에그",
             "description": ""
+        },
+        "mischief": {
+            "title": "",
+            "description": ""
         }
     },
     "nothing": "Select item"

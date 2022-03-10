@@ -133,6 +133,10 @@
         "musicPlace": {
             "title": "BGM Easter Egg",
             "description": "Places that play music from older games of the Phantasy Star franchise."
+        },
+        "mischief": {
+            "title": "",
+            "description": ""
         }
     },
     "nothing": "Select item"

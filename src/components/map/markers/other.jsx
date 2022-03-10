@@ -62,26 +62,31 @@ StellarFragment:()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.other.stellarSeed));
         return ()=>clearInterval(i);
     });
-    const coords = [-1068,1423.5]
-    return(marker ? <Circle 
-        center={coords}
-        radius={35}
-        pathOptions={{
-            color: 'gold',
-            fillColor: 'yellow',
-            fillOpacity: '0.25'
-        }}
-        ><Marker icon={IconLib.stellarSeed} position={coords}>
-            <Tooltip direction='top'><tooltip-window>
-                <header>
-                    <span><menuicon/> {t("items:other.stellarSeed.title")}</span>
-                </header>
-                <content>
-                    {t("items:other.stellarSeed.description")}
-                </content>
-            </tooltip-window></Tooltip>
-        </Marker>
-    </Circle>:<Fragment/>)
+    const data = [
+        {"lat": -1068, "lng": 1423.5}
+    ]
+    return(marker ? (data.map((x=>
+        <Circle 
+            center={[x.lat,x.lng]}
+            radius={35}
+            pathOptions={{
+                color: 'gold',
+                fillColor: 'yellow',
+                fillOpacity: '0.25'
+            }}
+        >
+            <Marker icon={IconLib.stellarSeed} position={[x.lat,x.lng]}>
+                <Tooltip direction='top'><tooltip-window>
+                    <header>
+                        <span><menuicon/> {t("items:other.stellarSeed.title")}</span>
+                    </header>
+                    <content>
+                        {t("items:other.stellarSeed.description")}
+                    </content>
+                </tooltip-window></Tooltip>
+            </Marker>
+        </Circle>
+    ))):<Fragment/>)
 },
 StellarGrace:()=>{
     const {t} = useTranslation();

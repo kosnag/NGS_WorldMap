@@ -133,6 +133,10 @@
         "musicPlace": {
             "title": "BGMイースターエッグ",
             "description": ""
+        },
+        "mischief": {
+            "title": "",
+            "description": ""
         }
     },
     "nothing": "Select item"

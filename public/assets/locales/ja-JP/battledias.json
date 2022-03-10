@@ -1,4 +1,9 @@
 {
+    "variable": {
+        "title": "",
+        "clearCondition": "",
+        "description": ""
+    },
     "aelioTroopers": {
         "title": "エアリオトルーパーズ ",
         "clearCondition": "対象エネミーの撃破",

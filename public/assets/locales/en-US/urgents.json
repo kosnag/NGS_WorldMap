@@ -28,5 +28,10 @@
         "title": "Renus Vera Suppression Op",
         "description": "A powerful space-time flux has been detected in the northern part of Central Retem. Based on past data, we expect Renus Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
         "clearCondition": "Defeat the target enemy"
+    },
+    "22spring": {
+        "title": "",
+        "description": "",
+        "clearCondition": ""
     }
 }

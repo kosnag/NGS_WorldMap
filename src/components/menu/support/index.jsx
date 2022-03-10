@@ -4,10 +4,12 @@ import Draggable from 'react-draggable';
 import Functions from '../../../functions';
 import { useTranslation } from "react-i18next";
 
+import boostyImg from "../../../assets/icons/boosty.png"
+
 export default function MenuSupport(){
   const {t} = useTranslation();
 
-  const [toggleTab, setToggleTab] = useState('kofi');
+  const [toggleTab, setToggleTab] = useState('boosty');
   const clickToggleTab = (tab) => {
     setToggleTab(tab)
   };
@@ -26,21 +28,20 @@ export default function MenuSupport(){
         <columns>
           <category>
             <button 
-              className={toggleTab === 'kofi' ? "active" : ""}
-              onClick={() => clickToggleTab('kofi')}
-            >Kofi</button>
+              className={toggleTab === 'boosty' ? "active" : ""}
+              onClick={() => clickToggleTab('boosty')}
+            >Boosty</button>
             <button 
               className={toggleTab === 'qiwi' ? "active" : ""}
               onClick={() => clickToggleTab('qiwi')}
             >Qiwi</button>
           </category>
           <>
-            <items id="kofi" className={toggleTab === 'kofi' ? "active" : ""}>
+            <items id="boosty" className={toggleTab === 'boosty' ? "active" : ""}>
               <div>
-                <iframe
-                  src={"https://ko-fi.com/kosnag/?&widget=true&embed=true&preview=true"}
-                  title="kofi"
-                />
+                <a href="https://boosty.to/kosnag" rel="noopener noreferrer" target="_blank">
+                  <img alt=""src={boostyImg}/>
+                </a>
               </div>
             </items>
             <items id="qiwi" className={toggleTab === 'qiwi' ? "active" : ""}>

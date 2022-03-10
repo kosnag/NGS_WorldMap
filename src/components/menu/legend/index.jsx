@@ -72,6 +72,7 @@ export default function MenuLegend(){
   },[]);
   useEffect(() => {
     setPreviewTitle(t("items:nothing"));
+    setPreviewDescription("");
   },[t]);
 
   return (

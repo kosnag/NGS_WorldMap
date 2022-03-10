@@ -1,4 +1,9 @@
 {
+    "variable": {
+        "title": "",
+        "clearCondition": "",
+        "description": ""
+    },
     "aelioTroopers": {
         "title": "Солдаты Эарио",
         "clearCondition": "Одолейте врагов",
