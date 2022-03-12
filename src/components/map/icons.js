@@ -15,7 +15,7 @@ const IconLib = {
     
 
     redBox: new Setup.Containers({iconUrl:'./assets/images/icons/container/red.png'}),
-    redBoxChecked: new Setup.Containers({iconUrl:'./assets/images/icons/container/redChecked.png'}),
+    redBoxChecked: new Setup.Containers({iconUrl:'./assets/images/icons/container/red_checked.png'}),
     greenBox: new Setup.Containers({iconUrl:'./assets/images/icons/container/green.png'}),
     
 
@@ -55,14 +55,14 @@ const IconLib = {
     retem_urchin: new Setup.Materials({iconUrl:'./assets/images/icons/food/retem_urchin.png'}),
 
 
-    datapod: new Setup.Materials({iconUrl:'./assets/images/icons/other/dataPod.png'}),
-    datapodChecked: new Setup.Materials({iconUrl:'./assets/images/icons/other/dataPod.png'}),
+    datapod: new Setup.Materials({iconUrl:'./assets/images/icons/other/datapod.png'}),
+    datapodChecked: new Setup.Materials({iconUrl:'./assets/images/icons/other/datapod_checked.png'}),
     alphaReactor: new Setup.Materials({iconUrl:'./assets/images/icons/other/alphaReactor.png'}),
-    musicPlace: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace.png'}),
+    musicPlace: new Setup.Materials({iconUrl:'./assets/images/icons/other/musicPlace.png'}),
     stellarSeed: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarSeed.png'}),
-    stellarGrace_Default: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace.png'}),
-    stellarGrace_Silver: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace.png'}),
-    stellarGrace_Gold: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace.png'}),
+    stellarGrace_Default: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace_Default.png'}),
+    stellarGrace_Silver: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace_Silver.png'}),
+    stellarGrace_Gold: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace_Gold.png'}),
     veteran: new L.icon({iconSize:[32,32],iconAnchor:[16,16],popupAnchor:[0,-16],iconUrl:'./assets/images/icons/other/veteran.png'})
 };
 

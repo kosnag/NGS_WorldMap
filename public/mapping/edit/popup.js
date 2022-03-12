@@ -33,7 +33,7 @@ var optionsList = [
     {"table":"food__retem_cherries","text":"Rich Retem Cherry"},
     {"table":"food__retem_cranberries","text":"Light Retem Cranberries"},
     {"table":"food__retem_eggplant","text":"Rich Retem Round Eggplant"},
-    {"table":"food__retem_fruit","text":"Crisp Retem Carambola"},
+    {"table":"food__retem_carambola","text":"Crisp Retem Carambola"},
     {"table":"food__retem_hermitCrab","text":"Robust Retem Hermit Crab"},
     {"table":"food__retem_mango","text":"Light Retem Mango"},
     {"table":"food__retem_mushroom","text":"Crisp Retem Mushroom"},

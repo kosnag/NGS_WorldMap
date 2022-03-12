@@ -175,7 +175,7 @@ Mischief:()=>{
     const [marker,setMarker] = useState([]);
     useEffect(()=>{fetch("./api/read.php?table=other__mischief").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.musicPlace));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.mischief));
         return ()=>clearInterval(i);
     });
     if (data !== null) {return (marker ? (data.map((x=>
