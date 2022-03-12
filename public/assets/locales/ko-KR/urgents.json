@@ -1,4 +1,9 @@
 {
+    "seasonal": {
+        "title": "",
+        "description": "",
+        "clearCondition": ""
+    },
     "pettasVera": {
         "title": "",
         "description": "",
@@ -25,11 +30,6 @@
         "clearCondition": ""
     },
     "renusVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
-    },
-    "22spring": {
         "title": "",
         "description": "",
         "clearCondition": ""
