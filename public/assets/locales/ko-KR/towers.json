@@ -1,34 +1,34 @@
 {
     "altersRush": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "알터즈 러쉬",
+        "description": "여기는 각 아크스의 전투 능력을 시험하는 트레이니아다.\n최대한 에너미와의 전투를 피하고 전투 기술을 구사하여\n최심부에 기다리고 있는 \"치아큐리오\"를 격파하라.",
+        "clearCondition": "골에 도달하라!",
+        "subMission1": "8:00 미만으로 클리어",
+        "subMission2": "에너미 토벌 수 4체 미만으로 클리어",
+        "subMission3": "전투 불능 횟수 5회 미만으로 클리어"
     },
     "greatWall": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "그레이트 월",
+        "description": "여기는 각 아크스의 전투 능력을 시험하는 트레이니아다.\n전투 기술을 구사하여 최심부에 기다리고 있는 \"다이달 소드\"를 격파하라.",
+        "clearCondition": "다이달 소드를 쓰러뜨려라!",
+        "subMission1": "23:00 미만으로 클리어",
+        "subMission2": "전투 불능 횟수 5회 미만으로 클리어",
+        "subMission3": "포인트 큐브 5개 획득 후 클리어"
     },
     "aeroRunner": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "에어로 러너",
+        "description": "여기는 각 아크스의 비상 능력을 시험하는 트레이니아다.\n\"포톤 글라이드\"를 이용해 목표 지점에 도달하라.",
+        "clearCondition": "골에 도달하라!",
+        "subMission1": "2:05 미만으로 클리어",
+        "subMission2": "낙하 횟수 5회 미만으로 클리어",
+        "subMission3": "포인트 큐브 10개 획득 후 클리어"
     },
     "dollsBurrow": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "돌즈 버로우",
+        "description": "여기는 각 아크스의 전투 능력을 시험하는 트레이니아다.\n전투 기술을 구사하여, 최심부에서 기다리고 있는 \"데스트라그라스\"를 격파하라.",
+        "clearCondition": "골에 도달하라!",
+        "subMission1": "포인트 큐브 5개 획득 후 클리어",
+        "subMission2": "전투 불능 횟수 3회 미만으로 클리어",
+        "subMission3": "10:00 미만으로 클리어"
     }
 }
