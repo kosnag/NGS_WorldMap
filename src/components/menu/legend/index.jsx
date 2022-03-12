@@ -165,6 +165,7 @@ export default function MenuLegend(){
               <Button cat="other" item="stellarGrace" rarity="special"/>
               <Button cat="other" item="datapod" rarity="places"/>
               <Button cat="other" item="musicPlace" rarity="places"/>
+              <Button cat="other" item="mischief" rarity="special"/>
             </items>
           <info>
             <background className={previewRarity}/>

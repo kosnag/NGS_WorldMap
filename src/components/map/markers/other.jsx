@@ -168,6 +168,37 @@ BGM:()=>{
             </tooltip-window></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
+},
+Mischief:()=>{
+    const {t} = useTranslation();
+    const [data,setData] = useState([]);
+    const [marker,setMarker] = useState([]);
+    useEffect(()=>{fetch("./api/read.php?table=other__mischief").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.musicPlace));
+        return ()=>clearInterval(i);
+    });
+    if (data !== null) {return (marker ? (data.map((x=>
+        <Circle 
+            center={[x.lat,x.lng]}
+            radius={4}
+            pathOptions={{
+                color: 'lightblue',
+                fillColor: 'lightblue',
+                fillOpacity: '1'
+            }}
+        >
+            <Tooltip direction='top'><tooltip-window>
+                <header>
+                    <span><menuicon/> {t("items:other.mischief.title")}</span>
+                </header>
+                <content>
+                    {t("ui:Map.placedBy")}: {x.contributer}
+                    <id>ID: mischief{x.id}</id>
+                </content>
+            </tooltip-window></Tooltip>
+        </Circle>
+    ))):<Fragment/>)}else{return <Fragment/>}
 }
 }
 export default function Other(){return (<>
@@ -177,4 +208,5 @@ export default function Other(){return (<>
 <Load.StellarGrace/>
 <Load.Datapod/>
 <Load.BGM/>
+<Load.Mischief/>
 </>)};
