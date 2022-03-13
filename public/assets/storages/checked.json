@@ -1,4 +1,4 @@
 {
-    "containers__red": [],
-    "other__datapod": []
+    "redContainers": [],
+    "datapods": []
 }
