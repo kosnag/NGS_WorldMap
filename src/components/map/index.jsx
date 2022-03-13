@@ -8,12 +8,14 @@ import Landmarks from './markers/landmarks';
 import Food from './markers/food';
 import Minerals from './markers/minerals';
 import Other from './markers/other';
+import Containers from './markers/containers';
 
 function Init(){return (<>
 <Landmarks/>
 <Food/>
 <Minerals/>
 <Other/>
+<Containers/>
 </>)}
 
 export default function Map(){
