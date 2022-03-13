@@ -130,7 +130,25 @@ Datapod:()=>{
         return ()=>clearInterval(i);
     });
     if (data !== null) {return (marker ? (data.map((x=>
-        <Marker icon={IconLib.datapod} position={[x.lat,x.lng]}>
+        <Marker 
+            icon={()=>{setInterval(()=>{
+                if(window.localStorage_Checked.datapods[x.string] === 1){return IconLib.datapodChecked}else{return IconLib.datapod}
+            })}
+            }
+            position={[x.lat,x.lng]} 
+            eventHandlers={function(){
+                this.addEventListener("contextmenu", function(e){
+                    e.preventDefault();
+                    if(window.localStorage_Checked.datapods[x.string] === 1){
+                        window.localStorage_Checked.datapods[x.string] = 0
+                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+                    } else {
+                        window.localStorage_Checked.datapods[x.string] = 1
+                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+                    };
+                })
+            }}
+        >
             <Tooltip direction='top'><tooltip-window>
                 <header>
                      <span><menuicon/> {t("items:other.datapod.title")}</span>
