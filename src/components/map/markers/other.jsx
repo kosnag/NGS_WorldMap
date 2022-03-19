@@ -16,7 +16,7 @@ Veteran:()=>{
     });
     if (data !== null){return (marker ? (data.map((x=>
         <Marker icon={IconLib.veteran} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.veteran.title")}</span>
                 </header>
@@ -41,7 +41,7 @@ AlphaReactor:()=>{
     });
     if (data !== null) {return (marker ? (data.map((x=>
         <Marker icon={IconLib.datapod} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.alphaReactor.title")}</span>
                 </header>
@@ -76,7 +76,7 @@ StellarFragment:()=>{
             }}
         >
             <Marker icon={IconLib.stellarSeed} position={[x.lat,x.lng]}>
-                <Tooltip direction='top'><tooltip-window>
+                <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                     <header>
                         <span><menuicon/> {t("items:other.stellarSeed.title")}</span>
                     </header>
@@ -106,7 +106,7 @@ StellarGrace:()=>{
             default:
                 return IconLib.stellarGrace_Default
         }}} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.stellarGrace.title")}</span>
                 </header>
@@ -154,7 +154,7 @@ Datapod:()=>{
             position={[x.lat,x.lng]} 
             eventHandlers={{contextmenu:()=>check.icon(x.string)}}
         >
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                      <span><menuicon/> {t("items:other.datapod.title")}</span>
                 </header>
@@ -179,7 +179,7 @@ BGM:()=>{
     });
     if (data !== null) {return (marker ? (data.map((x=>
         <Marker icon={IconLib.musicPlace} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.musicPlace.title")}</span>
                 </header>
@@ -211,7 +211,7 @@ Mischief:()=>{
                 fillOpacity: '1'
             }}
         >
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.mischief.title")}</span>
                 </header>

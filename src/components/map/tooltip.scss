@@ -1,7 +1,7 @@
 @import './style.scss';
 
 tooltip-window {
-    width: 320px;
+    width: auto;
     display: block;
     background-color: $window-color;
     border: 1px solid $window-border-color;
