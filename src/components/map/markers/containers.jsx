@@ -14,25 +14,30 @@ Red:()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.container.red));
         return ()=>clearInterval(i);
     });
+    const check = {
+        icon: function(x){
+            if (window.localStorage_Checked.redContainers[x] === 1) {
+                return IconLib.redBoxChecked
+            } else {
+                return IconLib.redBox
+            }
+        },
+        set: function(x){
+            x.preventDefault();
+            if (window.localStorage_Checked.redContainers[x] === 1) {
+                window.localStorage_Checked.redContainers[x] = 0
+                localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+            } else {
+                window.localStorage_Checked.redContainers[x] = 1
+                localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+            };
+        }
+    }
     if (data !== null) {return (marker ? (data.map((x=>
         <Marker 
-            icon={()=>{setInterval(()=>{
-                if(window.localStorage_Checked.redContainers[x.id] === 1){return IconLib.redBoxChecked}else{return IconLib.redBox}
-            })}
-            }
+            icon={check.icon(x.id)}
             position={[x.lat,x.lng]} 
-            eventHandlers={function(){
-                this.addEventListener("contextmenu", function(e){
-                    e.preventDefault();
-                    if(window.localStorage_Checked.redContainers[x.id] === 1){
-                        window.localStorage_Checked.redContainers[x.id] = 0
-                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
-                    } else {
-                        window.localStorage_Checked.redContainers[x.id] = 1
-                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
-                    };
-                })
-            }}
+            eventHandlers={{contextmenu:()=>check.icon(x.id)}}
         >
             <Tooltip direction='top'><tooltip-window>
                 <header>

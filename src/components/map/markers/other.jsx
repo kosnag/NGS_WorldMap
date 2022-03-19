@@ -129,25 +129,30 @@ Datapod:()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.other.datapod));
         return ()=>clearInterval(i);
     });
+    const check = {
+        icon: function(x){
+            if (window.localStorage_Checked.datapods[x] === 1) {
+                return IconLib.datapodChecked
+            } else {
+                return IconLib.datapod
+            }
+        },
+        set: function(x){
+            x.preventDefault();
+            if (window.localStorage_Checked.datapods[x] === 1) {
+                window.localStorage_Checked.datapods[x] = 0
+                localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+            } else {
+                window.localStorage_Checked.datapods[x] = 1
+                localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+            };
+        }
+    }
     if (data !== null) {return (marker ? (data.map((x=>
         <Marker 
-            icon={()=>{setInterval(()=>{
-                if(window.localStorage_Checked.datapods[x.string] === 1){return IconLib.datapodChecked}else{return IconLib.datapod}
-            })}
-            }
+            icon={check.icon(x.string)}
             position={[x.lat,x.lng]} 
-            eventHandlers={function(){
-                this.addEventListener("contextmenu", function(e){
-                    e.preventDefault();
-                    if(window.localStorage_Checked.datapods[x.string] === 1){
-                        window.localStorage_Checked.datapods[x.string] = 0
-                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
-                    } else {
-                        window.localStorage_Checked.datapods[x.string] = 1
-                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
-                    };
-                })
-            }}
+            eventHandlers={{contextmenu:()=>check.icon(x.string)}}
         >
             <Tooltip direction='top'><tooltip-window>
                 <header>
