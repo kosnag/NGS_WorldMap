@@ -9,6 +9,7 @@ import Food from './markers/food';
 import Minerals from './markers/minerals';
 import Other from './markers/other';
 import Containers from './markers/containers';
+import Sections from './markers/sections';
 
 function Init(){return (<>
 <Landmarks/>
@@ -16,6 +17,7 @@ function Init(){return (<>
 <Minerals/>
 <Other/>
 <Containers/>
+<Sections/>
 </>)}
 
 export default function Map(){

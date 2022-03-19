@@ -193,6 +193,11 @@ popup-window {
                 box-sizing: border-box;
                 border: 2px solid $window-border-color;
                 //align-self: center
+                &.section {
+                    width: 520px;
+                    height: initial;
+                    border: 1px solid $window-border-color;
+                }
             }
             info {
                 width: 100%;

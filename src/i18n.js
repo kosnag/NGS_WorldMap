@@ -19,7 +19,8 @@ i18n
       'towers',
       'urgents',
       'rewards',
-      'datapods'
+      'datapods',
+      'enemies'
     ],
     framework: "React",
     fallbackLng: 'en_US',

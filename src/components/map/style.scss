@@ -36,3 +36,7 @@
         display: none;
     }
 }
+.leaflet-interactive {
+	cursor: pointer;
+	transition: fill-opacity ease .4s, stroke-opacity ease .4s;
+}
