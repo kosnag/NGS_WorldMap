@@ -21,5 +21,6 @@ if (!isset($session_check["session"])){
 		<ngsmap-mapping-edit><map></map></ngsmap-mapping-edit>
 		<script src="edit/map.js"></script>
 		<script src="edit/popup.js"></script>
+		<script src="edit/markers.js"></script>
 	</body>
 </html>
