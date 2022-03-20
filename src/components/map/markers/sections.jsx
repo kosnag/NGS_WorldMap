@@ -5,8 +5,9 @@ import "../popup.scss";
 
 export default function Sections(){
     const {t} = useTranslation();
-    const popupSectionRef = useRef();
-    const close = () => {popupSectionRef.current._closeButton.click()}
+    //const popupRef = useRef();
+    window.popupSectionRef = useRef();
+    const close = () => {window.popupSectionRef.current._closeButton.click()}
     const [data,setData] = useState([]);
     const [tier,setTier] = useState("1");
     const handleSelectChange=(e)=>setTier(e.target.value);
@@ -42,7 +43,7 @@ export default function Sections(){
                 opacity: 0.25
             }}
         >
-            <Popup direction='top' ref={popupSectionRef}><popup-window>
+            <Popup direction='top' ref={window.popupSectionRef}><popup-window>
                 <header>
                     <span><menuicon/> {t("sections:type."+x.type)}</span><closebutton onClick={()=>close()}/>
                 </header>
@@ -79,7 +80,7 @@ export default function Sections(){
                                         <level>
                                             <span>{t("ui:Map.recommendedBP")}</span>
                                             <border/>
-                                            <value>{x.recBP}</value>
+                                            <value>{x.minBP}</value>
                                         </level>
                                         <level>
                                             <span>{t("ui:Map.enemyLv")}</span>
@@ -101,15 +102,15 @@ export default function Sections(){
                                             <border/>
                                             <value>8</value>
                                         </level>
-                                        <level>{(()=>{if (y.minBP != null){return <>
-                                            <span>{t("ui:Map.requiredBP")}</span>
+                                        <level>
+                                            <span>{tier === "1" ? 
+                                                <>{t("ui:Map.recommendedBP")}</>
+                                                :
+                                                <>{t("ui:Map.requiredBP")}</>
+                                            }</span>
                                             <border/>
                                             <value>{y.minBP}</value>
-                                        </>}else{return <>
-                                            <span>{t("ui:Map.recommendedBP")}</span>
-                                            <border/>
-                                            <value>{y.recBP}</value>
-                                        </>}})()}</level>
+                                        </level>
                                         <level>
                                             <span>{t("ui:Map.enemyLv")}</span>
                                             <border/>
