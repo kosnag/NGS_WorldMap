@@ -30,17 +30,14 @@
         "type": "combat",
         "ranks": [
             {
-                "rank": 1,
                 "minBP": 894,
                 "enemyLv": 5
             },
             {
-                "rank": 2,
                 "minBP": 1184,
                 "enemyLv": 15
             },
             {
-                "rank": 3,
                 "minBP": 1759,
                 "enemyLv": 35
             }
@@ -55,17 +52,14 @@
         "type": "combat",
         "ranks": [
             {
-                "rank": 1,
                 "minBP": 1009,
                 "enemyLv": 10
             },
             {
-                "rank": 2,
                 "minBP": 1184,
                 "enemyLv": 15
             },
             {
-                "rank": 3,
                 "minBP": 1759,
                 "enemyLv": 35
             }
@@ -91,12 +85,10 @@
         "type": "combat",
         "ranks": [
             {
-                "rank": 1,
                 "minBP": 1184,
                 "enemyLv": 15
             },
             {
-                "rank": 2,
                 "minBP": 1759,
                 "enemyLv": 35
             }
