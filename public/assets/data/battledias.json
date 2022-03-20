@@ -6,7 +6,6 @@
         "players": 4,
         "ranks": [
             {
-                "rank": 1,
                 "minBP": 1363,
                 "enemyLv": 24,
                 "rewards": [
@@ -31,7 +30,6 @@
                 ]
             },
             {
-                "rank": 2,
                 "minBP": 1957,
                 "enemyLv": 44,
                 "rewards": [

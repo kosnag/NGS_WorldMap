@@ -12,7 +12,7 @@ Battledia:()=>{
     const close = () => {popupRef.current._closeButton.click()}
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    const [tier,setTier] = useState("1");
+    const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
     useEffect(()=>{fetch("./assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
@@ -36,65 +36,69 @@ Battledia:()=>{
                 </header>
                 <content>
                     <select onChange={handleSelectChange}>
-                        {(x.ranks.map((y=> 
-                            <option value={y.rank}>{t("ui:Map.rank")} {y.rank}</option>
-                        )))}
+                        {(()=>{
+                            const jsx = [];
+                            for (var i=0; i<x.ranks.length; i++){
+                                jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
+                            }
+                            return jsx;
+                        })()}
                     </select>
                     <br/><br/>
                     <name>{t("battledias:"+x.id+".title")}</name>
                     <br/>
-                    {(x.ranks.map((y=>
-                        <info className={tier === y.rank.toString() ? "" : "hidden"}>
-                            <div>
-                                <level>
-                                    <span>{t("ui:Map.maxPlayers")}</span>
-                                    <border/>
-                                    <value>{x.players}</value>
-                                </level>
-                                <level>
-                                    <span>{t("ui:Map.requiredBP")}</span>
-                                    <border/>
-                                    <value>{y.minBP}</value>
-                                </level>
-                                <level>
-                                    <span>{t("ui:Map.enemyLv")}</span>
-                                    <border/>
-                                    <value>{y.enemyLv}</value>
-                                </level>
-                            </div>
-                        </info>
-                    )))}
+                    <info>
+                        <div>
+                            <level>
+                                <span>{t("ui:Map.maxPlayers")}</span>
+                                <border/>
+                                <value>{x.players}</value>
+                            </level>
+                            <level>
+                                <span>{t("ui:Map.requiredBP")}</span>
+                                <border/>
+                                <value>{x.ranks[tier].minBP}</value>
+                            </level>
+                            <level>
+                                <span>{t("ui:Map.enemyLv")}</span>
+                                <border/>
+                                <value>{x.ranks[tier].enemyLv}</value>
+                            </level>
+                        </div>
+                    </info>
                     <cont>
                         <img src="./assets/images/banners/other/battledia.png" alt="" />
-                        {(x.ranks.map((y=>
-                            <info className={tier === y.rank.toString() ? "" : "hidden"}>
-                                <span>{(()=>{
-                                    switch(x.type){
-                                        case "purple":
-                                            return t("ui:Map.rewards.possible")
-                                        case "yellow":
-                                            return t("ui:Map.rewards.guaranteed")
-                                        default:
-                                            return <Fragment/>
-                                    }
-                                })()}</span>
-                                <border/>
-                                <rewards>
-                                    <div>
-                                        {(y.rewards.map((z=><>
-                                            {(()=>{if (z.count != null){
-                                                return (<>
-                                                    <l>{t("rewards:"+z.item)}</l>
-                                                    <r>x{z.count}</r>
-                                                </>);
-                                            } else {
-                                                return (<full>{t("rewards:"+z.item)}</full>);
-                                            }})()}
-                                        </>)))}
-                                    </div>
-                                </rewards>
-                            </info>
-                        )))}
+                        {(()=>{
+                            const jsx = [];
+                            for (var i=0; i<x.ranks.length; i++){
+                                jsx.push(
+                                    <info className={// eslint-disable-next-line
+                                        tier == i ? "" : "hidden"
+                                    }>
+                                        <span>{(()=>{
+                                            if(x.type === "purple"){return t("ui:Map.rewards.possible")}
+                                            if(x.type === "yellow"){return t("ui:Map.rewards.guaranteed")}
+                                        })()}</span>
+                                        <border/>
+                                        <rewards>
+                                            <div>
+                                                {(x.ranks[i].rewards.map((y=><>
+                                                    {(()=>{
+                                                        if (y.count != null){return (<>
+                                                            <l>{t("rewards:"+y.item)}</l>
+                                                            <r>x{y.count}</r>
+                                                        </>);
+                                                    } else {
+                                                        return (<full>{t("rewards:"+y.item)}</full>);
+                                                    }})()}
+                                                </>)))}
+                                            </div>
+                                        </rewards>
+                                    </info>
+                                )
+                            }
+                            return jsx;
+                        })()}
                     </cont>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
@@ -322,7 +326,7 @@ UQ:()=>{
     const close=()=>popupRef.current._closeButton.click();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    const [tier,setTier] = useState("1");
+    const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
     useEffect(()=>{fetch("./assets/data/uq.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
@@ -346,73 +350,81 @@ UQ:()=>{
                 </header>
                 <content>
                     <select onChange={handleSelectChange}>
-                        {(x.ranks.map((y=> 
-                            <option value={y.rank}>{t("ui:Map.rank")} {y.rank}</option>
-                        )))}
+                        {(()=>{
+                            const jsx = [];
+                            for (var i=0; i<x.ranks.length; i++){
+                                jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
+                            }
+                            return jsx;
+                        })()}
                     </select>
                     <br/><br/>
                     <name>{t("urgents:"+x.id+".title")}</name>
                     <br/>
-                    {(x.ranks.map((y=>
-                        <info className={tier === y.rank.toString() ? "" : "hidden"}>
-                            <div>
-                                <level>
-                                    <span>{t("ui:Map.maxPlayers")}</span>
-                                    <border/>
-                                    <value>{x.players}</value>
-                                </level>
-                                <level>
-                                    <span>{t("ui:Map.requiredBP")}</span>
-                                    <border/>
-                                    <value>{y.minBP}</value>
-                                </level>
-                                <level>
-                                    <span>{t("ui:Map.enemyLv")}</span>
-                                    <border/>
-                                    <value>{y.enemyLv}</value>
-                                </level>
-                            </div>
-                        </info>
-                    )))}
+                    <info>
+                        <div>
+                            <level>
+                                <span>{t("ui:Map.maxPlayers")}</span>
+                                <border/>
+                                <value>{x.players}</value>
+                            </level>
+                            <level>
+                                <span>{t("ui:Map.requiredBP")}</span>
+                                <border/>
+                                <value>{x.ranks[tier].minBP}</value>
+                            </level>
+                            <level>
+                                <span>{t("ui:Map.enemyLv")}</span>
+                                <border/>
+                                <value>{x.ranks[tier].enemyLv}</value>
+                            </level>
+                        </div>
+                    </info>
                     <cont>
                         <img src={"./assets/images/banners/urgents/"+x.id+".png"} alt="" />
-                        {(x.ranks.map((y=>
-                            <info className={tier === y.rank.toString() ? "" : "hidden"}>
-                                <span>{t("ui:Map.rewards.firstTime")}</span>
-                                <border/>
-                                <rewards>{(x.firstRewards.map((z=>
-                                    <div>
-                                        <l>{t("rewards:"+z.item)}</l>
-                                        <r>{(()=>{switch (z.item){
-                                            case "meseta":
-                                            case "season_points":
-                                            case "experience":
-                                                return (<>{z.count}</>)
-                                            default:
-                                                return (<>x{z.count}</>)
-                                            }
-                                        })()}</r>
-                                        </div>
-                                )))}</rewards>
-                                <br/>
-                                <span>{t("ui:Map.rewards.guaranteed")}</span>
-                                <border/>
-                                <rewards>{(y.rewards.map((z=>
-                                    <div>
-                                        <l>{t("rewards:"+z.item)}</l>
-                                        <r>{(()=>{switch (z.item){
-                                            case "meseta":
-                                            case "season_points":
-                                            case "experience":
-                                                return (<>{z.count}</>)
-                                            default:
-                                                return (<>x{z.count}</>)
-                                            }
-                                        })()}</r>
-                                    </div>
-                                )))}</rewards>
-                            </info>
-                        )))}
+                        {(()=>{
+                            const jsx = [];
+                            for (var i=0; i<x.ranks.length; i++){
+                                jsx.push(
+                                    <info className={tier == i ? "" : "hidden"}>
+                                        <span>{t("ui:Map.rewards.firstTime")}</span>
+                                        <border/>
+                                        <rewards>{(x.firstRewards.map((z=>
+                                            <div>
+                                                <l>{t("rewards:"+z.item)}</l>
+                                                <r>{(()=>{switch (z.item){
+                                                    case "meseta":
+                                                    case "season_points":
+                                                    case "experience":
+                                                        return (<>{z.count}</>)
+                                                    default:
+                                                        return (<>x{z.count}</>)
+                                                    }
+                                                })()}</r>
+                                                </div>
+                                        )))}</rewards>
+                                        <br/>
+                                        <span>{t("ui:Map.rewards.guaranteed")}</span>
+                                        <border/>
+                                        <rewards>{(x.ranks[i].rewards.map((z=>
+                                            <div>
+                                                <l>{t("rewards:"+z.item)}</l>
+                                                <r>{(()=>{switch (z.item){
+                                                    case "meseta":
+                                                    case "season_points":
+                                                    case "experience":
+                                                        return (<>{z.count}</>)
+                                                    default:
+                                                        return (<>x{z.count}</>)
+                                                    }
+                                                })()}</r>
+                                            </div>
+                                        )))}</rewards>
+                                    </info>
+                                )
+                            }
+                            return jsx;
+                        })()}
                     </cont>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
