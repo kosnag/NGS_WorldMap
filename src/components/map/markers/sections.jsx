@@ -46,20 +46,18 @@ export default function Sections(){
                     <span><menuicon/> {t("sections:type."+x.type)}</span><closebutton onClick={()=>close()}/>
                 </header>
                 <content>
-                    {(()=>{if(x.type === "combat"){
-                        return <>
-                            <select onChange={handleSelectChange}>
-                            {(()=>{
-                                const jsx = [];
-                                for (var i=0; i<x.ranks.length; i++){
-                                    jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
-                                }
-                                return jsx;
-                            })()}
-                            </select>
-                            <br/><br/>
-                        </>
-                    }})()}
+                    {(()=>{if(x.type === "combat"){return <>
+                        <select onChange={handleSelectChange}>
+                        {(()=>{
+                            const jsx = [];
+                            for (var i=0; i<x.ranks.length; i++){
+                                jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
+                            }
+                            return jsx;
+                        })()}
+                        </select>
+                        <br/><br/>
+                    </>}})()}
                     <name>{t("sections:sections."+x.region+"."+x.id)}</name>
                     <br/>
                     <cont><img src={"./assets/images/banners/sections/"+x.region+"/"+x.id+".png"} className="section" alt="" /></cont>
@@ -102,20 +100,27 @@ export default function Sections(){
                                         <value>8</value>
                                     </level>
                                     <level>
-                                        <span>{(()=>{// eslint-disable-next-line
-                                            if (tier == 0){
-                                                return <>{t("ui:Map.recommendedBP")}</>
-                                            } else {
-                                                return <>{t("ui:Map.requiredBP")}</>
-                                            }
-                                        })()}</span>
+                                        <span>
+                                            {(()=>{// eslint-disable-next-line
+                                                if (tier == 0){
+                                                    return <>{t("ui:Map.recommendedBP")}</>
+                                                } else {
+                                                    return <>{t("ui:Map.requiredBP")}</>
+                                                }
+                                            })()}
+                                        </span>
                                         <border/>
-                                        <value>{x.ranks[tier].minBP}</value>
+                                        <value>
+                                            {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].minBP}</>}
+                                            })()}
+                                        </value>
                                     </level>
                                     <level>
                                         <span>{t("ui:Map.enemyLv")}</span>
                                         <border/>
-                                        <value>{x.ranks[tier].enemyLv}</value>
+                                        <value>
+                                            {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].enemyLv}</>}})()}
+                                        </value>
                                     </level>
                                 </div>
                             </info>

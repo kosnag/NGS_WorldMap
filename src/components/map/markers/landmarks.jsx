@@ -70,32 +70,34 @@ Battledia:()=>{
                         <img src="./assets/images/banners/other/battledia.png" alt="" />
                         {(()=>{
                             const jsx = [];
-                            for (var i=0; i<x.ranks.length; i++){
-                                jsx.push(
-                                    <info className={// eslint-disable-next-line
-                                        tier == i ? "" : "hidden"
-                                    }>
-                                        <span>{(()=>{
-                                            if(x.type === "purple"){return t("ui:Map.rewards.possible")}
-                                            if(x.type === "yellow"){return t("ui:Map.rewards.guaranteed")}
-                                        })()}</span>
-                                        <border/>
-                                        <rewards>
-                                            <div>
-                                                {(x.ranks[i].rewards.map((y=><>
-                                                    {(()=>{
-                                                        if (y.count != null){return (<>
-                                                            <l>{t("rewards:"+y.item)}</l>
-                                                            <r>x{y.count}</r>
-                                                        </>);
-                                                    } else {
-                                                        return (<full>{t("rewards:"+y.item)}</full>);
-                                                    }})()}
-                                                </>)))}
-                                            </div>
-                                        </rewards>
-                                    </info>
-                                )
+                            for (var i=0; i<x.ranks.length; i++){// eslint-disable-next-line
+                                jsx.push(<>{(()=>{
+                                    if(x.ranks[tier] != null){return (// eslint-disable-next-line
+                                        <info className={tier == i ? "" : "hidden"}>
+                                            <span>
+                                                {(()=>{
+                                                    if(x.type === "purple"){return t("ui:Map.rewards.possible")}
+                                                    if(x.type === "yellow"){return t("ui:Map.rewards.guaranteed")}
+                                                })()}
+                                            </span>
+                                            <border/>
+                                            <rewards>
+                                                <div>
+                                                    {(x.ranks[i].rewards.map((y=><>
+                                                        {(()=>{
+                                                            if (y.count != null){return (<>
+                                                                <l>{t("rewards:"+y.item)}</l>
+                                                                <r>x{y.count}</r>
+                                                            </>);
+                                                        } else {
+                                                            return (<full>{t("rewards:"+y.item)}</full>);
+                                                        }})()}
+                                                    </>)))}
+                                                </div>
+                                            </rewards>
+                                        </info>
+                                    )}
+                                })()}</>)
                             }
                             return jsx;
                         })()}
@@ -384,44 +386,52 @@ UQ:()=>{
                         <img src={"./assets/images/banners/urgents/"+x.id+".png"} alt="" />
                         {(()=>{
                             const jsx = [];
-                            for (var i=0; i<x.ranks.length; i++){
-                                jsx.push(
-                                    <info className={tier == i ? "" : "hidden"}>
-                                        <span>{t("ui:Map.rewards.firstTime")}</span>
-                                        <border/>
-                                        <rewards>{(x.firstRewards.map((z=>
-                                            <div>
-                                                <l>{t("rewards:"+z.item)}</l>
-                                                <r>{(()=>{switch (z.item){
-                                                    case "meseta":
-                                                    case "season_points":
-                                                    case "experience":
-                                                        return (<>{z.count}</>)
-                                                    default:
-                                                        return (<>x{z.count}</>)
-                                                    }
-                                                })()}</r>
-                                                </div>
-                                        )))}</rewards>
-                                        <br/>
-                                        <span>{t("ui:Map.rewards.guaranteed")}</span>
-                                        <border/>
-                                        <rewards>{(x.ranks[i].rewards.map((z=>
-                                            <div>
-                                                <l>{t("rewards:"+z.item)}</l>
-                                                <r>{(()=>{switch (z.item){
-                                                    case "meseta":
-                                                    case "season_points":
-                                                    case "experience":
-                                                        return (<>{z.count}</>)
-                                                    default:
-                                                        return (<>x{z.count}</>)
-                                                    }
-                                                })()}</r>
-                                            </div>
-                                        )))}</rewards>
-                                    </info>
-                                )
+                            for (var i=0; i<x.ranks.length; i++){// eslint-disable-next-line
+                                jsx.push(<>{(()=>{
+                                    if(x.ranks[tier] != null){return (// eslint-disable-next-line
+                                        <info className={tier == i ? "" : "hidden"}>
+                                            <span>{t("ui:Map.rewards.firstTime")}</span>
+                                            <border/>
+                                            <rewards>
+                                                {(x.firstRewards.map((y=>
+                                                    <div>
+                                                        <l>{t("rewards:"+y.item)}</l>
+                                                        <r>
+                                                            {(()=>{switch (y.item){
+                                                                case "meseta":
+                                                                case "season_points":
+                                                                case "experience":
+                                                                    return (<>{y.count}</>)
+                                                                default:
+                                                                    return (<>x{y.count}</>)
+                                                            }})()}
+                                                        </r>
+                                                    </div>
+                                                )))}
+                                            </rewards>
+                                            <br/>
+                                            <span>{t("ui:Map.rewards.guaranteed")}</span>
+                                            <border/>
+                                            <rewards>
+                                                {(x.ranks[i].rewards.map((y=>
+                                                    <div>
+                                                        <l>{t("rewards:"+y.item)}</l>
+                                                        <r>
+                                                            {(()=>{switch (y.item){
+                                                                case "meseta":
+                                                                case "season_points":
+                                                                case "experience":
+                                                                    return (<>{y.count}</>)
+                                                                default:
+                                                                    return (<>x{y.count}</>)
+                                                            }})()}
+                                                        </r>
+                                                    </div>
+                                                )))}
+                                            </rewards>
+                                        </info>
+                                    )}
+                                })()}</>)
                             }
                             return jsx;
                         })()}
