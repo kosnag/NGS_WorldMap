@@ -1,0 +1,275 @@
+[
+    {
+        "id": "seasonal",
+        "lat":-1024, "lng":1024,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 1184,
+                "enemyLv": 17,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    }
+                ]
+            },
+            {
+                "minBP": 1898,
+                "enemyLv": 40,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonScale.title",
+                        "count": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "pettasVera",
+        "lat":-1057, "lng":296.75,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 1184,
+                "enemyLv": 17,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    }
+                ]
+            },
+            {
+                "minBP": 1898,
+                "enemyLv": 40,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonScale.title",
+                        "count": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "nexVera",
+        "lat":-1171, "lng":533,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 1184,
+                "enemyLv": 17,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    }
+                ]
+            },
+            {
+                "minBP": 1898,
+                "enemyLv": 40,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonScale.title",
+                        "count": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "miningRigDefenceAelio",
+        "lat":-1024, "lng":1024,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 1243,
+                "enemyLv": 20,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    }
+                ]
+            },
+            {
+                "minBP": 1898,
+                "enemyLv": 40,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonScale.title",
+                        "count": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "darkFalzInterception",
+        "lat":-1024, "lng":1024,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 1898,
+                "enemyLv": 40,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 20000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonScale.title",
+                        "count": 12
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "dustylVera",
+        "lat":-1301.5, "lng":1518.5,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 1682,
+                "enemyLv": 32,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonScale.title",
+                        "count": 8
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "renusVera",
+        "lat":-1024, "lng":1024,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 1682,
+                "enemyLv": 32,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonScale.title",
+                        "count": 8
+                    }
+                ]
+            }
+        ]
+    }
+]
