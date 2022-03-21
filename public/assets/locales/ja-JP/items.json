@@ -135,8 +135,8 @@
             "description": ""
         },
         "mischief": {
-            "title": "",
-            "description": ""
+            "title": "ミスチーフシンボル",
+            "description": "シーズンイベント中ハルファのなかにミスチーフシンボルが出現します。"
         }
     },
     "nothing": "Select item"
