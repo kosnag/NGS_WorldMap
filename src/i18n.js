@@ -23,8 +23,8 @@ i18n
       'enemies'
     ],
     framework: "React",
-    fallbackLng: 'en_US',
-    //debug: true,
+    fallbackLng: 'en-US',
+    debug: false,
     react: {
       useSuspense: false,
       wait: false,

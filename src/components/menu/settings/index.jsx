@@ -19,11 +19,16 @@ export default function MenuSettings(){
     setToggleTab(tab)
   };
 
+  const [contributers,setContributers] = useState([]);
+
   useEffect(() => {
     document.getElementById('menu-settings').classList.add('hidden');
     setTimeout(() => {
       setToggleLang(localStorage.getItem("i18nextLng"));
     }, 100)
+    fetch("./assets/storages/contributers.json")
+      .then(response=>response.json())
+      .then(d=>setContributers(d))
   }, []);
 
   return (
@@ -84,7 +89,7 @@ export default function MenuSettings(){
               <button onClick={() => {window.localStorage.removeItem("i18nextLng"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.langReset")}</button>
               <button onClick={() => {window.localStorage.removeItem("settings"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.visibilityReset")}</button>
               <button onClick={() => {window.localStorage.removeItem("checked"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.checkedReset")}</button>
-              <button style={{display: "none"}} onClick={() => {window.cache.delete(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.clearCache")}</button>
+              <button style={{display: "none"}} onClick={() => {window.ache.delete(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.clearCache")}</button>
               <button onClick={() => {window.localStorage.clear(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.resetAll")}</button>
             </items>
             <items id="about" className={toggleTab === 'about' ? "active" : ""}>
@@ -94,10 +99,10 @@ export default function MenuSettings(){
                 {t("ui:OptionsMenu.Items.about.author")}: kosnag
                 <br/><br/>
                 {t("ui:OptionsMenu.Items.about.contributers")}:<br/>
-                • Sinitsa - RU translate<br/>
-                • focuslite - KR translate<br/>
-                • SVGVsevolod - Backend
-                <br/><br/><br/>
+                {contributers.map((x=>
+                  <>• <name onClick={()=>{window.open(x.link)}}>{x.name}</name> - {x.info}<br/></>
+                ))}
+                <br/><br/>
                 {t("ui:OptionsMenu.Items.about.segaCopyright")}
               </p>
             </items>
