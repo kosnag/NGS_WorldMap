@@ -2,6 +2,7 @@
 Interactive map of world of Phantasy Star Online 2: New Genesis with location of everything.
 
 URL: [map.pso2.ru](https://map.pso2.ru/)
+Discord: [discord.gg/c24MM2cMVj](https://discord.gg/c24MM2cMVj)
 
 ## Tech Stack
 - React - [reactjs.org](https://reactjs.org/)
