@@ -6,7 +6,6 @@ import "../popup.scss";
 export default function Sections(){
     const {t} = useTranslation();
     const popupRef = useRef();
-    const close = () => {popupRef.current._source._map._popup._closeButton.click()}
     const [data,setData] = useState([]);
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
@@ -43,7 +42,7 @@ export default function Sections(){
         >
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("sections:type."+x.type)}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("sections:type."+x.type)}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
                 <content>
                     {(()=>{if(x.type === "combat"){return <>
