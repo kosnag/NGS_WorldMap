@@ -1,8 +1,8 @@
 {
     "variable": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
+        "title": "Drill: Flurry of Flowers Clean Up Op",
+        "clearCondition": "Defeat the target enemy.",
+        "description": "At this portal you can conduct drills to prepare for battles to come. This trigger recreates a battle at Cryano Cliffs at West Aelio. Make use of your battle skills to defeat the enemies, including the large FORMERS."
     },
     "aelioTroopers": {
         "title": "Aelio Troopers",

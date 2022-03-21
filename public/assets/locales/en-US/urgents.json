@@ -1,8 +1,8 @@
 {
     "seasonal": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Flurry of Flowers Clean Up Op",
+        "description": "We have picked up multiple readings of strong enemies at the Cryano Cliffs in West Aelio. Intel report confirmed large FORMERS, but they possess a different spectrum than usual. We need all ARKS Defenders to stay cautious on the irregularities and defeat the enemies.",
+        "clearCondition": "Defeat the target enemy!"
     },
     "pettasVera": {
         "title": "Command DOLLS Suppression Op",
