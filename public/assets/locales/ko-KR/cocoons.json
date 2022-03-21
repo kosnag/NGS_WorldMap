@@ -82,7 +82,7 @@
     "buddyAttack": {
         "title": "버디 어택",
         "description": "여기는 각 아크스의 전투 능력을 시험하는 트레이니아다.\n“드롬”의 지원을 받으며 모든 에너미를 격파하라.",
-        "clearCondition": "모든 에너미를 격파하라."",
+        "clearCondition": "모든 에너미를 격파하라.",
         "subMission1": "드롬의 추가 레벨이 Lv.3 상태를 유지한채로 클리어",
         "subMission2": "전투 불능 횟수 3회 미만으로 클리어",
         "subMission3": "피격 횟수 20회 미만으로 클리어"
