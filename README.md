@@ -1,5 +1,3 @@
-# WIP
-
 # PSO2NGS Interactive Map
 Interactive map of world of Phantasy Star Online 2: New Genesis with location of everything.
 
