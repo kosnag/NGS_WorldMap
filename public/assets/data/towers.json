@@ -1,15 +1,30 @@
 [
     {
-        "id": "firstStep",
-        "lat":-1500, "lng":610,
-        "players": 1,
-        "minBP": 1363,
-        "enemyLv": 24,
-        "firstrewards": [
-            {
-                "item": "rewards:value.skillpoint",
-                "count": 4
-            }
-        ]
+        "id": "altersRush",
+        "lat":-1084.5, "lng":171.5,
+        "players": 4,
+        "minBP": 1184,
+        "enemyLv": 15
+    },
+    {
+        "id": "greatWall",
+        "lat":-1389, "lng":885,
+        "players": 4,
+        "minBP": 1184,
+        "enemyLv": 15
+    },
+    {
+        "id": "aeroRunner",
+        "lat":-1911.75, "lng":919.75,
+        "players": 4,
+        "minBP": 1184,
+        "enemyLv": 15
+    },
+    {
+        "id": "dollsBurrow",
+        "lat":-957.5, "lng":1965,
+        "players": 4,
+        "minBP": 1592,
+        "enemyLv": 30
     }
 ]
