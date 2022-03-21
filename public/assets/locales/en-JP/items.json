@@ -25,7 +25,7 @@
             "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
         }
         },
-        "mineral": {
+    "mineral": {
         "dualomite": {
             "title": "Dualomite",
             "description": "Used for unlocking Potentials Lv2 and Limit Breaking at the Item Lab"

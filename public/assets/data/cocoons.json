@@ -7,7 +7,7 @@
         "enemyLv": 24,
         "firstrewards": [
             {
-                "item": "skill_point",
+                "item": "rewards:value.skillpoint",
                 "count": 1
             }
         ]

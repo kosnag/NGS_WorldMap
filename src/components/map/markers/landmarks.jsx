@@ -86,11 +86,11 @@ Battledia:()=>{
                                                     {(x.ranks[i].rewards.map((y=><>
                                                         {(()=>{
                                                             if (y.count != null){return (<>
-                                                                <l>{t("rewards:"+y.item)}</l>
+                                                                <l>{t(y.item)}</l>
                                                                 <r>x{y.count}</r>
                                                             </>);
                                                         } else {
-                                                            return (<full>{t("rewards:"+y.item)}</full>);
+                                                            return (<full>{t(y.item)}</full>);
                                                         }})()}
                                                     </>)))}
                                                 </div>
@@ -169,7 +169,7 @@ Cocoon:()=>{
                             <border/>
                             <rewards>{(x.firstrewards.map((y=>
                                 <div>
-                                    <l>{t("rewards:"+y.item)}</l>
+                                    <l>{t(y.item)}</l>
                                     <r>x{y.count}</r>
                                 </div>
                             )))}</rewards>
@@ -296,7 +296,7 @@ Tower:()=>{
                             <border/>
                             <rewards>{(x.firstrewards.map((y=>
                                 <div>
-                                    <l>{t("rewards:"+y.item)}</l>
+                                    <l>{t(y.item)}</l>
                                     <r>x{y.count}</r>
                                 </div>
                             )))}</rewards>
@@ -395,7 +395,7 @@ UQ:()=>{
                                             <rewards>
                                                 {(x.firstRewards.map((y=>
                                                     <div>
-                                                        <l>{t("rewards:"+y.item)}</l>
+                                                        <l>{t(y.item)}</l>
                                                         <r>
                                                             {(()=>{switch (y.item){
                                                                 case "meseta":
@@ -415,7 +415,7 @@ UQ:()=>{
                                             <rewards>
                                                 {(x.ranks[i].rewards.map((y=>
                                                     <div>
-                                                        <l>{t("rewards:"+y.item)}</l>
+                                                        <l>{t(y.item)}</l>
                                                         <r>
                                                             {(()=>{switch (y.item){
                                                                 case "meseta":

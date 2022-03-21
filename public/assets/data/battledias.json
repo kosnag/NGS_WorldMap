@@ -10,22 +10,13 @@
                 "enemyLv": 24,
                 "rewards": [
                     {
-                        "item": "straga_weapons"
+                        "item": "rewards:items.gigas_augments"
                     },
                     {
-                        "item": "geant_armor"
+                        "item": "rewards:items.soul_augments"
                     },
                     {
-                        "item": "qual_de_armor"
-                    },
-                    {
-                        "item": "gigas_ugments"
-                    },
-                    {
-                        "item": "soul_augments"
-                    },
-                    {
-                        "item": "special_scratch_ticket"
+                        "item": "rewards:items.special_scratch_ticket"
                     }
                 ]
             },
@@ -34,22 +25,16 @@
                 "enemyLv": 44,
                 "rewards": [
                     {
-                        "item": "mtn_dash_fairy_b"
+                        "item": "rewards:items.straga_camoflauge"
                     },
                     {
-                        "item": "straga_camoflauge"
+                        "item": "rewards:items.gigas_ugments"
                     },
                     {
-                        "item": "vijf_armor"
+                        "item": "rewards:items.soul_augments"
                     },
                     {
-                        "item": "gigas_ugments"
-                    },
-                    {
-                        "item": "soul_augments"
-                    },
-                    {
-                        "item": "special_scratch_ticket"
+                        "item": "rewards:items.special_scratch_ticket"
                     }
                 ]
             }

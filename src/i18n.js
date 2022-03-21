@@ -20,7 +20,8 @@ i18n
       'urgents',
       'rewards',
       'datapods',
-      'enemies'
+      'enemies',
+      'rewards'
     ],
     framework: "React",
     fallbackLng: 'en-US',
