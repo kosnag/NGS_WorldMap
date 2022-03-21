@@ -1,8 +1,70 @@
 [
     {
+        "id": "variable",
+        "type": "yellow",
+        "lat":-1484.875, "lng":621.125,
+        "players": 8,
+        "ranks": [
+            {
+                "minBP": 1184,
+                "enemyLv": 17,
+                "rewards": [
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 500
+                    }
+                ]
+            },
+            {
+                "minBP": 1898,
+                "enemyLv": 40,
+                "rewards": [
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 500
+                    }, 
+                    {
+                        "item": "items:mineral.photonScale.title",
+                        "count": 2
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "aelioTroopers",
+        "type": "yellow",
+        "lat":-1481.75, "lng":34.5,
+        "players": 4,
+        "ranks": [
+            {
+                "minBP": 1081,
+                "enemyLv": 16,
+                "rewards": [
+                    {
+                        "item": "rewards:items.gold_prim_sword",
+                        "count": 1
+                    },
+                    {
+                        "item": "rewards:items.gold_prim_armor",
+                        "count": 1
+                    },
+                    {
+                        "item": "rewards:items.silver_prim_sword",
+                        "count": 1
+                    },
+                    {
+                        "item": "rewards:items.silver_prim_armor",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "aelioDevastators",
         "type": "purple",
-        "lat":-1500, "lng":101,
+        "lat":-1219.125, "lng":420.75,
         "players": 4,
         "ranks": [
             {
@@ -29,6 +91,58 @@
                     },
                     {
                         "item": "rewards:items.gigas_ugments"
+                    },
+                    {
+                        "item": "rewards:items.soul_augments"
+                    },
+                    {
+                        "item": "rewards:items.special_scratch_ticket"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "retemTroopers",
+        "type": "yellow",
+        "lat":-1515.5, "lng":1811,
+        "players": 4,
+        "ranks": [
+            {
+                "minBP": 1474,
+                "enemyLv": 25,
+                "rewards": [
+                    {
+                        "item": "rewards:items.gold_prim_sword",
+                        "count": 1
+                    },
+                    {
+                        "item": "rewards:items.gold_prim_armor",
+                        "count": 1
+                    },
+                    {
+                        "item": "rewards:items.ability_capsule",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "retemDevastators",
+        "type": "purple",
+        "lat":-1804.25, "lng":1490.25,
+        "players": 4,
+        "ranks": [
+            {
+                "minBP": 1813,
+                "enemyLv": 39,
+                "rewards": [
+                    {
+                        "item": "rewards:items.relik_series"
+                    },
+                    {
+                        "item": "rewards:items.gigas_augments"
                     },
                     {
                         "item": "rewards:items.soul_augments"
