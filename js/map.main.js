@@ -3,7 +3,7 @@ var map_app = new nekoapp({
     applicationInfo: {
         nekoappID: "18",
         applicationTitle: "PSO2NGS Interactive Map",
-        applicationVersion: "v2.0",
+        applicationVersion: "v1.0",
         applicationURL: "//map.pso2.ru/"
     },
     applicationStylesheets: {
