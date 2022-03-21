@@ -1,25 +1,25 @@
 {
     "sections": {
         "aelio": {
-            "centralAelio": "Центр Эарио",
+            "centralAelio": "Центральное Эарио",
             "centralCity": "Централ-Сити",
             "halphiaLake": "Озеро Хальфия",
             "vanfordLaboratoryRuins": "Руины лаборатории Ванфорд",
             "mtMagnus": "Гора Магнус",
-            "northAelio": "Север Эарио",
+            "northAelio": "Северное Эарио",
             "resolForest": "Лес Резол",
-            "southAelio": "Юг Эарио",
-            "westAelio": "Запад Эарио"
+            "southAelio": "Южное Эарио",
+            "westAelio": "Западное Эарио"
         },
         "retem": {
-            "centralRetem": "Центр Ритем",
+            "centralRetem": "Центральный Ритем",
             "rwhMaqead": "Верхний Макуадо",
             "maqeadLowerLevel": "Нижний Макуадо",
-            "northRetem": "Север Ритем",
+            "northRetem": "Северный Ритем",
             "retemAlnothe": "Ритем Эрноза",
             "retemCity": "Ритем-Сити",
-            "southRetem": "Юг Ритем",
-            "westRetem": "Запад Ритем"
+            "southRetem": "Южный Ритем",
+            "westRetem": "Западный Ритем"
         }
     },
     "type": {

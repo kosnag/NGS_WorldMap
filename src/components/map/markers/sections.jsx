@@ -111,8 +111,7 @@ export default function Sections(){
                                         </span>
                                         <border/>
                                         <value>
-                                            {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].minBP}</>}
-                                            })()}
+                                            {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].minBP}</>}})()}
                                         </value>
                                     </level>
                                     <level>
