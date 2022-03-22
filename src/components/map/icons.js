@@ -2,7 +2,7 @@ import L from 'leaflet';
 
 const Setup = {
     Landmarks: L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],popupAnchor:[0,-20]}}),
-    Containers: L.Icon.extend({options:{iconSize:[22,22],iconAnchor:[22,22],popupAnchor:[0,-11]}}),
+    Containers: L.Icon.extend({options:{iconSize:[22,22],iconAnchor:[11,11],popupAnchor:[0,-11]}}),
     Materials: L.Icon.extend({options:{iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-13]}}),
 };
 const IconLib = {
