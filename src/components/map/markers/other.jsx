@@ -130,15 +130,7 @@ Datapod:()=>{
         return ()=>clearInterval(i);
     });
     const check = {
-        icon: function(x){
-            if (window.localStorage_Checked.datapods[x] === 1) {
-                return IconLib.datapodChecked
-            } else {
-                return IconLib.datapod
-            }
-        },
         set: function(x){
-            x.preventDefault();
             if (window.localStorage_Checked.datapods[x] === 1) {
                 window.localStorage_Checked.datapods[x] = 0
                 localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
@@ -150,9 +142,22 @@ Datapod:()=>{
     }
     if (data !== null) {return (marker ? (data.map((x=>
         <Marker 
-            icon={check.icon(x.string)}
+            icon={window.localStorage_Checked.datapods.indexOf(x.string)>-1 ? IconLib.datapodChecked : IconLib.datapod}
             position={[x.lat,x.lng]} 
-            eventHandlers={{contextmenu:()=>check.icon(x.string)}}
+            eventHandlers={{
+                contextmenu:(e)=>{
+                    if(e.target.getIcon() === IconLib.datapod){
+                        e.target.setIcon(IconLib.datapodChecked);
+                        window.localStorage_Checked.datapods[window.localStorage_Checked.datapods.length]=x.string;
+                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+                    }else{
+                        e.target.setIcon(IconLib.datapod);
+                        var mark = window.localStorage_Checked.datapods.indexOf(x.string);
+                        window.localStorage_Checked.datapods.splice(mark,1);
+                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+                    }
+                }
+            }}
         >
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
