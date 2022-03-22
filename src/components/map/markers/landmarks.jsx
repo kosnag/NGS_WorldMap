@@ -210,7 +210,7 @@ Mag:()=>{
         <Marker icon={IconLib.mag} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
             <header>
-                <span><menuicon/> {t("mags:"+x.string)}</span>
+                <span><menuicon/> {t("mags:type."+x.string)}</span>
             </header>
             <content>
                 {t("items:landmark.mag.title")}

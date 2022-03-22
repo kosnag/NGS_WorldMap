@@ -21,7 +21,8 @@ i18n
       'rewards',
       'datapods',
       'enemies',
-      'rewards'
+      'rewards',
+      'mags'
     ],
     framework: "React",
     fallbackLng: 'en-US',
