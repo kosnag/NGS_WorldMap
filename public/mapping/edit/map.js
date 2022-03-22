@@ -6,6 +6,12 @@ const boundSouth = -2048;
 const bounds = [[boundSouth, boundWest], [boundNorth, boundEast]];
 const center = [boundSouth/2, boundEast/2];
 
+window.tileLayer = L.tileLayer("../../assets/images/tiles/{z}/{y}-{x}.png", {
+    bounds: bounds,
+    tileSize: 1024,
+    noWrap: true
+})
+
 var map = L.map(document.getElementsByTagName("map")[0], {
 	zoom: 0,
 	minZoom: 0,
@@ -18,11 +24,5 @@ var map = L.map(document.getElementsByTagName("map")[0], {
     keyboard: true,
     maxBoundsViscosity: 0.5,
     doubleClickZoom: false,
-    layers: [
-        L.tileLayer("../../assets/images/tiles/{z}/{y}-{x}.png", {
-            bounds: bounds,
-            tileSize: 1024,
-            noWrap: true
-        })
-    ]
+    layers: [window.tileLayer]
 });
