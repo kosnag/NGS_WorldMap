@@ -48,7 +48,7 @@ var optionsList = [
     {"table":"other__veteran","text":"Veteran"},
     {"table":"other__stellarGrace","text":"Stellar Grace"},
     {"table":"other__musicPlace","text":"BGM Easter Egg"},
-    {"table":"other__mischief","text":"Mischief Symbols"}
+    {"table":"other__mischief","text":"Mischief Symbol"}
 ];
 
 function openPopup(e) {
@@ -96,7 +96,6 @@ var popup_window_content_form_select = document.createElement("select")
             case "other__datapod":
             case "other__musicPlace":
             case "landmark__ryuker":
-            case "container__red":
                 popup_window_content_form_selectSub.style.display = "none"
                 popup_window_content_form_inputSub.style.display = "initial"
                 break;
@@ -155,7 +154,7 @@ var popup_window_content_form_selectSub = document.createElement("select")
 var popup_window_content_form_inputSub = document.createElement("input")
     popup_window_content_form_inputSub.setAttribute("autocomplete","hidden")
     popup_window_content_form_inputSub.setAttribute("type","text")
-    //popup_window_content_form_inputSub.style.display = "none";
+    popup_window_content_form_inputSub.style.display = "none";
 
 var popup_window_content_border2 = document.createElement("border");
 
@@ -164,10 +163,10 @@ var popup_window_content_form_button_latlng = document.createElement("a")
     popup_window_content_form_button_latlng.style.marginBottom = "5px"
     popup_window_content_form_button_latlng.setAttribute("href","#")
     popup_window_content_form_button_latlng.addEventListener("click",()=>{
-        console.log('"lat:"'+lat_variable+', "lng":"'+lng_variable+',');
+        console.log('"lat":'+lat_variable+', "lng":'+lng_variable+',');
     });
     popup_window_content_form_button_latlng.addEventListener("click",()=>{
-        navigator.clipboard.writeText('"lat:"'+lat_variable+', "lng":"'+lng_variable+',');
+        navigator.clipboard.writeText('"lat":'+lat_variable+', "lng":'+lng_variable+',');
     });
 
 var popup_window_content_form_button_submit = document.createElement("button")
