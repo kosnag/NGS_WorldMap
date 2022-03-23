@@ -129,17 +129,6 @@ Datapod:()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.other.datapod));
         return ()=>clearInterval(i);
     });
-    const check = {
-        set: function(x){
-            if (window.localStorage_Checked.datapods[x] === 1) {
-                window.localStorage_Checked.datapods[x] = 0
-                localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
-            } else {
-                window.localStorage_Checked.datapods[x] = 1
-                localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
-            };
-        }
-    }
     if (data !== null) {return (marker ? (data.map((x=>
         <Marker 
             icon={window.localStorage_Checked.datapods.indexOf(x.string)>-1 ? IconLib.datapodChecked : IconLib.datapod}
