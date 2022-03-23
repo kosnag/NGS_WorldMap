@@ -1,9 +1,9 @@
 {
     "value": {
-        "seasonalpoints": "очков сезона",
-        "meseta": "N-месеты",
+        "seasonalpoints": "Очки Сезона",
+        "meseta": "N-месета",
         "skillpoint": "SP",
-        "experience": "опыта"
+        "experience": "Опыт"
     },
     "item": {
         "gigas_augments": "Абилки Gigas-типа",
