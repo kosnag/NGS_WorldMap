@@ -75,7 +75,7 @@ StellarFragment:()=>{
                 fillOpacity: '0.25'
             }}
         >
-            <Marker icon={IconLib.stellarSeed} position={[x.lat,x.lng]}>
+            <Marker icon={IconLib.stellarseed} position={[x.lat,x.lng]}>
                 <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                     <header>
                         <span><menuicon/> {t("items:other.stellarSeed.title")}</span>

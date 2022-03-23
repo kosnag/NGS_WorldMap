@@ -44,13 +44,13 @@ const Load = {
         id="tetracite"
     />},
     PhotonQuartz:()=>{return <Template 
-        id="photonQuartz"
+        id="photonquartz"
     />},
     PhotonChunk:()=>{return <Template 
-        id="photonChunk"
+        id="photonchunk"
     />},
     PhotonScale:()=>{return <Template 
-        id="photonScale"
+        id="photonscale"
     />}
 }
 export default function Minerals(){
