@@ -16,15 +16,15 @@
     "varas": "Vallas",
     "waulon": "Wauron",
 
-    "bubbleSnapper": "",
-    "dustylHammer": "",
-    "fortosLaser": "",
-    "fortosLauncher": "",
-    "kelkundo": "",
-    "lizentos": "",
-    "sandNogleth": "",
-    "svacurio": "",
-    "svadiScythe": "",
-    "svaulon": "",
-    "renusRetem": ""
+    "bubbleSnapper": "Bubble Crab",
+    "dustylHammer": "Snidael Hammer",
+    "fortosLaser": "Fortes Laser",
+    "fortosLauncher": "Fortes Launcher",
+    "kelkundo": "Kelkund",
+    "lizentos": "Lysentos",
+    "sandNogleth": "Sand Nagrus",
+    "svacurio": "Sava Curio",
+    "svadiScythe": "Sava Discythe",
+    "svaulon": "Sava Wauron",
+    "renusRetem": "Lenus Retem"
 }

@@ -1,8 +1,8 @@
 {
     "variable": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
+        "title": "Simulation: Horde Eradication",
+        "clearCondition": "This Trigger will let you recreate the battle at Craiano Cliffs in Western Aelio. Use all your skills to annihilate the enemies, including the large Formers.",
+        "description": "Defeat the target enemies!"
     },
     "aelioTroopers": {
         "title": "Aelio Troopers",
