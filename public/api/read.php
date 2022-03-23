@@ -14,8 +14,7 @@ while($data=$query->fetch_assoc()){
         'lat' => $data["lat"],
         'lng' => $data["lng"],
         'contributer' => $data["contributer"],
-        'string' => null,
-        'reward' => null
+        'string' => null
     );
     if(isset($data["string"])){
         $table[$length]["string"] = $data["string"];
