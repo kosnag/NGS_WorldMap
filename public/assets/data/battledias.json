@@ -42,19 +42,19 @@
                 "enemyLv": 16,
                 "rewards": [
                     {
-                        "item": "rewards:items.gold_prim_sword",
+                        "item": "rewards:item.gold_prim_sword",
                         "count": 1
                     },
                     {
-                        "item": "rewards:items.gold_prim_armor",
+                        "item": "rewards:item.gold_prim_armor",
                         "count": 1
                     },
                     {
-                        "item": "rewards:items.silver_prim_sword",
+                        "item": "rewards:item.silver_prim_sword",
                         "count": 1
                     },
                     {
-                        "item": "rewards:items.silver_prim_armor",
+                        "item": "rewards:item.silver_prim_armor",
                         "count": 1
                     }
                 ]
@@ -72,13 +72,13 @@
                 "enemyLv": 24,
                 "rewards": [
                     {
-                        "item": "rewards:items.gigas_augments"
+                        "item": "rewards:item.gigas_augments"
                     },
                     {
-                        "item": "rewards:items.soul_augments"
+                        "item": "rewards:item.soul_augments"
                     },
                     {
-                        "item": "rewards:items.special_scratch_ticket"
+                        "item": "rewards:item.special_scratch_ticket"
                     }
                 ]
             },
@@ -87,16 +87,16 @@
                 "enemyLv": 44,
                 "rewards": [
                     {
-                        "item": "rewards:items.straga_camoflauge"
+                        "item": "rewards:item.straga_camoflauge"
                     },
                     {
-                        "item": "rewards:items.gigas_ugments"
+                        "item": "rewards:item.gigas_ugments"
                     },
                     {
-                        "item": "rewards:items.soul_augments"
+                        "item": "rewards:item.soul_augments"
                     },
                     {
-                        "item": "rewards:items.special_scratch_ticket"
+                        "item": "rewards:item.special_scratch_ticket"
                     }
                 ]
             }
@@ -113,15 +113,15 @@
                 "enemyLv": 25,
                 "rewards": [
                     {
-                        "item": "rewards:items.gold_prim_sword",
+                        "item": "rewards:item.gold_prim_sword",
                         "count": 1
                     },
                     {
-                        "item": "rewards:items.gold_prim_armor",
+                        "item": "rewards:item.gold_prim_armor",
                         "count": 1
                     },
                     {
-                        "item": "rewards:items.ability_capsule",
+                        "item": "rewards:item.ability_capsule",
                         "count": 1
                     }
                 ]
@@ -139,16 +139,16 @@
                 "enemyLv": 39,
                 "rewards": [
                     {
-                        "item": "rewards:items.relik_series"
+                        "item": "rewards:item.relik_series"
                     },
                     {
-                        "item": "rewards:items.gigas_augments"
+                        "item": "rewards:item.gigas_augments"
                     },
                     {
-                        "item": "rewards:items.soul_augments"
+                        "item": "rewards:item.soul_augments"
                     },
                     {
-                        "item": "rewards:items.special_scratch_ticket"
+                        "item": "rewards:item.special_scratch_ticket"
                     }
                 ]
             }
