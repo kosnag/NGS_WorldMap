@@ -1,8 +1,8 @@
 {
     "seasonal": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Horde Eradication",
+        "description": "Powerful enemy readings have been detected off Craiano Cliffs in Western Aelio. We believe them to be large Formers, but they read as highly unusual. Defeat the enemies, but expect the unexpected.",
+        "clearCondition": "Defeat the target enemies!"
     },
     "pettasVera": {
         "title": "Subdue the Overseer-type DOLL",
@@ -10,19 +10,19 @@
         "clearCondition": "Defeat the target enemy"
     },
     "nexVera": {
-        "title": "",
+        "title": "Nex Vera Subjugation",
         "description": "Powerful space-time fluctuations have been detected in the Resol Forest. Based on past data, the Battlefield Overseer-type DOLL, the \"Nex Vera\", is expected to appear. All ARKS, head for the area & eliminate this threat.",
-        "clearCondition": ""
+        "clearCondition": "Defeat the Nex Vera!"
     },
     "miningRigDefenceAelio": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Mining Rig Defense: Aelio",
+        "description": "We've received a distress call from a mining unit operating on Halpha Grasslands. The high number of enemy readings nearby indicates they've come under a large-scale attack. All ARKS are to intercept and defend the Resource Mining Rigs.",
+        "clearCondition": "efend the Resource Mining Rigs!"
     },
     "darkFalzInterception": {
         "title": "Dark Falz Interception Battle",
         "description": "",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Intercept Dark Falz!"
     },
     "dustylVera": {
         "title": "Snidael Vera Subjugation",
@@ -30,8 +30,8 @@
         "clearCondition": "Defeat the target enemy"
     },
     "renusVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Lenus Vera Subjugation",
+        "description": "Powerful space-time fluctuations have been detected in Central Retem. Based on past data, the Battlefield Overseer-type DOLL, the \"Lenus Vera\", is expected to appear. All ARKS, head for the area & eliminate this threat.",
+        "clearCondition": "Defeat Lenus Vera!"
     }
 }
