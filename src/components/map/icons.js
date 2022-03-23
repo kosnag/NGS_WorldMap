@@ -30,7 +30,7 @@ const IconLib = {
 
     aelio_apple: new Setup.Materials({iconUrl:'./assets/images/icons/food/aelio_apple.png'}),
     aelio_banana: new Setup.Materials({iconUrl:'./assets/images/icons/food/aelio_banana.png'}),
-    aelio_clam: new Setup.Materials({iconUrl:'./assets/images/icons/food/aelio_.png'}),
+    aelio_clam: new Setup.Materials({iconUrl:'./assets/images/icons/food/aelio_clam.png'}),
     aelio_crab: new Setup.Materials({iconUrl:'./assets/images/icons/food/aelio_crab.png'}),
     aelio_herb: new Setup.Materials({iconUrl:'./assets/images/icons/food/aelio_herb.png'}),
     aelio_lobster: new Setup.Materials({iconUrl:'./assets/images/icons/food/aelio_lobster.png'}),
