@@ -1,20 +1,20 @@
 {
     "value": {
-        "seasonalpoints": "",
-        "meseta": "",
-        "skillpoint": "",
-        "experience": ""
+        "seasonalpoints": "Seasonal Point",
+        "meseta": "N-Meseta",
+        "skillpoint": "SP",
+        "experience": "EXP"
     },
     "item": {
-        "gigas_augments": "",
-        "soul_augments": "",
-        "special_scratch_ticket": "",
-        "straga_camoflauge": "",
-        "relik_series": "",
-        "ability_capsule": "",
-        "gold_prim_sword": "",
-        "silver_prim_sword": "",
-        "gold_prim_armor": "",
-        "silver_prim_armor": ""
+        "gigas_augments": "Gigas-type ability",
+        "soul_augments": "Soul-type ability",
+        "special_scratch_ticket": "Special Scratch Ticket",
+        "straga_camoflauge": "＊Stragga Armati",
+        "relik_series": "Relic series weapon",
+        "ability_capsule": "Ability Capsule",
+        "gold_prim_sword": "Gold Prim Sword",
+        "silver_prim_sword": "Silver Prim Sword",
+        "gold_prim_armor": "Gold Prim Armor",
+        "silver_prim_armor": "Silver Prim Armor"
     }
 }
