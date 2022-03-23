@@ -118,9 +118,9 @@ export default function MenuLegend(){
               <Button cat="mineral" item="dualomite" rarity="common" />
               <Button cat="mineral" item="trinite" rarity="common" />
               <Button cat="mineral" item="tetracite" rarity="common" />
-              <Button cat="mineral" item="photonQuartz" rarity="common" />
-              <Button cat="mineral" item="photonChunk" rarity="common" />
-              <Button cat="mineral" item="photonScale" rarity="very-rare" />
+              <Button cat="mineral" item="photonquartz" rarity="common" />
+              <Button cat="mineral" item="photonchunk" rarity="common" />
+              <Button cat="mineral" item="photonscale" rarity="very-rare" />
             </items>
             <items className={toggleTab === 'food' ? "active" : ""}>
               <ButtonFood item="aelio_apple" prefix="rich" type="fruit" rarity="common"/>
