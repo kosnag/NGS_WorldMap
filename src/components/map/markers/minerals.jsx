@@ -22,7 +22,7 @@ const Template = (props) => {
                 <content>
                     {t("ui:LegendMenu.Categories.minerals")}
                     <br/>
-                    {t("ui:Map.placedBy")}: x.contributer
+                    {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {props.id}{x.id}</id>
                 </content>
             </tooltip-window></Tooltip>

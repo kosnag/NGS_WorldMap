@@ -24,7 +24,7 @@ const Template= (props) => {
                     <br/>
                     {t("ui:Map.type")}: {t("ui:Map.foodType."+props.type)}
                     <br/>
-                    {t("ui:Map.placedBy")}: x.contributer
+                    {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {props.id}{x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
