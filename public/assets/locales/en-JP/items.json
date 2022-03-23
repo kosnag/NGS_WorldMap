@@ -10,7 +10,7 @@
         },
         "mag": {
             "title": "Regional Mag",
-            "description": ""
+            "description": "By giving gathering materials to a Region Mag, you can improve the boosts that Region Mag gives to players in the current region, as well as level up your own personal boosts"
         },
         "ryuker": {
             "title": "Ryuker Device",
@@ -44,11 +44,11 @@
         },
         "photonScale": {
             "title": "Photon Scale",
-            "description": ""
+            "description": "Used as material at the Item Lab."
         },
         "tetracite": {
             "title": "Tetracite",
-            "description": ""
+            "description": "Used to unlock Potentials at the Item Lab."
         },
         "trinite": {
             "title": "Trinite",
@@ -135,8 +135,8 @@
             "description": "Places that play music from older games of the Phantasy Star franchise."
         },
         "mischief": {
-            "title": "",
-            "description": ""
+            "title": "Mischief Symbol",
+            "description": "During the season's event in Central City, you can found holographic symbols called Mischief Symbol."
         }
     },
     "nothing": "Select item"
