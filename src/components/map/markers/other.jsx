@@ -36,14 +36,14 @@ AlphaReactor:()=>{
     const [marker,setMarker] = useState([]);
     useEffect(()=>{fetch("./api/read.php?table=other__alphareactor").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.alphaReactor));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.alphareactor));
         return ()=>clearInterval(i);
     });
     if (data !== null) {return (marker ? (data.map((x=>
         <Marker icon={IconLib.datapod} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
-                    <span><menuicon/> {t("items:other.alphaReactor.title")}</span>
+                    <span><menuicon/> {t("items:other.alphareactor.title")}</span>
                 </header>
                 <content>
                     {t("items:other.alphaReactor.description")}
@@ -59,7 +59,7 @@ StellarFragment:()=>{
     const {t} = useTranslation();
     const [marker,setMarker] = useState([]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.stellarSeed));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.stellarseed));
         return ()=>clearInterval(i);
     });
     const data = [
@@ -94,7 +94,7 @@ StellarGrace:()=>{
     const [marker,setMarker] = useState([]);
     useEffect(()=>{fetch("./api/read.php?table=other__stellargrace").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.stellarGrace));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.stellargrace));
         return ()=>clearInterval(i);
     });
     if (data !== null){return (marker ? (data.map((x=>
@@ -108,7 +108,7 @@ StellarGrace:()=>{
         }}} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
-                    <span><menuicon/> {t("items:other.stellarGrace.title")}</span>
+                    <span><menuicon/> {t("items:other.stellargrace.title")}</span>
                 </header>
                 <content>
                     {t("ui:Map.type")}: {t("ui:Map.stellarGraceType."+x.string)}
@@ -166,16 +166,16 @@ BGM:()=>{
     const {t} = useTranslation();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./api/read.php?table=other__musicPlace").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("./api/read.php?table=other__musicplace").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.musicPlace));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.musicplace));
         return ()=>clearInterval(i);
     });
     if (data !== null) {return (marker ? (data.map((x=>
         <Marker icon={IconLib.musicPlace} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
-                    <span><menuicon/> {t("items:other.musicPlace.title")}</span>
+                    <span><menuicon/> {t("items:other.musicplace.title")}</span>
                 </header>
                 <content>
                     {x.string}

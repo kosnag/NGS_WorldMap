@@ -129,7 +129,7 @@ export default function MenuLegend(){
               <ButtonFood item="aelio_banana" prefix="robust" type="fruit" rarity="common"/>
 
               <ButtonFood item="aelio_clam" prefix="rich" type="seafood" rarity="common"/>
-              <ButtonFood item="aelio_turbanShell" prefix="light" type="seafood"rarity="common"/>
+              <ButtonFood item="aelio_turbanshell" prefix="light" type="seafood"rarity="common"/>
               <ButtonFood item="aelio_crab" prefix="crisp" type="seafood"rarity="common"/>
               <ButtonFood item="aelio_lobster" prefix="robust" type="seafood" rarity="common"/>
 
@@ -145,9 +145,9 @@ export default function MenuLegend(){
               <ButtonFood item="retem_strawberry" prefix="robust" type="fruit" rarity="common"/>
 
               <ButtonFood item="retem_scallop" prefix="rich" type="seafood" rarity="common"/>
-              <ButtonFood item="retem_seaSlug" prefix="light" type="seafood" rarity="common"/>
+              <ButtonFood item="retem_seaslug" prefix="light" type="seafood" rarity="common"/>
               <ButtonFood item="retem_urchin" prefix="crisp" type="seafood" rarity="common"/>
-              <ButtonFood item="retem_hermitCrab" prefix="robust" type="seafood" rarity="common"/>
+              <ButtonFood item="retem_hermitcrab" prefix="robust" type="seafood" rarity="common"/>
 
               <ButtonFood item="retem_eggplant" prefix="rich" type="vegetable" rarity="common"/>
               <ButtonFood item="retem_cranberries" prefix="light" type="vegetable" rarity="common"/>
@@ -160,11 +160,11 @@ export default function MenuLegend(){
             </items>
             <items className={toggleTab === 'other' ? "active" : ""}>
               <Button cat="other" item="veteran"rarity="rare"/>
-              <Button cat="other" item="alphaReactor" rarity="very-rare"/>
-              <Button cat="other" item="stellarSeed" rarity="rare"/>
-              <Button cat="other" item="stellarGrace" rarity="special"/>
+              <Button cat="other" item="alphareactor" rarity="very-rare"/>
+              <Button cat="other" item="stellarseed" rarity="rare"/>
+              <Button cat="other" item="stellargrace" rarity="special"/>
               <Button cat="other" item="datapod" rarity="places"/>
-              <Button cat="other" item="musicPlace" rarity="places"/>
+              <Button cat="other" item="musicplace" rarity="places"/>
               <Button cat="other" item="mischief" rarity="special"/>
             </items>
           <info>

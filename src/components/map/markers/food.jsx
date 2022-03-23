@@ -52,7 +52,7 @@ const Load = {
         />},
         Herb:()=>{return <Template 
             id="aelio_herb" 
-            type="vegetables"
+            type="vegetable"
         />},
         Lobster:()=>{return <Template 
             id="aelio_lobster" 
@@ -60,7 +60,7 @@ const Load = {
         />},
         Mushroom:()=>{return <Template 
             id="aelio_mushroom" 
-            type="vegetables"
+            type="vegetable"
         />},
         Peach:()=>{return <Template 
             id="aelio_peach" 
@@ -72,21 +72,21 @@ const Load = {
         />},
         Tomato:()=>{return <Template 
             id="aelio_tomato" 
-            type="vegetables"
+            type="vegetable"
         />},
         TurbanShell:()=>{return <Template 
-            id="aelio_turbanShell" 
+            id="aelio_turbanshell" 
             type="seafood"
         />},
         Turnip:()=>{return <Template 
             id="aelio_turnip" 
-            type="vegetables"
+            type="vegetable"
         />},
     },
     Retem: {
         Cauliflower:()=>{return <Template 
             id="retem_cauliflower" 
-            type="vegetables"
+            type="vegetable"
         />},
         Cherries:()=>{return <Template 
             id="retem_cherries" 
@@ -94,18 +94,18 @@ const Load = {
         />},
         Cranberries:()=>{return <Template 
             id="retem_cranberries" 
-            type="vegetables"
+            type="vegetable"
         />},
         Eggplant:()=>{return <Template 
             id="retem_eggplant" 
-            type="vegetables"
+            type="vegetable"
         />},
         Carambola:()=>{return <Template 
             id="retem_carambola" 
             type="fruit"
         />},
         HermitCrab:()=>{return <Template 
-            id="retem_hermitCrab" 
+            id="retem_hermitcrab" 
             type="seafood"
         />},
         Mango:()=>{return <Template 
@@ -114,14 +114,14 @@ const Load = {
         />},
         Mushroom:()=>{return <Template 
             id="retem_mushroom" 
-            type="vegetables"
+            type="vegetable"
         />},
         Scallop:()=>{return <Template 
             id="retem_scallop" 
             type="seafood"
         />},
         SeaSlug:()=>{return <Template 
-            id="retem_seaSlug" 
+            id="retem_seaslug" 
             type="seafood"
         />},
         Strawberry:()=>{return <Template 
@@ -129,7 +129,7 @@ const Load = {
             type="fruit"
         />},
         SeaUchin:()=>{return <Template 
-            id="retem_seaUrchin" 
+            id="retem_urchin" 
             type="seafood"
         />},
     },

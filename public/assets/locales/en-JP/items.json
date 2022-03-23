@@ -34,15 +34,15 @@
             "title": "Monotite",
             "description": "Used for unlocking Potentials Lv1 and Limit Breaking at the Item Lab"
         },
-        "photonChunk": {
+        "photonchunk": {
             "title": "Photon Chunk",
             "description": "Used for Limit Breaking at the Item Lab"
         },
-        "photonQuartz": {
+        "photonquartz": {
             "title": "Photon Quartz",
             "description": "Used for Multi-weaponization at the Item Lab"
         },
-        "photonScale": {
+        "photonscale": {
             "title": "Photon Scale",
             "description": "Used as material at the Item Lab."
         },
@@ -66,18 +66,18 @@
         "aelio_peach": "Refreshing Aelio Peach",
         "aelio_pear": "Sharp Aelio Pear",
         "aelio_tomato": "Sharp Aelio Tomato",
-        "aelio_turbanShell": "Refreshing Aelio Snail",
+        "aelio_turbanshell": "Refreshing Aelio Snail",
         "aelio_turnip": "Healthy Aelio Turnip",
         "retem_cauliflower": "Healthy Retem Cauliflower",
         "retem_cherries": "Nourishing Retem Cherries",
         "retem_cranberries": "Refreshing Retem Cranberries",
         "retem_eggplant": "Nourishing Retem Eggplant",
         "retem_carambola": "Sharp Retem Star Fruit",
-        "retem_hermitCrab": "Healthy Retem Hermit Crab",
+        "retem_hermitcrab": "Healthy Retem Hermit Crab",
         "retem_mango": "Refreshing Retem Mango",
         "retem_mushroom": "Sharp Retem Mushroom",
         "retem_scallop": "Nourishing Retem Scallop",
-        "retem_seaSlug": "Refreshing Retem Sea Slug",
+        "retem_seaslug": "Refreshing Retem Sea Slug",
         "retem_strawberry": "Healthy Retem Strawberry",
         "retem_urchin": "Sharp Retem Sea Urchin",
         
@@ -110,7 +110,7 @@
         }
     },
     "other": {
-        "alphaReactor": {
+        "alphareactor": {
             "title": "Alpha Reactor",
             "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
         },
@@ -118,7 +118,7 @@
             "title": "Datapod",
             "description": "Message Packs contain messages from the residents of Halpha. Some also contain items."
         },
-        "stellarSeed": {
+        "stellarseed": {
             "title": "Stellar Seed",
             "description": "Can be converted to 2000 N-Meseta. \n10 Stellar Fragments will spawn in West Retem every day."
         },
@@ -126,11 +126,11 @@
             "title": "Veteran",
             "description": "\"Battle-Hardened\" enemies that spawn at fixed locations in Exploration Sections. Also known as \"Dread\" enemies or \"Veterans\"."
         },
-        "stellarGrace": {
+        "stellargrace": {
             "title": "Stellar Grace",
             "description": "Stellar Graces are part of the \"Stellar Grace Recovery Operation\" World Trial. The objective of the World Trial is to gather all the pyramidal containers known as Stellar Graces hidden in each Exploration Section."
         },
-        "musicPlace": {
+        "musicplace": {
             "title": "BGM Easter Egg",
             "description": "Places that play music from older games of the Phantasy Star franchise."
         },
