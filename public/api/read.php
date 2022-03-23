@@ -20,9 +20,6 @@ while($data=$query->fetch_assoc()){
     if(isset($data["string"])){
         $table[$length]["string"] = $data["string"];
     };
-    if(isset($data["reward"])){
-        $table[$length]["reward"] = $data["reward"];
-    };
     $length++;
 }
 $mysql->close();

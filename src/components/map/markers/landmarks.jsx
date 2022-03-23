@@ -9,7 +9,6 @@ const Load = {
 Battledia:()=>{
     const {t} = useTranslation();
     const popupRef = useRef();
-    const close = () => {popupRef.current._closeButton.click()}
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
     const [tier,setTier] = useState(0);
@@ -32,7 +31,7 @@ Battledia:()=>{
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("items:landmark.battledia.title")}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("items:landmark.battledia.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
                 <content>
                     <select onChange={handleSelectChange}>
@@ -57,12 +56,16 @@ Battledia:()=>{
                             <level>
                                 <span>{t("ui:Map.requiredBP")}</span>
                                 <border/>
-                                <value>{x.ranks[tier].minBP}</value>
+                                <value>
+                                    {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].minBP}</>}})()}
+                                </value>
                             </level>
                             <level>
                                 <span>{t("ui:Map.enemyLv")}</span>
                                 <border/>
-                                <value>{x.ranks[tier].enemyLv}</value>
+                                <value>
+                                    {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].enemyLv}</>}})()}
+                                </value>
                             </level>
                         </div>
                     </info>
@@ -117,7 +120,6 @@ Battledia:()=>{
 Cocoon:()=>{
     const {t} = useTranslation();
     const popupRef = useRef();
-    const close=()=>popupRef.current._closeButton.click();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
     useEffect(()=>{fetch("./assets/data/cocoons.json").then(response=>response.json()).then(d=>setData(d))},[]);
@@ -138,7 +140,7 @@ Cocoon:()=>{
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("items:landmark.cocoon.title")}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("items:landmark.cocoon.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
                 <content>
                     <name>{t("cocoons:"+x.id+".title")}</name>
@@ -167,12 +169,12 @@ Cocoon:()=>{
                         <info>
                             <span>{t("ui:Map.rewards.firstTime")}</span>
                             <border/>
-                            <rewards>{(x.firstrewards.map((y=>
+                            <rewards>
                                 <div>
-                                    <l>{t(y.item)}</l>
-                                    <r>x{y.count}</r>
+                                    <l>{t("rewards:value.skillpoint")}</l>
+                                    <r>x1</r>
                                 </div>
-                            )))}</rewards>
+                            </rewards>
                             </info>
                     </cont>
                     <span>{t("ui:Map.clearCondition")}</span>
@@ -208,7 +210,7 @@ Mag:()=>{
         <Marker icon={IconLib.mag} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
             <header>
-                <span><menuicon/> {t("mags:"+x.string)}</span>
+                <span><menuicon/> {t("mags:type."+x.string)}</span>
             </header>
             <content>
                 {t("items:landmark.mag.title")}
@@ -244,7 +246,6 @@ Ryuker:()=>{
 Tower:()=>{
     const {t} = useTranslation();
     const popupRef = useRef();
-    const close=()=>popupRef.current._closeButton.click();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
     useEffect(()=>{fetch("./assets/data/towers.json").then(response=>response.json()).then(d=>setData(d))},[]);
@@ -265,7 +266,7 @@ Tower:()=>{
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("items:landmark.tower.title")}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("items:landmark.tower.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
                 <content>
                     <name>{t("towers:"+x.id+".title")}</name>
@@ -294,12 +295,12 @@ Tower:()=>{
                         <info>
                             <span>{t("ui:Map.rewards.firstTime")}</span>
                             <border/>
-                            <rewards>{(x.firstrewards.map((y=>
+                            <rewards>
                                 <div>
-                                    <l>{t(y.item)}</l>
-                                    <r>x{y.count}</r>
+                                    <l>{t("rewards:value.skillpoint")}</l>
+                                    <r>x4</r>
                                 </div>
-                            )))}</rewards>
+                            </rewards>
                             </info>
                     </cont>
                     <span>{t("ui:Map.clearCondition")}</span>
@@ -325,12 +326,11 @@ Tower:()=>{
 UQ:()=>{
     const {t} = useTranslation();
     const popupRef = useRef();
-    const close=()=>popupRef.current._closeButton.click();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
-    useEffect(()=>{fetch("./assets/data/uq.json").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("./assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.urgent));
         return ()=>clearInterval(i);
@@ -348,7 +348,7 @@ UQ:()=>{
             </tooltip-window></Tooltip>
             <Popup ref={popupRef}><popup-window>
                 <header>
-                    <span><menuicon/> {t("items:landmark.urgent.title")}</span><closebutton onClick={()=>close()}/>
+                    <span><menuicon/> {t("items:landmark.urgent.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
                 <content>
                     <select onChange={handleSelectChange}>

@@ -17,6 +17,18 @@
     background: rgb(54 255 255) !important;
     box-shadow: none !important;
 }
+.leaflet-control-layers-overlays > label > div > input {
+    height: 24px;
+    width: calc(70px - 7px*2 - 3px*2);
+}
+.leaflet-control-layers-overlays > label > div > span {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: super;
+}
+.leaflet-tooltip {
+    text-shadow: initial;
+}
 
 * {
     font-family: "NGS Font";
@@ -139,7 +151,7 @@ border::after {
     content: "";
 }
 
-input {
+input[type=text] {
     background-color: rgba(0, 0, 0, 0.85);
     border: 3px solid rgba(177, 187, 188, 0.85);
     font-size: 14px;
@@ -150,10 +162,10 @@ input {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-input:hover {
+input[type=text]:hover {
     border: 3px solid rgba(59, 208, 225, 0.85) !important;
 }
-input:focus, input:focus-visible {
+input[type=text]:focus, input[type=text]:focus-visible {
     border: 3px solid rgba(255, 201, 3, 0.85) !important;
     outline: none;
 }

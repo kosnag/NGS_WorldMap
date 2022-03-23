@@ -1,15 +1,100 @@
 [
     {
         "id": "firstStep",
-        "lat":-1500, "lng":410,
+        "lat":-1306, "lng":681.75,
         "players": 1,
-        "minBP": 1363,
-        "enemyLv": 24,
-        "firstrewards": [
-            {
-                "item": "rewards:value.skillpoint",
-                "count": 1
-            }
-        ]
+        "minBP": 800,
+        "enemyLv": 1
+    },
+    {
+        "id": "enchancedEnemy",
+        "lat":-1488, "lng":432.25,
+        "players": 4,
+        "minBP": 894,
+        "enemyLv": 5
+    },
+    {
+        "id": "swiftJump",
+        "lat":-1121.5, "lng":406.5,
+        "players": 4,
+        "minBP": 916,
+        "enemyLv": 6
+    },
+    {
+        "id": "wildRush",
+        "lat":-1882.25, "lng":826.25,
+        "players": 4,
+        "minBP": 894,
+        "enemyLv": 5
+    },
+    {
+        "id": "testFlight",
+        "lat":-1173.25, "lng":33,
+        "players": 4,
+        "minBP": 835,
+        "enemyLv": 3
+    },
+    {
+        "id": "roaringRush",
+        "lat":-1894.5, "lng":387.5,
+        "players": 4,
+        "minBP": 1184,
+        "enemyLv": 15
+    },
+    {
+        "id": "fleetingFight",
+        "lat":-1219.25, "lng":976.75,
+        "players": 4,
+        "minBP": 1184,
+        "enemyLv": 15
+    },
+    {
+        "id": "runway",
+        "lat":-1723.875, "lng":877.125,
+        "players": 4,
+        "minBP": 1009,
+        "enemyLv": 10
+    },
+    {
+        "id": "vanishingPath",
+        "lat":-1192.375, "lng":1288.375,
+        "players": 4,
+        "minBP": 1562,
+        "enemyLv": 25
+    },
+    {
+        "id": "narrowCage",
+        "lat":-1223, "lng":1674.125,
+        "players": 4,
+        "minBP": 1396,
+        "enemyLv": 21
+    },
+    {
+        "id": "buddyAttack",
+        "lat":-1219, "lng":1871.375,
+        "players": 4,
+        "minBP": 1396,
+        "enemyLv": 21
+    },
+    {
+        "id": "dynaAssault",
+        "lat":-1501.25, "lng":1527.375,
+        "players": 4,
+        "minBP": 1223,
+        "enemyLv": 17
+    },
+    {
+        "id": "parkourMaster",
+        "lat":-1969, "lng":1127,
+        "players": 4,
+        "minBP": 1223,
+        "enemyLv": 17
+    },
+    {
+        "id": "runway2",
+        "lat":-1759.25, "lng":1787.5,
+        "players": 4,
+        "minBP": 1223,
+        "enemyLv": 17
     }
 ]

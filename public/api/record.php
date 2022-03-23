@@ -24,9 +24,6 @@ if(isset($_COOKIE["session"])){
     )){
         $result["string"] = $data->{"string"};
         $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, string) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["string"]."')");
-    }elseif(isset($data->{"string"}) && ($result["table"]=="containers__redBox")){
-        $result["string"] = $data->{"string"};
-        $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, reward) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["string"]."')");
     }else{
         $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."')");
     }
