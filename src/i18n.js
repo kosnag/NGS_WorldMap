@@ -33,7 +33,8 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: './assets/locales/{{lng}}/{{ns}}.json'
+      //loadPath: './assets/locales/{{lng}}/{{ns}}.json'
+      loadPath: '//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/locales/{{lng}}/{{ns}}.json'
     },
   });
 
