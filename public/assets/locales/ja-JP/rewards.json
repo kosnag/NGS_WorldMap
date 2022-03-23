@@ -1,20 +1,20 @@
 {
     "value": {
-        "seasonalpoints": "",
-        "meseta": "",
-        "skillpoint": "",
-        "experience": ""
+        "seasonalpoints": "シーズナルポイント",
+        "meseta": "N-メセタ",
+        "skillpoint": "SP",
+        "experience": "EXP"
     },
     "item": {
-        "gigas_augments": "",
-        "soul_augments": "",
-        "special_scratch_ticket": "",
-        "straga_camoflauge": "",
-        "relik_series": "",
-        "ability_capsule": "",
-        "gold_prim_sword": "",
-        "silver_prim_sword": "",
-        "gold_prim_armor": "",
-        "silver_prim_armor": ""
+        "gigas_augments": "「ギガス」特殊能力",
+        "soul_augments": "「ソール」特殊能力",
+        "special_scratch_ticket": "スペシャルスクラッチ券",
+        "straga_camoflauge": "＊ストラーガアルマティ",
+        "relik_series": "レリクシリーズ",
+        "ability_capsule": "特殊能力カプセル",
+        "gold_prim_sword": "ゴルドプリムソード",
+        "silver_prim_sword": "シルヴァプリムソード",
+        "gold_prim_armor": "ゴルドプリムアーマ",
+        "silver_prim_armor": "シルヴァプリムアーマ"
     }
 }

@@ -1,20 +1,20 @@
 {
     "value": {
-        "seasonalpoints": "",
-        "meseta": "",
-        "skillpoint": "",
-        "experience": ""
+        "seasonalpoints": "очков сезона",
+        "meseta": "N-месеты",
+        "skillpoint": "SP",
+        "experience": "опыта"
     },
     "item": {
-        "gigas_augments": "",
-        "soul_augments": "",
-        "special_scratch_ticket": "",
-        "straga_camoflauge": "",
-        "relik_series": "",
-        "ability_capsule": "",
-        "gold_prim_sword": "",
-        "silver_prim_sword": "",
-        "gold_prim_armor": "",
-        "silver_prim_armor": ""
+        "gigas_augments": "Абилки Gigas-типа",
+        "soul_augments": "Абилки Soul-типа",
+        "special_scratch_ticket": "Билет Особой Лотереи",
+        "straga_camoflauge": "＊Stragga Armati",
+        "relik_series": "Оружие серии Relic",
+        "ability_capsule": "Капсулы с абилками",
+        "gold_prim_sword": "Gold Prim Sword",
+        "silver_prim_sword": "Silver Prim Sword",
+        "gold_prim_armor": "Gold Prim Armor",
+        "silver_prim_armor": "Silver Prim Armor"
     }
 }
