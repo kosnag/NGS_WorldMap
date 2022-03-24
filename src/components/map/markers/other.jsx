@@ -21,10 +21,10 @@ Veteran:()=>{
                     <span><menuicon/> {t("items:other.veteran.title")}</span>
                 </header>
                 <content>
-                    {t("ui:Map.enemyTypes.dread")} | {t("enemies:"+x.string)}
+                    {t("enemies:"+x.string)}
                     <br/>
-                    {t("ui:Map.placedBy")}: x.contributer
-                    <id>ID: alphareactor{x.string}</id>
+                    {t("ui:Map.placedBy")}: {x.contributer}
+                    <id>ID: {x.string}</id>
                 </content>
             </tooltip-window></Tooltip>
         </Marker>
@@ -172,7 +172,7 @@ BGM:()=>{
         return ()=>clearInterval(i);
     });
     if (data !== null) {return (marker ? (data.map((x=>
-        <Marker icon={IconLib.musicPlace} position={[x.lat,x.lng]}>
+        <Marker icon={IconLib.musicplace} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.musicplace.title")}</span>
