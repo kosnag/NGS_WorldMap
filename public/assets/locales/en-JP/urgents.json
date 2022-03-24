@@ -17,7 +17,7 @@
     "miningRigDefenceAelio": {
         "title": "Mining Rig Defense: Aelio",
         "description": "We've received a distress call from a mining unit operating on Halpha Grasslands. The high number of enemy readings nearby indicates they've come under a large-scale attack. All ARKS are to intercept and defend the Resource Mining Rigs.",
-        "clearCondition": "efend the Resource Mining Rigs!"
+        "clearCondition": "Defend the Resource Mining Rigs!"
     },
     "darkFalzInterception": {
         "title": "Dark Falz Interception Battle",
@@ -26,7 +26,7 @@
     },
     "dustylVera": {
         "title": "Snidael Vera Subjugation",
-        "description": "Powerful space-time fluctuations have bæn at Morava Canyon in Northern Retem. Based on past data, the Snidael Vera is expected to appear. All ARKS, head for the area & eliminate this threat.",
+        "description": "Powerful space-time fluctuations have been at Morava Canyon in Northern Retem. Based on past data, the Snidael Vera is expected to appear. All ARKS, head for the area & eliminate this threat.",
         "clearCondition": "Defeat the target enemy"
     },
     "renusVera": {
