@@ -10,9 +10,9 @@ var optionsList = [
     {"category":"Minerals"},
     {"table":"mineral__dualomite","text":"Dualomite"},
     {"table":"mineral__monotite","text":"Monotite"},
-    {"table":"mineral__photonChunk","text":"Photon Chunk"},
-    {"table":"mineral__photonQuartz","text":"Photon Quartz"},
-    {"table":"mineral__photonScale","text":"Photon Scate"},
+    {"table":"mineral__photonchunk","text":"Photon Chunk"},
+    {"table":"mineral__photonquartz","text":"Photon Quartz"},
+    {"table":"mineral__photonscale","text":"Photon Scate"},
     {"table":"mineral__tetracite","text":"Tetracite"},
     {"table":"mineral__trinite","text":"Trinite"},
     {"hr":""},
@@ -29,10 +29,10 @@ var optionsList = [
     {"table":"food__aelio_clam","text":"Rich Aelio Clam"},
     {"table":"food__aelio_crab","text":"Crisp Aelio Crab"},
     {"table":"food__aelio_lobster","text":"Robust Aelio Lobster"},
-    {"table":"food__aelio_turbanShell","text":"Light Aelio Turban Shell"},
-    {"table":"food__retem_hermitCrab","text":"Robust Retem Hermit Crab"},//need to finish
+    {"table":"food__aelio_turbanshell","text":"Light Aelio Turban Shell"},
+    {"table":"food__retem_hermitcrab","text":"Robust Retem Hermit Crab"},//need to finish
     {"table":"food__retem_scallop","text":"Rich Retem Scallop"},
-    {"table":"food__retem_seaSlug","text":"Light Retem Sea Slug"},
+    {"table":"food__retem_seaslug","text":"Light Retem Sea Slug"},
     {"table":"food__retem_urchin","text":"Crisp Retem Sea Urchin"},
 
     {"table":"food__aelio_herb","text":"Rich Aelio Herb"},
@@ -45,11 +45,11 @@ var optionsList = [
     {"table":"food__retem_mushroom","text":"Crisp Retem Mushroom"},
     {"hr":""},*/
     {"category":"Other"},
-    {"table":"other__alphaReactor","text":"Alpha Reactor"},
+    {"table":"other__alphareactor","text":"Alpha Reactor"},
     {"table":"other__datapod","text":"Datapod"},
     {"table":"other__veteran","text":"Veteran"},
-    {"table":"other__stellarGrace","text":"Stellar Grace"},
-    {"table":"other__musicPlace","text":"BGM Easter Egg"},
+    {"table":"other__stellargrace","text":"Stellar Grace"},
+    {"table":"other__musicplace","text":"BGM Easter Egg"},
     {"table":"other__mischief","text":"Mischief Symbol"}
 ];
 

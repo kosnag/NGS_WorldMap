@@ -26,13 +26,13 @@ fetch("../../api/read.php?table=mineral__dualomite").then((response)=>response.j
 fetch("../../api/read.php?table=mineral__monotite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"magenta","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Monotite | ID:'+data[i].id,{"direction":"top"}).addTo(groups.minerals)
 }}})
-fetch("../../api/read.php?table=mineral__photonChunk").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=mineral__photonchunk").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Chunk | ID:'+data[i].id,{"direction":"top"}).addTo(groups.minerals)
 }}})
-fetch("../../api/read.php?table=mineral__photonQuartz").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=mineral__photonquartz").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"lightblue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Quartz | ID:'+data[i].id,{"direction":"top"}).addTo(groups.minerals)
 }}})
-fetch("../../api/read.php?table=mineral__photonScale").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=mineral__photonscale").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"pink","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Scate | ID:'+data[i].id,{"direction":"top"}).addTo(groups.minerals)
 }}})
 fetch("../../api/read.php?table=mineral__tetracite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
@@ -79,16 +79,16 @@ fetch("../../api/read.php?table=food__aelio_crab").then((response)=>response.jso
 fetch("../../api/read.php?table=food__aelio_lobster").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Robust Aelio Lobster | ID:'+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
 }}})
-fetch("../../api/read.php?table=food__aelio_turbanShell").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=food__aelio_turbanshell").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"yellow","fillOpacity":1,"weight":4}).bindTooltip('Light Aelio Turban Shell | ID:'+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
 }}})
-fetch("../../api/read.php?table=food__retem_hermitCrab").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=food__retem_hermitcrab").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"green","fillOpacity":1,"weight":4}).bindTooltip('Robust Retem Hermit Crab | ID:'+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
 }}})
 fetch("../../api/read.php?table=food__retem_scallop").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Rich Retem Scallop | ID:'+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
 }}})
-fetch("../../api/read.php?table=food__retem_seaSlug").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=food__retem_seaslug").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Light Retem Sea Slug | ID:'+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
 }}})
 fetch("../../api/read.php?table=food__retem_urchin").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
@@ -131,10 +131,10 @@ fetch("../../api/read.php?table=container__red").then((response)=>response.json(
 
 
 //OTHER
-fetch("../../api/read.php?table=other__alphaReactor").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=other__alphareactor").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"purple","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Alpha Reactor | ID:'+data[i].id,{"direction":"top"}).addTo(groups.other.alphareactors)
 }}})
-fetch("../../api/read.php?table=other__musicPlace").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=other__musicplace").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"pink","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('BGM Easter Egg | ID:'+data[i].string,{"direction":"top"}).addTo(groups.other.bgm)
 }}})
 fetch("../../api/read.php?table=other__datapod").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
@@ -143,7 +143,7 @@ fetch("../../api/read.php?table=other__datapod").then((response)=>response.json(
 fetch("../../api/read.php?table=other__mischief").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"orange","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Mischief Symbol | ID:'+data[i].id,{"direction":"top"}).addTo(groups.other.mischief)
 }}})
-fetch("../../api/read.php?table=other__stellarGrace").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+fetch("../../api/read.php?table=other__stellargrace").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"lightblue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Stellar Grace | ID:'+data[i].id+'|'+data[i].string,{"direction":"top"}).addTo(groups.other.stellarGraces)
 }}})
 fetch("../../api/read.php?table=other__veteran").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
