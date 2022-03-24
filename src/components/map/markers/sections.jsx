@@ -9,7 +9,7 @@ export default function Sections(){
     const [data,setData] = useState([]);
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
-    useEffect(()=>{fetch("./assets/data/sections.json").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/sections.json").then(response=>response.json()).then(d=>setData(d))},[]);
     const polygonColor = (x) => {
         if(x === "lobby"){return "blue"}
         if(x === "gathering"){return "green"}

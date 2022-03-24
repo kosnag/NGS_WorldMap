@@ -13,7 +13,7 @@ Battledia:()=>{
     const [marker,setMarker] = useState([]);
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
-    useEffect(()=>{fetch("./assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.battledia));
         return ()=>clearInterval(i);
@@ -122,7 +122,7 @@ Cocoon:()=>{
     const popupRef = useRef();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./assets/data/cocoons.json").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/cocoons.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.cocoon));
         return ()=>clearInterval(i);
@@ -248,7 +248,7 @@ Tower:()=>{
     const popupRef = useRef();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./assets/data/towers.json").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/towers.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.tower));
         return ()=>clearInterval(i);
@@ -330,7 +330,7 @@ UQ:()=>{
     const [marker,setMarker] = useState([]);
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
-    useEffect(()=>{fetch("./assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.urgent));
         return ()=>clearInterval(i);
