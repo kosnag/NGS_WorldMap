@@ -2,8 +2,6 @@ import React, { useState, Fragment, useEffect, useRef } from 'react';
 import IconLib from '../icons';
 import { useTranslation } from "react-i18next";
 import { Marker, Tooltip, Popup} from "react-leaflet";
-import "../tooltip.scss";
-import "../popup.scss";
 
 const Load = {
 Battledia:()=>{
@@ -13,12 +11,12 @@ Battledia:()=>{
     const [marker,setMarker] = useState([]);
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
-    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.battledia));
         return ()=>clearInterval(i);
     });
-    return(marker ? (data.map((x=>
+    useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={IconLib.battledia} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
@@ -115,19 +113,19 @@ Battledia:()=>{
                 </content>
             </popup-window></Popup>
         </Marker>
-    ))):<Fragment/>)
+    ))):<Fragment/>)}else{return <Fragment/>}
 },
 Cocoon:()=>{
     const {t} = useTranslation();
     const popupRef = useRef();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/cocoons.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.cocoon));
         return ()=>clearInterval(i);
     });
-    return(marker?(data.map((x=>
+    useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/cocoons.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return(marker?(data.map((x=>
         <Marker icon={IconLib.cocoon} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
@@ -195,18 +193,18 @@ Cocoon:()=>{
                 </content>
             </popup-window></Popup>
         </Marker>
-    ))):<Fragment/>)
+    ))):<Fragment/>)}else{return <Fragment/>}
 },
 Mag:()=>{
     const {t} = useTranslation();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./api/read.php?table=landmark__mag").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.mag));
         return ()=>clearInterval(i);
     });
-    return(marker ? (data.map((x=>
+    useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=landmark__mag").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={IconLib.mag} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
             <header>
@@ -218,18 +216,18 @@ Mag:()=>{
             </content>
             </tooltip-window></Tooltip>
         </Marker>
-    ))):<Fragment/>)
+    ))):<Fragment/>)}else{return <Fragment/>}
 },
 Ryuker:()=>{
     const {t} = useTranslation();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./api/read.php?table=landmark__ryuker").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.ryuker));
         return ()=>clearInterval(i);
     });
-    return(marker ? (data.map((x=>
+    useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=landmark__ryuker").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={IconLib.ryuker} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
@@ -241,19 +239,19 @@ Ryuker:()=>{
                 </content>
             </tooltip-window></Tooltip>
         </Marker>
-    ))) : <Fragment/>)
+    ))):<Fragment/>)}else{return <Fragment/>}
 },
 Tower:()=>{
     const {t} = useTranslation();
     const popupRef = useRef();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/towers.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.tower));
         return ()=>clearInterval(i);
     });
-    return(marker ? (data.map((x=>
+    useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/towers.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={IconLib.tower} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
@@ -321,7 +319,7 @@ Tower:()=>{
                 </content>
             </popup-window></Popup>
         </Marker>
-    ))):<Fragment/>)
+    ))):<Fragment/>)}else{return <Fragment/>}
 },
 UQ:()=>{
     const {t} = useTranslation();
@@ -330,12 +328,12 @@ UQ:()=>{
     const [marker,setMarker] = useState([]);
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
-    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.urgent));
         return ()=>clearInterval(i);
     });
-    return(marker ? (data.map((x=>
+    useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={IconLib.urgent} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
@@ -446,7 +444,7 @@ UQ:()=>{
                 </content>
             </popup-window></Popup>
         </Marker>
-    ))):<Fragment/>)
+    ))):<Fragment/>)}else{return <Fragment/>}
 }}
 
 export default function Landmarks(){return(<>

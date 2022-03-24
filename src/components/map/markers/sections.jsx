@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, Fragment, useRef } from 'react';
 import { useTranslation } from "react-i18next";
 import { Polygon, Popup } from "react-leaflet";
-import "../popup.scss";
 
 export default function Sections(){
     const {t} = useTranslation();
@@ -10,12 +9,12 @@ export default function Sections(){
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
     useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/sections.json").then(response=>response.json()).then(d=>setData(d))},[]);
-    const polygonColor = (x) => {
+    const polygonColor =(x)=>{
         if(x === "lobby"){return "blue"}
         if(x === "gathering"){return "green"}
         if(x === "combat"){return "red"}
     }
-    return(data.map((x=>
+    if(data !== null){return(data.map((x=>
         <Polygon
             positions={x.coordinates}
             eventHandlers={{
@@ -127,5 +126,5 @@ export default function Sections(){
                 </content>
             </popup-window></Popup>
         </Polygon>
-    )))
+    )))}else{return <Fragment/>}
 }
