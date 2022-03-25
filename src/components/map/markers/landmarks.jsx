@@ -151,7 +151,7 @@ Cocoon:()=>{
                                 <value>{x.players}</value>
                              </level>
                             <level>
-                                <span>{t("ui:Map.requiredBP")}</span>
+                                <span>{t("ui:Map.recommendedBP")}</span>
                                 <border/>
                                 <value>{x.minBP}</value>
                             </level>
@@ -277,7 +277,7 @@ Tower:()=>{
                                 <value>{x.players}</value>
                              </level>
                             <level>
-                                <span>{t("ui:Map.requiredBP")}</span>
+                                <span>{t("ui:Map.recommendedBP")}</span>
                                 <border/>
                                 <value>{x.minBP}</value>
                             </level>
