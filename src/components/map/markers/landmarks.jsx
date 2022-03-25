@@ -371,12 +371,16 @@ UQ:()=>{
                             <level>
                                 <span>{t("ui:Map.requiredBP")}</span>
                                 <border/>
-                                <value>{x.ranks[tier].minBP}</value>
+                                <value>
+                                    {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].minBP}</>}})()}
+                                </value>
                             </level>
                             <level>
                                 <span>{t("ui:Map.enemyLv")}</span>
                                 <border/>
-                                <value>{x.ranks[tier].enemyLv}</value>
+                                <value>
+                                    {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].enemyLv}</>}})()}
+                                </value>
                             </level>
                         </div>
                     </info>
