@@ -24,7 +24,7 @@
                         "count": 500
                     }, 
                     {
-                        "item": "items:mineral.photonScale.title",
+                        "item": "items:mineral.photonscale.title",
                         "count": 2
                     }
                 ]
@@ -90,7 +90,7 @@
                         "item": "rewards:item.straga_camoflauge"
                     },
                     {
-                        "item": "rewards:item.gigas_ugments"
+                        "item": "rewards:item.gigas_augments"
                     },
                     {
                         "item": "rewards:item.soul_augments"
