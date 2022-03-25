@@ -10,7 +10,7 @@ var groups = {
         red: L.layerGroup()
     },
     other: {
-        alphareactors: L.layerGroup(),
+        dailymaterials: L.layerGroup(),
         bgm: L.layerGroup(),
         datapods: L.layerGroup(),
         mischief: L.layerGroup(),
@@ -31,9 +31,6 @@ fetch("../../api/read.php?table=mineral__photonchunk").then((response)=>response
 }}})
 fetch("../../api/read.php?table=mineral__photonquartz").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"lightblue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Quartz | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
-}}})
-fetch("../../api/read.php?table=mineral__photonscale").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"pink","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Scate | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
 }}})
 fetch("../../api/read.php?table=mineral__tetracite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"orange","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Tetracite | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
@@ -132,7 +129,10 @@ fetch("../../api/read.php?table=container__red").then((response)=>response.json(
 
 //OTHER
 fetch("../../api/read.php?table=other__alphareactor").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"purple","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Alpha Reactor | ID: '+data[i].id,{"direction":"top"}).addTo(groups.other.alphareactors)
+    new L.circle([data[i].lat,data[i].lng],4,{"color":"purple","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Alpha Reactor | ID: '+data[i].id,{"direction":"top"}).addTo(groups.other.dailymaterials)
+}}})
+fetch("../../api/read.php?table=mineral__photonscale").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+    new L.circle([data[i].lat,data[i].lng],4,{"color":"pink","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Scate | ID: '+data[i].id,{"direction":"top"}).addTo(groups.other.dailymaterials)
 }}})
 fetch("../../api/read.php?table=other__musicplace").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"pink","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('BGM Easter Egg | ID: '+data[i].string,{"direction":"top"}).addTo(groups.other.bgm)
@@ -151,7 +151,6 @@ fetch("../../api/read.php?table=other__veteran").then((response)=>response.json(
 }}})
 
 
-
 var baseLayer = {
     "": window.tileLayer
 }
@@ -163,7 +162,7 @@ var overlayLayers = {
     "Green Containers": groups.containers.green,
     "Red Containers": groups.containers.red,
     "Veterans": groups.other.veterans,
-    "Alpha Reactors": groups.other.alphareactors,
+    "Daily Materials": groups.other.dailymaterials,
     "Datapods": groups.other.datapods,
     "BGM Easter Eggs": groups.other.bgm,
     "Stellar Graces": groups.other.stellarGraces,
