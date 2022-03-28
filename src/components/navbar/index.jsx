@@ -9,7 +9,7 @@ import imageDonate from '../../assets/icons/donation.png';
 
 export default function NavBar(){
   const {t} = useTranslation();
-  const imageAlphaReactor = "./assets/images/icons/other/alphaReactor.png"
+  const imageAlphaReactor = "./assets/images/icons/other/alphareactor.png"
   return (
     <navbar>
       <buttons>

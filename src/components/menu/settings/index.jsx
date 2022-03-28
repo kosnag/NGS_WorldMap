@@ -26,7 +26,7 @@ export default function MenuSettings(){
     setTimeout(() => {
       setToggleLang(localStorage.getItem("i18nextLng"));
     }, 100)
-    fetch("./assets/storages/contributers.json")
+    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/contributers.json")
       .then(response=>response.json())
       .then(d=>setContributers(d))
   }, []);
@@ -82,7 +82,7 @@ export default function MenuSettings(){
             </items>
             <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
               <button onClick={() => window.open("https://discord.gg/czK9HbxpDA")}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
-              <button onClick={() => window.open("https://github.com/kosnag/NGS_WorldMap_React")}>{t("ui:OptionsMenu.Items.mapping.translate")}</button>
+              <button onClick={() => window.open("https://github.com/kosnag/NGS_WorldMap")}>{t("ui:OptionsMenu.Items.mapping.translate")}</button>
               <button onClick={() => window.open("/mapping")}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
             </items>
             <items id="debug" className={toggleTab === 'debug' ? "active" : ""}>

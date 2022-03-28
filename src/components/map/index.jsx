@@ -3,6 +3,8 @@ import L from 'leaflet';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 import "./style.scss";
+import "./tooltip.scss";
+import "./popup.scss";
 
 import Landmarks from './markers/landmarks';
 import Food from './markers/food';
@@ -10,7 +12,6 @@ import Minerals from './markers/minerals';
 import Other from './markers/other';
 import Containers from './markers/containers';
 import Sections from './markers/sections';
-
 function Init(){return (<>
 <Landmarks/>
 <Food/>

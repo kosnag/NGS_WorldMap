@@ -34,15 +34,15 @@
             "title": "モノタイト",
             "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
         },
-        "photonChunk": {
+        "photonchunk": {
             "title": "フォトンチャンク",
             "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放などに用いる。"
         },
-        "photonQuartz": {
+        "photonquartz": {
             "title": "フォトンクォーツ",
             "description": "各地の岩場などで入手可能な鉱石。アイテムラボでのマルチウェポン化に用いる。"
         },
-        "photonScale": {
+        "photonscale": {
             "title": "フォトンスケイル",
             "description": "各地の岩場などで入手可能な鉱石。アイテムラボでのカプセル交換などに用いる。"
         },
@@ -66,18 +66,18 @@
         "aelio_peach": "サッパ・エアルピッチ",
         "aelio_pear": "シャッキ・エアルナッシィ",
         "aelio_tomato": "シャッキ・エアルトマーテ",
-        "aelio_turbanShell": "サッパ・エアルサザイエ",
+        "aelio_turbanshell": "サッパ・エアルサザイエ",
         "aelio_turnip": "ガッツ・エアルカブラナ",
         "retem_cauliflower": "ガッツ・リテナキャリブラ",
         "retem_cherries": "マッタ・リテナッチェリ",
         "retem_cranberries": "サッパ・リテナクランベ",
         "retem_eggplant": "マッタ・リテナマルナース",
         "retem_carambola": "シャッキ・リテナスターツ",
-        "retem_hermitCrab": "ガッツ・リテナヤドガーリ",
+        "retem_hermitcrab": "ガッツ・リテナヤドガーリ",
         "retem_mango": "サッパ・リテナマルゴー",
         "retem_mushroom": "シャッキ・リテナマシュル",
         "retem_scallop": "マッタ・リテナボタッテ",
-        "retem_seaSlug": "サッパ・リテナウミッシー",
+        "retem_seaslug": "サッパ・リテナウミッシー",
         "retem_strawberry": "ガッツ・リテナストロンベリ",
         "retem_urchin": "シャッキ・リテナウーニィ",
         
@@ -110,7 +110,7 @@
         }
     },
     "other": {
-        "alphaReactor": {
+        "alphareactor": {
             "title": "알파 리액터",
             "description": ""
         },
@@ -118,7 +118,7 @@
             "title": "메시지 팩",
             "description": ""
         },
-        "stellarSeed": {
+        "stellarseed": {
             "title": "스텔라 시드",
             "description": ""
         },
@@ -126,11 +126,11 @@
             "title": "노련의 ",
             "description": ""
         },
-        "stellarGrace": {
+        "stellargrace": {
             "title": "스텔라 그레이스",
             "description": ""
         },
-        "musicPlace": {
+        "musicplace": {
             "title": "BGM 이스터 에그",
             "description": ""
         },

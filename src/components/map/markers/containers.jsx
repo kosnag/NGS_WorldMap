@@ -2,19 +2,18 @@ import React, { useState, Fragment, useEffect } from 'react';
 import IconLib from '../icons';
 import { useTranslation } from "react-i18next";
 import { Marker, Tooltip } from "react-leaflet";
-import "../tooltip.scss";
 
 const Load = {
 Red:()=>{
     const {t} = useTranslation();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./api/read.php?table=container__red").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.container.red));
         return ()=>clearInterval(i);
     });
-    if (data !== null) {return (marker ? (data.map((x=>
+    useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=container__red").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return (marker ? (data.map((x=>
         <Marker 
             icon={window.localStorage_Checked.redContainers.indexOf(x.id)>-1 ? IconLib.redBoxChecked : IconLib.redBox}
             position={[x.lat,x.lng]} 
@@ -49,12 +48,12 @@ Green:()=>{
     const {t} = useTranslation();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
-    useEffect(()=>{fetch("./api/read.php?table=container__green").then(response=>response.json()).then(d=>setData(d))},[]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.container.green));
         return ()=>clearInterval(i);
     });
-    if (data !== null) {return (marker ? (data.map((x=>
+    useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=container__green").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return (marker ? (data.map((x=>
         <Marker icon={IconLib.greenBox} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>

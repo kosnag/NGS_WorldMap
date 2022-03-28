@@ -22,18 +22,17 @@ i18n
       'datapods',
       'enemies',
       'rewards',
-      'mags'
+      'mags',
     ],
     framework: "React",
     fallbackLng: 'en-US',
     debug: false,
     react: {
       useSuspense: false,
-      wait: false,
+      //wait: false,
       escapeValue: false,
     },
     backend: {
-      //loadPath: './assets/locales/{{lng}}/{{ns}}.json'
       loadPath: '//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/locales/{{lng}}/{{ns}}.json'
     },
   });
