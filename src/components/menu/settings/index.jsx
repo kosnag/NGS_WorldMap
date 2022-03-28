@@ -96,7 +96,7 @@ export default function MenuSettings(){
               <p>
                 {t("ui:page_title")}
                 <br/><br/>
-                {t("ui:OptionsMenu.Items.about.author")}: kosnag
+                {t("ui:OptionsMenu.Items.about.author")}: <name onClick={()=>{window.open("//twitter.com/kosnag")}}>kosnag</name>
                 <br/><br/>
                 {t("ui:OptionsMenu.Items.about.contributers")}:<br/>
                 {contributers.map((x=>
