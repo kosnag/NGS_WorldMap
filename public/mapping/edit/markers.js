@@ -144,7 +144,7 @@ fetch("../../api/read.php?table=other__mischief").then((response)=>response.json
     new L.circle([data[i].lat,data[i].lng],4,{"color":"orange","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Mischief Symbol | ID: '+data[i].id,{"direction":"top"}).addTo(groups.other.mischief)
 }}})
 fetch("../../api/read.php?table=other__stellargrace").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"lightblue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Stellar Grace | ID: '+data[i].id+'|'+data[i].string,{"direction":"top"}).addTo(groups.other.stellarGraces)
+    new L.circle([data[i].lat,data[i].lng],4,{"color":"lightblue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Stellar Grace | ID: '+data[i].id+':'+data[i].string,{"direction":"top"}).addTo(groups.other.stellarGraces)
 }}})
 fetch("../../api/read.php?table=other__veteran").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Veteran | ID: '+data[i].string,{"direction":"top"}).addTo(groups.other.veterans)
