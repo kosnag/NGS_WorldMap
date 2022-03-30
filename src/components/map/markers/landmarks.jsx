@@ -68,7 +68,13 @@ Battledia:()=>{
                         </div>
                     </info>
                     <cont>
-                        <img src="./assets/images/banners/other/battledia.png" alt="" />
+                        {(()=>{
+                            if(x.id === "variable"){
+                                return <img src="./assets/images/banners/urgents/seasonal.png" alt="" />
+                            } else {
+                                return <img src="./assets/images/banners/other/battledia.png" alt="" />
+                            }
+                        })()}
                         {(()=>{
                             const jsx = [];
                             for (var i=0; i<x.ranks.length; i++){// eslint-disable-next-line
