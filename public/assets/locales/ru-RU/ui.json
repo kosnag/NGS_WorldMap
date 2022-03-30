@@ -69,7 +69,7 @@
         "subMissions": "Дополнительные миссии",
         "clearCondition": "Основная миссия",
         "description": "Описание",
-        "placedBy": "Разместил",
+        "placedBy": "Разместил(-а)",
         "rewards": {
             "possible": "Возвожные награды",
             "guaranteed": "Награды",
