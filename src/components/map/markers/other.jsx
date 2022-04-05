@@ -23,7 +23,7 @@ Veteran:()=>{
                     {t("enemies:"+x.string)}
                     <br/>
                     {t("ui:Map.placedBy")}: {x.contributer}
-                    <id>ID: {x.string}</id>
+                    <id>ID: veteran{x.id}:{x.string}</id>
                 </content>
             </tooltip-window></Tooltip>
         </Marker>
