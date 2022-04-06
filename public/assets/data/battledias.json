@@ -119,6 +119,22 @@
                         "item": "rewards:item.special_scratch_ticket"
                     }
                 ]
+            },
+            
+            {
+                "minBP": 2114,
+                "enemyLv": 49,
+                "rewards": [
+                    {
+                        "item": "rewards:item.gigas_augments"
+                    },
+                    {
+                        "item": "rewards:item.soul_augments"
+                    },
+                    {
+                        "item": "rewards:item.special_scratch_ticket"
+                    }
+                ]
             }
         ]
     }
