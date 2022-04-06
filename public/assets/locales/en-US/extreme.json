@@ -1,0 +1,28 @@
+{
+    "trinitas": {
+        "title": "Geometric Labyrinth",
+        "clearCondition": "Head to the final area",
+        "failCondition": "Fail Side Missions 10 times \nTime limit expires",
+        "description": "This is Trinitas, an advanced training system meanth to test an ARKS defenders's overall level of skill. Use every ability available to you to reach the final area. \nEnemies' level change depending on the player's level.",
+        "levels": {
+            "1": {
+                "subMission1": ""
+            },
+            "2": {
+                "subMission1": ""
+            },
+            "3": {
+                "subMission1": ""
+            },
+            "4": {
+                "subMission1": ""
+            },
+            "5": {
+                "subMission1": ""
+            },
+            "6": {
+                "subMission1": ""
+            }
+        }
+    }
+}
