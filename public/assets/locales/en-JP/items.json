@@ -23,8 +23,12 @@
         "urgent": {
             "title": "Emergency Quest",
             "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
-        }
         },
+        "extreme": {
+            "title": "",
+            "description": ""
+        }
+    },
     "mineral": {
         "dualomite": {
             "title": "Dualomite",

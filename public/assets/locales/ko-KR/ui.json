@@ -68,6 +68,7 @@
         "enemyLv": "출현 에너미",
         "subMissions": "사이드 미션",
         "clearCondition": "메인 미션",
+        "failCondition": "",
         "description": "설명",
         "placedBy": "투고자",
         "rewards": {
