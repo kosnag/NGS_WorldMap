@@ -13,6 +13,7 @@ const IconLib = {
     tower: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/tower.png'}),
     battledia: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/battledia.png'}),
     urgent: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/urgent.png'}),
+    trinitas: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/trinitas.png'}),
     
 
     redBox: new Setup.Containers({iconUrl:'./assets/images/icons/container/red.png'}),
