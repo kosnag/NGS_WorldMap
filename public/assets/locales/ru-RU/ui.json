@@ -68,7 +68,7 @@
         "enemyLv": "Уровень врагов",
         "subMissions": "Дополнительные миссии",
         "clearCondition": "Основная миссия",
-        "failCondition": "",
+        "failCondition": "Условие провала",
         "description": "Описание",
         "placedBy": "Разместил(-а)",
         "rewards": {

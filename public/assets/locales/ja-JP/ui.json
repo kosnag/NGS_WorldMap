@@ -68,7 +68,7 @@
         "enemyLv": "出現エネミー",
         "subMissions": "サイドミッション",
         "clearCondition": "メインミッション",
-        "failCondition": "",
+        "failCondition": "失敗条件",
         "description": "説明",
         "placedBy": "投稿者",
         "rewards": {
