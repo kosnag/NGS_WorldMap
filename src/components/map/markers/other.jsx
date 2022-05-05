@@ -23,7 +23,7 @@ Veteran:()=>{
                     {t("enemies:"+x.string)}
                     <br/>
                     {t("ui:Map.placedBy")}: {x.contributer}
-                    <id>ID: {x.string}</id>
+                    <id>ID: veteran{x.id}:{x.string}</id>
                 </content>
             </tooltip-window></Tooltip>
         </Marker>
@@ -39,7 +39,7 @@ AlphaReactor:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__alphareactor").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
-        <Marker icon={IconLib.datapod} position={[x.lat,x.lng]}>
+        <Marker icon={IconLib.alphareactor} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.alphareactor.title")}</span>
@@ -47,7 +47,7 @@ AlphaReactor:()=>{
                 <content>
                     {t("items:other.alphareactor.description")}
                     <br/>
-                    {t("ui:Map.placedBy")}: x.contributer
+                    {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: alphareactor{x.id}</id>
                 </content>
             </tooltip-window></Tooltip>
@@ -97,11 +97,11 @@ StellarGrace:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__stellargrace").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
-        <Marker icon={()=>{
+        <Marker icon={(()=>{
             if(x.string === "gold"){return IconLib.stellarGrace_Gold}
             if(x.string === "silver"){return IconLib.stellarGrace_Silver}
             if(x.string === "default"){return IconLib.stellarGrace_Default}
-        }} position={[x.lat,x.lng]}>
+        })()} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.stellargrace.title")}</span>

@@ -68,8 +68,9 @@
         "enemyLv": "Уровень врагов",
         "subMissions": "Дополнительные миссии",
         "clearCondition": "Основная миссия",
+        "failCondition": "",
         "description": "Описание",
-        "placedBy": "Разместил",
+        "placedBy": "Разместил(-а)",
         "rewards": {
             "possible": "Возвожные награды",
             "guaranteed": "Награды",

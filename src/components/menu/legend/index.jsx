@@ -112,6 +112,7 @@ export default function MenuLegend(){
               <Button cat="landmark" item="battledia" rarity="places" />
               <Button cat="landmark" item="mag" rarity="places" />
               <Button cat="landmark" item="urgent" rarity="places" />
+              <Button cat="landmark" item="trinitas" rarity="places" />
             </items>
             <items className={toggleTab === 'minerals' ? "active" : ""}>
               <Button cat="mineral" item="monotite" rarity="common" />

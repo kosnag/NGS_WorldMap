@@ -8,6 +8,7 @@ const center = [boundSouth/2, boundEast/2];
 
 window.tileLayer = L.tileLayer("../../assets/images/tiles/{z}/{y}-{x}.png", {
     bounds: bounds,
+    attribution: '<a href="#" onclick="document.cookie=\'session=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;\'; window.location.reload()">Logout</a>',
     tileSize: 1024,
     noWrap: true
 })
@@ -19,9 +20,6 @@ var map = L.map(document.getElementsByTagName("map")[0], {
     crs: L.CRS.Simple,
     maxBounds: bounds,
     center: center,
-    zoomControl: true,
-    attributionControl: false,
-    keyboard: true,
     maxBoundsViscosity: 0.5,
     doubleClickZoom: false,
     layers: [window.tileLayer]

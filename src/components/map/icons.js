@@ -2,8 +2,9 @@ import L from 'leaflet';
 
 const Setup = {
     Landmarks: L.Icon.extend({options:{iconSize:[40,40],iconAnchor:[20,20],popupAnchor:[0,-20]}}),
-    Containers: L.Icon.extend({options:{iconSize:[22,22],iconAnchor:[11,11],popupAnchor:[0,-11]}}),
+    Containers: L.Icon.extend({options:{iconSize:[24,24],iconAnchor:[12,12],popupAnchor:[0,-12]}}),
     Materials: L.Icon.extend({options:{iconSize:[26,26],iconAnchor:[13,13],popupAnchor:[0,-13]}}),
+    Graces: L.Icon.extend({options:{iconSize:[28,28],iconAnchor:[14,14],popupAnchor:[0,-14]}}),
 };
 const IconLib = {
     cocoon: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/cocoon.png'}),
@@ -12,6 +13,7 @@ const IconLib = {
     tower: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/tower.png'}),
     battledia: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/battledia.png'}),
     urgent: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/urgent.png'}),
+    trinitas: new Setup.Landmarks({iconUrl:'./assets/images/icons/landmark/trinitas.png'}),
     
 
     redBox: new Setup.Containers({iconUrl:'./assets/images/icons/container/red.png'}),
@@ -60,9 +62,9 @@ const IconLib = {
     alphareactor: new Setup.Materials({iconUrl:'./assets/images/icons/other/alphareactor.png'}),
     musicplace: new Setup.Materials({iconUrl:'./assets/images/icons/other/musicplace.png'}),
     stellarseed: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarseed.png'}),
-    stellarGrace_Default: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace_Default.png'}),
-    stellarGrace_Silver: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace_Silver.png'}),
-    stellarGrace_Gold: new Setup.Materials({iconUrl:'./assets/images/icons/other/stellarGrace_Gold.png'}),
+    stellarGrace_Default: new Setup.Graces({iconUrl:'./assets/images/icons/other/stellarGrace_Default.png'}),
+    stellarGrace_Silver: new Setup.Graces({iconUrl:'./assets/images/icons/other/stellarGrace_Silver.png'}),
+    stellarGrace_Gold: new Setup.Graces({iconUrl:'./assets/images/icons/other/stellarGrace_Gold.png'}),
     mischief: new Setup.Materials({iconUrl:'./assets/images/icons/other/mischief.png'}),
     veteran: new L.icon({iconSize:[32,32],iconAnchor:[16,16],popupAnchor:[0,-16],iconUrl:'./assets/images/icons/other/veteran.png'})
 };

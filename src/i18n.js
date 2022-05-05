@@ -23,6 +23,7 @@ i18n
       'enemies',
       'rewards',
       'mags',
+      'trinitas',
     ],
     framework: "React",
     fallbackLng: 'en-US',

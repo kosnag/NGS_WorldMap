@@ -1,50 +1,5 @@
 [
     {
-        "id": "seasonal",
-        "lat":-1340.5, "lng":123.75,
-        "players": 8,
-        "firstRewards": [
-            {
-                "item": "rewards:value.meseta",
-                "count": 5000
-            }
-        ],
-        "ranks": [
-            {
-                "minBP": 1184,
-                "enemyLv": 17,
-                "rewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 10000
-                    },
-                    {
-                        "item": "rewards:value.seasonalpoints",
-                        "count": 1000
-                    }
-                ]
-            },
-            {
-                "minBP": 1898,
-                "enemyLv": 40,
-                "rewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 10000
-                    },
-                    {
-                        "item": "rewards:value.seasonalpoints",
-                        "count": 1000
-                    },
-                    {
-                        "item": "items:mineral.photonscale.title",
-                        "count": 8
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": "pettasVera",
         "lat":-1057, "lng":296.75,
         "players": 8,
@@ -238,6 +193,24 @@
                         "count": 8
                     }
                 ]
+            },
+            {
+                "minBP": 2049,
+                "enemyLv": 45,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title",
+                        "count": 8
+                    }
+                ]
             }
         ]
     },
@@ -255,6 +228,24 @@
             {
                 "minBP": 1682,
                 "enemyLv": 32,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title",
+                        "count": 8
+                    }
+                ]
+            },
+            {
+                "minBP": 2049,
+                "enemyLv": 45,
                 "rewards": [
                     {
                         "item": "rewards:value.meseta",

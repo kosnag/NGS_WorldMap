@@ -19,7 +19,9 @@ while($data=$query->fetch_assoc()){
     );
     if(isset($data["id"])){
         $table[$length]["id"] = $data["id"];
-    };
+    } else {
+		unset($table[$length]["id"]);
+	};
     if(isset($data["lat"])){
         $table[$length]["lat"] = $data["lat"];
     };
@@ -31,7 +33,9 @@ while($data=$query->fetch_assoc()){
     };
     if(isset($data["string"])){
         $table[$length]["string"] = $data["string"];
-    };
+    } else {
+		unset($table[$length]["string"]);
+	};
     $length++;
 }
 $mysql->close();

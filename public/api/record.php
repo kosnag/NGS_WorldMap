@@ -24,6 +24,10 @@ if(isset($_COOKIE["session"])){
     )){
         $result["string"] = $data->{"string"};
         $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, string) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["string"]."')");
+    }elseif(isset($data->{"string"}) && (
+        $result["table"]=="other__alphareactor" || $result["table"]=="mineral__photonscale"
+    )){
+        $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer) values ('".$result["lat"]."','".$result["lng"]."', 'Aphy')");
     }else{
         $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."')");
     }

@@ -68,6 +68,7 @@
         "enemyLv": "Enemy Level",
         "subMissions": "Sub Missions",
         "clearCondition": "Clear Condition",
+        "failCondition": "Fail Condition",
         "description": "Description",
         "placedBy": "Placed By",
         "rewards": {

@@ -12,7 +12,7 @@ var optionsList = [
     {"table":"mineral__monotite","text":"Monotite"},
     {"table":"mineral__photonchunk","text":"Photon Chunk"},
     {"table":"mineral__photonquartz","text":"Photon Quartz"},
-    {"table":"mineral__photonscale","text":"Photon Scate"},
+    {"table":"mineral__photonscale","text":"Photon Scale"},
     {"table":"mineral__tetracite","text":"Tetracite"},
     {"table":"mineral__trinite","text":"Trinite"},
     {"hr":""},
@@ -30,7 +30,7 @@ var optionsList = [
     {"table":"food__aelio_crab","text":"Crisp Aelio Crab"},
     {"table":"food__aelio_lobster","text":"Robust Aelio Lobster"},
     {"table":"food__aelio_turbanshell","text":"Light Aelio Turban Shell"},
-    {"table":"food__retem_hermitcrab","text":"Robust Retem Hermit Crab"},//need to finish
+    {"table":"food__retem_hermitcrab","text":"Robust Retem Hermit Crab"},
     {"table":"food__retem_scallop","text":"Rich Retem Scallop"},
     {"table":"food__retem_seaslug","text":"Light Retem Sea Slug"},
     {"table":"food__retem_urchin","text":"Crisp Retem Sea Urchin"},

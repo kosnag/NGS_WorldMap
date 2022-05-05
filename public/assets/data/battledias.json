@@ -1,37 +1,5 @@
 [
     {
-        "id": "variable",
-        "type": "yellow",
-        "lat":-1484.875, "lng":621.125,
-        "players": 8,
-        "ranks": [
-            {
-                "minBP": 1184,
-                "enemyLv": 17,
-                "rewards": [
-                    {
-                        "item": "rewards:value.seasonalpoints",
-                        "count": 500
-                    }
-                ]
-            },
-            {
-                "minBP": 1898,
-                "enemyLv": 40,
-                "rewards": [
-                    {
-                        "item": "rewards:value.seasonalpoints",
-                        "count": 500
-                    }, 
-                    {
-                        "item": "items:mineral.photonscale.title",
-                        "count": 2
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": "aelioTroopers",
         "type": "yellow",
         "lat":-1481.75, "lng":34.5,
@@ -141,6 +109,22 @@
                     {
                         "item": "rewards:item.relik_series"
                     },
+                    {
+                        "item": "rewards:item.gigas_augments"
+                    },
+                    {
+                        "item": "rewards:item.soul_augments"
+                    },
+                    {
+                        "item": "rewards:item.special_scratch_ticket"
+                    }
+                ]
+            },
+            
+            {
+                "minBP": 2114,
+                "enemyLv": 49,
+                "rewards": [
                     {
                         "item": "rewards:item.gigas_augments"
                     },
