@@ -19,7 +19,7 @@
         "Categories": {
             "languages": "Языки",
             "mapping": "Маппинг",
-            "debug": "Отладка",
+            "debug": "Сброс",
             "about": "О приложении"
         },
         "Items": {

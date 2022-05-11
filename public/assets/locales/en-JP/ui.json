@@ -19,7 +19,7 @@
         "Categories": {
             "languages": "Languages",
             "mapping": "Mapping",
-            "debug": "Debug",
+            "debug": "Reset",
             "about": "About"
         },
         "Items": {
