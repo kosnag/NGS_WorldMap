@@ -11,13 +11,13 @@
         "special_scratch_ticket": "Билет Особой Лотереи",
         "straga_camoflauge": "＊Stragga Armati",
         "relik_series": "Оружие серии Relic",
-        "ability_capsule": "Капсулы с абилками",
+        "mastery_augments": "",
         "gold_prim_sword": "Gold Prim Sword",
         "silver_prim_sword": "Silver Prim Sword",
         "gold_prim_armor": "Gold Prim Armor",
         "silver_prim_armor": "Silver Prim Armor",
-        "fashion_items": "",
-        "tria_augments": "",
-        "kuku_series": ""
+        "fashion_items": "Предметы внешнего вида",
+        "tria_augments": "Абилки Tria-типа",
+        "kuku_series": "Оружие серии Koukloziat "
     }
 }
