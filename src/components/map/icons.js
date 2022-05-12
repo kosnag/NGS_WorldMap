@@ -28,6 +28,7 @@ const IconLib = {
     photonquartz: new Setup.Materials({iconUrl:'./assets/images/icons/mineral/photonquartz.png'}),
     photonscale: new Setup.Materials({iconUrl:'./assets/images/icons/mineral/photonscale.png'}),
     photonchunk: new Setup.Materials({iconUrl:'./assets/images/icons/mineral/photonchunk.png'}),
+    randomite: new Setup.Materials({iconUrl:'./assets/images/icons/mineral/randomite.png'}),
     
 
     aelio_apple: new Setup.Materials({iconUrl:'./assets/images/icons/food/aelio_apple.png'}),
@@ -66,6 +67,7 @@ const IconLib = {
     stellarGrace_Silver: new Setup.Graces({iconUrl:'./assets/images/icons/other/stellarGrace_Silver.png'}),
     stellarGrace_Gold: new Setup.Graces({iconUrl:'./assets/images/icons/other/stellarGrace_Gold.png'}),
     mischief: new Setup.Materials({iconUrl:'./assets/images/icons/other/mischief.png'}),
+    mischiefChecked: new Setup.Materials({iconUrl:'./assets/images/icons/other/mischief_checked.png'}),
     veteran: new L.icon({iconSize:[32,32],iconAnchor:[16,16],popupAnchor:[0,-16],iconUrl:'./assets/images/icons/other/veteran.png'})
 };
 

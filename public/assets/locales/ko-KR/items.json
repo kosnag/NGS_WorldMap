@@ -57,6 +57,10 @@
         "trinite": {
             "title": "トライナイト",
             "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
+        },
+        "randomite": {
+            "title": "",
+            "description": ""
         }
     },
     "food": {

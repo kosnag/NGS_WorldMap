@@ -15,7 +15,8 @@
         "tetracite": 0,
         "photonquarz": 0,
         "photonchunk": 0,
-        "photonscale": 0
+        "photonscale": 0,
+        "randomite": 0
     },
     "food": {
         "aelio_apple": 0,

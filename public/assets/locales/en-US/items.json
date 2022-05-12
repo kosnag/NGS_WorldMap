@@ -57,6 +57,10 @@
         "trinite": {
             "title": "Trinite",
             "description": "Used for various purposes like unlocking Potentials and Limit Breaking at the Item Lab"
+        },
+        "randomite": {
+            "title": "Randomite",
+            "description": ""
         }
     },
     "food": {

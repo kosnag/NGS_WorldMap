@@ -50,6 +50,9 @@ const Load = {
     />},
     PhotonScale:()=>{return <Template 
         id="photonscale"
+    />},
+    Randomite:()=>{return <Template 
+        id="randomite"
     />}
 }
 export default function Minerals(){
@@ -62,6 +65,7 @@ export default function Minerals(){
             <Load.PhotonQuartz/>
             <Load.PhotonChunk/>
             <Load.PhotonScale/>
+            <Load.Randomite/>
         </Fragment>
     )
 };
