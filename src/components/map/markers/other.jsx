@@ -192,7 +192,24 @@ Mischief:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__mischief").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
-        <Marker icon={IconLib.mischief} position={[x.lat,x.lng]}>
+        <Marker 
+            icon={window.localStorage_Checked.mischief.indexOf(x.id)>-1 ? IconLib.mischiefChecked : IconLib.mischief}
+            position={[x.lat,x.lng]} 
+            eventHandlers={{
+                contextmenu:(e)=>{
+                    if(e.target.getIcon() === IconLib.datapod){
+                        e.target.setIcon(IconLib.datapodChecked);
+                        window.localStorage_Checked.mischief[window.localStorage_Checked.mischief.length]=x.id;
+                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+                    }else{
+                        e.target.setIcon(IconLib.datapod);
+                        var mark = window.localStorage_Checked.mischief.indexOf(x.id);
+                        window.localStorage_Checked.mischief.splice(mark,1);
+                        localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+                    }
+                }
+            }}
+        >
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.mischief.title")}</span>
