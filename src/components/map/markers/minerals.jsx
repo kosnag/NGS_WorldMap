@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect } from 'react';
-import IconLib from '../icons';
+import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
 import { Marker, Tooltip } from "react-leaflet";
 
@@ -13,7 +13,7 @@ const Template = (props) => {
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=mineral__"+props.id).then(response=>response.json()).then(d=>setData(d)) : setData([])},[props.id, marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={IconLib[props.id]} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
                     <span><menuicon/> {t("items:mineral."+props.id+".title")}</span>
@@ -36,9 +36,9 @@ export default function Minerals(){
     },[]);
     return (
         <Fragment>
-            {(()=>{dataJSON.items.mineral.map((x=>
+            {dataJSON.items && dataJSON?.items.mineral.map((x=>
                 <Template id={x.item}/>
-            ))})()}
+            ))}
         </Fragment>
     )
 };

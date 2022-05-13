@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import "./style.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../functions';
@@ -14,13 +14,9 @@ export default function MenuSupport(){
     setToggleTab(tab)
   };
 
-  useEffect(() => {
-    document.getElementById('menu-support').classList.add('hidden'); 
-  }, []);
-
   return (
     <Draggable bounds='container' handle='header'>
-      <window id='menu-support'>
+      <window id='menu-support' className={"hidden"}>
         <header>
           <span><menuicon/> {t("ui:NavBar.support")}</span>
           <closebutton onClick={() => Functions.menuShowHide("menu-support")}/>

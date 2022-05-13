@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect } from 'react';
-import IconLib from '../icons';
+import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
 import { Circle, Marker, Tooltip } from "react-leaflet";
 
@@ -14,7 +14,7 @@ Veteran:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__veteran").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
-        <Marker icon={IconLib.veteran} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.veteran} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.veteran.title")}</span>
@@ -39,7 +39,7 @@ AlphaReactor:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__alphareactor").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
-        <Marker icon={IconLib.alphareactor} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.alphareactor} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.alphareactor.title")}</span>
@@ -74,7 +74,7 @@ StellarFragment:()=>{
                 fillOpacity: '0.25'
             }}
         >
-            <Marker icon={IconLib.stellarseed} position={[x.lat,x.lng]}>
+            <Marker icon={iconLib.stellarseed} position={[x.lat,x.lng]}>
                 <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                     <header>
                         <span><menuicon/> {t("items:other.stellarseed.title")}</span>
@@ -98,9 +98,9 @@ StellarGrace:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__stellargrace").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker icon={(()=>{
-            if(x.string === "gold"){return IconLib.stellarGrace_Gold}
-            if(x.string === "silver"){return IconLib.stellarGrace_Silver}
-            if(x.string === "default"){return IconLib.stellarGrace_Default}
+            if(x.string === "gold"){return iconLib.stellarGrace_Gold}
+            if(x.string === "silver"){return iconLib.stellarGrace_Silver}
+            if(x.string === "default"){return iconLib.stellarGrace_Default}
         })()} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
@@ -127,16 +127,19 @@ Datapod:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__datapod").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker 
-            icon={window.localStorage_Checked.datapods.indexOf(x.string)>-1 ? IconLib.datapodChecked : IconLib.datapod}
+            icon={window.localStorage_Checked.datapods.indexOf(x.string)>-1 ? iconLib.datapodChecked :iconLib.datapod}
             position={[x.lat,x.lng]} 
             eventHandlers={{
                 contextmenu:(e)=>{
-                    if(e.target.getIcon() === IconLib.datapod){
-                        e.target.setIcon(IconLib.datapodChecked);
+                    if(e.target.getIcon() === iconLib.datapod){
+                        e.target.setIcon(iconLib.datapodChecked);
+                        if(!window.localStorage_Checked.datapods){
+                            window.localStorage_Checked.datapods = {}
+                        }
                         window.localStorage_Checked.datapods[window.localStorage_Checked.datapods.length]=x.string;
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
                     }else{
-                        e.target.setIcon(IconLib.datapod);
+                        e.target.setIcon(iconLib.datapod);
                         var mark = window.localStorage_Checked.datapods.indexOf(x.string);
                         window.localStorage_Checked.datapods.splice(mark,1);
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
@@ -168,7 +171,7 @@ BGM:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__musicplace").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
-        <Marker icon={IconLib.musicplace} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.musicplace} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.musicplace.title")}</span>
@@ -193,16 +196,19 @@ Mischief:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__mischief").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker 
-            icon={window.localStorage_Checked.mischief.indexOf(x.id)>-1 ? IconLib.mischiefChecked : IconLib.mischief}
+            icon={window.localStorage_Checked.mischief.indexOf(x.id)>-1 ? iconLib.mischiefChecked : iconLib.mischief}
             position={[x.lat,x.lng]} 
             eventHandlers={{
                 contextmenu:(e)=>{
-                    if(e.target.getIcon() === IconLib.mischief){
-                        e.target.setIcon(IconLib.mischiefChecked);
+                    if(e.target.getIcon() === iconLib.mischief){
+                        e.target.setIcon(iconLib.mischiefChecked);
+                        if(!window.localStorage_Checked.mischief){
+                            window.localStorage_Checked.mischief = {}
+                        }
                         window.localStorage_Checked.mischief[window.localStorage_Checked.mischief.length]=x.id;
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
                     }else{
-                        e.target.setIcon(IconLib.mischief);
+                        e.target.setIcon(iconLib.mischief);
                         var mark = window.localStorage_Checked.mischief.indexOf(x.id);
                         window.localStorage_Checked.mischief.splice(mark,1);
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))

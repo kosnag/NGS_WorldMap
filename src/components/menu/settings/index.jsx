@@ -22,7 +22,6 @@ export default function MenuSettings(){
   const [contributers,setContributers] = useState([]);
 
   useEffect(() => {
-    document.getElementById('menu-settings').classList.add('hidden');
     setTimeout(() => {
       setToggleLang(localStorage.getItem("i18nextLng"));
     }, 100)
@@ -33,7 +32,7 @@ export default function MenuSettings(){
 
   return (
     <Draggable bounds='container' handle='header'>
-      <window id='menu-settings'>
+      <window id='menu-settings' className={"hidden"}>
         <header>
           <span><menuicon/> {t("ui:NavBar.options")}</span>
           <closebutton onClick={() => Functions.menuShowHide("menu-settings")}/>

@@ -107,29 +107,29 @@ export default function MenuLegend(){
             >{t("ui:LegendMenu.Categories.other")}</button>
           </category>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
-              {(()=>dataJSON.items.landmark.map((x=>
+              {dataJSON.items && dataJSON?.items.landmark.map((x=>
                 <Button category="landmark" item={x} rarity="places"/>
-              )))()}
+              ))}
             </items>
             <items className={toggleTab === 'minerals' ? "active" : ""}>
-              {(()=>dataJSON.items.mineral.map((x=>
+              {dataJSON.items && dataJSON?.items.mineral.map((x=>
                 <Button category="mineral" item={x.item} rarity={x.rarity}/>
-              )))()}
+              ))}
             </items>
             <items className={toggleTab === 'food' ? "active" : ""}>
-              {(()=>dataJSON.items.food.map((x=>
+              {dataJSON.items && dataJSON?.items.food.map((x=>
                 <ButtonFood item={x.item} prefix={x.prefix} type={x.type} rarity={x.rarity}/>
-              )))()}
+              ))}
             </items>
             <items className={toggleTab === 'containers' ? "active" : ""}>
-              {(()=>dataJSON.items.container.map((x=>
+              {dataJSON.items && dataJSON?.items.container.map((x=>
                 <Button category="container" item={x.item} rarity={x.rarity}/>
-              )))()}
+              ))}
             </items>
             <items className={toggleTab === 'other' ? "active" : ""}>
-              {(()=>dataJSON.items.other.map((x=>
+              {dataJSON.items && dataJSON?.items.other.map((x=>
                 <Button category="other" item={x.item} rarity={x.rarity}/>
-              )))()}
+              ))}
             </items>
           <info>
             <background className={previewRarity}/>

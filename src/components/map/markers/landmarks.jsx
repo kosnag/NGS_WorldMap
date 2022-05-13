@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect, useRef } from 'react';
-import IconLib from '../icons';
+import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
 import { Marker, Tooltip, Popup} from "react-leaflet";
 
@@ -17,7 +17,7 @@ Battledia:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={IconLib.battledia} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.battledia} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
                     <span><menuicon/> {t("battledias:"+x.id+".title")}</span>
@@ -132,7 +132,7 @@ Cocoon:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/cocoons.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker?(data.map((x=>
-        <Marker icon={IconLib.cocoon} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.cocoon} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
                     <span><menuicon/> {t("cocoons:"+x.id+".title")}</span>
@@ -211,7 +211,7 @@ Mag:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=landmark__mag").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={IconLib.mag} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.mag} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
             <header>
                 <span><menuicon/> {t("mags:type."+x.string)}</span>
@@ -234,7 +234,7 @@ Ryuker:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=landmark__ryuker").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={IconLib.ryuker} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.ryuker} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
                     <span><menuicon/> {t("ryukers:"+x.string)}</span>
@@ -258,7 +258,7 @@ Tower:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/towers.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={IconLib.tower} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.tower} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
                     <span><menuicon/> {t("towers:"+x.id+".title")}</span>
@@ -340,7 +340,7 @@ UQ:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={IconLib.urgent} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.urgent} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
                     <span><menuicon/> {t("urgents:"+x.id+".title")}</span>
@@ -467,7 +467,7 @@ Trinitas:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/trinitas.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={IconLib.trinitas} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.trinitas} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
                     <span><menuicon/> {t("trinitas:"+x.id+".title")}</span>
