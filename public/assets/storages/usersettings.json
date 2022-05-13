@@ -1,0 +1,62 @@
+{
+    "landmark": {
+        "cocoon": 1,
+        "mag": 1,
+        "ryuker": 1,
+        "tower": 1,
+        "battledia": 1,
+        "urgent": 1,
+        "trinitas": 1
+    },
+    "mineral": {
+        "monotite": 0,
+        "dualomite": 0,
+        "trinite": 0,
+        "tetracite": 0,
+        "photonquarz": 0,
+        "photonchunk": 0,
+        "photonscale": 0,
+        "randomite": 0
+    },
+    "food": {
+        "aelio_apple": 0,
+        "aelio_banana": 0,
+        "aelio_clam": 0,
+        "aelio_crab": 0,
+        "aelio_herb": 0,
+        "aelio_lobster": 0,
+        "aelio_mushroom": 0,
+        "aelio_peach": 0,
+        "aelio_pear": 0,
+        "aelio_tomato": 0,
+        "aelio_turbanshell": 0,
+        "aelio_turnip": 0,
+
+        "retem_cauliflower": 0,
+        "retem_carambola": 0,
+        "retem_cherries": 0,
+        "retem_cranberries": 0,
+        "retem_eggplant": 0,
+        "retem_fruit": 0,
+        "retem_hermitcrab": 0,
+        "retem_mushroom": 0,
+        "retem_scallop": 0,
+        "retem_seaslug": 0,
+        "retem_strawberry": 0,
+        "retem_urchin": 0
+    },
+    "container": {
+        "red": 0,
+        "green": 0,
+        "gold": 0
+    },
+    "other": {
+        "veteran": 0,
+        "alphareactor": 0,
+        "stellarseed": 0,
+        "stellargrace": 0,
+        "datapod": 0,
+        "musicplace": 0,
+        "mischief": 0
+    }
+}

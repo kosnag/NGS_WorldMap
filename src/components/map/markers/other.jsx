@@ -197,12 +197,12 @@ Mischief:()=>{
             position={[x.lat,x.lng]} 
             eventHandlers={{
                 contextmenu:(e)=>{
-                    if(e.target.getIcon() === IconLib.datapod){
-                        e.target.setIcon(IconLib.datapodChecked);
+                    if(e.target.getIcon() === IconLib.mischief){
+                        e.target.setIcon(IconLib.mischiefChecked);
                         window.localStorage_Checked.mischief[window.localStorage_Checked.mischief.length]=x.id;
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
                     }else{
-                        e.target.setIcon(IconLib.datapod);
+                        e.target.setIcon(IconLib.mischief);
                         var mark = window.localStorage_Checked.mischief.indexOf(x.id);
                         window.localStorage_Checked.mischief.splice(mark,1);
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))

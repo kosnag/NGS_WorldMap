@@ -29,43 +29,16 @@ const Template = (props) => {
     ))):<Fragment/>)}else{return <Fragment/>}
 }
 
-const Load = {
-    Monotite:()=>{return <Template 
-        id="monotite"
-    />},
-    Dualomite:()=>{return <Template 
-        id="dualomite"
-    />},
-    Trinite:()=>{return <Template 
-        id="trinite"
-    />},
-    Tetracite:()=>{return <Template 
-        id="tetracite"
-    />},
-    PhotonQuartz:()=>{return <Template 
-        id="photonquartz"
-    />},
-    PhotonChunk:()=>{return <Template 
-        id="photonchunk"
-    />},
-    PhotonScale:()=>{return <Template 
-        id="photonscale"
-    />},
-    Randomite:()=>{return <Template 
-        id="randomite"
-    />}
-}
 export default function Minerals(){
+    const [dataJSON,setDataJSON] = useState([]);
+    useEffect(()=>{
+        fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
+    },[]);
     return (
         <Fragment>
-            <Load.Monotite/>
-            <Load.Dualomite/>
-            <Load.Trinite/>
-            <Load.Tetracite/>
-            <Load.PhotonQuartz/>
-            <Load.PhotonChunk/>
-            <Load.PhotonScale/>
-            <Load.Randomite/>
+            {(()=>{dataJSON.items.mineral.map((x=>
+                <Template id={x.item}/>
+            ))})()}
         </Fragment>
     )
 };

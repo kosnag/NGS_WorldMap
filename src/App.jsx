@@ -25,17 +25,39 @@ const App = () => {
 }
 
 export default function Init(){
+  const checkChekingJSON = () => {
+    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/checked.json").then(response=>response.json()).then(data=>{
+      for (var i = 0; i<data.length; i++){
+        if (window.localStorage_Checked[i] === null){
+          window.localStorage_Checked[i] = []
+          localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
+        }
+      }
+    });
+  }
+
   if (localStorage.getItem("settings") !== null && localStorage.getItem("checked") !== null){
+    checkChekingJSON();
     return <App/>
-  } else if(localStorage.getItem("settings") === null && localStorage.getItem("checked") !== null){
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(data=>localStorage.setItem("settings",JSON.stringify(data)));
-    setTimeout(()=>{window.location.reload(); return <></>;},500)
-  } else if(localStorage.getItem("settings") !== null && localStorage.getItem("checked") === null){
+  } else if (localStorage.getItem("settings") === null && localStorage.getItem("checked") !== null){
+    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/usersettings.json").then(response=>response.json()).then(data=>localStorage.setItem("settings",JSON.stringify(data)));
+    checkChekingJSON();
+    setTimeout(()=>{
+      window.location.reload();
+      return <></>;
+    },500)
+  } else if (localStorage.getItem("settings") !== null && localStorage.getItem("checked") === null){
     fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/checked.json").then(response=>response.json()).then(data=>localStorage.setItem("checked",JSON.stringify(data)));
-    setTimeout(()=>{window.location.reload(); return <></>;},500)
+    setTimeout(()=>{
+      window.location.reload();
+      return <></>;
+    },500)
   } else {
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(data=>localStorage.setItem("settings",JSON.stringify(data)));
+    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/usersettings.json").then(response=>response.json()).then(data=>localStorage.setItem("settings",JSON.stringify(data)));
     fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/checked.json").then(response=>response.json()).then(data=>localStorage.setItem("checked",JSON.stringify(data)));
-    setTimeout(()=>{window.location.reload(); return <></>;},500)
+    setTimeout(()=>{
+      window.location.reload();
+      return <></>;
+    },500)
   }
 };
