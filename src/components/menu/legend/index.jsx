@@ -67,19 +67,18 @@ export default function MenuLegend(){
     /></button>
 )}
 
-const [dataJSON,setDataJSON] = useState([]);
+  const [dataJSON,setDataJSON] = useState({});
   useEffect(()=>{
-    document.getElementById('menu-legend').classList.add('hidden');
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
+    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
   },[]);
-  useEffect(() => {
+  useEffect(()=>{
     setPreviewTitle(t("items:nothing"));
     setPreviewDescription("");
   },[t]);
 
   return (
     <Draggable bounds='container' handle='header'>
-      <window id='menu-legend'>
+      <window id='menu-legend' className={"hidden"}>
         <header>
           <span><menuicon/> {t("ui:NavBar.mapLegend")}</span>
           <closebutton onClick={() => Functions.menuShowHide("menu-legend")}/>
@@ -108,29 +107,29 @@ const [dataJSON,setDataJSON] = useState([]);
             >{t("ui:LegendMenu.Categories.other")}</button>
           </category>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
-              {(()=>{dataJSON.items.landmark.map((x=>
+              {(()=>dataJSON.items.landmark.map((x=>
                 <Button category="landmark" item={x} rarity="places"/>
-              ))})()}
+              )))()}
             </items>
             <items className={toggleTab === 'minerals' ? "active" : ""}>
-              {(()=>{dataJSON.items.mineral.map((x=>
+              {(()=>dataJSON.items.mineral.map((x=>
                 <Button category="mineral" item={x.item} rarity={x.rarity}/>
-              ))})()}
+              )))()}
             </items>
             <items className={toggleTab === 'food' ? "active" : ""}>
-              {(()=>{dataJSON.items.food.map((x=>
+              {(()=>dataJSON.items.food.map((x=>
                 <ButtonFood item={x.item} prefix={x.prefix} type={x.type} rarity={x.rarity}/>
-              ))})()}
+              )))()}
             </items>
             <items className={toggleTab === 'containers' ? "active" : ""}>
-              {(()=>{dataJSON.items.container.map((x=>
+              {(()=>dataJSON.items.container.map((x=>
                 <Button category="container" item={x.item} rarity={x.rarity}/>
-              ))})()}
+              )))()}
             </items>
             <items className={toggleTab === 'other' ? "active" : ""}>
-              {(()=>{dataJSON.items.other.map((x=>
+              {(()=>dataJSON.items.other.map((x=>
                 <Button category="other" item={x.item} rarity={x.rarity}/>
-              ))})()}
+              )))()}
             </items>
           <info>
             <background className={previewRarity}/>
