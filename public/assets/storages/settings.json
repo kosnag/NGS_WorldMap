@@ -14,7 +14,7 @@
             {"item": "dualomite", "rarity": "common"},
             {"item": "trinite", "rarity": "common"},
             {"item": "tetracite", "rarity": "common"},
-            {"item": "photonquarz", "rarity": "common"},
+            {"item": "photonquartz", "rarity": "common"},
             {"item": "photonchunk", "rarity": "common"},
             {"item": "photonscale", "rarity": "very-rare"},
             {"item": "randomite", "rarity": "special"}
