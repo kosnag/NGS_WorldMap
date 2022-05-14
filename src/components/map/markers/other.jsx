@@ -127,7 +127,7 @@ Datapod:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__datapod").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker 
-            icon={window.localStorage_Checked.datapods.indexOf(x.string)>-1 ? iconLib.datapodChecked :iconLib.datapod}
+            icon={window.localStorage_Checked.datapods && window.localStorage_Checked.datapods.indexOf(x.string)>-1 ? iconLib.datapodChecked :iconLib.datapod}
             position={[x.lat,x.lng]} 
             eventHandlers={{
                 contextmenu:(e)=>{
@@ -196,7 +196,7 @@ Mischief:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__mischief").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker 
-            icon={window.localStorage_Checked.mischief.indexOf(x.id)>-1 ? iconLib.mischiefChecked : iconLib.mischief}
+            icon={window.localStorage_Checked.mischief && window.localStorage_Checked.mischief.indexOf(x.id)>-1 ? iconLib.mischiefChecked : iconLib.mischief}
             position={[x.lat,x.lng]} 
             eventHandlers={{
                 contextmenu:(e)=>{

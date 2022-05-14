@@ -15,7 +15,7 @@ Red:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=container__red").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker 
-            icon={window.localStorage_Checked.redContainers.indexOf(x.id)>-1 ? iconLib.redBoxChecked : iconLib.redBox}
+            icon={window.localStorage_Checked.redContainers && window.localStorage_Checked.redContainers.indexOf(x.id)>-1 ? iconLib.redBoxChecked : iconLib.redBox}
             position={[x.lat,x.lng]} 
             eventHandlers={{
                 contextmenu:(e)=>{
