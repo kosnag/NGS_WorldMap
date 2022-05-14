@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import L from 'leaflet';
 import { MapContainer, TileLayer } from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
@@ -16,21 +16,30 @@ import Sections from './markers/sections';
 const iconLib = {}
 
 function Init(){
+    const [checkInitMarkers,load] = useState(false)
     useEffect(()=>{
         fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/icons.json").then(resp=>resp.json()).then(x=>{
             for(var i=0; i<x.length; i++){
-                iconLib[x[i].item] = new L.icon({iconSize:[x[i].size,x[i].size],iconAnchor:[x[i].size/2,x[i].size/2],popupAnchor:[0,-x[i].size],iconUrl:'./assets/images/icons/'+x[i].category+'/'+x[i].file !== null ? x[i].file : x[i].item+'.png'})
-            }
+                iconLib[x[i].item] = L.icon({
+                    iconSize: [x[i].size,x[i].size],
+                    iconAnchor: [x[i].size/2,x[i].size/2],
+                    popupAnchor: [0,-x[i].size],
+                    iconUrl: './assets/images/icons/'+x[i].category+'/'+(x[i].file != null ? x[i].file : x[i].item) +'.png'
+                })
+            };
+            load(true);
         });
     });
 
 return (<>
+{checkInitMarkers === true ? <>
 <Landmarks/>
 <Food/>
 <Minerals/>
 <Other/>
 <Containers/>
 <Sections/>
+</> : <></>}
 </>)}
 
 function Map(){
