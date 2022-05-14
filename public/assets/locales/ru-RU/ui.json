@@ -2,7 +2,6 @@
     "page_title": "Интерактивная Карта PSO2NGS",
     "NavBar": {
         "support": "Поддежать",
-        "alphaReactor": "Альфа Реакторы",
         "mapLegend": "Легенда Карты",
         "options": "Настройки"
     },
@@ -19,7 +18,7 @@
         "Categories": {
             "languages": "Языки",
             "mapping": "Маппинг",
-            "debug": "Сброс",
+            "reset": "Сброс",
             "about": "О приложении"
         },
         "Items": {
@@ -36,11 +35,10 @@
                 "start": "В режим маппинга"
             },
             "debug": {
-                "langReset": "Сбросить язык",
-                "visibilityReset": "Сбросить маркеры",
-                "checkedReset": "Сбросить чеки",
-                "clearCache": "Очистить кеш",
-                "resetAll": "Сбросить всё"
+                "lang": "Сбросить язык",
+                "visibility": "Сбросить маркеры",
+                "checked": "Сбросить чеки",
+                "everything": "Сбросить всё"
             },
             "about": {
                 "author": "Автор",
