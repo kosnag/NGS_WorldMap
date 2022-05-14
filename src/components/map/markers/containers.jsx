@@ -22,7 +22,7 @@ Red:()=>{
                     if(e.target.getIcon() === iconLib.redBox){
                         e.target.setIcon(iconLib.redBoxChecked);
                         if(!window.localStorage_Checked.redContainers){
-                            window.localStorage_Checked.redContainers = {}
+                            window.localStorage_Checked.redContainers = []
                         }
                         window.localStorage_Checked.redContainers[window.localStorage_Checked.redContainers.length]=x.id;
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))

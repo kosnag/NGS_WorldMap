@@ -134,7 +134,7 @@ Datapod:()=>{
                     if(e.target.getIcon() === iconLib.datapod){
                         e.target.setIcon(iconLib.datapodChecked);
                         if(!window.localStorage_Checked.datapods){
-                            window.localStorage_Checked.datapods = {}
+                            window.localStorage_Checked.datapods = []
                         }
                         window.localStorage_Checked.datapods[window.localStorage_Checked.datapods.length]=x.string;
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
@@ -203,7 +203,7 @@ Mischief:()=>{
                     if(e.target.getIcon() === iconLib.mischief){
                         e.target.setIcon(iconLib.mischiefChecked);
                         if(!window.localStorage_Checked.mischief){
-                            window.localStorage_Checked.mischief = {}
+                            window.localStorage_Checked.mischief = []
                         }
                         window.localStorage_Checked.mischief[window.localStorage_Checked.mischief.length]=x.id;
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
