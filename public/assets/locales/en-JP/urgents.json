@@ -38,5 +38,15 @@
         "title": "Mining Rig Defense: Retem",
         "description": "",
         "clearCondition": "Defend the Resource Mining Rigs!"
+    },
+    "crocodylisVera": {
+        "title": "",
+        "description": "",
+        "clearCondition": ""
+    },
+    "amsVera": {
+        "title": "",
+        "description": "",
+        "clearCondition": ""
     }
 }
