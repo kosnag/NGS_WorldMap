@@ -20,6 +20,15 @@
             "retemCity": "Retem City",
             "southRetem": "South Retem",
             "westRetem": "West Retem"
+        },
+        "kvaris": {
+            "centralKvaris": "",
+            "south Kvaris": "",
+            "north Kvaris": "",
+            "west Kvaris": "",
+            "rayjord Gorge": "",
+            "belugana Ruins": "",
+            "lost Central": ""
         }
     },
     "type": {

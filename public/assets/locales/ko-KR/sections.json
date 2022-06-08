@@ -20,6 +20,15 @@
             "retemCity": "리템 시티",
             "southRetem": "남부 리템",
             "westRetem": "서부 리템"
+        },
+        "kvaris": {
+            "centralKvaris": "",
+            "south Kvaris": "",
+            "north Kvaris": "",
+            "west Kvaris": "",
+            "rayjord Gorge": "",
+            "belugana Ruins": "",
+            "lost Central": ""
         }
     },
     "type": {
