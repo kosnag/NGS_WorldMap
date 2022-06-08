@@ -12,7 +12,9 @@ window.localStorage_Checked = JSON.parse(localStorage.getItem("checked"));
 
 const App = () => {
   const {t} = useTranslation();
-  useEffect(()=>{document.title = t("ui:page_title")});
+  useEffect(() => {
+    document.title = t("ui:page_title")
+  });
   return (<>
     <Map/>
     <NavBar/>

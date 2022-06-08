@@ -13,7 +13,7 @@ export default function MenuLegend(){
   const [previewTitle, setPreviewTitle] = useState("");
   const [previewDescription, setPreviewDescription] = useState("");
 
-  function checkLocalStorage(category,item){
+  const checkLocalStorage = (category, item) => {
     if (window.localStorage_Settings[category][item] !== null){
       if (window.localStorage_Settings[category][item] === 1){
         return true
@@ -25,60 +25,65 @@ export default function MenuLegend(){
     }
   }
 
-  const setLocalStorage = (category,item) => {
+  const setLocalStorage = (category, item) => {
     if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1){
       window.localStorage_Settings[category][item] = 0
-      localStorage.setItem("settings",JSON.stringify(window.localStorage_Settings))
+      localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
     } else {
       window.localStorage_Settings[category][item] = 1
-      localStorage.setItem("settings",JSON.stringify(window.localStorage_Settings))
+      localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
     };
   }
 
   const [toggleTab, setToggleTab] = useState('landmarks');
   const clickToggleTab = (tab) => setToggleTab(tab);
 
-  const Button=(props)=>{return (
+  const Button = (props) => {
+    return (
       <button 
         onMouseEnter={() => {
           setPreviewIcon("./assets/images/icons/"+props.category+"/"+props.item+".png")
           setPreviewRarity(props.rarity)
           setPreviewTitle(t("items:"+props.category+"."+props.item+".title"))
-          setPreviewDescription(t("items:"+props.category+"."+props.item+".description"))
+          setPreviewDescription(t("items:"+props.category+"."+props.item +".description"))
         }}
         ><Checkbox icon={<span/>}
-        checked={checkLocalStorage(props.category,props.item)}
-        onChange={() => setLocalStorage(props.category,props.item)}
+        checked={checkLocalStorage(props.category, props.item)}
+        onChange={() => setLocalStorage(props.category, props.item)}
         label={t("items:"+props.category+"."+props.item+".title")}
       /></button>
-  )}
-  const ButtonFood=(props)=>{return (
-    <button 
-      onMouseEnter={() => {
-        setPreviewIcon("./assets/images/icons/food/"+props.item+".png")
-        setPreviewRarity(props.rarity)
-        setPreviewTitle(t("items:food."+props.item+""))
-        setPreviewDescription(t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type))
-      }}
-      ><Checkbox icon={<span/>}
-      checked={checkLocalStorage("food",props.item)}
-      onChange={() => setLocalStorage("food",props.item)}
-      label={t("items:food."+props.item)}
-    /></button>
-)}
+    )
+  }
+  const ButtonFood = (props) => {
+    return (
+      <button 
+        onMouseEnter={() => {
+          setPreviewIcon("./assets/images/icons/food/"+props.item+".png")
+          setPreviewRarity(props.rarity)
+          setPreviewTitle(t("items:food."+props.item))
+          setPreviewDescription(t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type))
+        }}
+        ><Checkbox icon={<span/>}
+        checked={checkLocalStorage("food", props.item)}
+        onChange={() => setLocalStorage("food", props.item)}
+        label={t("items:food."+props.item)}
+      /></button>
+    )
+  }
 
   const [dataJSON,setDataJSON] = useState({});
-  useEffect(()=>{
+  useEffect(() => {
+    document.getElementById('menu-legend').classList.add('hidden');
     fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
   },[]);
-  useEffect(()=>{
+  useEffect(() => {
     setPreviewTitle(t("items:nothing"));
     setPreviewDescription("");
   },[t]);
 
   return (
     <Draggable bounds='container' handle='header'>
-      <window id='menu-legend' className={"hidden"}>
+      <window id='menu-legend'>
         <header>
           <span><menuicon/> {t("ui:NavBar.mapLegend")}</span>
           <closebutton onClick={() => Functions.menuShowHide("menu-legend")}/>
@@ -106,6 +111,7 @@ export default function MenuLegend(){
               onClick={() => clickToggleTab('other')}
             >{t("ui:LegendMenu.Categories.other")}</button>
           </category>
+          <>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.landmark.map((x=>
                 <Button category="landmark" item={x} rarity="places"/>
@@ -131,6 +137,7 @@ export default function MenuLegend(){
                 <Button category="other" item={x.item} rarity={x.rarity}/>
               ))}
             </items>
+          </>
           <info>
             <background className={previewRarity}/>
             <img alt="" src={previewIcon}/>
