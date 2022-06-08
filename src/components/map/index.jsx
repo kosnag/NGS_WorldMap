@@ -15,7 +15,7 @@ import Sections from './markers/sections';
 
 const iconLib = {}
 
-function Init(){
+const Init = () => {
     const [checkInitMarkers,load] = useState(false)
     useEffect(()=>{
         fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/icons.json").then(resp=>resp.json()).then(x=>{
@@ -30,19 +30,19 @@ function Init(){
             load(true);
         });
     });
+    return (<>
+        {checkInitMarkers === true ? <>
+            <Landmarks/>
+            <Food/>
+            <Minerals/>
+            <Other/>
+            <Containers/>
+            <Sections/>
+        </> : <></>}
+    </>)
+}
 
-return (<>
-{checkInitMarkers === true ? <>
-<Landmarks/>
-<Food/>
-<Minerals/>
-<Other/>
-<Containers/>
-<Sections/>
-</> : <></>}
-</>)}
-
-function Map(){
+const Map = () => {
     const bounds = {
         North: 0,
         East: 2048,
@@ -60,8 +60,8 @@ function Map(){
             minZoom={0}
             maxZoom={3}
             crs={L.CRS.Simple}
-            maxBounds={[[bounds.South-100,bounds.West-250],[bounds.South/2+450,bounds.East+250]]}
-            center={[bounds.South/4*3,bounds.East/2]}
+            maxBounds={[[bounds.South-100,bounds.West-250],[bounds.North+400,bounds.East+250]]}
+            center={[bounds.South/2,bounds.East/2]}
             zoomControl={false}
             attributionControl={false}
             keyboard={false}
