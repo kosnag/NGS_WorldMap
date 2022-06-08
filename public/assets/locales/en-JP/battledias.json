@@ -23,5 +23,15 @@
         "title": "Retem Devastators",
         "clearCondition": "Defeat the target enemy",
         "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat the Gigantix that appear before you one by one."
+    },
+    "kvarisTroopers": {
+        "title": "Kvaris Troopers",
+        "clearCondition": "Defeat the target enemy",
+        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
+    },
+    "kravisDevastators": {
+        "title": "Kvaris Devastators",
+        "clearCondition": "Defeat the target enemy",
+        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat the Gigantix that appear before you one by one."
     }
 }

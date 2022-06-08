@@ -23,5 +23,15 @@
         "title": "Retem Devastators",
         "clearCondition": "Defeat the enemies",
         "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
+    },
+    "kvarisTroopers": {
+        "title": "Kvaris Troopers",
+        "clearCondition": "Defeat the enemies",
+        "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
+    },
+    "kravisDevastators": {
+        "title": "Kvaris Devastators",
+        "clearCondition": "Defeat the enemies",
+        "description": "This is a Battledia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat all of the enemies."
     }
 }
