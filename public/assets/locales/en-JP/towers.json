@@ -30,5 +30,13 @@
         "subMission1": "Clear after obtaining 5 Point Cubes",
         "subMission2": "Clear in under 3 incapacitation(s)",
         "subMission3": "Clear in under 10:00"
+    },
+    "deepWell": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }

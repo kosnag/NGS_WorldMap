@@ -110,5 +110,53 @@
         "subMission1": "4:35 미만으로 클리어",
         "subMission2": "5:15 미만으로 클리어",
         "subMission3": "포인트 큐브 4개 획득 후 클리어"
+    },
+    "crazyTail": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "slopeTile": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "wildAvalanche": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "vanishingPath2": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "clockworkJail": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "holibleFlapping": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }

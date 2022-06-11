@@ -30,5 +30,13 @@
         "subMission1": "ポイントキューブを5個取得してクリア",
         "subMission2": "戦闘不能回数3回未満でクリア",
         "subMission3": "10:00 未満でクリア"
+    },
+    "deepWell": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }

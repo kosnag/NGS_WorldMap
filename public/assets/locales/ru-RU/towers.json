@@ -29,6 +29,14 @@
         "clearCondition": "Достигните цели!",
         "subMission1": "Соберите 5 очков",
         "subMission2": "Умрите не более 3 раз",
-        "subMission3": "Продите за 10:00"
+        "subMission3": "Пройдите за 10:00"
+    },
+    "deepWell": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }
