@@ -23,12 +23,12 @@
         },
         "kvaris": {
             "centralKvaris": "",
-            "south Kvaris": "",
-            "north Kvaris": "",
-            "west Kvaris": "",
-            "rayjord Gorge": "",
-            "belugana Ruins": "",
-            "lost Central": ""
+            "southKvaris": "",
+            "northKvaris": "",
+            "westKvaris": "",
+            "rayjordGorge": "",
+            "beluganaRuins": "",
+            "lostCentral": ""
         }
     },
     "type": {
