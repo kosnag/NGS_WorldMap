@@ -10,19 +10,45 @@
                 "enemyLv": 16,
                 "rewards": [
                     {
+                        "item": "rewards:value.experience",
+                        "count": 39845
+                    },
+                    {
                         "item": "rewards:item.gold_prim_sword",
-                        "count": 1
+                        "count": "+20"
                     },
                     {
                         "item": "rewards:item.gold_prim_armor",
-                        "count": 1
+                        "count": "+20"
                     },
                     {
                         "item": "rewards:item.silver_prim_sword",
-                        "count": 1
+                        "count": "+20"
                     },
                     {
                         "item": "rewards:item.silver_prim_armor",
+                        "count": "+20"
+                    }
+                ]
+            },
+            {
+                "minBP": 1363,
+                "enemyLv": 35,
+                "rewards": [
+                    {
+                        "item": "rewards:value.experience",
+                        "count": 118446
+                    },
+                    {
+                        "item": "rewards:item.gold_prim_sword",
+                        "count": "+30"
+                    },
+                    {
+                        "item": "rewards:item.gold_prim_armor",
+                        "count": "+30"
+                    },
+                    {
+                        "item": "rewards:item.domina_augments",
                         "count": 1
                     }
                 ]
@@ -81,15 +107,41 @@
                 "enemyLv": 25,
                 "rewards": [
                     {
+                        "item": "rewards:value.experience",
+                        "count": 72829
+                    },
+                    {
                         "item": "rewards:item.gold_prim_sword",
-                        "count": 1
+                        "count": "+20"
                     },
                     {
                         "item": "rewards:item.gold_prim_armor",
-                        "count": 1
+                        "count": "+20"
                     },
                     {
-                        "item": "rewards:item.ability_capsule",
+                        "item": "rewards:item.mastery_augments",
+                        "count": 1
+                    }
+                ]
+            },
+            {
+                "minBP": 2049,
+                "enemyLv": 45,
+                "rewards": [
+                    {
+                        "item": "rewards:value.experience",
+                        "count": 162243
+                    },
+                    {
+                        "item": "rewards:item.gold_prim_sword",
+                        "count": "+30"
+                    },
+                    {
+                        "item": "rewards:item.gold_prim_armor",
+                        "count": "+30"
+                    },
+                    {
+                        "item": "rewards:item.domina_augments",
                         "count": 1
                     }
                 ]

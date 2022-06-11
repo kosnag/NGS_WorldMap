@@ -20,6 +20,15 @@
             "retemCity": "リテムシティ",
             "southRetem": "南リテム",
             "westRetem": "西リテム"
+        },
+        "kvaris": {
+            "centralKvaris": "",
+            "southKvaris": "",
+            "northKvaris": "",
+            "westKvaris": "",
+            "rayjordGorge": "",
+            "beluganaRuins": "",
+            "lostCentral": ""
         }
     },
     "type": {

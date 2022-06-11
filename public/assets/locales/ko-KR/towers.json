@@ -30,5 +30,13 @@
         "subMission1": "포인트 큐브 5개 획득 후 클리어",
         "subMission2": "전투 불능 횟수 3회 미만으로 클리어",
         "subMission3": "10:00 미만으로 클리어"
+    },
+    "deepWell": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }

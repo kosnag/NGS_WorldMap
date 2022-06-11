@@ -33,5 +33,20 @@
         "title": "레누스 ヴェラ討伐戦",
         "description": "中央리템の北部で、強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“레누스 ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
         "clearCondition": "레누스 ヴェラを撃破せよ！"
+    },
+    "miningRigDefenceRetem": {
+        "title": "",
+        "description": "",
+        "clearCondition": ""
+    },
+    "crocodylisVera": {
+        "title": "",
+        "description": "",
+        "clearCondition": ""
+    },
+    "amsVera": {
+        "title": "",
+        "description": "",
+        "clearCondition": ""
     }
 }

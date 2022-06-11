@@ -20,6 +20,15 @@
             "retemCity": "Ритем-Сити",
             "southRetem": "Южный Ритем",
             "westRetem": "Западный Ритем"
+        },
+        "kvaris": {
+            "centralKvaris": "",
+            "southKvaris": "",
+            "northKvaris": "",
+            "westKvaris": "",
+            "rayjordGorge": "",
+            "beluganaRuins": "",
+            "lostCentral": ""
         }
     },
     "type": {

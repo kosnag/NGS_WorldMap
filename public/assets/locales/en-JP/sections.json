@@ -20,6 +20,15 @@
             "retemCity": "Retem City",
             "southRetem": "Southern Retem",
             "westRetem": "Western Retem"
+        },
+        "kvaris": {
+            "centralKvaris": "",
+            "southKvaris": "",
+            "northKvaris": "",
+            "westKvaris": "",
+            "rayjordGorge": "",
+            "beluganaRuins": "",
+            "lostCentral": ""
         }
     },
     "type": {

@@ -38,6 +38,9 @@ fetch("../../api/read.php?table=mineral__tetracite").then((response)=>response.j
 fetch("../../api/read.php?table=mineral__trinite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"gray","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Trinite | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
 }}})
+fetch("../../api/read.php?table=mineral__randomite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
+    new L.circle([data[i].lat,data[i].lng],4,{"color":"white","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Randomite | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
+}}})
 
 
 //FOOD

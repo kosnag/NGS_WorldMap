@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./style.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../functions';
@@ -10,13 +10,10 @@ export default function MenuSupport(){
   const {t} = useTranslation();
 
   const [toggleTab, setToggleTab] = useState('boosty');
-  const clickToggleTab = (tab) => {
-    setToggleTab(tab)
-  };
 
-  useEffect(() => {
-    document.getElementById('menu-support').classList.add('hidden'); 
-  }, []);
+  useEffect(()=>{
+    document.getElementById('menu-support').classList.add('hidden');
+  },[])
 
   return (
     <Draggable bounds='container' handle='header'>
@@ -29,11 +26,11 @@ export default function MenuSupport(){
           <category>
             <button 
               className={toggleTab === 'boosty' ? "active" : ""}
-              onClick={() => clickToggleTab('boosty')}
+              onClick={() => setToggleTab('boosty')}
             >Boosty</button>
             <button 
               className={toggleTab === 'qiwi' ? "active" : ""}
-              onClick={() => clickToggleTab('qiwi')}
+              onClick={() => setToggleTab('qiwi')}
             >Qiwi</button>
           </category>
           <>

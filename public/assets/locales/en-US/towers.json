@@ -30,5 +30,13 @@
         "subMission1": "Obtain 5 Point Cubes",
         "subMission2": "Clear without being incapacitated 3 times",
         "subMission3": "Clear before 10:00"
+    },
+    "deepWell": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }

@@ -2,7 +2,6 @@
     "page_title": "PSO2NGSインタラクティブ・マップ",
     "NavBar": {
         "support": "寄付",
-        "alphaReactor": "アルファリアクター",
         "mapLegend": "マップの凡例",
         "options": "オプション"
     },
@@ -19,7 +18,7 @@
         "Categories": {
             "languages": "寄付",
             "mapping": "マッピング",
-            "debug": "デバッグ",
+            "reset": "リセット",
             "about": "アプリケーションについて"
         },
         "Items": {
@@ -35,12 +34,11 @@
                 "translate": "翻訳のお手伝い",
                 "start": "マッピングモード"
             },
-            "debug": {
-                "langReset": "言語をリセット",
-                "visibilityReset": "マーカーをリセット",
-                "checkedReset": "チェックをリセット",
-                "clearCache": "キャッシュをクリアする",
-                "resetAll": "すべてリセット"
+            "reset": {
+                "lang": "言語をリセット",
+                "visibility": "マーカーをリセット",
+                "checked": "チェックをリセット",
+                "everything": "すべてリセット"
             },
             "about": {
                 "author": "著者",

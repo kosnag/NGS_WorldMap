@@ -110,5 +110,53 @@
         "subMission1": "4:35未満でクリア",
         "subMission2": "5:15未満でクリア",
         "subMission3": "ポイントキューブを4取得してクリア"
+    },
+    "crazyTail": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "slopeTile": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "wildAvalanche": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "vanishingPath2": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "clockworkJail": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "holibleFlapping": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }

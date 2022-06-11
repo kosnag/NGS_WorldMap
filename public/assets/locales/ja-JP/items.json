@@ -27,6 +27,10 @@
         "trinitas": {
             "title": "トリニテス",
             "description": "“トリニテス”は、リテムに存在する訓練施設の一種です。“トレイニア”よりも難度が高く、パーティーメンバーの中で最もレベルの高いプレイヤーのレベルに応じて出現エネミーのレベルが変化します。"
+        },
+        "race": {
+            "title": "",
+            "description": ""
         }
     },
     "mineral": {
@@ -57,6 +61,18 @@
         "trinite": {
             "title": "トライナイト",
             "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
+        },
+        "randomite": {
+            "title": "",
+            "description": ""
+        },
+        "pentalite": {
+            "title": "",
+            "description": ""
+        },
+        "blizzardium": {
+            "title": "",
+            "description": ""
         }
     },
     "food": {
@@ -84,6 +100,20 @@
         "retem_seaslug": "サッパ・リテナウミッシー",
         "retem_strawberry": "ガッツ・リテナストロンベリ",
         "retem_urchin": "シャッキ・リテナウーニィ",
+        "kvaris_guava": "",
+        "kvaris_plum": "",
+        "kvaris_richPersimmon": "",
+        "kvaris_akebia": "",
+        "kvaris_notablePersimmon": "",
+        "kvaris_snail": "",
+        "kvaris_crispSquid": "",
+        "kvaris_octopus": "",
+        "kvaris_crayfish": "",
+        "kvaris_notableSquid": "",
+        "kvaris_mushroom": "",
+        "kvaris_cabbage": "",
+        "kvaris_carrot": "",
+        "kvaris_onion": "",
         
         "description": {
             "prefix": {
@@ -116,6 +146,10 @@
     "other": {
         "alphareactor": {
             "title": "アルファリアクター",
+            "description": ""
+        },
+        "snoal": {
+            "title": "",
             "description": ""
         },
         "datapod": {

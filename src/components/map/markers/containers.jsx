@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect } from 'react';
-import IconLib from '../icons';
+import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
 import { Marker, Tooltip } from "react-leaflet";
 
@@ -15,16 +15,19 @@ Red:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=container__red").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker 
-            icon={window.localStorage_Checked.redContainers.indexOf(x.id)>-1 ? IconLib.redBoxChecked : IconLib.redBox}
+            icon={window.localStorage_Checked.redContainers && window.localStorage_Checked.redContainers.indexOf(x.id)>-1 ? iconLib.redBoxChecked : iconLib.redBox}
             position={[x.lat,x.lng]} 
             eventHandlers={{
                 contextmenu:(e)=>{
-                    if(e.target.getIcon() === IconLib.redBox){
-                        e.target.setIcon(IconLib.redBoxChecked);
+                    if(e.target.getIcon() === iconLib.redBox){
+                        e.target.setIcon(iconLib.redBoxChecked);
+                        if(!window.localStorage_Checked.redContainers){
+                            window.localStorage_Checked.redContainers = []
+                        }
                         window.localStorage_Checked.redContainers[window.localStorage_Checked.redContainers.length]=x.id;
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
                     }else{
-                        e.target.setIcon(IconLib.redBox);
+                        e.target.setIcon(iconLib.redBox);
                         var mark = window.localStorage_Checked.redContainers.indexOf(x.id);
                         window.localStorage_Checked.redContainers.splice(mark,1);
                         localStorage.setItem("checked",JSON.stringify(window.localStorage_Checked))
@@ -54,7 +57,7 @@ Green:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=container__green").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
-        <Marker icon={IconLib.greenBox} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.greenBox} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
                     <span><menuicon/> {t("items:container.green.title")}</span>

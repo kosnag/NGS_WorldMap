@@ -2,7 +2,6 @@
     "page_title": "PSO2NGS Interactive Map",
     "NavBar": {
         "support": "Support",
-        "alphaReactor": "Alpha Reactors",
         "mapLegend": "Map Legend",
         "options": "Options"
     },
@@ -19,7 +18,7 @@
         "Categories": {
             "languages": "Languages",
             "mapping": "Mapping",
-            "debug": "Debug",
+            "reset": "Reset",
             "about": "About"
         },
         "Items": {
@@ -35,12 +34,11 @@
                 "translate": "Help with tranlating",
                 "start": "Go to mapping mode"
             },
-            "debug": {
-                "langReset": "Reset language",
-                "visibilityReset": "Reset visibility",
-                "checkedReset": "Reset checked markers",
-                "clearCache": "Clear cache",
-                "resetAll": "Reset everything"
+            "reset": {
+                "lang": "Reset language",
+                "visibility": "Reset visibility",
+                "checked": "Reset checked markers",
+                "everything": "Reset everything"
             },
             "about": {
                 "author": "Author",

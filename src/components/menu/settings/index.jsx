@@ -15,11 +15,8 @@ export default function MenuSettings(){
   };
 
   const [toggleTab, setToggleTab] = useState('languages');
-  const clickToggleTab = (tab) => {
-    setToggleTab(tab)
-  };
 
-  const [contributers,setContributers] = useState([]);
+  const [contributers, setContributers] = useState([]);
 
   useEffect(() => {
     document.getElementById('menu-settings').classList.add('hidden');
@@ -42,19 +39,19 @@ export default function MenuSettings(){
           <category>
             <button 
               className={toggleTab === 'languages' ? "active" : ""}
-              onClick={() => clickToggleTab('languages')}
+              onClick={() => setToggleTab('languages')}
             >{t("ui:OptionsMenu.Categories.languages")}</button>
             <button 
               className={toggleTab === 'mapping' ? "active" : ""}
-              onClick={() => clickToggleTab('mapping')}
+              onClick={() => setToggleTab('mapping')}
             >{t("ui:OptionsMenu.Categories.mapping")}</button>
             <button 
-              className={toggleTab === 'debug' ? "active" : ""}
-              onClick={() => clickToggleTab('debug')}
-            >{t("ui:OptionsMenu.Categories.debug")}</button>
+              className={toggleTab === 'reset' ? "active" : ""}
+              onClick={() => setToggleTab('reset')}
+            >{t("ui:OptionsMenu.Categories.reset")}</button>
             <button 
               className={toggleTab === 'about' ? "active" : ""}
-              onClick={() => clickToggleTab('about')}
+              onClick={() => setToggleTab('about')}
             >{t("ui:OptionsMenu.Categories.about")}</button>
           </category>
           <>
@@ -81,16 +78,33 @@ export default function MenuSettings(){
               </button>
             </items>
             <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
-              <button onClick={() => window.open("https://discord.gg/czK9HbxpDA")}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
-              <button onClick={() => window.open("https://github.com/kosnag/NGS_WorldMap")}>{t("ui:OptionsMenu.Items.mapping.translate")}</button>
-              <button onClick={() => window.open("/mapping")}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
+              <button onClick={() => {
+                window.open("https://discord.gg/AMZ4smTAM2")
+              }}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
+              <button onClick={() => {
+                window.open("https://github.com/kosnag/NGS_WorldMap")
+              }}>{t("ui:OptionsMenu.Items.mapping.translate")}</button>
+              <button onClick={() => {
+                window.open("/mapping")
+              }}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
             </items>
-            <items id="debug" className={toggleTab === 'debug' ? "active" : ""}>
-              <button onClick={() => {window.localStorage.removeItem("i18nextLng"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.langReset")}</button>
-              <button onClick={() => {window.localStorage.removeItem("settings"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.visibilityReset")}</button>
-              <button onClick={() => {window.localStorage.removeItem("checked"); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.checkedReset")}</button>
-              <button style={{display: "none"}} onClick={() => {window.ache.delete(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.clearCache")}</button>
-              <button onClick={() => {window.localStorage.clear(); window.location.reload()}}>{t("ui:OptionsMenu.Items.debug.resetAll")}</button>
+            <items id="reset" className={toggleTab === 'reset' ? "active" : ""}>
+              <button onClick={() => {
+                window.localStorage.removeItem("i18nextLng");
+                window.location.reload()
+              }}>{t("ui:OptionsMenu.Items.reset.lang")}</button>
+              <button onClick={() => {
+                window.localStorage.removeItem("settings");
+                window.location.reload()
+              }}>{t("ui:OptionsMenu.Items.reset.visibility")}</button>
+              <button onClick={() => {
+                window.localStorage.removeItem("checked");
+                window.location.reload()
+              }}>{t("ui:OptionsMenu.Items.reset.checked")}</button>
+              <button onClick={() => {
+                window.localStorage.clear();
+                window.location.reload()
+              }}>{t("ui:OptionsMenu.Items.reset.everything")}</button>
             </items>
             <items id="about" className={toggleTab === 'about' ? "active" : ""}>
               <p>

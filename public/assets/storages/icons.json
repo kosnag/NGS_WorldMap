@@ -1,0 +1,63 @@
+[
+    {"item": "cocoon", "category": "landmark", "size": 40},
+    {"item": "mag", "category": "landmark", "size": 40},
+    {"item": "ryuker", "category": "landmark", "size": 40},
+    {"item": "tower", "category": "landmark", "size": 40},
+    {"item": "battledia", "category": "landmark", "size": 40},
+    {"item": "urgent", "category": "landmark", "size": 40},
+    {"item": "trinitas", "category": "landmark", "size": 40},
+    
+
+    {"item": "redBox", "category": "container", "file": "red", "size": 24},
+    {"item": "redBoxChecked", "category": "container", "file": "red_checked", "size": 24},
+    {"item": "greenBox", "category": "container", "file": "green", "size": 24},
+    
+
+    {"item": "monotite", "category": "mineral", "size": 26},
+    {"item": "dualomite", "category": "mineral", "size": 26},
+    {"item": "trinite", "category": "mineral", "size": 26},
+    {"item": "tetracite", "category": "mineral", "size": 26},
+    {"item": "photonquartz", "category": "mineral", "size": 26},
+    {"item": "photonscale", "category": "mineral", "size": 26},
+    {"item": "photonchunk", "category": "mineral", "size": 26},
+    {"item": "randomite", "category": "mineral", "size": 26},
+    
+
+    {"item": "aelio_apple", "category": "food", "size": 26},
+    {"item": "aelio_banana", "category": "food", "size": 26},
+    {"item": "aelio_clam", "category": "food", "size": 26},
+    {"item": "aelio_crab", "category": "food", "size": 26},
+    {"item": "aelio_herb", "category": "food", "size": 26},
+    {"item": "aelio_lobster", "category": "food", "size": 26},
+    {"item": "aelio_mushroom", "category": "food", "size": 26},
+    {"item": "aelio_peach", "category": "food", "size": 26},
+    {"item": "aelio_pear", "category": "food", "size": 26},
+    {"item": "aelio_tomato", "category": "food", "size": 26},
+    {"item": "aelio_turbanshell", "category": "food", "size": 26},
+    {"item": "aelio_turnip", "category": "food", "size": 26},
+    {"item": "retem_cauliflower", "category": "food", "size": 26},
+    {"item": "retem_cherries", "category": "food", "size": 26},
+    {"item": "retem_cranberries", "category": "food", "size": 26},
+    {"item": "retem_eggplant", "category": "food", "size": 26},
+    {"item": "retem_carambola", "category": "food", "size": 26},
+    {"item": "retem_hermitcrab", "category": "food", "size": 26},
+    {"item": "retem_mango", "category": "food", "size": 26},
+    {"item": "retem_mushroom", "category": "food", "size": 26},
+    {"item": "retem_scallop", "category": "food", "size": 26},
+    {"item": "retem_seaslug", "category": "food", "size": 26},
+    {"item": "retem_strawberry", "category": "food", "size": 26},
+    {"item": "retem_urchin", "category": "food", "size": 26},
+    
+
+    {"item": "datapod", "category": "other", "size": 26},
+    {"item": "datapodChecked", "category": "other", "file": "datapod_checked", "size": 26},
+    {"item": "alphareactor", "category": "other", "size": 26},
+    {"item": "musicplace", "category": "other", "size": 26},
+    {"item": "stellarseed", "category": "other", "size": 26},
+    {"item": "stellarGrace_Default", "category": "other", "size": 28},
+    {"item": "stellarGrace_Silver", "category": "other", "size": 28},
+    {"item": "stellarGrace_Gold", "category": "other", "size": 28},
+    {"item": "mischief", "category": "other", "size": 26},
+    {"item": "mischiefChecked", "category": "other", "file": "mischief_checked", "size": 26},
+    {"item": "veteran", "category": "other", "size": 32}
+]

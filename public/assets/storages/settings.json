@@ -1,61 +1,68 @@
 {
-    "landmark": {
-        "cocoon": 1,
-        "mag": 1,
-        "ryuker": 1,
-        "tower": 1,
-        "battledia": 1,
-        "urgent": 1,
-        "trinitas": 1
-    },
-    "mineral": {
-        "monotite": 0,
-        "dualomite": 0,
-        "trinite": 0,
-        "tetracite": 0,
-        "photonquarz": 0,
-        "photonchunk": 0,
-        "photonscale": 0
-    },
-    "food": {
-        "aelio_apple": 0,
-        "aelio_banana": 0,
-        "aelio_clam": 0,
-        "aelio_crab": 0,
-        "aelio_herb": 0,
-        "aelio_lobster": 0,
-        "aelio_mushroom": 0,
-        "aelio_peach": 0,
-        "aelio_pear": 0,
-        "aelio_tomato": 0,
-        "aelio_turbanshell": 0,
-        "aelio_turnip": 0,
+    "items": {
+        "landmark": [
+            "cocoon",
+            "mag",
+            "ryuker",
+            "tower",
+            "battledia",
+            "urgent",
+            "trinitas"
+        ],
+        "mineral": [
+            {"item": "monotite", "rarity": "common"},
+            {"item": "dualomite", "rarity": "common"},
+            {"item": "trinite", "rarity": "common"},
+            {"item": "tetracite", "rarity": "common"},
+            {"item": "photonquartz", "rarity": "common"},
+            {"item": "photonchunk", "rarity": "common"},
+            {"item": "photonscale", "rarity": "very-rare"},
+            {"item": "randomite", "rarity": "special"}
+        ],
+        "food": [
+            {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common"},
+            {"item": "aelio_peach", "type": "fruit", "prefix": "light", "rarity": "common"},
+            {"item": "aelio_pear", "type": "fruit", "prefix": "crisp", "rarity": "common"},
+            {"item": "aelio_banana", "type": "fruit", "prefix": "robust", "rarity": "common"},
 
-        "retem_cauliflower": 0,
-        "retem_cherries": 0,
-        "retem_cranberries": 0,
-        "retem_eggplant": 0,
-        "retem_fruit": 0,
-        "retem_hermitcrab": 0,
-        "retem_mango": 0,
-        "retem_mushroom": 0,
-        "retem_scallop": 0,
-        "retem_seaslug": 0,
-        "retem_strawberry": 0,
-        "retem_urchin": 0
+            {"item": "aelio_clam", "type": "seafood", "prefix": "rich", "rarity": "common"},
+            {"item": "aelio_turbanshell", "type": "seafood", "prefix": "light", "rarity": "common"},
+            {"item": "aelio_crab", "type": "seafood", "prefix": "crisp", "rarity": "common"},
+            {"item": "aelio_lobster", "type": "seafood", "prefix": "robust", "rarity": "common"}, 
+
+            {"item": "aelio_herb", "type": "vegetable", "prefix": "rich", "rarity": "common"},
+            {"item": "aelio_mushroom", "type": "vegetable", "prefix": "light", "rarity": "common"},
+            {"item": "aelio_tomato", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
+            {"item": "aelio_turnip", "type": "vegetable", "prefix": "robust", "rarity": "common"},
+
+            {"item": "retem_cherries", "type": "fruit", "prefix": "rich", "rarity": "common"},
+            {"item": "retem_mango", "type": "fruit", "prefix": "light", "rarity": "common"},
+            {"item": "retem_carambola", "type": "fruit", "prefix": "crisp", "rarity": "common"},
+            {"item": "retem_strawberry", "type": "fruit", "prefix": "robust", "rarity": "common"},
+
+            {"item": "retem_scallop", "type": "seafood", "prefix": "rich", "rarity": "common"},
+            {"item": "retem_seaslug", "type": "seafood", "prefix": "light", "rarity": "common"},
+            {"item": "retem_urchin", "type": "seafood", "prefix": "crisp", "rarity": "common"},
+            {"item": "retem_hermitcrab", "type": "seafood", "prefix": "robust", "rarity": "common"},
+
+            {"item": "retem_eggplant", "type": "vegetable", "prefix": "rich", "rarity": "common"},
+            {"item": "retem_cranberries", "type": "vegetable", "prefix": "light", "rarity": "common"},
+            {"item": "retem_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
+            {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+        ],
+        "container": [
+            {"item": "red", "rarity": "special"},
+            {"item": "green", "rarity": "common"}
+        ],
+        "other": [
+            {"item": "veteran", "rarity": "rare"},
+            {"item": "alphareactor", "rarity": "very-rare"},
+            {"item": "stellarseed", "rarity": "rare"},
+            {"item": "stellargrace", "rarity": "special"},
+            {"item": "datapod", "rarity": "places"},
+            {"item": "musicplace", "rarity": "places"},
+            {"item": "mischief", "rarity": "special"}
+        ]
     },
-    "container": {
-        "red": 0,
-        "green": 0,
-        "gold": 0
-    },
-    "other": {
-        "veteran": 0,
-        "alphareactor": 0,
-        "stellarseed": 0,
-        "stellargrace": 0,
-        "datapod": 0,
-        "musicplace": 0,
-        "mischief": 0
-    }
+    "visibility": {}
 }

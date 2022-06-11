@@ -15,6 +15,7 @@ var optionsList = [
     {"table":"mineral__photonscale","text":"Photon Scale"},
     {"table":"mineral__tetracite","text":"Tetracite"},
     {"table":"mineral__trinite","text":"Trinite"},
+    {"table":"mineral__randomite","text":"Randomite"},
     {"hr":""},
     {"category":"Food"},
     {"table":"food__aelio_apple","text":"Rich Aelio Apple"},

@@ -13,7 +13,7 @@ export default function MenuLegend(){
   const [previewTitle, setPreviewTitle] = useState("");
   const [previewDescription, setPreviewDescription] = useState("");
 
-  function checkLocalStorage(category,item){
+  const checkLocalStorage = (category, item) => {
     if (window.localStorage_Settings[category][item] !== null){
       if (window.localStorage_Settings[category][item] === 1){
         return true
@@ -25,50 +25,56 @@ export default function MenuLegend(){
     }
   }
 
-  const setLocalStorage = (category,item) => {
+  const setLocalStorage = (category, item) => {
     if (window.localStorage_Settings[category][item] && window.localStorage_Settings[category][item] === 1){
       window.localStorage_Settings[category][item] = 0
-      localStorage.setItem("settings",JSON.stringify(window.localStorage_Settings))
+      localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
     } else {
       window.localStorage_Settings[category][item] = 1
-      localStorage.setItem("settings",JSON.stringify(window.localStorage_Settings))
+      localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
     };
   }
 
   const [toggleTab, setToggleTab] = useState('landmarks');
   const clickToggleTab = (tab) => setToggleTab(tab);
 
-  const Button=(props)=>{return (
+  const Button = (props) => {
+    return (
       <button 
         onMouseEnter={() => {
-          setPreviewIcon("./assets/images/icons/"+props.cat+"/"+props.item+".png")
+          setPreviewIcon("./assets/images/icons/"+props.category+"/"+props.item+".png")
           setPreviewRarity(props.rarity)
-          setPreviewTitle(t("items:"+props.cat+"."+props.item+".title"))
-          setPreviewDescription(t("items:"+props.cat+"."+props.item+".description"))
+          setPreviewTitle(t("items:"+props.category+"."+props.item+".title"))
+          setPreviewDescription(t("items:"+props.category+"."+props.item +".description"))
         }}
         ><Checkbox icon={<span/>}
-        checked={checkLocalStorage(props.cat,props.item)}
-        onChange={() => setLocalStorage(props.cat,props.item)}
-        label={t("items:"+props.cat+"."+props.item+".title")}
+        checked={checkLocalStorage(props.category, props.item)}
+        onChange={() => setLocalStorage(props.category, props.item)}
+        label={t("items:"+props.category+"."+props.item+".title")}
       /></button>
-  )}
-  const ButtonFood=(props)=>{return (
-    <button 
-      onMouseEnter={() => {
-        setPreviewIcon("./assets/images/icons/food/"+props.item+".png")
-        setPreviewRarity(props.rarity)
-        setPreviewTitle(t("items:food."+props.item+""))
-        setPreviewDescription(t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type))
-      }}
-      ><Checkbox icon={<span/>}
-      checked={checkLocalStorage("food",props.item)}
-      onChange={() => setLocalStorage("food",props.item)}
-      label={t("items:food."+props.item)}
-    /></button>
-)}
+    )
+  }
+  const ButtonFood = (props) => {
+    return (
+      <button 
+        onMouseEnter={() => {
+          setPreviewIcon("./assets/images/icons/food/"+props.item+".png")
+          setPreviewRarity(props.rarity)
+          setPreviewTitle(t("items:food."+props.item))
+          setPreviewDescription(t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type))
+        }}
+        ><Checkbox icon={<span/>}
+        checked={checkLocalStorage("food", props.item)}
+        onChange={() => setLocalStorage("food", props.item)}
+        label={t("items:food."+props.item)}
+      /></button>
+    )
+  }
 
-  useEffect(()=>{
+  const [dataJSON,setDataJSON] = useState({});
+  useEffect(() => {
     document.getElementById('menu-legend').classList.add('hidden');
+    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
   },[]);
   useEffect(() => {
     setPreviewTitle(t("items:nothing"));
@@ -105,69 +111,33 @@ export default function MenuLegend(){
               onClick={() => clickToggleTab('other')}
             >{t("ui:LegendMenu.Categories.other")}</button>
           </category>
+          <>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
-              <Button cat="landmark" item="ryuker" rarity="places" />
-              <Button cat="landmark" item="cocoon" rarity="places" />
-              <Button cat="landmark" item="tower" rarity="places" />
-              <Button cat="landmark" item="battledia" rarity="places" />
-              <Button cat="landmark" item="mag" rarity="places" />
-              <Button cat="landmark" item="urgent" rarity="places" />
-              <Button cat="landmark" item="trinitas" rarity="places" />
+              {dataJSON.items && dataJSON?.items.landmark.map((x=>
+                <Button category="landmark" item={x} rarity="places"/>
+              ))}
             </items>
             <items className={toggleTab === 'minerals' ? "active" : ""}>
-              <Button cat="mineral" item="monotite" rarity="common" />
-              <Button cat="mineral" item="dualomite" rarity="common" />
-              <Button cat="mineral" item="trinite" rarity="common" />
-              <Button cat="mineral" item="tetracite" rarity="common" />
-              <Button cat="mineral" item="photonquartz" rarity="common" />
-              <Button cat="mineral" item="photonchunk" rarity="common" />
-              <Button cat="mineral" item="photonscale" rarity="very-rare" />
+              {dataJSON.items && dataJSON?.items.mineral.map((x=>
+                <Button category="mineral" item={x.item} rarity={x.rarity}/>
+              ))}
             </items>
             <items className={toggleTab === 'food' ? "active" : ""}>
-              <ButtonFood item="aelio_apple" prefix="rich" type="fruit" rarity="common"/>
-              <ButtonFood item="aelio_peach" prefix="light" type="fruit" rarity="common"/>
-              <ButtonFood item="aelio_pear" prefix="crisp" type="fruit" rarity="common"/>
-              <ButtonFood item="aelio_banana" prefix="robust" type="fruit" rarity="common"/>
-
-              <ButtonFood item="aelio_clam" prefix="rich" type="seafood" rarity="common"/>
-              <ButtonFood item="aelio_turbanshell" prefix="light" type="seafood"rarity="common"/>
-              <ButtonFood item="aelio_crab" prefix="crisp" type="seafood"rarity="common"/>
-              <ButtonFood item="aelio_lobster" prefix="robust" type="seafood" rarity="common"/>
-
-              <ButtonFood item="aelio_herb" prefix="rich" type="vegetable" rarity="common"/>
-              <ButtonFood item="aelio_mushroom" prefix="light" type="vegetable"rarity="common"/>
-              <ButtonFood item="aelio_tomato" prefix="crisp" type="vegetable"rarity="common"/>
-              <ButtonFood item="aelio_turnip" prefix="robust" type="vegetable" rarity="common"/>
-
-
-              <ButtonFood item="retem_cherries" prefix="rich" type="fruit" rarity="common"/>
-              <ButtonFood item="retem_mango" prefix="light"type="fruit" rarity="common"/>
-              <ButtonFood item="retem_carambola" prefix="crisp" type="fruit" rarity="common"/>
-              <ButtonFood item="retem_strawberry" prefix="robust" type="fruit" rarity="common"/>
-
-              <ButtonFood item="retem_scallop" prefix="rich" type="seafood" rarity="common"/>
-              <ButtonFood item="retem_seaslug" prefix="light" type="seafood" rarity="common"/>
-              <ButtonFood item="retem_urchin" prefix="crisp" type="seafood" rarity="common"/>
-              <ButtonFood item="retem_hermitcrab" prefix="robust" type="seafood" rarity="common"/>
-
-              <ButtonFood item="retem_eggplant" prefix="rich" type="vegetable" rarity="common"/>
-              <ButtonFood item="retem_cranberries" prefix="light" type="vegetable" rarity="common"/>
-              <ButtonFood item="retem_mushroom" prefix="crisp" type="vegetable" rarity="common"/>
-              <ButtonFood item="retem_cauliflower" prefix="robust" type="vegetable" rarity="common"/>
+              {dataJSON.items && dataJSON?.items.food.map((x=>
+                <ButtonFood item={x.item} prefix={x.prefix} type={x.type} rarity={x.rarity}/>
+              ))}
             </items>
             <items className={toggleTab === 'containers' ? "active" : ""}>
-              <Button cat="container" item="red" rarity="special"/>
-              <Button cat="container" item="green" rarity="common"/>
+              {dataJSON.items && dataJSON?.items.container.map((x=>
+                <Button category="container" item={x.item} rarity={x.rarity}/>
+              ))}
             </items>
             <items className={toggleTab === 'other' ? "active" : ""}>
-              <Button cat="other" item="veteran"rarity="rare"/>
-              <Button cat="other" item="alphareactor" rarity="very-rare"/>
-              <Button cat="other" item="stellarseed" rarity="rare"/>
-              <Button cat="other" item="stellargrace" rarity="special"/>
-              <Button cat="other" item="datapod" rarity="places"/>
-              <Button cat="other" item="musicplace" rarity="places"/>
-              <Button cat="other" item="mischief" rarity="special"/>
+              {dataJSON.items && dataJSON?.items.other.map((x=>
+                <Button category="other" item={x.item} rarity={x.rarity}/>
+              ))}
             </items>
+          </>
           <info>
             <background className={previewRarity}/>
             <img alt="" src={previewIcon}/>
