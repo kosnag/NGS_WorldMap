@@ -94,7 +94,21 @@ Battledia:()=>{
                                                         {(()=>{
                                                             if (y.count != null){return (<>
                                                                 <l>{t(y.item)}</l>
-                                                                <r>x{y.count}</r>
+                                                                <r>{(()=>{if(
+                                                                    Number.isInteger(y.count) === true && (
+                                                                        y.item === "rewards:value.seasonalpoints"
+                                                                            ||
+                                                                        y.item === "rewards:value.meseta"
+                                                                            ||
+                                                                        y.item === "rewards:value.experience"
+                                                                    )
+                                                                ){
+                                                                    return (<>{y.count}</>)
+                                                                } else if (Number.isInteger(y.count) === true){
+                                                                    return (<>x{y.count}</>)
+                                                                } else {
+                                                                    return (<>{y.count}</>)
+                                                                }})()}</r>
                                                             </>);
                                                         } else {
                                                             return (<full>{t(y.item)}</full>);
