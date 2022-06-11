@@ -31,6 +31,10 @@
         "randomite": {
             "title": "Randomite",
             "description": ""
+        },
+        "race": {
+            "title": "",
+            "description": ""
         }
     },
     "mineral": {
@@ -61,6 +65,14 @@
         "trinite": {
             "title": "Trinite",
             "description": "Used for unlocking Potentials Lv3 and Limit Breaking at the Item Lab"
+        },
+        "pentalite": {
+            "title": "",
+            "description": ""
+        },
+        "blizzardium": {
+            "title": "",
+            "description": ""
         }
     },
     "food": {
@@ -88,6 +100,20 @@
         "retem_seaslug": "Refreshing Retem Sea Slug",
         "retem_strawberry": "Healthy Retem Strawberry",
         "retem_urchin": "Sharp Retem Sea Urchin",
+        "kvaris_guava": "",
+        "kvaris_plum": "",
+        "kvaris_richPersimmon": "",
+        "kvaris_akebia": "",
+        "kvaris_notablePersimmon": "",
+        "kvaris_snail": "",
+        "kvaris_crispSquid": "",
+        "kvaris_octopus": "",
+        "kvaris_crayfish": "",
+        "kvaris_notableSquid": "",
+        "kvaris_mushroom": "",
+        "kvaris_cabbage": "",
+        "kvaris_carrot": "",
+        "kvaris_onion": "",
         
         "description": {
             "prefix": {
@@ -121,6 +147,10 @@
         "alphareactor": {
             "title": "Alpha Reactor",
             "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
+        },
+        "snoal": {
+            "title": "",
+            "description": ""
         },
         "datapod": {
             "title": "Datapod",

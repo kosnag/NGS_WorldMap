@@ -27,6 +27,10 @@
         "trinitas": {
             "title": "Trinitas",
             "description": "Trinitas is a kind of training facility that exists in Retem. It is more difficult to complete than a Trainia, and the level of the enemies inside is based on the level of the highest-levelled Party Member."
+        },
+        "race": {
+            "title": "",
+            "description": ""
         }
     },
     "mineral": {
@@ -61,6 +65,14 @@
         "randomite": {
             "title": "Randomite",
             "description": ""
+        },
+        "pentalite": {
+            "title": "",
+            "description": ""
+        },
+        "blizzardium": {
+            "title": "",
+            "description": ""
         }
     },
     "food": {
@@ -88,6 +100,20 @@
         "retem_seaslug": "Light Retem Sea Slug",
         "retem_strawberry": "Robust Retem Strawberry",
         "retem_urchin": "Crisp Retem Sea Urchin",
+        "kvaris_guava": "",
+        "kvaris_plum": "",
+        "kvaris_richPersimmon": "",
+        "kvaris_akebia": "",
+        "kvaris_notablePersimmon": "",
+        "kvaris_snail": "",
+        "kvaris_crispSquid": "",
+        "kvaris_octopus": "",
+        "kvaris_crayfish": "",
+        "kvaris_notableSquid": "",
+        "kvaris_mushroom": "",
+        "kvaris_cabbage": "",
+        "kvaris_carrot": "",
+        "kvaris_onion": "",
         
         "description": {
             "prefix": {
@@ -121,6 +147,10 @@
         "alphareactor": {
             "title": "Alpha Reactor",
             "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
+        },
+        "snoal": {
+            "title": "",
+            "description": ""
         },
         "datapod": {
             "title": "Datapod",
