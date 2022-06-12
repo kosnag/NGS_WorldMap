@@ -141,6 +141,10 @@
         "red": {
             "title": "Item Container [Red]",
             "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
+        },
+        "frozen": {
+            "title": "",
+            "description": ""
         }
     },
     "other": {

@@ -141,6 +141,10 @@
         "red": {
             "title": "アイテムコンテナ[赤]",
             "description": ""
+        },
+        "frozen": {
+            "title": "",
+            "description": ""
         }
     },
     "other": {
