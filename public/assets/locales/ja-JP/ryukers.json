@@ -28,15 +28,15 @@
     "lufMaqaad": "ルーフ・マクアド",
     "lowerMaqaad": "マクアド下層",
 
-    "kvarisCamp": "",
-    "beluganaRuinsNorth": "",
-    "beluganaRuinsSouth": "",
-    "rayjordGeorge": "",
-    "danannSnowField": "",
-    "quillMountainLoad": "",
-    "mtIhanaWest": "",
-    "mtIhanaEast": "",
-    "lostCentral": "",
-    "mtLatva": "",
-    "mistraWoods": ""
+    "kvarisCamp": "クヴァリスキャンプ",
+    "beluganaRuinsNorth": "ベルガナ遺跡：北",
+    "beluganaRuinsSouth": "ベルガナ遺跡：南",
+    "rayjordGeorge": "レイヨルド峡江",
+    "danannSnowField": "ダナン雪原",
+    "quillMountainLoad": "クイール山道",
+    "mtIhanaWest": "イハナ山：西",
+    "mtIhanaEast": "イハナ山：東",
+    "lostCentral": "ロストセントラル",
+    "mtLatva": "ラトヴァ山",
+    "mistraWoods": "ミストラ樹林"
 }

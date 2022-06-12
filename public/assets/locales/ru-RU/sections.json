@@ -22,13 +22,13 @@
             "westRetem": "Западный Ритем"
         },
         "kvaris": {
-            "centralKvaris": "",
-            "southKvaris": "",
-            "northKvaris": "",
-            "westKvaris": "",
-            "rayjordGorge": "",
-            "beluganaRuins": "",
-            "lostCentral": ""
+            "centralKvaris": "Центр Кварис",
+            "southKvaris": "Юг Кварис",
+            "northKvaris": "Север Кварис",
+            "westKvaris": "Запад Кварис",
+            "rayjordGorge": "Ущелье Рейолд",
+            "beluganaRuins": "Руины Беругана",
+            "lostCentral": "Утраченный Централ"
         }
     },
     "type": {

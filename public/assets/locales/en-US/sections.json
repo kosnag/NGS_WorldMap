@@ -22,13 +22,13 @@
             "westRetem": "West Retem"
         },
         "kvaris": {
-            "centralKvaris": "",
-            "southKvaris": "",
-            "northKvaris": "",
-            "westKvaris": "",
-            "rayjordGorge": "",
-            "beluganaRuins": "",
-            "lostCentral": ""
+            "centralKvaris": "Central Kvaris",
+            "southKvaris": "South Kvaris",
+            "northKvaris": "North Kvaris",
+            "westKvaris": "West Kvaris",
+            "rayjordGorge": "Rayjord Gorge",
+            "beluganaRuins": "Belugana Ruins",
+            "lostCentral": "Lost Central"
         }
     },
     "type": {

@@ -35,18 +35,18 @@
         "clearCondition": "レヌス・ヴェラを撃破せよ！"
     },
     "miningRigDefenceRetem": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "資源採掘リグ防衛戦：リテム",
+        "description": "アルディマンド砂漠で活動中の資源回収部隊より、緊急支援の要請があった。周囲に多数のエネミー反応があり、大規模な攻勢が予想される。アークス各員は、当該ポイントに急行し、資源採掘リグを防衛せよ。",
+        "clearCondition": "資源採掘リグを防衛せよ！"
     },
     "crocodylisVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "クロコダラス・ヴェラ討伐戦",
+        "description": "ダナン雪原の北部で、強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“クロコダラス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
+        "clearCondition": "クロコダラス・ヴェラを撃破せよ！"
     },
     "amsVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "アムス・ヴェラ討伐戦",
+        "description": "ラトヴァ山で強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“アムス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
+        "clearCondition": "アムス・ヴェラを討伐せよ！"
     }
 }
