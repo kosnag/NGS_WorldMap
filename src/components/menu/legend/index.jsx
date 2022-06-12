@@ -61,7 +61,11 @@ export default function MenuLegend(){
           setPreviewIcon("./assets/images/icons/food/"+props.item+".png")
           setPreviewRarity(props.rarity)
           setPreviewTitle(t("items:food."+props.item))
-          setPreviewDescription(t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type))
+          setPreviewDescription(
+            t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+
+            t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type)
+            (props.notable === true ? "\n"+t("items:food.description.prefix.notable") : "")
+          )
         }}
         ><Checkbox icon={<span/>}
         checked={checkLocalStorage("food", props.item)}
@@ -124,7 +128,7 @@ export default function MenuLegend(){
             </items>
             <items className={toggleTab === 'food' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.food.map((x=>
-                <ButtonFood item={x.item} prefix={x.prefix} type={x.type} rarity={x.rarity}/>
+                <ButtonFood item={x.item} prefix={x.prefix} type={x.type} rarity={x.rarity} notable={x.notable}/>
               ))}
             </items>
             <items className={toggleTab === 'containers' ? "active" : ""}>

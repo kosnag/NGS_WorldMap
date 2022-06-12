@@ -54,6 +54,31 @@ AlphaReactor:()=>{
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
+Snaol:()=>{
+    const {t} = useTranslation();
+    const [data,setData] = useState([]);
+    const [marker,setMarker] = useState([]);
+    useEffect(()=>{
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.other.snoal));
+        return ()=>clearInterval(i);
+    });
+    useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__snoal").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return (marker ? (data.map((x=>
+        <Marker icon={iconLib.snoal} position={[x.lat,x.lng]}>
+            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+                <header>
+                    <span><menuicon/> {t("items:other.snoal.title")}</span>
+                </header>
+                <content>
+                    {t("items:other.snoal.description")}
+                    <br/>
+                    {t("ui:Map.placedBy")}: {x.contributer}
+                    <id>ID: snoal{x.id}</id>
+                </content>
+            </tooltip-window></Tooltip>
+        </Marker>
+    ))):<Fragment/>)}else{return <Fragment/>}
+},
 StellarFragment:()=>{
     const {t} = useTranslation();
     const [marker,setMarker] = useState([]);

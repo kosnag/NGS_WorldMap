@@ -16,13 +16,17 @@ const Template= (props) => {
         <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltip-window>
                 <header>
-                    <span><menuicon/> {t("items:food."+props.id+"")}</span>
+                    <span><menuicon/> {t("items:food."+props.id)}</span>
                 </header>
                 <content>
                     {t("ui:LegendMenu.Categories.food")}
                     <br/>
                     {t("ui:Map.type")}: {t("ui:Map.foodType."+props.type)}
                     <br/>
+                    {x.notable === true ? <>
+                        {t("items:food.description.prefix.notable")}
+                        <br/>
+                    </>:<Fragment/>}
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {props.id}{x.id}</id>
                 </content>
@@ -39,7 +43,7 @@ export default function Food(){
     return (
         <Fragment>
             {dataJSON.items && dataJSON?.items.food.map((x=>
-                <Template id={x.item} type={x.type}/>
+                <Template id={x.item} type={x.type} notable={x.notable}/>
             ))}
         </Fragment>
     )
