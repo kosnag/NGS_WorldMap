@@ -100,27 +100,28 @@
         "retem_seaslug": "Refreshing Retem Sea Slug",
         "retem_strawberry": "Healthy Retem Strawberry",
         "retem_urchin": "Sharp Retem Sea Urchin",
-        "kvaris_guava": "",
-        "kvaris_plum": "",
-        "kvaris_richPersimmon": "",
         "kvaris_akebia": "",
-        "kvaris_notablePersimmon": "",
-        "kvaris_snail": "",
-        "kvaris_crispSquid": "",
-        "kvaris_octopus": "",
-        "kvaris_crayfish": "",
-        "kvaris_notableSquid": "",
-        "kvaris_mushroom": "",
         "kvaris_cabbage": "",
         "kvaris_carrot": "",
+        "kvaris_crayfish": "",
+        "kvaris_guava": "",
+        "kvaris_mushroom": "",
+        "kvaris_octopus": "",
         "kvaris_onion": "",
+        "kvaris_persimmon": "",
+        "kvaris_persimmonNotable": "",
+        "kvaris_plum": "",
+        "kvaris_snail": "",
+        "kvaris_squid": "",
+        "kvaris_squidNotable": "",
         
         "description": {
             "prefix": {
                 "rich": "Reduces PP consumption",
                 "light": "Boosts PP recovery",
                 "crisp": "Boosts weakness damage",
-                "robust": "Boosts HP recovery"
+                "robust": "Boosts HP recovery",
+                "notable": "Appears only with a certain conditions \nCan be exchanged for various rewards"
             },
             "type": {
                 "fruit": "Boosts PP",
@@ -141,6 +142,10 @@
         "red": {
             "title": "Item Container [Red]",
             "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
+        },
+        "frozen": {
+            "title": "",
+            "description": ""
         }
     },
     "other": {

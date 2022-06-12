@@ -67,12 +67,12 @@
             "description": ""
         },
         "pentalite": {
-            "title": "",
-            "description": ""
+            "title": "Pentalite",
+            "description": "Used for various purposes like unlocking Potentials and Limit Breaking at the Item Lab."
         },
         "blizzardium": {
-            "title": "",
-            "description": ""
+            "title": "Blizzardium",
+            "description": "Found across Kvaris during Snowfall and Blizzards.\nCan be exchanged for items in certain places."
         }
     },
     "food": {
@@ -100,27 +100,28 @@
         "retem_seaslug": "Light Retem Sea Slug",
         "retem_strawberry": "Robust Retem Strawberry",
         "retem_urchin": "Crisp Retem Sea Urchin",
-        "kvaris_guava": "",
-        "kvaris_plum": "",
-        "kvaris_richPersimmon": "",
-        "kvaris_akebia": "",
-        "kvaris_notablePersimmon": "",
-        "kvaris_snail": "",
-        "kvaris_crispSquid": "",
-        "kvaris_octopus": "",
-        "kvaris_crayfish": "",
-        "kvaris_notableSquid": "",
-        "kvaris_mushroom": "",
-        "kvaris_cabbage": "",
-        "kvaris_carrot": "",
-        "kvaris_onion": "",
+        "kvaris_akebia": "Robust Kvaris Akebia",
+        "kvaris_cabbage": "Light Kvaris Cabbage",
+        "kvaris_carrot": "Rich Kvaris Carrot",
+        "kvaris_crayfish": "Robust Kvaris Crayfish",
+        "kvaris_guava": "Crisp Kvaris Guava",
+        "kvaris_mushroom": "Crisp Kvaris Mushroom",
+        "kvaris_octopus": "Light Kvaris Octopus",
+        "kvaris_onion": "Robust Kvaris Onion",
+        "kvaris_persimmon": "Rich Kvaris Persimmon",
+        "kvaris_persimmonNotable": "Notable Kvaris Persimmon",
+        "kvaris_plum": "Light Kvaris Plum",
+        "kvaris_snail": "Rich Kvaris Snail",
+        "kvaris_squid": "Crisp Kvaris Squid",
+        "kvaris_squidNotable": "Notable Kvaris Squid",
         
         "description": {
             "prefix": {
                 "rich": "Reduces PP consumption",
                 "light": "Increases PP recovery",
                 "crisp": "Increases weak point damage",
-                "robust": "Increases HP recovery"
+                "robust": "Increases HP recovery",
+                "notable": "Appears only with a certain conditions \nCan be exchanged for various rewards"
             },
             "type": {
                 "fruit": "Increases potency",
@@ -141,6 +142,10 @@
         "red": {
             "title": "Item Container [Red]",
             "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
+        },
+        "frozen": {
+            "title": "",
+            "description": ""
         }
     },
     "other": {
@@ -149,8 +154,8 @@
             "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
         },
         "snoal": {
-            "title": "",
-            "description": ""
+            "title": "Snoal",
+            "description": "Can be converted to 3500 N-Meseta. \n10 Snoals will spawn in Central Kvaris every day."
         },
         "datapod": {
             "title": "Datapod",

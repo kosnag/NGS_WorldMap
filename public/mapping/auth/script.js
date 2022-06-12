@@ -22,8 +22,8 @@ L.map(document.getElementsByTagName("map")[0],{
     minZoom: 0,
     maxZoom: 0,
     crs: L.CRS.Simple,
-    maxBounds: [[-12288/6-100, 0], [-12288/6/2+250, 12288/6]],
-    center: [-12288/6/4*3, 12288/6/2],
+    maxBounds: [[-2048-100, 0-250], [0+400, 2048+250]],
+    center: [-2048/2, 2048/2],
     zoomControl: false,
     attributionControl: false,
     keyboard: false,
@@ -31,7 +31,7 @@ L.map(document.getElementsByTagName("map")[0],{
     doubleClickZoom: false,
     layers: [
         L.tileLayer("../../assets/images/tiles/{z}/{y}-{x}.png",{
-            bounds: [[-12288/6, 0], [0, 12288/6]],
+            bounds: [[-2048, 0], [0, 2048]],
             tileSize: 1024,
             noWrap: true
         })

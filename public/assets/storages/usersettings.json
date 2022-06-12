@@ -6,7 +6,8 @@
         "tower": 1,
         "battledia": 1,
         "urgent": 1,
-        "trinitas": 1
+        "trinitas": 1,
+        "races": 1
     },
     "mineral": {
         "monotite": 0,
@@ -16,7 +17,8 @@
         "photonquarz": 0,
         "photonchunk": 0,
         "photonscale": 0,
-        "randomite": 0
+        "pentalite": 0,
+        "blizzardium": 0
     },
     "food": {
         "aelio_apple": 0,
@@ -43,7 +45,22 @@
         "retem_scallop": 0,
         "retem_seaslug": 0,
         "retem_strawberry": 0,
-        "retem_urchin": 0
+        "retem_urchin": 0,
+
+        "kvaris_persimmon": 0,
+        "kvaris_persimmonNotable": 0,
+        "kvaris_plum": 0,
+        "kvaris_guava": 0,
+        "kvaris_akebia": 0,
+        "kvaris_snail": 0,
+        "kvaris_octopus": 0,
+        "kvaris_squid": 0,
+        "kvaris_squidNotable": 0,
+        "kvaris_crayfish": 0,
+        "kvaris_carrot": 0,
+        "kvaris_cabbage": 0,
+        "kvaris_mushroom": 0,
+        "kvaris_onion": 0
     },
     "container": {
         "red": 0,
@@ -53,6 +70,7 @@
     "other": {
         "veteran": 0,
         "alphareactor": 0,
+        "snoal": 0,
         "stellarseed": 0,
         "stellargrace": 0,
         "datapod": 0,
