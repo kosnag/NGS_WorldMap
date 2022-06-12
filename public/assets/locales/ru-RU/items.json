@@ -100,20 +100,20 @@
         "retem_seaslug": "Саппа морская улитка Ритем",
         "retem_strawberry": "Гатцу клубника Ритем",
         "retem_urchin": "Шакки ёж Ритем",
-        "kvaris_akebia": "",
-        "kvaris_cabbage": "",
-        "kvaris_carrot": "",
-        "kvaris_crayfish": "",
-        "kvaris_guava": "",
-        "kvaris_mushroom": "",
-        "kvaris_octopus": "",
-        "kvaris_onion": "",
-        "kvaris_persimmon": "",
-        "kvaris_persimmonNotable": "",
-        "kvaris_plum": "",
-        "kvaris_snail": "",
-        "kvaris_squid": "",
-        "kvaris_squidNotable": "",
+        "kvaris_akebia": "Гатцу акебия Кварис",
+        "kvaris_cabbage": "Саппа напа Кварис",
+        "kvaris_carrot": "Матта морковь Кварис",
+        "kvaris_crayfish": "Гатцу лобстер Кварис",
+        "kvaris_guava": "Шакки гуава Кварис",
+        "kvaris_mushroom": "Шакки гриб Ритем",
+        "kvaris_octopus": "Саппа осьминог Кварис",
+        "kvaris_onion": "Гатцу лук Кварис",
+        "kvaris_persimmon": "Матта гак Кварис",
+        "kvaris_persimmonNotable": "Нота гак Кварис",
+        "kvaris_plum": "Саппа слива Кварис",
+        "kvaris_snail": "Матта морская улитка Кварис",
+        "kvaris_squid": "Шакки кальмар Кварис",
+        "kvaris_squidNotable": "Нота кальмар Кварис",
         
         "description": {
             "prefix": {
@@ -121,7 +121,7 @@
                 "light": "Увеличивает объём восстанавливаемого PP",
                 "crisp": "Увеличивает урон по слабым точкам",
                 "robust": "Увеличивает восстановление HP",
-                "notable": "Появляется только при определенных условиях"
+                "notable": "Появляется только при определенных условиях\nМожно обменять на предметы"
             },
             "type": {
                 "fruit": "Увеличивает РР",
@@ -154,8 +154,8 @@
             "description": "Можно продать за 3.500 N-месеты. \n14 альфа реакторов ежедневно появляется в регионе Эарио."
         },
         "snoal": {
-            "title": "",
-            "description": ""
+            "title": "Сноукс",
+            "description": "Можно продать за 3.500 N-месеты. \n10 камней ежедневно появляется в Центральном Кварисе."
         },
         "datapod": {
             "title": "Сообщение",

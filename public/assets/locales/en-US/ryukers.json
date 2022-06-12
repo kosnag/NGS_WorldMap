@@ -28,15 +28,15 @@
     "lufMaqaad": "Rwh Maqead",
     "lowerMaqaad": "Maqead Lower Level",
 
-    "kvarisCamp": "",
-    "beluganaRuinsNorth": "",
-    "beluganaRuinsSouth": "",
-    "rayjordGeorge": "",
-    "danannSnowField": "",
-    "quillMountainLoad": "",
-    "mtIhanaWest": "",
-    "mtIhanaEast": "",
-    "lostCentral": "",
-    "mtLatva": "",
-    "mistraWoods": ""
+    "kvarisCamp": "Kvaris Camp",
+    "beluganaRuinsNorth": "Belugana Ruins: North",
+    "beluganaRuinsSouth": "Belugana Ruins: South",
+    "rayjordGeorge": "Rayjord Gorge",
+    "danannSnowField": "Danann Snow Field",
+    "quillMountainLoad": "Quill Mountain Road",
+    "mtIhanaWest": "Mt. Ihana: West",
+    "mtIhanaEast": "Mt. Ihana: East",
+    "lostCentral": "Lost Central",
+    "mtLatva": "Mt. Latva",
+    "mistraWoods": "Mistra Woods"
 }

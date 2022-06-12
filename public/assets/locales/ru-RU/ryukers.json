@@ -28,15 +28,15 @@
     "lufMaqaad": "Верхний Макуадо",
     "lowerMaqaad": "Нижний Макуадо",
 
-    "kvarisCamp": "",
-    "beluganaRuinsNorth": "",
-    "beluganaRuinsSouth": "",
-    "rayjordGeorge": "",
-    "danannSnowField": "",
-    "quillMountainLoad": "",
-    "mtIhanaWest": "",
-    "mtIhanaEast": "",
-    "lostCentral": "",
-    "mtLatva": "",
-    "mistraWoods": ""
+    "kvarisCamp": "Лагерь Кварис",
+    "beluganaRuinsNorth": "Руины Беругана: Север",
+    "beluganaRuinsSouth": "Руины Беругана: Юг",
+    "rayjordGeorge": "Ущелье Рейолд",
+    "danannSnowField": "Снежная равнина Дананг",
+    "quillMountainLoad": "Горная тропа Куиру",
+    "mtIhanaWest": "Гора Ихана: Запад",
+    "mtIhanaEast": "Гора Ихана: Восток",
+    "lostCentral": "Утраченный Централ",
+    "mtLatva": "Гора Ратва",
+    "mistraWoods": "Лес Мистра"
 }

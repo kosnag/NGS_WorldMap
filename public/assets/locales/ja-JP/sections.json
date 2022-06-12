@@ -22,13 +22,13 @@
             "westRetem": "西リテム"
         },
         "kvaris": {
-            "centralKvaris": "",
-            "southKvaris": "",
-            "northKvaris": "",
-            "westKvaris": "",
-            "rayjordGorge": "",
-            "beluganaRuins": "",
-            "lostCentral": ""
+            "centralKvaris": "中央クヴァリス",
+            "southKvaris": "南クヴァリス",
+            "northKvaris": "北クヴァリス",
+            "westKvaris": "西クヴァリス",
+            "rayjordGorge": "レイヨルド峡江",
+            "beluganaRuins": "ベルガナ遺跡",
+            "lostCentral": "ロストセントラル"
         }
     },
     "type": {
