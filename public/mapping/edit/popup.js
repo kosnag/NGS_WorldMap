@@ -28,7 +28,7 @@ var optionsList = [
     {"table":"food__retem_mango","text":"Light Retem Mango"},
     {"table":"food__retem_strawberry","text":"Robust Retem Strawberry"},
     {"table":"food__kvaris_persimmon","text":"Rich Kvaris Persimmon"},
-    {"table":"food__kvaris_persimmonNotable","text":"Notable Kvaris Persimmon"},
+    {"table":"food__kvaris_persimmonnotable","text":"Notable Kvaris Persimmon"},
     {"table":"food__kvaris_plum","text":"Light Kvaris Plum"},
     {"table":"food__kvaris_guava","text":"Crisp Kvaris Guava"},
     {"table":"food__kvaris_akebia","text":"Robust Kvaris Akebia"},
@@ -44,7 +44,7 @@ var optionsList = [
     {"table":"food__kvaris_snail","text":"Rich Kvaris Snail"},
     {"table":"food__kvaris_octopus","text":"Light Kvaris Octopus"},
     {"table":"food__kvaris_squid","text":"Crisp Kvaris Squid"},
-    {"table":"food__kvaris_squidNotable","text":"Notable Kvaris Squid"},
+    {"table":"food__kvaris_squidnotable","text":"Notable Kvaris Squid"},
     {"table":"food__kvaris_crayfish","text":"Robust Kvaris Crayfish"},
 
     {"table":"food__aelio_herb","text":"Rich Aelio Herb"},

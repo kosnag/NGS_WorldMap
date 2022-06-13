@@ -19,124 +19,149 @@ var groups = {
     }
 }
 
-//MINERALS
-fetch("../../api/read.php?table=mineral__dualomite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"purple","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Dualomite | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
-}}})
-fetch("../../api/read.php?table=mineral__monotite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"magenta","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Monotite | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
-}}})
-fetch("../../api/read.php?table=mineral__photonchunk").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Chunk | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
-}}})
-fetch("../../api/read.php?table=mineral__photonquartz").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"lightblue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Quartz | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
-}}})
-fetch("../../api/read.php?table=mineral__tetracite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"orange","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Tetracite | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
-}}})
-fetch("../../api/read.php?table=mineral__trinite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"gray","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Trinite | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
-}}})
-fetch("../../api/read.php?table=mineral__randomite").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"white","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Randomite | ID: '+data[i].id,{"direction":"top"}).addTo(groups.minerals)
-}}})
+var itemList = {
+    minerals: [
+        {"id":"dualomite", "string":"Dualomite", "color":"purple"},
+        {"id":"monotite", "string":"Monotite", "color":"magenta"},
+        {"id":"photonchunk", "string":"Photon Chunk", "color":"blue"},
+        {"id":"photonquartz", "string":"Photon Quartz", "color":"lightblue"},
+        {"id":"tetracite", "string":"Tetracite", "color":"orange"},
+        {"id":"trinite", "string":"Trinite", "color":"gray"},
+        {"id":"pentalite", "string":"Pentalite", "color":"white"},
+        {"id":"blizzardium", "string":"Blizzardium", "color":"green"},
+    ],
+    food: {
+        fruits: [
+            {"id":"aelio_apple", "string":"Rich Aelio Apple", "color":"green"},
+            {"id":"aelio_peach", "string":"Light Aelio Peach", "color":"black"},
+            {"id":"aelio_pear", "string":"Crisp Aelio Pear", "color":"yellow"},
+            {"id":"aelio_banana", "string":"Robust Aelio Banana", "color":"red"},
+            {"id":"retem_cherries", "string":"Rich Retem Cherry", "color":"green"},
+            {"id":"retem_mango", "string":"Light Retem Mango", "color":"black"},
+            {"id":"retem_carambola", "string":"Crisp Retem Carambola", "color":"yellow"},
+            {"id":"retem_strawberry", "string":"Robust Retem Strawberry", "color":"red"},
+            {"id":"kvaris_persimmon", "string":"Rich Kvaris Persimmon", "color":"green"},
+            {"id":"kvaris_plum", "string":"Light Kvaris Plum", "color":"black"},
+            {"id":"kvaris_guava", "string":"Crisp Kvaris Guava", "color":"yellow"},
+            {"id":"kvaris_akebia", "string":"Robust Kvaris Akebia", "color":"red"},
+            {"id":"kvaris_persimmonnotable", "string":"Notable Kvaris Persimmon", "color":"gold"},
+        ],
+        seafood: [
+            {"id":"aelio_clam", "string":"Rich Aelio Clam ", "color":"green"},
+            {"id":"aelio_turbanshell", "string":"Light Aelio Turban Shell", "color":"black"},
+            {"id":"aelio_crab", "string":"Crisp Aelio Crab", "color":"yellow"},
+            {"id":"aelio_lobster", "string":"Robust Aelio Lobster", "color":"red"},
+            {"id":"retem_scallop", "string":"Rich Retem Scallop", "color":"green"},
+            {"id":"retem_seaslug", "string":"Light Retem Sea Slug", "color":"black"},
+            {"id":"retem_urchin", "string":"Crisp Retem Sea Urchin", "color":"yellow"},
+            {"id":"retem_hermitcrab", "string":"Robust Retem Hermit Crab", "color":"red"},
+            {"id":"kvaris_snail", "string":"Rich Kvaris Snail", "color":"green"},
+            {"id":"kvaris_octopus", "string":"Light Kvaris Octopus", "color":"black"},
+            {"id":"kvaris_squid", "string":"Crisp Kvaris Squid", "color":"yellow"},
+            {"id":"kvaris_crayfish", "string":"Robust Kvaris Crayfish", "color":"red"},
+            {"id":"kvaris_squidnotable", "string":"Notable Kvaris Squid", "color":"gold"},
+        ],
+        vegetables: [
+            {"id":"aelio_herb", "string":"Rich Aelio Herb", "color":"green"},
+            {"id":"aelio_mushroom", "string":"Light Aelio Mushroom", "color":"black"},
+            {"id":"aelio_tomato", "string":"Crisp Aelio Tomato", "color":"yellow"},
+            {"id":"aelio_turnip", "string":"Robust Aelio Turnip", "color":"red"},
+            {"id":"retem_eggplant", "string":"Rich Retem Round Eggplant", "color":"green"},
+            {"id":"retem_cranberries", "string":"Light Retem Cranberries", "color":"black"},
+            {"id":"retem_mushroom", "string":"Crisp Retem Mushroom", "color":"yellow"},
+            {"id":"retem_cauliflower", "string":"Robust Retem Cauliflower", "color":"red"},
+            {"id":"kvaris_carrot", "string":"Rich Kvaris Carrot", "color":"green"},
+            {"id":"kvaris_cabbage", "string":"Light Kvaris Cabbage", "color":"black"},
+            {"id":"kvaris_mushroom", "string":"Crisp Kvaris Mushroom", "color":"yellow"},
+            {"id":"kvaris_onion", "string":"Robust Kvaris Onion", "color":"red"},
+        ]
+    },
+    dailymaterials: [
+        {"id":"other__alphareactor", "string":"Alpha Reactor", "color":"purple", "fillcolor": "red"},
+        {"id":"mineral__photonscale", "string":"Photon Scale", "color":"pink", "fillcolor": "black"},
+        {"id":"other__snoal", "string":"Snoal", "color":"purple", "fillcolor":"orange"},
+    ]
+}
+var itemListFetch = {
+    dailymaterials: ()=>{var list = "";
+        for(var i=0; i<itemList.dailymaterials.length; i++){
+            list+=itemList.dailymaterials[i].id+"|"
+        }
+        return list
+    },
+    minerals: ()=>{var list = "";
+        for(var i=0; i<itemList.minerals.length; i++){
+            list+="mineral__"+itemList.minerals[i].id+"|"
+        }
+        return list
+    },
+    fruits: ()=>{var list = "";
+        for(var i=0; i<itemList.food.fruits.length; i++){
+            list+="food__"+itemList.food.fruits[i].id+"|"
+        }
+        return list
+    },
+    seafood: ()=>{var list = "";
+        for(var i=0; i<itemList.food.seafood.length; i++){
+            list+="food__"+itemList.food.seafood[i].id+"|"
+        }
+        return list
+    },
+    vegetables: ()=>{var list = "";
+        for(var i=0; i<itemList.food.vegetables.length; i++){
+            list+="food__"+itemList.food.vegetables[i].id+"|"
+        }
+        return list
+    },
+};
+// Daily materials
+fetch("../../api/read.php?multi="+itemListFetch.dailymaterials()).then((response)=>response.json()).then(data=>{if(data !== null){
+    for(var x=0; x<itemList.dailymaterials.length; x++){
+        for (let y=0; y<data[x].length; y++){
+            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":itemList.dailymaterials[x].color,"fillColor":itemList.dailymaterials[x].fillcolor,"fillOpacity":1,"weight":4}).bindTooltip(itemList.dailymaterials[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.dailymaterials)
+        };
+    };
+}});
+//Minerals (Ores)
+fetch("../../api/read.php?multi="+itemListFetch.minerals()).then((response)=>response.json()).then(data=>{if(data !== null){
+    for(var x=0; x<itemList.minerals.length; x++){
+        for (let y=0; y<data[x].length; y++){
+            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":itemList.minerals[x].color,"fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip(itemList.minerals[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.minerals)
+        };
+    };
+}});
+//Food (Fruits)
+fetch("../../api/read.php?multi="+itemListFetch.fruits()).then((response)=>response.json()).then(data=>{if(data !== null){
+    for(var x=0; x<itemList.food.fruits.length; x++){
+        for (let y=0; y<data[x].length; y++){
+            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":"darkgreen","fillColor":itemList.food.fruits[x].color,"fillOpacity":1,"weight":4}).bindTooltip(itemList.food.fruits[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.fruits)
+        };
+    };
+}});
+//Food (Sea)
+fetch("../../api/read.php?multi="+itemListFetch.seafood()).then((response)=>response.json()).then(data=>{if(data !== null){
+    for(var x=0; x<itemList.food.seafood.length; x++){
+        for (let y=0; y<data[x].length; y++){
+            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":"blue","fillColor":itemList.food.seafood[x].color,"fillOpacity":1,"weight":4}).bindTooltip(itemList.food.seafood[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.seafood)
+        }
+    }
+}});
+//Food (Vegetables)
+fetch("../../api/read.php?multi="+itemListFetch.vegetables()).then((response)=>response.json()).then(data=>{if(data !== null){
+    for(var x=0; y<itemList.food.vegetables.length; x++){
+        for (let y=0; i<data[x].length; y++){
+            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":"brown","fillColor":itemList.food.vegetables[x].color,"fillOpacity":1,"weight":4}).bindTooltip(itemList.food.vegetables[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.vegetables)
+        }
+    }
+}});
 
-
-//FOOD
-//FRUIT
-fetch("../../api/read.php?table=food__aelio_apple").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"darkgreen","fillColor":"green","fillOpacity":1,"weight":4}).bindTooltip('Rich Aelio Apple | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.fruits)
-}}})
-fetch("../../api/read.php?table=food__aelio_banana").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"darkgreen","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Robust Aelio Banana | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.fruits)
-}}})
-fetch("../../api/read.php?table=food__aelio_peach").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"darkgreen","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Light Aelio Peach | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.fruits)
-}}})
-fetch("../../api/read.php?table=food__aelio_pear").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"darkgreen","fillColor":"yellow","fillOpacity":1,"weight":4}).bindTooltip('Crisp Aelio Pear | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.fruits)
-}}})
-fetch("../../api/read.php?table=food__retem_carambola").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"darkgreen","fillColor":"green","fillOpacity":1,"weight":4}).bindTooltip('Crisp Retem Carambola | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.fruits)
-}}})
-fetch("../../api/read.php?table=food__retem_cherries").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"darkgreen","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Rich Retem Cherry | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.fruits)
-}}})
-fetch("../../api/read.php?table=food__retem_mango").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"darkgreen","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Light Retem Mango | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.fruits)
-}}})
-fetch("../../api/read.php?table=food__retem_strawberry").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"darkgreen","fillColor":"yellow","fillOpacity":1,"weight":4}).bindTooltip('Robust Retem Strawberry | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.fruits)
-}}})
-//SEAFOOD
-fetch("../../api/read.php?table=food__aelio_clam").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"green","fillOpacity":1,"weight":4}).bindTooltip('Rich Aelio Clam | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
-}}})
-fetch("../../api/read.php?table=food__aelio_crab").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Crisp Aelio Crab | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
-}}})
-fetch("../../api/read.php?table=food__aelio_lobster").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Robust Aelio Lobster | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
-}}})
-fetch("../../api/read.php?table=food__aelio_turbanshell").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"yellow","fillOpacity":1,"weight":4}).bindTooltip('Light Aelio Turban Shell | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
-}}})
-fetch("../../api/read.php?table=food__retem_hermitcrab").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"green","fillOpacity":1,"weight":4}).bindTooltip('Robust Retem Hermit Crab | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
-}}})
-fetch("../../api/read.php?table=food__retem_scallop").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Rich Retem Scallop | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
-}}})
-fetch("../../api/read.php?table=food__retem_seaslug").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Light Retem Sea Slug | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
-}}})
-fetch("../../api/read.php?table=food__retem_urchin").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"yellow","fillOpacity":1,"weight":4}).bindTooltip('Crisp Retem Sea Urchin | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.seafood)
-}}})
-//VEGETABLE
-fetch("../../api/read.php?table=food__aelio_herb").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"brown","fillColor":"green","fillOpacity":1,"weight":4}).bindTooltip('Rich Aelio Herb | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.vegetables)
-}}})
-fetch("../../api/read.php?table=food__aelio_mushroom").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"brown","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Light Aelio Mushroom | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.vegetables)
-}}})
-fetch("../../api/read.php?table=food__aelio_tomato").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"brown","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Crisp Aelio Tomato | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.vegetables)
-}}})
-fetch("../../api/read.php?table=food__aelio_turnip").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"brown","fillColor":"yellow","fillOpacity":1,"weight":4}).bindTooltip('Robust Aelio Turnip | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.vegetables)
-}}})
-fetch("../../api/read.php?table=food__retem_cauliflower").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"brown","fillColor":"green","fillOpacity":1,"weight":4}).bindTooltip('Robust Retem Cauliflower | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.vegetables)
-}}})
-fetch("../../api/read.php?table=food__retem_cranberries").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"brown","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Light Retem Cranberries | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.vegetables)
-}}})
-fetch("../../api/read.php?table=food__retem_eggplant").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"brown","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Rich Retem Round Eggplant | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.vegetables)
-}}})
-fetch("../../api/read.php?table=food__retem_mushroom").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"brown","fillColor":"yellow","fillOpacity":1,"weight":4}).bindTooltip('Crisp Retem Mushroom | ID: '+data[i].id,{"direction":"top"}).addTo(groups.food.vegetables)
-}}})
-
-
-// CONTAINERS
-fetch("../../api/read.php?table=container__green").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"green","fillColor":"gray","fillOpacity":1,"weight":4}).bindTooltip('Green Container | ID: '+data[i].id,{"direction":"top"}).addTo(groups.containers.green)
-}}})
-fetch("../../api/read.php?table=container__red").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"red","fillColor":"gray","fillOpacity":1,"weight":4}).bindTooltip('Red Container | ID: '+data[i].id,{"direction":"top"}).addTo(groups.containers.red)
-}}})
-
+fetch("../../api/read.php?table=container__red").then((response)=>response.json()).then(data=>{if(data !== null){
+    for (let i = 0; i < data.length; i++){
+        new L.circle([data[i].lat,data[i].lng],4,{"color":"red","fillColor":"gray","fillOpacity":1,"weight":4}).bindTooltip('Red Container | ID: '+data[i].id,{"direction":"top"}).addTo(groups.containers.red)
+    }
+}});
 
 //OTHER
-fetch("../../api/read.php?table=other__alphareactor").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"purple","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Alpha Reactor | ID: '+data[i].id,{"direction":"top"}).addTo(groups.other.dailymaterials)
-}}})
-fetch("../../api/read.php?table=mineral__photonscale").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"pink","fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip('Photon Scate | ID: '+data[i].id,{"direction":"top"}).addTo(groups.other.dailymaterials)
-}}})
 fetch("../../api/read.php?table=other__musicplace").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"pink","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('BGM Easter Egg | ID: '+data[i].string,{"direction":"top"}).addTo(groups.other.bgm)
 }}})
@@ -162,7 +187,7 @@ var overlayLayers = {
     "Fruits (Food)": groups.food.fruits,
     "Seafood (Food)": groups.food.seafood,
     "Vegetables (Food)": groups.food.vegetables,
-    "Green Containers": groups.containers.green,
+    //"Green Containers": groups.containers.green,
     "Red Containers": groups.containers.red,
     "Veterans": groups.other.veterans,
     "Daily Materials": groups.other.dailymaterials,
