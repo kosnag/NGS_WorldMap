@@ -12,21 +12,51 @@ const Template = (props) => {
         return ()=>clearInterval(i);
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=mineral__"+props.id).then(response=>response.json()).then(d=>setData(d)) : setData([])},[props.id, marker]);
-    if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
-                <header>
-                    <span><menuicon/> {t("items:mineral."+props.id+".title")}</span>
-                </header>
-                <content>
-                    {t("ui:LegendMenu.Categories.minerals")}
-                    <br/>
-                    {t("ui:Map.placedBy")}: {x.contributer}
-                    <id>ID: {props.id}{x.id}</id>
-                </content>
-            </tooltip-window></Tooltip>
-        </Marker>
-    ))):<Fragment/>)}else{return <Fragment/>}
+    if(data !== null){return(marker ? (
+        props.id === "photonscale" ? (
+            data.map((x=>
+                <Circle 
+                    center={[x.lat,x.lng]}
+                    radius={25}
+                    pathOptions={{
+                        color: 'pink',
+                        fillColor: 'lightblue',
+                        fillOpacity: '0.25'
+                    }}
+                >
+                    <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
+                        <Tooltip direction='top'><tooltip-window>
+                            <header>
+                                <span><menuicon/> {t("items:mineral."+props.id+".title")}</span>
+                            </header>
+                            <content>
+                                {t("ui:LegendMenu.Categories.minerals")}
+                                <br/>
+                                {t("ui:Map.placedBy")}: {x.contributer}
+                                <id>ID: {props.id}{x.id}</id>
+                            </content>
+                        </tooltip-window></Tooltip>
+                    </Marker>
+                </Circle>
+            ))
+        ) : (
+            data.map((x=>
+                <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
+                    <Tooltip direction='top'><tooltip-window>
+                        <header>
+                            <span><menuicon/> {t("items:mineral."+props.id+".title")}</span>
+                        </header>
+                        <content>
+                            {t("ui:LegendMenu.Categories.minerals")}
+                            <br/>
+                            {t("ui:Map.placedBy")}: {x.contributer}
+                            <id>ID: {props.id}{x.id}</id>
+                        </content>
+                    </tooltip-window></Tooltip>
+                </Marker>
+            ))
+        )
+    ):<Fragment/>)}else{return <Fragment/>}
 }
 
 export default function Minerals(){
