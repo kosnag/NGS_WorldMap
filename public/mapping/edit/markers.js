@@ -29,6 +29,7 @@ var itemList = {
         {"id":"trinite", "string":"Trinite", "color":"gray"},
         {"id":"pentalite", "string":"Pentalite", "color":"white"},
         {"id":"blizzardium", "string":"Blizzardium", "color":"green"},
+        {"id":"photonscale", "string":"Photon Scale", "color":"pink"},
     ],
     food: {
         fruits: [
@@ -78,7 +79,6 @@ var itemList = {
     },
     dailymaterials: [
         {"id":"other__alphareactor", "string":"Alpha Reactor", "color":"purple", "fillcolor": "red"},
-        {"id":"mineral__photonscale", "string":"Photon Scale", "color":"pink", "fillcolor": "black"},
         {"id":"other__snoal", "string":"Snoal", "color":"purple", "fillcolor":"orange"},
     ]
 }
