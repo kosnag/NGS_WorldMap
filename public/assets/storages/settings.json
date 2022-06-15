@@ -52,7 +52,7 @@
             {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common"},
 
             {"item": "kvaris_persimmon", "type": "fruit", "prefix": "rich", "rarity": "common"},
-            {"item": "kvaris_persimmonNotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare", "notable": true},
+            {"item": "kvaris_persimmonnotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare", "notable": true},
             {"item": "kvaris_plum", "type": "fruit", "prefix": "light", "rarity": "common"},
             {"item": "kvaris_guava", "type": "fruit", "prefix": "crisp", "rarity": "common"},
             {"item": "kvaris_akebia", "type": "fruit", "prefix": "robust", "rarity": "common"},
@@ -60,7 +60,7 @@
             {"item": "kvaris_snail", "type": "seafood", "prefix": "rich", "rarity": "common"},
             {"item": "kvaris_octopus", "type": "seafood", "prefix": "light", "rarity": "common"},
             {"item": "kvaris_squid", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-            {"item": "kvaris_squidNotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare", "notable": true},
+            {"item": "kvaris_squidnotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare", "notable": true},
             {"item": "kvaris_crayfish", "type": "seafood", "prefix": "robust", "rarity": "common"},
 
             {"item": "kvaris_carrot", "type": "vegetable", "prefix": "rich", "rarity": "common"},
