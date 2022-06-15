@@ -25,18 +25,18 @@
     },
     "dollsBurrow": {
         "title": "DOLLS Burrow",
-        "description": "",
+        "description": "This Trainia will test ARKS' combat skills. Make full use of your combat abilities as a Destragras awaits vou in the final area.",
         "clearCondition": "Defeat: Destragras",
-        "subMission1": "Clear after obtaining 5 Point Cubes",
+        "subMission1": "Clear after obtaining 5 Point Cube(s)",
         "subMission2": "Clear in under 3 incapacitation(s)",
         "subMission3": "Clear in under 10:00"
     },
     "deepWell": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Deep Well",
+        "description": "This Trainia will test ARKS' combat skills. Make full use of your combat abilities as an Ams Clone awaits you in the final area.",
+        "clearCondition": "Defeat: 3 Ams Klone",
+        "subMission1": "Clear in under 2:50",
+        "subMission2": "Clear while talking damage fewer than 30 time(s)",
+        "subMission3": "Clear after obtaining 5 Point Cube(s)"
     }
 }
