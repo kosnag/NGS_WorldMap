@@ -109,11 +109,11 @@
         "kvaris_octopus": "Light Kvaris Octopus",
         "kvaris_onion": "Robust Kvaris Onion",
         "kvaris_persimmon": "Rich Kvaris Persimmon",
-        "kvaris_persimmonNotable": "Notable Kvaris Persimmon",
+        "kvaris_persimmonnotable": "Notable Kvaris Persimmon",
         "kvaris_plum": "Light Kvaris Plum",
         "kvaris_snail": "Rich Kvaris Snail",
         "kvaris_squid": "Crisp Kvaris Squid",
-        "kvaris_squidNotable": "Notable Kvaris Squid",
+        "kvaris_squidnotable": "Notable Kvaris Squid",
         
         "description": {
             "prefix": {
