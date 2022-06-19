@@ -172,11 +172,75 @@
                     }
                 ]
             },
-            
             {
                 "minBP": 2114,
                 "enemyLv": 49,
                 "rewards": [
+                    {
+                        "item": "rewards:item.relik_series"
+                    },
+                    {
+                        "item": "rewards:item.gigas_augments"
+                    },
+                    {
+                        "item": "rewards:item.soul_augments"
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title"
+                    },
+                    {
+                        "item": "rewards:item.special_scratch_ticket"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "kvarisTroopers",
+        "type": "yellow",
+        "lat":-187, "lng":449.5,
+        "players": 4,
+        "ranks": [
+            {
+                "minBP": 2416,
+                "enemyLv": 55,
+                "rewards": [
+                    {
+                        "item": "rewards:value.experience",
+                        "count": 0
+                    },
+                    {
+                        "item": "rewards:item.gold_prim_sword",
+                        "count": "+20"
+                    },
+                    {
+                        "item": "rewards:item.gold_prim_armor",
+                        "count": "+20"
+                    },
+                    {
+                        "item": "rewards:item.decold_augments",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "kvarisDevastators",
+        "type": "purple",
+        "lat":-1804.25, "lng":1490.25,
+        "players": 4,
+        "ranks": [
+            {
+                "minBP": 1813,
+                "enemyLv": 39,
+                "rewards": [
+                    {
+                        "item": "rewards:item.rugged_series"
+                    },
+                    {
+                        "item": "rewards:item.rokz_series"
+                    },
                     {
                         "item": "rewards:item.gigas_augments"
                     },
