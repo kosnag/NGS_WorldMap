@@ -262,5 +262,67 @@
                 ]
             }
         ]
+    },
+    {
+        "id": "amsVera",
+        "lat":-305, "lng":496.5,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 2506,
+                "enemyLv": 57,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title",
+                        "count": 8
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "crocodylisVera",
+        "lat":-729, "lng":881.5,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 2506,
+                "enemyLv": 57,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title",
+                        "count": 8
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
     }
 ]
