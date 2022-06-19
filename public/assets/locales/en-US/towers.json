@@ -2,7 +2,7 @@
     "altersRush": {
         "title": "ALTERS Rush",
         "description": "This is Trainia, where ARKS defenders can test their combat abilities. Avoid combat with enemies whenever possible and make use of your battle skills to defeat the Chiacurio in the final area.",
-        "clearCondition": "Defeat the Chiacurio.",
+        "clearCondition": "Defeat the Chiacurio",
         "subMission1": "Clear before 8:00",
         "subMission2": "Clear having suppressed under 4 of the enemies",
         "subMission3": "Clear without being incapacitated 5 times"
@@ -10,7 +10,7 @@
     "greatWall": {
         "title": "Great Wall",
         "description": "This is Trainia, where ARKS defenders can test their abilities. Defeat the Daityl Sword in the final area using your battle skills.",
-        "clearCondition": "Defeat the Daityl Sword.",
+        "clearCondition": "Defeat the Daityl Sword",
         "subMission1": "Clear before 23:00",
         "subMission2": "Clear without being incapacitated 5 times",
         "subMission3": "Obtain 5 Point Cubes"
@@ -18,7 +18,7 @@
     "aeroRunner": {
         "title": "Aero Runner",
         "description": "This is Trainia, where ARKS defenders can test their gliding capabilities. Use Photon Glide to reach the target destination.",
-        "clearCondition": "Reach the finish point.",
+        "clearCondition": "Reach the finish point",
         "subMission1": "Clear before 2:05",
         "subMission2": "Clear without falling 5 times",
         "subMission3": "Obtain 10 Point Cubes"
@@ -26,7 +26,7 @@
     "dollsBurrow": {
         "title": "DOLLS Burrow",
         "description": "This is Trainia, where ARKS defenders can test their combat abilities. Defeat the Destragras in the final area using your battle skills.",
-        "clearCondition": "Defeat the Destragras.",
+        "clearCondition": "Defeat the Destragras",
         "subMission1": "Obtain 5 Point Cubes",
         "subMission2": "Clear without being incapacitated 3 times",
         "subMission3": "Clear before 10:00"
@@ -34,9 +34,9 @@
     "deepWell": {
         "title": "Deepwell",
         "description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Ams Krone in the final area.",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Defeat 3 target enemies (Ams Krone)",
+        "subMission1": "Clear before 2:50",
+        "subMission2": "Clear having taken damage fewer than 30 times",
+        "subMission3": "Obtain 5 Point Cubes"
     }
 }

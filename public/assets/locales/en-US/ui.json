@@ -77,7 +77,7 @@
         "enemyTypes": {
             "dread": "Dread",
             "gigantix": "Gigantix",
-            "ancient": ""
+            "ancient": "Ancient"
         }
     }
 }

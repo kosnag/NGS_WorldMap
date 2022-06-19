@@ -65,7 +65,7 @@
     },
     "vanishingPath": {
         "title": "Vanishing Way",
-        "description": "",
+        "description": "This Trainia will test ARKS' combat skills. Defeat all enemies, but be careful of Vanish Blocks.",
         "clearCondition": "Defeat: Fortes Laser",
         "subMission1": "Clear in under 8:00",
         "subMission2": "Clear after obtain 5 Point Cube(s)",
@@ -73,7 +73,7 @@
     },
     "narrowCage": {
         "title": "Narrow Cage",
-        "description": "",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to take out every last enemy.",
         "clearCondition": "Defeat All Enemies",
         "subMission1": "Clear while taking damage fewer than 20 time(s)",
         "subMission2": "Clear in under 3 incapacitation(s)",
@@ -81,15 +81,15 @@
     },
     "buddyAttack": {
         "title": "Buddy Attack",
-        "description": "",
+        "description": "This Trainia will test ARKS' combat skills. Defeat all enemies while a Drome assists you.",
         "clearCondition": "Defeat All Enemies",
-        "subMission1": "",
+        "subMission1": "Clear while keeping your Drome's obedience gauge at Lv.3",
         "subMission2": "Clear in under 3 incapacitation(s)",
         "subMission3": "Clear while taking damage fewer than 20 time(s)"
     },
     "dynaAssault": {
         "title": "Dynamic Assault",
-        "description": "",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat the Lysentos.",
         "clearCondition": "Defeat: Lysentos",
         "subMission1": "Clear in under 2:35",
         "subMission2": "Clear in under 5 incapacitation(s)",
@@ -97,66 +97,66 @@
     },
     "parkourMaster": {
         "title": "Parkour Master",
-        "description": "",
+        "description": "This Trainia will test ARKS' jumping skills. Use \"Jump\", \"Double Jump\" & \"Wall Kick\" to reach target point.",
         "clearCondition": "Reach the Finish Point",
         "subMission1": "Clear while using fewer than 6 Glide(s)",
         "subMission2": "Clear after obtaining 10 Point Cube(s)",
-        "subMission3": "Clear in under 2:20(s)"
+        "subMission3": "Clear in under 2:20"
     },
     "runway2": {
         "title": "Lone Way II",
-        "description": "",
-        "clearCondition": "Defeat All Enemies",
+        "description": "This Trainia will test ARKS' dashing skills. Use \"PhotonDash\" to reach the target point.",
+        "clearCondition": "Reach the Finish Point",
         "subMission1": "Clear in under 4:35",
         "subMission2": "Clear in under 5:15",
         "subMission3": "Clear after obtaining 4 Point Cube(s)"
     },
     "crazyTail": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Crazy Tail",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat the Pangolan.",
+        "clearCondition": "Defeat: Pangolan",
+        "subMission1": "Clear in under 3:00",
+        "subMission2": "Deal 900+ damage 2 times",
+        "subMission3": "Clear while taking damage fewer than 7 time(s)"
     },
     "slopeTile": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Slope Style",
+        "description": "This Trainia will test ARKS' movement skills. Use a Floating Board to reach the target point.",
+        "clearCondition": "Reach the Finish Point",
+        "subMission1": "Clear in under 2:20",
+        "subMission2": "Clear while using fewer than 2 Glide(s)",
+        "subMission3": "Clear after obtaining 40 Point Cube(s)"
     },
     "wildAvalanche": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Wild Avalanche",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat the Ice Banther.",
+        "clearCondition": "Defeat 2 Enemies",
+        "subMission1": "Clear in under 3:00",
+        "subMission2": "Clear while taking damage fewer than 12 time(s)",
+        "subMission3": "Clear while using fewer than 3 Recovery Action(s)"
     },
     "vanishingPath2": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Vanishing Way II",
+        "description": "This Trainia will test ARKS' dashing skills. Use Photon Dash to react the target point.",
+        "clearCondition": "Reach the Finish Point",
+        "subMission1": "Clear in under 2:00",
+        "subMission2": "Clear after obtaining 6 Point Cube(s)",
+        "subMission3": "Clear while using fewer than 2 Glide(s)"
     },
     "clockworkJail": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Clockwork Jail",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat all enemies.",
+        "clearCondition": "Defeat 29 Enemies",
+        "subMission1": "Clear in under 5:00",
+        "subMission2": "Clear in under 1 incapactitation(s)",
+        "subMission3": "Clear while taking damage fewer than 12 time(s)"
     },
     "holibleFlapping": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "Horrible Flapping",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat the Mach Ride",
+        "clearCondition": "Defeat: Mach Ride",
+        "subMission1": "Clear in under 3:00",
+        "subMission2": "Clear in under 1 incapactitation(s)",
+        "subMission3": "Clear while taking damage fewer than 10 time(s)"
     }
 }

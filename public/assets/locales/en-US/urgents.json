@@ -2,17 +2,17 @@
     "seasonal": {
         "title": "Flurry of Flowers Clean Up Op",
         "description": "We have picked up multiple readings of strong enemies at the Cryano Cliffs in West Aelio. Intel report confirmed large FORMERS, but they possess a different spectrum than usual. We need all ARKS Defenders to stay cautious on the irregularities and defeat the enemies.",
-        "clearCondition": "Defeat the target enemy!"
+        "clearCondition": "Defeat the target enemy"
     },
     "pettasVera": {
         "title": "Command DOLLS Suppression Op",
         "description": "A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Veras, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat the Command DOLLS unit!"
+        "clearCondition": "Defeat the Command DOLLS unit"
     },
     "nexVera": {
         "title": "Nex Vera Suppression Op",
         "description": "A powerful space-time flux has been detected in Resol Forest. Based on past data, we expect Nex Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat the target enemy!"
+        "clearCondition": "Defeat the target enemy"
     },
     "miningRigDefenceAelio": {
         "title": "Mining Rig Defense: Aelio",
@@ -22,7 +22,7 @@
     "darkFalzInterception": {
         "title": "Dark Falz Interception",
         "description": "Our data points to the imminent appearance of Dark Falz in the Central City area. All ARKS defenders report to the rerdezvous immediately and repel the enemy advance until the Central Cannon is operational.",
-        "clearCondition": "Defeat the target enemy!"
+        "clearCondition": "Defeat the target enemy"
     },
     "dustylVera": {
         "title": "Dustyl Vera Suppression Op",
@@ -42,11 +42,11 @@
     "crocodylisVera": {
         "title": "Crocodylis Vera Suppression Op",
         "description": "A powerful space-time flux has been detected in the northern part of Danann Snow Field. Based on past data, we expect Crocodylis Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat Crocodylis Vera!"
+        "clearCondition": "Defeat the target enemy"
     },
     "amsVera": {
         "title": "Ams Vera Suppression Op",
         "description": "A powerful space-time flux has been detected on Mt. Latva. Based on past data, we expect Ams Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Suppress Ams Vera!"
+        "clearCondition": "Defeat the target enemy"
     }
 }
