@@ -126,7 +126,7 @@ Battledia:()=>{
                                                 <br/><br/>
                                                 <span>{t("ui:Map.failCondition")}</span>
                                                 <border/>
-                                                {t("trinitas:blue.failCondition")}
+                                                {t("battledias:blue.failCondition")}
                                             </> : <Fragment/>}
                                         </> : <Fragment/>}
                                         <br/><br/>
