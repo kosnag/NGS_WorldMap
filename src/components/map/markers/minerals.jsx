@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useEffect } from 'react';
+import React, { useState, Fragment, useEffect, Circle } from 'react';
 import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
 import { Marker, Tooltip } from "react-leaflet";
