@@ -1,37 +1,26 @@
 {
-    "variable": {
-        "title": "想定演習：天意無法のエネミー討伐",
-        "clearCondition": "このポータルでは、来るべき戦いに備えた想定演習を行うことができる。現在の設定では、かつて行われた北リテムのモラーバ峡谷での戦いが再現される。戦闘技術を駆使して、大型のドールズを含むエネミーを殲滅せよ。",
-        "description": "全てのエネミーを殲滅せよ！"
-    },
-    "aelioTroopers": {
-        "title": "エアリオトルーパーズ ",
-        "clearCondition": "対象エネミーの撃破",
-        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使してすべてのエネミーを撃破せよ。"
-    },
-    "aelioDevastators": {
-        "title": "エアリオデバステーターズ",
-        "clearCondition": "対象エネミーの撃破",
-        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使して、次々と現れるギガンティクスを撃破せよ。"
-    },
-    "retemTroopers": {
-        "title": "リテムトルーパーズ ",
-        "clearCondition": "対象エネミーの撃破",
-        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使してすべてのエネミーを撃破せよ。"
-    },
-    "retemDevastators": {
-        "title": "リテムデバステーターズ",
-        "clearCondition": "対象エネミーの撃破",
-        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使して、次々と現れるギガンティクスを撃破せよ。"
-    },
-    "kvarisTroopers": {
+    "blue": {
         "title": "",
-        "clearCondition": "対象エネミーの撃破",
-        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使してすべてのエネミーを撃破せよ。"
+        "clearCondition": "",
+        "description": "",
+        "failCondition": ""
     },
-    "kravisDevastators": {
-        "title": "",
-        "clearCondition": "対象エネミーの撃破",
-        "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使して、次々と現れるギガンティクスを撃破せよ。"
+    "regular": {
+        "aelioTroopers": "エアリオトルーパーズ",
+        "aelioDevastators": "エアリオデバステーターズ",
+        "retemTroopers": "リテムトルーパーズ",
+        "retemDevastators": "リテムデバステーターズ",
+        "kvarisTroopers": "",
+        "kvarisDevastators": ""
+    },
+    "type": {
+        "yellow": {
+            "clearCondition": "対象エネミーの撃破",
+            "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使してすべてのエネミーを撃破せよ。"
+        },
+        "purple": {
+            "clearCondition": "対象エネミーの撃破",
+            "description": "ここは、アークス各人の戦闘能力を試すバトルディアである。戦闘技術を駆使して、次々と現れるギガンティクスを撃破せよ。"
+        }
     }
 }

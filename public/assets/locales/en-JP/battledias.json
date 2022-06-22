@@ -1,37 +1,26 @@
 {
-    "variable": {
-        "title": "Simulation: Horde Eradication",
-        "clearCondition": "This Trigger will let you recreate the battle at Craiano Cliffs in Western Aelio. Use all your skills to annihilate the enemies, including the large Formers.",
-        "description": "Defeat the target enemies!"
+    "blue": {
+        "title": "Simulation: Dark Falz Interception",
+        "clearCondition": "This is training simulation for future battles, reconstructed using archived combat data. Relive the chaotic battle in Central Aelio, and intercept Dark Falz!",
+        "description": "Defeat the Dark Falz",
+        "failCondition": "Incapacitated 5 times or more \nTake longer than 20:00"
     },
-    "aelioTroopers": {
-        "title": "Aelio Troopers",
-        "clearCondition": "Defeat the target enemy",
-        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
+    "regular": {
+        "aelioTroopers": "Aelio Troopers",
+        "aelioDevastators": "Aelio Devastators",
+        "retemTroopers": "Retem Troopers",
+        "retemDevastators": "Retem Devastators",
+        "kvarisTroopers": "Kvaris Troopers",
+        "kvarisDevastators": "Kvaris Devastators"
     },
-    "aelioDevastators": {
-        "title": "Aelio Devastators",
-        "clearCondition": "Defeat the target enemy",
-        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat the Gigantix that appear before you one by one."
-    },
-    "retemTroopers": {
-        "title": "Retem Troopers",
-        "clearCondition": "Defeat the target enemy",
-        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
-    },
-    "retemDevastators": {
-        "title": "Retem Devastators",
-        "clearCondition": "Defeat the target enemy",
-        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat the Gigantix that appear before you one by one."
-    },
-    "kvarisTroopers": {
-        "title": "Kvaris Troopers",
-        "clearCondition": "Defeat the target enemy",
-        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
-    },
-    "kravisDevastators": {
-        "title": "Kvaris Devastators",
-        "clearCondition": "Defeat the target enemy",
-        "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat the Gigantix that appear before you one by one."
+    "type": {
+        "yellow": {
+            "clearCondition": "Defeat the enemies",
+            "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat all the enemies."
+        },
+        "purple": {
+            "clearCondition": "Defeat the enemies",
+            "description": "This is a Battledia designed to test the combat capabilities of ARKS. Show off your skills and defeat the Gigantix that appear before you one by one."
+        }
     }
 }
