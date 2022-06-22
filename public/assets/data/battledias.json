@@ -1,5 +1,63 @@
 [
     {
+        "id": "blue",
+        "available": true,
+        "coordinates": [
+            {"lat":-1481.75, "lng":70},
+            {"lat":-1481.75, "lng":180},
+            {"lat":-1481.75, "lng":0}
+        ],
+        "ranks": [
+            {
+                "minBP": 1081,
+                "enemyLv": 16,
+                "players": 8,
+                "firstRewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    }
+                ],
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 20000
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title",
+                        "count": 12
+                    }
+                ]
+            },
+            {
+                "special_fail_condition": true,
+                "minBP": 2647,
+                "enemyLv": 60,
+                "players": 4,
+                "firstRewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    }
+                ],
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 20000
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title",
+                        "count": 12
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "aelioTroopers",
         "type": "yellow",
         "lat":-1481.75, "lng":34.5,
@@ -228,7 +286,7 @@
     {
         "id": "kvarisDevastators",
         "type": "purple",
-        "lat":-1804.25, "lng":1490.25,
+        "lat":-380, "lng":285,
         "players": 4,
         "ranks": [
             {
