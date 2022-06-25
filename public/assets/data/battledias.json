@@ -4,8 +4,8 @@
         "available": true,
         "img_url": "./assets/images/banners/urgents/trigger.png",
         "coordinates": [
-            {"lat":-1481.75, "lng":621.75},
-            {"lat":-1625, "lng":1590.5},
+            {"lat":-1435, "lng":643.5},
+            {"lat":-1691.25, "lng":1571.625},
             {"lat":-588.5, "lng":750.25}
         ],
         "ranks": [
