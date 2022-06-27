@@ -75,9 +75,9 @@
             "firstTime": "첫 회 클리어 보수"
         },
         "enemyTypes": {
-            "dread": "노련의 ",
-            "gigantix": "절망의 ",
-            "ancient": "원세의 "
+            "dread": "노련의",
+            "gigantix": "절망의",
+            "ancient": "원세의"
         }
     }
 }
