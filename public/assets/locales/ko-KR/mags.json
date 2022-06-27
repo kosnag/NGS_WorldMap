@@ -1,16 +1,16 @@
 {   
     "type": {
-        "invincible": "",
-        "priceless": "",
-        "expert": ""
+        "invincible": "필승의 리전 마그",
+        "priceless": "천금의 리전 마그",
+        "expert": "숙달의 리전 마그"
     },
     "boostType": {
-        "social": "",
-        "personal": ""
+        "social": "R 마그 부스트 [전체]",
+        "personal": "R 마그 부스트 [개인]"
     },
     "boosts": {
-        "rdr": "",
-        "exp": "",
-        "attack": ""
+        "rdr": "레어 드랍 배율 증가",
+        "exp": "획득 경험치 증가",
+        "attack": "주는 데미지 증가"
     }
 }
