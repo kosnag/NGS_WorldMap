@@ -7,11 +7,11 @@
     },
     "LegendMenu": {
         "Categories": {
-            "landmarks": "ランドマーク",
-            "minerals": "鉱石",
-            "food": "フード",
-            "containers": "コンテナ",
-            "other": "その他"
+            "landmarks": "랜드마크",
+            "minerals": "광석",
+            "food": "푸드",
+            "containers": "컨테이너",
+            "other": "기타"
         }
     },
     "OptionsMenu": {
@@ -75,8 +75,9 @@
             "firstTime": "첫 회 클리어 보수"
         },
         "enemyTypes": {
-            "dread": "노련의 ",
-            "gigantix": "절망의 "
+            "dread": "노련의",
+            "gigantix": "절망의",
+            "ancient": "원세의"
         }
     }
 }

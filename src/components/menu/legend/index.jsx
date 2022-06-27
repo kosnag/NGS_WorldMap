@@ -61,10 +61,16 @@ export default function MenuLegend(){
           setPreviewIcon("./assets/images/icons/food/"+props.item+".png")
           setPreviewRarity(props.rarity)
           setPreviewTitle(t("items:food."+props.item))
+          props.notable === true ? 
+          setPreviewDescription(
+            t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+
+            t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type)+"\n"+
+            t("items:food.description.prefix.notable")
+          )
+          :
           setPreviewDescription(
             t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+
             t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type)
-            (props.notable === true ? "\n"+t("items:food.description.prefix.notable") : "")
           )
         }}
         ><Checkbox icon={<span/>}

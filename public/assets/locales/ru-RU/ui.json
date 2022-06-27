@@ -76,7 +76,8 @@
         },
         "enemyTypes": {
             "dread": "Ветеран",
-            "gigantix": "Отчаявшиеся"
+            "gigantix": "Отчаявшиеся",
+            "ancient": ""
         }
     }
 }

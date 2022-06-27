@@ -1,37 +1,26 @@
 {
-    "variable": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
+    "blue": {
+        "title": "상정 훈련：다크 펄스 요격전 R.2",
+        "clearCondition": "이는 다가올 싸움에 대비해 아카이브에서 재현된 상정 훈련이다.\n현재 설정에서는 중앙 에아리오에서의 격전이 조정된 상태로 재생된다.\n전투 기술을 구사하여 \"다크 펄스\"를 요격하라.",
+        "description": "대상 에너미 격파",
+        "failCondition": "I5회 전투 불능\n20:00 이상 경과"
     },
-    "aelioTroopers": {
-        "title": "에아리오 트루퍼즈",
-        "clearCondition": "대상 에너미 격파",
-        "description": "이곳은 각 아크스의 전투능력을 시험하는 배틀디아다.\n전투 기술을 구사하여 모든 에너미를 격파하라.\n※퀘스트 중에는 일부 부스트 효과가 무효"
+    "regular": {
+        "aelioTroopers": "에아리오 트루퍼즈",
+        "aelioDevastators": "에아리오 데바스테이터즈",
+        "retemTroopers": "리템 트루퍼즈",
+        "retemDevastators": "리템 데바스테이터즈",
+        "kvarisTroopers": "크바리스 트루퍼즈",
+        "kvarisDevastators": "크바리스 데바스테이터즈"
     },
-    "aelioDevastators": {
-        "title": "에아리오 데바스테이터즈",
-        "clearCondition": "대상 에너미 격파",
-        "description": "이곳은 각 아크스의 전투능력을 시험하는 배틀디아다.\n전투 기술을 구사하여 차례대로 나타나는 기간틱스를 격파하라.\n※퀘스트 중에는 일부 부스트 효과가 무효"
-    },
-    "retemTroopers": {
-        "title": "리템 트루퍼즈",
-        "clearCondition": "대상 에너미 격파",
-        "description": "여기는 각 아크스의 전투 능력을 시험하는 트레이니아다.\n전투 기술을 구사하여, 모든 에너미를 격파하라. \n\n※퀘스트 중에는 일부 부스트 효과가 무효\n※대상 아이템 환금이나 특정 창고로 이동하면 퀘스트 파기"
-    },
-    "retemDevastators": {
-        "title": "리템 데바스테이터즈",
-        "clearCondition": "대상 에너미 격파",
-        "description": "여기는 각 아크스의 전투 능력을 시험하는 트레이니아다.\n전투 기술을 구사하여, 계속해서 나타나는 기간틱스를 격파하라.\n\n※퀘스트 중에는 일부 부스트 효과가 무효\n※대상 아이템 환금이나 특정 창고로 이동하면 퀘스트 파기"
-    },
-    "kvarisTroopers": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
-    },
-    "kravisDevastators": {
-        "title": "",
-        "clearCondition": "",
-        "description": ""
+    "type": {
+        "yellow": {
+            "clearCondition": "에너미 쓰러뜨리기",
+            "description": "여기는 각 아크스의 전투 능력을 시험하는 배틀디아다.\n전투 기술을 구사하여 모든 에너미를 격파하라."
+        },
+        "purple": {
+            "clearCondition": "에너미 쓰러뜨리기",
+            "description": "여기는 각 아크스의 전투 능력을 시험하는 배틀디아다.\n전투 기술을 구사하여 차례대로 나타나는 기간틱스를 격파하라."
+        }
     }
 }

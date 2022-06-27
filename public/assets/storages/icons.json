@@ -58,11 +58,11 @@
     {"item": "kvaris_octopus", "category": "food", "size": 26},
     {"item": "kvaris_onion", "category": "food", "size": 26},
     {"item": "kvaris_persimmon", "category": "food", "size": 26},
-    {"item": "kvaris_persimmonNotable", "category": "food", "size": 26},
+    {"item": "kvaris_persimmonnotable", "category": "food", "size": 26},
     {"item": "kvaris_plum", "category": "food", "size": 26},
     {"item": "kvaris_snail", "category": "food", "size": 26},
     {"item": "kvaris_squid", "category": "food", "size": 26},
-    {"item": "kvaris_squidNotable", "category": "food", "size": 26},
+    {"item": "kvaris_squidnotable", "category": "food", "size": 26},
     
 
     {"item": "datapod", "category": "other", "size": 26},

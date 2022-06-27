@@ -76,7 +76,8 @@
         },
         "enemyTypes": {
             "dread": "Battle-Hardened",
-            "gigantix": "Gigantix"
+            "gigantix": "Gigantix",
+            "ancient": ""
         }
     }
 }

@@ -26,5 +26,12 @@
         "players": 4,
         "minBP": 1592,
         "enemyLv": 30
+    },
+    {
+        "id": "deepWell",
+        "lat":-708, "lng":367.5,
+        "players": 4,
+        "minBP": 2506,
+        "enemyLv": 55
     }
 ]

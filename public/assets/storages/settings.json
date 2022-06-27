@@ -17,7 +17,8 @@
             {"item": "photonquartz", "rarity": "common"},
             {"item": "photonchunk", "rarity": "common"},
             {"item": "photonscale", "rarity": "very-rare"},
-            {"item": "randomite", "rarity": "special"}
+            {"item": "pentalite", "rarity": "common"},
+            {"item": "blizzardium", "rarity": "very-rare"}
         ],
         "food": [
             {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common"},
@@ -48,20 +49,36 @@
             {"item": "retem_eggplant", "type": "vegetable", "prefix": "rich", "rarity": "common"},
             {"item": "retem_cranberries", "type": "vegetable", "prefix": "light", "rarity": "common"},
             {"item": "retem_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-            {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+            {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common"},
+
+            {"item": "kvaris_persimmon", "type": "fruit", "prefix": "rich", "rarity": "common"},
+            {"item": "kvaris_persimmonnotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare", "notable": true},
+            {"item": "kvaris_plum", "type": "fruit", "prefix": "light", "rarity": "common"},
+            {"item": "kvaris_guava", "type": "fruit", "prefix": "crisp", "rarity": "common"},
+            {"item": "kvaris_akebia", "type": "fruit", "prefix": "robust", "rarity": "common"},
+
+            {"item": "kvaris_snail", "type": "seafood", "prefix": "rich", "rarity": "common"},
+            {"item": "kvaris_octopus", "type": "seafood", "prefix": "light", "rarity": "common"},
+            {"item": "kvaris_squid", "type": "seafood", "prefix": "crisp", "rarity": "common"},
+            {"item": "kvaris_squidnotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare", "notable": true},
+            {"item": "kvaris_crayfish", "type": "seafood", "prefix": "robust", "rarity": "common"},
+
+            {"item": "kvaris_carrot", "type": "vegetable", "prefix": "rich", "rarity": "common"},
+            {"item": "kvaris_cabbage", "type": "vegetable", "prefix": "light", "rarity": "common"},
+            {"item": "kvaris_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
+            {"item": "kvaris_onion", "type": "vegetable", "prefix": "robust", "rarity": "common"}
         ],
         "container": [
-            {"item": "red", "rarity": "special"},
-            {"item": "green", "rarity": "common"}
+            {"item": "red", "rarity": "special"}
         ],
         "other": [
             {"item": "veteran", "rarity": "rare"},
             {"item": "alphareactor", "rarity": "very-rare"},
+            {"item": "snoal", "rarity": "very-rare"},
             {"item": "stellarseed", "rarity": "rare"},
             {"item": "stellargrace", "rarity": "special"},
             {"item": "datapod", "rarity": "places"},
-            {"item": "musicplace", "rarity": "places"},
-            {"item": "mischief", "rarity": "special"}
+            {"item": "musicplace", "rarity": "places"}
         ]
     },
     "visibility": {}

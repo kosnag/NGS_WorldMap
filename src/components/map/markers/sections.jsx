@@ -85,9 +85,26 @@ export default function Sections(){
                                     </level>
                                 </div>
                             </info>
-                            <span>{t("ui:Map.enemyTypes.gigantix")}</span>
-                            <border/>
-                            {t("enemies:"+x.gigantix)}
+                            {x.gigantix ? <>
+                                <span>{t("ui:Map.enemyTypes.gigantix")}</span>
+                                <border/>
+                                {t("enemies:"+x.gigantix)}
+                            </>:<Fragment/>}
+                            {x.ancient ? <>
+                                <span>{t("ui:Map.enemyTypes.ancient")}</span>
+                                <border/>
+                                {(()=>{
+                                    const jsx = [];
+                                    for (var i=0; i<x.ancient.length; i++){
+                                        if(i === x.ancient.length){
+                                            jsx.push(<>{t("enemies:"+x.ancient[i])}</>)
+                                        } else {
+                                            jsx.push(<>{t("enemies:"+x.ancient[i])},</>)
+                                        }
+                                    }
+                                    return jsx;
+                                })()}
+                            </>:<Fragment/>}
                         </>}
                         if(x.type === "combat"){return <>
                             <info>

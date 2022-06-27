@@ -17,122 +17,245 @@ Battledia:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={iconLib.battledia} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
-                <header>
-                    <span><menuicon/> {t("battledias:"+x.id+".title")}</span>
-                </header>
-                <content>
-                    {t("items:landmark.battledia.title")}
-                    <id>ID: {x.id}</id>
-                </content>
-            </tooltip-window></Tooltip>
-            <Popup ref={popupRef}><popup-window>
-                <header>
-                    <span><menuicon/> {t("items:landmark.battledia.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
-                </header>
-                <content>
-                    <select onChange={handleSelectChange}>
-                        {(()=>{
-                            const jsx = [];
-                            for (var i=0; i<x.ranks.length; i++){
-                                jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
-                            }
-                            return jsx;
-                        })()}
-                    </select>
-                    <br/><br/>
-                    <name>{t("battledias:"+x.id+".title")}</name>
-                    <br/>
-                    <info>
-                        <div>
-                            <level>
-                                <span>{t("ui:Map.maxPlayers")}</span>
-                                <border/>
-                                <value>{x.players}</value>
-                            </level>
-                            <level>
-                                <span>{t("ui:Map.requiredBP")}</span>
-                                <border/>
-                                <value>
-                                    {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].minBP}</>}})()}
-                                </value>
-                            </level>
-                            <level>
-                                <span>{t("ui:Map.enemyLv")}</span>
-                                <border/>
-                                <value>
-                                    {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].enemyLv}</>}})()}
-                                </value>
-                            </level>
-                        </div>
-                    </info>
-                    <cont>
-                        {(()=>{
-                            if(x.id === "variable"){
-                                return <img src="./assets/images/banners/urgents/seasonal.png" alt="" />
-                            } else {
-                                return <img src="./assets/images/banners/other/battledia.png" alt="" />
-                            }
-                        })()}
-                        {(()=>{
-                            const jsx = [];
-                            for (var i=0; i<x.ranks.length; i++){// eslint-disable-next-line
-                                jsx.push(<>{(()=>{
-                                    if(x.ranks[tier] != null){return (// eslint-disable-next-line
-                                        <info className={tier == i ? "" : "hidden"}>
-                                            <span>
-                                                {(()=>{
-                                                    if(x.type === "purple"){return t("ui:Map.rewards.possible")}
-                                                    if(x.type === "yellow"){return t("ui:Map.rewards.guaranteed")}
-                                                })()}
-                                            </span>
-                                            <border/>
-                                            <rewards>
-                                                <div>
-                                                    {(x.ranks[i].rewards.map((y=><>
-                                                        {(()=>{
-                                                            if (y.count != null){return (<>
-                                                                <l>{t(y.item)}</l>
-                                                                <r>{(()=>{if(
-                                                                    Number.isInteger(y.count) === true && (
-                                                                        y.item === "rewards:value.seasonalpoints"
-                                                                            ||
-                                                                        y.item === "rewards:value.meseta"
-                                                                            ||
-                                                                        y.item === "rewards:value.experience"
-                                                                    )
-                                                                ){
-                                                                    return (<>{y.count}</>)
-                                                                } else if (Number.isInteger(y.count) === true){
-                                                                    return (<>x{y.count}</>)
-                                                                } else {
-                                                                    return (<>{y.count}</>)
-                                                                }})()}</r>
-                                                            </>);
-                                                        } else {
-                                                            return (<full>{t(y.item)}</full>);
-                                                        }})()}
-                                                    </>)))}
-                                                </div>
-                                            </rewards>
+            <>{x.id === "blue" ? 
+                <>{
+                    x.available === true ? 
+                    <>{(()=>{
+                        const jsx = [];
+                        for(var w=0; w<x.coordinates.length; w++){jsx.push(
+                            <Marker icon={iconLib.battledia} position={[x.coordinates[w].lat,x.coordinates[w].lng]}>
+                                <Tooltip direction='top'><tooltip-window>
+                                    <header>
+                                        <span><menuicon/> {t("battledias:blue.title")}</span>
+                                    </header>
+                                    <content>
+                                        {t("items:landmark.battledia.title")}
+                                        <id>ID: {x.id}</id>
+                                    </content>
+                                </tooltip-window></Tooltip>
+                                <Popup ref={popupRef}><popup-window>
+                                    <header>
+                                        <span><menuicon/> {t("items:landmark.battledia.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
+                                    </header>
+                                    <content>
+                                        <select onChange={handleSelectChange}>
+                                            {(()=>{
+                                                const jsx = [];
+                                                for (var i=0; i<x.ranks.length; i++){
+                                                    jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
+                                                }
+                                                return jsx;
+                                            })()}
+                                        </select>
+                                        <br/><br/>
+                                        <name>{t("battledias:blue.title")}</name>
+                                        <br/>
+                                        <info>
+                                            <div>
+                                                <level>
+                                                    <span>{t("ui:Map.maxPlayers")}</span>
+                                                    <border/>
+                                                    <value>
+                                                        {x.ranks[tier] != null ? <>{x.ranks[tier].players}</> : <Fragment/>}
+                                                    </value>
+                                                </level>
+                                                <level>
+                                                    <span>{t("ui:Map.requiredBP")}</span>
+                                                    <border/>
+                                                    <value>
+                                                        {x.ranks[tier] != null ? <>{x.ranks[tier].minBP}</> : <Fragment/>}
+                                                    </value>
+                                                </level>
+                                                <level>
+                                                    <span>{t("ui:Map.enemyLv")}</span>
+                                                    <border/>
+                                                    <value>
+                                                        {x.ranks[tier] != null ? <>{x.ranks[tier].enemyLv}</> : <Fragment/>}
+                                                    </value>
+                                                </level>
+                                            </div>
                                         </info>
-                                    )}
-                                })()}</>)
-                            }
-                            return jsx;
-                        })()}
-                    </cont>
-                    <span>{t("ui:Map.clearCondition")}</span>
-                    <border/>
-                    {t("battledias:"+x.id+".clearCondition")}
-                    <br/><br/>
-                    <span>{t("ui:Map.description")}</span>
-                    <border/>
-                    {t("battledias:"+x.id+".description")}
-                </content>
-            </popup-window></Popup>
-        </Marker>
+                                        <cont>
+                                            <img src={x.img_url} alt="" />
+                                            {(()=>{
+                                                const jsx = [];
+                                                for (var i=0; i<x.ranks.length; i++){// eslint-disable-next-line
+                                                    jsx.push(<>{(()=>{
+                                                        if(x.ranks[tier] != null){return (// eslint-disable-next-line
+                                                            <info className={tier == i ? "" : "hidden"}>
+                                                                <span>{t("ui:Map.rewards.guaranteed")}</span>
+                                                                <border/>
+                                                                <rewards>
+                                                                    <div>
+                                                                        {(x.ranks[i].rewards.map((y=><>
+                                                                            {y.count != null ? <>
+                                                                                <l>{t(y.item)}</l>
+                                                                                <r>{Number.isInteger(y.count) === true && (
+                                                                                        y.item === "rewards:value.seasonalpoints"
+                                                                                            ||
+                                                                                        y.item === "rewards:value.meseta"
+                                                                                            ||
+                                                                                        y.item === "rewards:value.experience"
+                                                                                    ) ? <>{y.count}</> 
+                                                                                    :
+                                                                                    <>{Number.isInteger(y.count) === true ?
+                                                                                        <>x{y.count}</>
+                                                                                        :
+                                                                                        <>{y.count}</>}
+                                                                                    </>
+                                                                                }</r>
+                                                                            </>
+                                                                            :
+                                                                            <full>{t(y.item)}</full>
+                                                                            }
+                                                                        </>)))}
+                                                                    </div>
+                                                                </rewards>
+                                                            </info>
+                                                        )}
+                                                    })()}</>)
+                                                }
+                                                return jsx;
+                                            })()}
+                                        </cont>
+                                        <span>{t("ui:Map.clearCondition")}</span>
+                                        <border/>
+                                        {t("battledias:blue.clearCondition")}
+                                        {x.ranks[tier].sp_fail_condition ? <>
+                                            {x.ranks[tier].sp_fail_condition === true ? <>
+                                                <br/><br/>
+                                                <span>{t("ui:Map.failCondition")}</span>
+                                                <border/>
+                                                {t("battledias:blue.failCondition")}
+                                            </> : <Fragment/>}
+                                        </> : <Fragment/>}
+                                        <br/><br/>
+                                        <span>{t("ui:Map.description")}</span>
+                                        <border/>
+                                        {t("battledias:blue.description")}
+                                    </content>
+                                </popup-window></Popup>
+                            </Marker>
+                        )}
+                    return jsx;
+                    })()}
+                </>
+                :
+                <Fragment/>
+                }
+                </>
+                :
+                <Marker icon={iconLib.battledia} position={[x.lat,x.lng]}>
+                    <Tooltip direction='top'><tooltip-window>
+                        <header>
+                            <span><menuicon/> {t("battledias:regular."+x.id)}</span>
+                        </header>
+                        <content>
+                            {t("items:landmark.battledia.title")}
+                            <id>ID: {x.id}</id>
+                        </content>
+                    </tooltip-window></Tooltip>
+                    <Popup ref={popupRef}><popup-window>
+                        <header>
+                            <span><menuicon/> {t("items:landmark.battledia.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
+                        </header>
+                        <content>
+                            <select onChange={handleSelectChange}>
+                                {(()=>{
+                                    const jsx = [];
+                                    for (var i=0; i<x.ranks.length; i++){
+                                        jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
+                                    }
+                                    return jsx;
+                                })()}
+                            </select>
+                            <br/><br/>
+                            <name>{t("battledias:regular."+x.id)}</name>
+                            <br/>
+                            <info>
+                                <div>
+                                    <level>
+                                        <span>{t("ui:Map.maxPlayers")}</span>
+                                        <border/>
+                                        <value>{x.players}</value>
+                                    </level>
+                                    <level>
+                                        <span>{t("ui:Map.requiredBP")}</span>
+                                        <border/>
+                                        <value>
+                                            {x.ranks[tier] != null ? <>{x.ranks[tier].minBP}</> : <Fragment/>}
+                                        </value>
+                                    </level>
+                                    <level>
+                                        <span>{t("ui:Map.enemyLv")}</span>
+                                        <border/>
+                                        <value>
+                                            {x.ranks[tier] != null ? <>{x.ranks[tier].enemyLv}</> : <Fragment/>}
+                                        </value>
+                                    </level>
+                                </div>
+                            </info>
+                            <cont>
+                                <img src="./assets/images/banners/other/battledia.png" alt="" />
+                                {(()=>{
+                                    const jsx = [];
+                                    for (var i=0; i<x.ranks.length; i++){// eslint-disable-next-line
+                                        jsx.push(<>{(()=>{
+                                            if(x.ranks[tier] != null){return (// eslint-disable-next-line
+                                                <info className={tier == i ? "" : "hidden"}>
+                                                    <span>
+                                                        {(()=>{
+                                                            if(x.type === "purple"){return t("ui:Map.rewards.possible")}
+                                                            if(x.type === "yellow"){return t("ui:Map.rewards.guaranteed")}
+                                                        })()}
+                                                    </span>
+                                                    <border/>
+                                                    <rewards>
+                                                        <div>
+                                                            {(x.ranks[i].rewards.map((y=><>
+                                                                {(()=>{
+                                                                    if (y.count != null){return (<>
+                                                                        <l>{t(y.item)}</l>
+                                                                        <r>{(()=>{if(
+                                                                            Number.isInteger(y.count) === true && (
+                                                                                y.item === "rewards:value.seasonalpoints"
+                                                                                    ||
+                                                                                y.item === "rewards:value.meseta"
+                                                                                    ||
+                                                                                y.item === "rewards:value.experience"
+                                                                            )
+                                                                        ){
+                                                                            return (<>{y.count}</>)
+                                                                        } else if (Number.isInteger(y.count) === true){
+                                                                            return (<>x{y.count}</>)
+                                                                        } else {
+                                                                            return (<>{y.count}</>)
+                                                                        }})()}</r>
+                                                                    </>);
+                                                                } else {
+                                                                    return (<full>{t(y.item)}</full>);
+                                                                }})()}
+                                                            </>)))}
+                                                        </div>
+                                                    </rewards>
+                                                </info>
+                                            )}
+                                        })()}</>)
+                                    }
+                                    return jsx;
+                                })()}
+                            </cont>
+                            <span>{t("ui:Map.clearCondition")}</span>
+                            <border/>
+                            {t("battledias:type."+x.type+".clearCondition")}
+                            <br/><br/>
+                            <span>{t("ui:Map.description")}</span>
+                            <border/>
+                            {t("battledias:type."+x.type+".description")}
+                        </content>
+                    </popup-window></Popup>
+                </Marker>
+            }</>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
 Cocoon:()=>{
@@ -392,14 +515,14 @@ UQ:()=>{
                                 <span>{t("ui:Map.requiredBP")}</span>
                                 <border/>
                                 <value>
-                                    {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].minBP}</>}})()}
+                                    {x.ranks[tier] != null ? <>{x.ranks[tier].minBP}</> : <Fragment/>}
                                 </value>
                             </level>
                             <level>
                                 <span>{t("ui:Map.enemyLv")}</span>
                                 <border/>
                                 <value>
-                                    {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].enemyLv}</>}})()}
+                                    {x.ranks[tier] != null ? <>{x.ranks[tier].enemyLv}</> : <Fragment/>}
                                 </value>
                             </level>
                         </div>

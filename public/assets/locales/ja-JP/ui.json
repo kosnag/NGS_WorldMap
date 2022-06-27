@@ -76,7 +76,8 @@
         },
         "enemyTypes": {
             "dread": "老練の",
-            "gigantix": "絶望の"
+            "gigantix": "絶望の",
+            "ancient": ""
         }
     }
 }

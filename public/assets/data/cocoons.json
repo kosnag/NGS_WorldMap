@@ -96,5 +96,47 @@
         "players": 4,
         "minBP": 1223,
         "enemyLv": 17
+    },
+    {
+        "id": "holibleFlapping",
+        "lat":-717, "lng":72,
+        "players": 4,
+        "minBP": 2082,
+        "enemyLv": 44
+    },
+    {
+        "id": "crazyTail",
+        "lat":-857.5, "lng":832.5,
+        "players": 4,
+        "minBP": 2018,
+        "enemyLv": 42
+    },
+    {
+        "id": "slopeTile",
+        "lat":-694.5, "lng":622,
+        "players": 4,
+        "minBP": 2018,
+        "enemyLv": 42
+    },
+    {
+        "id": "clockworkJail",
+        "lat":-557.5, "lng":348.75,
+        "players": 4,
+        "minBP": 2082,
+        "enemyLv": 44
+    },
+    {
+        "id": "wildAvalanche",
+        "lat":-488.25, "lng":629.75,
+        "players": 4,
+        "minBP": 2181,
+        "enemyLv": 47
+    },
+    {
+        "id": "vanishingPath2",
+        "lat":-368.5, "lng":501,
+        "players": 4,
+        "minBP": 2181,
+        "enemyLv": 47
     }
 ]

@@ -22,18 +22,18 @@
             "westRetem": "서부 리템"
         },
         "kvaris": {
-            "centralKvaris": "",
-            "southKvaris": "",
-            "northKvaris": "",
-            "westKvaris": "",
-            "rayjordGorge": "",
-            "beluganaRuins": "",
-            "lostCentral": ""
+            "centralKvaris": "중앙 크바리스",
+            "southKvaris": "남부 크바리스",
+            "northKvaris": "북부 크바리스",
+            "westKvaris": "서부 크바리스",
+            "rayjordGorge": "레이요르드 협만",
+            "beluganaRuins": "베르가나 유적",
+            "lostCentral": "로스트 센트럴"
         }
     },
     "type": {
-        "lobby": "로비",
-        "gathering": "개더링",
-        "combat": "전투"
+        "lobby": "로비 에어리어",
+        "gathering": "탐색 섹션",
+        "combat": "전투 섹션"
     }
 }
