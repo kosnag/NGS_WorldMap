@@ -114,49 +114,49 @@
     "crazyTail": {
         "title": "クレイジーテイル",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、“パンゴラン”を撃破せよ。",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "パンゴラン倒せ！",
+        "subMission1": "3:30未満でクリア",
+        "subMission2": "900以上のダメージを2回以上与えてクリア",
+        "subMission3": "ダメージ回数7回未満でクリア"
     },
     "slopeTile": {
         "title": "スロープスタイル",
         "description": "ここは、アークス各人の走破能力を試すトレイニアである。“フローティングボード”を用いて、目標地点に到達せよ。",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "エネミーを倒せ！",
+        "subMission1": "2:20未満でクリア",
+        "subMission2": "グライドの使用2回未満でクリア",
+        "subMission3": "ポイントキューブを40個取得してクリア"
     },
     "wildAvalanche": {
         "title": "ワイルドアバランチ",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、“アイスバンサー”、“アイスバンシー”を撃破せよ。",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "エネミーを2体倒す",
+        "subMission1": "3:00未満でクリア",
+        "subMission2": "ダメージ回数12回未満でクリア",
+        "subMission3": "レスタサインの使用3回未満でクリア"
     },
     "vanishingPath2": {
         "title": "バニシングウェイⅡ",
         "description": "ここは、アークス各人の走破能力を試すトレイニアである。“フォトンダッシュ”を用いて、目標地点に到達せよ。",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "ゴールへ到達せよ！",
+        "subMission1": "2:00未満でクリア",
+        "subMission2": "ポイントキューブを6個取得してクリア",
+        "subMission3": "グライドの使用3回未満でクリア"
     },
     "clockworkJail": {
         "title": "クロックワークジェイル",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、全てのエネミーを撃破せよ。",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "マーカライドを倒せ！",
+        "subMission1": "3:00未満でクリア",
+        "subMission2": "戦闘不能回数1回未満でクリア",
+        "subMission3": "ダメージ回数10回未満でクリア"
     },
     "holibleFlapping": {
         "title": "ホリブルフラッピング",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、“マーカライド”を撃破せよ。",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "エネミーを29体倒す",
+        "subMission1": "5:00未満でクリア",
+        "subMission2": "戦闘不能回数1回未満でクリア",
+        "subMission3": "ダメージ回数12回未満でクリア"
     }
 }
