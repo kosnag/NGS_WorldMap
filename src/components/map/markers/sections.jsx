@@ -96,10 +96,10 @@ export default function Sections(){
                                 {(()=>{
                                     const jsx = [];
                                     for (var i=0; i<x.ancient.length; i++){
-                                        if(i === x.ancient.length){
+                                        if (i === 0){
                                             jsx.push(<>{t("enemies:"+x.ancient[i])}</>)
                                         } else {
-                                            jsx.push(<>{t("enemies:"+x.ancient[i])},</>)
+                                            jsx.push(<>, {t("enemies:"+x.ancient[i])}</>)
                                         }
                                     }
                                     return jsx;
