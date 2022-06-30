@@ -114,49 +114,49 @@
     "crazyTail": {
         "title": "Сумасшедший хвост",
         "description": "Это Треиниа, где ARKS могут проверить свои боевые способности. Покажите, на что способны, чтобы одолеть Пангорана.",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте Пангорана",
+        "subMission1": "Пройдите за 3:30",
+        "subMission2": "Нанесите 900 урона 2 раза",
+        "subMission3": "Получите не более 7 ударов"
     },
     "slopeTile": {
         "title": "Наклонный стиль",
         "description": "Это Трения, проверяющая способность к бегу каждого ARKS. Используйте [Плавающую доску], чтобы добраться до цели.",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте врагов!",
+        "subMission1": "Пройдите за 2:20",
+        "subMission2": "Используйте парение менее 2 раз",
+        "subMission3": "Соберите 40 очков"
     },
     "wildAvalanche": {
         "title": "Дикая лавина",
         "description": "Это Треиниа, где ARKS могут проверить свои боевые способности. Используя все свои умения, одолейте Айс Банса и Айс Банши.",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте 2 врагов",
+        "subMission1": "Пройдите за 3:00",
+        "subMission2": "Получите не более 12 ударов",
+        "subMission3": "Пройдите с использованием Resta Sign менее чем 3 раза"
     },
     "vanishingPath2": {
         "title": "Исчезающий путь 2",
         "description": "Это Трения, проверяющая способность к бегу каждого ARKS. Используя фотонный рывок, доберитесь до целевой точки.",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Достигните цели!",
+        "subMission1": "Пройдите за 2:00",
+        "subMission2": "Соберите 6 очков",
+        "subMission3": "Используйте парение менее 3 раза"
     },
     "clockworkJail": {
         "title": "Заводная тюрьма",
         "description": "Это Треиниа, где ARKS могут проверить свои боевые способности. Используя все доступные вам приёмы, одолейте своих врагов.",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте Макарайдо",
+        "subMission1": "Пройдите за 3:00",
+        "subMission2": "Пройдите менее чем с 1 смертью",
+        "subMission3": "Получите не более 10 ударов"
     },
     "holibleFlapping": {
         "title": "Ужасное хлопанье",
         "description": "Это Треиниа, где ARKS могут проверить свои боевые способности. Покажите, на что способны, чтобы одолеть Макарайдо.",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "Одолейте 29 врагов",
+        "subMission1": "Пройдите за 5:00",
+        "subMission2": "Пройдите менее чем с 1 смертью",
+        "subMission3": "Получите не более 12 ударов"
     }
 }
