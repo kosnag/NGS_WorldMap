@@ -1,7 +1,7 @@
-import React, { useState, Fragment, useEffect, Circle } from 'react';
+import React, { useState, Fragment, useEffect } from 'react';
 import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
-import { Marker, Tooltip } from "react-leaflet";
+import { Marker, Tooltip, Circle } from "react-leaflet";
 
 const Template = (props) => {
     const {t} = useTranslation();
@@ -17,7 +17,7 @@ const Template = (props) => {
             data.map((x=>
                 <Circle 
                     center={[x.lat,x.lng]}
-                    radius={25}
+                    radius={30}
                     pathOptions={{
                         color: 'pink',
                         fillColor: 'lightblue',
