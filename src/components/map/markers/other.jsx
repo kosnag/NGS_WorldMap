@@ -54,30 +54,42 @@ AlphaReactor:()=>{
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
-Snaol:()=>{
+Snoal:()=>{
     const {t} = useTranslation();
-    const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.other.snoal));
         return ()=>clearInterval(i);
     });
-    useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__snoal").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
-    if(data !== null){return (marker ? (data.map((x=>
-        <Marker icon={iconLib.snoal} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
-                <header>
-                    <span><menuicon/> {t("items:other.snoal.title")}</span>
-                </header>
-                <content>
-                    {t("items:other.snoal.description")}
-                    <br/>
-                    {t("ui:Map.placedBy")}: {x.contributer}
-                    <id>ID: snoal{x.id}</id>
-                </content>
-            </tooltip-window></Tooltip>
-        </Marker>
-    ))):<Fragment/>)}else{return <Fragment/>}
+    const data = [
+        {"lat": "-201","lng": "522",},
+        {"lat": "-172","lng": "562",},
+        {"lat": "-255","lng": "568",},
+        {"lat": "-298","lng": "582",},
+        {"lat": "-348","lng": "579",}
+    ];
+    return (marker ? (data.map((x=>
+        <Circle 
+            center={[x.lat,x.lng]}
+            radius={20}
+            pathOptions={{
+                color: 'gold',
+                fillColor: 'yellow',
+                fillOpacity: '0.25'
+            }}
+        >
+            <Marker icon={iconLib.snoal} position={[x.lat,x.lng]}>
+                <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+                    <header>
+                        <span><menuicon/> {t("items:other.snoal.title")}</span>
+                    </header>
+                    <content>
+                        {t("items:other.snoal.description")}
+                    </content>
+                </tooltip-window></Tooltip>
+            </Marker>
+        </Circle>
+    ))):<Fragment/>)
 },
 StellarFragment:()=>{
     const {t} = useTranslation();
@@ -262,4 +274,5 @@ export default function Other(){return (<>
 <Load.Datapod/>
 <Load.BGM/>
 <Load.Mischief/>
+<Load.Snoal/>
 </>)};
