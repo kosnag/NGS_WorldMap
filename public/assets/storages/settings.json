@@ -78,7 +78,8 @@
             {"item": "stellarseed", "rarity": "rare"},
             {"item": "stellargrace", "rarity": "special"},
             {"item": "datapod", "rarity": "places"},
-            {"item": "musicplace", "rarity": "places"}
+            {"item": "musicplace", "rarity": "places"},
+            {"item": "mischief", "rarity": "special"}
         ]
     },
     "visibility": {}
