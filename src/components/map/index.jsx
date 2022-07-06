@@ -60,7 +60,7 @@ const Map = () => {
             minZoom={0}
             maxZoom={3}
             crs={L.CRS.Simple}
-            maxBounds={[[bounds.South-100,bounds.West-250],[bounds.North+400,bounds.East+250]]}
+            maxBounds={[[bounds.South-100,bounds.West-250],[bounds.North+250,bounds.East+250]]}
             center={[bounds.South/2,bounds.East/2]}
             zoomControl={false}
             attributionControl={false}
