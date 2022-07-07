@@ -264,6 +264,33 @@
         ]
     },
     {
+        "id": "miningRigDefenceRetem",
+        "lat":-1668, "lng":1340,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 2049,
+                "enemyLv": 45,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1500
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "id": "amsVera",
         "lat":-305, "lng":496.5,
         "players": 8,
