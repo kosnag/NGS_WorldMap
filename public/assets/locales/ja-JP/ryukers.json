@@ -37,6 +37,8 @@
     "mtIhanaWest": "イハナ山：西",
     "mtIhanaEast": "イハナ山：東",
     "lostCentral": "ロストセントラル",
-    "mtLatva": "ラトヴァ山",
-    "mistraWoods": "ミストラ樹林"
+    "mtLatvaNorth": "ラトヴァ山：北",
+    "mtLatvaSouth": "ラトヴァ山：南",
+    "mistraWoodsNorth": "ミストラ樹林：北",
+    "mistraWoodsSouth": "ミストラ樹林：南"
 }

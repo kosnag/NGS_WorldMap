@@ -37,6 +37,8 @@
     "mtIhanaWest": "이하나 산: 서",
     "mtIhanaEast": "이하나 산: 동",
     "lostCentral": "로스트 센트럴",
-    "mtLatva": "라트바산",
-    "mistraWoods": "미스트라 수림"
+    "mtLatvaNorth": "라트바산: 북",
+    "mtLatvaSouth": "라트바산: 남",
+    "mistraWoodsNorth": "미스트라 수림: 북",
+    "mistraWoodsSouth": "미스트라 수림: 남"
 }

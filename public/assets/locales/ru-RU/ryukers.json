@@ -37,6 +37,8 @@
     "mtIhanaWest": "Гора Ихана: Запад",
     "mtIhanaEast": "Гора Ихана: Восток",
     "lostCentral": "Утраченный Централ",
-    "mtLatva": "Гора Ратва",
-    "mistraWoods": "Лес Мистра"
+    "mtLatvaNorth": "Гора Ратва: Север",
+    "mtLatvaSouth": "Гора Ратва: Юг",
+    "mistraWoodsNorth": "Лес Мистра: Север",
+    "mistraWoodsSouth": "Лес Мистра: Юг"
 }

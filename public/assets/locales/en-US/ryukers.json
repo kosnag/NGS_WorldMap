@@ -37,6 +37,8 @@
     "mtIhanaWest": "Mt. Ihana: West",
     "mtIhanaEast": "Mt. Ihana: East",
     "lostCentral": "Lost Central",
-    "mtLatva": "Mt. Latva",
-    "mistraWoods": "Mistra Woods"
+    "mtLatvaNorth": "Mt. Latva: North",
+    "mtLatvaSouth": "Mt. Latva: South",
+    "mistraWoodsNorth": "Mistra Woods: North",
+    "mistraWoodsSouth": "Mistra Woods: South"
 }
