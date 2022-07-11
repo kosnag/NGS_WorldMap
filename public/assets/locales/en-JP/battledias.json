@@ -1,9 +1,9 @@
 {
-    "blue": {
-        "title": "Simulation: Dark Falz Interception",
-        "clearCondition": "This is training simulation for future battles, reconstructed using archived combat data. Relive the chaotic battle in Central Aelio, and intercept Dark Falz!",
-        "description": "Defeat the Dark Falz",
-        "failCondition": "Incapacitated 5 times or more \nTake longer than 20:00"
+    "valua": {
+        "title": "",
+        "clearCondition": "",
+        "description": "",
+        "failCondition": ""
     },
     "regular": {
         "aelioTroopers": "Aelio Troopers",
