@@ -28,9 +28,9 @@
             "title": "Trinitas",
             "description": "Trinitas is a kind of training facility that exists in Retem. It is more difficult to complete than a Trainia, and the level of the enemies inside is based on the level of the highest-levelled Party Member."
         },
-        "race": {
-            "title": "Field Races",
-            "description": "In Field Races, players race against each other in Exploration Sectors and compete with time and points.\nYou can start a race from Racing Consoles, located near Ryuker Devices in Exploration Sectors.\nYou will leave a race if you move to another sector or teleport."
+        "triggers": {
+            "title": "Triggers",
+            "description": ""
         }
     },
     "mineral": {
