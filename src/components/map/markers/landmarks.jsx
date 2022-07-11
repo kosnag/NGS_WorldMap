@@ -301,29 +301,29 @@ Trigger:()=>{
                         })()}
                     </buttons>
                     <content>
-                        <name>{quest !== null ? t("triggers:"+data[quest].id+".title") : "null"}</name>
+                        <name>{quest !== null ? t("triggers:"+data[quest].id+".title") : t("items:nothing")}</name>
                         <br/>
                         <info>
                             <div>
                                 <level>
                                     <span>{t("ui:Map.maxPlayers")}</span>
                                     <border/>
-                                    <value>{quest !== null ? data[quest].players : "null"}</value>
+                                    <value>{quest !== null ? data[quest].players : "NaN"}</value>
                                 </level>
                                 <level>
                                     <span>{t("ui:Map.requiredBP")}</span>
                                     <border/>
-                                    <value>{quest !== null ? data[quest].minBP : "null"}</value>
+                                    <value>{quest !== null ? data[quest].minBP : "NaN"}</value>
                                 </level>
                                 <level>
                                     <span>{t("ui:Map.enemyLv")}</span>
                                     <border/>
-                                    <value>{quest !== null ? data[quest].enemyLv : "null"}</value>
+                                    <value>{quest !== null ? data[quest].enemyLv : "NaN"}</value>
                                 </level>
                             </div>
                         </info>
                         <cont>
-                            <img src={quest !== null ? data[quest].img_url : "./assets/images/banners/urgents/darkFalzInterception.png"} alt="" />
+                            <img src={quest !== null ? data[quest].img_url : "./assets/images/banners/other/null.png"} alt="" />
                             <info>
                                 <span>{t("ui:Map.rewards.firstTime")}</span>
                                 <border/>
@@ -342,7 +342,7 @@ Trigger:()=>{
                                                 }})()}
                                             </r>
                                         </div>
-                                    )) : "null")}
+                                    )) : "")}
                                 </rewards>
                                 <br/>
                                 <span>{t("ui:Map.rewards.guaranteed")}</span>
@@ -362,23 +362,23 @@ Trigger:()=>{
                                                 }})()}
                                             </r>
                                         </div>
-                                    )) : "null")}
+                                    )) : "")}
                                 </rewards>
                             </info>
                         </cont>
                         <span>{t("ui:Map.description")}</span>
                         <border/>
-                        {quest !== null ? t("triggers:"+data[quest].id+".description") : "null"}
+                        {quest !== null ? t("triggers:"+data[quest].id+".description") : "NaN"}
                         <br/><br/>
                         {quest !== null ? (data[quest].sp_fail_condition === true ? <>
                         <span>{t("ui:Map.failCondition")}</span>
                         <border/>
-                        {quest !== null ? t("triggers:"+data[quest].id+".failCondition") : "null"}
+                        {quest !== null ? t("triggers:"+data[quest].id+".failCondition") : "NaN"}
                         <br/><br/>
                         </> : <Fragment/>):<Fragment/>}
                         <span>{t("ui:Map.clearCondition")}</span>
                         <border/>
-                        {quest !== null ? t("triggers:"+data[quest].id+".clearCondition") : "null"}
+                        {quest !== null ? t("triggers:"+data[quest].id+".clearCondition") : "NaN"}
                     </content>
                 </columns>
             </popupwindow></Popup>
