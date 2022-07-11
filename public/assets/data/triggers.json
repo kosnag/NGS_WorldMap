@@ -1,0 +1,53 @@
+[
+    {
+        "id": "darkFalzInterception",
+        "img_url": "./assets/images/banners/urgents/darkFalzInterception.png",
+        "minBP": 1898,
+        "enemyLv": 40,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "rewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 20000
+            },
+            {
+                "item": "items:mineral.photonscale.title",
+                "count": 12
+            }
+        ]
+    },
+    {
+        "id": "darkFalzInterceptionR2",
+        "img_url": "./assets/images/banners/urgents/darkFalzInterception.png",
+        "minBP": 2647,
+        "enemyLv": 60,
+        "players": 4,
+        "sp_fail_condition": true,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "rewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 20000
+            },
+            {
+                "item": "items:mineral.photonscale.title",
+                "count": 12
+            },
+            {
+                "item": "rewards:item.soul_augments",
+                "count": 3
+            }
+        ]
+    }
+]
