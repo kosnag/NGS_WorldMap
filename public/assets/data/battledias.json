@@ -1,64 +1,5 @@
 [
     {
-        "id": "blue",
-        "available": true,
-        "img_url": "./assets/images/banners/urgents/trigger.png",
-        "coordinates": [
-            {"lat":-1435, "lng":643.5},
-            {"lat":-1691.25, "lng":1571.625},
-            {"lat":-588.5, "lng":750.25}
-        ],
-        "ranks": [
-            {
-                "minBP": 1898,
-                "enemyLv": 40,
-                "players": 8,
-                "firstRewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 10000
-                    }
-                ],
-                "rewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 20000
-                    },
-                    {
-                        "item": "items:mineral.photonscale.title",
-                        "count": 12
-                    }
-                ]
-            },
-            {
-                "sp_fail_condition": true,
-                "minBP": 2647,
-                "enemyLv": 60,
-                "players": 4,
-                "firstRewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 10000
-                    }
-                ],
-                "rewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 20000
-                    },
-                    {
-                        "item": "items:mineral.photonscale.title",
-                        "count": 12
-                    },
-                    {
-                        "item": "rewards:item.soul_augments",
-                        "count": 3
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": "aelioTroopers",
         "type": "yellow",
         "lat":-1481.75, "lng":34.5,
@@ -287,7 +228,7 @@
     {
         "id": "kvarisDevastators",
         "type": "purple",
-        "lat":-380, "lng":285,
+        "lat":-309, "lng":365,
         "players": 4,
         "ranks": [
             {
