@@ -17,23 +17,27 @@ Battledia:()=>{
     });
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-            <>{x.id === "blue" ? 
+            <>{x.id === "valua" ? 
                 <>{
                     x.available === true ? 
                     <>{(()=>{
+                    const coordinates = [
+                        {"lat":-1484.25, "lng":620.25},
+                        {"lat":-1624.875, "lng":1589.75}
+                    ]
                         const jsx = [];
-                        for(var w=0; w<x.coordinates.length; w++){jsx.push(
-                            <Marker icon={iconLib.battledia} position={[x.coordinates[w].lat,x.coordinates[w].lng]}>
-                                <Tooltip direction='top'><tooltip-window>
+                        for(var w=0; w<coordinates.length; w++){jsx.push(
+                            <Marker icon={iconLib.battledia_valua} position={[coordinates[w].lat,coordinates[w].lng]}>
+                                <Tooltip direction='top'><tooltipwindow>
                                     <header>
-                                        <span><menuicon/> {t("battledias:blue.title")}</span>
+                                        <span><menuicon/> {t("battledias:valua.title")}</span>
                                     </header>
                                     <content>
                                         {t("items:landmark.battledia.title")}
-                                        <id>ID: {x.id}</id>
+                                        <id>ID: valua</id>
                                     </content>
-                                </tooltip-window></Tooltip>
-                                <Popup ref={popupRef}><popup-window>
+                                </tooltipwindow></Tooltip>
+                                <Popup ref={popupRef}><popupwindow>
                                     <header>
                                         <span><menuicon/> {t("items:landmark.battledia.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                                     </header>
@@ -41,14 +45,14 @@ Battledia:()=>{
                                         <select onChange={handleSelectChange}>
                                             {(()=>{
                                                 const jsx = [];
-                                                for (var i=0; i<x.ranks.length; i++){
-                                                    jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
-                                                }
+                                                for (var i=0; i<x.ranks.length; i++){jsx.push(
+                                                    <option value={i}>{t("ui:Map.rank")} {i+1}</option>
+                                                )}
                                                 return jsx;
                                             })()}
                                         </select>
                                         <br/><br/>
-                                        <name>{t("battledias:blue.title")}</name>
+                                        <name>{t("battledias:valua.title")}</name>
                                         <br/>
                                         <info>
                                             <div>
@@ -76,7 +80,7 @@ Battledia:()=>{
                                             </div>
                                         </info>
                                         <cont>
-                                            <img src={x.img_url} alt="" />
+                                            <img src="./assets/images/banners/other/valua.png" alt="" />
                                             {(()=>{
                                                 const jsx = [];
                                                 for (var i=0; i<x.ranks.length; i++){// eslint-disable-next-line
@@ -118,23 +122,15 @@ Battledia:()=>{
                                                 return jsx;
                                             })()}
                                         </cont>
-                                        <span>{t("ui:Map.clearCondition")}</span>
-                                        <border/>
-                                        {t("battledias:blue.clearCondition")}
-                                        {x.ranks[tier].sp_fail_condition ? <>
-                                            {x.ranks[tier].sp_fail_condition === true ? <>
-                                                <br/><br/>
-                                                <span>{t("ui:Map.failCondition")}</span>
-                                                <border/>
-                                                {t("battledias:blue.failCondition")}
-                                            </> : <Fragment/>}
-                                        </> : <Fragment/>}
-                                        <br/><br/>
                                         <span>{t("ui:Map.description")}</span>
                                         <border/>
-                                        {t("battledias:blue.description")}
+                                        {t("battledias:valua.description")}
+                                        <br/><br/>
+                                        <span>{t("ui:Map.clearCondition")}</span>
+                                        <border/>
+                                        {t("battledias:valua.clearCondition")}
                                     </content>
-                                </popup-window></Popup>
+                                </popupwindow></Popup>
                             </Marker>
                         )}
                     return jsx;
@@ -145,8 +141,11 @@ Battledia:()=>{
                 }
                 </>
                 :
-                <Marker icon={iconLib.battledia} position={[x.lat,x.lng]}>
-                    <Tooltip direction='top'><tooltip-window>
+                <Marker icon={(()=>{
+                    if(x.type === "yellow"){return iconLib.battledia_yellow}
+                    if(x.type === "purple"){return iconLib.battledia_purple}
+                })()} position={[x.lat,x.lng]}>
+                    <Tooltip direction='top'><tooltipwindow>
                         <header>
                             <span><menuicon/> {t("battledias:regular."+x.id)}</span>
                         </header>
@@ -154,8 +153,8 @@ Battledia:()=>{
                             {t("items:landmark.battledia.title")}
                             <id>ID: {x.id}</id>
                         </content>
-                    </tooltip-window></Tooltip>
-                    <Popup ref={popupRef}><popup-window>
+                    </tooltipwindow></Tooltip>
+                    <Popup ref={popupRef}><popupwindow>
                         <header>
                             <span><menuicon/> {t("items:landmark.battledia.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                         </header>
@@ -163,9 +162,9 @@ Battledia:()=>{
                             <select onChange={handleSelectChange}>
                                 {(()=>{
                                     const jsx = [];
-                                    for (var i=0; i<x.ranks.length; i++){
-                                        jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
-                                    }
+                                    for (var i=0; i<x.ranks.length; i++){jsx.push(
+                                        <option value={i}>{t("ui:Map.rank")} {i+1}</option>
+                                    )}
                                     return jsx;
                                 })()}
                             </select>
@@ -245,18 +244,146 @@ Battledia:()=>{
                                     return jsx;
                                 })()}
                             </cont>
-                            <span>{t("ui:Map.clearCondition")}</span>
-                            <border/>
-                            {t("battledias:type."+x.type+".clearCondition")}
-                            <br/><br/>
                             <span>{t("ui:Map.description")}</span>
                             <border/>
                             {t("battledias:type."+x.type+".description")}
+                            <br/><br/>
+                            <span>{t("ui:Map.clearCondition")}</span>
+                            <border/>
+                            {t("battledias:type."+x.type+".clearCondition")}
                         </content>
-                    </popup-window></Popup>
+                    </popupwindow></Popup>
                 </Marker>
             }</>
     ))):<Fragment/>)}else{return <Fragment/>}
+},
+Trigger:()=>{
+    const {t} = useTranslation();
+    const popupRef = useRef();
+    const [data,setData] = useState([]);
+    const [marker,setMarker] = useState([]);
+    const [quest,setQuest] = useState(null);
+    useEffect(()=>{
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.triggers));
+        return ()=>clearInterval(i);
+    });
+    const coordinates = [
+        {"lat":-1435, "lng":643.5},
+        {"lat":-1691.25, "lng":1571.625},
+        {"lat":-588.5, "lng":750.25}
+    ]
+    useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/triggers.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    if(data !== null){return(marker ? (coordinates.map(c=>
+        <Marker icon={iconLib.triggers} position={[c.lat,c.lng]}>
+            <Tooltip direction='top'><tooltipwindow>
+                <header>
+                    <span><menuicon/> {t("items:landmark.triggers.title")}</span>
+                </header>
+                <content>
+                    {t("items:landmark.triggers.description")}
+                </content>
+            </tooltipwindow></Tooltip>
+            <Popup ref={popupRef}><popupwindow className="trigger">
+                <header>
+                    <span><menuicon/> {t("items:landmark.triggers.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
+                </header>
+                <columns>
+                    <buttons>
+                        {(()=>{
+                            var jsx = [];
+                            for(let q=0; q<data.length; q++){jsx.push(
+                                <button
+                                    className={q === quest ? "active" : ""}
+                                    onClick={()=>setQuest(q)}
+                                >{t("triggers:"+data[q].id+".title")}</button>
+                            )}
+                            return jsx;
+                        })()}
+                    </buttons>
+                    <content>
+                        <name>{quest !== null ? t("triggers:"+data[quest].id+".title") : "null"}</name>
+                        <br/>
+                        <info>
+                            <div>
+                                <level>
+                                    <span>{t("ui:Map.maxPlayers")}</span>
+                                    <border/>
+                                    <value>{quest !== null ? data[quest].players : "null"}</value>
+                                </level>
+                                <level>
+                                    <span>{t("ui:Map.requiredBP")}</span>
+                                    <border/>
+                                    <value>{quest !== null ? data[quest].minBP : "null"}</value>
+                                </level>
+                                <level>
+                                    <span>{t("ui:Map.enemyLv")}</span>
+                                    <border/>
+                                    <value>{quest !== null ? data[quest].enemyLv : "null"}</value>
+                                </level>
+                            </div>
+                        </info>
+                        <cont>
+                            <img src={quest !== null ? data[quest].img_url : "./assets/images/banners/urgents/darkFalzInterception.png"} alt="" />
+                            <info>
+                                <span>{t("ui:Map.rewards.firstTime")}</span>
+                                <border/>
+                                <rewards>
+                                    {(quest !== null ? data[quest].firstRewards.map((y=>
+                                        <div>
+                                            <l>{t(y.item)}</l>
+                                            <r>
+                                                {(()=>{switch (y.item){
+                                                    case "meseta":
+                                                    case "season_points":
+                                                    case "experience":
+                                                        return (<>{y.count}</>)
+                                                    default:
+                                                        return (<>x{y.count}</>)
+                                                }})()}
+                                            </r>
+                                        </div>
+                                    )) : "null")}
+                                </rewards>
+                                <br/>
+                                <span>{t("ui:Map.rewards.guaranteed")}</span>
+                                <border/>
+                                <rewards>
+                                    {(quest !== null ? data[quest].rewards.map((y=>
+                                        <div>
+                                            <l>{t(y.item)}</l>
+                                            <r>
+                                                {(()=>{switch (y.item){
+                                                    case "meseta":
+                                                    case "season_points":
+                                                    case "experience":
+                                                        return (<>{y.count}</>)
+                                                    default:
+                                                        return (<>x{y.count}</>)
+                                                }})()}
+                                            </r>
+                                        </div>
+                                    )) : "null")}
+                                </rewards>
+                            </info>
+                        </cont>
+                        <span>{t("ui:Map.description")}</span>
+                        <border/>
+                        {quest !== null ? t("triggers:"+data[quest].id+".description") : "null"}
+                        <br/><br/>
+                        {quest !== null ? (data[quest].sp_fail_condition === true ? <>
+                        <span>{t("ui:Map.failCondition")}</span>
+                        <border/>
+                        {quest !== null ? t("triggers:"+data[quest].id+".failCondition") : "null"}
+                        <br/><br/>
+                        </> : <Fragment/>):<Fragment/>}
+                        <span>{t("ui:Map.clearCondition")}</span>
+                        <border/>
+                        {quest !== null ? t("triggers:"+data[quest].id+".clearCondition") : "null"}
+                    </content>
+                </columns>
+            </popupwindow></Popup>
+        </Marker>
+    )):<Fragment/>)}
 },
 Cocoon:()=>{
     const {t} = useTranslation();
@@ -270,7 +397,7 @@ Cocoon:()=>{
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/cocoons.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker?(data.map((x=>
         <Marker icon={iconLib.cocoon} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltipwindow>
                 <header>
                     <span><menuicon/> {t("cocoons:"+x.id+".title")}</span>
                 </header>
@@ -278,8 +405,8 @@ Cocoon:()=>{
                     {t("items:landmark.cocoon.title")}
                     <id>ID: {x.id}</id>
                 </content>
-            </tooltip-window></Tooltip>
-            <Popup ref={popupRef}><popup-window>
+            </tooltipwindow></Tooltip>
+            <Popup ref={popupRef}><popupwindow>
                 <header>
                     <span><menuicon/> {t("items:landmark.cocoon.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
@@ -318,9 +445,9 @@ Cocoon:()=>{
                             </rewards>
                             </info>
                     </cont>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:Map.description")}</span>
                     <border/>
-                    {t("cocoons:"+x.id+".clearCondition")}
+                    {t("cocoons:"+x.id+".description")}
                     <br/><br/>
                     <span>{t("ui:Map.subMissions")}</span>
                     <border/>
@@ -330,11 +457,11 @@ Cocoon:()=>{
                     <br/>
                     <submission-divider/> {t("cocoons:"+x.id+".subMission3")}
                     <br/><br/>
-                    <span>{t("ui:Map.description")}</span>
+                    <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("cocoons:"+x.id+".description")}
+                    {t("cocoons:"+x.id+".clearCondition")}
                 </content>
-            </popup-window></Popup>
+            </popupwindow></Popup>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -349,7 +476,7 @@ Mag:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=landmark__mag").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={iconLib.mag} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltipwindow>
             <header>
                 <span><menuicon/> {t("mags:type."+x.string)}</span>
             </header>
@@ -357,7 +484,7 @@ Mag:()=>{
                 {t("items:landmark.mag.title")}
                 <id>ID: {x.string}</id>
             </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -372,7 +499,7 @@ Ryuker:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=landmark__ryuker").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={iconLib.ryuker} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltipwindow>
                 <header>
                     <span><menuicon/> {t("ryukers:"+x.string)}</span>
                 </header>
@@ -380,7 +507,7 @@ Ryuker:()=>{
                     {t("items:landmark.ryuker.title")}
                     <id>ID: {x.string}</id>
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -396,7 +523,7 @@ Tower:()=>{
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/towers.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={iconLib.tower} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltipwindow>
                 <header>
                     <span><menuicon/> {t("towers:"+x.id+".title")}</span>
                 </header>
@@ -404,8 +531,8 @@ Tower:()=>{
                     {t("items:landmark.tower.title")}
                     <id>ID: {x.id}</id>
                 </content>
-            </tooltip-window></Tooltip>
-            <Popup ref={popupRef}><popup-window>
+            </tooltipwindow></Tooltip>
+            <Popup ref={popupRef}><popupwindow>
                 <header>
                     <span><menuicon/> {t("items:landmark.tower.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
@@ -444,9 +571,9 @@ Tower:()=>{
                             </rewards>
                             </info>
                     </cont>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:Map.description")}</span>
                     <border/>
-                    {t("towers:"+x.id+".clearCondition")}
+                    {t("towers:"+x.id+".description")}
                     <br/><br/>
                     <span>{t("ui:Map.subMissions")}</span>
                     <border/>
@@ -456,11 +583,11 @@ Tower:()=>{
                     <br/>
                     <submission-divider/> {t("towers:"+x.id+".subMission3")}
                     <br/><br/>
-                    <span>{t("ui:Map.description")}</span>
+                    <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("towers:"+x.id+".description")}
+                    {t("towers:"+x.id+".clearCondition")}
                 </content>
-            </popup-window></Popup>
+            </popupwindow></Popup>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -478,7 +605,7 @@ UQ:()=>{
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={iconLib.urgent} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltipwindow>
                 <header>
                     <span><menuicon/> {t("urgents:"+x.id+".title")}</span>
                 </header>
@@ -486,8 +613,8 @@ UQ:()=>{
                     {t("items:landmark.urgent.title")}
                     <id>ID: {x.id}</id>
                 </content>
-            </tooltip-window></Tooltip>
-            <Popup ref={popupRef}><popup-window>
+            </tooltipwindow></Tooltip>
+            <Popup ref={popupRef}><popupwindow>
                 <header>
                     <span><menuicon/> {t("items:landmark.urgent.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
@@ -495,9 +622,9 @@ UQ:()=>{
                     <select onChange={handleSelectChange}>
                         {(()=>{
                             const jsx = [];
-                            for (var i=0; i<x.ranks.length; i++){
-                                jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
-                            }
+                            for (var i=0; i<x.ranks.length; i++){jsx.push(
+                                <option value={i}>{t("ui:Map.rank")} {i+1}</option>
+                            )}
                             return jsx;
                         })()}
                     </select>
@@ -581,15 +708,15 @@ UQ:()=>{
                             return jsx;
                         })()}
                     </cont>
-                    <span>{t("ui:Map.clearCondition")}</span>
-                    <border/>
-                    {t("urgents:"+x.id+".clearCondition")}
-                    <br/><br/>
                     <span>{t("ui:Map.description")}</span>
                     <border/>
                     {t("urgents:"+x.id+".description")}
+                    <br/><br/>
+                    <span>{t("ui:Map.clearCondition")}</span>
+                    <border/>
+                    {t("urgents:"+x.id+".clearCondition")}
                 </content>
-            </popup-window></Popup>
+            </popupwindow></Popup>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -605,7 +732,7 @@ Trinitas:()=>{
     useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/trinitas.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={iconLib.trinitas} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltipwindow>
                 <header>
                     <span><menuicon/> {t("trinitas:"+x.id+".title")}</span>
                 </header>
@@ -613,8 +740,8 @@ Trinitas:()=>{
                     {t("items:landmark.trinitas.title")}
                     <id>ID: {x.id}</id>
                 </content>
-            </tooltip-window></Tooltip>
-            <Popup ref={popupRef}><popup-window>
+            </tooltipwindow></Tooltip>
+            <Popup ref={popupRef}><popupwindow>
                 <header>
                     <span><menuicon/> {t("items:landmark.trinitas.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
@@ -652,6 +779,10 @@ Trinitas:()=>{
                             </rewards>
                         </info>
                     </cont>
+                    <span>{t("ui:Map.description")}</span>
+                    <border/>
+                    {t("trinitas:"+x.id+".description")}
+                    <br/><br/>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
                     {t("trinitas:"+x.id+".clearCondition")}
@@ -659,18 +790,15 @@ Trinitas:()=>{
                     <span>{t("ui:Map.failCondition")}</span>
                     <border/>
                     {t("trinitas:"+x.id+".failCondition")}
-                    <br/><br/>
-                    <span>{t("ui:Map.description")}</span>
-                    <border/>
-                    {t("trinitas:"+x.id+".description")}
                 </content>
-            </popup-window></Popup>
+            </popupwindow></Popup>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 }}
 
 export default function Landmarks(){return(<>
 <Load.Battledia/>
+<Load.Trigger/>
 <Load.Cocoon/>
 <Load.Mag/>
 <Load.Ryuker/>
