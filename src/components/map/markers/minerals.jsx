@@ -25,7 +25,7 @@ const Template = (props) => {
                     }}
                 >
                     <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
-                        <Tooltip direction='top'><tooltip-window>
+                        <Tooltip direction='top'><tooltipwindow>
                             <header>
                                 <span><menuicon/> {t("items:mineral."+props.id+".title")}</span>
                             </header>
@@ -35,14 +35,14 @@ const Template = (props) => {
                                 {t("ui:Map.placedBy")}: {x.contributer}
                                 <id>ID: {props.id}{x.id}</id>
                             </content>
-                        </tooltip-window></Tooltip>
+                        </tooltipwindow></Tooltip>
                     </Marker>
                 </Circle>
             ))
         ) : (
             data.map((x=>
                 <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
-                    <Tooltip direction='top'><tooltip-window>
+                    <Tooltip direction='top'><tooltipwindow>
                         <header>
                             <span><menuicon/> {t("items:mineral."+props.id+".title")}</span>
                         </header>
@@ -52,7 +52,7 @@ const Template = (props) => {
                             {t("ui:Map.placedBy")}: {x.contributer}
                             <id>ID: {props.id}{x.id}</id>
                         </content>
-                    </tooltip-window></Tooltip>
+                    </tooltipwindow></Tooltip>
                 </Marker>
             ))
         )

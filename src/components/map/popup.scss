@@ -1,6 +1,6 @@
 @import './style.scss';
 
-popup-window {
+popupwindow {
     width: 540px;
     display: block;
     background-color: $window-color;
@@ -240,6 +240,57 @@ popup-window {
                 content: "★";
                 //color: lighten($map-bg-color,50%);
                 color: $window-button-border-active;
+            }
+        }
+    }
+    &.trigger {
+        width: calc(265px + 540px);
+        columns {
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: row;
+            padding-top: 10px;
+            padding-bottom: 6px;
+            buttons {
+                height: 475px;
+                flex-grow: 5;
+                display: flex;
+                flex-flow: column;
+                overflow-y: scroll;
+                width: 275px;
+                &::-webkit-scrollbar {
+                    width: 3px;
+                    background-color: rgba(169, 169, 169, 0.5);
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: darkgray;
+                }
+                button {
+                    width: 250px;
+                    height: 40px;
+                    margin-left: 6px;
+                    margin-right: 6px;
+                    margin-top: 3px;
+                    margin-bottom: 3px;
+                    background-color: rgba($window-button-default, .85);
+                    border: solid 2px rgba($window-button-border-default, .85);
+                    &:hover {
+                        background-color: rgba($window-button-hover, .85);
+                        border: solid 2px rgba($window-button-border-hover, .85);
+                    }
+                    &:active {
+                        background-color: rgba($window-button-active, .85);
+                        border: solid 2px rgba($window-button-border-active, .85);
+                    }
+                    &.active {
+                        background-color: lighten(rgba($window-button-hover, .85), 12%) !important;
+                        border: solid 2px lighten(rgba($window-button-border-hover, .85), 12%) !important;
+                    }
+                }
+            }
+            content {
+                width: calc(540px);
             }
         }
     }

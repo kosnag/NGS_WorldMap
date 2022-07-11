@@ -15,7 +15,7 @@ Veteran:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__veteran").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker icon={iconLib.veteran} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+            <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.veteran.title")}</span>
                 </header>
@@ -25,7 +25,7 @@ Veteran:()=>{
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: veteran{x.id}:{x.string}</id>
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -40,7 +40,7 @@ AlphaReactor:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__alphareactor").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker icon={iconLib.alphareactor} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+            <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.alphareactor.title")}</span>
                 </header>
@@ -50,7 +50,7 @@ AlphaReactor:()=>{
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: alphareactor{x.id}</id>
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -79,14 +79,14 @@ Snoal:()=>{
             }}
         >
             <Marker icon={iconLib.snoal} position={[x.lat,x.lng]}>
-                <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+                <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
                     <header>
                         <span><menuicon/> {t("items:other.snoal.title")}</span>
                     </header>
                     <content>
                         {t("items:other.snoal.description")}
                     </content>
-                </tooltip-window></Tooltip>
+                </tooltipwindow></Tooltip>
             </Marker>
         </Circle>
     ))):<Fragment/>)
@@ -112,14 +112,14 @@ StellarFragment:()=>{
             }}
         >
             <Marker icon={iconLib.stellarseed} position={[x.lat,x.lng]}>
-                <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+                <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
                     <header>
                         <span><menuicon/> {t("items:other.stellarseed.title")}</span>
                     </header>
                     <content>
                         {t("items:other.stellarseed.description")}
                     </content>
-                </tooltip-window></Tooltip>
+                </tooltipwindow></Tooltip>
             </Marker>
         </Circle>
     ))):<Fragment/>)
@@ -139,7 +139,7 @@ StellarGrace:()=>{
             if(x.string === "silver"){return iconLib.stellarGrace_Silver}
             if(x.string === "default"){return iconLib.stellarGrace_Default}
         })()} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+            <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.stellargrace.title")}</span>
                 </header>
@@ -149,7 +149,7 @@ StellarGrace:()=>{
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: stellargrace{x.id}</id>
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -184,7 +184,7 @@ Datapod:()=>{
                 }
             }}
         >
-            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+            <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
                 <header>
                      <span><menuicon/> {t("items:other.datapod.title")}</span>
                 </header>
@@ -194,7 +194,7 @@ Datapod:()=>{
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {x.string}</id>
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -209,7 +209,7 @@ BGM:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__musicplace").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker icon={iconLib.musicplace} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+            <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.musicplace.title")}</span>
                 </header>
@@ -218,7 +218,7 @@ BGM:()=>{
                     <br/>
                     {t("ui:Map.placedBy")}: {x.contributer}
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -253,7 +253,7 @@ Mischief:()=>{
                 }
             }}
         >
-            <Tooltip direction='top'><tooltip-window style={{width: "320px"}}>
+            <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
                 <header>
                     <span><menuicon/> {t("items:other.mischief.title")}</span>
                 </header>
@@ -261,7 +261,7 @@ Mischief:()=>{
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: mischief{x.id}</id>
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 }

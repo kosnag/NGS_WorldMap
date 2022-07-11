@@ -39,7 +39,7 @@ export default function Sections(){
                 opacity: 0.25
             }}
         >
-            <Popup ref={popupRef}><popup-window>
+            <Popup ref={popupRef}><popupwindow>
                 <header>
                     <span><menuicon/> {t("sections:type."+x.type)}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
@@ -141,7 +141,7 @@ export default function Sections(){
                         </>}
                     })()}
                 </content>
-            </popup-window></Popup>
+            </popupwindow></Popup>
         </Polygon>
     )))}else{return <Fragment/>}
 }
