@@ -188,7 +188,7 @@ Datapod:()=>{
                     <br/>
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {x.string}</id>
-                    <br/>
+                    <br/><br/>
                     {t("ui:Map.checkHint")}
                 </content>
             </tooltipwindow></Tooltip>
@@ -218,7 +218,7 @@ BGM:()=>{
                     {x.string}
                     <br/>
                     {t("ui:Map.placedBy")}: {x.contributer}
-                    <br/>
+                    <br/><br/>
                     {t("items:other.musicplace.hint")}
                 </content>
             </tooltipwindow></Tooltip>
@@ -263,7 +263,7 @@ Mischief:()=>{
                 <content>
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: mischief{x.id}</id>
-                    <br/>
+                    <br/><br/>
                     {t("ui:Map.checkHint")}
                 </content>
             </tooltipwindow></Tooltip>

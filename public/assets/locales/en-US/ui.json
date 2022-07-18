@@ -79,6 +79,6 @@
             "gigantix": "Gigantix",
             "ancient": "Ancient"
         },
-        "checkHint": ""
+        "checkHint": "Press the left mouse button on marker to mark it as checked"
     }
 }
