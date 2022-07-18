@@ -28,8 +28,8 @@
             "title": "Trinitas",
             "description": "Trinitas is a kind of training facility that exists in Retem. It is more difficult to complete than a Trainia, and the level of the enemies inside is based on the level of the highest-levelled Party Member."
         },
-        "triggers": {
-            "title": "Triggers",
+        "quests": {
+            "title": "Quest Counter",
             "description": ""
         }
     },
@@ -175,7 +175,8 @@
         },
         "musicplace": {
             "title": "BGM Easter Egg",
-            "description": "Places that play music from older games of the Phantasy Star franchise."
+            "description": "Places that play music from older games of the Phantasy Star franchise.",
+            "hint": "Press the left mouse button on marker to copy the music title"
         },
         "mischief": {
             "title": "Mysterious Holograph",

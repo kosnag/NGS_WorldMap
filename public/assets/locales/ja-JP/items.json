@@ -28,7 +28,7 @@
             "title": "トリニテス",
             "description": "\"トリニテス\"は、リテムに存在する訓練施設の一種です。\"トレイニア\"よりも難度が高く、パーティーメンバーの中で最もレベルの高いプレイヤーのレベルに応じて出現エネミーのレベルが変化します。"
         },
-        "triggers": {
+        "quests": {
             "title": "",
             "description": ""
         }
@@ -175,7 +175,8 @@
         },
         "musicplace": {
             "title": "BGMイースターエッグ",
-            "description": ""
+            "description": "",
+            "hint": ""
         },
         "mischief": {
             "title": "ミスチーフシンボル",

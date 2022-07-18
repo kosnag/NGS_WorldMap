@@ -18,7 +18,7 @@ Red:()=>{
             icon={window.localStorage_Checked.redContainers && window.localStorage_Checked.redContainers.indexOf(x.id)>-1 ? iconLib.redBoxChecked : iconLib.redBox}
             position={[x.lat,x.lng]} 
             eventHandlers={{
-                contextmenu:(e)=>{
+                click:(e)=>{
                     if(e.target.getIcon() === iconLib.redBox){
                         e.target.setIcon(iconLib.redBoxChecked);
                         if(!window.localStorage_Checked.redContainers){
@@ -42,6 +42,8 @@ Red:()=>{
                 <content>
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {x.id}</id>
+                    <br/>
+                    {t("ui:Map.checkHint")}
                 </content>
             </tooltipwindow></Tooltip>
         </Marker>
