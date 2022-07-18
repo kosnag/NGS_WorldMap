@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import NavBar from "./components/navbar";
 import MenuSettings from "./components/menu/settings";
-import MenuSupport from "./components/menu/support";
+import MenuDonate from "./components/menu/donate";
 import MenuLegend from "./components/menu/legend";
 import { Map } from "./components/map";
 
@@ -21,7 +21,7 @@ const App = () => {
     <container>
       <MenuLegend/>
       <MenuSettings/>
-      <MenuSupport/>
+      <MenuDonate/>
     </container>
   </>)
 }

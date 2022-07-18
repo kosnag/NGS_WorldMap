@@ -12,9 +12,9 @@ export default function NavBar(){
   return (
     <navbar>
       <buttons>
-        <button onClick={() => Functions.menuShowHide("menu-support")}>
+        <button onClick={() => Functions.menuShowHide("menu-donate")}>
           <img alt="" src={imageDonate}/>
-          <div>{t("ui:NavBar.support")}</div>
+          <div>{t("ui:NavBar.donate")}</div>
         </button>
         <button onClick={() => Functions.menuShowHide("menu-legend")}>
           <img alt="" src={imageMapLegend}/>

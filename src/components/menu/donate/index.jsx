@@ -6,21 +6,21 @@ import { useTranslation } from "react-i18next";
 
 import boostyImg from "../../../assets/icons/boosty.png"
 
-export default function MenuSupport(){
+export default function MenuDonate(){
   const {t} = useTranslation();
 
   const [toggleTab, setToggleTab] = useState('boosty');
 
   useEffect(()=>{
-    document.getElementById('menu-support').classList.add('hidden');
+    document.getElementById('menu-donate').classList.add('hidden');
   },[])
 
   return (
     <Draggable bounds='container' handle='header'>
-      <window id='menu-support'>
+      <window id='menu-donate'>
         <header>
-          <span><menuicon/> {t("ui:NavBar.support")}</span>
-          <closebutton onClick={() => Functions.menuShowHide("menu-support")}/>
+          <span><menuicon/> {t("ui:NavBar.donate")}</span>
+          <closebutton onClick={() => Functions.menuShowHide("menu-donate")}/>
         </header>
         <columns>
           <category>

@@ -1,7 +1,7 @@
 {
     "page_title": "PSO2NGSインタラクティブ・マップ",
     "NavBar": {
-        "support": "기부",
+        "donate": "기부",
         "mapLegend": "맵 범례",
         "options": "옵션"
     },
@@ -78,6 +78,7 @@
             "dread": "노련의",
             "gigantix": "절망의",
             "ancient": "원세의"
-        }
+        },
+        "checkHint": ""
     }
 }
