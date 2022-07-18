@@ -40,11 +40,7 @@ export default function Food(){
     useEffect(()=>{
         fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
     },[]);
-    return (
-        <Fragment>
-            {dataJSON.items && dataJSON?.items.food.map((x=>
-                <Template id={x.item} type={x.type} notable={x.notable}/>
-            ))}
-        </Fragment>
-    )
+    return <>{dataJSON.items && dataJSON?.items.food.map((x=>
+        <Template id={x.item} type={x.type} notable={x.notable}/>
+    ))}</>
 };
