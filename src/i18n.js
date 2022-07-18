@@ -24,7 +24,7 @@ i18n
       'rewards',
       'mags',
       'trinitas',
-      'triggers',
+      'quests',
     ],
     framework: "React",
     fallbackLng: 'en-US',
