@@ -1,10 +1,4 @@
 {
-    "valua": {
-        "title": "",
-        "clearCondition": "",
-        "description": "",
-        "failCondition": ""
-    },
     "regular": {
         "aelioTroopers": "에아리오 트루퍼즈",
         "aelioDevastators": "에아리오 데바스테이터즈",

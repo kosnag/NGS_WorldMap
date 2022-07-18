@@ -1,0 +1,26 @@
+{
+    "ui": {
+        "triggers": "Triggers",
+        "limited": "Limited Time"
+    },
+    "limited": {
+        "title": "Simulation: Hidden Forest Traps",
+        "clearCondition": "Defeat the target enemy",
+        "description": "This is a training sumulation for future battles, reconstructed using archived combat data. Defeat waves of large enemies and relive the chaotic invasion that spanned across multiple zones!"
+    },
+    "triggers": {
+        "darkFalzInterception": {
+            "title": "Simulation: Dark Falz Interception",
+            "clearCondition": "This is training simulation for future battles, reconstructed using archived combat data. Relive the chaotic battle in Central Aelio, and intercept Dark Falz!",
+            "description": "Defeat the Dark Falz",
+            "failCondition": ""
+        },
+        "darkFalzInterceptionR2": {
+            "title": "Simulation: Dark Falz Interception Rank 2",
+            "clearCondition": "This is training simulation for future battles, reconstructed using archived combat data. Relive the chaotic battle in Central Aelio, and intercept Dark Falz!",
+            "description": "Defeat the Dark Falz",
+            "failCondition": "Incapacitated 5 times or more\nTake longer than 20:00"
+        }
+
+    }
+}

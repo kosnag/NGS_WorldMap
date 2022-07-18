@@ -5,10 +5,9 @@
     {"item": "tower", "category": "landmark", "size": 40},
     {"item": "battledia_yellow", "category": "landmark", "size": 48},
     {"item": "battledia_purple", "category": "landmark", "size": 48},
-    {"item": "battledia_valua", "category": "landmark", "size": 48},
     {"item": "urgent", "category": "landmark", "size": 40},
     {"item": "trinitas", "category": "landmark", "size": 40},
-    {"item": "triggers", "category": "landmark", "size": 40},
+    {"item": "quests", "category": "landmark", "size": 40},
     
 
     {"item": "redBox", "category": "container", "file": "red", "size": 24},

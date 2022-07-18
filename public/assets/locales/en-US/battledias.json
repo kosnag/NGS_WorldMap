@@ -1,9 +1,4 @@
 {
-    "valua": {
-        "title": "Drill: A Trap in the Forest",
-        "clearCondition": "Defeat the target enemies",
-        "description": "This practice drill is a simulation from the archive to help you prepare for the coming battle. The current settings will allow you to reenact putting down a huge enemy incursion from the past. Your objective is to defeat a multitude of large enemies in each region."
-    },
     "regular": {
         "aelioTroopers": "Aelio Troopers",
         "aelioDevastators": "Aelio Devastators",

@@ -8,7 +8,7 @@
             "battledia",
             "urgent",
             "trinitas",
-            "triggers"
+            "quests"
         ],
         "mineral": [
             {"item": "monotite", "rarity": "common"},
@@ -83,5 +83,7 @@
             {"item": "mischief", "rarity": "special"}
         ]
     },
-    "visibility": {}
+    "visibility": {
+        "limited_quest_active": true
+    }
 }

@@ -1,10 +1,4 @@
 {
-    "valua": {
-        "title": "",
-        "clearCondition": "",
-        "description": "",
-        "failCondition": ""
-    },
     "regular": {
         "aelioTroopers": "エアリオトルーパーズ",
         "aelioDevastators": "エアリオデバステーターズ",
