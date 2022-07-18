@@ -10,7 +10,7 @@ button, .leaflet-popup-close-button, a {
         path {cursor: $cursor_active;}
     }
 }
-.leaflet-disabled, *:disabled {
+.leaflet-disabled, *:disabled, button.disabled {
     $cursor_inactive: url('./cursors/disabled.png') 0 0, auto !important;
     cursor: $cursor_inactive;
 }
