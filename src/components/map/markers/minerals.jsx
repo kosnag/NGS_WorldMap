@@ -64,11 +64,7 @@ export default function Minerals(){
     useEffect(()=>{
         fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
     },[]);
-    return (
-        <Fragment>
-            {dataJSON.items && dataJSON?.items.mineral.map((x=>
-                <Template id={x.item}/>
-            ))}
-        </Fragment>
-    )
+    return <>{dataJSON.items && dataJSON?.items.mineral.map((x=>
+        <Template id={x.item}/>
+    ))}</>
 };
