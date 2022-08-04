@@ -10,7 +10,7 @@ Battledia:()=>{
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
     const [tier,setTier] = useState(0);
-    const handleSelectChange=(e)=>setTier(e.target.value);
+    const handleSelectChange=(e)=>setTier(Number(e.target.value));
     useEffect(()=>{
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.battledia));
         return ()=>clearInterval(i);
