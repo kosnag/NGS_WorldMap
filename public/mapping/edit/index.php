@@ -1,10 +1,14 @@
 <?php
 include "../api/mysql.php";
 
-$query = $mysql->query("select session from kosnag_map.".$datatables["auth"]["sessions"]." where session='".$_COOKIE["session"]."' ");
-$session_check = $query->fetch_assoc();
-if (!isset($session_check["session"])){
+$stmt = $PDO->prepare("SELECT * FROM auth__sessions WHERE session = :session");
+$stmt->execute(["session" => $_COOKIE["session"]]);
+$SessionCheck = $stmt->fetch();
+
+if (!$SessionCheck) {
+    setcookie("session", null, -1, "/");
     header("Location: /mapping");
+    exit;
 }
 ?>
 <!DOCTYPE html>

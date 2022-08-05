@@ -11,24 +11,37 @@ $result = array(
     "string" => null
 );
 
-if(isset($_COOKIE["session"])){
-    $query = $mysql -> query("select ".$datatables["auth"]["users"].".id from ".$datatables["auth"]["users"]." inner join ".$datatables["auth"]["sessions"]." on ".$datatables["auth"]["users"].".id=".$datatables["auth"]["sessions"].".id where session='".$_COOKIE["session"]."'");
-    $user = $query -> fetch_assoc();
 
-    $result["table"] = $data->{"table"};
-    $result["lat"] = $data->{"lat"};
-    $result["lng"] = $data->{"lng"};
-    $result["contributer"] = $user["id"];
-    if(isset($data->{"string"}) && (
-        $result["table"]=="other__veteran" || $result["table"]=="other__musicplace" || $result["table"]=="other__datapod" || $result["table"]=="landmark__ryuker" || $result["table"]=="other__stellargrace" || $result["table"]=="landmark__mag"
-    )){
-        $result["string"] = $data->{"string"};
-        $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer, string) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."','".$result["string"]."')");
-    }else{
-        $mysql -> query("insert into ".$result["table"]." (lat, lng, contributer) values ('".$result["lat"]."','".$result["lng"]."','".$result["contributer"]."')");
+if (isset($_COOKIE["session"])) {
+    $stmt = $PDO->prepare("SELECT auth__users.* FROM auth__users INNER JOIN auth__sessions ON auth__users.id = auth__sessions.id WHERE auth__sessions.session = :session");
+    $stmt->execute(["session" => $_COOKIE["session"]]);
+    $User = $stmt->fetch();
+
+    if ($User) {
+        $result["table"] = $data->{"table"};
+        $result["lat"] = $data->{"lat"};
+        $result["lng"] = $data->{"lng"};
+        $result["contributer"] = ucfirst($User["id"]);
+
+        if (isset($data->{"string"}) && (
+                $result["table"] == "other__veteran" ||
+                $result["table"] == "other__musicplace" ||
+                $result["table"] == "other__datapod" ||
+                $result["table"] == "landmark__ryuker" ||
+                $result["table"] == "other__stellargrace" ||
+                $result["table"] == "landmark__mag"
+            )) {
+            $result["string"] = $data->{"string"};
+
+            $stmt = $PDO->prepare("INSERT INTO " . $result["table"] . " (lat, lng, contributer, string) VALUES (:lat, :lng, :cont, :string)");
+            $stmt->execute(["lat" => $result["lat"], "lng" => $result["lng"], "cont" => $result["contributer"], "string" => $result["string"]]);
+        } else {
+            $stmt = $PDO->prepare("INSERT INTO " . $result["table"] . " (lat, lng, contributer, string) VALUES (:lat, :lng, :cont, :str)");
+            $stmt->execute(["lat" => $result["lat"], "lng" => $result["lng"], "cont" => $result["contributer"], "str" => ""]);
+        }
+
     }
 }
 
-$mysql -> close();
 
 echo json_encode($result);

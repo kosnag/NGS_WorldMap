@@ -2,9 +2,10 @@
 include "mysql.php";
 
 switch ($_GET["DELETED"]){
-	case "DELETED":
-		$mysql->query("delete from other__alphareactor");
-		break;
-	default:
-		header("Location: https://map.pso2.ru/");
+    case "DELETED":
+        $stmt = $PDO->prepare("DELETE FROM other__alphareactor");
+        $stmt->execute();
+        break;
+    default:
+        header("Location: /");
 }
