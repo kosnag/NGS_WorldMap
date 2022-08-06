@@ -75,15 +75,13 @@
         "other": [
             {"item": "veteran", "rarity": "rare"},
             {"item": "alphareactor", "rarity": "very-rare"},
-            {"item": "snoal", "rarity": "very-rare"},
+            {"item": "snoal", "rarity": "rare"},
             {"item": "stellarseed", "rarity": "rare"},
-            {"item": "stellargrace", "rarity": "special"},
             {"item": "datapod", "rarity": "places"},
-            {"item": "musicplace", "rarity": "places"},
-            {"item": "mischief", "rarity": "special"}
+            {"item": "musicplace", "rarity": "places"}
         ]
     },
-    "visibility": {
-        "limited_quest_active": true
+    "settings": {
+        "limited_quest_active": false
     }
 }
