@@ -4,14 +4,16 @@
         "lat":-1084.5, "lng":171.5,
         "players": 4,
         "minBP": 1184,
-        "enemyLv": 15
+        "enemyLv": 15,
+        "challenge": true
     },
     {
         "id": "greatWall",
         "lat":-1389, "lng":885,
         "players": 4,
         "minBP": 1184,
-        "enemyLv": 15
+        "enemyLv": 15,
+        "challenge": true
     },
     {
         "id": "aeroRunner",
@@ -25,13 +27,15 @@
         "lat":-957.5, "lng":1965,
         "players": 4,
         "minBP": 1592,
-        "enemyLv": 30
+        "enemyLv": 30,
+        "challenge": true
     },
     {
         "id": "deepWell",
         "lat":-708, "lng":367.5,
         "players": 4,
         "minBP": 2506,
-        "enemyLv": 55
+        "enemyLv": 55,
+        "challenge": true
     }
 ]

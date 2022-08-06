@@ -181,14 +181,14 @@ QuestCounter:()=>{
                         >{t("quests:ui.triggers")}</button>
                             <button
                                 className={
-                                    checkSettings?.visibility && checkSettings.visibility.limited_quest_active === true
+                                    checkSettings?.settings && checkSettings.settings.limited_quest_active === true
                                     ?
                                     (toggleTab === "limited" ? "active" : "")
                                     :
                                     "disabled"
                                 }
                                 onClick={()=>
-                                    checkSettings?.visibility && checkSettings.visibility.limited_quest_active === true
+                                    checkSettings?.settings && checkSettings.settings.limited_quest_active === true
                                     ?
                                     setToggleTab("limited")
                                     :
@@ -244,16 +244,14 @@ QuestCounter:()=>{
                                     {(quest !== null ? data.triggers[quest].firstRewards.map((y=>
                                         <div>
                                             <l>{t(y.item)}</l>
-                                            <r>
-                                                {(()=>{switch (y.item){
-                                                    case "rewards:value.meseta":
-                                                    case "rewards:value.seasonalpoints":
-                                                    case "rewards:value.experience":
-                                                        return (<>{y.count}</>)
-                                                    default:
-                                                        return (<>x{y.count}</>)
-                                                }})()}
-                                            </r>
+                                            <r>{(()=>{switch (y.item){
+                                                case "rewards:value.meseta":
+                                                case "rewards:value.seasonalpoints":
+                                                case "rewards:value.experience":
+                                                    return (<>{y.count}</>)
+                                                default:
+                                                    return (<>x{y.count}</>)
+                                            }})()}</r>
                                         </div>
                                     )) : <Fragment/>)}
                                 </rewards>
@@ -264,16 +262,14 @@ QuestCounter:()=>{
                                     {(quest !== null ? data.triggers[quest].rewards.map((y=>
                                         <div>
                                             <l>{t(y.item)}</l>
-                                            <r>
-                                                {(()=>{switch (y.item){
-                                                    case "rewards:value.meseta":
-                                                    case "rewards:value.seasonalpoints":
-                                                    case "rewards:value.experience":
-                                                        return (<>{y.count}</>)
-                                                    default:
-                                                        return (<>x{y.count}</>)
-                                                }})()}
-                                            </r>
+                                            <r>{(()=>{switch (y.item){
+                                                case "rewards:value.meseta":
+                                                case "rewards:value.seasonalpoints":
+                                                case "rewards:value.experience":
+                                                    return (<>{y.count}</>)
+                                                default:
+                                                    return (<>x{y.count}</>)
+                                            }})()}</r>
                                         </div>
                                     )) : <Fragment/>)}
                                 </rewards>
@@ -383,6 +379,11 @@ Cocoon:()=>{
                 </header>
                 <content>
                     <name>{t("cocoons:"+x.id+".title")}</name>
+                    {x.challenge ? 
+                    <><br/>{t("ui:Map.availableChallengeRank")}</>
+                    :
+                    <Fragment/>
+                    }
                     <br/>
                     <info>
                         <div>
@@ -509,6 +510,11 @@ Tower:()=>{
                 </header>
                 <content>
                     <name>{t("towers:"+x.id+".title")}</name>
+                    {x.challenge ? 
+                    <><br/>{t("ui:Map.availableChallengeRank")}</>
+                    :
+                    <Fragment/>
+                    }
                     <br/>
                     <info>
                         <div>
