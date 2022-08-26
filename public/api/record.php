@@ -21,7 +21,7 @@ if (isset($_COOKIE["session"])) {
         $result["table"] = $data->{"table"};
         $result["lat"] = $data->{"lat"};
         $result["lng"] = $data->{"lng"};
-        $result["contributer"] = ucfirst($User["id"]);
+        $result["contributer"] = $User["id"];
 
         if (isset($data->{"string"}) && (
                 $result["table"] == "other__veteran" ||
@@ -32,16 +32,14 @@ if (isset($_COOKIE["session"])) {
                 $result["table"] == "landmark__mag"
             )) {
             $result["string"] = $data->{"string"};
-
-            $stmt = $PDO->prepare("INSERT INTO " . $result["table"] . " (lat, lng, contributer, string) VALUES (:lat, :lng, :cont, :string)");
-            $stmt->execute(["lat" => $result["lat"], "lng" => $result["lng"], "cont" => $result["contributer"], "string" => $result["string"]]);
+			
+            $stmt = $PDO->prepare("INSERT INTO ".$result["table"]." (lat, lng, contributer, string) VALUES (:lat, :lng, :contributer, :string)");
+            $stmt->execute(["lat" => $result["lat"], "lng" => $result["lng"], "contributer" => $result["contributer"], "string" => $result["string"]]);
         } else {
-            $stmt = $PDO->prepare("INSERT INTO " . $result["table"] . " (lat, lng, contributer, string) VALUES (:lat, :lng, :cont, :str)");
-            $stmt->execute(["lat" => $result["lat"], "lng" => $result["lng"], "cont" => $result["contributer"], "str" => ""]);
+            $stmt = $PDO->prepare("INSERT INTO ".$result["table"]." (lat, lng, contributer) VALUES (:lat, :lng, :contributer)");
+            $stmt->execute(["lat" => $result["lat"], "lng" => $result["lng"], "contributer" => $result["contributer"]]);
         }
-
     }
 }
-
 
 echo json_encode($result);

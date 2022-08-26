@@ -2,15 +2,11 @@
 include "../api/mysql.php";
 
 if(isset($_COOKIE["session"])){
-    $stmt = $PDO->prepare("SELECT * FROM auth__sessions WHERE session = :session");
-    $stmt->execute(["session" => $_COOKIE["session"]]);
-    $Session = $stmt->fetch();
-
-    if ($Session) {
-        include "edit/index.php";
-    } else {
-        include "auth/index.html";
-    }
+	$stmt = $PDO -> query("select session from kosnag_map.auth__sessions where session='".$_COOKIE["session"]."' ");
+	$session_check = $stmt -> fetch(PDO::FETCH_ASSOC);
+	$stmt = $PDO -> query("select auth__sessions.id,session from kosnag_map.auth__sessions inner join kosnag_map.auth__users on kosnag_map.auth__sessions.id=kosnag_map.auth__users.id where session='".$_COOKIE["session"]."' ");
+	$session_data = $stmt -> fetch(PDO::FETCH_ASSOC);
+	include "edit/index.php";
 }else{
-    include "auth/index.html";
+	include "auth/index.html";
 }
