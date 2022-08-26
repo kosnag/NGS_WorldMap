@@ -6,10 +6,10 @@ import "./style.scss";
 import "./tooltip.scss";
 import "./popup.scss";
 
-import Landmarks from './markers/landmarks';
+import Landmarks from './markers/landmarks/_landmarks';
 import Food from './markers/food';
 import Minerals from './markers/minerals';
-import Other from './markers/other';
+import Other from './markers/other/_other';
 import Containers from './markers/containers';
 import Sections from './markers/sections';
 
