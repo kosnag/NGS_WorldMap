@@ -79,6 +79,7 @@
             "gigantix": "絶望の",
             "ancient": ""
         },
-        "checkHint": ""
+        "checkHint": "",
+        "availableChallengeRank": ""
     }
 }

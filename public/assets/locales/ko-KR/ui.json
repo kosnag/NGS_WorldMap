@@ -79,6 +79,7 @@
             "gigantix": "절망의",
             "ancient": "원세의"
         },
-        "checkHint": ""
+        "checkHint": "",
+        "availableChallengeRank": ""
     }
 }

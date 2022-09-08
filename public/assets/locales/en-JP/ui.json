@@ -79,6 +79,7 @@
             "gigantix": "Gigantix",
             "ancient": ""
         },
-        "checkHint": "Press the left mouse button on marker to mark it as checked"
+        "checkHint": "Press the left mouse button on marker to mark it as checked",
+        "availableChallengeRank": "For this Trainia available Challenge Rank"
     }
 }
