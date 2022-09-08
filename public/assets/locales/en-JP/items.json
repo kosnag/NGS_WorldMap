@@ -24,7 +24,7 @@
             "title": "Emergency Quest",
             "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
         },
-        "trinitas": {
+        "advTrainia": {
             "title": "Trinitas",
             "description": "Trinitas is a kind of training facility that exists in Retem. It is more difficult to complete than a Trainia, and the level of the enemies inside is based on the level of the highest-levelled Party Member."
         },
@@ -67,11 +67,11 @@
             "description": ""
         },
         "pentalite": {
-            "title": "",
+            "title": "Pentrite",
             "description": ""
         },
         "blizzardium": {
-            "title": "",
+            "title": "Blizzardium",
             "description": ""
         }
     },
@@ -100,20 +100,20 @@
         "retem_seaslug": "Refreshing Retem Sea Slug",
         "retem_strawberry": "Healthy Retem Strawberry",
         "retem_urchin": "Sharp Retem Sea Urchin",
-        "kvaris_akebia": "",
-        "kvaris_cabbage": "",
-        "kvaris_carrot": "",
-        "kvaris_crayfish": "",
-        "kvaris_guava": "",
-        "kvaris_mushroom": "",
-        "kvaris_octopus": "",
-        "kvaris_onion": "",
-        "kvaris_persimmon": "",
-        "kvaris_persimmonnotable": "",
-        "kvaris_plum": "",
-        "kvaris_snail": "",
-        "kvaris_squid": "",
-        "kvaris_squidnotable": "",
+        "kvaris_akebia": "Healthy Kvaris Akebia",
+        "kvaris_cabbage": "Refreshing Kvaris Napa",
+        "kvaris_carrot": "Nourishing Kvaris Carrot",
+        "kvaris_crayfish": "Healthy Kvaris Lobster",
+        "kvaris_guava": "Sharp Kvaris Guava",
+        "kvaris_mushroom": "Sharp Kvaris Mushroom",
+        "kvaris_octopus": "Refreshing Kvaris Octopus",
+        "kvaris_onion": "Healthy Kvaris Onion",
+        "kvaris_persimmon": "Nourishing Kvaris Ackee",
+        "kvaris_persimmonnotable": "Notable Kvaris Ackee",
+        "kvaris_plum": "Refreshing Kvaris Plum",
+        "kvaris_snail": "Nourishing Kvaris Sea Snail",
+        "kvaris_squid": "Sharp Kvaris Squid",
+        "kvaris_squidnotable": "Notable Kvaris Squid",
         
         "description": {
             "prefix": {
@@ -154,8 +154,8 @@
             "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
         },
         "snoal": {
-            "title": "",
-            "description": ""
+            "title": "Snowks",
+            "description": "Can be converted to 3000 N-Meseta. \n10 Snowks will spawn in Central Kvaris every day."
         },
         "datapod": {
             "title": "Datapod",
