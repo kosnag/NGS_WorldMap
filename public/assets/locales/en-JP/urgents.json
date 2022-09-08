@@ -48,5 +48,10 @@
         "title": "",
         "description": "",
         "clearCondition": ""
+    },
+    "miningRigDefenceKvaris": {
+        "title": "Mining Rig Defense: Kvaris",
+        "description": "",
+        "clearCondition": "Defend the Resource Mining Rigs!"
     }
 }

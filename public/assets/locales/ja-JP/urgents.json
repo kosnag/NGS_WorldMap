@@ -48,5 +48,10 @@
         "title": "アムス・ヴェラ討伐戦",
         "description": "ラトヴァ山で強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“アムス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
         "clearCondition": "アムス・ヴェラを討伐せよ！"
+    },
+    "miningRigDefenceKvaris": {
+        "title": "",
+        "description": "",
+        "clearCondition": ""
     }
 }

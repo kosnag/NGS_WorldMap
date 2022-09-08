@@ -48,5 +48,10 @@
         "title": "Ams Vera Suppression Op",
         "description": "A powerful space-time flux has been detected on Mt. Latva. Based on past data, we expect Ams Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
         "clearCondition": "Defeat the target enemy"
+    },
+    "miningRigDefenceKvaris": {
+        "title": "Mining Rig Defense: Kvaris",
+        "description": "",
+        "clearCondition": "Defeat the target enemy"
     }
 }
