@@ -7,7 +7,7 @@
             "tower",
             "battledia",
             "urgent",
-            "trinitas",
+            "advTrainia",
             "quests"
         ],
         "mineral": [
@@ -17,9 +17,10 @@
             {"item": "tetracite", "rarity": "common"},
             {"item": "photonquartz", "rarity": "common"},
             {"item": "photonchunk", "rarity": "common"},
-            {"item": "photonscale", "rarity": "very-rare"},
+            {"item": "photonscale", "rarity": "very-rare", "area": true, "area_radius": 30, "area_color": "pink", "area_fillColor": "lightblue"},
             {"item": "pentalite", "rarity": "common"},
-            {"item": "blizzardium", "rarity": "very-rare"}
+            {"item": "blizzardium", "rarity": "very-rare"},
+            {"item": "randomite", "rarity": "special", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "yellow"}
         ],
         "food": [
             {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common"},
@@ -82,6 +83,6 @@
         ]
     },
     "settings": {
-        "limited_quest_active": false
+        "limited_quest_active": true
     }
 }
