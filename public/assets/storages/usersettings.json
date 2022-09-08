@@ -6,7 +6,7 @@
         "tower": 1,
         "battledia": 1,
         "urgent": 1,
-        "trinitas": 1,
+        "advTrainia": 1,
         "quests": 1
     },
     "mineral": {
@@ -18,7 +18,8 @@
         "photonchunk": 0,
         "photonscale": 0,
         "pentalite": 0,
-        "blizzardium": 0
+        "blizzardium": 0,
+        "randomite": 1
     },
     "food": {
         "aelio_apple": 0,
