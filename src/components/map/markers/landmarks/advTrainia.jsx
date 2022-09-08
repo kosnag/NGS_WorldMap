@@ -9,27 +9,28 @@ export default function AdvTrainia(){
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
     useEffect(()=>{
-        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.trinitas));
+        var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.advTrainia));
         return ()=>clearInterval(i);
     });
-    useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/trinitas.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    //useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/advTrainia.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    useEffect(()=>{marker === 1 ? fetch("./assets/data/advTrainia.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
-        <Marker icon={iconLib.trinitas} position={[x.lat,x.lng]}>
+        <Marker icon={iconLib.advTrainia} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltipwindow>
                 <header>
-                    <span><menuicon/> {t("trinitas:"+x.id+".title")}</span>
+                    <span><menuicon/> {t("advTrainia:"+x.id+".title")}</span>
                 </header>
                 <content>
-                    {t("items:landmark.trinitas.title")}
+                    {t("items:landmark.advTrainia.title")}
                     <id>ID: {x.id}</id>
                 </content>
             </tooltipwindow></Tooltip>
             <Popup ref={popupRef}><popupwindow>
                 <header>
-                    <span><menuicon/> {t("items:landmark.trinitas.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
+                    <span><menuicon/> {t("items:landmark.advTrainia.title")}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
                 <content>
-                    <name>{t("trinitas:"+x.id+".title")}</name>
+                    <name>{t("advTrainia:"+x.id+".title")}</name>
                     <br/>
                     <info>
                         <div>
@@ -51,7 +52,7 @@ export default function AdvTrainia(){
                         </div>
                     </info>
                     <cont>
-                        <img src="./assets/images/banners/other/trinitas.png" alt="" />
+                        <img src="./assets/images/banners/other/advTrainia.png" alt="" />
                         <info>
                             <span>{t("ui:Map.rewards.possible")}</span>
                             <border/>
@@ -64,15 +65,15 @@ export default function AdvTrainia(){
                     </cont>
                     <span>{t("ui:Map.description")}</span>
                     <border/>
-                    {t("trinitas:"+x.id+".description")}
+                    {t("advTrainia:"+x.id+".description")}
                     <br/><br/>
                     <span>{t("ui:Map.clearCondition")}</span>
                     <border/>
-                    {t("trinitas:"+x.id+".clearCondition")}
+                    {t("advTrainia:"+x.id+".clearCondition")}
                     <br/><br/>
                     <span>{t("ui:Map.failCondition")}</span>
                     <border/>
-                    {t("trinitas:"+x.id+".failCondition")}
+                    {t("advTrainia:"+x.id+".failCondition")}
                 </content>
             </popupwindow></Popup>
         </Marker>

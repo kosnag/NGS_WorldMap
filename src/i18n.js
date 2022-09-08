@@ -23,7 +23,7 @@ i18n
       'enemies',
       'rewards',
       'mags',
-      'trinitas',
+      'advTrainia',
       'quests',
     ],
     framework: "React",
