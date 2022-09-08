@@ -30,6 +30,7 @@ var itemList = {
         {"id":"pentalite", "string":"Pentalite", "color":"white"},
         {"id":"blizzardium", "string":"Blizzardium", "color":"green"},
         {"id":"photonscale", "string":"Photon Scale", "color":"pink"},
+        {"id":"randomite", "string":"Randomite", "color":"gold"},
     ],
     food: {
         fruits: [
