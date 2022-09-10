@@ -6,7 +6,44 @@
         "enemyLv": 30,
         "players": 4,
         "ranks": {
-                "c": 0,
+                "b": 449,
+                "a": 1249,
+                "s": 2249
+        },
+        "rewards": [
+            {
+                "item": "rewards:item.gold_prim_sword"
+            },
+            {
+                "item": "rewards:item.gold_prim_armor"
+            },
+            {
+                "item": "rewards:item.silver_prim_sword"
+            },
+            {
+                "item": "rewards:item.silver_prim_armor"
+            },
+            {
+                "item": "rewards:item.relik_series"
+            },
+            {
+                "item": "rewards:item.kuku_series"
+            },
+            {
+                "item": "rewards:item.tria_augments"
+            },
+            {
+                "item": "rewards:item.fashion_items"
+            }
+        ]
+    },
+    {
+        "id": "cannonballRumble",
+        "lat":-592.5, "lng":496.75,
+        "minBP": 2647,
+        "enemyLv": 60,
+        "players": 4,
+        "ranks": {
                 "b": 200000,
                 "a": 700000,
                 "s": 2500000
@@ -25,19 +62,16 @@
                 "item": "rewards:item.silver_prim_armor"
             },
             {
-                "item": "rewards:item.silver_prim_armor"
+                "item": "rewards:item.class_cubes"
             },
             {
-                "item": "rewards:item.relik_series"
+                "item": "rewards:item.strugments"
             },
             {
-                "item": "rewards:item.kuku_series"
+                "item": "rewards:item.super_augments"
             },
             {
-                "item": "rewards:item.tria_augments"
-            },
-            {
-                "item": "rewards:item.fashion_items"
+                "item": "rewards:item.arms_refiner"
             }
         ]
     }
