@@ -25,8 +25,8 @@
             "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
         },
         "advTrainia": {
-            "title": "Trinitas",
-            "description": "Trinitas is a kind of training facility that exists in Retem. It is more difficult to complete than a Trainia, and the level of the enemies inside is based on the level of the highest-levelled Party Member."
+            "title": "Advanced Trainia",
+            "description": ""
         },
         "quests": {
             "title": "Quest Counter",
