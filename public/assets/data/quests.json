@@ -6,27 +6,27 @@
             {
                 "minBP": 1184,
                 "enemyLv": 17,
-                "points": 2000
+                "points": 5000
             },
             {
                 "minBP": 1474,
                 "enemyLv": 25,
-                "points": 2400
+                "points": 6000
             },
             {
                 "minBP": 1682,
                 "enemyLv": 32,
-                "points": 2800
+                "points": 7000
             },
             {
                 "minBP": 1957,
                 "enemyLv": 42,
-                "points": 3200
+                "points": 8000
             },
             {
                 "minBP": 2506,
                 "enemyLv": 57,
-                "points": 4000
+                "points": 10000
             }
         ]
     },
