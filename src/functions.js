@@ -34,25 +34,25 @@ const Functions = {
   },
   checkDisabledItemsFromServerSettings:()=>{
     fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(settings=>{
-      settings[1].map(x=>{ //mineral
+      settings.items.mineral.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.mineral[x.item] = 0
             localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
           }
       });
-      settings[2].map(x=>{ //food
+      settings.items.food.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.food[x.item] = 0
             localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
           }
       });
-      settings[3].map(x=>{ //container
+      settings.items.container.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.container[x.item] = 0
             localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
           }
       });
-      settings[4].map(x=>{ //other
+      settings.items.other.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.other[x.item] = 0
             localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
