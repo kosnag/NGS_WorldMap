@@ -20,7 +20,21 @@
             "clearCondition": "This is training simulation for future battles, reconstructed using archived combat data. Relive the chaotic battle in Central Aelio, and intercept Dark Falz!",
             "description": "Defeat the Dark Falz",
             "failCondition": "Incapacitated 5 times or more\nTake longer than 20:00"
+        },
+        "dustylVera": {
+            "title": "Snidael Vera Subjugation",
+            "description": "Powerful space-time fluctuations have been at Morava Canyon in Northern Retem. Based on past data, the Snidael Vera is expected to appear. All ARKS, head for the area & eliminate this threat.",
+            "clearCondition": "Defeat the target enemy"
+        },
+        "renusVera": {
+            "title": "Lenus Vera Subjugation",
+            "description": "Powerful space-time fluctuations have been detected in Central Retem. Based on past data, the Battlefield Overseer-type DOLL, the \"Lenus Vera\", is expected to appear. All ARKS, head for the area & eliminate this threat.",
+            "clearCondition": "Defeat Lenus Vera!"
+        },
+        "miningRigDefenceRetem": {
+            "title": "Mining Rig Defense: Retem",
+            "description": "",
+            "clearCondition": "Defend the Resource Mining Rigs!"
         }
-
     }
 }
