@@ -5,11 +5,6 @@
         "minBP": 1681,
         "enemyLv": 30,
         "players": 4,
-        "ranks": {
-                "b": 449,
-                "a": 1249,
-                "s": 2249
-        },
         "rewards": [
             {
                 "item": "rewards:item.gold_prim_sword"
@@ -43,11 +38,39 @@
         "minBP": 2647,
         "enemyLv": 60,
         "players": 4,
-        "ranks": {
-                "b": 200000,
-                "a": 700000,
-                "s": 2500000
-        },
+        "rewards": [
+            {
+                "item": "rewards:item.gold_prim_sword"
+            },
+            {
+                "item": "rewards:item.gold_prim_armor"
+            },
+            {
+                "item": "rewards:item.silver_prim_sword"
+            },
+            {
+                "item": "rewards:item.silver_prim_armor"
+            },
+            {
+                "item": "rewards:item.class_cubes"
+            },
+            {
+                "item": "rewards:item.strugments"
+            },
+            {
+                "item": "rewards:item.super_augments"
+            },
+            {
+                "item": "rewards:item.arms_refiner"
+            }
+        ]
+    },
+    {
+        "id": "cannonballStrike",
+        "lat":-706, "lng":840.5,
+        "minBP": 2647,
+        "enemyLv": 60,
+        "players": 4,
         "rewards": [
             {
                 "item": "rewards:item.gold_prim_sword"
