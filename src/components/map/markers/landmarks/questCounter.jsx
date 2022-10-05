@@ -56,14 +56,14 @@ export default function QuestCounter(){
                         >{t("quests:ui.triggers")}</button>
                             <button
                                 className={
-                                    checkSettings?.settings && checkSettings.settings.limited_quest_active === true
+                                    checkSettings?.settings && checkSettings.settings.seasonal_event === true
                                     ?
                                     (toggleTab === "limited" ? "active" : "")
                                     :
                                     "disabled"
                                 }
                                 onClick={()=>
-                                    checkSettings?.settings && checkSettings.settings.limited_quest_active === true
+                                    checkSettings?.settings && checkSettings.settings.seasonal_event === true
                                     ?
                                     setToggleTab("limited")
                                     :
@@ -121,7 +121,6 @@ export default function QuestCounter(){
                                             <l>{t(y.item)}</l>
                                             <r>{(()=>{switch (y.item){
                                                 case "rewards:value.meseta":
-                                                case "rewards:value.seasonalpoints":
                                                 case "rewards:value.experience":
                                                     return (<>{y.count}</>)
                                                 default:
@@ -134,19 +133,24 @@ export default function QuestCounter(){
                                 <span>{t("ui:Map.rewards.guaranteed")}</span>
                                 <border/>
                                 <rewards>
-                                    {(quest !== null ? data.triggers[quest].rewards.map((y=>
+                                    {(quest !== null ? data.triggers[quest].rewards.map((y=><>
+                                        {(y.item === "rewards:value.seasonalpoints") && (checkSettings?.settings && checkSettings.settings.seasonal_event === false) ? 
+                                        <Fragment/>
+                                        :
                                         <div>
                                             <l>{t(y.item)}</l>
-                                            <r>{(()=>{switch (y.item){
-                                                case "rewards:value.meseta":
-                                                case "rewards:value.seasonalpoints":
-                                                case "rewards:value.experience":
-                                                    return (<>{y.count}</>)
-                                                default:
-                                                    return (<>x{y.count}</>)
-                                            }})()}</r>
+                                            <r>
+                                                {(()=>{switch (y.item){
+                                                    case "rewards:value.meseta":
+                                                    case "rewards:value.seasonalpoints":
+                                                    case "rewards:value.experience":
+                                                        return (<>{y.count}</>)
+                                                    default:
+                                                        return (<>x{y.count}</>)
+                                                }})()}
+                                            </r>
                                         </div>
-                                    )) : <Fragment/>)}
+                                    }</>)) : <Fragment/>)}
                                 </rewards>
                             </info>
                         </cont>
@@ -166,7 +170,7 @@ export default function QuestCounter(){
                     </content>
                 </columns> : <Fragment/>}
                 {toggleTab === "limited" ?
-                <columns>
+                <>{checkSettings?.settings && checkSettings.settings.seasonal_event === true ? <columns>
                     <content>
                         <select onChange={handleSelectChangeLTD}>
                             {(()=>{
@@ -222,7 +226,7 @@ export default function QuestCounter(){
                         <border/>
                         {t("quests:limited.clearCondition")}
                     </content>
-                </columns> : <Fragment/>}
+                </columns> : <Fragment/>}</> : <Fragment/>}
             </popupwindow></Popup>
         </Marker>
     )):<Fragment/>)}
