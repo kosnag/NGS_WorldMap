@@ -10,5 +10,11 @@
         "clearCondition": "",
         "failCondition": "",
         "description": ""
+    },
+    "cannonballStrike": {
+        "title": "",
+        "clearCondition": "",
+        "failCondition": "",
+        "description": ""
     }
 }
