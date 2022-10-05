@@ -81,6 +81,75 @@
                     "count": 3
                 }
             ]
+        },
+        {
+            "id": "renusVera",
+            "img_url": "./assets/images/banners/urgents/renusVera.png",
+            "minBP": 0,
+            "enemyLv": 0,
+            "players": 0,
+            "firstRewards": [
+                {
+                    "item": "rewards:value.meseta",
+                    "count": 10000
+                }
+            ],
+            "rewards": [
+                {
+                    "item": "rewards:value.meseta",
+                    "count": 20000
+                },
+                {
+                    "item": "items:mineral.photonscale.title",
+                    "count": 12
+                }
+            ]
+        },
+        {
+            "id": "dustylVera",
+            "img_url": "./assets/images/banners/urgents/dustylVera.png",
+            "minBP": 0,
+            "enemyLv": 0,
+            "players": 0,
+            "firstRewards": [
+                {
+                    "item": "rewards:value.meseta",
+                    "count": 10000
+                }
+            ],
+            "rewards": [
+                {
+                    "item": "rewards:value.meseta",
+                    "count": 20000
+                },
+                {
+                    "item": "items:mineral.photonscale.title",
+                    "count": 12
+                }
+            ]
+        },
+        {
+            "id": "miningRigDefenceRetem",
+            "img_url": "./assets/images/banners/urgents/miningRigDefenceRetem.png",
+            "minBP": 0,
+            "enemyLv": 0,
+            "players": 0,
+            "firstRewards": [
+                {
+                    "item": "rewards:value.meseta",
+                    "count": 10000
+                }
+            ],
+            "rewards": [
+                {
+                    "item": "rewards:value.meseta",
+                    "count": 20000
+                },
+                {
+                    "item": "items:mineral.photonscale.title",
+                    "count": 12
+                }
+            ]
         }
 
     ]
