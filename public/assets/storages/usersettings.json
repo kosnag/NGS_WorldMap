@@ -19,7 +19,8 @@
         "photonscale": 0,
         "pentalite": 0,
         "blizzardium": 0,
-        "randomite": 1
+        "randomite": 1,
+        "lavacite": 0
     },
     "food": {
         "aelio_apple": 0,

@@ -73,6 +73,10 @@
         "blizzardium": {
             "title": "Blizzardium",
             "description": "Found across Kvaris during Snowfall and Blizzards.\nCan be exchanged for items in certain places."
+        },
+        "lavacite": {
+            "title": "",
+            "description": ""
         }
     },
     "food": {

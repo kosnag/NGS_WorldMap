@@ -73,6 +73,10 @@
         "blizzardium": {
             "title": "ブリザーディアム",
             "description": "クヴァリスの岩場で入手可能な希少な鉱石。\n雪、吹雪時のみのギャザリング。\n特定の場所でアイテムと交換できる。"
+        },
+        "lavacite": {
+            "title": "",
+            "description": ""
         }
     },
     "food": {
