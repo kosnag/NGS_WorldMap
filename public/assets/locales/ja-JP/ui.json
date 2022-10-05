@@ -23,11 +23,11 @@
         },
         "Items": {
             "languages": {
-                "english": "英語",
-                "japanese": "日本",
-                "english_jp": "英語（ファン）",
-                "russian": "ロシア語",
-                "korean": "韓国語"
+                "en-US": "英語",
+                "ja-JP": "日本語",
+                "en-JP": "英語 (ファン)",
+                "ru-RU": "ロシア語",
+                "ko-KR": "韓国語"
             },
             "mapping": {
                 "discord": "Discordに参加する",

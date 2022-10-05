@@ -23,11 +23,11 @@
         },
         "Items": {
             "languages": {
-                "english": "영어",
-                "japanese": "일본어",
-                "english_jp": "영어 (아크스 레이어)",
-                "russian": "러시아어",
-                "korean": "한국어"
+                "en-US": "영어",
+                "ja-JP": "일본어",
+                "en-JP": "영어 (아크스 레이어)",
+                "ru-RU": "러시아어",
+                "ko-KR": "한국어"
             },
             "mapping": {
                 "discord": "Discord에 참가하기",
