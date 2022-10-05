@@ -20,7 +20,7 @@
             {"item": "photonscale", "rarity": "very-rare", "area": true, "area_radius": 30, "area_color": "pink", "area_fillColor": "lightblue"},
             {"item": "pentalite", "rarity": "common"},
             {"item": "blizzardium", "rarity": "very-rare"},
-            {"item": "randomite", "rarity": "special", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "yellow"}
+            {"item": "randomite", "rarity": "special", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "yellow", "disabled": true}
         ],
         "food": [
             {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common"},
@@ -79,10 +79,38 @@
             {"item": "snoal", "rarity": "rare"},
             {"item": "stellarseed", "rarity": "rare"},
             {"item": "datapod", "rarity": "places"},
-            {"item": "musicplace", "rarity": "places"}
+            {"item": "musicplace", "rarity": "places"},
+            {"item": "stellargrace", "rarity": "places", "disabled": true}
         ]
     },
     "settings": {
-        "limited_quest_active": true
+        "seasonal_event": false,
+        "languages": [
+            {   
+                "id": "en-US",
+                "name": "English",
+                "active": true
+            },
+            {   
+                "id": "en-JP",
+                "name": "English (Fan-Patch)",
+                "active": true
+            },
+            {   
+                "id": "ja-JP",
+                "name": "日本語",
+                "active": true
+            },
+            {   
+                "id": "ko-KR",
+                "name": "한국어",
+                "active": true
+            },
+            {   
+                "id": "ru-RU",
+                "name": "Русский",
+                "active": false
+            }
+        ]
     }
 }

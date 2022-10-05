@@ -4,6 +4,7 @@ import Draggable from 'react-draggable';
 import Functions from '../../../functions';
 import i18n from '../../../i18n';
 import { useTranslation } from "react-i18next";
+import { Fragment } from 'react/cjs/react.production.min';
 
 export default function MenuSettings(){
   const {t} = useTranslation();
@@ -17,15 +18,19 @@ export default function MenuSettings(){
   const [toggleTab, setToggleTab] = useState('languages');
 
   const [contributers, setContributers] = useState([]);
+  const [checkSettings, setSettings] = useState({});
 
   useEffect(() => {
     document.getElementById('menu-settings').classList.add('hidden');
     setTimeout(() => {
       setToggleLang(localStorage.getItem("i18nextLng"));
-    }, 100)
+    }, 100);
     fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/contributers.json")
       .then(response=>response.json())
-      .then(d=>setContributers(d))
+      .then(d=>setContributers(d));
+    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json")
+      .then(response=>response.json())
+      .then(d=>setSettings(d));
   }, []);
 
   return (
@@ -56,26 +61,14 @@ export default function MenuSettings(){
           </category>
           <>
             <items id="languages" className={toggleTab === 'languages' ? "active" : ""}>
-              <button onClick={() => clickToggleLang("en-US")}>
-                <span className={toggleLang === 'en-US' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.english")} / English</div>
-              </button>
-              <button onClick={() => clickToggleLang("ja-JP")}>
-                <span className={toggleLang === 'ja-JP' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.japanese")} / 日本語</div>
-              </button>
-              <button onClick={() => clickToggleLang("en-JP")}>
-                <span className={toggleLang === 'en-JP' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.english_jp")} / English (Fan-Patch)</div>
-              </button>
-              <button onClick={() => clickToggleLang("ru-RU")}>
-                <span className={toggleLang === 'ru-RU' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.russian")} / Русский</div>
-              </button>
-              <button onClick={() => clickToggleLang("ko-KR")}>
-                <span className={toggleLang === 'ko-KR' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.korean")} / 한국어</div>
-              </button>
+              {checkSettings.settings && checkSettings.settings.languages.map((x=>
+                x.active === true ?
+                  <button onClick={() => clickToggleLang(x.id)}>
+                    <span className={toggleLang === x.id ? "active" : ""}/>
+                    <div>{t("ui:OptionsMenu.Items.languages."+x.id)} | {x.name}</div>
+                  </button>
+                : <Fragment/>
+              ))}
             </items>
             <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
               <button onClick={() => {
