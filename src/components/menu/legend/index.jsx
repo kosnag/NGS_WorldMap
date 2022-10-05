@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import "./style.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../functions';
@@ -129,22 +129,29 @@ export default function MenuLegend(){
             </items>
             <items className={toggleTab === 'minerals' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.mineral.map((x=>
-                <Button category="mineral" item={x.item} rarity={x.rarity}/>
+                <>{x.disabled === true ? <Fragment/>:
+                <Button category="mineral" item={x.item} rarity={x.rarity}/>}</>
               ))}
             </items>
             <items className={toggleTab === 'food' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.food.map((x=>
-                <ButtonFood item={x.item} prefix={x.prefix} type={x.type} rarity={x.rarity} notable={x.notable}/>
+                <>{x.disabled === true ? <Fragment/>:
+                  <ButtonFood item={x.item} prefix={x.prefix} type={x.type} rarity={x.rarity} notable={x.notable}/>
+                }</>
               ))}
             </items>
             <items className={toggleTab === 'containers' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.container.map((x=>
-                <Button category="container" item={x.item} rarity={x.rarity}/>
+                <>{x.disabled === true ? <Fragment/>:
+                  <Button category="container" item={x.item} rarity={x.rarity}/>
+                }</>
               ))}
             </items>
             <items className={toggleTab === 'other' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.other.map((x=>
-                <Button category="other" item={x.item} rarity={x.rarity}/>
+                <>{x.disabled === true ? <Fragment/>:
+                  <Button category="other" item={x.item} rarity={x.rarity}/>
+                }</>
               ))}
             </items>
           </>
