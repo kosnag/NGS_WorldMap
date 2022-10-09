@@ -144,6 +144,10 @@
             {
                 "minBP": 1869,
                 "enemyLv": 40
+            },
+            {
+                "minBP": 2647,
+                "enemyLv": 60
             }
         ]
     },
@@ -218,6 +222,10 @@
             {
                 "minBP": 1869,
                 "enemyLv": 40
+            },
+            {
+                "minBP": 2647,
+                "enemyLv": 60
             }
         ]
     },
