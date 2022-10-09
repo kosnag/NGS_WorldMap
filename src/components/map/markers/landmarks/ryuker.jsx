@@ -11,7 +11,7 @@ export default function Ryuker(){
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.ryuker));
         return ()=>clearInterval(i);
     });
-    useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/ryukers.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/ryukers.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={iconLib.ryuker} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltipwindow>
