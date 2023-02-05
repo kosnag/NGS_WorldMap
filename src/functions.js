@@ -33,25 +33,25 @@ const Functions = {
     }
   },
   checkDisabledItemsFromServerSettings:()=>{
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(settings=>{
+    fetch("./assets/storages/settings.json").then(response=>response.json()).then(settings=>{// eslint-disable-next-line
       settings.items.mineral.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.mineral[x.item] = 0
             localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
           }
-      });
+      });// eslint-disable-next-line
       settings.items.food.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.food[x.item] = 0
             localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
           }
-      });
+      });// eslint-disable-next-line
       settings.items.container.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.container[x.item] = 0
             localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
           }
-      });
+      });// eslint-disable-next-line
       settings.items.other.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.other[x.item] = 0

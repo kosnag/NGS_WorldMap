@@ -17,13 +17,13 @@ export default function Urgent(){
     });
     useEffect(()=>{
         marker === 1 ? 
-            fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d))
+            fetch("./assets/data/urgents.json").then(response=>response.json()).then(d=>setData(d))
             :
             setData([])
     },[marker]);
     useEffect(()=>{
         marker === 1 ?
-            fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(s=>setSettings(s))
+            fetch("./assets/storages/settings.json").then(response=>response.json()).then(s=>setSettings(s))
             :
             setSettings({});
     },[marker]);

@@ -24,13 +24,13 @@ export default function QuestCounter(){
     ]
     useEffect(()=>{
         marker === 1 ?
-            fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(s=>setSettings(s))
+            fetch("./assets/storages/settings.json").then(response=>response.json()).then(s=>setSettings(s))
             :
             setSettings({});
     },[marker]);
     useEffect(()=>{
         marker === 1 ?
-            fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/quests.json").then(response=>response.json()).then(d=>setData(d))
+            fetch("./assets/data/quests.json").then(response=>response.json()).then(d=>setData(d))
             :
             setData({});
     },[marker]);

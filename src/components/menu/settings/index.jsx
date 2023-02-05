@@ -25,10 +25,10 @@ export default function MenuSettings(){
     setTimeout(() => {
       setToggleLang(localStorage.getItem("i18nextLng"));
     }, 100);
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/contributers.json")
+    fetch("./assets/storages/contributers.json")
       .then(response=>response.json())
       .then(d=>setContributers(d));
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json")
+    fetch("./assets/storages/settings.json")
       .then(response=>response.json())
       .then(d=>setSettings(d));
   }, []);
@@ -46,10 +46,6 @@ export default function MenuSettings(){
               className={toggleTab === 'languages' ? "active" : ""}
               onClick={() => setToggleTab('languages')}
             >{t("ui:OptionsMenu.Categories.languages")}</button>
-            <button 
-              className={toggleTab === 'mapping' ? "active" : ""}
-              onClick={() => setToggleTab('mapping')}
-            >{t("ui:OptionsMenu.Categories.mapping")}</button>
             <button 
               className={toggleTab === 'reset' ? "active" : ""}
               onClick={() => setToggleTab('reset')}
@@ -69,17 +65,6 @@ export default function MenuSettings(){
                   </button>
                 : <Fragment/>
               ))}
-            </items>
-            <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
-              <button onClick={() => {
-                window.open("https://discord.gg/AMZ4smTAM2")
-              }}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
-              <button onClick={() => {
-                window.open("https://github.com/kosnag/NGS_WorldMap")
-              }}>{t("ui:OptionsMenu.Items.mapping.translate")}</button>
-              <button onClick={() => {
-                window.open("/mapping")
-              }}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
             </items>
             <items id="reset" className={toggleTab === 'reset' ? "active" : ""}>
               <button onClick={() => {

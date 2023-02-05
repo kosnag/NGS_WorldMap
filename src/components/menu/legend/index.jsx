@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 export default function MenuLegend(){
   const {t} = useTranslation();
 
-  const [previewIcon, setPreviewIcon] = useState(process.env.PUBLIC_URL+"/assets/images/icons/null.png");
+  const [previewIcon, setPreviewIcon] = useState("./assets/images/icons/null.png");
   const [previewRarity, setPreviewRarity] = useState("matoi");
   const [previewTitle, setPreviewTitle] = useState("");
   const [previewDescription, setPreviewDescription] = useState("");
@@ -61,11 +61,11 @@ export default function MenuLegend(){
           setPreviewIcon("./assets/images/icons/food/"+props.item+".png")
           setPreviewRarity(props.rarity)
           setPreviewTitle(t("items:food."+props.item))
-          props.notable === true ? 
+          props.rarity === "very-rare" ? 
           setPreviewDescription(
             t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+
             t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type)+"\n"+
-            t("items:food.description.prefix.notable")
+            t("items:food.description.prefix.speciat")
           )
           :
           setPreviewDescription(
@@ -84,7 +84,7 @@ export default function MenuLegend(){
   const [dataJSON,setDataJSON] = useState({});
   useEffect(() => {
     document.getElementById('menu-legend').classList.add('hidden');
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
+    fetch("./assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
   },[]);
   useEffect(() => {
     setPreviewTitle(t("items:nothing"));

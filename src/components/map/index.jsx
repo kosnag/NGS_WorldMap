@@ -18,7 +18,7 @@ const iconLib = {}
 const Init = () => {
     const [checkInitMarkers,load] = useState(false)
     useEffect(()=>{
-        fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/icons.json").then(resp=>resp.json()).then(x=>{
+        fetch("./assets/storages/icons.json").then(resp=>resp.json()).then(x=>{
             for(var i=0; i<x.length; i++){
                 iconLib[x[i].item] = L.icon({
                     iconSize: [x[i].size,x[i].size],

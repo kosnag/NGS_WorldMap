@@ -14,7 +14,7 @@ export default function Battledia(){
         var i = setInterval(()=>setMarker(window.localStorage_Settings.landmark.battledia));
         return ()=>clearInterval(i);
     });
-    useEffect(()=>{marker === 1 ? fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    useEffect(()=>{marker === 1 ? fetch("./assets/data/battledias.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return(marker ? (data.map((x=>
         <Marker icon={(()=>{
             if(x.type === "yellow"){return iconLib.battledia_yellow}
