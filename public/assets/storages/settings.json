@@ -20,7 +20,9 @@
             {"item": "photonscale", "rarity": "very-rare", "area": true, "area_radius": 30, "area_color": "pink", "area_fillColor": "lightblue"},
             {"item": "pentalite", "rarity": "common"},
             {"item": "blizzardium", "rarity": "very-rare"},
-            {"item": "randomite", "rarity": "special", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "yellow", "disabled": true}
+            {"item": "randomite", "rarity": "special", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "yellow", "disabled": true},
+            {"item": "hexakite", "rarity": "common"},
+            {"item": "inferium", "rarity": "very-rare"}
         ],
         "food": [
             {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common"},
@@ -54,7 +56,7 @@
             {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common"},
 
             {"item": "kvaris_persimmon", "type": "fruit", "prefix": "rich", "rarity": "common"},
-            {"item": "kvaris_persimmonnotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare", "notable": true},
+            {"item": "kvaris_persimmonnotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare"},
             {"item": "kvaris_plum", "type": "fruit", "prefix": "light", "rarity": "common"},
             {"item": "kvaris_guava", "type": "fruit", "prefix": "crisp", "rarity": "common"},
             {"item": "kvaris_akebia", "type": "fruit", "prefix": "robust", "rarity": "common"},
@@ -62,20 +64,39 @@
             {"item": "kvaris_snail", "type": "seafood", "prefix": "rich", "rarity": "common"},
             {"item": "kvaris_octopus", "type": "seafood", "prefix": "light", "rarity": "common"},
             {"item": "kvaris_squid", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-            {"item": "kvaris_squidnotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare", "notable": true},
+            {"item": "kvaris_squidnotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare"},
             {"item": "kvaris_crayfish", "type": "seafood", "prefix": "robust", "rarity": "common"},
 
             {"item": "kvaris_carrot", "type": "vegetable", "prefix": "rich", "rarity": "common"},
             {"item": "kvaris_cabbage", "type": "vegetable", "prefix": "light", "rarity": "common"},
             {"item": "kvaris_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-            {"item": "kvaris_onion", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+            {"item": "kvaris_onion", "type": "vegetable", "prefix": "robust", "rarity": "common"},
+
+            {"item": "stia_banana", "type": "fruit", "prefix": "rich", "rarity": "common"},
+            {"item": "stia_apple", "type": "fruit", "prefix": "light", "rarity": "common"},
+            {"item": "stia_carambola", "type": "fruit", "prefix": "light", "rarity": "very-rare"},
+            {"item": "stia_mango", "type": "fruit", "prefix": "crisp", "rarity": "common"},
+            {"item": "stia_plum", "type": "fruit", "prefix": "robust", "rarity": "common"},
+
+            {"item": "stia_hermitcrab", "type": "seafood", "prefix": "rich", "rarity": "common"},
+            {"item": "stia_crab", "type": "seafood", "prefix": "rich", "rarity": "very-rare"},
+            {"item": "stia_seaslug", "type": "seafood", "prefix": "light", "rarity": "common"},
+            {"item": "stia_octopus", "type": "seafood", "prefix": "crisp", "rarity": "common"},
+            {"item": "stia_turbanshell", "type": "seafood", "prefix": "robust", "rarity": "common"},
+
+            {"item": "stia_herb", "type": "vegetable", "prefix": "rich", "rarity": "common"},
+            {"item": "stia_tomato", "type": "vegetable", "prefix": "light", "rarity": "common"},
+            {"item": "stia_cauliflower", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
+            {"item": "stia_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "very-rare"},
+            {"item": "stia_cabbage", "type": "vegetable", "prefix": "robust", "rarity": "common"}
         ],
         "container": [
-            {"item": "red", "rarity": "special"}
+            {"item": "red", "rarity": "special"},
+            {"item": "invisible", "rarity": "rare"}
         ],
         "other": [
             {"item": "veteran", "rarity": "rare"},
-            {"item": "alphareactor", "rarity": "very-rare"},
+            {"item": "alphareactor", "rarity": "rare"},
             {"item": "snoal", "rarity": "rare"},
             {"item": "stellarseed", "rarity": "rare"},
             {"item": "datapod", "rarity": "places"},
@@ -104,7 +125,7 @@
             {   
                 "id": "ko-KR",
                 "name": "한국어",
-                "active": true
+                "active": false
             },
             {   
                 "id": "ru-RU",
