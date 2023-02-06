@@ -41,10 +41,10 @@ export default function Datapod(){
                 <content>
                     {t("datapods:"+x.string)}
                     <br/>
-                    {t("ui:Map.placedBy")}: {x.contributer}
+                    {t("ui:map.placedBy")}: {x.contributer}
                     <id>ID: {x.string}</id>
                     <br/><br/>
-                    {t("ui:Map.checkHint")}
+                    {t("ui:map.checkHint")}
                 </content>
             </tooltipwindow></Tooltip>
         </Marker>

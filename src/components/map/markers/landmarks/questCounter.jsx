@@ -94,17 +94,17 @@ export default function QuestCounter(){
                         <info>
                             <div>
                                 <level>
-                                    <span>{t("ui:Map.maxPlayers")}</span>
+                                    <span>{t("ui:map.maxPlayers")}</span>
                                     <border/>
                                     <value>{quest !== null ? data.triggers[quest].players : "NaN"}</value>
                                 </level>
                                 <level>
-                                    <span>{t("ui:Map.requiredBP")}</span>
+                                    <span>{t("ui:map.requiredBP")}</span>
                                     <border/>
                                     <value>{quest !== null ? data.triggers[quest].minBP : "NaN"}</value>
                                 </level>
                                 <level>
-                                    <span>{t("ui:Map.enemyLv")}</span>
+                                    <span>{t("ui:map.enemyLv")}</span>
                                     <border/>
                                     <value>{quest !== null ? data.triggers[quest].enemyLv : "NaN"}</value>
                                 </level>
@@ -113,7 +113,7 @@ export default function QuestCounter(){
                         <cont>
                             <img src={quest !== null ? data.triggers[quest].img_url : "./assets/images/banners/other/null.png"} alt="" />
                             <info>
-                                <span>{t("ui:Map.rewards.firstTime")}</span>
+                                <span>{t("ui:map.rewards.firstTime")}</span>
                                 <border/>
                                 <rewards>
                                     {(quest !== null ? data.triggers[quest].firstRewards.map((y=>
@@ -130,7 +130,7 @@ export default function QuestCounter(){
                                     )) : <Fragment/>)}
                                 </rewards>
                                 <br/>
-                                <span>{t("ui:Map.rewards.guaranteed")}</span>
+                                <span>{t("ui:map.rewards.guaranteed")}</span>
                                 <border/>
                                 <rewards>
                                     {(quest !== null ? data.triggers[quest].rewards.map((y=><>
@@ -154,17 +154,17 @@ export default function QuestCounter(){
                                 </rewards>
                             </info>
                         </cont>
-                        <span>{t("ui:Map.description")}</span>
+                        <span>{t("ui:map.description")}</span>
                         <border/>
                         {quest !== null ? t("quests:triggers."+data.triggers[quest].id+".description") : "NaN"}
                         <br/><br/>
                         {quest !== null ? (data.triggers[quest].sp_fail_condition === true ? <>
-                        <span>{t("ui:Map.failCondition")}</span>
+                        <span>{t("ui:map.failCondition")}</span>
                         <border/>
                         {quest !== null ? t("quests:triggers."+data.triggers[quest].id+".failCondition") : "NaN"}
                         <br/><br/>
                         </> : <Fragment/>):<Fragment/>}
-                        <span>{t("ui:Map.clearCondition")}</span>
+                        <span>{t("ui:map.clearCondition")}</span>
                         <border/>
                         {quest !== null ? t("quests:triggers."+data.triggers[quest].id+".clearCondition") : "NaN"}
                     </content>
@@ -177,7 +177,7 @@ export default function QuestCounter(){
                                 const jsx = [];
                                 if(data.limited.ranks){
                                     for (let i=0; i<data.limited.ranks.length; i++){jsx.push(
-                                        <option value={i}>{t("ui:Map.rank")} {i+1}</option>
+                                        <option value={i}>{t("ui:map.rank")} {i+1}</option>
                                     )}
                                 }
                                 return jsx;
@@ -189,17 +189,17 @@ export default function QuestCounter(){
                         <info>
                             <div>
                                 <level>
-                                    <span>{t("ui:Map.maxPlayers")}</span>
+                                    <span>{t("ui:map.maxPlayers")}</span>
                                     <border/>
                                     <value>{data.limited.players}</value>
                                 </level>
                                 <level>
-                                    <span>{t("ui:Map.requiredBP")}</span>
+                                    <span>{t("ui:map.requiredBP")}</span>
                                     <border/>
                                     <value>{data.limited.ranks[tierLTD].minBP}</value>
                                 </level>
                                 <level>
-                                    <span>{t("ui:Map.enemyLv")}</span>
+                                    <span>{t("ui:map.enemyLv")}</span>
                                     <border/>
                                     <value>{data.limited.ranks[tierLTD].enemyLv}</value>
                                 </level>
@@ -208,7 +208,7 @@ export default function QuestCounter(){
                         <cont>
                             <img src={data.limited.img_url} alt="" />
                             <info>
-                                <span>{t("ui:Map.rewards.guaranteed")}</span>
+                                <span>{t("ui:map.rewards.guaranteed")}</span>
                                 <border/>
                                 <rewards>
                                     <div>
@@ -218,11 +218,11 @@ export default function QuestCounter(){
                                 </rewards>
                             </info>
                         </cont>
-                        <span>{t("ui:Map.description")}</span>
+                        <span>{t("ui:map.description")}</span>
                         <border/>
                         {t("quests:limited.description")}
                         <br/><br/>
-                        <span>{t("ui:Map.clearCondition")}</span>
+                        <span>{t("ui:map.clearCondition")}</span>
                         <border/>
                         {t("quests:limited.clearCondition")}
                     </content>

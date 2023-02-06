@@ -17,15 +17,15 @@ export default function NavBar(){
           window.open("https://boosty.to/kosnag", '_blank').focus()
         }>
           <img alt="" src={imageDonate}/>
-          <div>{t("ui:NavBar.donate")}</div>
+          <div>{t("ui:navbar.donate")}</div>
         </button>
         <button onClick={() => Functions.menuShowHide("menu-legend")}>
           <img alt="" src={imageMapLegend}/>
-          <div>{t("ui:NavBar.mapLegend")}</div>
+          <div>{t("ui:navbar.mapLegend")}</div>
         </button>
         <button onClick={() => Functions.menuShowHide("menu-settings")}>
           <img alt="" src={imageSettings}/>
-          <div>{t("ui:NavBar.options")}</div>
+          <div>{t("ui:navbar.options")}</div>
         </button>
       </buttons>
     </navbar>

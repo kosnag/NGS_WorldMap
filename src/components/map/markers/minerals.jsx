@@ -29,9 +29,9 @@ const Template = (props) => {
                             <span><menuicon/> {t("items:mineral."+props.id+".title")}</span>
                         </header>
                         <content>
-                            {t("ui:LegendMenu.Categories.minerals")}
+                            {t("ui:legendMenu.categories.minerals")}
                             <br/>
-                            {t("ui:Map.placedBy")}: {x.contributer}
+                            {t("ui:map.placedBy")}: {x.contributer}
                             <id>ID: {props.id}{x.id}</id>
                         </content>
                     </tooltipwindow></Tooltip>
@@ -44,9 +44,9 @@ const Template = (props) => {
                         <span><menuicon/> {t("items:mineral."+props.id+".title")}</span>
                     </header>
                     <content>
-                        {t("ui:LegendMenu.Categories.minerals")}
+                        {t("ui:legendMenu.categories.minerals")}
                         <br/>
-                        {t("ui:Map.placedBy")}: {x.contributer}
+                        {t("ui:map.placedBy")}: {x.contributer}
                         <id>ID: {props.id}{x.id}</id>
                     </content>
                 </tooltipwindow></Tooltip>

@@ -31,7 +31,7 @@ const TrainingTrainiaTemplate = (props) => {
                 <content>
                     <name>{t(props.type+"s:"+x.id+".title")}</name>
                     {x.challenge ? 
-                    <><br/>{t("ui:Map.availableChallengeRank")}</>
+                    <><br/>{t("ui:map.availableChallengeRank")}</>
                     :
                     <Fragment/>
                     }
@@ -39,17 +39,17 @@ const TrainingTrainiaTemplate = (props) => {
                     <info>
                         <div>
                             <level>
-                                <span>{t("ui:Map.maxPlayers")}</span>
+                                <span>{t("ui:map.maxPlayers")}</span>
                                 <border/>
                                 <value>{x.players}</value>
                              </level>
                             <level>
-                                <span>{t("ui:Map.recommendedBP")}</span>
+                                <span>{t("ui:map.recommendedBP")}</span>
                                 <border/>
                                 <value>{x.minBP}</value>
                             </level>
                             <level>
-                                <span>{t("ui:Map.enemyLv")}</span>
+                                <span>{t("ui:map.enemyLv")}</span>
                                 <border/>
                                 <value>{x.enemyLv}</value>
                             </level>
@@ -58,7 +58,7 @@ const TrainingTrainiaTemplate = (props) => {
                     <cont>
                         <img src="./assets/images/banners/other/trainia.png" alt="" />
                         <info>
-                            <span>{t("ui:Map.rewards.firstTime")}</span>
+                            <span>{t("ui:map.rewards.firstTime")}</span>
                             <border/>
                             <rewards>
                                 <div>
@@ -72,11 +72,11 @@ const TrainingTrainiaTemplate = (props) => {
                             </rewards>
                             </info>
                     </cont>
-                    <span>{t("ui:Map.description")}</span>
+                    <span>{t("ui:map.description")}</span>
                     <border/>
                     {t(props.type+"s:"+x.id+".description")}
                     <br/><br/>
-                    <span>{t("ui:Map.subMissions")}</span>
+                    <span>{t("ui:map.subMissions")}</span>
                     <border/>
                     <submission-divider/> {t(props.type+"s:"+x.id+".subMission1")}
                     <br/>
@@ -84,7 +84,7 @@ const TrainingTrainiaTemplate = (props) => {
                     <br/>
                     <submission-divider/> {t(props.type+"s:"+x.id+".subMission3")}
                     <br/><br/>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:map.clearCondition")}</span>
                     <border/>
                     {t(props.type+"s:"+x.id+".clearCondition")}
                 </content>

@@ -58,19 +58,19 @@ export default function Urgent(){
                     <info>
                         <div>
                             <level>
-                                <span>{t("ui:Map.maxPlayers")}</span>
+                                <span>{t("ui:map.maxPlayers")}</span>
                                 <border/>
                                 <value>{x.players}</value>
                             </level>
                             <level>
-                                <span>{t("ui:Map.requiredBP")}</span>
+                                <span>{t("ui:map.requiredBP")}</span>
                                 <border/>
                                 <value>
                                     {x.ranks[tier] != null ? <>{x.ranks[tier].minBP}</> : <Fragment/>}
                                 </value>
                             </level>
                             <level>
-                                <span>{t("ui:Map.enemyLv")}</span>
+                                <span>{t("ui:map.enemyLv")}</span>
                                 <border/>
                                 <value>
                                     {x.ranks[tier] != null ? <>{x.ranks[tier].enemyLv}</> : <Fragment/>}
@@ -86,7 +86,7 @@ export default function Urgent(){
                                 jsx.push(<>{(()=>{
                                     if(x.ranks[tier] != null){return (// eslint-disable-next-line
                                         <info className={tier == i ? "" : "hidden"}>
-                                            <span>{t("ui:Map.rewards.firstTime")}</span>
+                                            <span>{t("ui:map.rewards.firstTime")}</span>
                                             <border/>
                                             <rewards>
                                                 {(x.firstRewards.map((y=>
@@ -105,7 +105,7 @@ export default function Urgent(){
                                                 )))}
                                             </rewards>
                                             <br/>
-                                            <span>{t("ui:Map.rewards.guaranteed")}</span>
+                                            <span>{t("ui:map.rewards.guaranteed")}</span>
                                             <border/>
                                             <rewards>
                                                 {(x.ranks[i].rewards.map((y=><>
@@ -134,11 +134,11 @@ export default function Urgent(){
                             return jsx;
                         })()}
                     </cont>
-                    <span>{t("ui:Map.description")}</span>
+                    <span>{t("ui:map.description")}</span>
                     <border/>
                     {t("urgents:"+x.id+".description")}
                     <br/><br/>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:map.clearCondition")}</span>
                     <border/>
                     {t("urgents:"+x.id+".clearCondition")}
                 </content>

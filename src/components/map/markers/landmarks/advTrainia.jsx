@@ -34,17 +34,17 @@ export default function AdvTrainia(){
                     <info>
                         <div>
                             <level>
-                                <span>{t("ui:Map.maxPlayers")}</span>
+                                <span>{t("ui:map.maxPlayers")}</span>
                                 <border/>
                                 <value>{x.players}</value>
                              </level>
                             <level>
-                                <span>{t("ui:Map.requiredBP")}</span>
+                                <span>{t("ui:map.requiredBP")}</span>
                                 <border/>
                                 <value>{x.minBP}</value>
                             </level>
                             <level>
-                                <span>{t("ui:Map.enemyLv")}</span>
+                                <span>{t("ui:map.enemyLv")}</span>
                                 <border/>
                                 <value>{x.enemyLv}+</value>
                             </level>
@@ -53,7 +53,7 @@ export default function AdvTrainia(){
                     <cont>
                         <img src="./assets/images/banners/other/advTrainia.png" alt="" />
                         <info>
-                            <span>{t("ui:Map.rewards.possible")}</span>
+                            <span>{t("ui:map.rewards.possible")}</span>
                             <border/>
                             <rewards>
                                 <div>
@@ -62,15 +62,15 @@ export default function AdvTrainia(){
                             </rewards>
                         </info>
                     </cont>
-                    <span>{t("ui:Map.description")}</span>
+                    <span>{t("ui:map.description")}</span>
                     <border/>
                     {t("advTrainia:"+x.id+".description")}
                     <br/><br/>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:map.clearCondition")}</span>
                     <border/>
                     {t("advTrainia:"+x.id+".clearCondition")}
                     <br/><br/>
-                    <span>{t("ui:Map.failCondition")}</span>
+                    <span>{t("ui:map.failCondition")}</span>
                     <border/>
                     {t("advTrainia:"+x.id+".failCondition")}
                 </content>

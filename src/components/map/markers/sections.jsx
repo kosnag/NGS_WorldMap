@@ -49,7 +49,7 @@ export default function Sections(){
                         {(()=>{
                             const jsx = [];
                             for (var i=0; i<x.ranks.length; i++){
-                                jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
+                                jsx.push(<option value={i}>{t("ui:map.rank")} {i+1}</option>)
                             }
                             return jsx;
                         })()}
@@ -61,7 +61,7 @@ export default function Sections(){
                     <cont><img src={"./assets/images/banners/sections/"+x.region+"/"+x.id+".png"} className="section" alt="" /></cont>
                     {(()=>{
                         if(x.type === "lobby"){return <>
-                            <span>{t("ui:Map.maxPlayers")}</span>
+                            <span>{t("ui:map.maxPlayers")}</span>
                             <border/>
                             100
                         </>}
@@ -69,29 +69,29 @@ export default function Sections(){
                             <info>
                                 <div>
                                     <level>
-                                        <span>{t("ui:Map.maxPlayers")}</span>
+                                        <span>{t("ui:map.maxPlayers")}</span>
                                         <border/>
                                         <value>32</value>
                                     </level>
                                     <level>
-                                        <span>{t("ui:Map.recommendedBP")}</span>
+                                        <span>{t("ui:map.recommendedBP")}</span>
                                         <border/>
                                         <value>{x.minBP}</value>
                                     </level>
                                     <level>
-                                        <span>{t("ui:Map.enemyLv")}</span>
+                                        <span>{t("ui:map.enemyLv")}</span>
                                         <border/>
                                         <value>{x.enemyLv}</value>
                                     </level>
                                 </div>
                             </info>
                             {x.gigantix ? <>
-                                <span>{t("ui:Map.enemyTypes.gigantix")}</span>
+                                <span>{t("ui:map.enemyTypes.gigantix")}</span>
                                 <border/>
                                 {t("enemies:"+x.gigantix)}
                             </>:<Fragment/>}
                             {x.ancient ? <>
-                                <span>{t("ui:Map.enemyTypes.ancient")}</span>
+                                <span>{t("ui:map.enemyTypes.ancient")}</span>
                                 <border/>
                                 {(()=>{
                                     const jsx = [];
@@ -110,7 +110,7 @@ export default function Sections(){
                             <info>
                                 <div>
                                     <level>
-                                        <span>{t("ui:Map.maxPlayers")}</span>
+                                        <span>{t("ui:map.maxPlayers")}</span>
                                         <border/>
                                         <value>8</value>
                                     </level>
@@ -118,9 +118,9 @@ export default function Sections(){
                                         <span>
                                             {(()=>{// eslint-disable-next-line
                                                 if (tier == 0){
-                                                    return <>{t("ui:Map.recommendedBP")}</>
+                                                    return <>{t("ui:map.recommendedBP")}</>
                                                 } else {
-                                                    return <>{t("ui:Map.requiredBP")}</>
+                                                    return <>{t("ui:map.requiredBP")}</>
                                                 }
                                             })()}
                                         </span>
@@ -130,7 +130,7 @@ export default function Sections(){
                                         </value>
                                     </level>
                                     <level>
-                                        <span>{t("ui:Map.enemyLv")}</span>
+                                        <span>{t("ui:map.enemyLv")}</span>
                                         <border/>
                                         <value>
                                             {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].enemyLv}</>}})()}

@@ -23,9 +23,9 @@ export default function StellarGrace(){
                     <span><menuicon/> {t("items:other.stellargrace.title")}</span>
                 </header>
                 <content>
-                    {t("ui:Map.type")}: {t("ui:Map.stellarGraceType."+x.string)}
+                    {t("ui:map.type")}: {t("ui:map.stellarGraceType."+x.string)}
                     <br/>
-                    {t("ui:Map.placedBy")}: {x.contributer}
+                    {t("ui:map.placedBy")}: {x.contributer}
                     <id>ID: stellargrace{x.id}</id>
                 </content>
             </tooltipwindow></Tooltip>

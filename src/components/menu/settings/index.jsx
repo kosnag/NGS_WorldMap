@@ -45,15 +45,15 @@ export default function MenuSettings(){
             <button 
               className={toggleTab === 'languages' ? "active" : ""}
               onClick={() => setToggleTab('languages')}
-            >{t("ui:OptionsMenu.Categories.languages")}</button>
+            >{t("ui:optionsMenu.categories.languages")}</button>
             <button 
               className={toggleTab === 'reset' ? "active" : ""}
               onClick={() => setToggleTab('reset')}
-            >{t("ui:OptionsMenu.Categories.reset")}</button>
+            >{t("ui:optionsMenu.categories.reset")}</button>
             <button 
               className={toggleTab === 'about' ? "active" : ""}
               onClick={() => setToggleTab('about')}
-            >{t("ui:OptionsMenu.Categories.about")}</button>
+            >{t("ui:optionsMenu.categories.about")}</button>
           </category>
           <>
             <items id="languages" className={toggleTab === 'languages' ? "active" : ""}>
@@ -61,7 +61,7 @@ export default function MenuSettings(){
                 x.active === true ?
                   <button onClick={() => clickToggleLang(x.id)}>
                     <span className={toggleLang === x.id ? "active" : ""}/>
-                    <div>{t("ui:OptionsMenu.Items.languages."+x.id)} | {x.name}</div>
+                    <div>{t("ui:optionsMenu.items.languages."+x.id)} | {x.name}</div>
                   </button>
                 : <Fragment/>
               ))}
@@ -70,32 +70,32 @@ export default function MenuSettings(){
               <button onClick={() => {
                 window.localStorage.removeItem("i18nextLng");
                 window.location.reload()
-              }}>{t("ui:OptionsMenu.Items.reset.lang")}</button>
+              }}>{t("ui:optionsMenu.items.reset.lang")}</button>
               <button onClick={() => {
                 window.localStorage.removeItem("settings");
                 window.location.reload()
-              }}>{t("ui:OptionsMenu.Items.reset.visibility")}</button>
+              }}>{t("ui:optionsMenu.items.reset.visibility")}</button>
               <button onClick={() => {
                 window.localStorage.removeItem("checked");
                 window.location.reload()
-              }}>{t("ui:OptionsMenu.Items.reset.checked")}</button>
+              }}>{t("ui:optionsMenu.items.reset.checked")}</button>
               <button onClick={() => {
                 window.localStorage.clear();
                 window.location.reload()
-              }}>{t("ui:OptionsMenu.Items.reset.everything")}</button>
+              }}>{t("ui:optionsMenu.items.reset.everything")}</button>
             </items>
             <items id="about" className={toggleTab === 'about' ? "active" : ""}>
               <p>
                 {t("ui:page_title")}
                 <br/><br/>
-                {t("ui:OptionsMenu.Items.about.author")}: <name onClick={()=>{window.open("//twitter.com/kosnag")}}>kosnag</name>
+                {t("ui:optionsMenu.items.about.author")}: <name onClick={()=>{window.open("//twitter.com/kosnag")}}>kosnag</name>
                 <br/><br/>
-                {t("ui:OptionsMenu.Items.about.contributers")}:<br/>
+                {t("ui:optionsMenu.items.about.contributers")}:<br/>
                 {contributers.map((x=>
                   <>• <name onClick={()=>{window.open(x.link)}}>{x.name}</name> - {x.info}<br/></>
                 ))}
                 <br/><br/>
-                {t("ui:OptionsMenu.Items.about.segaCopyright")}
+                {t("ui:optionsMenu.items.about.segaCopyright")}
               </p>
             </items>
           </>

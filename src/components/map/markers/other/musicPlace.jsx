@@ -25,7 +25,7 @@ export default function MusicPlace(){
                 <content>
                     {x.string}
                     <br/>
-                    {t("ui:Map.placedBy")}: {x.contributer}
+                    {t("ui:map.placedBy")}: {x.contributer}
                     <br/><br/>
                     {t("items:other.musicplace.hint")}
                 </content>

@@ -19,15 +19,15 @@ const Template= (props) => {
                     <span><menuicon/> {t("items:food."+props.id)}</span>
                 </header>
                 <content>
-                    {t("ui:LegendMenu.Categories.food")}
+                    {t("ui:legendMenu.categories.food")}
                     <br/>
-                    {t("ui:Map.type")}: {t("ui:Map.foodType."+props.type)}
+                    {t("ui:map.type")}: {t("ui:map.foodType."+props.type)}
                     <br/>
                     {x.rarity === "very-rare" ? <>
                         {t("items:food.description.prefix.special")}
                         <br/>
                     </>:<Fragment/>}
-                    {t("ui:Map.placedBy")}: {x.contributer}
+                    {t("ui:map.placedBy")}: {x.contributer}
                     <id>ID: {props.id}{x.id}</id>
                 </content>
             </tooltipwindow></Tooltip>

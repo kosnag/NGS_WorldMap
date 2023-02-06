@@ -38,7 +38,7 @@ export default function Battledia(){
                         {(()=>{
                             const jsx = [];
                             for (var i=0; i<x.ranks.length; i++){jsx.push(
-                                <option value={i}>{t("ui:Map.rank")} {i+1}</option>
+                                <option value={i}>{t("ui:map.rank")} {i+1}</option>
                             )}
                             return jsx;
                         })()}
@@ -49,17 +49,17 @@ export default function Battledia(){
                     <info>
                         <div>
                             <level>
-                                <span>{t("ui:Map.maxPlayers")}</span>
+                                <span>{t("ui:map.maxPlayers")}</span>
                                 <border/>
                                 <value>{x.players}</value>
                             </level>
                             <level>
-                                <span>{t("ui:Map.requiredBP")}</span>
+                                <span>{t("ui:map.requiredBP")}</span>
                                 <border/>
                                 <value>{x.ranks[tier] != null ? x.ranks[tier].minBP : <Fragment/>}</value>
                             </level>
                             <level>
-                                <span>{t("ui:Map.enemyLv")}</span>
+                                <span>{t("ui:map.enemyLv")}</span>
                                 <border/>
                                 <value>{x.ranks[tier] != null ? x.ranks[tier].enemyLv : <Fragment/>}</value>
                             </level>
@@ -75,8 +75,8 @@ export default function Battledia(){
                                         <info className={tier === i ? "" : "hidden"}>
                                             <span>
                                                 {(()=>{
-                                                    if(x.type === "purple"){return t("ui:Map.rewards.possible")}
-                                                    if(x.type === "yellow"){return t("ui:Map.rewards.guaranteed")}
+                                                    if(x.type === "purple"){return t("ui:map.rewards.possible")}
+                                                    if(x.type === "yellow"){return t("ui:map.rewards.guaranteed")}
                                                 })()}
                                             </span>
                                             <border/>
@@ -115,11 +115,11 @@ export default function Battledia(){
                             return jsx;
                         })()}
                     </cont>
-                    <span>{t("ui:Map.description")}</span>
+                    <span>{t("ui:map.description")}</span>
                     <border/>
                     {t("battledias:type."+x.type+".description")}
                     <br/><br/>
-                    <span>{t("ui:Map.clearCondition")}</span>
+                    <span>{t("ui:map.clearCondition")}</span>
                     <border/>
                     {t("battledias:type."+x.type+".clearCondition")}
                 </content>
