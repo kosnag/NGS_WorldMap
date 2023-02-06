@@ -5,7 +5,9 @@
         "retemTroopers": "Retem Troopers",
         "retemDevastators": "Retem Devastators",
         "kvarisTroopers": "Kvaris Troopers",
-        "kvarisDevastators": "Kvaris Devastators"
+        "kvarisDevastators": "Kvaris Devastators",
+        "stiaTroopers": "Stia Troopers",
+        "stiaDevastators": "Stia Devastators"
     },
     "type": {
         "yellow": {

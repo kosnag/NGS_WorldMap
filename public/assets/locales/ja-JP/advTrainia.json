@@ -6,15 +6,15 @@
         "description": "ここは、アークス各人の総合力を試す高等訓練システム“トリニテス”である。持ちうる能力をすべて活用して、最深部を目指せ。\n※出現エネミーのレベルはプレイヤーのレベルにより変動"
     },
     "cannonballRumble": {
-        "title": "",
-        "clearCondition": "",
-        "failCondition": "",
-        "description": ""
+        "title": "advTrainia:cannonballRumble.title",
+        "clearCondition": "advTrainia:cannonballRumble.clearCondition",
+        "failCondition": "advTrainia:cannonballRumble.failCondition",
+        "description": "advTrainia:cannonballRumble.description"
     },
     "cannonballStrike": {
-        "title": "",
-        "clearCondition": "",
-        "failCondition": "",
-        "description": ""
+        "title": "advTrainia:cannonballStrike.title",
+        "clearCondition": "advTrainia:cannonballStrike.clearCondition",
+        "failCondition": "advTrainia:cannonballStrike.failCondition",
+        "description": "advTrainia:cannonballStrike.description"
     }
 }

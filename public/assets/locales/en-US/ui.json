@@ -1,12 +1,12 @@
 {
     "page_title": "PSO2NGS Interactive Map",
-    "NavBar": {
+    "navbar": {
         "donate": "Donate",
         "mapLegend": "Map Legend",
         "options": "Options"
     },
-    "LegendMenu": {
-        "Categories": {
+    "legendMenu": {
+        "categories": {
             "landmarks": "Landmarks",
             "minerals": "Minerals",
             "food": "Food",
@@ -14,14 +14,14 @@
             "other": "Other"
         }
     },
-    "OptionsMenu": {
-        "Categories": {
+    "optionsMenu": {
+        "categories": {
             "languages": "Languages",
             "mapping": "Mapping",
             "reset": "Reset",
             "about": "About"
         },
-        "Items": {
+        "items": {
             "languages": {
                 "en-US": "English",
                 "ja-JP": "Japanese",
@@ -47,7 +47,7 @@
             }
         }
     },
-    "Map": {
+    "map": {
         "foodType": {
             "fruit": "Fruit",
             "seafood": "Seafood",

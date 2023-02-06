@@ -5,7 +5,9 @@
         "retemTroopers": "リテムトルーパーズ",
         "retemDevastators": "リテムデバステーターズ",
         "kvarisTroopers": "クヴァリストルーパーズ",
-        "kvarisDevastators": "クヴァリスデバステーターズ"
+        "kvarisDevastators": "クヴァリスデバステーターズ",
+        "stiaTroopers": "battledias:regular.stiaTroopers",
+        "stiaDevastators": "battledias:regular.stiaDevastators"
     },
     "type": {
         "yellow": {

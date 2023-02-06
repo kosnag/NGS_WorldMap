@@ -34,9 +34,9 @@
     "deepWell": {
         "title": "ディープウェル",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使し、最深部で待ちうける“アムス・クローネ”を撃破せよ。",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "towers:deepWeel.clearCondition",
+        "subMission1": "towers:deepWeel.subMission1",
+        "subMission2": "towers:deepWeel.subMission2",
+        "subMission3": "towers:deepWeel.subMission3"
     }
 }

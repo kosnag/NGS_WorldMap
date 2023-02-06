@@ -36,5 +36,11 @@
         "lobby": "ロビーエリア",
         "gathering": "探索セクション",
         "combat": "戦闘セクション"
+    },
+    "regions": {
+        "aelio": "sections:regions.aelio",
+        "retem": "sections:regions.retem",
+        "kvaris": "sections:regions.lvaris",
+        "stia": "sections:regions.stia"
     }
 }

@@ -36,5 +36,11 @@
         "lobby": "Lobby Area",
         "gathering": "Gathering Area",
         "combat": "Combat Area"
+    },
+    "regions": {
+        "aelio": "Aelio",
+        "retem": "Retem",
+        "kvaris": "Kvaris",
+        "stia": "Stia"
     }
 }

@@ -26,11 +26,11 @@
         },
         "advTrainia": {
             "title": "Advanced Trainia",
-            "description": ""
+            "description": "items:landmark.advTrainia.description"
         },
         "quests": {
             "title": "Quest Counter",
-            "description": ""
+            "description": "items:landmark.quests.description"
         }
     },
     "mineral": {
@@ -64,19 +64,23 @@
         },
         "randomite": {
             "title": "Randomite",
-            "description": ""
+            "description": "items:mineral.randomite.description"
         },
         "pentalite": {
             "title": "Pentrite",
-            "description": ""
+            "description": "items:mineral.pentalite.description"
         },
         "blizzardium": {
             "title": "Blizzardium",
-            "description": ""
+            "description": "items:mineral.blizzardium.description"
         },
-        "lavacite": {
-            "title": "",
-            "description": ""
+        "hexakite": {
+            "title": "items:mineral.hexakite.title",
+            "description": "items:mineral.hexakite.description"
+        },
+        "inferium": {
+            "title": "items:mineral.inferium.title",
+            "description": "items:mineral.inferium.description"
         }
     },
     "food": {
@@ -120,6 +124,22 @@
         "kvaris_snail": "Nourishing Kvaris Sea Snail",
         "kvaris_squid": "Sharp Kvaris Squid",
         "kvaris_squidnotable": "Notable Kvaris Squid",
+
+        "stia_apple": "items:food.stia_apple",
+        "stia_banana": "items:food.stia_banana",
+        "stia_cabbage": "items:food.stia_cabbage",
+        "stia_carambola": "items:food.stia_carambola",
+        "stia_cauliflower": "items:food.stia_cauliflower",
+        "stia_crab": "items:food.stia_crab",
+        "stia_herb": "items:food.stia_herb",
+        "stia_hermitcrab": "items:food.stia_hermitcrab",
+        "stia_mango": "items:food.stia_mango",
+        "stia_mushroom": "items:food.stia_mushroom",
+        "stia_octopus": "items:food.stia_octopus",
+        "stia_plum": "items:food.stia_plum",
+        "stia_seaslug": "items:food.stia_seaslug",
+        "stia_tomato": "items:food.stia_tomato",
+        "stia_turbanshell": "items:food.stia_turbanshell",
         
         "description": {
             "prefix": {
@@ -137,21 +157,13 @@
         }
     },
     "container": {
-        "gold": {
-            "title": "Item Container [Gold]",
-            "description": "Contains valuable items like minerals or Alpha Reactors"
-        },
-        "green": {
-            "title": "Item Container [Green]",
-            "description": "Contains grinders"
-        },
         "red": {
             "title": "Item Container [Red]",
             "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
         },
         "invisible": {
-            "title": "",
-            "description": ""
+            "title": "items:container.invisible.title",
+            "description": "items:container.invisible.description"
         }
     },
     "other": {
@@ -165,7 +177,8 @@
         },
         "datapod": {
             "title": "Datapod",
-            "description": "Message Packs contain messages from the residents of Halpha. Some also contain items."
+            "description": "Message Packs contain messages from the residents of Halpha. Some also contain items.",
+            "hint": "items:other.datapod.hint"
         },
         "stellarseed": {
             "title": "Stellar Seed",
