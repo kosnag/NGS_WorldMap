@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import Functions from './functions';
 import NavBar from "./components/navbar";
 import MenuSettings from "./components/menu/settings";
-import MenuDonate from "./components/menu/donate";
 import MenuLegend from "./components/menu/legend";
 import { Map } from "./components/map";
 
@@ -22,7 +21,6 @@ const App = () => {
     <container>
       <MenuLegend/>
       <MenuSettings/>
-      <MenuDonate/>
     </container>
   </>)
 }
@@ -32,20 +30,20 @@ export default function Init(){
     Functions.checkDisabledItemsFromServerSettings();
     return <App/>
   } else if (localStorage.getItem("settings") === null && localStorage.getItem("checked") !== null){
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/usersettings.json").then(response=>response.json()).then(data=>localStorage.setItem("settings",JSON.stringify(data)));
+    fetch("./assets/storages/usersettings.json").then(response=>response.json()).then(data=>localStorage.setItem("settings",JSON.stringify(data)));
     setTimeout(()=>{
       window.location.reload();
       return <></>;
     },500)
   } else if (localStorage.getItem("settings") !== null && localStorage.getItem("checked") === null){
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/checked.json").then(response=>response.json()).then(data=>localStorage.setItem("checked",JSON.stringify(data)));
+    fetch("./assets/storages/checked.json").then(response=>response.json()).then(data=>localStorage.setItem("checked",JSON.stringify(data)));
     setTimeout(()=>{
       window.location.reload();
       return <></>;
     },500)
   } else {
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/usersettings.json").then(response=>response.json()).then(data=>localStorage.setItem("settings",JSON.stringify(data)));
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/checked.json").then(response=>response.json()).then(data=>localStorage.setItem("checked",JSON.stringify(data)));
+    fetch("./assets/storages/usersettings.json").then(response=>response.json()).then(data=>localStorage.setItem("settings",JSON.stringify(data)));
+    fetch("./assets/storages/checked.json").then(response=>response.json()).then(data=>localStorage.setItem("checked",JSON.stringify(data)));
     setTimeout(()=>{
       window.location.reload();
       return <></>;
