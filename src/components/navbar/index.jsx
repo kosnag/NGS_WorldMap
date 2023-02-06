@@ -12,7 +12,10 @@ export default function NavBar(){
   return (
     <navbar>
       <buttons>
-        <button onClick={() => Functions.menuShowHide("menu-donate")}>
+        <button onClick={() => 
+          //Functions.menuShowHide("menu-donate")
+          window.open("https://boosty.to/kosnag", '_blank').focus()
+        }>
           <img alt="" src={imageDonate}/>
           <div>{t("ui:NavBar.donate")}</div>
         </button>
