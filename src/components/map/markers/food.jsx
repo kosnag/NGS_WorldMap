@@ -12,7 +12,7 @@ const Template= (props) => {
         return ()=>clearInterval(i);
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=food__"+props.id).then(response=>response.json()).then(d=>setData(d)) : setData([])},[props.id, marker]);
-    if (data !== null){return(marker ? (data.map((x=>
+    if (data !== null) {return(marker ? (data.map((x=>
         <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltipwindow>
                 <header>
@@ -23,8 +23,8 @@ const Template= (props) => {
                     <br/>
                     {t("ui:Map.type")}: {t("ui:Map.foodType."+props.type)}
                     <br/>
-                    {x.notable === true ? <>
-                        {t("items:food.description.prefix.notable")}
+                    {x.rarity === "very-rare" ? <>
+                        {t("items:food.description.prefix.special")}
                         <br/>
                     </>:<Fragment/>}
                     {t("ui:Map.placedBy")}: {x.contributer}
@@ -38,9 +38,9 @@ const Template= (props) => {
 export default function Food(){
     const [dataJSON,setDataJSON] = useState([]);
     useEffect(()=>{
-        fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
+        fetch("./assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
     },[]);
     return <>{dataJSON.items && dataJSON?.items.food.map((x=>
-        <Template id={x.item} type={x.type} notable={x.notable}/>
+        <Template id={x.item} type={x.type} rarity={x.rarity}/>
     ))}</>
 };

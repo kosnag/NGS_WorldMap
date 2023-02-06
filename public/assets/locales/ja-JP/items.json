@@ -92,6 +92,7 @@
         "aelio_tomato": "シャッキ・エアルトマーテ",
         "aelio_turbanshell": "サッパ・エアルサザイエ",
         "aelio_turnip": "ガッツ・エアルカブラナ",
+
         "retem_cauliflower": "ガッツ・リテナキャリブラ",
         "retem_cherries": "マッタ・リテナッチェリ",
         "retem_cranberries": "サッパ・リテナクランベ",
@@ -104,6 +105,7 @@
         "retem_seaslug": "サッパ・リテナウミッシー",
         "retem_strawberry": "ガッツ・リテナストロンベリ",
         "retem_urchin": "シャッキ・リテナウーニィ",
+
         "kvaris_akebia": "ガッツ・クヴァルアッケビル",
         "kvaris_cabbage": "サッパ・クヴァルナッパー",
         "kvaris_carrot": "マッタ・クヴァルキャロツ",
@@ -125,7 +127,7 @@
                 "light": "PP回復量増加",
                 "crisp": "弱点部位ダメージ増加",
                 "robust": "HP回復量増加",
-                "notable": ""
+                "special": ""
             },
             "type": {
                 "fruit": "最大PP増加",
@@ -147,7 +149,7 @@
             "title": "アイテムコンテナ[赤]",
             "description": ""
         },
-        "frozen": {
+        "invisible": {
             "title": "",
             "description": ""
         }

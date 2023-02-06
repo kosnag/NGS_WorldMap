@@ -92,6 +92,7 @@
         "aelio_tomato": "Sharp Aelio Tomato",
         "aelio_turbanshell": "Refreshing Aelio Snail",
         "aelio_turnip": "Healthy Aelio Turnip",
+
         "retem_cauliflower": "Healthy Retem Cauliflower",
         "retem_cherries": "Nourishing Retem Cherries",
         "retem_cranberries": "Refreshing Retem Cranberries",
@@ -104,6 +105,7 @@
         "retem_seaslug": "Refreshing Retem Sea Slug",
         "retem_strawberry": "Healthy Retem Strawberry",
         "retem_urchin": "Sharp Retem Sea Urchin",
+
         "kvaris_akebia": "Healthy Kvaris Akebia",
         "kvaris_cabbage": "Refreshing Kvaris Napa",
         "kvaris_carrot": "Nourishing Kvaris Carrot",
@@ -125,7 +127,7 @@
                 "light": "Boosts PP recovery",
                 "crisp": "Boosts weakness damage",
                 "robust": "Boosts HP recovery",
-                "notable": "Appears only with a certain conditions \nCan be exchanged for various rewards"
+                "special": "Appears only with a certain conditions \nCan be exchanged for various rewards"
             },
             "type": {
                 "fruit": "Boosts PP",
@@ -147,7 +149,7 @@
             "title": "Item Container [Red]",
             "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
         },
-        "frozen": {
+        "invisible": {
             "title": "",
             "description": ""
         }
@@ -155,7 +157,7 @@
     "other": {
         "alphareactor": {
             "title": "Alpha Reactor",
-            "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
+            "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Central Aelio every day."
         },
         "snoal": {
             "title": "Snowks",
