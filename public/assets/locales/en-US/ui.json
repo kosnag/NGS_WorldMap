@@ -36,7 +36,7 @@
             },
             "reset": {
                 "lang": "Reset language",
-                "visibility": "Reset visibility",
+                "visibility": "Reset markers",
                 "checked": "Reset checked markers",
                 "everything": "Reset everything"
             },
