@@ -25,6 +25,8 @@
     {"item": "randomite", "category": "mineral", "size": 26},
     {"item": "pentalite", "category": "mineral", "size": 26},
     {"item": "blizzardium", "category": "mineral", "size": 26},
+    {"item": "hexakite", "category": "mineral", "size": 26},
+    {"item": "inferium", "category": "mineral", "size": 26},
     
 
     {"item": "aelio_apple", "category": "food", "size": 26},
@@ -65,6 +67,21 @@
     {"item": "kvaris_snail", "category": "food", "size": 26},
     {"item": "kvaris_squid", "category": "food", "size": 26},
     {"item": "kvaris_squidnotable", "category": "food", "size": 26},
+    {"item": "stia_banana", "category": "food", "size": 26},
+    {"item": "stia_apple", "category": "food", "size": 26},
+    {"item": "stia_carambola", "category": "food", "size": 26},
+    {"item": "stia_mango", "category": "food", "size": 26},
+    {"item": "stia_plum", "category": "food", "size": 26},
+    {"item": "stia_hermitcrab", "category": "food", "size": 26},
+    {"item": "stia_crab", "category": "food", "size": 26},
+    {"item": "stia_seaslug", "category": "food", "size": 26},
+    {"item": "stia_octopus", "category": "food", "size": 26},
+    {"item": "stia_turbanshell", "category": "food", "size": 26},
+    {"item": "stia_herb", "category": "food", "size": 26},
+    {"item": "stia_tomato", "category": "food", "size": 26},
+    {"item": "stia_cauliflower", "category": "food", "size": 26},
+    {"item": "stia_mushroom", "category": "food", "size": 26},
+    {"item": "stia_cabbage", "category": "food", "size": 26},
     
 
     {"item": "datapod", "category": "other", "size": 26},
