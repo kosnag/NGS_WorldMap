@@ -30,6 +30,15 @@
             "rayjordGorge": "Rayjord Gorge",
             "beluganaRuins": "Belugana Ruins",
             "lostCentral": "Lost Central"
+        },
+        "stia": {
+            "stiaCamp": "Stia Camp",
+            "stiaOutskirts": "Stia Outskirts",
+            "mediolaOuterArea1": "Mediola Outer Area 1",
+            "mediolaOuterArea2": "Mediola Outer Area 2",
+            "dextBase": "Dext Base",
+            "dreisenPlant": "Dreisen Plant",
+            "neusenPlant": "Neusen Plant"
         }
     },
     "type": {

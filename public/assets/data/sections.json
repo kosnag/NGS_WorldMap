@@ -8,7 +8,7 @@
         "type": "gathering",
         "minBP": 933,
         "enemyLv": 7,
-        "gigantix": "varas"
+        "bosses": "varas"
     },
     {
         "region": "aelio",
@@ -19,7 +19,7 @@
         "type": "gathering",
         "minBP": 835,
         "enemyLv": 3,
-        "gigantix": "oruq"
+        "bosses": "oruq"
     },
     {
         "region": "aelio",
@@ -74,7 +74,7 @@
         "type": "gathering",
         "minBP": 1045,
         "enemyLv": 12,
-        "gigantix": "daitylAxe"
+        "bosses": "daitylAxe"
     },
     {
         "region": "aelio",
@@ -103,7 +103,7 @@
         "type": "gathering",
         "minBP": 2744,
         "enemyLv": 60,
-        "gigantix": "daitylSword"
+        "bosses": "daitylSword"
     },
     {
         "region": "aelio",
@@ -114,7 +114,7 @@
         "type": "gathering",
         "minBP": 800,
         "enemyLv": 1,
-        "gigantix": "nogleth"
+        "bosses": "nogleth"
     },
     {
         "region": "aelio",
@@ -160,7 +160,7 @@
         "type": "gathering",
         "minBP": 1223,
         "enemyLv": 17,
-        "gigantix": "dustylHammer"
+        "bosses": "dustylHammer"
     },
     {
         "region": "retem",
@@ -171,7 +171,7 @@
         "type": "gathering",
         "minBP": 1396,
         "enemyLv": 21,
-        "gigantix": "sandNogleth"
+        "bosses": "sandNogleth"
     },
     {
         "region": "retem",
@@ -181,7 +181,7 @@
         "type": "gathering",
         "minBP": 1474,
         "enemyLv": 23,
-        "gigantix": "fortosLauncher"
+        "bosses": "fortosLauncher"
     },
     {
         "region": "retem",
@@ -191,7 +191,7 @@
         "type": "gathering",
         "minBP": 1263,
         "enemyLv": 19,
-        "gigantix": "lizentos"
+        "bosses": "lizentos"
     },
     {
         "region": "retem",
@@ -201,7 +201,7 @@
         "type": "gathering",
         "minBP": 1513,
         "enemyLv": 24,
-        "gigantix": "kelkundo"
+        "bosses": "kelkundo"
     },
     {
         "region": "retem",
@@ -254,7 +254,7 @@
         "type": "gathering",
         "minBP": 1869,
         "enemyLv": 39,
-        "gigantix": "crocodylis"
+        "bosses": "crocodylis"
     },
     {
         "region": "kvaris",
@@ -264,7 +264,7 @@
         "type": "gathering",
         "minBP": 2049,
         "enemyLv": 45,
-        "gigantix": "snoruq"
+        "bosses": "snoruq"
     },
     {
         "region": "kvaris",
@@ -275,7 +275,7 @@
         "type": "gathering",
         "minBP": 1957,
         "enemyLv": 42,
-        "gigantix": "relyn"
+        "bosses": "relyn"
     },
     {
         "region": "kvaris",
@@ -286,7 +286,7 @@
         "type": "gathering",
         "minBP": 1813,
         "enemyLv": 37,
-        "gigantix": "pangolan"
+        "bosses": "pangolan"
     },
     {
         "region": "kvaris",
@@ -297,7 +297,9 @@
         "type": "gathering",
         "minBP": 2744,
         "enemyLv": 64,
-        "ancient": ["amsKvaris", "frostylSword"]
+        "bosses": ["amsKvaris", "frostylSword"],
+        "multiple_bosses": true,
+        "boss_type_override": "ancient"
     },
     {
         "region": "kvaris",
@@ -332,6 +334,87 @@
             {
                 "minBP": 2416,
                 "enemyLv": 55
+            }
+        ]
+    },
+    {
+        "region": "stia",
+        "id": "stiaOutskirts",
+        "coordinates": [
+            [-785,1414],[-792,1397],[-792,1337],[-774,1324],[-753,1323],[-740,1330],[-727,1366],[-728,1411],[-692,1464],[-677,1435],[-656,1421],[-619,1419],[-576,1379],[-594,1342],[-611,1310],[-611,1116],[-711,1115],[-845,1186],[-861,1199],[-916,1362],[-916,1393],[-904,1415],[-838,1444],[-811,1438]
+        ],
+        "type": "gathering",
+        "minBP": 2833,
+        "enemyLv": 62,
+        "bosses": "doldoris"
+    },
+    {
+        "region": "stia",
+        "id": "mediolaOuterArea1",
+        "coordinates": [
+            [-143,1574],[-164,1568],[-274,1571],[-290,1595],[-328,1577],[-333,1578],[-368,1578],[-377,1564],[-400,1526],[-416,1514],[-452,1517],[-485,1524],[-518,1555],[-527,1574],[-527,1592],[-529,1623],[-492,1661],[-466,1676],[-428,1683],[-387,1685],[-350,1726],[-349,1774],[-342,1782],[-328,1783],[-305,1802],[-289,1802],[-239,1762],[-241,1722],[-188,1648],[-143,1601]
+        ],
+        "type": "gathering",
+        "minBP": 2972,
+        "enemyLv": 65,
+        "bosses": ["blazentos", "engouku", "blazentos", "vardias"],
+        "multiple_bosses": true
+    },
+    {
+        "region": "stia",
+        "id": "mediolaOuterArea2",
+        "coordinates": [
+            [-527,1592],[-617,1592],[-640,1525],[-664,1511],[-683,1488],[-692,1464],[-677,1435],[-656,1421],[-619,1419],[-576,1379],[-594,1342],[-494,1396],[-427,1410],[-400,1392],[-322,1392],[-268,1441],[-239,1441],[-132,1552],[-143,1574],[-164,1568],[-274,1571],[-290,1595],[-328,1577],[-333,1578],[-368,1578],[-377,1564],[-400,1526],[-416,1514],[-452,1517],[-485,1524],[-518,1555],[-527,1574]
+                ],
+        "type": "gathering",
+        "minBP": 2924,
+        "enemyLv": 64,
+        "bosses": "darkMagilz"
+    },
+    {
+        "region": "stia",
+        "id": "dextBase",
+        "coordinates": [
+            [-617,1592],[-527,1592],[-529,1623],[-492,1661],[-466,1676],[-428,1683],[-387,1685],[-350,1726],[-349,1774],[-429,1873],[-499,1878],[-596,1801],[-622,1740],[-632,1630]
+        ],
+        "type": "combat",
+        "ranks": [
+            {
+                "minBP": 2972,
+                "enemyLv": 65
+            }
+        ]
+    },
+    {
+        "region": "stia",
+        "id": "stiaCamp",
+        "coordinates": [
+            [-785,1414],[-792,1397],[-792,1337],[-774,1324],[-753,1323],[-740,1330],[-727,1366],[-728,1411],[-747,1422],[-773,1417]
+        ],
+        "type": "lobby"
+    },
+    {
+        "region": "stia",
+        "id": "dreisenPlant",
+        "coordinates": [
+            [-704,1474],[-559,1613],[-432,1487],[-572,1346]
+        ],
+        "type": "gathering",
+        "minBP": 2878,
+        "enemyLv": 63,
+        "bosses": "engouku"
+    },
+    {
+        "region": "stia",
+        "id": "neusenPlant",
+        "coordinates": [
+            [-343,1550],[-333,1544],[-332,1538],[-332,1538],[-312,1525],[-312,1520],[-301,1513],[-301,1507],[-280,1495],[-280,1489],[-269,1483],[-269,1477],[-259,1471],[-259,1465],[-251,1462],[-248,1464],[-241,1462],[-234,1466],[-233,1471],[-224,1478],[-224,1483],[-213,1490],[-214,1495],[-192,1508],[-193,1513],[-182,1520],[-181,1525],[-172,1532],[-171,1538],[-150,1550],[-150,1556],[-140,1562],[-140,1568],[-150,1576],[-151,1581],[-171,1594],[-171,1598],[-181,1607],[-181,1611],[-192,1619],[-192,1624],[-213,1637],[-213,1641],[-223,1649],[-223,1655],[-242,1665],[-257,1656],[-260,1649],[-268,1643],[-270,1637],[-279,1631],[-280,1625],[-299,1613],[-301,1606],[-310,1601],[-312,1594],[-331,1583],[-333,1576],[-342,1568]
+        ],
+        "type": "combat",
+        "ranks": [
+            {
+                "minBP": 3069,
+                "enemyLv": 67
             }
         ]
     }

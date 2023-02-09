@@ -85,26 +85,29 @@ export default function Sections(){
                                     </level>
                                 </div>
                             </info>
-                            {x.gigantix ? <>
-                                <span>{t("ui:map.enemyTypes.gigantix")}</span>
-                                <border/>
-                                {t("enemies:"+x.gigantix)}
-                            </>:<Fragment/>}
-                            {x.ancient ? <>
-                                <span>{t("ui:map.enemyTypes.ancient")}</span>
-                                <border/>
-                                {(()=>{
+                            <span>
+                                {x.boss_type_override ? 
+                                <>{t("ui:map.enemyTypes."+x.boss_type_override)}</>
+                                :
+                                <>{t("ui:map.enemyTypes.gigantix")}</>
+                                }
+                            </span>
+                            <border/>
+                            {(()=>{
+                                if(x.multiple_bosses === true){
                                     const jsx = [];
-                                    for (var i=0; i<x.ancient.length; i++){
+                                    for (var i=0; i<x.bosses.length; i++){
                                         if (i === 0){
-                                            jsx.push(<>{t("enemies:"+x.ancient[i])}</>)
+                                            jsx.push(<>{t("enemies:"+x.bosses[i])}</>)
                                         } else {
-                                            jsx.push(<>, {t("enemies:"+x.ancient[i])}</>)
+                                            jsx.push(<>, {t("enemies:"+x.bosses[i])}</>)
                                         }
                                     }
                                     return jsx;
-                                })()}
-                            </>:<Fragment/>}
+                                } else {
+                                    return <>{t("enemies:"+x.bosses)}</>
+                                }
+                            })()}
                         </>}
                         if(x.type === "combat"){return <>
                             <info>
