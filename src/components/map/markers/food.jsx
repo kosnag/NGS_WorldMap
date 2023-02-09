@@ -1,7 +1,7 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
-import { Marker, Tooltip } from "react-leaflet";
+import { Marker, Tooltip, Circle } from "react-leaflet";
 
 const Template= (props) => {
     const {t} = useTranslation();
@@ -13,25 +13,55 @@ const Template= (props) => {
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=food__"+props.id).then(response=>response.json()).then(d=>setData(d)) : setData([])},[props.id, marker]);
     if (data !== null) {return(marker ? (data.map((x=>
-        <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltipwindow>
-                <header>
-                    <span><menuicon/> {t("items:food."+props.id)}</span>
-                </header>
-                <content>
-                    {t("ui:legendMenu.categories.food")}
-                    <br/>
-                    {t("ui:map.type")}: {t("ui:map.foodType."+props.type)}
-                    <br/>
-                    {x.rarity === "very-rare" ? <>
-                        {t("items:food.description.prefix.special")}
+        props.area && props.area === true ? (
+            <Circle 
+                center={[x.lat,x.lng]}
+                radius={props.area_radius}
+                pathOptions={{
+                    color: props.area_color,
+                    fillColor: props.area_fillColor,
+                    fillOpacity: '0.25'
+                }}
+            >
+                <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
+                    <Tooltip direction='top'><tooltipwindow>
+                        <header>
+                            <span><menuicon/> {t("items:food."+props.id)}</span>
+                        </header>
+                        <content>
+                            {t("ui:legendMenu.categories.food")}
+                            <br/>
+                            {t("ui:map.type")}: {t("ui:map.foodType."+props.type)}
+                            <br/>
+                            {x.rarity === "very-rare" ? <>
+                                {t("items:food.description.prefix.special")}
+                                <br/>
+                            </>:<Fragment/>}
+                            <id>ID: {props.id}{x.id}</id>
+                        </content>
+                    </tooltipwindow></Tooltip>
+                </Marker>
+            </Circle>
+        ) : (
+            <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
+                <Tooltip direction='top'><tooltipwindow>
+                    <header>
+                        <span><menuicon/> {t("items:food."+props.id)}</span>
+                    </header>
+                    <content>
+                        {t("ui:legendMenu.categories.food")}
                         <br/>
-                    </>:<Fragment/>}
-                    {t("ui:map.placedBy")}: {x.contributer}
-                    <id>ID: {props.id}{x.id}</id>
-                </content>
-            </tooltipwindow></Tooltip>
-        </Marker>
+                        {t("ui:map.type")}: {t("ui:map.foodType."+props.type)}
+                        <br/>
+                        {x.rarity === "very-rare" ? <>
+                            {t("items:food.description.prefix.special")}
+                            <br/>
+                        </>:<Fragment/>}
+                        <id>ID: {props.id}{x.id}</id>
+                    </content>
+                </tooltipwindow></Tooltip>
+            </Marker>
+        )
     ))):<Fragment/>)}else{return <Fragment/>}
 }
 
