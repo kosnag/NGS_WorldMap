@@ -40,7 +40,6 @@ Red:()=>{
                      <span><menuicon/> {t("items:container.red.title")}</span>
                 </header>
                 <content>
-                    {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {x.id}</id>
                     <br/>
                     {t("ui:Map.checkHint")}

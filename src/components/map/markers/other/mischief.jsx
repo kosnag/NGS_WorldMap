@@ -39,7 +39,6 @@ export default function Mischief(){
                     <span><menuicon/> {t("items:other.mischief.title")}</span>
                 </header>
                 <content>
-                    {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: mischief{x.id}</id>
                     <br/><br/>
                     {t("ui:Map.checkHint")}

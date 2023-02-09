@@ -41,7 +41,6 @@ export default function Datapod(){
                 <content>
                     {t("datapods:"+x.string)}
                     <br/>
-                    {t("ui:map.placedBy")}: {x.contributer}
                     <id>ID: {x.string}</id>
                     <br/><br/>
                     {t("ui:map.checkHint")}

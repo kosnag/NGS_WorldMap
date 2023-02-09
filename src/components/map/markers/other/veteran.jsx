@@ -21,7 +21,6 @@ export default function Veteran(){
                 <content>
                     {t("enemies:"+x.string)}
                     <br/>
-                    {t("ui:map.placedBy")}: {x.contributer}
                     <id>ID: veteran{x.id}:{x.string}</id>
                 </content>
             </tooltipwindow></Tooltip>
