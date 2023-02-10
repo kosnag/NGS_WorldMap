@@ -1,3 +1,3 @@
 <?php
 
-$PDO = new PDO("mysql:host=localhost;dbname=kosnag_map", 'root', 'root');
+$PDO = new PDO("mysql:host=localhost;dbname=interactive_map", 'root', 'root');
