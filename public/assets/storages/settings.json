@@ -123,6 +123,7 @@
     },
     "settings": {
         "seasonal_event": false,
+        "limited_quest": false,
         "languages": [
             {   
                 "id": "en-US",

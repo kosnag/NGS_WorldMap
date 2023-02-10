@@ -110,22 +110,23 @@ export default function Urgent(){
                                             <rewards>
                                                 {(x.ranks[i].rewards.map((y=><>
                                                     {(y.item === "rewards:value.seasonalpoints") && (checkSettings?.settings && checkSettings.settings.seasonal_event === false) ? 
-                                                    <Fragment/>
+                                                        <Fragment/>
                                                     :
-                                                    <div>
-                                                        <l>{t(y.item)}</l>
-                                                        <r>
-                                                            {(()=>{switch (y.item){
-                                                                case "rewards:value.meseta":
-                                                                case "rewards:value.seasonalpoints":
-                                                                case "rewards:value.experience":
-                                                                    return (<>{y.count}</>)
-                                                                default:
-                                                                    return (<>x{y.count}</>)
-                                                            }})()}
-                                                        </r>
-                                                    </div>
-                                                }</>)))}
+                                                        <div>
+                                                            <l>{t(y.item)}</l>
+                                                            <r>
+                                                                {(()=>{switch (y.item){
+                                                                    case "rewards:value.meseta":
+                                                                    case "rewards:value.seasonalpoints":
+                                                                    case "rewards:value.experience":
+                                                                        return (<>{y.count}</>)
+                                                                    default:
+                                                                        return (<>x{y.count}</>)
+                                                                }})()}
+                                                            </r>
+                                                        </div>
+                                                    }
+                                                </>)))}
                                             </rewards>
                                         </info>
                                     )}

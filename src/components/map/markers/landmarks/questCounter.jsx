@@ -9,8 +9,8 @@ export default function QuestCounter(){
     const [data,setData] = useState({});
     const [marker,setMarker] = useState([]);
     const [quest,setQuest] = useState(null);
-    const [tierLTD,setTierLTD] = useState(0);
-    const handleSelectChangeLTD=(e)=>setTierLTD(e.target.value);
+    const [tierLTD,setTierLTQ] = useState(0);
+    const handleSelectChangeLTD=(e)=>setTierLTQ(e.target.value);
     const [toggleTab,setToggleTab] = useState('triggers');
     const [checkSettings,setSettings] = useState({});
     useEffect(()=>{
@@ -56,14 +56,14 @@ export default function QuestCounter(){
                         >{t("quests:ui.triggers")}</button>
                             <button
                                 className={
-                                    checkSettings?.settings && checkSettings.settings.seasonal_event === true
+                                    checkSettings?.settings && checkSettings.settings.limited_quest === true
                                     ?
                                     (toggleTab === "limited" ? "active" : "")
                                     :
                                     "disabled"
                                 }
                                 onClick={()=>
-                                    checkSettings?.settings && checkSettings.settings.seasonal_event === true
+                                    checkSettings?.settings && checkSettings.settings.limited_quest === true
                                     ?
                                     setToggleTab("limited")
                                     :
@@ -170,7 +170,7 @@ export default function QuestCounter(){
                     </content>
                 </columns> : <Fragment/>}
                 {toggleTab === "limited" ?
-                <>{checkSettings?.settings && checkSettings.settings.seasonal_event === true ? <columns>
+                <>{checkSettings?.settings && checkSettings.settings.limited_quest === true ? <columns>
                     <content>
                         <select onChange={handleSelectChangeLTD}>
                             {(()=>{
@@ -212,8 +212,14 @@ export default function QuestCounter(){
                                 <border/>
                                 <rewards>
                                     <div>
-                                        <l>{t("rewards:value.seasonalpoints")}</l>
-                                        <r>{data.limited.ranks[tierLTD].points}</r>
+                                        {checkSettings?.settings && checkSettings.settings.seasonal_event === true ?
+                                        <>
+                                            <l>{t("rewards:value.seasonalpoints")}</l>
+                                            <r>{data.limited.ranks[tierLTD].points}</r>
+                                        </>
+                                        :
+                                            <Fragment/>
+                                        }
                                     </div>
                                 </rewards>
                             </info>
