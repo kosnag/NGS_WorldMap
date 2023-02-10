@@ -10,6 +10,7 @@
 
 # production
 /build
+/public/api/mysql.php
 
 # misc
 .DS_Store
