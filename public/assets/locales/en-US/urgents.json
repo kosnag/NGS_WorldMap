@@ -53,5 +53,20 @@
         "title": "Mining Rig Defense: Kvaris",
         "description": "",
         "clearCondition": "Defeat the target enemy"
+    },
+    "doldorisVera": {
+        "title": "doldorisVera.title",
+        "description": "doldorisVera.description",
+        "clearCondition": "doldorisVera.clearCondition"
+    },
+    "nilsVera": {
+        "title": "nilsVera.title",
+        "description": "nilsVera.description",
+        "clearCondition": "nilsVera.clearCondition"
+    },
+    "darkFalz2": {
+        "title": "darkFalz2.title",
+        "description": "darkFalz2.description",
+        "clearCondition": "darkFalz2.clearCondition"
     }
 }

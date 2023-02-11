@@ -50,8 +50,23 @@
         "clearCondition": "アムス・ヴェラを討伐せよ！"
     },
     "miningRigDefenceKvaris": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "miningRigDefenceKvaris.title",
+        "description": "miningRigDefenceKvaris.description",
+        "clearCondition": "miningRigDefenceKvaris.clearCondition"
+    },
+    "doldorisVera": {
+        "title": "doldorisVera.title",
+        "description": "doldorisVera.description",
+        "clearCondition": "doldorisVera.clearCondition"
+    },
+    "nilsVera": {
+        "title": "nilsVera.title",
+        "description": "nilsVera.description",
+        "clearCondition": "nilsVera.clearCondition"
+    },
+    "darkFalz2": {
+        "title": "darkFalz2.title",
+        "description": "darkFalz2.description",
+        "clearCondition": "darkFalz2.clearCondition"
     }
 }

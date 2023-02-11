@@ -47,7 +47,7 @@ export default function Urgent(){
                         {(()=>{
                             const jsx = [];
                             for (var i=0; i<x.ranks.length; i++){jsx.push(
-                                <option value={i}>{t("ui:Map.rank")} {i+1}</option>
+                                <option value={i}>{t("ui:map.rank")} {i+1}</option>
                             )}
                             return jsx;
                         })()}
