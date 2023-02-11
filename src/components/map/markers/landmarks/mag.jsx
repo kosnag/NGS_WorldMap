@@ -16,11 +16,11 @@ export default function Mag(){
         <Marker icon={iconLib.mag} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltipwindow>
             <header>
-                <span><menuicon/> {t("mags:type."+x.id)}</span>
+                <span><menuicon/> {t("mags:type."+x.string)}</span>
             </header>
             <content>
                 {t("items:landmark.mag.title")}
-                <id>ID: {x.id}</id>
+                <id>ID: mag{x.id}</id>
             </content>
             </tooltipwindow></Tooltip>
         </Marker>
