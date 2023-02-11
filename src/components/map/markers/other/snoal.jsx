@@ -11,11 +11,11 @@ export default function Snoal(){
         return ()=>clearInterval(i);
     });
     const data = [
-        {"lat": "-201","lng": "522"},
-        {"lat": "-172","lng": "562"},
-        {"lat": "-255","lng": "568"},
-        {"lat": "-298","lng": "582"},
-        {"lat": "-348","lng": "579"}
+        {"lat": -201,"lng": 522},
+        {"lat": -172,"lng": 562},
+        {"lat": -255,"lng": 568},
+        {"lat": -298,"lng": 582},
+        {"lat": -348,"lng": 579}
     ];
     return (marker ? (data.map((x=>
         <Circle 

@@ -11,9 +11,9 @@ export default function AlphaReactor(){
         return ()=>clearInterval(i);
     });
     const data = [
-        {"lat": "-201","lng": "522"},
-        {"lat": "-172","lng": "562"},
-        {"lat": "-255","lng": "568"}
+        {"lat":-1139, "lng":504},
+        {"lat":-1583, "lng":432},
+        {"lat":-1596.5, "lng":606}
     ];
     return (marker ? (data.map((x=>
         <Circle 
