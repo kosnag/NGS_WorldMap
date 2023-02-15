@@ -6,15 +6,21 @@
         "description": "This is Trinitas, an advanced training system that fully tests ARKS' capabilities. Use all your skills to react the final area.\nEnemy levels are based on player levels."
     },
     "cannonballRumble": {
-        "title": "advTrainia:cannonballRumble.title",
-        "clearCondition": "advTrainia:cannonballRumble.clearCondition",
-        "failCondition": "advTrainia:cannonballRumble.failCondition",
-        "description": "advTrainia:cannonballRumble.description"
+        "title": "cannonballRumble.title",
+        "clearCondition": "cannonballRumble.clearCondition",
+        "failCondition": "cannonballRumble.failCondition",
+        "description": "cannonballRumble.description"
     },
     "cannonballStrike": {
-        "title": "advTrainia:cannonballStrike.title",
-        "clearCondition": "advTrainia:cannonballStrike.clearCondition",
-        "failCondition": "advTrainia:cannonballStrike.failCondition",
-        "description": "advTrainia:cannonballStrike.description"
+        "title": "cannonballStrike.title",
+        "clearCondition": "cannonballStrike.clearCondition",
+        "failCondition": "cannonballStrike.failCondition",
+        "description": "cannonballStrike.description"
+    },
+    "ordinalTower": {
+        "title": "ordinalTower.title",
+        "clearCondition": "ordinalTower.clearCondition",
+        "failCondition": "ordinalTower.failCondition",
+        "description": "ordinalTower.description"
     }
 }

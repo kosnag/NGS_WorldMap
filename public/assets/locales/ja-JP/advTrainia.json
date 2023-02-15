@@ -1,20 +1,26 @@
 {
     "geometricLabyrinth": {
         "title": "ジオメトリックラビリンス",
-        "clearCondition": "最深部を目指す",
-        "failCondition": "サイドミッションを10回失敗\n制限時間の経過",
-        "description": "ここは、アークス各人の総合力を試す高等訓練システム“トリニテス”である。持ちうる能力をすべて活用して、最深部を目指せ。\n※出現エネミーのレベルはプレイヤーのレベルにより変動"
+        "clearCondition": "メインのミッションをフロア単位で進めて最深部を目指す",
+        "failCondition": "サイドミッションの失敗(合計10回) \n制限時間の経過",
+        "description": "ここは、アークス各人の総合力を試す高等訓練システム“トリニテス”である。持ちうる能力をすべて活用して、最深部を目指せ。\n※出現エネミーのレベルはプレイヤーのレベルにより変動。"
     },
     "cannonballRumble": {
-        "title": "advTrainia:cannonballRumble.title",
-        "clearCondition": "advTrainia:cannonballRumble.clearCondition",
-        "failCondition": "advTrainia:cannonballRumble.failCondition",
-        "description": "advTrainia:cannonballRumble.description"
+        "title": "キャノンボールランブル",
+        "clearCondition": "エネミーを倒し目標を破壊する",
+        "failCondition": "",
+        "description": "ここは、アークス各人の総合力を試す高等訓練システム”トレイニアアドバンス”である。持ちうる能力をすべて活用してエネミーを撃破し、ターゲットを破壊せよ。"
     },
     "cannonballStrike": {
-        "title": "advTrainia:cannonballStrike.title",
-        "clearCondition": "advTrainia:cannonballStrike.clearCondition",
-        "failCondition": "advTrainia:cannonballStrike.failCondition",
-        "description": "advTrainia:cannonballStrike.description"
+        "title": "キャノンボールストライク",
+        "clearCondition": "エネミーを倒し目標を破壊する",
+        "failCondition": "",
+        "description": "ここは、アークス各人の総合力を試す高等訓練システム”トレイニアアドバンス”である。持ちうる能力をすべて活用してエネミーを撃破し、ターゲットを破壊せよ。"
+    },
+    "ordinalTower": {
+        "title": "オーディナルタワー",
+        "clearCondition": "対象エネミーの撃破。",
+        "failCondition": "戦闘不能5回で失敗\n制限時間が経過する",
+        "description": "ここは、アークス各人の総合力を試す高等訓練システム”トレイニアアドバンス”である。ハルファ各地の地形を再現したフィールドのなかで、持ちうる能力をすべて活用し、より早くエネミーを撃破せよ。"
     }
 }
