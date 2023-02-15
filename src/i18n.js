@@ -24,7 +24,6 @@ i18n
       'rewards',
       'mags',
       'advTrainia',
-      'quests',
     ],
     framework: "React",
     fallbackLng: 'en-US',

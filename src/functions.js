@@ -37,6 +37,12 @@ const Functions = {
   },
   checkDisabledItemsFromServerSettings:()=>{
     fetch("./assets/storages/settings.json").then(response=>response.json()).then(settings=>{// eslint-disable-next-line
+      settings.items.landmark.map(x=>{
+          if(x.disabled === true){
+            window.localStorage_Settings.landmark[x.item] = 0
+            localStorage.setItem("settings", JSON.stringify(window.localStorage_Settings))
+          }
+      });// eslint-disable-next-line
       settings.items.mineral.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.mineral[x.item] = 0

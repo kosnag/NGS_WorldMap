@@ -28,9 +28,9 @@
             "title": "Advanced Trainia",
             "description": "items:landmark.advTrainia.description"
         },
-        "quests": {
-            "title": "Quest Counter",
-            "description": "items:landmark.quests.description"
+        "ltq": {
+            "title": "items:landmark.ltq.title",
+            "description": "items:landmark.ltq.description"
         }
     },
     "mineral": {

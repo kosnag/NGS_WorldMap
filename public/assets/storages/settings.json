@@ -1,14 +1,14 @@
 {
     "items": {
         "landmark": [
-            "cocoon",
-            "mag",
-            "ryuker",
-            "tower",
-            "battledia",
-            "urgent",
-            "advTrainia",
-            "quests"
+            {"item": "cocoon"},
+            {"item": "mag"},
+            {"item": "ryuker"},
+            {"item": "tower"},
+            {"item": "battledia"},
+            {"item": "urgent"},
+            {"item": "advTrainia"},
+            {"item": "ltq", "disabled": false}
         ],
         "mineral": [
             {"item": "monotite", "rarity": "common"},
@@ -123,7 +123,17 @@
     },
     "settings": {
         "seasonal_event": false,
-        "limited_quest": false,
+        "limited_quest": {
+            "active": true,
+            "players": 24,
+            "ranks": [
+                {
+                    "minBP": 2878,
+                    "enemyLv": 65,
+                    "points": 0
+                }
+            ]
+        },
         "languages": [
             {   
                 "id": "en-US",

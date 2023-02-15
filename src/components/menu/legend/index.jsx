@@ -125,7 +125,8 @@ export default function MenuLegend(){
           <>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.landmark.map((x=>
-                <Button category="landmark" item={x} rarity="places"/>
+                <>{x.disabled === true ? <Fragment/>:
+                <Button category="landmark" item={x.item} rarity="places"/>}</>
               ))}
             </items>
             <items className={toggleTab === 'minerals' ? "active" : ""}>

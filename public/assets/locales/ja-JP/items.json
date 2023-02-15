@@ -28,9 +28,9 @@
             "title": "items:landmark.advTrainia.title",
             "description": "items:landmark.advTrainia.description"
         },
-        "quests": {
-            "title": "items:landmark.quests.title",
-            "description": "items:landmark.quests.description"
+        "ltq": {
+            "title": "items:landmark.ltq.title",
+            "description": "items:landmark.ltq.description"
         }
     },
     "mineral": {

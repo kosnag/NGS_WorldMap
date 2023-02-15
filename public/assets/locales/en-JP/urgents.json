@@ -1,8 +1,13 @@
 {
+    "limited": {
+        "title": "limited.title",
+        "description": "limited.description",
+        "clearCondition": "limited.clearCondition"
+    },
     "seasonal": {
-        "title": "Horde Eradication",
-        "description": "Powerful enemy readings have been detected off Craiano Cliffs in Western Aelio. We believe them to be large Formers, but they read as highly unusual. Defeat the enemies, but expect the unexpected.",
-        "clearCondition": "Defeat the target enemies!"
+        "title": "seasonal.title",
+        "description": "seasonal.description",
+        "clearCondition": "seasonal.clearCondition"
     },
     "pettasVera": {
         "title": "Subdue the Overseer-type DOLL",
@@ -64,9 +69,9 @@
         "description": "nilsVera.description",
         "clearCondition": "nilsVera.clearCondition"
     },
-    "darkFalz2": {
-        "title": "darkFalz2.title",
-        "description": "darkFalz2.description",
-        "clearCondition": "darkFalz2.clearCondition"
+    "theBattleOfHalphiaLake": {
+        "title": "theBattleOfHalphiaLake.title",
+        "description": "theBattleOfHalphiaLake.description",
+        "clearCondition": "theBattleOfHalphiaLake.clearCondition"
     }
 }

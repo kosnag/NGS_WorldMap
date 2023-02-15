@@ -1,72 +1,77 @@
 {
+    "limited": {
+        "title": "limited.title",
+        "description": "limited.description",
+        "clearCondition": "limited.clearCondition"
+    },
     "seasonal": {
-        "title": "Flurry of Flowers Clean Up Op",
-        "description": "We have picked up multiple readings of strong enemies at the Cryano Cliffs in West Aelio. Intel report confirmed large FORMERS, but they possess a different spectrum than usual. We need all ARKS Defenders to stay cautious on the irregularities and defeat the enemies.",
-        "clearCondition": "Defeat the target enemy"
+        "title": "seasonal.title",
+        "description": "seasonal.description",
+        "clearCondition": "seasonal.clearCondition"
     },
     "pettasVera": {
         "title": "Command DOLLS Suppression Op",
         "description": "A powerful space-time flux has been detected in the Altolani Plateau in North Aelio. Based on past data, we expect Pettas Veras, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat the Command DOLLS unit"
+        "clearCondition": "Defeat the Command DOLLS unit!"
     },
     "nexVera": {
         "title": "Nex Vera Suppression Op",
         "description": "A powerful space-time flux has been detected in Resol Forest. Based on past data, we expect Nex Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Defeat the target enemy!"
     },
     "miningRigDefenceAelio": {
         "title": "Mining Rig Defense: Aelio",
         "description": "We've received an emergency support request from our active mining unit in Aelio Plains. Numerous enemy readings in the area suggest a major assault is likely. We need all ARKS defenders to hurry to the site and defend the Mining Rig.",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Defeat the target enemy!"
     },
     "darkFalzInterception": {
         "title": "Dark Falz Interception",
         "description": "Our data points to the imminent appearance of Dark Falz in the Central City area. All ARKS defenders report to the rerdezvous immediately and repel the enemy advance until the Central Cannon is operational.",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Defeat the target enemy!"
     },
     "dustylVera": {
         "title": "Dustyl Vera Suppression Op",
         "description": "A powerful space-time flux has been detected in Murabba Canyon in North Retem. Based on past data, we expect Dustyl Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Defeat the target enemy!"
     },
     "renusVera": {
         "title": "Renus Vera Suppression Op",
         "description": "A powerful space-time flux has been detected in the northern part of Central Retem. Based on past data, we expect Renus Vera, the Command DOLLS unit, to be there. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Defeat the target enemy!"
     },
     "miningRigDefenceRetem": {
         "title": "Mining Rig Defense: Retem",
         "description": "We've received an emergency support request from our active mining unit in Aldimond Desert. Numerous enemy readings in the area suggest a major assault is likely. We need all ARKS defenders to hurry to the site and defend the Mining Rig.",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Defeat the target enemy!"
     },
     "crocodylisVera": {
         "title": "Crocodylis Vera Suppression Op",
         "description": "A powerful space-time flux has been detected in the northern part of Danann Snow Field. Based on past data, we expect Crocodylis Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Defeat the target enemy!"
     },
     "amsVera": {
         "title": "Ams Vera Suppression Op",
         "description": "A powerful space-time flux has been detected on Mt. Latva. Based on past data, we expect Ams Vera, the Command DOLLS unit, to be in the combat zone. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
-        "clearCondition": "Defeat the target enemy"
+        "clearCondition": "Defeat the target enemy!"
     },
     "miningRigDefenceKvaris": {
         "title": "Mining Rig Defense: Kvaris",
-        "description": "",
-        "clearCondition": "Defeat the target enemy"
+        "description": "miningRigDefenceKvaris.description",
+        "clearCondition": "Defeat the target enemy!"
     },
     "doldorisVera": {
-        "title": "doldorisVera.title",
-        "description": "doldorisVera.description",
-        "clearCondition": "doldorisVera.clearCondition"
+        "title": "Doldoris Vera Suppression Op",
+        "description": "A powerful space-time flux has been detected in the northern part of Felusa Ridge. Going by past data, we believe it to be the Command DOLLS unit, Doldoris Vera. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
+        "clearCondition": "Defeat the target enemy!"
     },
     "nilsVera": {
-        "title": "nilsVera.title",
-        "description": "nilsVera.description",
-        "clearCondition": "nilsVera.clearCondition"
+        "title": "Nils Vera Suppression Op",
+        "description": "A powerful space-time flux has been detected in the Dreisen Plant. Going by past data, we expect Nils Vera, the Command DOLLS unit, to be in the combat area. We need all ARKS defenders to hurry to the designated point and defeat the enemy.",
+        "clearCondition": "Defeat the target enemy!"
     },
-    "darkFalz2": {
-        "title": "darkFalz2.title",
-        "description": "darkFalz2.description",
-        "clearCondition": "darkFalz2.clearCondition"
+    "theBattleOfHalphiaLake": {
+        "title": "The Battle of Halphia Lake",
+        "description": "Our data points to the imminent appearance of Dark Falz Aegis in the Halphia Lake area. All ARKS defenders, report to the emergence point immediately to eliminate this threat to Halpha, with support from Central Cannon.",
+        "clearCondition": "Defeat Dark Falz Aegis!"
     }
 }
