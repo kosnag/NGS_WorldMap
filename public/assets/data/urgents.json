@@ -606,7 +606,7 @@
     },
     {
         "id": "nilsVera",
-        "lat":-535.375, "lng":1514.625,
+        "lat":-548.75, "lng":1498.375,
         "players": 8,
         "firstRewards": [
             {
@@ -632,8 +632,8 @@
         ]
     },
     {
-        "id": "darkFalz2",
-        "lat":-1024, "lng":1024,
+        "id": "theBattleOfHalphiaLake",
+        "lat":-1062, "lng":991,
         "players": 8,
         "firstRewards": [
             {
