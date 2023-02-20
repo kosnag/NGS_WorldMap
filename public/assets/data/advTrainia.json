@@ -19,12 +19,6 @@
                 "item": "rewards:item.silver_prim_armor"
             },
             {
-                "item": "rewards:item.relik_series"
-            },
-            {
-                "item": "rewards:item.kuku_series"
-            },
-            {
                 "item": "rewards:item.tria_augments"
             },
             {
@@ -59,9 +53,6 @@
             },
             {
                 "item": "rewards:item.super_augments"
-            },
-            {
-                "item": "rewards:item.arms_refiner"
             }
         ]
     },
@@ -92,9 +83,6 @@
             },
             {
                 "item": "rewards:item.super_augments"
-            },
-            {
-                "item": "rewards:item.arms_refiner"
             }
         ]
     }
