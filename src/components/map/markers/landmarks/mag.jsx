@@ -20,7 +20,6 @@ export default function Mag(){
             </header>
             <content>
                 {t("items:landmark.mag.title")}
-                <id>ID: mag{x.id}</id>
             </content>
             </tooltipwindow></Tooltip>
         </Marker>
