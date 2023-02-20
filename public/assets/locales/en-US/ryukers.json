@@ -41,5 +41,16 @@
     "mtLatvaNorth": "Mt. Latva: North",
     "mtLatvaSouth": "Mt. Latva: South",
     "mistraWoodsNorth": "Mistra Woods: North",
-    "mistraWoodsSouth": "Mistra Woods: South"
+    "mistraWoodsSouth": "Mistra Woods: South",
+
+    "grainneCoast": "Grainne Coast",
+    "stiaCamp": "Stia Camp",
+    "dreisenPlant1": "Dreisen Plant 1",
+    "dreisenPlant2": "Dreisen Plant 2",
+    "felusaRidge1": "Felusa Ridge 1",
+    "felusaRidge2": "Felusa Ridge 2",
+    "dextBase1": "Dext Base 1",
+    "dextBase2": "Dext Base ",
+    "neusenPlant": "Neusen Plant",
+    "alteraBase": "Altera Base"
 }

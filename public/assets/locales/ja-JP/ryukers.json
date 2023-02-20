@@ -41,5 +41,16 @@
     "mtLatvaNorth": "ラトヴァ山：北",
     "mtLatvaSouth": "ラトヴァ山：南",
     "mistraWoodsNorth": "ミストラ樹林：北",
-    "mistraWoodsSouth": "ミストラ樹林：南"
+    "mistraWoodsSouth": "ミストラ樹林：南",
+
+    "grainneCoast": "",
+    "stiaCamp": "",
+    "dreisenPlant1": "",
+    "dreisenPlant2": "",
+    "felusaRidge1": "",
+    "felusaRidge2": "",
+    "dextBase1": "",
+    "dextBase2": "",
+    "neusenPlant": "",
+    "alteraBase": ""
 }
