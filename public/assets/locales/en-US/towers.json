@@ -38,5 +38,13 @@
         "subMission1": "Clear before 2:50",
         "subMission2": "Clear having taken damage fewer than 30 times",
         "subMission3": "Obtain 5 Point Cubes"
+    },
+    "brokenWorld": {
+        "title": "Broken World",
+        "description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Dark Magilz in the final area.",
+        "clearCondition": "Defeat the Dark Magilz",
+        "subMission1": "Clear without falling 3 times",
+        "subMission2": "Clear before 7:00",
+        "subMission3": "Clear without being incapacitated 1 times"
     }
 }

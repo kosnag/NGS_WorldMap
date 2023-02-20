@@ -37,5 +37,14 @@
         "minBP": 2506,
         "enemyLv": 55,
         "challenge": true
+    },
+    {
+        "id": "brokenWorld",
+        "lat":-891.125, "lng":1394.625,
+        "players": 4,
+        "minBP": 2972,
+        "enemyLv": 65,
+        "challenge": true
     }
+    
 ]

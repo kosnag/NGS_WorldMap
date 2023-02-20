@@ -38,5 +38,13 @@
         "subMission1": "Clear in under 2:50",
         "subMission2": "Clear while talking damage fewer than 30 time(s)",
         "subMission3": "Clear after obtaining 5 Point Cube(s)"
+    },
+    "brokenWorld": {
+        "title": "Broken World",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat the Dark Magirus.",
+        "clearCondition": "Defeat: Dark Magirus",
+        "subMission1": "Clear while falling fewer than 3 time(s)",
+        "subMission2": "Clear in under 7:00",
+        "subMission3": "Clear in under 1 incapacitation(s)"
     }
 }
