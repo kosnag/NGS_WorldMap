@@ -153,10 +153,34 @@
     },
     "holibleFlapping": {
         "title": "Horrible Flapping",
-        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat the Mach Ride",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat the Mach Ride.",
         "clearCondition": "Defeat: Mach Ride",
         "subMission1": "Clear in under 3:00",
         "subMission2": "Clear in under 1 incapactitation(s)",
         "subMission3": "Clear while taking damage fewer than 10 time(s)"
+    },
+    "quarterstaff": {
+        "title": "Quarterstaff",
+        "description": "This Trainia will test ARKS' combat skills. Use your skills to defeat the Engouku.",
+        "clearCondition": "Defeat: Engouku",
+        "subMission1": "Clear in under 3:00",
+        "subMission2": "Deal 900+ damage 2 times",
+        "subMission3": "Clear while taking damage fewer than 7 time(s)"
+    },
+    "faceTheDarkness": {
+        "title": "Face the Darkness",
+        "description": "This Trainia tests the combat skills of each ARKS. Use your skills to defeat the Dark Remnus.",
+        "clearCondition": "Defeat: Dark Remnus",
+        "subMission1": "Clear in under 3:00",
+        "subMission2": "Deal 900+ damage 2 times",
+        "subMission3": "Clear while taking damage fewer than 7 time(s)"
+    },
+    "helicalLine": {
+        "title": "Helical Line",
+        "description": "This Trainia will test ARKS' movement skills. Make use of your athletic abilities to reach the target destination.",
+        "clearCondition": "Reach the Finish Point",
+        "subMission1": "Clear after obtaining 10 Point Cube(s)",
+        "subMission2": "Clear while using fewer than 7 Glide(s)",
+        "subMission3": "Clear in under 3:00"
     }
 }

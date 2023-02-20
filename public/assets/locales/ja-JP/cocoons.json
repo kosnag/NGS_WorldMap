@@ -158,5 +158,29 @@
         "subMission1": "5:00未満でクリア",
         "subMission2": "戦闘不能回数1回未満でクリア",
         "subMission3": "ダメージ回数12回未満でクリア"
+    },
+    "quarterstaff": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "faceTheDarkness": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
+    },
+    "helicalLine": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }

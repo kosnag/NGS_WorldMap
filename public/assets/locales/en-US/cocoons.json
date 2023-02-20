@@ -158,5 +158,29 @@
         "subMission1": "Clear before 5:00",
         "subMission2": "Clear without being incapacitated 1 times",
         "subMission3": "Clear having taken damage fewer than 12 times"
+    },
+    "quarterstaff": {
+        "title": "Quarterstaff",
+        "description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Engoku.",
+        "clearCondition": "Defeat the Engoku",
+        "subMission1": "Clear before 3:00",
+        "subMission2": "Inflict over 900 dmg over 2 times",
+        "subMission3": "Clear having taken damage fewer than 7 times"
+    },
+    "faceTheDarkness": {
+        "title": "Face the Darkness",
+        "description": "This is Trainia, where ARKS defenders can test their combat abilities. Make use of your battle skills to defeat the Dark Lemnas.",
+        "clearCondition": "Defeat the Dark Lemnas",
+        "subMission1": "Clear before 3:00",
+        "subMission2": "Inflict over 900 dmg over 2 times",
+        "subMission3": "Clear having taken damage fewer than 7 times"
+    },
+    "helicalLine": {
+        "title": "Helical Line",
+        "description": "This is Trainia, where ARKS defenders can test their dashing capabilities. Make use of your athletic abilities to reach the target destination.",
+        "clearCondition": "Reach the finish point",
+        "subMission1": "Obtain 10 Point Cubes",
+        "subMission2": "Clear having used Glide fewer than 7 times",
+        "subMission3": "Clear before 3:00"
     }
 }

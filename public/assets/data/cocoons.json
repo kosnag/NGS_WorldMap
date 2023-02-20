@@ -149,5 +149,28 @@
         "players": 4,
         "minBP": 2181,
         "enemyLv": 47
+    },
+    {
+        "id": "quarterstaff",
+        "lat":-383.75, "lng":1387.25,
+        "players": 4,
+        "minBP": 2924,
+        "enemyLv": 64,
+        "challenge": true
+    },
+    {
+        "id": "faceTheDarkness",
+        "lat":-593.875, "lng":1517,
+        "players": 4,
+        "minBP": 2878,
+        "enemyLv": 63,
+        "challenge": true
+    },
+    {
+        "id": "helicalLine",
+        "lat":-416.875, "lng":1562.375,
+        "players": 4,
+        "minBP": 1223,
+        "enemyLv": 60
     }
 ]
