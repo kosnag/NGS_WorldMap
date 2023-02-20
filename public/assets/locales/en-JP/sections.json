@@ -32,13 +32,13 @@
             "lostCentral": "Lost Central"
         },
         "stia": {
-            "stiaCamp": "sections:sections.stia.stiaCamp",
-            "stiaOutskirts": "sections:sections.stia.stiaOutskirts",
-            "mediolaOuterArea1": "sections:sections.stia.mediolaOuterArea1",
-            "mediolaOuterArea2": "sections:sections.stia.mediolaOuterArea2",
-            "dextBase": "sections:sections.stia.dextBase",
-            "dreisenPlant": "sections:sections.stia.dreisenPlant",
-            "neusenPlant": "sections:sections.stia.neusenPlant"
+            "stiaCamp": "Stia Camp",
+            "stiaOutskirts": "Stia: Fringes",
+            "mediolaOuterArea1": "Outer Mediola: Sector 1",
+            "mediolaOuterArea2": "Outer Mediola: Sector 2",
+            "dextBase": "Dext Base",
+            "dreisenPlant": "Dreisen Plant",
+            "neusenPlant": "Neusen Plant"
         }
     },
     "type": {
