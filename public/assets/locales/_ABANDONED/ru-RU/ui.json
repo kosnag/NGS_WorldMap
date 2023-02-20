@@ -1,0 +1,85 @@
+{
+    "page_title": "Интерактивная Карта PSO2NGS",
+    "NavBar": {
+        "donate": "Поддержать",
+        "mapLegend": "Легенда Карты",
+        "options": "Настройки"
+    },
+    "LegendMenu": {
+        "Categories": {
+            "landmarks": "Ориентиры",
+            "minerals": "Минералы",
+            "food": "Еда",
+            "containers": "Контейнеры",
+            "other": "Другое"
+        }
+    },
+    "OptionsMenu": {
+        "Categories": {
+            "languages": "Языки",
+            "mapping": "Маппинг",
+            "reset": "Сброс",
+            "about": "О приложении"
+        },
+        "Items": {
+            "languages": {
+                "english": "Английский",
+                "japanese": "Японский",
+                "english_jp": "Английский (Фан-Патч)",
+                "russian": "Русский",
+                "korean": "Корейский"
+            },
+            "mapping": {
+                "discord": "Вступить в Discord",
+                "translate": "Помочь с переводом",
+                "start": "В режим маппинга"
+            },
+            "reset": {
+                "lang": "Сбросить язык",
+                "visibility": "Сбросить маркеры",
+                "checked": "Сбросить чеки",
+                "everything": "Сбросить всё"
+            },
+            "about": {
+                "author": "Автор",
+                "contributers": "Вкладчики",
+                "segaCopyright": "Все права на материалы, представленные в приложении принадлежат их законным владельцам (Sega) и предназначены только для ознакомления."
+            }
+        }
+    },
+    "Map": {
+        "foodType": {
+            "fruit": "Фрукт",
+            "seafood": "Морепродукт",
+            "vegetable": "Овощь"
+        },
+        "stellarGraceType": {
+            "gold": "Золотой",
+            "silver": "Серебрянный",
+            "default": "Обычный"
+        },
+        "type": "Тип",
+        "rank": "Ранг",
+        "maxPlayers": "Макс. кол-во игроков",
+        "requiredBP": "Требуемая Боевая Мощь",
+        "recommendedBP": "Рекоменд. Боевая Мощь",
+        "enemyLv": "Уровень врагов",
+        "subMissions": "Дополнительные миссии",
+        "clearCondition": "Основная миссия",
+        "failCondition": "Условие провала",
+        "description": "Описание",
+        "placedBy": "Разместил(-а)",
+        "rewards": {
+            "possible": "Возвожные награды",
+            "guaranteed": "Награды",
+            "firstTime": "Награды за первое прохождение"
+        },
+        "enemyTypes": {
+            "dread": "Ветеран",
+            "gigantix": "Отчаявшиеся",
+            "ancient": "Древние"
+        },
+        "checkHint": "Нажмите ЛКМ по маркеру, чтобы его отметить найденным",
+        "availableChallengeRank": "Для этой Треинии доступен Вызов"
+    }
+}

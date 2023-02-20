@@ -10,25 +10,25 @@ $result = array(
 );
 
 
-$query = $mysql -> query("select * from ".$datatables["auth"]["users"]." where id='".$data->{"user"}."' and pass='".$data->{"pass"}."'");
+$stmt = $PDO->prepare("SELECT * FROM auth__users WHERE id = :username AND pass = :pass");
+$stmt->execute(["username" => $data->{"user"}, "pass" => $data->{"pass"}]);
+$User = $stmt->fetch();
 
-$login_data = $query -> fetch_assoc();
-
-
-if(isset($login_data["id"]) && isset($login_data["pass"])){
-
-    $session = md5(uniqid(rand(),true));
-    $query = $mysql -> query("insert ".$datatables["auth"]["sessions"]." (id, session) values ('".$login_data["id"]."', '".$session."')");
-
-    setcookie("session", $session, time()+60*60*24*7, "/");
-
-    $result["username"] = $login_data["id"];
-    $result["session"] = $session;
-    $result["status"] = "success";
-} else {
+if (!$User) {
     $result["status"] = "error";
-}
+} else {
 
-$mysql -> close();
+    $Session = md5(uniqid(rand(), true));
+
+    $stmt = $PDO->prepare("INSERT INTO auth__sessions (id, session) VALUES (:user, :session)");
+    $stmt->execute(["user" => $User["id"], "session" => $Session]);
+
+    setcookie("session", $Session, time() + 60 * 60 * 24 * 7, "/");
+
+    $result["username"] = $User["id"];
+    $result["session"] = $Session;
+    $result["status"] = "success";
+
+}
 
 echo json_encode($result);

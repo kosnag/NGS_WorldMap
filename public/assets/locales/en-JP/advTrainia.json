@@ -1,0 +1,26 @@
+{
+    "geometricLabyrinth": {
+        "title": "Geometric Labyrinth",
+        "clearCondition": "Head for the final area",
+        "failCondition": "Fail 10 Side Missions \nTime Limit expires",
+        "description": "This is Trinitas, an advanced training system that fully tests ARKS' capabilities. Use all your skills to react the final area.\nEnemy levels are based on player levels."
+    },
+    "cannonballRumble": {
+        "title": "cannonballRumble.title",
+        "clearCondition": "cannonballRumble.clearCondition",
+        "failCondition": "cannonballRumble.failCondition",
+        "description": "cannonballRumble.description"
+    },
+    "cannonballStrike": {
+        "title": "cannonballStrike.title",
+        "clearCondition": "cannonballStrike.clearCondition",
+        "failCondition": "cannonballStrike.failCondition",
+        "description": "cannonballStrike.description"
+    },
+    "ordinalTower": {
+        "title": "ordinalTower.title",
+        "clearCondition": "ordinalTower.clearCondition",
+        "failCondition": "ordinalTower.failCondition",
+        "description": "ordinalTower.description"
+    }
+}

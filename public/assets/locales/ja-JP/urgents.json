@@ -1,8 +1,13 @@
 {
+    "limited": {
+        "title": "limited.title",
+        "description": "limited.description",
+        "clearCondition": "limited.clearCondition"
+    },
     "seasonal": {
-        "title": "天意無法のエネミー討伐",
-        "description": "このポータルでは、来るべき戦いに備えた想定演習を行うことができる。現在の設定では、かつて行われた北リテムのモラーバ峡谷での戦いが再現される。戦闘技術を駆使して、大型のドールズを含むエネミーを殲滅せよ。",
-        "clearCondition": "全てのエネミーを殲滅せよ！"
+        "title": "seasonal.title",
+        "description": "seasonal.description",
+        "clearCondition": "seasonal.clearCondition"
     },
     "pettasVera": {
         "title": "統制型ドールズ討伐戦",
@@ -17,27 +22,27 @@
     "miningRigDefenceAelio": {
         "title": "資源採掘リグ防衛戦：エアリオ",
         "description": "ハルファナ平原で活動中の資源回収部隊より、緊急支援の要請があった。周囲に多数のエネミー反応があり、大規模な攻勢が予想される。アークス各員は、当該ポイントに急行し、資源採掘リグを防衛せよ。",
-        "clearCondition": "資源採掘リグを防衛せよ！"
+        "clearCondition": "対象エネミーの撃破！"
     },
     "darkFalzInterception": {
         "title": "ダークファルス迎撃戦",
         "description": "セントラルシティ周辺で、“ダークファルス”の出現予兆が確認された。アークス各員は、当該ポイントに急行し、セントラルキャノンの迎撃準備が完了するまで、エネミーの侵攻を阻止せよ。",
-        "clearCondition": "ダークファルスを迎撃せよ！"
+        "clearCondition": "対象エネミーの撃破！"
     },
     "dustylVera": {
         "title": "スナイダル・ヴェラ討伐戦",
         "description": "北リテムのモラーバ峡谷で、強力な時空振動が確認された。過去のデータから、統制型ドールズ“スナイダル・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
-        "clearCondition": "スナイダル・ヴェラを撃破せよ！"
+        "clearCondition": "対象エネミーの撃破！"
     },
     "renusVera": {
         "title": "レヌス・ヴェラ討伐戦",
         "description": "中央リテムの北部で、強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“レヌス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
-        "clearCondition": "レヌス・ヴェラを撃破せよ！"
+        "clearCondition": "対象エネミーの撃破！"
     },
     "miningRigDefenceRetem": {
         "title": "資源採掘リグ防衛戦：リテム",
         "description": "アルディマンド砂漠で活動中の資源回収部隊より、緊急支援の要請があった。周囲に多数のエネミー反応があり、大規模な攻勢が予想される。アークス各員は、当該ポイントに急行し、資源採掘リグを防衛せよ。",
-        "clearCondition": "資源採掘リグを防衛せよ！"
+        "clearCondition": "対象エネミーの撃破！"
     },
     "crocodylisVera": {
         "title": "クロコダラス・ヴェラ討伐戦",
@@ -48,5 +53,25 @@
         "title": "アムス・ヴェラ討伐戦",
         "description": "ラトヴァ山で強力な時空振動が確認された。過去のデータから、戦域統制型ドールズ“アムス・ヴェラ”の現出が見込まれる。アークス各員は、当該ポイントに急行し、エネミーを撃破せよ。",
         "clearCondition": "アムス・ヴェラを討伐せよ！"
+    },
+    "miningRigDefenceKvaris": {
+        "title": "資源採掘リグ防衛戦：クヴァリス",
+        "description": "ダナン雪原で活動中の資源回収部隊より、緊急支援の要請があった。周囲に多数のエネミー反応があり、大規模な攻勢が予想される。アークス各員は、当該ポイントに急行し資源採掘リグを防衛せよ。",
+        "clearCondition": "対象エネミーの撃破！"
+    },
+    "doldorisVera": {
+        "title": "doldorisVera.title",
+        "description": "doldorisVera.description",
+        "clearCondition": "doldorisVera.clearCondition"
+    },
+    "nilsVera": {
+        "title": "nilsVera.title",
+        "description": "nilsVera.description",
+        "clearCondition": "nilsVera.clearCondition"
+    },
+    "theBattleOfHalphiaLake": {
+        "title": "ハルフィリア湖の戦い",
+        "description": "ハルフィリア湖周辺で、”ダークファルス・エイジス”の出現予兆が確認された。アークス各員は、当該ポイントに急行し、セントラルキャノンの支援を受けつつ、ハルファ最大の脅威を排除せよ。",
+        "clearCondition": "対象エネミーの撃破"
     }
 }

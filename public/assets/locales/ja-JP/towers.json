@@ -38,5 +38,13 @@
         "subMission1": "",
         "subMission2": "",
         "subMission3": ""
+    },
+    "brokenWorld": {
+        "title": "",
+        "description": "",
+        "clearCondition": "",
+        "subMission1": "",
+        "subMission2": "",
+        "subMission3": ""
     }
 }

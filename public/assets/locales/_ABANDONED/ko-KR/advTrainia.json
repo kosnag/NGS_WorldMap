@@ -1,0 +1,20 @@
+{
+    "geometricLabyrinth": {
+        "title": "지오메트릭 라비린스",
+        "clearCondition": "최심부로 이동",
+        "failCondition": "사이드 미션 10번 실패\n제한시간 초과",
+        "description": "여기는 아크스 전원의 종합능력을 평가하기 위한 고등훈련 시스템 “트리니테스”이다.\n가진 능력을 모두 활용하여 최심부로 향하라.\n※출현 에너미의 레벨은 플레이어의 레벨에 따라 변동합니다."
+    },
+    "cannonballRumble": {
+        "title": "",
+        "clearCondition": "",
+        "failCondition": "",
+        "description": ""
+    },
+    "cannonballStrike": {
+        "title": "",
+        "clearCondition": "",
+        "failCondition": "",
+        "description": ""
+    }
+}

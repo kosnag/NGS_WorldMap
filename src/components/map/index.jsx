@@ -6,10 +6,10 @@ import "./style.scss";
 import "./tooltip.scss";
 import "./popup.scss";
 
-import Landmarks from './markers/landmarks';
+import Landmarks from './markers/landmarks/_landmarks';
 import Food from './markers/food';
 import Minerals from './markers/minerals';
-import Other from './markers/other';
+import Other from './markers/other/_other';
 import Containers from './markers/containers';
 import Sections from './markers/sections';
 
@@ -18,7 +18,7 @@ const iconLib = {}
 const Init = () => {
     const [checkInitMarkers,load] = useState(false)
     useEffect(()=>{
-        fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/icons.json").then(resp=>resp.json()).then(x=>{
+        fetch("./assets/storages/icons.json").then(resp=>resp.json()).then(x=>{
             for(var i=0; i<x.length; i++){
                 iconLib[x[i].item] = L.icon({
                     iconSize: [x[i].size,x[i].size],
@@ -60,7 +60,7 @@ const Map = () => {
             minZoom={0}
             maxZoom={3}
             crs={L.CRS.Simple}
-            maxBounds={[[bounds.South-100,bounds.West-250],[bounds.North+400,bounds.East+250]]}
+            maxBounds={[[bounds.South-100,bounds.West-250],[bounds.North+250,bounds.East+250]]}
             center={[bounds.South/2,bounds.East/2]}
             zoomControl={false}
             attributionControl={false}

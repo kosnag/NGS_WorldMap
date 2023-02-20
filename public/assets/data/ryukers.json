@@ -1,0 +1,207 @@
+[
+    {
+        "lat":-1110, "lng":245,
+        "id": "altolaniPlateau"
+    },
+    {
+        "lat":-1248, "lng":138,
+        "id": "cryanoCliffs"
+    },
+    {
+        "lat":-1331, "lng":374,
+        "id": "halphanaWetlands"
+    },
+    {
+        "lat":-1163, "lng":655,
+        "id": "resolForest"
+    },
+    {
+        "lat":-1134, "lng":951,
+        "id": "halphiaLake"
+    },
+    {
+        "lat":-1621, "lng":133,
+        "id": "lakauCoast"
+    },
+    {
+        "lat":-1752, "lng":314,
+        "id": "aelioTownRuins"
+    },
+    {
+        "lat":-1532, "lng":449,
+        "id": "halphanaPlainsWest"
+    },
+    {
+        "lat":-1490, "lng":584,
+        "id": "centralCity"
+    },
+    {
+        "lat":-1620, "lng":697,
+        "id": "mtMagnusWest"
+    },
+    {
+        "lat":-1632.25, "lng":946,
+        "id": "mtMagnusEast"
+    },
+    {
+        "lat":-1791, "lng":679,
+        "id": "balflowFalls"
+    },
+    {
+        "lat":-1946, "lng":889,
+        "id": "mtPiccolt"
+    },
+    {
+        "lat":-1370, "lng":747,
+        "id": "halphanaPlainsEast"
+    },
+    {
+        "lat":-1355, "lng":1017,
+        "id": "vanfordLaboratoryRuins"
+    },
+    {
+        "lat":-1213, "lng":1192,
+        "id": "saganMountainRoadWest"
+    },
+    {
+        "lat":-1066, "lng":1420,
+        "id": "saganMountainRoadEast"
+    },
+    {
+        "lat":-1404, "lng":1275,
+        "id": "stechkinLowlands"
+    },
+    {
+        "lat":-1163, "lng":1612,
+        "id": "murabbaCanyon"
+    },
+    {
+        "lat":-1107, "lng":1759,
+        "id": "capeKeenland"
+    },
+    {
+        "lat":-1301, "lng":1610,
+        "id": "trinitis"
+    },
+    {
+        "lat":-1440, "lng":1407,
+        "id": "oasis"
+    },
+    {
+        "lat":-1623, "lng":1566,
+        "id": "retemCity"
+    },
+    {
+        "lat":-1627, "lng":1293,
+        "id": "retemElNossa"
+    },
+    {
+        "lat":-1874, "lng":1324,
+        "id": "garneruCoastWest"
+    },
+    {
+        "lat":-1819, "lng":1621,
+        "id": "garneruCoastEast"
+    },
+    {
+        "lat":-1749, "lng":1869,
+        "id": "lufMaqaad"
+    },
+    {
+        "lat":-1897, "lng":1924,
+        "id": "lowerMaqaad"
+    },
+    {
+        "lat":-622, "lng":732,
+        "id": "kvarisCamp"
+    },
+    {
+        "lat":-301, "lng":870,
+        "id": "beluganaRuinsNorth"
+    },
+    {
+        "lat":-542, "lng":964,
+        "id": "beluganaRuinsSouth"
+    },
+    {
+        "lat":-639, "lng":846,
+        "id": "rayjordGeorge"
+    },
+    {
+        "lat":-770, "lng":793,
+        "id": "danannSnowField"
+    },
+    {
+        "lat":-959, "lng":541,
+        "id": "quillMountainLoad"
+    },
+    {
+        "lat":-791, "lng":223,
+        "id": "mtIhanaWest"
+    },
+    {
+        "lat":-794, "lng":425,
+        "id": "mtIhanaEast"
+    },
+    {
+        "lat":-531, "lng":388,
+        "id": "lostCentral"
+    },
+    {
+        "lat":-382, "lng":292,
+        "id": "mtLatvaNorth"
+    },
+    {
+        "lat":-422, "lng":270,
+        "id": "mtLatvaSouth"
+    },
+    {
+        "lat":-250, "lng":524,
+        "id": "mistraWoodsNorth"
+    },
+    {
+        "lat":-553, "lng":549,
+        "id": "mistraWoodsSouth"
+    },
+    {
+        "lat":-753.5, "lng":1342.5,
+        "id": "stiaCamp"
+    },
+    {
+        "lat":-841.5, "lng":1197.5,
+        "id": "grainneCoast"
+    },
+    {
+        "lat":-520, "lng":1509.75,
+        "id": "felusaRidge1"
+    },
+    {
+        "lat":-576.625, "lng":1474.375,
+        "id": "dreisenPlant1"
+    },
+    {
+        "lat":-628.25, "lng":1631.5,
+        "id": "dextBase1"
+    },
+    {
+        "lat":-543.375, "lng":1396.75,
+        "id": "dreisenPlant2"
+    },
+    {
+        "lat":-448.625, "lng":1826.125,
+        "id": "dextBase2"
+    },
+    {
+        "lat":-416.625, "lng":1421.375,
+        "id": "alteraBase"
+    },
+    {
+        "lat":-389.75, "lng":1659.5,
+        "id": "felusaRidge2"
+    },
+    {
+        "lat":-309, "lng":1582.625,
+        "id": "neusenPlant"
+    }
+    
+]

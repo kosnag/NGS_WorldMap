@@ -1,0 +1,85 @@
+{
+    "page_title": "PSO2NGSインタラクティブ・マップ",
+    "NavBar": {
+        "donate": "기부",
+        "mapLegend": "맵 범례",
+        "options": "옵션"
+    },
+    "LegendMenu": {
+        "Categories": {
+            "landmarks": "랜드마크",
+            "minerals": "광석",
+            "food": "푸드",
+            "containers": "컨테이너",
+            "other": "기타"
+        }
+    },
+    "OptionsMenu": {
+        "Categories": {
+            "languages": "기부",
+            "mapping": "매핑",
+            "reset": "재설정",
+            "about": "어플리케이션에 대해서"
+        },
+        "Items": {
+            "languages": {
+                "en-US": "영어",
+                "ja-JP": "일본어",
+                "en-JP": "영어 (아크스 레이어)",
+                "ru-RU": "러시아어",
+                "ko-KR": "한국어"
+            },
+            "mapping": {
+                "discord": "Discord에 참가하기",
+                "translate": "번역 도와주기",
+                "start": "매핑 모드"
+            },
+            "reset": {
+                "lang": "언어 초기화",
+                "visibility": "마커 초기화",
+                "checked": "체크 초기화",
+                "everything": "전부 초기화"
+            },
+            "about": {
+                "author": "저자",
+                "contributers": "공헌자",
+                "segaCopyright": "이 앱에 포함된 모든 소재의 권리는 권리자 (SEGA)에 귀속되며, 정보 제공만을 목적으로 하고 있습니다."
+            }
+        }
+    },
+    "Map": {
+        "foodType": {
+            "fruit": "과일",
+            "seafood": "어패류",
+            "vegetable": "채소"
+        },
+        "stellarGraceType": {
+            "gold": "금색의 ",
+            "silver": "백은의 ",
+            "default": "일반 "
+        },
+        "type": "타입",
+        "rank": "RANK",
+        "maxPlayers": "인원",
+        "requiredBP": "필요 전투력",
+        "recommendedBP": "권장 전투력",
+        "enemyLv": "출현 에너미",
+        "subMissions": "사이드 미션",
+        "clearCondition": "메인 미션",
+        "failCondition": "",
+        "description": "설명",
+        "placedBy": "투고자",
+        "rewards": {
+            "possible": "가능한 보수",
+            "guaranteed": "보수",
+            "firstTime": "첫 회 클리어 보수"
+        },
+        "enemyTypes": {
+            "dread": "노련의",
+            "gigantix": "절망의",
+            "ancient": "원세의"
+        },
+        "checkHint": "",
+        "availableChallengeRank": ""
+    }
+}

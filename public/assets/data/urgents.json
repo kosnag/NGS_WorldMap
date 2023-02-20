@@ -41,6 +41,24 @@
                         "count": 8
                     }
                 ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
             }
         ]
     },
@@ -84,6 +102,24 @@
                     {
                         "item": "items:mineral.photonscale.title",
                         "count": 8
+                    }
+                ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
                     }
                 ]
             }
@@ -131,6 +167,24 @@
                         "count": 8
                     }
                 ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
             }
         ]
     },
@@ -160,6 +214,24 @@
                     {
                         "item": "items:mineral.photonscale.title",
                         "count": 12
+                    }
+                ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 20000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
                     }
                 ]
             }
@@ -211,6 +283,24 @@
                         "count": 8
                     }
                 ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
             }
         ]
     },
@@ -260,6 +350,87 @@
                         "count": 8
                     }
                 ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "miningRigDefenceRetem",
+        "lat":-1668, "lng":1340,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 2049,
+                "enemyLv": 45,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1500
+                    }
+                ]
+            },
+            {
+                "minBP": 2049,
+                "enemyLv": 45,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1500
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1500
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
             }
         ]
     },
@@ -291,6 +462,24 @@
                         "count": 3
                     }
                 ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
             }
         ]
     },
@@ -316,6 +505,150 @@
                     {
                         "item": "items:mineral.photonscale.title",
                         "count": 8
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:value.seasonalpoints",
+                        "count": 1000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "miningRigDefenceKvaris",
+        "lat":-729, "lng":881.5,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 2647,
+                "enemyLv": 60,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title",
+                        "count": 8
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            },
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "doldorisVera",
+        "lat":-293, "lng":1746,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 2972,
+                "enemyLv": 67,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "nilsVera",
+        "lat":-536.875, "lng":1459.5,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 2972,
+                "enemyLv": 67,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    },
+                    {
+                        "item": "rewards:item.soul_augments",
+                        "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "theBattleOfHalphiaLake",
+        "lat":-1062, "lng":991,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 10000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 3119,
+                "enemyLv": 70,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 20000
                     },
                     {
                         "item": "rewards:item.soul_augments",

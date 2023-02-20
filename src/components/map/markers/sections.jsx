@@ -8,7 +8,7 @@ export default function Sections(){
     const [data,setData] = useState([]);
     const [tier,setTier] = useState(0);
     const handleSelectChange=(e)=>setTier(e.target.value);
-    useEffect(()=>{fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/data/sections.json").then(response=>response.json()).then(d=>setData(d))},[]);
+    useEffect(()=>{fetch("./assets/data/sections.json").then(response=>response.json()).then(d=>setData(d))},[]);
     const polygonColor =(x)=>{
         if(x === "lobby"){return "blue"}
         if(x === "gathering"){return "green"}
@@ -39,7 +39,7 @@ export default function Sections(){
                 opacity: 0.25
             }}
         >
-            <Popup ref={popupRef}><popup-window>
+            <Popup ref={popupRef}><popupwindow>
                 <header>
                     <span><menuicon/> {t("sections:type."+x.type)}</span><closebutton onClick={()=>popupRef.current._source._map._popup._closeButton.click()}/>
                 </header>
@@ -49,7 +49,7 @@ export default function Sections(){
                         {(()=>{
                             const jsx = [];
                             for (var i=0; i<x.ranks.length; i++){
-                                jsx.push(<option value={i}>{t("ui:Map.rank")} {i+1}</option>)
+                                jsx.push(<option value={i}>{t("ui:map.rank")} {i+1}</option>)
                             }
                             return jsx;
                         })()}
@@ -61,7 +61,7 @@ export default function Sections(){
                     <cont><img src={"./assets/images/banners/sections/"+x.region+"/"+x.id+".png"} className="section" alt="" /></cont>
                     {(()=>{
                         if(x.type === "lobby"){return <>
-                            <span>{t("ui:Map.maxPlayers")}</span>
+                            <span>{t("ui:map.maxPlayers")}</span>
                             <border/>
                             100
                         </>}
@@ -69,48 +69,51 @@ export default function Sections(){
                             <info>
                                 <div>
                                     <level>
-                                        <span>{t("ui:Map.maxPlayers")}</span>
+                                        <span>{t("ui:map.maxPlayers")}</span>
                                         <border/>
                                         <value>32</value>
                                     </level>
                                     <level>
-                                        <span>{t("ui:Map.recommendedBP")}</span>
+                                        <span>{t("ui:map.recommendedBP")}</span>
                                         <border/>
                                         <value>{x.minBP}</value>
                                     </level>
                                     <level>
-                                        <span>{t("ui:Map.enemyLv")}</span>
+                                        <span>{t("ui:map.enemyLv")}</span>
                                         <border/>
                                         <value>{x.enemyLv}</value>
                                     </level>
                                 </div>
                             </info>
-                            {x.gigantix ? <>
-                                <span>{t("ui:Map.enemyTypes.gigantix")}</span>
-                                <border/>
-                                {t("enemies:"+x.gigantix)}
-                            </>:<Fragment/>}
-                            {x.ancient ? <>
-                                <span>{t("ui:Map.enemyTypes.ancient")}</span>
-                                <border/>
-                                {(()=>{
+                            <span>
+                                {x.boss_type_override ? 
+                                <>{t("ui:map.enemyTypes."+x.boss_type_override)}</>
+                                :
+                                <>{t("ui:map.enemyTypes.gigantix")}</>
+                                }
+                            </span>
+                            <border/>
+                            {(()=>{
+                                if(x.multiple_bosses === true){
                                     const jsx = [];
-                                    for (var i=0; i<x.ancient.length; i++){
+                                    for (var i=0; i<x.bosses.length; i++){
                                         if (i === 0){
-                                            jsx.push(<>{t("enemies:"+x.ancient[i])}</>)
+                                            jsx.push(<>{t("enemies:"+x.bosses[i])}</>)
                                         } else {
-                                            jsx.push(<>, {t("enemies:"+x.ancient[i])}</>)
+                                            jsx.push(<>, {t("enemies:"+x.bosses[i])}</>)
                                         }
                                     }
                                     return jsx;
-                                })()}
-                            </>:<Fragment/>}
+                                } else {
+                                    return <>{t("enemies:"+x.bosses)}</>
+                                }
+                            })()}
                         </>}
                         if(x.type === "combat"){return <>
                             <info>
                                 <div>
                                     <level>
-                                        <span>{t("ui:Map.maxPlayers")}</span>
+                                        <span>{t("ui:map.maxPlayers")}</span>
                                         <border/>
                                         <value>8</value>
                                     </level>
@@ -118,9 +121,9 @@ export default function Sections(){
                                         <span>
                                             {(()=>{// eslint-disable-next-line
                                                 if (tier == 0){
-                                                    return <>{t("ui:Map.recommendedBP")}</>
+                                                    return <>{t("ui:map.recommendedBP")}</>
                                                 } else {
-                                                    return <>{t("ui:Map.requiredBP")}</>
+                                                    return <>{t("ui:map.requiredBP")}</>
                                                 }
                                             })()}
                                         </span>
@@ -130,7 +133,7 @@ export default function Sections(){
                                         </value>
                                     </level>
                                     <level>
-                                        <span>{t("ui:Map.enemyLv")}</span>
+                                        <span>{t("ui:map.enemyLv")}</span>
                                         <border/>
                                         <value>
                                             {(()=>{if (x.ranks[tier] != null){return <>{x.ranks[tier].enemyLv}</>}})()}
@@ -141,7 +144,7 @@ export default function Sections(){
                         </>}
                     })()}
                 </content>
-            </popup-window></Popup>
+            </popupwindow></Popup>
         </Polygon>
     )))}else{return <Fragment/>}
 }

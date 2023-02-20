@@ -1,0 +1,31 @@
+{
+    "value": {
+        "seasonalpoints": "시즈널 포인트",
+        "meseta": "N-메세타",
+        "skillpoint": "SP",
+        "experience": "EXP"
+    },
+    "item": {
+        "gigas_augments": "「기가스」  특수 능력",
+        "soul_augments": "「소울」  특수 능력",
+        "special_scratch_ticket": "스패셜 스크래치 티켓",
+        "straga_camoflauge": "＊스트라가 아르마티",
+        "relik_series": "렐릭 무기 시리즈",
+        "mastery_augments": " 특수 능력 캡슐",
+        "gold_prim_sword": "골드 프림 소드",
+        "silver_prim_sword": "실버 프림 소드",
+        "gold_prim_armor": "골드 프림 아머",
+        "silver_prim_armor": "실버 프림 아머",
+        "fashion_items": "에스테 아이템",
+        "tria_augments": "「트리아」  특수 능력",
+        "kuku_series": "쿠크르제아트 무기 시리즈",
+        "domina_augments": "「도미나」  특수 능력",
+        "decold_augments": "「데콜드」  특수 능력",
+        "rugged_series": "라게이드 무기 시리즈",
+        "rokz_series": "록스 무기 시리즈",
+        "class_cubes": "",
+        "super_augments": "",
+        "strugments": "",
+        "arms_refiner": ""
+    }
+}

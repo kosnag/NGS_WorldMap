@@ -25,7 +25,8 @@
         "lat":-1882.25, "lng":826.25,
         "players": 4,
         "minBP": 894,
-        "enemyLv": 5
+        "enemyLv": 5,
+        "challenge": true
     },
     {
         "id": "testFlight",
@@ -39,14 +40,16 @@
         "lat":-1894.5, "lng":387.5,
         "players": 4,
         "minBP": 1184,
-        "enemyLv": 15
+        "enemyLv": 15,
+        "challenge": true
     },
     {
         "id": "fleetingFight",
         "lat":-1219.25, "lng":976.75,
         "players": 4,
         "minBP": 1184,
-        "enemyLv": 15
+        "enemyLv": 15,
+        "challenge": true
     },
     {
         "id": "runway",
@@ -60,28 +63,32 @@
         "lat":-1192.375, "lng":1288.375,
         "players": 4,
         "minBP": 1562,
-        "enemyLv": 25
+        "enemyLv": 25,
+        "challenge": true
     },
     {
         "id": "narrowCage",
         "lat":-1223, "lng":1674.125,
         "players": 4,
         "minBP": 1396,
-        "enemyLv": 21
+        "enemyLv": 21,
+        "challenge": true
     },
     {
         "id": "buddyAttack",
         "lat":-1219, "lng":1871.375,
         "players": 4,
         "minBP": 1396,
-        "enemyLv": 21
+        "enemyLv": 21,
+        "challenge": true
     },
     {
         "id": "dynaAssault",
         "lat":-1501.25, "lng":1527.375,
         "players": 4,
         "minBP": 1223,
-        "enemyLv": 17
+        "enemyLv": 17,
+        "challenge": true
     },
     {
         "id": "parkourMaster",
@@ -102,14 +109,16 @@
         "lat":-717, "lng":72,
         "players": 4,
         "minBP": 2082,
-        "enemyLv": 44
+        "enemyLv": 44,
+        "challenge": true
     },
     {
         "id": "crazyTail",
         "lat":-857.5, "lng":832.5,
         "players": 4,
         "minBP": 2018,
-        "enemyLv": 42
+        "enemyLv": 42,
+        "challenge": true
     },
     {
         "id": "slopeTile",
@@ -123,14 +132,16 @@
         "lat":-557.5, "lng":348.75,
         "players": 4,
         "minBP": 2082,
-        "enemyLv": 44
+        "enemyLv": 44,
+        "challenge": true
     },
     {
         "id": "wildAvalanche",
         "lat":-488.25, "lng":629.75,
         "players": 4,
         "minBP": 2181,
-        "enemyLv": 47
+        "enemyLv": 47,
+        "challenge": true
     },
     {
         "id": "vanishingPath2",
@@ -138,5 +149,28 @@
         "players": 4,
         "minBP": 2181,
         "enemyLv": 47
+    },
+    {
+        "id": "quarterstaff",
+        "lat":-383.75, "lng":1387.25,
+        "players": 4,
+        "minBP": 2924,
+        "enemyLv": 64,
+        "challenge": true
+    },
+    {
+        "id": "faceTheDarkness",
+        "lat":-593.875, "lng":1517,
+        "players": 4,
+        "minBP": 2878,
+        "enemyLv": 63,
+        "challenge": true
+    },
+    {
+        "id": "helicalLine",
+        "lat":-416.875, "lng":1562.375,
+        "players": 4,
+        "minBP": 1223,
+        "enemyLv": 60
     }
 ]

@@ -17,6 +17,7 @@ var optionsList = [
     {"table":"mineral__trinite","text":"Trinite"},
     {"table":"mineral__pentalite","text":"Pentalite"},
     {"table":"mineral__blizzardium","text":"Blizzardium"},
+    {"table":"mineral__randomite", "text":"Randomite"},
     {"hr":""},
     {"category":"Food"},
     {"table":"food__aelio_apple","text":"Rich Aelio Apple"},

@@ -1,0 +1,53 @@
+[
+    {
+        "lat":-1580, "lng":172,
+        "string": "invincible"
+    },
+    {
+        "lat":-1268, "lng":268,
+        "string": "expert"
+    },
+    {
+        "lat":-1955, "lng":647,
+        "string": "priceless"
+    },
+
+    {
+        "lat":-1875, "lng":1580,
+        "string": "priceless"
+    },
+    {
+        "lat":-1156, "lng":1418,
+        "string": "invincible"
+    },
+    {
+        "lat":-1172, "lng":1780,
+        "string": "expert"
+    },
+
+    {
+        "lat":-817, "lng":85,
+        "string": "expert"
+    },
+    {
+        "lat":-512, "lng":513,
+        "string": "priceless"
+    },
+    {
+        "lat":-496, "lng": 245,
+        "string": "invincible"
+    },
+
+    {
+        "lat":-657, "lng":1479.25,
+        "string": "expert"
+    },
+    {
+        "lat":-484.75, "lng":1465,
+        "string": "priceless"
+    },
+    {
+        "lat":-682.375, "lng":1148.5,
+        "string": "invincible"
+    }
+]

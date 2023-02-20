@@ -24,13 +24,13 @@
             "title": "Urgent Quest",
             "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
         },
-        "trinitas": {
-            "title": "Trinitas",
-            "description": "Trinitas is a kind of training facility that exists in Retem. It is more difficult to complete than a Trainia, and the level of the enemies inside is based on the level of the highest-levelled Party Member."
+        "advTrainia": {
+            "title": "Advanced Trainia",
+            "description": "items:landmark.advTrainia.description"
         },
-        "race": {
-            "title": "Field Races",
-            "description": "In Field Races, players race against each other in Exploration Sectors and compete with time and points.\nYou can start a race from Racing Consoles, located near Ryuker Devices in Exploration Sectors.\nYou will leave a race if you move to another sector or teleport."
+        "ltq": {
+            "title": "items:landmark.ltq.title",
+            "description": "items:landmark.ltq.description"
         }
     },
     "mineral": {
@@ -64,7 +64,7 @@
         },
         "randomite": {
             "title": "Randomite",
-            "description": ""
+            "description": "items:mineral.randomite.description"
         },
         "pentalite": {
             "title": "Pentalite",
@@ -73,6 +73,14 @@
         "blizzardium": {
             "title": "Blizzardium",
             "description": "Found across Kvaris during Snowfall and Blizzards.\nCan be exchanged for items in certain places."
+        },
+        "hexakite": {
+            "title": "items:mineral.hexakite.title",
+            "description": "items:mineral.hexakite.description"
+        },
+        "inferium": {
+            "title": "items:mineral.inferium.title",
+            "description": "items:mineral.inferium.description"
         }
     },
     "food": {
@@ -88,6 +96,7 @@
         "aelio_tomato": "Crisp Aelio Tomato",
         "aelio_turbanshell": "Light Aelio Turban Shell",
         "aelio_turnip": "Robust Aelio Turnip",
+
         "retem_cauliflower": "Robust Retem Cauliflower",
         "retem_cherries": "Rich Retem Cherry",
         "retem_cranberries": "Light Retem Cranberries",
@@ -100,6 +109,7 @@
         "retem_seaslug": "Light Retem Sea Slug",
         "retem_strawberry": "Robust Retem Strawberry",
         "retem_urchin": "Crisp Retem Sea Urchin",
+
         "kvaris_akebia": "Robust Kvaris Akebia",
         "kvaris_cabbage": "Light Kvaris Cabbage",
         "kvaris_carrot": "Rich Kvaris Carrot",
@@ -114,6 +124,22 @@
         "kvaris_snail": "Rich Kvaris Snail",
         "kvaris_squid": "Crisp Kvaris Squid",
         "kvaris_squidnotable": "Notable Kvaris Squid",
+
+        "stia_apple": "items:food.stia_apple",
+        "stia_banana": "items:food.stia_banana",
+        "stia_cabbage": "items:food.stia_cabbage",
+        "stia_carambola": "items:food.stia_carambola",
+        "stia_cauliflower": "items:food.stia_cauliflower",
+        "stia_crab": "items:food.stia_crab",
+        "stia_herb": "items:food.stia_herb",
+        "stia_hermitcrab": "items:food.stia_hermitcrab",
+        "stia_mango": "items:food.stia_mango",
+        "stia_mushroom": "items:food.stia_mushroom",
+        "stia_octopus": "items:food.stia_octopus",
+        "stia_plum": "items:food.stia_plum",
+        "stia_seaslug": "items:food.stia_seaslug",
+        "stia_tomato": "items:food.stia_tomato",
+        "stia_turbanshell": "items:food.stia_turbanshell",
         
         "description": {
             "prefix": {
@@ -121,7 +147,7 @@
                 "light": "Increases PP recovery",
                 "crisp": "Increases weak point damage",
                 "robust": "Increases HP recovery",
-                "notable": "Appears only with a certain conditions \nCan be exchanged for various rewards"
+                "special": "Appears only with a certain conditions \nCan be exchanged for various rewards"
             },
             "type": {
                 "fruit": "Increases potency",
@@ -131,27 +157,19 @@
         }
     },
     "container": {
-        "gold": {
-            "title": "Item Container [Gold]",
-            "description": "Contains valuable items like minerals or Alpha Reactors"
-        },
-        "green": {
-            "title": "Item Container [Green]",
-            "description": "Contains grinders"
-        },
         "red": {
             "title": "Item Container [Red]",
             "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
         },
-        "frozen": {
-            "title": "",
-            "description": ""
+        "invisible": {
+            "title": "items:container.invisible.title",
+            "description": "items:container.invisible.description"
         }
     },
     "other": {
         "alphareactor": {
             "title": "Alpha Reactor",
-            "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Aelio Region every day."
+            "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Central Aelio every day."
         },
         "snoal": {
             "title": "Snoal",
@@ -159,7 +177,8 @@
         },
         "datapod": {
             "title": "Datapod",
-            "description": "Datapods contains a some messages by residents of Halpha"
+            "description": "Datapods contains a some messages by residents of Halpha",
+            "hint": "items:other.datapod.hint"
         },
         "stellarseed": {
             "title": "Stellar Fragment",
@@ -175,7 +194,8 @@
         },
         "musicplace": {
             "title": "BGM Easter Egg",
-            "description": "Places that play music from older games of the Phantasy Star franchise."
+            "description": "Places that play music from older games of the Phantasy Star franchise.",
+            "hint": "Press the left mouse button on marker to copy the music title"
         },
         "mischief": {
             "title": "Mysterious Holograph",

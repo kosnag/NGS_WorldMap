@@ -18,7 +18,7 @@ Red:()=>{
             icon={window.localStorage_Checked.redContainers && window.localStorage_Checked.redContainers.indexOf(x.id)>-1 ? iconLib.redBoxChecked : iconLib.redBox}
             position={[x.lat,x.lng]} 
             eventHandlers={{
-                contextmenu:(e)=>{
+                click:(e)=>{
                     if(e.target.getIcon() === iconLib.redBox){
                         e.target.setIcon(iconLib.redBoxChecked);
                         if(!window.localStorage_Checked.redContainers){
@@ -35,15 +35,16 @@ Red:()=>{
                 }
             }}
         >
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltipwindow>
                 <header>
                      <span><menuicon/> {t("items:container.red.title")}</span>
                 </header>
                 <content>
-                    {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {x.id}</id>
+                    <br/>
+                    {t("ui:Map.checkHint")}
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 },
@@ -58,7 +59,7 @@ Green:()=>{
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=container__green").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker icon={iconLib.greenBox} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
+            <Tooltip direction='top'><tooltipwindow>
                 <header>
                     <span><menuicon/> {t("items:container.green.title")}</span>
                 </header>
@@ -66,7 +67,7 @@ Green:()=>{
                     {t("ui:Map.placedBy")}: {x.contributer}
                     <id>ID: {x.id}</id>
                 </content>
-            </tooltip-window></Tooltip>
+            </tooltipwindow></Tooltip>
         </Marker>
     ))):<Fragment/>)}else{return <Fragment/>}
 }

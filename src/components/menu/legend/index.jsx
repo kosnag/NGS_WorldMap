@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 import "./style.scss";
 import Draggable from 'react-draggable';
 import Functions from '../../../functions';
@@ -8,10 +8,11 @@ import { useTranslation } from "react-i18next";
 export default function MenuLegend(){
   const {t} = useTranslation();
 
-  const [previewIcon, setPreviewIcon] = useState(process.env.PUBLIC_URL+"/assets/images/icons/null.png");
+  const [previewIcon, setPreviewIcon] = useState("./assets/images/icons/null.png");
   const [previewRarity, setPreviewRarity] = useState("matoi");
   const [previewTitle, setPreviewTitle] = useState("");
   const [previewDescription, setPreviewDescription] = useState("");
+  const [toggleAccordionFood, setAccordionFood] = useState("");
 
   const checkLocalStorage = (category, item) => {
     if (window.localStorage_Settings[category][item] !== null){
@@ -61,11 +62,11 @@ export default function MenuLegend(){
           setPreviewIcon("./assets/images/icons/food/"+props.item+".png")
           setPreviewRarity(props.rarity)
           setPreviewTitle(t("items:food."+props.item))
-          props.notable === true ? 
+          props.rarity === "very-rare" ? 
           setPreviewDescription(
             t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+
             t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type)+"\n"+
-            t("items:food.description.prefix.notable")
+            t("items:food.description.prefix.special")
           )
           :
           setPreviewDescription(
@@ -84,7 +85,7 @@ export default function MenuLegend(){
   const [dataJSON,setDataJSON] = useState({});
   useEffect(() => {
     document.getElementById('menu-legend').classList.add('hidden');
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
+    fetch("./assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
   },[]);
   useEffect(() => {
     setPreviewTitle(t("items:nothing"));
@@ -103,48 +104,70 @@ export default function MenuLegend(){
             <button 
               className={toggleTab === 'landmarks' ? "active" : ""}
               onClick={() => clickToggleTab('landmarks')}
-            >{t("ui:LegendMenu.Categories.landmarks")}</button>
+            >{t("ui:legendMenu.categories.landmarks")}</button>
             <button 
               className={toggleTab === 'minerals' ? "active" : ""}
               onClick={() => clickToggleTab('minerals')}
-            >{t("ui:LegendMenu.Categories.minerals")}</button>
+            >{t("ui:legendMenu.categories.minerals")}</button>
             <button 
               className={toggleTab === 'food' ? "active" : ""}
               onClick={() => clickToggleTab('food')}
-            >{t("ui:LegendMenu.Categories.food")}</button>
+            >{t("ui:legendMenu.categories.food")}</button>
             <button 
               className={toggleTab === 'containers' ? "active" : ""}
               onClick={() => clickToggleTab('containers')}
-            >{t("ui:LegendMenu.Categories.containers")}</button>
+            >{t("ui:legendMenu.categories.containers")}</button>
             <button 
               className={toggleTab === 'other' ? "active" : ""}
               onClick={() => clickToggleTab('other')}
-            >{t("ui:LegendMenu.Categories.other")}</button>
+            >{t("ui:legendMenu.categories.other")}</button>
           </category>
           <>
             <items className={toggleTab === 'landmarks' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.landmark.map((x=>
-                <Button category="landmark" item={x} rarity="places"/>
+                <>{x.disabled === true ? <Fragment/>:
+                <Button category="landmark" item={x.item} rarity="places"/>}</>
               ))}
             </items>
             <items className={toggleTab === 'minerals' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.mineral.map((x=>
-                <Button category="mineral" item={x.item} rarity={x.rarity}/>
+                <>{x.disabled === true ? <Fragment/>:
+                <Button category="mineral" item={x.item} rarity={x.rarity}/>}</>
               ))}
             </items>
             <items className={toggleTab === 'food' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.food.map((x=>
-                <ButtonFood item={x.item} prefix={x.prefix} type={x.type} rarity={x.rarity} notable={x.notable}/>
+                <accordion>
+                  <button onClick={()=>{
+                    if(toggleAccordionFood === x.group_locale_id){
+                      setAccordionFood("")
+                    }else{
+                      setAccordionFood(x.group_locale_id)
+                    }
+                    }}>{t("sections:regions."+x.group_locale_id)}<span className="accordionIcon">{toggleAccordionFood === x.group_locale_id ? "-" : "+"}</span></button>
+                  <list className={toggleAccordionFood === x.group_locale_id ? "active" : ""}>
+                    {(x.items.map((z=>
+                      <>{z.disabled === true ? <Fragment/>:
+                      <ButtonFood item={z.item} type={z.type} prefix={z.prefix} rarity={z.rarity}/>
+                      } 
+                      </>
+                    )))}
+                  </list>
+                </accordion>
               ))}
             </items>
             <items className={toggleTab === 'containers' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.container.map((x=>
-                <Button category="container" item={x.item} rarity={x.rarity}/>
+                <>{x.disabled === true ? <Fragment/>:
+                  <Button category="container" item={x.item} rarity={x.rarity}/>
+                }</>
               ))}
             </items>
             <items className={toggleTab === 'other' ? "active" : ""}>
               {dataJSON.items && dataJSON?.items.other.map((x=>
-                <Button category="other" item={x.item} rarity={x.rarity}/>
+                <>{x.disabled === true ? <Fragment/>:
+                  <Button category="other" item={x.item} rarity={x.rarity}/>
+                }</>
               ))}
             </items>
           </>

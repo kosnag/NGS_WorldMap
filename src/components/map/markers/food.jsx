@@ -1,7 +1,7 @@
 import React, { useState, Fragment, useEffect } from 'react';
 import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
-import { Marker, Tooltip } from "react-leaflet";
+import { Marker, Tooltip, Circle } from "react-leaflet";
 
 const Template= (props) => {
     const {t} = useTranslation();
@@ -12,39 +12,65 @@ const Template= (props) => {
         return ()=>clearInterval(i);
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=food__"+props.id).then(response=>response.json()).then(d=>setData(d)) : setData([])},[props.id, marker]);
-    if (data !== null){return(marker ? (data.map((x=>
-        <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
-            <Tooltip direction='top'><tooltip-window>
-                <header>
-                    <span><menuicon/> {t("items:food."+props.id)}</span>
-                </header>
-                <content>
-                    {t("ui:LegendMenu.Categories.food")}
-                    <br/>
-                    {t("ui:Map.type")}: {t("ui:Map.foodType."+props.type)}
-                    <br/>
-                    {x.notable === true ? <>
-                        {t("items:food.description.prefix.notable")}
+    if (data !== null) {return(marker ? (data.map((x=>
+        props.area && props.area === true ? (
+            <Circle 
+                center={[x.lat,x.lng]}
+                radius={props.area_radius}
+                pathOptions={{
+                    color: props.area_color,
+                    fillColor: props.area_fillColor,
+                    fillOpacity: '0.25'
+                }}
+            >
+                <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
+                    <Tooltip direction='top'><tooltipwindow>
+                        <header>
+                            <span><menuicon/> {t("items:food."+props.id)}</span>
+                        </header>
+                        <content>
+                            {t("ui:legendMenu.categories.food")}
+                            <br/>
+                            {t("ui:map.type")}: {t("ui:map.foodType."+props.type)}
+                            <br/>
+                            {x.rarity === "very-rare" ? <>
+                                {t("items:food.description.prefix.special")}
+                                <br/>
+                            </>:<Fragment/>}
+                            <id>ID: {props.id}{x.id}</id>
+                        </content>
+                    </tooltipwindow></Tooltip>
+                </Marker>
+            </Circle>
+        ) : (
+            <Marker icon={iconLib[props.id]} position={[x.lat,x.lng]}>
+                <Tooltip direction='top'><tooltipwindow>
+                    <header>
+                        <span><menuicon/> {t("items:food."+props.id)}</span>
+                    </header>
+                    <content>
+                        {t("ui:legendMenu.categories.food")}
                         <br/>
-                    </>:<Fragment/>}
-                    {t("ui:Map.placedBy")}: {x.contributer}
-                    <id>ID: {props.id}{x.id}</id>
-                </content>
-            </tooltip-window></Tooltip>
-        </Marker>
+                        {t("ui:map.type")}: {t("ui:map.foodType."+props.type)}
+                        <br/>
+                        {x.rarity === "very-rare" ? <>
+                            {t("items:food.description.prefix.special")}
+                            <br/>
+                        </>:<Fragment/>}
+                        <id>ID: {props.id}{x.id}</id>
+                    </content>
+                </tooltipwindow></Tooltip>
+            </Marker>
+        )
     ))):<Fragment/>)}else{return <Fragment/>}
 }
 
 export default function Food(){
     const [dataJSON,setDataJSON] = useState([]);
     useEffect(()=>{
-        fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
+        fetch("./assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
     },[]);
-    return (
-        <Fragment>
-            {dataJSON.items && dataJSON?.items.food.map((x=>
-                <Template id={x.item} type={x.type} notable={x.notable}/>
-            ))}
-        </Fragment>
-    )
+    return <>{dataJSON.items && dataJSON?.items.food.map((x=>
+        <Template id={x.item} type={x.type} rarity={x.rarity}/>
+    ))}</>
 };

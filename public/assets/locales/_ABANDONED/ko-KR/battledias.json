@@ -1,0 +1,20 @@
+{
+    "regular": {
+        "aelioTroopers": "에아리오 트루퍼즈",
+        "aelioDevastators": "에아리오 데바스테이터즈",
+        "retemTroopers": "리템 트루퍼즈",
+        "retemDevastators": "리템 데바스테이터즈",
+        "kvarisTroopers": "크바리스 트루퍼즈",
+        "kvarisDevastators": "크바리스 데바스테이터즈"
+    },
+    "type": {
+        "yellow": {
+            "clearCondition": "에너미 쓰러뜨리기",
+            "description": "여기는 각 아크스의 전투 능력을 시험하는 배틀디아다.\n전투 기술을 구사하여 모든 에너미를 격파하라."
+        },
+        "purple": {
+            "clearCondition": "에너미 쓰러뜨리기",
+            "description": "여기는 각 아크스의 전투 능력을 시험하는 배틀디아다.\n전투 기술을 구사하여 차례대로 나타나는 기간틱스를 격파하라."
+        }
+    }
+}

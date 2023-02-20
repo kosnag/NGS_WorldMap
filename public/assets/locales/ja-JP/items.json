@@ -24,13 +24,13 @@
             "title": "緊急クエスト",
             "description": "\"緊急クエスト\"は、他のプレイヤーと力を合わせて強力なエネミーと戦う、時間限定のクエストです。エネミーの出現予告と同時に、出現地点が表示されます。"
         },
-        "trinitas": {
-            "title": "トリニテス",
-            "description": "\"トリニテス\"は、リテムに存在する訓練施設の一種です。\"トレイニア\"よりも難度が高く、パーティーメンバーの中で最もレベルの高いプレイヤーのレベルに応じて出現エネミーのレベルが変化します。"
+        "advTrainia": {
+            "title": "items:landmark.advTrainia.title",
+            "description": "items:landmark.advTrainia.description"
         },
-        "race": {
-            "title": "フィールドレース",
-            "description": "\"フィールドレース\"は、探索セクションのフィールドを他のプレイヤーと走り、タイムやポイントを競うコンテンツです。\n探索セクションのリューカーデバイス付近に設置された\"レーシングコンソール\"から競技を開始できます。\n他セクションへの移動や、テレポートをすると、競技から離脱します。"
+        "ltq": {
+            "title": "items:landmark.ltq.title",
+            "description": "items:landmark.ltq.description"
         }
     },
     "mineral": {
@@ -64,7 +64,7 @@
         },
         "randomite": {
             "title": "ランダマイト",
-            "description": ""
+            "description": "items:mineral.randomite.description"
         },
         "pentalite": {
             "title": "ペンドライト",
@@ -73,6 +73,14 @@
         "blizzardium": {
             "title": "ブリザーディアム",
             "description": "クヴァリスの岩場で入手可能な希少な鉱石。\n雪、吹雪時のみのギャザリング。\n特定の場所でアイテムと交換できる。"
+        },
+        "hexakite": {
+            "title": "items:mineral.hexakite.title",
+            "description": "items:mineral.hexakite.description"
+        },
+        "inferium": {
+            "title": "items:mineral.inferium.title",
+            "description": "items:mineral.inferium.description"
         }
     },
     "food": {
@@ -88,6 +96,7 @@
         "aelio_tomato": "シャッキ・エアルトマーテ",
         "aelio_turbanshell": "サッパ・エアルサザイエ",
         "aelio_turnip": "ガッツ・エアルカブラナ",
+
         "retem_cauliflower": "ガッツ・リテナキャリブラ",
         "retem_cherries": "マッタ・リテナッチェリ",
         "retem_cranberries": "サッパ・リテナクランベ",
@@ -100,6 +109,7 @@
         "retem_seaslug": "サッパ・リテナウミッシー",
         "retem_strawberry": "ガッツ・リテナストロンベリ",
         "retem_urchin": "シャッキ・リテナウーニィ",
+
         "kvaris_akebia": "ガッツ・クヴァルアッケビル",
         "kvaris_cabbage": "サッパ・クヴァルナッパー",
         "kvaris_carrot": "マッタ・クヴァルキャロツ",
@@ -114,6 +124,22 @@
         "kvaris_snail": "マッタ・クヴァルマギカイ",
         "kvaris_squid": "シャッキ・クヴァルスクイド",
         "kvaris_squidnotable": "ノータ・クヴァルスクイド",
+
+        "stia_apple": "items:food.stia_apple",
+        "stia_banana": "items:food.stia_banana",
+        "stia_cabbage": "items:food.stia_cabbage",
+        "stia_carambola": "items:food.stia_carambola",
+        "stia_cauliflower": "items:food.stia_cauliflower",
+        "stia_crab": "items:food.stia_crab",
+        "stia_herb": "items:food.stia_herb",
+        "stia_hermitcrab": "items:food.stia_hermitcrab",
+        "stia_mango": "items:food.stia_mango",
+        "stia_mushroom": "items:food.stia_mushroom",
+        "stia_octopus": "items:food.stia_octopus",
+        "stia_plum": "items:food.stia_plum",
+        "stia_seaslug": "items:food.stia_seaslug",
+        "stia_tomato": "items:food.stia_tomato",
+        "stia_turbanshell": "items:food.stia_turbanshell",
         
         "description": {
             "prefix": {
@@ -121,7 +147,7 @@
                 "light": "PP回復量増加",
                 "crisp": "弱点部位ダメージ増加",
                 "robust": "HP回復量増加",
-                "notable": ""
+                "special": "items:food.description.prefix.special"
             },
             "type": {
                 "fruit": "最大PP増加",
@@ -131,51 +157,45 @@
         }
     },
     "container": {
-        "gold": {
-            "title": "アイテムコンテナ[金]",
-            "description": ""
-        },
-        "green": {
-            "title": "アイテムコンテナ[緑]",
-            "description": ""
-        },
         "red": {
             "title": "アイテムコンテナ[赤]",
-            "description": ""
+            "description": "items:container.red.description"
         },
-        "frozen": {
-            "title": "",
-            "description": ""
+        "invisible": {
+            "title": "items:container.invisible.title",
+            "description": "items:container.invisible.description"
         }
     },
     "other": {
         "alphareactor": {
             "title": "アルファリアクター",
-            "description": ""
+            "description": "items:other.alphareactor.description"
         },
         "snoal": {
             "title": "スノークス",
-            "description": ""
+            "description": "items:other.snoal.description"
         },
         "datapod": {
             "title": "メッセージパック",
-            "description": ""
+            "description": "items:other.datapod.description",
+            "hint": "items:other.datapod.hint"
         },
         "stellarseed": {
             "title": "ステラーシード",
-            "description": ""
+            "description": "items:other.stellarseed.description"
         },
         "veteran": {
             "title": "老練の",
-            "description": ""
+            "description": "items:other.veteran.description"
         },
         "stellargrace": {
             "title": "ステラーグレイス",
-            "description": ""
+            "description": "items:other.stellargrace.description"
         },
         "musicplace": {
             "title": "BGMイースターエッグ",
-            "description": ""
+            "description": "items:other.musicplace.description",
+            "hint": "items:other.musicplace.hint"
         },
         "mischief": {
             "title": "ミスチーフシンボル",

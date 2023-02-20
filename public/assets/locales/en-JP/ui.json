@@ -1,12 +1,12 @@
 {
     "page_title": "PSO2NGS Interactive Map",
-    "NavBar": {
-        "support": "Support",
+    "navbar": {
+        "donate": "Donate",
         "mapLegend": "Map Legend",
         "options": "Options"
     },
-    "LegendMenu": {
-        "Categories": {
+    "legendMenu": {
+        "categories": {
             "landmarks": "Landmarks",
             "minerals": "Minerals",
             "food": "Food",
@@ -14,20 +14,20 @@
             "other": "Other"
         }
     },
-    "OptionsMenu": {
-        "Categories": {
+    "optionsMenu": {
+        "categories": {
             "languages": "Languages",
             "mapping": "Mapping",
             "reset": "Reset",
             "about": "About"
         },
-        "Items": {
+        "items": {
             "languages": {
-                "english": "English",
-                "japanese": "Japanese",
-                "english_jp": "Enlgish (Fan-Patch)",
-                "russian": "Russian",
-                "korean": "Korean"
+                "en-US": "English",
+                "ja-JP": "Japanese",
+                "en-JP": "Enlgish (Fan-Patch)",
+                "ru-RU": "Russian",
+                "ko-KR": "Korean"
             },
             "mapping": {
                 "discord": "Join to Discord",
@@ -36,7 +36,7 @@
             },
             "reset": {
                 "lang": "Reset language",
-                "visibility": "Reset visibility",
+                "visibility": "Reset markers",
                 "checked": "Reset checked markers",
                 "everything": "Reset everything"
             },
@@ -47,7 +47,7 @@
             }
         }
     },
-    "Map": {
+    "map": {
         "foodType": {
             "fruit": "Fruit",
             "seafood": "Seafood",
@@ -78,6 +78,8 @@
             "dread": "Battle-Hardened",
             "gigantix": "Gigantix",
             "ancient": ""
-        }
+        },
+        "checkHint": "Press the left mouse button on marker to mark it as checked",
+        "availableChallengeRank": "For this Trainia available Challenge Rank"
     }
 }

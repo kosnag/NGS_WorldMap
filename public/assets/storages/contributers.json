@@ -1,13 +1,8 @@
 [
     {
         "name": "Sinitsa",
-        "info": "RU translate",
+        "info": "Filling up information of map",
         "link": "//twitter.com/SinitsaHikari"
-    },
-    {
-        "name": "focuslite",
-        "info": "KR translate",
-        "link": "//github.com/focuslite"
     },
     {
         "name": "SVGVsevolod",
@@ -18,5 +13,10 @@
         "name": "Arks-Visiphone",
         "info": "Datapods",
         "link": "//pso2na.arks-visiphone.com/wiki/Main_Page"
+    },
+    {
+        "name": "Rhys",
+        "info": "First sponsor",
+        "link": "//twitter.com/PSO2Weiss"
     }
 ]

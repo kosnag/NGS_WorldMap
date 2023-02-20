@@ -1,0 +1,89 @@
+[
+    {
+        "id": "geometricLabyrinth",
+        "lat":-1394.5, "lng":1699.25,
+        "minBP": 1681,
+        "enemyLv": 30,
+        "players": 4,
+        "rewards": [
+            {
+                "item": "rewards:item.gold_prim_sword"
+            },
+            {
+                "item": "rewards:item.gold_prim_armor"
+            },
+            {
+                "item": "rewards:item.silver_prim_sword"
+            },
+            {
+                "item": "rewards:item.silver_prim_armor"
+            },
+            {
+                "item": "rewards:item.tria_augments"
+            },
+            {
+                "item": "rewards:item.fashion_items"
+            }
+        ]
+    },
+    {
+        "id": "cannonballRumble",
+        "lat":-592.5, "lng":496.75,
+        "minBP": 2647,
+        "enemyLv": 60,
+        "players": 4,
+        "rewards": [
+            {
+                "item": "rewards:item.gold_prim_sword"
+            },
+            {
+                "item": "rewards:item.gold_prim_armor"
+            },
+            {
+                "item": "rewards:item.silver_prim_sword"
+            },
+            {
+                "item": "rewards:item.silver_prim_armor"
+            },
+            {
+                "item": "rewards:item.class_cubes"
+            },
+            {
+                "item": "rewards:item.strugments"
+            },
+            {
+                "item": "rewards:item.super_augments"
+            }
+        ]
+    },
+    {
+        "id": "cannonballStrike",
+        "lat":-706, "lng":840.5,
+        "minBP": 2647,
+        "enemyLv": 60,
+        "players": 4,
+        "rewards": [
+            {
+                "item": "rewards:item.gold_prim_sword"
+            },
+            {
+                "item": "rewards:item.gold_prim_armor"
+            },
+            {
+                "item": "rewards:item.silver_prim_sword"
+            },
+            {
+                "item": "rewards:item.silver_prim_armor"
+            },
+            {
+                "item": "rewards:item.class_cubes"
+            },
+            {
+                "item": "rewards:item.strugments"
+            },
+            {
+                "item": "rewards:item.super_augments"
+            }
+        ]
+    }
+]

@@ -1,8 +1,8 @@
 <?php
 include "../api/mysql.php";
 
-$query = $mysql->query("select session from kosnag_map.".$datatables["auth"]["sessions"]." where session='".$_COOKIE["session"]."' ");
-$session_check = $query->fetch_assoc();
+$stmt = $PDO->query("select session from interactive_map.auth__sessions where session='".$_COOKIE["session"]."' ");
+$session_check = $stmt->fetch(PDO::FETCH_ASSOC);
 if (!isset($session_check["session"])){
     header("Location: /mapping");
 }

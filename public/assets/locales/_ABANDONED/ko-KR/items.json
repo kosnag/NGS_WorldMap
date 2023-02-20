@@ -1,0 +1,191 @@
+{
+    "landmark": {
+        "battledia": {
+            "title": "배틀디아",
+            "description": "\"배틀디아\"는 \"트리거 포탈\"이라고 불리는 특수한 단말에  전용의 열쇠 \"배틀 트리거\"를 세트하여 액세스 가능한 훈련 시설의 일종입니다."
+        },
+        "cocoon": {
+            "title": "코쿤",
+            "description": "\"코쿤\"은 각지에 흩어진 \"트레이니아\"라는 훈련 시설의 일종입니다. 각 코쿤에는 다양한 클리어 목표가 준비되어 있습니다. 클리어 목표를 달성하면 \"스킬 포인트\"를 얻을 수 있습니다."
+        },
+        "mag": {
+            "title": "리전 마그",
+            "description": "\"리전 마그\"는 할파 지역의 각 지역에 설치된 거대한 마그와 같은 모양을 한 설비입니다. 개더링 소재를 투입하여 다른 아크스들과 공유할 수 있는 부스트 효과를 얻을 수 있습니다. 부스트의 효과는 리전 마그에 따라 다릅니다."
+        },
+        "ryuker": {
+            "title": "リューカーデバイス",
+            "description": "\"リューカーデバイス\"は、各地に設置された多機能端末です。アクセスすると、\"テレポート\"や\"フードスタンド\"、\"倉庫\"といった各種機能が利用できます。"
+        },
+        "tower": {
+            "title": "タワー",
+            "description": "\"タワー\"は、各地に点在する、トレイニアと呼ばれる訓練施設の一種です。コクーンよりも施設の規模が大きく、難易度も高いですが、より多くのスキルポイントを入手できます。"
+        },
+        "urgent": {
+            "title": "緊急クエスト",
+            "description": "\"緊急クエスト\"は、他のプレイヤーと力を合わせて強力なエネミーと戦う、時間限定のクエストです。エネミーの出現予告と同時に、出現地点が表示されます。"
+        },
+        "advTrainia": {
+            "title": "",
+            "description": ""
+        },
+        "quests": {
+            "title": "",
+            "description": ""
+        }
+    },
+    "mineral": {
+        "dualomite": {
+            "title": "듀아로마이트",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
+        },
+        "monotite": {
+            "title": "모노타이트",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
+        },
+        "photonchunk": {
+            "title": "포톤 청크",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放などに用いる。"
+        },
+        "photonquartz": {
+            "title": "포톤 쿼츠",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでのマルチウェポン化に用いる。"
+        },
+        "photonscale": {
+            "title": "포톤 스케일",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでのカプセル交換などに用いる。"
+        },
+        "tetracite": {
+            "title": "테드라사이트",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放などに用いる。"
+        },
+        "trinite": {
+            "title": "트라이나이트",
+            "description": "各地の岩場などで入手可能な鉱石。アイテムラボでの潜在能力開放や限界突破に用いる。"
+        },
+        "randomite": {
+            "title": "랜더마이트",
+            "description": ""
+        },
+        "pentalite": {
+            "title": "펜드라이트",
+            "description": ""
+        },
+        "blizzardium": {
+            "title": "블리자디암",
+            "description": ""
+        },
+        "lavacite": {
+            "title": "",
+            "description": ""
+        }
+    },
+    "food": {
+        "aelio_apple": "マッタ・エアルアッポウ",
+        "aelio_banana": "ガッツ・エアルバナン",
+        "aelio_clam": "マッタ・エアルアザーリ",
+        "aelio_crab": "シャッキ・エアルクラーブ",
+        "aelio_herb": "マッタ・エアルハーヴ",
+        "aelio_lobster": "ガッツ・エアルローブス",
+        "aelio_mushroom": "サッパ・エアルマシュル",
+        "aelio_peach": "サッパ・エアルピッチ",
+        "aelio_pear": "シャッキ・エアルナッシィ",
+        "aelio_tomato": "シャッキ・エアルトマーテ",
+        "aelio_turbanshell": "サッパ・エアルサザイエ",
+        "aelio_turnip": "ガッツ・エアルカブラナ",
+        "retem_cauliflower": "ガッツ・リテナキャリブラ",
+        "retem_cherries": "マッタ・リテナッチェリ",
+        "retem_cranberries": "サッパ・リテナクランベ",
+        "retem_eggplant": "マッタ・リテナマルナース",
+        "retem_carambola": "シャッキ・リテナスターツ",
+        "retem_hermitcrab": "ガッツ・リテナヤドガーリ",
+        "retem_mango": "サッパ・リテナマルゴー",
+        "retem_mushroom": "シャッキ・リテナマシュル",
+        "retem_scallop": "マッタ・リテナボタッテ",
+        "retem_seaslug": "サッパ・リテナウミッシー",
+        "retem_strawberry": "ガッツ・リテナストロンベリ",
+        "retem_urchin": "シャッキ・リテナウーニィ",
+        "kvaris_akebia": "",
+        "kvaris_cabbage": "",
+        "kvaris_carrot": "",
+        "kvaris_crayfish": "",
+        "kvaris_guava": "",
+        "kvaris_mushroom": "",
+        "kvaris_octopus": "",
+        "kvaris_onion": "",
+        "kvaris_persimmon": "",
+        "kvaris_persimmonnotable": "",
+        "kvaris_plum": "",
+        "kvaris_snail": "",
+        "kvaris_squid": "",
+        "kvaris_squidnotable": "",
+        
+        "description": {
+            "prefix": {
+                "rich": "PP 소비량 경감",
+                "light": "PP 회복량 증가",
+                "crisp": "약점 부위 데미지 증가",
+                "robust": "HP 회복량 증가",
+                "notable": ""
+            },
+            "type": {
+                "fruit": "최대 PP 증가",
+                "seafood": "최대 HP 증가",
+                "vegetable": "데미지 내성 상승"
+            }
+        }
+    },
+    "container": {
+        "gold": {
+            "title": "아이템 컨테이너 [금]",
+            "description": ""
+        },
+        "green": {
+            "title": "아이템 컨테이너 [녹]",
+            "description": ""
+        },
+        "red": {
+            "title": "아이템 컨테이너 [적]",
+            "description": ""
+        },
+        "frozen": {
+            "title": "",
+            "description": ""
+        }
+    },
+    "other": {
+        "alphareactor": {
+            "title": "알파 리액터",
+            "description": ""
+        },
+        "snoal": {
+            "title": "스노쿠스",
+            "description": ""
+        },
+        "datapod": {
+            "title": "메시지 팩",
+            "description": ""
+        },
+        "stellarseed": {
+            "title": "스텔라 시드",
+            "description": ""
+        },
+        "veteran": {
+            "title": "노련의 ",
+            "description": ""
+        },
+        "stellargrace": {
+            "title": "스텔라 그레이스",
+            "description": ""
+        },
+        "musicplace": {
+            "title": "BGM 이스터 에그",
+            "description": "",
+            "hint": ""
+        },
+        "mischief": {
+            "title": "미스치프 심볼",
+            "description": "시즌 이벤트 중 할파에선 미스치프 심볼이 출현합니다."
+        }
+    },
+    "nothing": "항목 선택"
+}

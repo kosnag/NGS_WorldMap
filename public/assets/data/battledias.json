@@ -1,64 +1,5 @@
 [
     {
-        "id": "blue",
-        "available": true,
-        "img_url": "./assets/images/banners/urgents/trigger.png",
-        "coordinates": [
-            {"lat":-1435, "lng":643.5},
-            {"lat":-1691.25, "lng":1571.625},
-            {"lat":-588.5, "lng":750.25}
-        ],
-        "ranks": [
-            {
-                "minBP": 1898,
-                "enemyLv": 40,
-                "players": 8,
-                "firstRewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 10000
-                    }
-                ],
-                "rewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 20000
-                    },
-                    {
-                        "item": "items:mineral.photonscale.title",
-                        "count": 12
-                    }
-                ]
-            },
-            {
-                "sp_fail_condition": true,
-                "minBP": 2647,
-                "enemyLv": 60,
-                "players": 4,
-                "firstRewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 10000
-                    }
-                ],
-                "rewards": [
-                    {
-                        "item": "rewards:value.meseta",
-                        "count": 20000
-                    },
-                    {
-                        "item": "items:mineral.photonscale.title",
-                        "count": 12
-                    },
-                    {
-                        "item": "rewards:item.soul_augments",
-                        "count": 3
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "id": "aelioTroopers",
         "type": "yellow",
         "lat":-1481.75, "lng":34.5,
@@ -140,8 +81,20 @@
                 "enemyLv": 44,
                 "rewards": [
                     {
-                        "item": "rewards:item.straga_camoflauge"
+                        "item": "rewards:item.gigas_augments"
                     },
+                    {
+                        "item": "rewards:item.soul_augments"
+                    },
+                    {
+                        "item": "rewards:item.special_scratch_ticket"
+                    }
+                ]
+            },
+            {
+                "minBP": 2972,
+                "enemyLv": 69,
+                "rewards": [
                     {
                         "item": "rewards:item.gigas_augments"
                     },
@@ -236,8 +189,23 @@
                 "enemyLv": 49,
                 "rewards": [
                     {
-                        "item": "rewards:item.relik_series"
+                        "item": "rewards:item.gigas_augments"
                     },
+                    {
+                        "item": "rewards:item.soul_augments"
+                    },
+                    {
+                        "item": "items:mineral.photonscale.title"
+                    },
+                    {
+                        "item": "rewards:item.special_scratch_ticket"
+                    }
+                ]
+            },
+            {
+                "minBP": 2972,
+                "enemyLv": 69,
+                "rewards": [
                     {
                         "item": "rewards:item.gigas_augments"
                     },
@@ -287,7 +255,7 @@
     {
         "id": "kvarisDevastators",
         "type": "purple",
-        "lat":-380, "lng":285,
+        "lat":-309, "lng":365,
         "players": 4,
         "ranks": [
             {
@@ -295,11 +263,73 @@
                 "enemyLv": 39,
                 "rewards": [
                     {
-                        "item": "rewards:item.rugged_series"
+                        "item": "rewards:item.gigas_augments"
                     },
                     {
-                        "item": "rewards:item.rokz_series"
+                        "item": "rewards:item.soul_augments"
                     },
+                    {
+                        "item": "rewards:item.special_scratch_ticket"
+                    }
+                ]
+            },
+            {
+                "minBP": 2972,
+                "enemyLv": 69,
+                "rewards": [
+                    {
+                        "item": "rewards:item.gigas_augments"
+                    },
+                    {
+                        "item": "rewards:item.soul_augments"
+                    },
+                    {
+                        "item": "rewards:item.special_scratch_ticket"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "stiaTroopers",
+        "type": "yellow",
+        "lat":-561.5, "lng":1603.5,
+        "players": 4,
+        "ranks": [
+            {
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    {
+                        "item": "rewards:value.experience",
+                        "count": 0
+                    },
+                    {
+                        "item": "rewards:item.gold_prim_sword",
+                        "count": "+20"
+                    },
+                    {
+                        "item": "rewards:item.gold_prim_armor",
+                        "count": "+20"
+                    },
+                    {
+                        "item": "rewards:item.arm_augments",
+                        "count": 1
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "stiaDevastators",
+        "type": "purple",
+        "lat":-505.125, "lng":1634.875,
+        "players": 4,
+        "ranks": [
+            {
+                "minBP": 3227,
+                "enemyLv": 74,
+                "rewards": [
                     {
                         "item": "rewards:item.gigas_augments"
                     },

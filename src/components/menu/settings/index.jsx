@@ -4,6 +4,7 @@ import Draggable from 'react-draggable';
 import Functions from '../../../functions';
 import i18n from '../../../i18n';
 import { useTranslation } from "react-i18next";
+import { Fragment } from 'react/cjs/react.production.min';
 
 export default function MenuSettings(){
   const {t} = useTranslation();
@@ -17,15 +18,19 @@ export default function MenuSettings(){
   const [toggleTab, setToggleTab] = useState('languages');
 
   const [contributers, setContributers] = useState([]);
+  const [checkSettings, setSettings] = useState({});
 
   useEffect(() => {
     document.getElementById('menu-settings').classList.add('hidden');
     setTimeout(() => {
       setToggleLang(localStorage.getItem("i18nextLng"));
-    }, 100)
-    fetch("//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/storages/contributers.json")
+    }, 100);
+    fetch("./assets/storages/contributers.json")
       .then(response=>response.json())
-      .then(d=>setContributers(d))
+      .then(d=>setContributers(d));
+    fetch("./assets/storages/settings.json")
+      .then(response=>response.json())
+      .then(d=>setSettings(d));
   }, []);
 
   return (
@@ -40,84 +45,57 @@ export default function MenuSettings(){
             <button 
               className={toggleTab === 'languages' ? "active" : ""}
               onClick={() => setToggleTab('languages')}
-            >{t("ui:OptionsMenu.Categories.languages")}</button>
-            <button 
-              className={toggleTab === 'mapping' ? "active" : ""}
-              onClick={() => setToggleTab('mapping')}
-            >{t("ui:OptionsMenu.Categories.mapping")}</button>
+            >{t("ui:optionsMenu.categories.languages")}</button>
             <button 
               className={toggleTab === 'reset' ? "active" : ""}
               onClick={() => setToggleTab('reset')}
-            >{t("ui:OptionsMenu.Categories.reset")}</button>
+            >{t("ui:optionsMenu.categories.reset")}</button>
             <button 
               className={toggleTab === 'about' ? "active" : ""}
               onClick={() => setToggleTab('about')}
-            >{t("ui:OptionsMenu.Categories.about")}</button>
+            >{t("ui:optionsMenu.categories.about")}</button>
           </category>
           <>
             <items id="languages" className={toggleTab === 'languages' ? "active" : ""}>
-              <button onClick={() => clickToggleLang("en-US")}>
-                <span className={toggleLang === 'en-US' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.english")} / English</div>
-              </button>
-              <button onClick={() => clickToggleLang("ja-JP")}>
-                <span className={toggleLang === 'ja-JP' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.japanese")} / 日本語</div>
-              </button>
-              <button onClick={() => clickToggleLang("en-JP")}>
-                <span className={toggleLang === 'en-JP' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.english_jp")} / English (Fan-Patch)</div>
-              </button>
-              <button onClick={() => clickToggleLang("ru-RU")}>
-                <span className={toggleLang === 'ru-RU' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.russian")} / Русский</div>
-              </button>
-              <button onClick={() => clickToggleLang("ko-KR")}>
-                <span className={toggleLang === 'ko-KR' ? "active" : ""}/>
-                <div>{t("ui:OptionsMenu.Items.languages.korean")} / 한국어</div>
-              </button>
-            </items>
-            <items id="mapping" className={toggleTab === 'mapping' ? "active" : ""}>
-              <button onClick={() => {
-                window.open("https://discord.gg/AMZ4smTAM2")
-              }}>{t("ui:OptionsMenu.Items.mapping.discord")}</button>
-              <button onClick={() => {
-                window.open("https://github.com/kosnag/NGS_WorldMap")
-              }}>{t("ui:OptionsMenu.Items.mapping.translate")}</button>
-              <button onClick={() => {
-                window.open("/mapping")
-              }}>{t("ui:OptionsMenu.Items.mapping.start")}</button>
+              {checkSettings.settings && checkSettings.settings.languages.map((x=>
+                x.active === true ?
+                  <button onClick={() => clickToggleLang(x.id)}>
+                    <span className={toggleLang === x.id ? "active" : ""}/>
+                    <div>{t("ui:optionsMenu.items.languages."+x.id)} | {x.name}</div>
+                  </button>
+                : <Fragment/>
+              ))}
             </items>
             <items id="reset" className={toggleTab === 'reset' ? "active" : ""}>
               <button onClick={() => {
                 window.localStorage.removeItem("i18nextLng");
                 window.location.reload()
-              }}>{t("ui:OptionsMenu.Items.reset.lang")}</button>
+              }}>{t("ui:optionsMenu.items.reset.lang")}</button>
               <button onClick={() => {
                 window.localStorage.removeItem("settings");
                 window.location.reload()
-              }}>{t("ui:OptionsMenu.Items.reset.visibility")}</button>
+              }}>{t("ui:optionsMenu.items.reset.visibility")}</button>
               <button onClick={() => {
                 window.localStorage.removeItem("checked");
                 window.location.reload()
-              }}>{t("ui:OptionsMenu.Items.reset.checked")}</button>
+              }}>{t("ui:optionsMenu.items.reset.checked")}</button>
               <button onClick={() => {
                 window.localStorage.clear();
                 window.location.reload()
-              }}>{t("ui:OptionsMenu.Items.reset.everything")}</button>
+              }}>{t("ui:optionsMenu.items.reset.everything")}</button>
             </items>
             <items id="about" className={toggleTab === 'about' ? "active" : ""}>
               <p>
                 {t("ui:page_title")}
                 <br/><br/>
-                {t("ui:OptionsMenu.Items.about.author")}: <name onClick={()=>{window.open("//twitter.com/kosnag")}}>kosnag</name>
+                {t("ui:optionsMenu.items.about.author")}: <name onClick={()=>{window.open("//twitter.com/kosnag")}}>kosnag</name>
                 <br/><br/>
-                {t("ui:OptionsMenu.Items.about.contributers")}:<br/>
+                {t("ui:optionsMenu.items.about.contributers")}:<br/>
                 {contributers.map((x=>
                   <>• <name onClick={()=>{window.open(x.link)}}>{x.name}</name> - {x.info}<br/></>
                 ))}
                 <br/><br/>
-                {t("ui:OptionsMenu.Items.about.segaCopyright")}
+                {t("ui:optionsMenu.items.about.segaCopyright")}
               </p>
             </items>
           </>

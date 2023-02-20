@@ -1,13 +1,14 @@
 {
     "items": {
         "landmark": [
-            "cocoon",
-            "mag",
-            "ryuker",
-            "tower",
-            "battledia",
-            "urgent",
-            "trinitas"
+            {"item": "cocoon"},
+            {"item": "mag"},
+            {"item": "ryuker"},
+            {"item": "tower"},
+            {"item": "battledia"},
+            {"item": "urgent"},
+            {"item": "advTrainia"},
+            {"item": "ltq", "disabled": false}
         ],
         "mineral": [
             {"item": "monotite", "rarity": "common"},
@@ -16,70 +17,149 @@
             {"item": "tetracite", "rarity": "common"},
             {"item": "photonquartz", "rarity": "common"},
             {"item": "photonchunk", "rarity": "common"},
-            {"item": "photonscale", "rarity": "very-rare"},
+            {"item": "photonscale", "rarity": "very-rare", "area": true, "area_radius": 30, "area_color": "pink", "area_fillColor": "lightblue"},
             {"item": "pentalite", "rarity": "common"},
-            {"item": "blizzardium", "rarity": "very-rare"}
+            {"item": "blizzardium", "rarity": "very-rare"},
+            {"item": "randomite", "rarity": "special", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "yellow", "disabled": true},
+            {"item": "hexakite", "rarity": "common"},
+            {"item": "inferium", "rarity": "very-rare"}
         ],
         "food": [
-            {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common"},
-            {"item": "aelio_peach", "type": "fruit", "prefix": "light", "rarity": "common"},
-            {"item": "aelio_pear", "type": "fruit", "prefix": "crisp", "rarity": "common"},
-            {"item": "aelio_banana", "type": "fruit", "prefix": "robust", "rarity": "common"},
-
-            {"item": "aelio_clam", "type": "seafood", "prefix": "rich", "rarity": "common"},
-            {"item": "aelio_turbanshell", "type": "seafood", "prefix": "light", "rarity": "common"},
-            {"item": "aelio_crab", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-            {"item": "aelio_lobster", "type": "seafood", "prefix": "robust", "rarity": "common"}, 
-
-            {"item": "aelio_herb", "type": "vegetable", "prefix": "rich", "rarity": "common"},
-            {"item": "aelio_mushroom", "type": "vegetable", "prefix": "light", "rarity": "common"},
-            {"item": "aelio_tomato", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-            {"item": "aelio_turnip", "type": "vegetable", "prefix": "robust", "rarity": "common"},
-
-            {"item": "retem_cherries", "type": "fruit", "prefix": "rich", "rarity": "common"},
-            {"item": "retem_mango", "type": "fruit", "prefix": "light", "rarity": "common"},
-            {"item": "retem_carambola", "type": "fruit", "prefix": "crisp", "rarity": "common"},
-            {"item": "retem_strawberry", "type": "fruit", "prefix": "robust", "rarity": "common"},
-
-            {"item": "retem_scallop", "type": "seafood", "prefix": "rich", "rarity": "common"},
-            {"item": "retem_seaslug", "type": "seafood", "prefix": "light", "rarity": "common"},
-            {"item": "retem_urchin", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-            {"item": "retem_hermitcrab", "type": "seafood", "prefix": "robust", "rarity": "common"},
-
-            {"item": "retem_eggplant", "type": "vegetable", "prefix": "rich", "rarity": "common"},
-            {"item": "retem_cranberries", "type": "vegetable", "prefix": "light", "rarity": "common"},
-            {"item": "retem_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-            {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common"},
-
-            {"item": "kvaris_persimmon", "type": "fruit", "prefix": "rich", "rarity": "common"},
-            {"item": "kvaris_persimmonnotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare", "notable": true},
-            {"item": "kvaris_plum", "type": "fruit", "prefix": "light", "rarity": "common"},
-            {"item": "kvaris_guava", "type": "fruit", "prefix": "crisp", "rarity": "common"},
-            {"item": "kvaris_akebia", "type": "fruit", "prefix": "robust", "rarity": "common"},
-
-            {"item": "kvaris_snail", "type": "seafood", "prefix": "rich", "rarity": "common"},
-            {"item": "kvaris_octopus", "type": "seafood", "prefix": "light", "rarity": "common"},
-            {"item": "kvaris_squid", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-            {"item": "kvaris_squidnotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare", "notable": true},
-            {"item": "kvaris_crayfish", "type": "seafood", "prefix": "robust", "rarity": "common"},
-
-            {"item": "kvaris_carrot", "type": "vegetable", "prefix": "rich", "rarity": "common"},
-            {"item": "kvaris_cabbage", "type": "vegetable", "prefix": "light", "rarity": "common"},
-            {"item": "kvaris_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-            {"item": "kvaris_onion", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+            {
+                "group_locale_id": "aelio",
+                "items": [
+                    {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common"},
+                    {"item": "aelio_peach", "type": "fruit", "prefix": "light", "rarity": "common"},
+                    {"item": "aelio_pear", "type": "fruit", "prefix": "crisp", "rarity": "common"},
+                    {"item": "aelio_banana", "type": "fruit", "prefix": "robust", "rarity": "common"},
+        
+                    {"item": "aelio_clam", "type": "seafood", "prefix": "rich", "rarity": "common"},
+                    {"item": "aelio_turbanshell", "type": "seafood", "prefix": "light", "rarity": "common"},
+                    {"item": "aelio_crab", "type": "seafood", "prefix": "crisp", "rarity": "common"},
+                    {"item": "aelio_lobster", "type": "seafood", "prefix": "robust", "rarity": "common"}, 
+        
+                    {"item": "aelio_herb", "type": "vegetable", "prefix": "rich", "rarity": "common"},
+                    {"item": "aelio_mushroom", "type": "vegetable", "prefix": "light", "rarity": "common"},
+                    {"item": "aelio_tomato", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
+                    {"item": "aelio_turnip", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+                ]
+            },
+            {
+                "group_locale_id": "retem",
+                "items": [
+                    {"item": "retem_cherries", "type": "fruit", "prefix": "rich", "rarity": "common"},
+                    {"item": "retem_mango", "type": "fruit", "prefix": "light", "rarity": "common"},
+                    {"item": "retem_carambola", "type": "fruit", "prefix": "crisp", "rarity": "common"},
+                    {"item": "retem_strawberry", "type": "fruit", "prefix": "robust", "rarity": "common"},
+        
+                    {"item": "retem_scallop", "type": "seafood", "prefix": "rich", "rarity": "common"},
+                    {"item": "retem_seaslug", "type": "seafood", "prefix": "light", "rarity": "common"},
+                    {"item": "retem_urchin", "type": "seafood", "prefix": "crisp", "rarity": "common"},
+                    {"item": "retem_hermitcrab", "type": "seafood", "prefix": "robust", "rarity": "common"},
+        
+                    {"item": "retem_eggplant", "type": "vegetable", "prefix": "rich", "rarity": "common"},
+                    {"item": "retem_cranberries", "type": "vegetable", "prefix": "light", "rarity": "common"},
+                    {"item": "retem_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
+                    {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+                ]
+            },
+            {
+                "group_locale_id": "kvaris",
+                "items": [
+                    {"item": "kvaris_persimmon", "type": "fruit", "prefix": "rich", "rarity": "common"},
+                    {"item": "kvaris_persimmonnotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare"},
+                    {"item": "kvaris_plum", "type": "fruit", "prefix": "light", "rarity": "common"},
+                    {"item": "kvaris_guava", "type": "fruit", "prefix": "crisp", "rarity": "common"},
+                    {"item": "kvaris_akebia", "type": "fruit", "prefix": "robust", "rarity": "common"},
+        
+                    {"item": "kvaris_snail", "type": "seafood", "prefix": "rich", "rarity": "common"},
+                    {"item": "kvaris_octopus", "type": "seafood", "prefix": "light", "rarity": "common"},
+                    {"item": "kvaris_squid", "type": "seafood", "prefix": "crisp", "rarity": "common"},
+                    {"item": "kvaris_squidnotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare"},
+                    {"item": "kvaris_crayfish", "type": "seafood", "prefix": "robust", "rarity": "common"},
+        
+                    {"item": "kvaris_carrot", "type": "vegetable", "prefix": "rich", "rarity": "common"},
+                    {"item": "kvaris_cabbage", "type": "vegetable", "prefix": "light", "rarity": "common"},
+                    {"item": "kvaris_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
+                    {"item": "kvaris_onion", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+                ]
+            },
+            {
+                "group_locale_id": "stia",
+                "items": [
+                    {"item": "stia_banana", "type": "fruit", "prefix": "rich", "rarity": "common"},
+                    {"item": "stia_apple", "type": "fruit", "prefix": "light", "rarity": "common"},
+                    {"item": "stia_carambola", "type": "fruit", "prefix": "light", "rarity": "very-rare"},
+                    {"item": "stia_mango", "type": "fruit", "prefix": "crisp", "rarity": "common"},
+                    {"item": "stia_plum", "type": "fruit", "prefix": "robust", "rarity": "common"},
+        
+                    {"item": "stia_hermitcrab", "type": "seafood", "prefix": "rich", "rarity": "common"},
+                    {"item": "stia_crab", "type": "seafood", "prefix": "rich", "rarity": "very-rare"},
+                    {"item": "stia_seaslug", "type": "seafood", "prefix": "light", "rarity": "common"},
+                    {"item": "stia_octopus", "type": "seafood", "prefix": "crisp", "rarity": "common"},
+                    {"item": "stia_turbanshell", "type": "seafood", "prefix": "robust", "rarity": "common"},
+        
+                    {"item": "stia_herb", "type": "vegetable", "prefix": "rich", "rarity": "common"},
+                    {"item": "stia_tomato", "type": "vegetable", "prefix": "light", "rarity": "common"},
+                    {"item": "stia_cauliflower", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
+                    {"item": "stia_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "very-rare"},
+                    {"item": "stia_cabbage", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+                ]
+            }
         ],
         "container": [
-            {"item": "red", "rarity": "special"}
+            {"item": "red", "rarity": "special"},
+            {"item": "invisible", "rarity": "rare"}
         ],
         "other": [
             {"item": "veteran", "rarity": "rare"},
-            {"item": "alphareactor", "rarity": "very-rare"},
-            {"item": "snoal", "rarity": "very-rare"},
+            {"item": "alphareactor", "rarity": "rare"},
+            {"item": "snoal", "rarity": "rare"},
             {"item": "stellarseed", "rarity": "rare"},
-            {"item": "stellargrace", "rarity": "special"},
             {"item": "datapod", "rarity": "places"},
-            {"item": "musicplace", "rarity": "places"}
+            {"item": "musicplace", "rarity": "places"},
+            {"item": "stellargrace", "rarity": "places", "disabled": true}
         ]
     },
-    "visibility": {}
+    "settings": {
+        "seasonal_event": false,
+        "limited_quest": {
+            "active": true,
+            "players": 24,
+            "ranks": [
+                {
+                    "minBP": 2878,
+                    "enemyLv": 65,
+                    "points": 0
+                }
+            ]
+        },
+        "languages": [
+            {   
+                "id": "en-US",
+                "name": "English",
+                "active": true
+            },
+            {   
+                "id": "en-JP",
+                "name": "English (Fan-Patch)",
+                "active": true
+            },
+            {   
+                "id": "ja-JP",
+                "name": "日本語",
+                "active": true
+            },
+            {   
+                "id": "ko-KR",
+                "name": "한국어",
+                "active": false
+            },
+            {   
+                "id": "ru-RU",
+                "name": "Русский",
+                "active": false
+            }
+        ]
+    }
 }

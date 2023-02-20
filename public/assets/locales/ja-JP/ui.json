@@ -1,12 +1,12 @@
 {
     "page_title": "PSO2NGSインタラクティブ・マップ",
-    "NavBar": {
-        "support": "寄付",
+    "navbar": {
+        "donate": "寄付",
         "mapLegend": "マップの凡例",
         "options": "オプション"
     },
-    "LegendMenu": {
-        "Categories": {
+    "legendMenu": {
+        "categories": {
             "landmarks": "ランドマーク",
             "minerals": "鉱石",
             "food": "フード",
@@ -14,20 +14,20 @@
             "other": "その他"
         }
     },
-    "OptionsMenu": {
-        "Categories": {
+    "optionsMenu": {
+        "categories": {
             "languages": "寄付",
             "mapping": "マッピング",
             "reset": "リセット",
             "about": "アプリケーションについて"
         },
-        "Items": {
+        "items": {
             "languages": {
-                "english": "英語",
-                "japanese": "日本",
-                "english_jp": "英語（ファン）",
-                "russian": "ロシア語",
-                "korean": "韓国語"
+                "en-US": "英語",
+                "ja-JP": "日本語",
+                "en-JP": "英語 (ファン)",
+                "ru-RU": "ロシア語",
+                "ko-KR": "韓国語"
             },
             "mapping": {
                 "discord": "Discordに参加する",
@@ -47,7 +47,7 @@
             }
         }
     },
-    "Map": {
+    "map": {
         "foodType": {
             "fruit": "果物",
             "seafood": "海鮮",
@@ -78,6 +78,8 @@
             "dread": "老練の",
             "gigantix": "絶望の",
             "ancient": ""
-        }
+        },
+        "checkHint": "ui:map.checkHint",
+        "availableChallengeRank": "ui:map.availableChallengeRank"
     }
 }

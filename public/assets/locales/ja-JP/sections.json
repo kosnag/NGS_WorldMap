@@ -30,11 +30,26 @@
             "rayjordGorge": "レイヨルド峡江",
             "beluganaRuins": "ベルガナ遺跡",
             "lostCentral": "ロストセントラル"
+        },
+        "stia": {
+            "stiaCamp": "sections:sections.stia.stiaCamp",
+            "stiaOutskirts": "sections:sections.stia.stiaOutskirts",
+            "mediolaOuterArea1": "sections:sections.stia.mediolaOuterArea1",
+            "mediolaOuterArea2": "sections:sections.stia.mediolaOuterArea2",
+            "dextBase": "sections:sections.stia.dextBase",
+            "dreisenPlant": "sections:sections.stia.dreisenPlant",
+            "neusenPlant": "sections:sections.stia.neusenPlant"
         }
     },
     "type": {
         "lobby": "ロビーエリア",
         "gathering": "探索セクション",
         "combat": "戦闘セクション"
+    },
+    "regions": {
+        "aelio": "sections:regions.aelio",
+        "retem": "sections:regions.retem",
+        "kvaris": "sections:regions.lvaris",
+        "stia": "sections:regions.stia"
     }
 }

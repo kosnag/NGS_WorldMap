@@ -1,0 +1,20 @@
+{
+    "regular": {
+        "aelioTroopers": "Солдаты Эарио",
+        "aelioDevastators": "Опустошители Эарио",
+        "retemTroopers": "Солдаты Ритем",
+        "retemDevastators": "Опустошители Ритем",
+        "kvarisTroopers": "Солдаты Кварис",
+        "kvarisDevastators": "Опустошители Кварис"
+    },
+    "type": {
+        "yellow": {
+            "clearCondition": "Одолейте врагов",
+            "description": "Используйте свои боевые навыки, чтобы одолеть всех врагов."
+        },
+        "purple": {
+            "clearCondition": "Одолейте врагов",
+            "description": "Используйте свои боевые навыки, чтобы одолеть появляющихся друг за другом гигантиксов."
+        }
+    }
+}

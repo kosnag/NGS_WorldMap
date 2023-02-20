@@ -23,7 +23,7 @@ i18n
       'enemies',
       'rewards',
       'mags',
-      'trinitas',
+      'advTrainia',
     ],
     framework: "React",
     fallbackLng: 'en-US',
@@ -34,7 +34,7 @@ i18n
       escapeValue: false,
     },
     backend: {
-      loadPath: '//raw.githubusercontent.com/kosnag/NGS_WorldMap/master/public/assets/locales/{{lng}}/{{ns}}.json'
+      loadPath: './assets/locales/{{lng}}/{{ns}}.json'
     },
   });
 

@@ -30,11 +30,26 @@
             "rayjordGorge": "Rayjord Gorge",
             "beluganaRuins": "Bergana Ruins",
             "lostCentral": "Lost Central"
+        },
+        "stia": {
+            "stiaCamp": "Stia Camp",
+            "stiaOutskirts": "Stia: Fringes",
+            "mediolaOuterArea1": "Outer Mediola: Sector 1",
+            "mediolaOuterArea2": "Outer Mediola: Sector 2",
+            "dextBase": "Dext Base",
+            "dreisenPlant": "Dreisen Plant",
+            "neusenPlant": "Neusen Plant"
         }
     },
     "type": {
         "lobby": "Lobby Area",
         "gathering": "Gathering Area",
         "combat": "Combat Area"
+    },
+    "regions": {
+        "aelio": "Aelio",
+        "retem": "Retem",
+        "kvaris": "Kvaris",
+        "stia": "Stia"
     }
 }
