@@ -32,13 +32,13 @@
             "lostCentral": "ロストセントラル"
         },
         "stia": {
-            "stiaCamp": "sections:sections.stia.stiaCamp",
-            "stiaOutskirts": "sections:sections.stia.stiaOutskirts",
-            "mediolaOuterArea1": "sections:sections.stia.mediolaOuterArea1",
-            "mediolaOuterArea2": "sections:sections.stia.mediolaOuterArea2",
-            "dextBase": "sections:sections.stia.dextBase",
-            "dreisenPlant": "sections:sections.stia.dreisenPlant",
-            "neusenPlant": "sections:sections.stia.neusenPlant"
+            "stiaCamp": "スティアキャンプ",
+            "stiaOutskirts": "スティア外縁部",
+            "mediolaOuterArea1": "メディオラ外郭第１区",
+            "mediolaOuterArea2": "メディオラ外郭第2区",
+            "dextBase": "デクストベース",
+            "dreisenPlant": "ドライゼンプラント",
+            "neusenPlant": "ノイゼンプラント"
         }
     },
     "type": {
@@ -47,9 +47,9 @@
         "combat": "戦闘セクション"
     },
     "regions": {
-        "aelio": "sections:regions.aelio",
-        "retem": "sections:regions.retem",
-        "kvaris": "sections:regions.lvaris",
-        "stia": "sections:regions.stia"
+        "aelio": "エアリオ",
+        "retem": "リテム",
+        "kvaris": "クヴァリス",
+        "stia": "スティア"
     }
 }

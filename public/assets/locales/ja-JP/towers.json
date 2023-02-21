@@ -2,7 +2,7 @@
     "altersRush": {
         "title": "アルターズラッシュ",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。可能な限りエネミーとの戦闘を避け、戦闘技術を駆使して、最深部で待ちうける\"チアキュリオ\"を撃破せよ。",
-        "clearCondition": "ゴールへ到達せよ！",
+        "clearCondition": "チアキュリオを倒せ！",
         "subMission1": "8:00 未満でクリア",
         "subMission2": "エネミー討伐数4体未満でクリア",
         "subMission3": "戦闘不能回数5回未満でクリア"
@@ -10,7 +10,7 @@
     "greatWall": {
         "title": "グレートウォール",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使し、最深部で待ちうける“ダイダル・ソード”を撃破せよ。",
-        "clearCondition": "ダイダルを倒せ！",
+        "clearCondition": "ダイダル・ソードを倒せ！",
         "subMission1": "23:00 未満でクリア",
         "subMission2": "戦闘不能回数5回未満でクリア",
         "subMission3": "ポイントキューブを5個取得してクリア"
@@ -26,7 +26,7 @@
     "dollsBurrow": {
         "title": "ドールズバロウ",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使し、最深部で待ちうける\"デストラグラス\"を撃破せよ。",
-        "clearCondition": "ゴールへ到達せよ！",
+        "clearCondition": "デストラグラスを倒せ！",
         "subMission1": "ポイントキューブを5個取得してクリア",
         "subMission2": "戦闘不能回数3回未満でクリア",
         "subMission3": "10:00 未満でクリア"
@@ -34,17 +34,17 @@
     "deepWell": {
         "title": "ディープウェル",
         "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使し、最深部で待ちうける“アムス・クローネ”を撃破せよ。",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "clearCondition": "アムス・クローネを倒せ！",
+        "subMission1": "2:50 未満でクリア",
+        "subMission2": "ダメージ回数30回未満でクリア",
+        "subMission3": "ポイントキューブを5個取得してクリア"
     },
     "brokenWorld": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "ブロークンワールド",
+        "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使し、最深部で待ちうける“ダークマギルス”を撃破せよ。",
+        "clearCondition": "ダークマギルスを倒せ！",
+        "subMission1": "落下回数3回未満でクリア",
+        "subMission2": "7:00 未満でクリア",
+        "subMission3": "戦闘不能回数1回未満でクリア"
     }
 }
