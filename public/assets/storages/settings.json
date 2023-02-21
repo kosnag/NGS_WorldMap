@@ -109,7 +109,7 @@
         ],
         "container": [
             {"item": "red", "rarity": "special"},
-            {"item": "invisible", "rarity": "rare"}
+            {"item": "invisible", "rarity": "rare", "disabled": true}
         ],
         "other": [
             {"item": "veteran", "rarity": "rare"},
