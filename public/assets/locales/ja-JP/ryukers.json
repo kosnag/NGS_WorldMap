@@ -43,14 +43,14 @@
     "mistraWoodsNorth": "ミストラ樹林：北",
     "mistraWoodsSouth": "ミストラ樹林：南",
 
-    "grainneCoast": "",
-    "stiaCamp": "",
-    "dreisenPlant1": "",
-    "dreisenPlant2": "",
-    "felusaRidge1": "",
-    "felusaRidge2": "",
-    "dextBase1": "",
-    "dextBase2": "",
-    "neusenPlant": "",
+    "grainneCoast": "グラニア海岸",
+    "stiaCamp": "スティアキャンプ",
+    "dreisenPlant1": "ドライゼンプラント：第１",
+    "dreisenPlant2": "ドライゼンプラント：第2",
+    "felusaRidge1": "フェルーサ岩稜：第１",
+    "felusaRidge2": "フェルーサ岩稜：第2",
+    "dextBase1": "デクストベース：第１",
+    "dextBase2": "デクストベース：第2",
+    "neusenPlant": "ノイゼンプラント",
     "alteraBase": ""
 }

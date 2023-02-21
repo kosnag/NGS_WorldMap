@@ -160,27 +160,27 @@
         "subMission3": "ダメージ回数12回未満でクリア"
     },
     "quarterstaff": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "クォータースタッフ",
+        "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、“エンゴウク”を撃破せよ。",
+        "clearCondition": "エンゴウクを倒せ！",
+        "subMission1": "3:00未満でクリア",
+        "subMission2": "900以上のダメージを2回以上与えてクリア",
+        "subMission3": "ダメージ回数7回未満でクリア"
     },
     "faceTheDarkness": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "フェイスザダークネス",
+        "description": "ここは、アークス各人の戦闘能力を試すトレイニアである。戦闘技術を駆使して、“ダークレムナス”を撃破せよ。",
+        "clearCondition": "ダークレムナスを倒せ！",
+        "subMission1": "3:00未満でクリア",
+        "subMission2": "900以上のダメージを2回以上与えてクリア",
+        "subMission3": "ダメージ回数7回未満でクリア"
     },
     "helicalLine": {
-        "title": "",
-        "description": "",
-        "clearCondition": "",
-        "subMission1": "",
-        "subMission2": "",
-        "subMission3": ""
+        "title": "ヘリカルライン",
+        "description": "ここは、アークス各人の走破能力を試すトレイニアである。さまざまな運動技術を用いて、目標地点に到達せよ。",
+        "clearCondition": "ゴールへ到達せよ！",
+        "subMission1": "ポイントキューブを10個取得してクリア",
+        "subMission2": "グライドの使用7回未満でクリア",
+        "subMission3": "3:00未満でクリア"
     }
 }
