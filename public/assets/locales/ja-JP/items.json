@@ -75,12 +75,12 @@
             "description": "クヴァリスの岩場で入手可能な希少な鉱石。\n雪、吹雪時のみのギャザリング。\n特定の場所でアイテムと交換できる。"
         },
         "hexakite": {
-            "title": "items:mineral.hexakite.title",
-            "description": "items:mineral.hexakite.description"
+            "title": "ヘクスカイト",
+            "description": "各地の岩場などで入手可能な鉱石。\nアイテムラボでの\n潜在能力解放や限界突破などに用いる。"
         },
         "inferium": {
-            "title": "items:mineral.inferium.title",
-            "description": "items:mineral.inferium.description"
+            "title": "インフェリウム",
+            "description": "スティアの岩場で\n入手可能な希少な鉱石。\n特定の場所でアイテムと交換できる。"
         }
     },
     "food": {
@@ -125,21 +125,21 @@
         "kvaris_squid": "シャッキ・クヴァルスクイド",
         "kvaris_squidnotable": "ノータ・クヴァルスクイド",
 
-        "stia_apple": "items:food.stia_apple",
-        "stia_banana": "items:food.stia_banana",
-        "stia_cabbage": "items:food.stia_cabbage",
-        "stia_carambola": "items:food.stia_carambola",
-        "stia_cauliflower": "items:food.stia_cauliflower",
-        "stia_crab": "items:food.stia_crab",
-        "stia_herb": "items:food.stia_herb",
-        "stia_hermitcrab": "items:food.stia_hermitcrab",
-        "stia_mango": "items:food.stia_mango",
-        "stia_mushroom": "items:food.stia_mushroom",
-        "stia_octopus": "items:food.stia_octopus",
-        "stia_plum": "items:food.stia_plum",
-        "stia_seaslug": "items:food.stia_seaslug",
-        "stia_tomato": "items:food.stia_tomato",
-        "stia_turbanshell": "items:food.stia_turbanshell",
+        "stia_apple": "サッパ・スティラアッポウ",
+        "stia_banana": "マッタ・スティラバナン",
+        "stia_cabbage": "ガッツ・スティラナッパー",
+        "stia_carambola": "フェイ・スティラスターツ",
+        "stia_cauliflower": "シャッキ・スティラキャリブラ",
+        "stia_crab": "フェイ・スティラクラーブ",
+        "stia_herb": "マッタ・スティラハーヴ",
+        "stia_hermitcrab": "マッタ・スティラヤドガーリ",
+        "stia_mango": "シャッキ・スティラマルゴー",
+        "stia_mushroom": "フェイ・スティラマシュル",
+        "stia_octopus": "シャッキ・スティラオクトヴァ",
+        "stia_plum": "ガッツ・スティラプラーム",
+        "stia_seaslug": "サッパ・スティラウミッシー",
+        "stia_tomato": "サッパ・スティラトマーテ",
+        "stia_turbanshell": "ガッツ・スティラサザイエ",
         
         "description": {
             "prefix": {

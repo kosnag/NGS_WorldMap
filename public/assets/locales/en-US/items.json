@@ -75,11 +75,11 @@
             "description": "Found across Kvaris during Snowfall and Blizzards.\nCan be exchanged for items in certain places."
         },
         "hexakite": {
-            "title": "items:mineral.hexakite.title",
+            "title": "Hexakite",
             "description": "items:mineral.hexakite.description"
         },
         "inferium": {
-            "title": "items:mineral.inferium.title",
+            "title": "Inefernium",
             "description": "items:mineral.inferium.description"
         }
     },
@@ -125,21 +125,21 @@
         "kvaris_squid": "Crisp Kvaris Squid",
         "kvaris_squidnotable": "Notable Kvaris Squid",
 
-        "stia_apple": "items:food.stia_apple",
-        "stia_banana": "items:food.stia_banana",
-        "stia_cabbage": "items:food.stia_cabbage",
-        "stia_carambola": "items:food.stia_carambola",
-        "stia_cauliflower": "items:food.stia_cauliflower",
-        "stia_crab": "items:food.stia_crab",
-        "stia_herb": "items:food.stia_herb",
-        "stia_hermitcrab": "items:food.stia_hermitcrab",
-        "stia_mango": "items:food.stia_mango",
-        "stia_mushroom": "items:food.stia_mushroom",
-        "stia_octopus": "items:food.stia_octopus",
-        "stia_plum": "items:food.stia_plum",
-        "stia_seaslug": "items:food.stia_seaslug",
-        "stia_tomato": "items:food.stia_tomato",
-        "stia_turbanshell": "items:food.stia_turbanshell",
+        "stia_apple": "Light Stia Apple",
+        "stia_banana": "Rich Stia Banana",
+        "stia_cabbage": "Robust Stia Cabbage",
+        "stia_carambola": "Famous Stia Carambola",
+        "stia_cauliflower": "Crisp Stia Cauliflower",
+        "stia_crab": "Rich Stia Crab",
+        "stia_herb": "Rich Stia Herb",
+        "stia_hermitcrab": "Rich Stia Hermit Crab",
+        "stia_mango": "Crisp Stia Mango",
+        "stia_mushroom": "Famous Stia Mushrooms",
+        "stia_octopus": "Crisp Stia Octopus",
+        "stia_plum": "Robust Stia Plum",
+        "stia_seaslug": "Light Stia Sea Slug",
+        "stia_tomato": "Light Stia Tomato",
+        "stia_turbanshell": "Robust Stia Turban Shell",
         
         "description": {
             "prefix": {
