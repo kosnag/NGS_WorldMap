@@ -26,11 +26,11 @@
         },
         "advTrainia": {
             "title": "Advanced Trainia",
-            "description": "items:landmark.advTrainia.description"
+            "description": "-//-"
         },
         "ltq": {
-            "title": "items:landmark.ltq.title",
-            "description": "items:landmark.ltq.description"
+            "title": "Limited-Time Quests",
+            "description": "You can accept all kinds of special quests such as Limited-Time Quests at the Quest Counter found in every town."
         }
     },
     "mineral": {
@@ -64,7 +64,7 @@
         },
         "randomite": {
             "title": "Randomite",
-            "description": "items:mineral.randomite.description"
+            "description": "You can collect many different types of minerals at once by breaking Randomite."
         },
         "pentalite": {
             "title": "Pentalite",
@@ -162,8 +162,8 @@
             "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
         },
         "invisible": {
-            "title": "items:container.invisible.title",
-            "description": "items:container.invisible.description"
+            "title": "Invisible Boxes",
+            "description": "Rare is characterized by light particles around the box. These boxes have a high probability of containing valuable items."
         }
     },
     "other": {
