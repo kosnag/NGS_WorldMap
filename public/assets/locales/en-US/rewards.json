@@ -23,9 +23,9 @@
         "decold_augments": "Decold-type Capsules",
         "rugged_series": "Rugged Series Weapon",
         "rokz_series": "Rokz Series Weapon",
-        "class_cubes": "",
-        "super_augments": "",
-        "strugments": "",
-        "arms_refiner": ""
+        "class_cubes": "Class Excube",
+        "super_augments": "Super-type Capsules",
+        "strugments": "Stragment",
+        "arms_refiner": "Arms Refiner"
     }
 }

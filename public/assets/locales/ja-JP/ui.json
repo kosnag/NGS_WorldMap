@@ -77,9 +77,9 @@
         "enemyTypes": {
             "dread": "老練の",
             "gigantix": "絶望の",
-            "ancient": ""
+            "ancient": "遠世の"
         },
-        "checkHint": "ui:map.checkHint",
-        "availableChallengeRank": "ui:map.availableChallengeRank"
+        "checkHint": "マーカー上でマウスの左ボタンを押して、チェックマークを付けます",
+        "availableChallengeRank": "このトレイニアで利用可能なチャレンジランク"
     }
 }
