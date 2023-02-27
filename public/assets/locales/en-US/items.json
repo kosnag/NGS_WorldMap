@@ -159,7 +159,7 @@
     "container": {
         "red": {
             "title": "Item Container [Red]",
-            "description": "Contains very valuable items like Meseta, Star Gems, Armor, etc.. Each container can only be broken once per account."
+            "description": "Contains very valuable items like Meseta, Star Gems, Armors, etc.. Each container can only be broken once per account."
         },
         "invisible": {
             "title": "Invisible Boxes",
