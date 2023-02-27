@@ -2,57 +2,57 @@
     "landmark": {
         "battledia": {
             "title": "Battledia",
-            "description": "Battledia Quests are unique quests that can be accessed through a Trigger Portal"
+            "description": "Battledia Quests are unique quests that can be accessed through a Trigger Portal."
         },
         "cocoon": {
             "title": "Cocoon",
-            "description": "Cocoons are smaller challenges designed to test players"
+            "description": "Cocoons are smaller challenges designed to test players."
         },
         "mag": {
             "title": "Regional Mag",
-            "description": "By giving gathering materials to a Region Mag, you can improve the boosts that Region Mag gives to players in the current region, as well as level up your own personal boosts"
+            "description": "By giving gathering materials to a Region Mag, you can improve the boosts that Region Mag gives to players in the current region, as well as level up your own personal boosts."
         },
         "ryuker": {
             "title": "Ryuker Device",
-            "description": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel"
+            "description": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel."
         },
         "tower": {
             "title": "Tower",
-            "description": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2"
+            "description": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2."
         },
         "urgent": {
             "title": "Emergency Quest",
-            "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
+            "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs."
         },
         "advTrainia": {
             "title": "Advanced Trainia",
-            "description": "items:landmark.advTrainia.description"
+            "description": "Advanced Trainias are challenging quests with the ability to select modifiers to complicate the passage and get better rewards."
         },
         "ltq": {
-            "title": "items:landmark.ltq.title",
-            "description": "items:landmark.ltq.description"
+            "title": "Limited-Time Quests",
+            "description": "You can accept all kinds of special quests such as Limited-Time Quests at the Quest Counter found in every town."
         }
     },
     "mineral": {
         "dualomite": {
             "title": "Dualomite",
-            "description": "Used for unlocking Potentials Lv2 and Limit Breaking at the Item Lab"
+            "description": "Used to unlock Potentials and Limit Break items at the Item Lab."
         },
         "monotite": {
             "title": "Monotite",
-            "description": "Used for unlocking Potentials Lv1 and Limit Breaking at the Item Lab"
+            "description": "Used to unlock Potentials and Limit Break items at the Item Lab."
         },
         "photonchunk": {
             "title": "Photon Chunk",
-            "description": "Used for Limit Breaking at the Item Lab"
+            "description": "Used to Limit Break items at the Item Lab."
         },
         "photonquartz": {
             "title": "Photon Quartz",
-            "description": "Used for Multi-weaponization at the Item Lab"
+            "description": "Used to create Multi-Weapons at the Item Lab."
         },
         "photonscale": {
             "title": "Photon Scale",
-            "description": "Used as material at the Item Lab."
+            "description": "Used in Capsule exchange at the Item Lab."
         },
         "tetracite": {
             "title": "Tetracite",
@@ -60,27 +60,27 @@
         },
         "trinite": {
             "title": "Trinite",
-            "description": "Used for unlocking Potentials Lv3 and Limit Breaking at the Item Lab"
+            "description": "Used to unlock Potentials and Limit Break items at the Item Lab."
         },
         "randomite": {
             "title": "Randomite",
-            "description": "items:mineral.randomite.description"
+            "description": "You can collect many different types of minerals at once by breaking Randomite."
         },
         "pentalite": {
             "title": "Pentrite",
-            "description": "items:mineral.pentalite.description"
+            "description": "Used to unlock Potentials and Limit Break items at the Item Lab."
         },
         "blizzardium": {
             "title": "Blizzardium",
-            "description": "items:mineral.blizzardium.description"
+            "description": "Rare ore found in the rocky regions of Kvaria.\nCan be traded for materials at the Item Lab."
         },
         "hexakite": {
-            "title": "items:mineral.hexakite.title",
-            "description": "items:mineral.hexakite.description"
+            "title": "Hexakite",
+            "description": "Used to unlock Potentials and Limit Break items at the Item Lab."
         },
         "inferium": {
-            "title": "items:mineral.inferium.title",
-            "description": "items:mineral.inferium.description"
+            "title": "Inferium",
+            "description": "Rare ore found in the rocky regions of Stia.\nCan be traded for materials at the Item Lab."
         }
     },
     "food": {
@@ -125,20 +125,20 @@
         "kvaris_squid": "Sharp Kvaris Squid",
         "kvaris_squidnotable": "Notable Kvaris Squid",
 
-        "stia_apple": "items:food.stia_apple",
-        "stia_banana": "items:food.stia_banana",
+        "stia_apple": "Refreshing Stia Apple",
+        "stia_banana": "Nourishing Stia Banana",
         "stia_cabbage": "items:food.stia_cabbage",
         "stia_carambola": "items:food.stia_carambola",
-        "stia_cauliflower": "items:food.stia_cauliflower",
-        "stia_crab": "items:food.stia_crab",
-        "stia_herb": "items:food.stia_herb",
-        "stia_hermitcrab": "items:food.stia_hermitcrab",
-        "stia_mango": "items:food.stia_mango",
-        "stia_mushroom": "items:food.stia_mushroom",
-        "stia_octopus": "items:food.stia_octopus",
-        "stia_plum": "items:food.stia_plum",
-        "stia_seaslug": "items:food.stia_seaslug",
-        "stia_tomato": "items:food.stia_tomato",
+        "stia_cauliflower": "Sharp Stia Cauliflower",
+        "stia_crab": "Famed Stia Crab",
+        "stia_herb": "Nourishing Stia Herb",
+        "stia_hermitcrab": "Nourishing Stia Hermit Crab",
+        "stia_mango": "Sharp Stia Mango",
+        "stia_mushroom": "Famed Stia Mushroom",
+        "stia_octopus": "Sharp Stia Octopus",
+        "stia_plum": "Healthy Stia Plum",
+        "stia_seaslug": "Refreshing Stia Sea Slug",
+        "stia_tomato": "Refreshing Stia Tomato",
         "stia_turbanshell": "items:food.stia_turbanshell",
         
         "description": {
@@ -162,8 +162,8 @@
             "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
         },
         "invisible": {
-            "title": "items:container.invisible.title",
-            "description": "items:container.invisible.description"
+            "title": "Invisible Boxes",
+            "description": "Rare is characterized by light particles around the box. These boxes have a high probability of containing valuable items."
         }
     },
     "other": {
@@ -178,7 +178,7 @@
         "datapod": {
             "title": "Datapod",
             "description": "Message Packs contain messages from the residents of Halpha. Some also contain items.",
-            "hint": "items:other.datapod.hint"
+            "hint": "Press the left mouse button on marker to copy message"
         },
         "stellarseed": {
             "title": "Stellar Seed",
