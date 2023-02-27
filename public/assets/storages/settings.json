@@ -109,7 +109,7 @@
         ],
         "container": [
             {"item": "red", "rarity": "special"},
-            {"item": "invisible", "rarity": "rare"}
+            {"item": "invisible", "rarity": "rare", "disabled": true}
         ],
         "other": [
             {"item": "veteran", "rarity": "rare"},
@@ -124,7 +124,7 @@
     "settings": {
         "seasonal_event": false,
         "limited_quest": {
-            "active": true,
+            "active": false,
             "players": 24,
             "ranks": [
                 {

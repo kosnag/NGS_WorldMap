@@ -2,31 +2,31 @@
     "landmark": {
         "battledia": {
             "title": "Battledia",
-            "description": "Battledia Quests are unique quests that can be accessed through a Trigger Portal"
+            "description": "Battledia Quests are unique quests that can be accessed through a Trigger Portal."
         },
         "cocoon": {
             "title": "Cocoon",
-            "description": "Cocoons are smaller challenges designed to test players"
+            "description": "Cocoons are smaller challenges designed to test players."
         },
         "mag": {
             "title": "Region Mag",
-            "description": "By giving gathering materials to a Region Mag, you can improve the boosts that Region Mag gives to players in the current region, as well as level up your own personal boosts"
+            "description": "By giving gathering materials to a Region Mag, you can improve the boosts that Region Mag gives to players in the current region, as well as level up your own personal boosts."
         },
         "ryuker": {
             "title": "Ryuker Device",
-            "description": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel"
+            "description": "Ryuker Devices can be used for several purposes, including changing Blocks, accessing your Storage remotely, creating Quick Food, moving to different Rooms, and quick travel."
         },
         "tower": {
             "title": "Tower",
-            "description": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2"
+            "description": "Towers are larger challenges, more complex quests similar to \"Time Attack\" quests from PSO2."
         },
         "urgent": {
             "title": "Urgent Quest",
-            "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs"
+            "description": "Urgent Quests are special Quests that can occur several times a day and can only be accepted during the time period it occurs."
         },
         "advTrainia": {
             "title": "Advanced Trainia",
-            "description": "-//-"
+            "description": "Advanced Trainias are challenging quests with the ability to select modifiers to complicate the passage and get better rewards."
         },
         "ltq": {
             "title": "Limited-Time Quests",
@@ -76,11 +76,11 @@
         },
         "hexakite": {
             "title": "Hexakite",
-            "description": "items:mineral.hexakite.description"
+            "description": "Used for various purposes like unlocking Potentials and Limit Breaking at the Item Lab."
         },
         "inferium": {
             "title": "Inefernium",
-            "description": "items:mineral.inferium.description"
+            "description": "A rare mineral ore found in rocky areas of Stia.\nCan be exchanged for items in certain places."
         }
     },
     "food": {
@@ -130,7 +130,7 @@
         "stia_cabbage": "Robust Stia Cabbage",
         "stia_carambola": "Famous Stia Carambola",
         "stia_cauliflower": "Crisp Stia Cauliflower",
-        "stia_crab": "Rich Stia Crab",
+        "stia_crab": "Famous Stia Crab",
         "stia_herb": "Rich Stia Herb",
         "stia_hermitcrab": "Rich Stia Hermit Crab",
         "stia_mango": "Crisp Stia Mango",
@@ -178,7 +178,7 @@
         "datapod": {
             "title": "Datapod",
             "description": "Datapods contains a some messages by residents of Halpha",
-            "hint": "items:other.datapod.hint"
+            "hint": "Press the left mouse button on marker to copy message"
         },
         "stellarseed": {
             "title": "Stellar Fragment",

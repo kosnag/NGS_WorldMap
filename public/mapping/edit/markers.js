@@ -6,11 +6,9 @@ var groups = {
         vegetables: L.layerGroup()
     },
     containers: {
-        green: L.layerGroup(),
         red: L.layerGroup()
     },
     other: {
-        dailymaterials: L.layerGroup(),
         bgm: L.layerGroup(),
         datapods: L.layerGroup(),
         mischief: L.layerGroup(),
@@ -31,6 +29,8 @@ var itemList = {
         {"id":"blizzardium", "string":"Blizzardium", "color":"green"},
         {"id":"photonscale", "string":"Photon Scale", "color":"pink"},
         {"id":"randomite", "string":"Randomite", "color":"gold"},
+        {"id":"inferium", "string":"Inefernium", "color":"green"},
+        {"id":"hexakite", "string":"Hexakite", "color":"pink"},
     ],
     food: {
         fruits: [
@@ -47,6 +47,11 @@ var itemList = {
             {"id":"kvaris_guava", "string":"Crisp Kvaris Guava", "color":"yellow"},
             {"id":"kvaris_akebia", "string":"Robust Kvaris Akebia", "color":"red"},
             {"id":"kvaris_persimmonnotable", "string":"Notable Kvaris Persimmon", "color":"gold"},
+            {"id":"stia_banana", "string":"Rich Stia Banana", "color":"green"},
+            {"id":"stia_apple", "string":"Light Stia Apple", "color":"black"},
+            {"id":"stia_mango", "string":"Crisp Stia Mango", "color":"yellow"},
+            {"id":"stia_plum", "string":"Robust Stia Plum", "color":"red"},
+            {"id":"stia_carambola", "string":"Famous Stia Carambola", "color":"gold"},
         ],
         seafood: [
             {"id":"aelio_clam", "string":"Rich Aelio Clam ", "color":"green"},
@@ -62,6 +67,11 @@ var itemList = {
             {"id":"kvaris_squid", "string":"Crisp Kvaris Squid", "color":"yellow"},
             {"id":"kvaris_crayfish", "string":"Robust Kvaris Crayfish", "color":"red"},
             {"id":"kvaris_squidnotable", "string":"Notable Kvaris Squid", "color":"gold"},
+            {"id":"stia_hermitcrab", "string":"Rich Stia Hermit Crab", "color":"green"},
+            {"id":"stia_seaslug", "string":"Light Stia Sea Slug", "color":"black"},
+            {"id":"stia_octopus", "string":"Crisp Stia Octopus", "color":"yellow"},
+            {"id":"stia_turbanshell", "string":"Robust Stia Turban Shell", "color":"red"},
+            {"id":"stia_crab", "string":"Famous Stia Crab", "color":"gold"},
         ],
         vegetables: [
             {"id":"aelio_herb", "string":"Rich Aelio Herb", "color":"green"},
@@ -76,20 +86,15 @@ var itemList = {
             {"id":"kvaris_cabbage", "string":"Light Kvaris Cabbage", "color":"black"},
             {"id":"kvaris_mushroom", "string":"Crisp Kvaris Mushroom", "color":"yellow"},
             {"id":"kvaris_onion", "string":"Robust Kvaris Onion", "color":"red"},
+            {"id":"stia_herb", "string":"Rich Stia Herb", "color":"green"},
+            {"id":"stia_tomato", "string":"Light Stia Tomato", "color":"black"},
+            {"id":"stia_cauliflower", "string":"Crisp Stia Cauliflower", "color":"yellow"},
+            {"id":"stia_cabbage", "string":"Robust Stia Cabbage", "color":"red"},
+            {"id":"stia_mushroom", "string":"Famous Stia Mushrooms", "color":"gold"},
         ]
-    },
-    dailymaterials: [
-        {"id":"other__alphareactor", "string":"Alpha Reactor", "color":"purple", "fillcolor": "red"},
-        {"id":"other__snoal", "string":"Snoal", "color":"purple", "fillcolor":"orange"},
-    ]
+    }
 }
 var itemListFetch = {
-    dailymaterials: ()=>{var list = "";
-        for(var i=0; i<itemList.dailymaterials.length; i++){
-            list+=itemList.dailymaterials[i].id+"|"
-        }
-        return list
-    },
     minerals: ()=>{var list = "";
         for(var i=0; i<itemList.minerals.length; i++){
             list+="mineral__"+itemList.minerals[i].id+"|"
@@ -115,14 +120,6 @@ var itemListFetch = {
         return list
     },
 };
-// Daily materials
-fetch("../../api/read.php?multi="+itemListFetch.dailymaterials()).then((response)=>response.json()).then(data=>{if(data !== null){
-    for(var x=0; x<itemList.dailymaterials.length; x++){
-        for (let y=0; y<data[x].length; y++){
-            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":itemList.dailymaterials[x].color,"fillColor":itemList.dailymaterials[x].fillcolor,"fillOpacity":1,"weight":4}).bindTooltip(itemList.dailymaterials[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.dailymaterials)
-        };
-    };
-}});
 //Minerals (Ores)
 fetch("../../api/read.php?multi="+itemListFetch.minerals()).then((response)=>response.json()).then(data=>{if(data !== null){
     for(var x=0; x<itemList.minerals.length; x++){
@@ -188,10 +185,8 @@ var overlayLayers = {
     "Fruits (Food)": groups.food.fruits,
     "Seafood (Food)": groups.food.seafood,
     "Vegetables (Food)": groups.food.vegetables,
-    //"Green Containers": groups.containers.green,
     "Red Containers": groups.containers.red,
     "Veterans": groups.other.veterans,
-    "Daily Materials": groups.other.dailymaterials,
     "Datapods": groups.other.datapods,
     "BGM Easter Eggs": groups.other.bgm,
     "Stellar Graces": groups.other.stellarGraces,

@@ -1,12 +1,9 @@
 var optionsList = [
-    {"category":"Landmarks"},
-    {"table":"landmark__ryuker","text":"Ryuker Devices"},
-    {"table":"landmark__mag","text":"Region Mags"},
-    {"hr":""},
     {"category":"Containers"},
-    {"table":"container__green","text":"Green Container"},
     {"table":"container__red","text":"Red Container"},
+
     {"hr":""},
+
     {"category":"Minerals"},
     {"table":"mineral__dualomite","text":"Dualomite"},
     {"table":"mineral__monotite","text":"Monotite"},
@@ -18,7 +15,11 @@ var optionsList = [
     {"table":"mineral__pentalite","text":"Pentalite"},
     {"table":"mineral__blizzardium","text":"Blizzardium"},
     {"table":"mineral__randomite", "text":"Randomite"},
+    {"table":"mineral__hexakite","text":"Hexakite"},
+    {"table":"mineral__inferium", "text":"Inefernium"},
+
     {"hr":""},
+
     {"category":"Food"},
     {"table":"food__aelio_apple","text":"Rich Aelio Apple"},
     {"table":"food__aelio_banana","text":"Robust Aelio Banana"},
@@ -33,6 +34,11 @@ var optionsList = [
     {"table":"food__kvaris_plum","text":"Light Kvaris Plum"},
     {"table":"food__kvaris_guava","text":"Crisp Kvaris Guava"},
     {"table":"food__kvaris_akebia","text":"Robust Kvaris Akebia"},
+    {"table":"food__stia_banana","text":"Rich Stia Banana"},
+    {"table":"food__stia_apple","text":"Light Stia Apple"},
+    {"table":"food__stia_carambola","text":"Famous Stia Carambola"},
+    {"table":"food__stia_mango","text":"Crisp Stia Mango"},
+    {"table":"food__stia_plum","text":"Robust Stia Plum"},
 
     {"table":"food__aelio_clam","text":"Rich Aelio Clam"},
     {"table":"food__aelio_crab","text":"Crisp Aelio Crab"},
@@ -47,6 +53,11 @@ var optionsList = [
     {"table":"food__kvaris_squid","text":"Crisp Kvaris Squid"},
     {"table":"food__kvaris_squidnotable","text":"Notable Kvaris Squid"},
     {"table":"food__kvaris_crayfish","text":"Robust Kvaris Crayfish"},
+    {"table":"food__stia_hermitcrab","text":"Rich Stia Hermit Crab"},
+    {"table":"food__stia_crab","text":"Famous Stia Crab"},
+    {"table":"food__stia_seaslug","text":"Light Stia Sea Slug"},
+    {"table":"food__stia_octopus","text":"Crisp Stia Octopus"},
+    {"table":"food__stia_turbanshell","text":"Robust Stia Turban Shell"},
 
     {"table":"food__aelio_herb","text":"Rich Aelio Herb"},
     {"table":"food__aelio_mushroom","text":"Light Aelio Mushroom"},
@@ -60,7 +71,14 @@ var optionsList = [
     {"table":"food__kvaris_cabbage","text":"Light Kvaris Cabbage"},
     {"table":"food__kvaris_mushroom","text":"Crisp Kvaris Mushroom"},
     {"table":"food__kvaris_onion","text":"Robust Kvaris Onion"},
+    {"table":"food__stia_herb","text":"Rich Stia Herb"},
+    {"table":"food__stia_tomato","text":"Light Stia Tomato"},
+    {"table":"food__stia_cauliflower","text":"Crisp Stia Cauliflower"},
+    {"table":"food__stia_mushroom","text":"Famous Stia Mushrooms"},
+    {"table":"food__stia_cabbage","text":"Robust Stia Cabbage"},
+
     {"hr":""},
+
     {"category":"Other"},
     {"table":"other__alphareactor","text":"Alpha Reactor"},
     {"table":"other__snoal","text":"Snoal"},
@@ -115,11 +133,9 @@ var popup_window_content_form_select = document.createElement("select")
             case "other__veteran":
             case "other__datapod":
             case "other__musicPlace":
-            case "landmark__ryuker":
                 popup_window_content_form_selectSub.style.display = "none"
                 popup_window_content_form_inputSub.style.display = "initial"
                 break;
-            case "landmark__mag":
             case "other__stellarGrace":
                 popup_window_content_form_inputSub.style.display = "none"
                 popup_window_content_form_selectSub.style.display = "initial"
@@ -136,20 +152,6 @@ var popup_window_content_form_select = document.createElement("select")
                     {"type":"gold","text":"Gold"},
                     {"type":"silver","text":"Silver"},
                     {"type":"default","text":"Standard"}
-                ];
-                for (i=0;i<subList.length;i++){
-                    e = document.createElement("option")
-                    e.setAttribute("value",subList[i]["type"])
-                    e.innerHTML=subList[i]["text"]
-                    popup_window_content_form_selectSub.appendChild(e)
-                }
-                break;
-            case "landmark__mag":
-                while(popup_window_content_form_selectSub.firstChild){popup_window_content_form_selectSub.removeChild(popup_window_content_form_selectSub.firstChild)}
-                subList = [
-                    {"type":"invincible","text":"Invincible"},
-                    {"type":"priceless","text":"Priceless"},
-                    {"type":"expert","text":"Expert"}
                 ];
                 for (i=0;i<subList.length;i++){
                     e = document.createElement("option")
