@@ -127,8 +127,8 @@
 
         "stia_apple": "Refreshing Stia Apple",
         "stia_banana": "Nourishing Stia Banana",
-        "stia_cabbage": "items:food.stia_cabbage",
-        "stia_carambola": "items:food.stia_carambola",
+        "stia_cabbage": "Healthy Stia Napa",
+        "stia_carambola": "Famed Stia Star Fruit",
         "stia_cauliflower": "Sharp Stia Cauliflower",
         "stia_crab": "Famed Stia Crab",
         "stia_herb": "Nourishing Stia Herb",
@@ -139,7 +139,7 @@
         "stia_plum": "Healthy Stia Plum",
         "stia_seaslug": "Refreshing Stia Sea Slug",
         "stia_tomato": "Refreshing Stia Tomato",
-        "stia_turbanshell": "items:food.stia_turbanshell",
+        "stia_turbanshell": "Healthy Stia Snail",
         
         "description": {
             "prefix": {

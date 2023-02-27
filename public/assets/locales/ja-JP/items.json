@@ -26,7 +26,7 @@
         },
         "advTrainia": {
             "title": "トレイニアアドバンス",
-            "description": "-//-"
+            "description": "トレイニアアドバンスは、パッセージを複雑にし、より良い報酬を得るために修飾子を選択する機能を備えた挑戦的なクエスト。"
         },
         "ltq": {
             "title": "期間限定クエスト",
@@ -159,7 +159,7 @@
     "container": {
         "red": {
             "title": "アイテムコンテナ[赤]",
-            "description": "items:container.red.description"
+            "description": "メセタ、SG、アーマーなどの非常に貴重なアイテムが含まれています。各コンテナは、アカウントごとに1回だけ壊すことができます。"
         },
         "invisible": {
             "title": "インビジブルボックス",
@@ -169,33 +169,33 @@
     "other": {
         "alphareactor": {
             "title": "アルファリアクター",
-            "description": "items:other.alphareactor.description"
+            "description": "3500Nメセタに売却可能。 \n毎日14基のアルファリアクターが中央エアリオのさまざまな場所に出現します。"
         },
         "snoal": {
             "title": "スノークス",
-            "description": "items:other.snoal.description"
+            "description": "3500Nメセタに売却可能。 \n中央クヴァリスでは毎日10匹のスノークスがスポーンします。"
         },
         "datapod": {
             "title": "メッセージパック",
-            "description": "items:other.datapod.description",
-            "hint": "items:other.datapod.hint"
+            "description": "メッセージパックには、ハルファの住民によるいくつかのメッセージが含まれています。",
+            "hint": "マーカー上でマウスの左ボタンを押すと、メッセージがコピーされます。"
         },
         "stellarseed": {
             "title": "ステラーシード",
-            "description": "items:other.stellarseed.description"
+            "description": "2000Nメセタに売却可能。 \n毎日10個のステラーシードが西リテムに出現します。"
         },
         "veteran": {
             "title": "老練の",
-            "description": "items:other.veteran.description"
+            "description": "老練の敵は、特定のエリアでのみスポーンするボスのより強力な高レベル バージョン。"
         },
         "stellargrace": {
             "title": "ステラーグレイス",
-            "description": "items:other.stellargrace.description"
+            "description": "ステラグレイセスはワールドトライアルの一部です。 ワールド トライアルの目的は、各探査セクターに隠されたステラーグレイスと呼ばれるピラミッド型のコンテナをすべて集めることです。"
         },
         "musicplace": {
             "title": "BGMイースターエッグ",
-            "description": "items:other.musicplace.description",
-            "hint": "items:other.musicplace.hint"
+            "description": "ファンタシースターシリーズの古いゲームの音楽を再生する場所。",
+            "hint": "マーカー上でマウスの左ボタンを押して、音楽タイトルをコピーします。"
         },
         "mischief": {
             "title": "ミスチーフシンボル",
