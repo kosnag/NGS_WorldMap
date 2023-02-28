@@ -159,7 +159,7 @@
     "container": {
         "red": {
             "title": "Item Container [Red]",
-            "description": "Contains very valuable items like Meseta, Star Gems, Units, etc.. Each container can only be broken once per account."
+            "description": "Contains very valuable items like Meseta, Star Gems, Armors, etc.. Each container can only be broken once per account."
         },
         "invisible": {
             "title": "Invisible Boxes",
@@ -169,11 +169,11 @@
     "other": {
         "alphareactor": {
             "title": "Alpha Reactor",
-            "description": "Can be converted to 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Central Aelio every day."
+            "description": "Can be sold for 3500 N-Meseta. \n14 Alpha Reactors will spawn in various locations in the Central Aelio every day."
         },
         "snoal": {
             "title": "Snoal",
-            "description": "Can be converted to 3500 N-Meseta. \n10 Snoals will spawn in Central Kvaris every day."
+            "description": "Can be sold for 3500 N-Meseta. \n10 Snoals will spawn in Central Kvaris every day."
         },
         "datapod": {
             "title": "Datapod",
@@ -182,7 +182,7 @@
         },
         "stellarseed": {
             "title": "Stellar Fragment",
-            "description": "Can be converted to 2000 N-Meseta. \n10 Stellar Fragments will spawn in West Retem every day."
+            "description": "Can be sold for 2000 N-Meseta. \n10 Stellar Fragments will spawn in West Retem every day."
         },
         "veteran": {
             "title": "Dreads",
