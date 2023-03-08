@@ -1,8 +1,8 @@
 {
     "limited": {
-        "title": "limited.title",
-        "description": "limited.description",
-        "clearCondition": "limited.clearCondition"
+        "title": "Drill: Unidentified Region A16",
+        "description": "Earn Quest Points during the time limit",
+        "clearCondition": "This is an unidentified practice drill discovered while analyzing battle data. Who created it and why are unknown, but the emphasis is on suppressing enemies quickly. Take this evaluation exam based on a test plan if you think you've got what it takes. \n――――――――――――――――――――――――――――――――――――――\n Quest Points reduced when the level disparity between you and the enemies is 7 or greater."
     },
     "seasonal": {
         "title": "seasonal.title",

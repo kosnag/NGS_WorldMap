@@ -1,8 +1,8 @@
 {
     "limited": {
-        "title": "limited.title",
-        "description": "limited.description",
-        "clearCondition": "limited.clearCondition"
+        "title": "想定演習：未確認領域A16",
+        "description": "これは、バトルデータの調査中に発見された未確認の想定演習である。作成者や作成目的は不明だが、エネミーの討伐速度を重視した内容となっている。腕に自信のある者は、テストプランをふまえて実施される評価試験に参加せよ。 \n――――――――――――――――――――――――――――――――――――――\n ※エネミーとのレベル差７以上で獲得クエストポイント減少",
+        "clearCondition": "制限時間内により多くクエストPtを獲得する"
     },
     "seasonal": {
         "title": "seasonal.title",
