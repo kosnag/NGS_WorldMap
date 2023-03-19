@@ -11,99 +11,99 @@
             {"item": "ltq", "disabled": false}
         ],
         "mineral": [
-            {"item": "monotite", "rarity": "common"},
-            {"item": "dualomite", "rarity": "common"},
-            {"item": "trinite", "rarity": "common"},
-            {"item": "tetracite", "rarity": "common"},
-            {"item": "photonquartz", "rarity": "common"},
-            {"item": "photonchunk", "rarity": "common"},
-            {"item": "photonscale", "rarity": "very-rare", "area": true, "area_radius": 30, "area_color": "pink", "area_fillColor": "lightblue"},
-            {"item": "pentalite", "rarity": "common"},
+            {"item": "monotite", "rarity": "common", "area": true, "area_radius": 20, "area_color": "magenta", "area_fillColor": "black"},
+            {"item": "dualomite", "rarity": "common", "area": true, "area_radius": 20, "area_color": "purple", "area_fillColor": "black"},
+            {"item": "trinite", "rarity": "common", "area": true, "area_radius": 20, "area_color": "gray", "area_fillColor": "black"},
+            {"item": "tetracite", "rarity": "common", "area": true, "area_radius": 20, "area_color": "orange", "area_fillColor": "black"},
+            {"item": "photonquartz", "rarity": "common", "area": true, "area_radius": 20, "area_color": "lightblue", "area_fillColor": "black"},
+            {"item": "photonchunk", "rarity": "common", "area": true, "area_radius": 20, "area_color": "blue", "area_fillColor": "black"},
+            {"item": "photonscale", "rarity": "very-rare", "area": true, "area_radius": 20, "area_color": "pink", "area_fillColor": "black"},
+            {"item": "pentalite", "rarity": "common", "area": true, "area_radius": 20, "area_color": "white", "area_fillColor": "black"},
             {"item": "blizzardium", "rarity": "very-rare"},
             {"item": "randomite", "rarity": "special", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "yellow", "disabled": true},
-            {"item": "hexakite", "rarity": "common"},
+            {"item": "hexakite", "rarity": "common", "area": true, "area_radius": 20, "area_color": "pink", "area_fillColor": "black"},
             {"item": "inferium", "rarity": "very-rare"}
         ],
         "food": [
             {
                 "group_locale_id": "aelio",
                 "items": [
-                    {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common"},
-                    {"item": "aelio_peach", "type": "fruit", "prefix": "light", "rarity": "common"},
-                    {"item": "aelio_pear", "type": "fruit", "prefix": "crisp", "rarity": "common"},
-                    {"item": "aelio_banana", "type": "fruit", "prefix": "robust", "rarity": "common"},
+                    {"item": "aelio_apple", "type": "fruit", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "darkgreen"},
+                    {"item": "aelio_peach", "type": "fruit", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "darkgreen"},
+                    {"item": "aelio_pear", "type": "fruit", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "darkgreen"},
+                    {"item": "aelio_banana", "type": "fruit", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "darkgreen"},
         
-                    {"item": "aelio_clam", "type": "seafood", "prefix": "rich", "rarity": "common"},
-                    {"item": "aelio_turbanshell", "type": "seafood", "prefix": "light", "rarity": "common"},
-                    {"item": "aelio_crab", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-                    {"item": "aelio_lobster", "type": "seafood", "prefix": "robust", "rarity": "common"}, 
+                    {"item": "aelio_clam", "type": "seafood", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "blue"},
+                    {"item": "aelio_turbanshell", "type": "seafood", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "blue"},
+                    {"item": "aelio_crab", "type": "seafood", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "blue"},
+                    {"item": "aelio_lobster", "type": "seafood", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "blue"}, 
         
-                    {"item": "aelio_herb", "type": "vegetable", "prefix": "rich", "rarity": "common"},
-                    {"item": "aelio_mushroom", "type": "vegetable", "prefix": "light", "rarity": "common"},
-                    {"item": "aelio_tomato", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-                    {"item": "aelio_turnip", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+                    {"item": "aelio_herb", "type": "vegetable", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "brown"},
+                    {"item": "aelio_mushroom", "type": "vegetable", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "brown"},
+                    {"item": "aelio_tomato", "type": "vegetable", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "brown"},
+                    {"item": "aelio_turnip", "type": "vegetable", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "brown"}
                 ]
             },
             {
                 "group_locale_id": "retem",
                 "items": [
-                    {"item": "retem_cherries", "type": "fruit", "prefix": "rich", "rarity": "common"},
-                    {"item": "retem_mango", "type": "fruit", "prefix": "light", "rarity": "common"},
-                    {"item": "retem_carambola", "type": "fruit", "prefix": "crisp", "rarity": "common"},
-                    {"item": "retem_strawberry", "type": "fruit", "prefix": "robust", "rarity": "common"},
+                    {"item": "retem_cherries", "type": "fruit", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "darkgreen"},
+                    {"item": "retem_mango", "type": "fruit", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "darkgreen"},
+                    {"item": "retem_carambola", "type": "fruit", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "darkgreen"},
+                    {"item": "retem_strawberry", "type": "fruit", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "darkgreen"},
         
-                    {"item": "retem_scallop", "type": "seafood", "prefix": "rich", "rarity": "common"},
-                    {"item": "retem_seaslug", "type": "seafood", "prefix": "light", "rarity": "common"},
-                    {"item": "retem_urchin", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-                    {"item": "retem_hermitcrab", "type": "seafood", "prefix": "robust", "rarity": "common"},
+                    {"item": "retem_scallop", "type": "seafood", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "blue"},
+                    {"item": "retem_seaslug", "type": "seafood", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "blue"},
+                    {"item": "retem_urchin", "type": "seafood", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "blue"},
+                    {"item": "retem_hermitcrab", "type": "seafood", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "blue"},
         
-                    {"item": "retem_eggplant", "type": "vegetable", "prefix": "rich", "rarity": "common"},
-                    {"item": "retem_cranberries", "type": "vegetable", "prefix": "light", "rarity": "common"},
-                    {"item": "retem_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-                    {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+                    {"item": "retem_eggplant", "type": "vegetable", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "brown"},
+                    {"item": "retem_cranberries", "type": "vegetable", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "brown"},
+                    {"item": "retem_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "brown"},
+                    {"item": "retem_cauliflower", "type": "vegetable", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "brown"}
                 ]
             },
             {
                 "group_locale_id": "kvaris",
                 "items": [
-                    {"item": "kvaris_persimmon", "type": "fruit", "prefix": "rich", "rarity": "common"},
-                    {"item": "kvaris_persimmonnotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare"},
-                    {"item": "kvaris_plum", "type": "fruit", "prefix": "light", "rarity": "common"},
-                    {"item": "kvaris_guava", "type": "fruit", "prefix": "crisp", "rarity": "common"},
-                    {"item": "kvaris_akebia", "type": "fruit", "prefix": "robust", "rarity": "common"},
+                    {"item": "kvaris_persimmon", "type": "fruit", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "darkgreen"},
+                    {"item": "kvaris_persimmonnotable", "type": "fruit", "prefix": "rich", "rarity": "very-rare", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "darkgreen"},
+                    {"item": "kvaris_plum", "type": "fruit", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "darkgreen"},
+                    {"item": "kvaris_guava", "type": "fruit", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "darkgreen"},
+                    {"item": "kvaris_akebia", "type": "fruit", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "darkgreen"},
         
-                    {"item": "kvaris_snail", "type": "seafood", "prefix": "rich", "rarity": "common"},
-                    {"item": "kvaris_octopus", "type": "seafood", "prefix": "light", "rarity": "common"},
-                    {"item": "kvaris_squid", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-                    {"item": "kvaris_squidnotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare"},
-                    {"item": "kvaris_crayfish", "type": "seafood", "prefix": "robust", "rarity": "common"},
+                    {"item": "kvaris_snail", "type": "seafood", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "blue"},
+                    {"item": "kvaris_octopus", "type": "seafood", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "blue"},
+                    {"item": "kvaris_squid", "type": "seafood", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "blue"},
+                    {"item": "kvaris_squidnotable", "type": "seafood", "prefix": "crisp", "rarity": "very-rare", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "blue"},
+                    {"item": "kvaris_crayfish", "type": "seafood", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "blue"},
         
-                    {"item": "kvaris_carrot", "type": "vegetable", "prefix": "rich", "rarity": "common"},
-                    {"item": "kvaris_cabbage", "type": "vegetable", "prefix": "light", "rarity": "common"},
-                    {"item": "kvaris_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-                    {"item": "kvaris_onion", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+                    {"item": "kvaris_carrot", "type": "vegetable", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "brown"},
+                    {"item": "kvaris_cabbage", "type": "vegetable", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "brown"},
+                    {"item": "kvaris_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "brown"},
+                    {"item": "kvaris_onion", "type": "vegetable", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "brown"}
                 ]
             },
             {
                 "group_locale_id": "stia",
                 "items": [
-                    {"item": "stia_banana", "type": "fruit", "prefix": "rich", "rarity": "common"},
-                    {"item": "stia_apple", "type": "fruit", "prefix": "light", "rarity": "common"},
-                    {"item": "stia_carambola", "type": "fruit", "prefix": "light", "rarity": "very-rare"},
-                    {"item": "stia_mango", "type": "fruit", "prefix": "crisp", "rarity": "common"},
-                    {"item": "stia_plum", "type": "fruit", "prefix": "robust", "rarity": "common"},
+                    {"item": "stia_banana", "type": "fruit", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "darkgreen"},
+                    {"item": "stia_apple", "type": "fruit", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "darkgreen"},
+                    {"item": "stia_carambola", "type": "fruit", "prefix": "light", "rarity": "very-rare", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "darkgreen"},
+                    {"item": "stia_mango", "type": "fruit", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "darkgreen"},
+                    {"item": "stia_plum", "type": "fruit", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "darkgreen"},
         
-                    {"item": "stia_hermitcrab", "type": "seafood", "prefix": "rich", "rarity": "common"},
-                    {"item": "stia_crab", "type": "seafood", "prefix": "rich", "rarity": "very-rare"},
-                    {"item": "stia_seaslug", "type": "seafood", "prefix": "light", "rarity": "common"},
-                    {"item": "stia_octopus", "type": "seafood", "prefix": "crisp", "rarity": "common"},
-                    {"item": "stia_turbanshell", "type": "seafood", "prefix": "robust", "rarity": "common"},
+                    {"item": "stia_hermitcrab", "type": "seafood", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "blue"},
+                    {"item": "stia_crab", "type": "seafood", "prefix": "rich", "rarity": "very-rare", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "blue"},
+                    {"item": "stia_seaslug", "type": "seafood", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "blue"},
+                    {"item": "stia_octopus", "type": "seafood", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "blue"},
+                    {"item": "stia_turbanshell", "type": "seafood", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "blue"},
         
-                    {"item": "stia_herb", "type": "vegetable", "prefix": "rich", "rarity": "common"},
-                    {"item": "stia_tomato", "type": "vegetable", "prefix": "light", "rarity": "common"},
-                    {"item": "stia_cauliflower", "type": "vegetable", "prefix": "crisp", "rarity": "common"},
-                    {"item": "stia_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "very-rare"},
-                    {"item": "stia_cabbage", "type": "vegetable", "prefix": "robust", "rarity": "common"}
+                    {"item": "stia_herb", "type": "vegetable", "prefix": "rich", "rarity": "common", "area": true, "area_radius": 20, "area_color": "green", "area_fillColor": "brown"},
+                    {"item": "stia_tomato", "type": "vegetable", "prefix": "light", "rarity": "common", "area": true, "area_radius": 20, "area_color": "black", "area_fillColor": "brown"},
+                    {"item": "stia_cauliflower", "type": "vegetable", "prefix": "crisp", "rarity": "common", "area": true, "area_radius": 20, "area_color": "yellow", "area_fillColor": "brown"},
+                    {"item": "stia_mushroom", "type": "vegetable", "prefix": "crisp", "rarity": "very-rare", "area": true, "area_radius": 20, "area_color": "gold", "area_fillColor": "brown"},
+                    {"item": "stia_cabbage", "type": "vegetable", "prefix": "robust", "rarity": "common", "area": true, "area_radius": 20, "area_color": "red", "area_fillColor": "brown"}
                 ]
             }
         ],
@@ -124,14 +124,34 @@
     "settings": {
         "seasonal_event": false,
         "limited_quest": {
-            "active": false,
-            "players": 24,
+            "active": true,
+            "players": 8,
             "ranks": [
+                {
+                    "minBP": 1243,
+                    "enemyLv": 20,
+                    "points": 5000
+                },
+                {
+                    "minBP": 1633,
+                    "enemyLv": 30,
+                    "points": 6000
+                },
+                {
+                    "minBP": 1898,
+                    "enemyLv": 40,
+                    "points": 7000
+                },
+                {
+                    "minBP": 2216,
+                    "enemyLv": 50,
+                    "points": 8000
+                },
                 {
                     "minBP": 2878,
                     "enemyLv": 65,
-                    "points": 0
-                }
+                    "points": 12000
+                },
             ]
         },
         "languages": [

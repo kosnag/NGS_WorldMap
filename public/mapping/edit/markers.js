@@ -29,7 +29,7 @@ var itemList = {
         {"id":"blizzardium", "string":"Blizzardium", "color":"green"},
         {"id":"photonscale", "string":"Photon Scale", "color":"pink"},
         {"id":"randomite", "string":"Randomite", "color":"gold"},
-        {"id":"inferium", "string":"Inefernium", "color":"green"},
+        {"id":"inferium", "string":"Infernium", "color":"green"},
         {"id":"hexakite", "string":"Hexakite", "color":"pink"},
     ],
     food: {
@@ -38,15 +38,18 @@ var itemList = {
             {"id":"aelio_peach", "string":"Light Aelio Peach", "color":"black"},
             {"id":"aelio_pear", "string":"Crisp Aelio Pear", "color":"yellow"},
             {"id":"aelio_banana", "string":"Robust Aelio Banana", "color":"red"},
+			
             {"id":"retem_cherries", "string":"Rich Retem Cherry", "color":"green"},
             {"id":"retem_mango", "string":"Light Retem Mango", "color":"black"},
             {"id":"retem_carambola", "string":"Crisp Retem Carambola", "color":"yellow"},
             {"id":"retem_strawberry", "string":"Robust Retem Strawberry", "color":"red"},
+			
             {"id":"kvaris_persimmon", "string":"Rich Kvaris Persimmon", "color":"green"},
             {"id":"kvaris_plum", "string":"Light Kvaris Plum", "color":"black"},
             {"id":"kvaris_guava", "string":"Crisp Kvaris Guava", "color":"yellow"},
             {"id":"kvaris_akebia", "string":"Robust Kvaris Akebia", "color":"red"},
             {"id":"kvaris_persimmonnotable", "string":"Notable Kvaris Persimmon", "color":"gold"},
+			
             {"id":"stia_banana", "string":"Rich Stia Banana", "color":"green"},
             {"id":"stia_apple", "string":"Light Stia Apple", "color":"black"},
             {"id":"stia_mango", "string":"Crisp Stia Mango", "color":"yellow"},
@@ -58,15 +61,18 @@ var itemList = {
             {"id":"aelio_turbanshell", "string":"Light Aelio Turban Shell", "color":"black"},
             {"id":"aelio_crab", "string":"Crisp Aelio Crab", "color":"yellow"},
             {"id":"aelio_lobster", "string":"Robust Aelio Lobster", "color":"red"},
+			
             {"id":"retem_scallop", "string":"Rich Retem Scallop", "color":"green"},
             {"id":"retem_seaslug", "string":"Light Retem Sea Slug", "color":"black"},
             {"id":"retem_urchin", "string":"Crisp Retem Sea Urchin", "color":"yellow"},
             {"id":"retem_hermitcrab", "string":"Robust Retem Hermit Crab", "color":"red"},
+			
             {"id":"kvaris_snail", "string":"Rich Kvaris Snail", "color":"green"},
             {"id":"kvaris_octopus", "string":"Light Kvaris Octopus", "color":"black"},
             {"id":"kvaris_squid", "string":"Crisp Kvaris Squid", "color":"yellow"},
             {"id":"kvaris_crayfish", "string":"Robust Kvaris Crayfish", "color":"red"},
             {"id":"kvaris_squidnotable", "string":"Notable Kvaris Squid", "color":"gold"},
+			
             {"id":"stia_hermitcrab", "string":"Rich Stia Hermit Crab", "color":"green"},
             {"id":"stia_seaslug", "string":"Light Stia Sea Slug", "color":"black"},
             {"id":"stia_octopus", "string":"Crisp Stia Octopus", "color":"yellow"},
@@ -78,14 +84,17 @@ var itemList = {
             {"id":"aelio_mushroom", "string":"Light Aelio Mushroom", "color":"black"},
             {"id":"aelio_tomato", "string":"Crisp Aelio Tomato", "color":"yellow"},
             {"id":"aelio_turnip", "string":"Robust Aelio Turnip", "color":"red"},
+			
             {"id":"retem_eggplant", "string":"Rich Retem Round Eggplant", "color":"green"},
             {"id":"retem_cranberries", "string":"Light Retem Cranberries", "color":"black"},
             {"id":"retem_mushroom", "string":"Crisp Retem Mushroom", "color":"yellow"},
             {"id":"retem_cauliflower", "string":"Robust Retem Cauliflower", "color":"red"},
+			
             {"id":"kvaris_carrot", "string":"Rich Kvaris Carrot", "color":"green"},
             {"id":"kvaris_cabbage", "string":"Light Kvaris Cabbage", "color":"black"},
             {"id":"kvaris_mushroom", "string":"Crisp Kvaris Mushroom", "color":"yellow"},
             {"id":"kvaris_onion", "string":"Robust Kvaris Onion", "color":"red"},
+			
             {"id":"stia_herb", "string":"Rich Stia Herb", "color":"green"},
             {"id":"stia_tomato", "string":"Light Stia Tomato", "color":"black"},
             {"id":"stia_cauliflower", "string":"Crisp Stia Cauliflower", "color":"yellow"},
