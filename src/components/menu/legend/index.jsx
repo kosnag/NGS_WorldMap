@@ -96,7 +96,7 @@ export default function MenuLegend(){
     <Draggable bounds='container' handle='header'>
       <window id='menu-legend'>
         <header>
-          <span><menuicon/> {t("ui:NavBar.mapLegend")}</span>
+          <span><menuicon/> {t("ui:navbar.mapLegend")}</span>
           <closebutton onClick={() => Functions.menuShowHide("menu-legend")}/>
         </header>
         <columns>

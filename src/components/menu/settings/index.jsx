@@ -37,7 +37,7 @@ export default function MenuSettings(){
     <Draggable bounds='container' handle='header'>
       <window id='menu-settings'>
         <header>
-          <span><menuicon/> {t("ui:NavBar.options")}</span>
+          <span><menuicon/> {t("ui:navbar.options")}</span>
           <closebutton onClick={() => Functions.menuShowHide("menu-settings")}/>
         </header>
         <columns>
