@@ -64,13 +64,13 @@ export default function MenuLegend(){
           setPreviewTitle(t("items:food."+props.item))
           props.rarity === "very-rare" ? 
           setPreviewDescription(
-            t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+
+            t("ui:map.type")+": "+t("ui:map.foodType."+props.type)+"\n"+
             t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type)+"\n"+
             t("items:food.description.prefix.special")
           )
           :
           setPreviewDescription(
-            t("ui:Map.type")+": "+t("ui:Map.foodType."+props.type)+"\n"+
+            t("ui:map.type")+": "+t("ui:map.foodType."+props.type)+"\n"+
             t("items:food.description.prefix."+props.prefix)+" / "+t("items:food.description.type."+props.type)
           )
         }}
