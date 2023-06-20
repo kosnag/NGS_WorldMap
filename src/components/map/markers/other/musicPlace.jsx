@@ -24,6 +24,8 @@ export default function MusicPlace(){
                 </header>
                 <content>
                     {x.string}
+                    <br/>
+                    <id>ID: {x.id}</id>
                     <br/><br/>
                     {t("items:other.musicplace.hint")}
                 </content>
