@@ -124,7 +124,7 @@
     "settings": {
         "seasonal_event": false,
         "limited_quest": {
-            "active": true,
+            "active": false,
             "players": 8,
             "ranks": [
                 {
