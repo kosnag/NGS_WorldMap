@@ -3,7 +3,7 @@ import { iconLib } from "../index.jsx";
 import { useTranslation } from "react-i18next";
 import { Marker, Tooltip, Circle } from "react-leaflet";
 
-const Template= (props) => {
+const Template = (props) => {
     const {t} = useTranslation();
     const [data,setData] = useState([]);
     const [marker,setMarker] = useState([]);
@@ -12,7 +12,7 @@ const Template= (props) => {
         return ()=>clearInterval(i);
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=food__"+props.id).then(response=>response.json()).then(d=>setData(d)) : setData([])},[props.id, marker]);
-    if (data !== null) {return(marker ? (data.map((x=>
+    if (data !== null) {return(marker ? data.map((x=>
         props.area && props.area === true ? (
             <Circle 
                 center={[x.lat,x.lng]}
@@ -62,7 +62,7 @@ const Template= (props) => {
                 </tooltipwindow></Tooltip>
             </Marker>
         )
-    ))):<Fragment/>)}else{return <Fragment/>}
+    )):<Fragment/>)}else{return <Fragment/>}
 }
 
 export default function Food(){
@@ -71,6 +71,8 @@ export default function Food(){
         fetch("./assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
     },[]);
     return <>{dataJSON.items && dataJSON?.items.food.map((x=>
-        <Template id={x.item} type={x.type} rarity={x.rarity}/>
+        x.items.map(y=>
+            <Template id={y.item} type={y.type} rarity={y.rarity} area={y.area} area_radius={y.area_radius} area_color={y.area_color} area_fillColor={y.area_fillColor} />
+        )
     ))}</>
 };
