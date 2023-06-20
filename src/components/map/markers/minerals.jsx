@@ -12,7 +12,7 @@ const Template = (props) => {
         return ()=>clearInterval(i);
     });
     useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=mineral__"+props.id).then(response=>response.json()).then(d=>setData(d)) : setData([])},[props.id, marker]);
-    if(data !== null){return(marker ? data.map((x=>
+    if (data !== null) {return(marker ? data.map((x=>
         props.area && props.area === true ? (
             <Circle 
                 center={[x.lat,x.lng]}
@@ -50,8 +50,8 @@ const Template = (props) => {
                 </tooltipwindow></Tooltip>
             </Marker>
         )
-    )
-):<Fragment/>)}else{return <Fragment/>}}
+    )):<Fragment/>)}else{return <Fragment/>}
+}
 
 
 export default function Minerals(){
