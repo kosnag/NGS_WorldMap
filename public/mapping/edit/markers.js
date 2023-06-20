@@ -133,7 +133,7 @@ var itemListFetch = {
 fetch("../../api/read.php?multi="+itemListFetch.minerals()).then((response)=>response.json()).then(data=>{if(data !== null){
     for(var x=0; x<itemList.minerals.length; x++){
         for (let y=0; y<data[x].length; y++){
-            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":itemList.minerals[x].color,"fillColor":"black","fillOpacity":1,"weight":4}).bindTooltip(itemList.minerals[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.minerals)
+            new L.circle([data[x][y].lat,data[x][y].lng],20,{"color":itemList.minerals[x].color,"fillColor":"black","fillOpacity":0.25}).bindTooltip(itemList.minerals[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.minerals)
         };
     };
 }});
@@ -141,7 +141,7 @@ fetch("../../api/read.php?multi="+itemListFetch.minerals()).then((response)=>res
 fetch("../../api/read.php?multi="+itemListFetch.fruits()).then((response)=>response.json()).then(data=>{if(data !== null){
     for(var x=0; x<itemList.food.fruits.length; x++){
         for (let y=0; y<data[x].length; y++){
-            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":"darkgreen","fillColor":itemList.food.fruits[x].color,"fillOpacity":1,"weight":4}).bindTooltip(itemList.food.fruits[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.fruits)
+            new L.circle([data[x][y].lat,data[x][y].lng],20,{"color":"darkgreen","fillColor":itemList.food.fruits[x].color,"fillOpacity":0.25}).bindTooltip(itemList.food.fruits[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.fruits)
         };
     };
 }});
@@ -149,7 +149,7 @@ fetch("../../api/read.php?multi="+itemListFetch.fruits()).then((response)=>respo
 fetch("../../api/read.php?multi="+itemListFetch.seafood()).then((response)=>response.json()).then(data=>{if(data !== null){
     for(var x=0; x<itemList.food.seafood.length; x++){
         for (let y=0; y<data[x].length; y++){
-            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":"blue","fillColor":itemList.food.seafood[x].color,"fillOpacity":1,"weight":4}).bindTooltip(itemList.food.seafood[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.seafood)
+            new L.circle([data[x][y].lat,data[x][y].lng],20,{"color":"blue","fillColor":itemList.food.seafood[x].color,"fillOpacity":0.25}).bindTooltip(itemList.food.seafood[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.seafood)
         }
     }
 }});
@@ -157,7 +157,7 @@ fetch("../../api/read.php?multi="+itemListFetch.seafood()).then((response)=>resp
 fetch("../../api/read.php?multi="+itemListFetch.vegetables()).then((response)=>response.json()).then(data=>{if(data !== null){
     for(var x=0; y<itemList.food.vegetables.length; x++){
         for (let y=0; i<data[x].length; y++){
-            new L.circle([data[x][y].lat,data[x][y].lng],4,{"color":"brown","fillColor":itemList.food.vegetables[x].color,"fillOpacity":1,"weight":4}).bindTooltip(itemList.food.vegetables[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.vegetables)
+            new L.circle([data[x][y].lat,data[x][y].lng],20,{"color":"brown","fillColor":itemList.food.vegetables[x].color,"fillOpacity":0.25}).bindTooltip(itemList.food.vegetables[x].string+' | ID: '+data[x][y].id,{"direction":"top"}).addTo(groups.food.vegetables)
         }
     }
 }});

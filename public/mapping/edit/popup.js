@@ -132,7 +132,7 @@ var popup_window_content_form_select = document.createElement("select")
         switch (e.target.value) {
             case "other__veteran":
             case "other__datapod":
-            case "other__musicPlace":
+            case "other__musicplace":
                 popup_window_content_form_selectSub.style.display = "none"
                 popup_window_content_form_inputSub.style.display = "initial"
                 break;
