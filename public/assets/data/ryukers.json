@@ -45,7 +45,7 @@
     },
     {
         "lat":-1791, "lng":679,
-        "id": "balflowFalls"
+        "id": "balflowFallsEast"
     },
     {
         "lat":-1946, "lng":889,
@@ -59,6 +59,19 @@
         "lat":-1355, "lng":1017,
         "id": "vanfordLaboratoryRuins"
     },
+    {
+        "lat":-1206.5, "lng":541,
+        "id": "halphanaPlainsNorth"
+    },
+    {
+        "lat":-1949.25, "lng":139.5,
+        "id": "kanaiIsle"
+    },
+    {
+        "lat":-1777.25, "lng":487.5,
+        "id": "balflowFallsWest"
+    },
+
     {
         "lat":-1213, "lng":1192,
         "id": "saganMountainRoadWest"
@@ -111,6 +124,7 @@
         "lat":-1897, "lng":1924,
         "id": "lowerMaqaad"
     },
+
     {
         "lat":-622, "lng":732,
         "id": "kvarisCamp"
@@ -163,6 +177,7 @@
         "lat":-553, "lng":549,
         "id": "mistraWoodsSouth"
     },
+    
     {
         "lat":-753.5, "lng":1342.5,
         "id": "stiaCamp"
