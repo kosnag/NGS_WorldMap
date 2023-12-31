@@ -30,8 +30,8 @@
         "clearCondition": "Intercept Dark Falz!"
     },
     "dustylVera": {
-        "title": "Snidael Vera Subjugation",
-        "description": "Powerful space-time fluctuations have been at Morava Canyon in Northern Retem. Based on past data, the Snidael Vera is expected to appear. All ARKS, head for the area & eliminate this threat.",
+        "title": "Snaedal Vera Subjugation",
+        "description": "Powerful space-time fluctuations have been at Morava Canyon in Northern Retem. Based on past data, the Snaedal Vera is expected to appear. All ARKS, head for the area & eliminate this threat.",
         "clearCondition": "Defeat the target enemy"
     },
     "renusVera": {
@@ -45,14 +45,14 @@
         "clearCondition": "Defend the Resource Mining Rigs!"
     },
     "crocodylisVera": {
-        "title": "",
-        "description": "",
-        "clearCondition": ""
+        "title": "Crocodallus Vera Subjugation",
+        "description": "Powerful space-time fluctuations have been detected in Danan Snowfield. Based on past data, the Battlefield Overseer-type DOLL, the Crocodallus Vera, is expected to appear. All ARKS, head for the area & eliminate this threat.",
+        "clearCondition": "Defeat the Crocodallus Vera!"
     },
     "amsVera": {
-        "title": "",
+        "title": "Ams Vera Subjugation",
         "description": "",
-        "clearCondition": ""
+        "clearCondition": "Defeat the Ams Vera!"
     },
     "miningRigDefenceKvaris": {
         "title": "Mining Rig Defense: Kvaris",
@@ -70,8 +70,18 @@
         "clearCondition": "nilsVera.clearCondition"
     },
     "theBattleOfHalphiaLake": {
-        "title": "theBattleOfHalphiaLake.title",
-        "description": "theBattleOfHalphiaLake.description",
-        "clearCondition": "theBattleOfHalphiaLake.clearCondition"
+        "title": "The Battle of Lake Halphiria",
+        "description": "We have confirmed indications that Dark Falz Aegis is about to appear over Lake Halphiria. All ARKS are to move to intercept. It's time to use the Central Cannon to eliminate the greatest threat Halpha has ever known.",
+        "clearCondition": "Defeat the target enemy"
+    },
+    "remnantsOfAmbition": {
+        "title": "Remnants of Ambition",
+        "description": "Powerful spacio-temporal resonance has been detected in the upper areas of Leciel. A powerful enemy is expected to appear, so we are instituting mandatory reconnaissance. All ARKS, head to the target location and investigate.",
+        "clearCondition": "Defeat the target enemy"
+    },
+    "omenOfThePlanetbreaker": {
+        "title": "Harbinger of Extinction",
+        "description": "A powerful energy reading, comparable to that of Dark Falz Aegis, has been detected in Central Retem. All ARKS are to dispatch to the location and eliminate this approaching thread.",
+        "clearCondition": "Defeat the target enemy"
     }
 }

@@ -31,6 +31,8 @@
     "garneruCoastEast": "ガルネール海岸：東",
     "lufMaqaad": "ルーフ・マクアド",
     "lowerMaqaad": "マクアド下層",
+    "daalsmarbDesert": "daalsmarbDesert",
+    "aldemmondDesert": "aldemmondDesert",
 
     "kvarisCamp": "クヴァリスキャンプ",
     "beluganaRuinsNorth": "ベルガナ遺跡：北",
@@ -45,15 +47,16 @@
     "mtLatvaSouth": "ラトヴァ山：南",
     "mistraWoodsNorth": "ミストラ樹林：北",
     "mistraWoodsSouth": "ミストラ樹林：南",
+    "mistraWoodsEast": "ミストラ樹林: 東",
 
     "grainneCoast": "グラニア海岸",
     "stiaCamp": "スティアキャンプ",
-    "dreisenPlant1": "ドライゼンプラント：第1",
-    "dreisenPlant2": "ドライゼンプラント：第2",
-    "felusaRidge1": "フェルーサ岩稜：第1",
-    "felusaRidge2": "フェルーサ岩稜：第2",
-    "dextBase1": "デクストベース：第1",
-    "dextBase2": "デクストベース：第2",
+    "dreisenPlant1": "ドライゼンプラント: 第1",
+    "dreisenPlant2": "ドライゼンプラント: 第2",
+    "felusaRidge1": "フェルーサ岩稜: 第1",
+    "felusaRidge2": "フェルーサ岩稜: 第2",
+    "dextBase1": "デクストベース: 第1",
+    "dextBase2": "デクストベース: 第2",
     "neusenPlant": "ノイゼンプラント",
     "alteraBase": "アルテラベース"
 }

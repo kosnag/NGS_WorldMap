@@ -73,5 +73,15 @@
         "title": "The Battle of Halphia Lake",
         "description": "Our data points to the imminent appearance of Dark Falz Aegis in the Halphia Lake area. All ARKS defenders, report to the emergence point immediately to eliminate this threat to Halpha, with support from Central Cannon.",
         "clearCondition": "Defeat Dark Falz Aegis!"
+    },
+    "remnantsOfAmbition": {
+        "title": "Remnants of Ambition",
+        "description": "A powerful space-time fluctuation has been detected in the upper level of Leciel. We are sending in force reconnaissance to counter what we predict will be a powerful enemy.",
+        "clearCondition": "Defeat the target enemy"
+    },
+    "omenOfThePlanetbreaker": {
+        "title": "Omen of the Planetbreaker",
+        "description": "We've detected a powerful energy reading comparable to that of Dark Falz Aegis in the Central Retem area. All ARKS defenders, report to the emergence point immediately to eliminate this mysterious threat.",
+        "clearCondition": "Defeat the target enemy"
     }
 }

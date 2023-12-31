@@ -124,6 +124,14 @@
         "lat":-1897, "lng":1924,
         "id": "lowerMaqaad"
     },
+    {
+        "lat":-1546.75, "lng":1721.75,
+        "id": "daalsmarbDesert"
+    },
+    {
+        "lat":-1651.5, "lng":1426,
+        "id": "aldemmondDesert"
+    },
 
     {
         "lat":-622, "lng":732,
@@ -176,6 +184,10 @@
     {
         "lat":-553, "lng":549,
         "id": "mistraWoodsSouth"
+    },
+    {
+        "lat":-407, "lng":695.25,
+        "id": "mistraWoodsEast"
     },
     
     {

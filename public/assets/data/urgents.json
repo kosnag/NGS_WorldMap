@@ -256,6 +256,7 @@
         ]
     },
     {
+        "disabled": true,
         "id": "dustylVera",
         "lat":-1301.5, "lng":1518.5,
         "players": 8,
@@ -323,6 +324,7 @@
         ]
     },
     {
+        "disabled": true,
         "id": "renusVera",
         "lat":-1389.75, "lng":1438.25,
         "players": 8,
@@ -662,7 +664,7 @@
         "ranks": [
             {
                 "minBP": 3413,
-                "enemyLv": 75,
+                "enemyLv": 80,
                 "rewards": [
                     {
                         "item": "rewards:value.meseta",
@@ -671,6 +673,52 @@
                     {
                         "item": "rewards:item.soul_augments",
                         "count": 3
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "remnantsOfAmbition",
+        "lat":-684.25, "lng":445.75,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 3413,
+                "enemyLv": 75,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "omenOfThePlanetbreaker",
+        "lat":-1531, "lng":1317,
+        "players": 8,
+        "firstRewards": [
+            {
+                "item": "rewards:value.meseta",
+                "count": 5000
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 3649,
+                "enemyLv": 80,
+                "rewards": [
+                    {
+                        "item": "rewards:value.meseta",
+                        "count": 10000
                     }
                 ]
             }
