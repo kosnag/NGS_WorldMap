@@ -88,7 +88,7 @@ export default function MenuSettings(){
               <p>
                 {t("ui:page_title")}
                 <br/><br/>
-                {t("ui:optionsMenu.items.about.author")}: <name onClick={()=>{window.open("//twitter.com/kosnag")}}>kosnag</name>
+                {t("ui:optionsMenu.items.about.author")}: <name onClick={()=>{window.open("//x.com/kosnag")}}>kosnag</name>
                 <br/><br/>
                 {t("ui:optionsMenu.items.about.contributers")}:<br/>
                 {contributers.map((x=>
