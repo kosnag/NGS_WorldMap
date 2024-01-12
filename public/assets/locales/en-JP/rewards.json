@@ -9,7 +9,7 @@
         "gigas_augments": "Gigas-type Capsules",
         "soul_augments": "Soul-type Capsules",
         "special_scratch_ticket": "Special Scratch Ticket",
-        "straga_camoflauge": "＊Stragga Armati",
+        "straga_camoflauge": "* Stragga Armati",
         "relik_series": "Relic Series Weapon",
         "mastery_augments": "Ability Capsules",
         "gold_prim_sword": "Gold Prim Sword",
@@ -23,9 +23,9 @@
         "decold_augments": "Decold-type Capsules",
         "rugged_series": "Rugged Series Weapon",
         "rokz_series": "Rox Series Weapon",
-        "class_cubes": "",
-        "super_augments": "",
-        "strugments": "",
-        "arms_refiner": ""
+        "class_cubes": "Class Excubes",
+        "super_augments": "Super-type Capsules",
+        "strugments": "Strigments",
+        "arms_refiner": "Arms Refiner"
     }
 }
