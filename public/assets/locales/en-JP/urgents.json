@@ -41,7 +41,7 @@
     },
     "miningRigDefenceRetem": {
         "title": "Mining Rig Defense: Retem",
-        "description": "",
+        "description": "We've received a distress call from a mining unit operating in the Al-demmond Desert. The high number of enemy readings nearby indicates they've come under a large-scale attack. All ARKS are to intercept and defend the Resource Mining Rigs.",
         "clearCondition": "Defend the Resource Mining Rigs!"
     },
     "crocodylisVera": {
@@ -51,23 +51,23 @@
     },
     "amsVera": {
         "title": "Ams Vera Subjugation",
-        "description": "",
+        "description": "Powerful space-time fluctuations have been detected on Mt. Latva. Based on past data, the Battlefield Overseer-type DOLL, the Ams Vera, is expected to appear. All ARKS, head for the area & eliminate this threat.",
         "clearCondition": "Defeat the Ams Vera!"
     },
     "miningRigDefenceKvaris": {
         "title": "Mining Rig Defense: Kvaris",
-        "description": "",
+        "description": "We've received a distress call from a mining unit operating in Danan Snowfields. The high number of enemy readings nearby indicates they've come under a large-scale attack. All ARKS are to intercept and defend the Resource Mining Rigs.",
         "clearCondition": "Defend the Resource Mining Rigs!"
     },
     "doldorisVera": {
-        "title": "doldorisVera.title",
-        "description": "doldorisVera.description",
-        "clearCondition": "doldorisVera.clearCondition"
+        "title": "Doldoris Vera Subjugation",
+        "description": "Powerful space-time fluctuations have been detected on the northern part of Felusa Ridge. Based on past data, the Battlefield Overseer-type DOLL, the Doldoris Vera, is expected to appear. All ARKS, head for the area & eliminate this threat.",
+        "clearCondition": "Defeat the Doldoris Vera!"
     },
     "nilsVera": {
-        "title": "nilsVera.title",
-        "description": "nilsVera.description",
-        "clearCondition": "nilsVera.clearCondition"
+        "title": "Nilus Vera Subjugation",
+        "description": "Powerful space-time fluctuations have been detected at Dreisen Plant. Based on past data, the Battlefield Overseer-type DOLL, the Nilus Vera, is expected to appear. All ARKS, head for the area & eliminate this threat.",
+        "clearCondition": "Defeat the Nilus Vera!"
     },
     "theBattleOfHalphiaLake": {
         "title": "The Battle of Lake Halphiria",
