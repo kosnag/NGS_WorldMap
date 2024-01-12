@@ -19,12 +19,12 @@
         "fashion_items": "Fashion items",
         "tria_augments": "Tria-type Augments",
         "kuku_series": "Kukuhroziat Series Weapon",
-        "domina_augments": "Domina-type Capsules",
-        "decold_augments": "Decold-type Capsules",
+        "domina_augments": "Domina-type Augments",
+        "decold_augments": "Decold-type Augments",
         "rugged_series": "Rugged Series Weapon",
         "rokz_series": "Rokz Series Weapon",
         "class_cubes": "Class Excube",
-        "super_augments": "Super-type Capsules",
+        "super_augments": "Super-type Augments",
         "strugments": "Stragment",
         "arms_refiner": "Arms Refiner"
     }
