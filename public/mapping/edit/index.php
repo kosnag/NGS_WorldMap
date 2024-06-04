@@ -1,7 +1,7 @@
 <?php
 include "../api/mysql.php";
 
-$stmt = $PDO->query("select session from interactive_map.auth__sessions where session='".$_COOKIE["session"]."' ");
+$stmt = $PDO->query("select session from interactivemap.auth__sessions where session='".$_COOKIE["session"]."' ");
 $session_check = $stmt->fetch(PDO::FETCH_ASSOC);
 if (!isset($session_check["session"])){
     header("Location: /mapping");
