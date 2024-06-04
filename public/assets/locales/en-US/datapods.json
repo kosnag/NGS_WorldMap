@@ -136,5 +136,34 @@
     "lostCentral2": "The hanging icicles have brittle parts to them. If they're hit, they might fall.",
     "lostCentral3": "The cold photons in the air are highly unstable. They'll explode with even the slightest impact.",
     "lostCentral4": "This was once a verdant mountain, but is now only a shadow of its former self. When will those halcyon days return to Kvaris?",
-    "lostCentral5": "I'll stockpile materials in preparation for the showdown with the DOLLS. Victory isn't certain, so go ahead and use anything you need."
+    "lostCentral5": "I'll stockpile materials in preparation for the showdown with the DOLLS. Victory isn't certain, so go ahead and use anything you need.",
+
+
+    "stiaOutskirts1": "The environment changes as soon as you cross a Border Bridge. It looks like there’s a lot of seafood around the coast, so I should get some while I can.",
+    "stiaOutskirts2": "Those four-legged creatures with volcanic rocks on their backs... they look too hard to eat as well. Plus, they look a bit hot.",
+    "stiaOutskirts3": "Be careful when a Volt Lemnas strikes the ground with their tail! They aren't easy to stop once they get serious.",
+    "stiaOutskirts4": "I saw some long-necked creature, with legs that looked like fillet. But it was probably still a child. I should look for it again once it grows up.",
+    "stiaOutskirts5": "Have you seen the round creature with a back covered like armor? My brother will try to eat anything, but surely not this creature.",
+
+    "dreisenPlant1": "There are containers everywhere here. They seemed to be placed all automatically, but I wonder who set it up...",
+    "dreisenPlant2": "Dark Magilz is a powerful enemy that wields the power of both fire and darkness. It’s even more terrifying after it is wounded.",
+    "dreisenPlant3": "My Mag's sonar reacted to that blur of light... What was that?",
+    "dreisenPlant4": "Be careful of a Stratis’ kicks and tail attacks. But, it seems like destroying their leg parts really messes with their balance.",
+    "dreisenPlant5": "Don’t let an Engouku’s intense movements distract you. If you manage to immobilize it, aim for its back!",
+    "dreisenPlant6": "The group of Gigantix patrolling inside the plant is called Recon Gigants. They’re too strong for a solo ARKS defender.",
+    "dreisenPlant7": "Scout Wasps will call for reinforcements if they notice us. Try surprising them with a Diving Attack before they see you.",
+
+    "mediolaOuterArea1_1": "Well, this is it for the initial survey into Mediola. But... what is that structure in the center?",
+    "mediolaOuterArea1_2": "What is this place? Hmm... I can see some Recon Gigants in the distance.",
+
+    "mediolaOuterArea2_1": "I saw a creature swimming in the lava, but no one will believe me. It looked edible... but I guess I probably shouldn’t try.",
+    "mediolaOuterArea2_2": "That strange, long, and thin creature that pokes its head out from the ground... I wonder if it’s edible. Is it shaking it’s head in some kind of courtship behavior?",
+    "mediolaOuterArea2_3": "A Doldoris’ main weapon is its drill-shaped head. Destroying that part first might be the way to go?",
+    "mediolaOuterArea2_4": "There were bird creatures with beards around here. They looked like they had plenty of edible parts, but they’d probably be hard to cook with all that hair.",
+    "mediolaOuterArea2_5": "Those four-legged creatures with long tails sometimes stand on two legs, which is cute. The cute ones can be surprisingly tasty though...",
+    "mediolaOuterArea2_6": "According to my Mag data, this area is called Mediola. Lava Bombs come flying no matter where I go. I have to get out of here.",
+    "mediolaOuterArea2_7": "Lava Cores will eventually form in Lava Pools. They hold a tremendous amount of energy inside...",
+    "mediolaOuterArea2_8": "Picking up Lava Bombs? Who in the world would do that? But... we’re ARKS defenders. There’s nothing we can’t do.",
+    "mediolaOuterArea2_9": "What is with these hard Complex Minerals? Our attacks hardly make a dent. If only I had a bit more firepower...",
+    "mediolaOuterArea2_10": "If you want to destroy an Auto Interceptor Zonnel, you’ll need to destroy all of the Dazzle Pods. It’s kind of an annoying enemy."
 }
