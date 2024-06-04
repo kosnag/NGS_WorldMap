@@ -5,9 +5,9 @@
         "ryuker": 1,
         "tower": 1,
         "battledia": 1,
-        "urgent": 1,
+        "urgent": 0,
         "advTrainia": 1,
-        "ltq": 1
+        "ltq": 0
     },
     "mineral": {
         "monotite": 0,
@@ -19,7 +19,7 @@
         "photonscale": 0,
         "pentalite": 0,
         "blizzardium": 0,
-        "randomite": 1,
+        "randomite": 0,
         "lavacite": 0
     },
     "food": {

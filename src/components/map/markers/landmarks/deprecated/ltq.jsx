@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useEffect, useRef } from 'react';
-import { iconLib } from "../../index.jsx";
+import { iconLib } from "../../../index.jsx";
 import { useTranslation } from "react-i18next";
 import { Marker, Tooltip, Popup} from "react-leaflet";
 
@@ -17,7 +17,7 @@ export default function LTQ(){
     });
     useEffect(()=>{
         marker === 1 ?
-            fetch("./assets/storages/settings.json").then(response=>response.json()).then(s=>setData(s))
+            fetch("./assets/jsons/settings.json").then(response=>response.json()).then(s=>setData(s))
             :
             setData({});
             
