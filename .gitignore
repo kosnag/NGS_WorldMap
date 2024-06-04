@@ -10,6 +10,7 @@
 
 # production
 /build
+ui_worldmap_01.dds.png
 
 # misc
 .DS_Store
