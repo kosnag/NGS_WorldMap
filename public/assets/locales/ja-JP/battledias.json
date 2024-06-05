@@ -7,7 +7,8 @@
         "kvarisTroopers": "クヴァリストルーパーズ",
         "kvarisDevastators": "クヴァリスデバステーターズ",
         "stiaTroopers": "スティアトルーパーズ",
-        "stiaDevastators": "スティアデバステーターズ"
+        "stiaDevastators": "スティアデバステーターズ",
+        "aelioIntruders": "battledias:regular.aelioIntruders"
     },
     "type": {
         "yellow": {

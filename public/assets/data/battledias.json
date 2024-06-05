@@ -11,7 +11,7 @@
                 "rewards": [
                     {
                         "item": "rewards:value.experience",
-                        "count": 39845
+                        "count": 88107
                     },
                     {
                         "item": "rewards:item.gold_prim_sword",
@@ -37,7 +37,7 @@
                 "rewards": [
                     {
                         "item": "rewards:value.experience",
-                        "count": 118446
+                        "count": 243501
                     },
                     {
                         "item": "rewards:item.gold_prim_sword",
@@ -60,51 +60,23 @@
         "type": "purple",
         "lat":-1219.125, "lng":420.75,
         "players": 4,
+        "bosses": ["bujin", "varas", "nogleth", "nexAelio", "destragras"],
         "ranks": [
             {
                 "minBP": 1363,
-                "enemyLv": 24,
-                "rewards": [
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 24
             },
             {
                 "minBP": 1957,
-                "enemyLv": 44,
-                "rewards": [
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 44
             },
             {
                 "minBP": 2972,
-                "enemyLv": 69,
-                "rewards": [
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 69
+            },
+            {
+                "minBP": 3731,
+                "enemyLv": 84
             }
         ]
     },
@@ -120,7 +92,7 @@
                 "rewards": [
                     {
                         "item": "rewards:value.experience",
-                        "count": 72829
+                        "count": 138820
                     },
                     {
                         "item": "rewards:item.gold_prim_sword",
@@ -142,7 +114,7 @@
                 "rewards": [
                     {
                         "item": "rewards:value.experience",
-                        "count": 162243
+                        "count": 297960
                     },
                     {
                         "item": "rewards:item.gold_prim_sword",
@@ -165,60 +137,23 @@
         "type": "purple",
         "lat":-1804.25, "lng":1490.25,
         "players": 4,
+        "bosses": ["lizentos", "fortosLauncher", "kelkundo", "dustylHammer", "renusRetem"],
         "ranks": [
             {
                 "minBP": 1813,
-                "enemyLv": 39,
-                "rewards": [
-                    {
-                        "item": "rewards:item.relik_series"
-                    },
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 39
             },
             {
                 "minBP": 2114,
-                "enemyLv": 49,
-                "rewards": [
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "items:mineral.photonscale.title"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 49
             },
             {
                 "minBP": 2972,
-                "enemyLv": 69,
-                "rewards": [
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "items:mineral.photonscale.title"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 69
+            },
+            {
+                "minBP": 3731,
+                "enemyLv": 84
             }
         ]
     },
@@ -234,7 +169,7 @@
                 "rewards": [
                     {
                         "item": "rewards:value.experience",
-                        "count": 0
+                        "count": 443521
                     },
                     {
                         "item": "rewards:item.gold_prim_sword",
@@ -257,36 +192,15 @@
         "type": "purple",
         "lat":-309, "lng":365,
         "players": 4,
+        "bosses": ["snoruq", "relyn", "pangolan", "crocodylis", "amsKvaris"],
         "ranks": [
             {
                 "minBP": 1813,
-                "enemyLv": 39,
-                "rewards": [
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 39
             },
             {
                 "minBP": 2972,
-                "enemyLv": 69,
-                "rewards": [
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 69
             }
         ]
     },
@@ -302,7 +216,7 @@
                 "rewards": [
                     {
                         "item": "rewards:value.experience",
-                        "count": 0
+                        "count": 548025
                     },
                     {
                         "item": "rewards:item.gold_prim_sword",
@@ -325,21 +239,54 @@
         "type": "purple",
         "lat":-505.125, "lng":1634.875,
         "players": 4,
+        "bosses": ["engouku", "darkMagilz", "blazentos", "doldoris", "nilsStia"],
         "ranks": [
             {
                 "minBP": 3227,
-                "enemyLv": 74,
-                "rewards": [
-                    {
-                        "item": "rewards:item.gigas_augments"
-                    },
-                    {
-                        "item": "rewards:item.soul_augments"
-                    },
-                    {
-                        "item": "rewards:item.special_scratch_ticket"
-                    }
-                ]
+                "enemyLv": 74
+            }
+        ]
+    },
+    {
+        "id": "aelioIntruders",
+        "type": "purple",
+        "lat":-1033.5, "lng":1122.75,
+        "players": 8,
+        "have_unique_rewards": true,
+        "have_unique_bosses_per_rank": true,
+        "rewards": [
+            {
+                "item": "rewards:item.gigas_augments"
+            },
+            {
+                "item": "rewards:item.triyal_augments"
+            },
+            {
+                "item": "rewards:item.gigas_strugments"
+            },
+            {
+                "item": "rewards:item.customization_disks"
+            },
+            {
+                "item": "rewards:item.special_scratch_ticket"
+            },
+            {
+                "item": "rewards:item.certain_fashion"
+            },
+            {
+                "item": "rewards:item.certain_equipment"
+            }
+        ],
+        "ranks": [
+            {
+                "minBP": 3821,
+                "enemyLv": 89,
+                "bosses": ["zelvin", "valZagga", "halvaldi"]
+            },
+            {
+                "minBP": 3821,
+                "enemyLv": 89,
+                "bosses": ["raveed", "gilZaver", "elimineda"]
             }
         ]
     }
