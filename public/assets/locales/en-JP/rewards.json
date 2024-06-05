@@ -1,6 +1,5 @@
 {
     "value": {
-        "seasonalpoints": "Seasonal Point",
         "meseta": "N-Meseta",
         "skillpoint": "SP",
         "experience": "EXP"
@@ -9,23 +8,23 @@
         "gigas_augments": "Gigas-type Capsules",
         "soul_augments": "Soul-type Capsules",
         "special_scratch_ticket": "Special Scratch Ticket",
-        "straga_camoflauge": "* Stragga Armati",
-        "relik_series": "Relic Series Weapon",
         "mastery_augments": "Ability Capsules",
         "gold_prim_sword": "Gold Prim Sword",
         "silver_prim_sword": "Silver Prim Sword",
         "gold_prim_armor": "Gold Prim Armor",
         "silver_prim_armor": "Silver Prim Armor",
-        "fashion_items": "Fashion items",
         "tria_augments": "Tria-type Capsules",
-        "kuku_series": "Koukloziat Series Weapon",
         "domina_augments": "Domina-type Capsules",
         "decold_augments": "Decold-type Capsules",
-        "rugged_series": "Rugged Series Weapon",
-        "rokz_series": "Rox Series Weapon",
         "class_cubes": "Class Excubes",
         "super_augments": "Super-type Capsules",
-        "strugments": "Strigments",
-        "arms_refiner": "Arms Refiner"
+        "strugments": "Strugments",
+        "arms_refiner": "Arms Refiner",
+        "gigas_strugments": "rewards:item.gigas_strugments",
+        "certain_fashion": "rewards:item.certain_fashion",
+        "certain_equipment": "rewards:item.certain_equipment",
+        "arm_augments": "rewards:item.arm_augments",
+        "triyal_augments": "rewards:item.triyal_augments",
+        "customization_disks": "rewards:item.customization_disks"
     }
 }

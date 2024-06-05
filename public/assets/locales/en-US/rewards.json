@@ -1,6 +1,5 @@
 {
     "value": {
-        "seasonalpoints": "Seasonal Point",
         "meseta": "N-Meseta",
         "skillpoint": "SP",
         "experience": "EXP"
@@ -9,23 +8,23 @@
         "gigas_augments": "Gigas-type Augments",
         "soul_augments": "Soul-type Augments",
         "special_scratch_ticket": "Special Scratch Ticket",
-        "straga_camoflauge": "* Straga Almati",
-        "relik_series": "Relik Series Weapon",
         "mastery_augments": "Mastery Augments",
         "gold_prim_sword": "Gold Primm Sword",
         "silver_prim_sword": "Silver Primm Sword",
         "gold_prim_armor": "Gold Primm Armor",
         "silver_prim_armor": "Silver Primm Armor",
-        "fashion_items": "Fashion items",
         "tria_augments": "Tria-type Augments",
-        "kuku_series": "Kukuhroziat Series Weapon",
         "domina_augments": "Domina-type Augments",
         "decold_augments": "Decold-type Augments",
-        "rugged_series": "Rugged Series Weapon",
-        "rokz_series": "Rokz Series Weapon",
         "class_cubes": "Class Excube",
         "super_augments": "Super-type Augments",
         "strugments": "Stragment",
-        "arms_refiner": "Arms Refiner"
+        "arms_refiner": "Arms Refiner",
+        "gigas_strugments": "rewards:item.gigas_strugments",
+        "certain_fashion": "rewards:item.certain_fashion",
+        "certain_equipment": "rewards:item.certain_equipment",
+        "arm_augments": "rewards:item.arm_augments",
+        "triyal_augments": "rewards:item.triyal_augments",
+        "customization_disks": "rewards:item.customization_disks"
     }
 }

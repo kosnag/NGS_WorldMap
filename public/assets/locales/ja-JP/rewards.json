@@ -1,6 +1,5 @@
 {
     "value": {
-        "seasonalpoints": "シーズナルポイント",
         "meseta": "N-メセタ",
         "skillpoint": "SP",
         "experience": "EXP"
@@ -9,23 +8,23 @@
         "gigas_augments": "「ギガス」特殊能力",
         "soul_augments": "「ソール」特殊能力",
         "special_scratch_ticket": "スペシャルスクラッチ券",
-        "straga_camoflauge": "＊ストラーガアルマティ",
-        "relik_series": "レリクシリーズ",
         "mastery_augments": "「アビリティ」特殊能力",
         "gold_prim_sword": "ゴルドプリムソード",
         "silver_prim_sword": "シルヴァプリムソード",
         "gold_prim_armor": "ゴルドプリムアーマ",
         "silver_prim_armor": "シルヴァプリムアーマ",
-        "fashion_items": "ファッションアイテム",
         "tria_augments": "「トリア」特殊能力",
-        "kuku_series": "ククロゼアトシリーズ",
         "domina_augments": "「ドミナ」特殊能力",
         "decold_augments": "「デコル」特殊能力",
-        "rugged_series": "ラゲードシリーズ",
-        "rokz_series": "ロクスシリーズ",
         "class_cubes": "クラスのエクスキューブ",
         "super_augments": "「シュペル」特殊能力",
         "strugments": "ストラグメント",
-        "arms_refiner": "アームズリファイナー"
+        "arms_refiner": "アームズリファイナー",
+        "gigas_strugments": "rewards:item.gigas_strugments",
+        "certain_fashion": "rewards:item.certain_fashion",
+        "certain_equipment": "rewards:item.certain_equipment",
+        "arm_augments": "rewards:item.arm_augments",
+        "triyal_augments": "rewards:item.triyal_augments",
+        "customization_disks": "rewards:item.customization_disks"
     }
 }
