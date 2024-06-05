@@ -57,7 +57,7 @@ const Template = (props) => {
 export default function Minerals(){
     const [dataJSON,setDataJSON] = useState([]);
     useEffect(()=>{
-        fetch("./assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
+        fetch("./assets/jsons/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
     },[]);
     return <>{dataJSON.items && dataJSON?.items.mineral.map((x=>
         <Template id={x.item} area={x.area} area_radius={x.area_radius} area_color={x.area_color} area_fillColor={x.area_fillColor} />

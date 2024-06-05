@@ -6,9 +6,9 @@
             {"item": "ryuker"},
             {"item": "tower"},
             {"item": "battledia"},
-            {"item": "urgent"},
+            {"item": "urgent", "disabled": true},
             {"item": "advTrainia"},
-            {"item": "ltq", "disabled": false}
+            {"item": "ltq", "disabled": true}
         ],
         "mineral": [
             {"item": "monotite", "rarity": "common", "area": true, "area_radius": 20, "area_color": "magenta", "area_fillColor": "black"},
@@ -122,38 +122,16 @@
         ]
     },
     "settings": {
-        "seasonal_event": false,
-        "limited_quest": {
-            "active": false,
-            "players": 8,
-            "ranks": [
-                {
-                    "minBP": 1243,
-                    "enemyLv": 20,
-                    "points": 5000
-                },
-                {
-                    "minBP": 1633,
-                    "enemyLv": 30,
-                    "points": 6000
-                },
-                {
-                    "minBP": 1898,
-                    "enemyLv": 40,
-                    "points": 7000
-                },
-                {
-                    "minBP": 2216,
-                    "enemyLv": 50,
-                    "points": 8000
-                },
-                {
-                    "minBP": 2878,
-                    "enemyLv": 65,
-                    "points": 12000
-                }
-            ]
-        },
+        "personal_page": "//kosnag.ru",
+        "donate_page": "//kosnag.ru/donate",
+        "default_purple_trigger_rewards": [
+            "rewards:item.gigas_augments",
+            "rewards:item.soul_augments",
+            "rewards:item.gigas_strugments",
+            "rewards:item.special_scratch_ticket",
+            "rewards:item.certain_fashion",
+            "rewards:item.certain_equipment"
+        ],
         "languages": [
             {   
                 "id": "en-US",

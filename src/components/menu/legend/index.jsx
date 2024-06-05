@@ -85,7 +85,7 @@ export default function MenuLegend(){
   const [dataJSON,setDataJSON] = useState({});
   useEffect(() => {
     document.getElementById('menu-legend').classList.add('hidden');
-    fetch("./assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
+    fetch("./assets/jsons/settings.json").then(response=>response.json()).then(d=>setDataJSON(d));
   },[]);
   useEffect(() => {
     setPreviewTitle(t("items:nothing"));

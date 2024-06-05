@@ -68,11 +68,19 @@ const Template = (props) => {
 export default function Food(){
     const [dataJSON,setDataJSON] = useState([]);
     useEffect(()=>{
-        fetch("./assets/storages/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
+        fetch("./assets/jsons/settings.json").then(response=>response.json()).then(d=>setDataJSON(d))
     },[]);
     return <>{dataJSON.items && dataJSON?.items.food.map((x=>
         x.items.map(y=>
-            <Template id={y.item} type={y.type} rarity={y.rarity} area={y.area} area_radius={y.area_radius} area_color={y.area_color} area_fillColor={y.area_fillColor} />
+            <Template 
+                id={y.item} 
+                type={y.type} 
+                rarity={y.rarity} 
+                area={y.area} 
+                area_radius={y.area_radius} 
+                area_color={y.area_color} 
+                area_fillColor={y.area_fillColor} 
+            />
         )
     ))}</>
 };

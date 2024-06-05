@@ -18,17 +18,17 @@ export default function MenuSettings(){
   const [toggleTab, setToggleTab] = useState('languages');
 
   const [contributers, setContributers] = useState([]);
-  const [checkSettings, setSettings] = useState({});
+  const [settingsJSON, setSettings] = useState({});
 
   useEffect(() => {
     document.getElementById('menu-settings').classList.add('hidden');
     setTimeout(() => {
       setToggleLang(localStorage.getItem("i18nextLng"));
     }, 100);
-    fetch("./assets/storages/contributers.json")
+    fetch("./assets/jsons/contributers.json")
       .then(response=>response.json())
       .then(d=>setContributers(d));
-    fetch("./assets/storages/settings.json")
+    fetch("./assets/jsons/settings.json")
       .then(response=>response.json())
       .then(d=>setSettings(d));
   }, []);
@@ -57,7 +57,7 @@ export default function MenuSettings(){
           </category>
           <>
             <items id="languages" className={toggleTab === 'languages' ? "active" : ""}>
-              {checkSettings.settings && checkSettings.settings.languages.map((x=>
+              {settingsJSON.settings && settingsJSON.settings.languages.map((x=>
                 x.active === true ?
                   <button onClick={() => clickToggleLang(x.id)}>
                     <span className={toggleLang === x.id ? "active" : ""}/>
@@ -88,7 +88,7 @@ export default function MenuSettings(){
               <p>
                 {t("ui:page_title")}
                 <br/><br/>
-                {t("ui:optionsMenu.items.about.author")}: <name onClick={()=>{window.open("//x.com/kosnag")}}>kosnag</name>
+                {t("ui:optionsMenu.items.about.author")}: <name onClick={()=>{window.open(settingsJSON.settings.personal_page, '_blank')}}>kosnag</name>
                 <br/><br/>
                 {t("ui:optionsMenu.items.about.contributers")}:<br/>
                 {contributers.map((x=>

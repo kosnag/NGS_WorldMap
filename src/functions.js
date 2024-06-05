@@ -36,7 +36,7 @@ const Functions = {
     }
   },
   checkDisabledItemsFromServerSettings:()=>{
-    fetch("./assets/storages/settings.json").then(response=>response.json()).then(settings=>{// eslint-disable-next-line
+    fetch("./assets/jsons/settings.json").then(response=>response.json()).then(settings=>{// eslint-disable-next-line
       settings.items.landmark.map(x=>{
           if(x.disabled === true){
             window.localStorage_Settings.landmark[x.item] = 0
