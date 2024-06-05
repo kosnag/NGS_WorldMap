@@ -53,11 +53,6 @@
             "seafood": "海鮮",
             "vegetable": "野菜"
         },
-        "stellarGraceType": {
-            "gold": "金色の",
-            "silver": "白銀の",
-            "default": "共通の"
-        },
         "type": "タイプ",
         "rank": "RANK",
         "maxPlayers": "人数",
@@ -80,6 +75,7 @@
             "ancient": "遠世の"
         },
         "checkHint": "マーカー上でマウスの左ボタンを押して、チェックマークを付けます",
-        "availableChallengeRank": "このトレイニアで利用可能なチャレンジランク"
+        "availableChallengeRank": "このトレイニアで利用可能なチャレンジランク",
+        "levelChangeEventOngoing": "ui:map.levelChangeEventOngoing"
     }
 }

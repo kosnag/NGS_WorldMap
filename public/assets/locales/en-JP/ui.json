@@ -53,11 +53,6 @@
             "seafood": "Seafood",
             "vegetable": "Vegetables"
         },
-        "stellarGraceType": {
-            "gold": "Golden",
-            "silver": "Silver",
-            "default": "Default"
-        },
         "type": "Type",
         "rank": "Rank",
         "maxPlayers": "Max Players",
@@ -77,9 +72,10 @@
         "enemyTypes": {
             "dread": "Battle-Hardened",
             "gigantix": "Gigantix",
-            "ancient": ""
+            "ancient": "Ancient"
         },
         "checkHint": "Press the left mouse button on marker to mark it as checked",
-        "availableChallengeRank": "For this Trainia available Challenge Rank"
+        "availableChallengeRank": "For this Trainia available Challenge Rank",
+        "levelChangeEventOngoing": "Enemy level was changed due ongoing event"
     }
 }
