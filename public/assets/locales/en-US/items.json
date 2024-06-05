@@ -79,7 +79,7 @@
             "description": "Used for various purposes like unlocking Potentials and Limit Breaking at the Item Lab."
         },
         "inferium": {
-            "title": "Inefernium",
+            "title": "Infernium",
             "description": "A rare mineral ore found in rocky areas of Stia.\nCan be exchanged for items in certain places."
         }
     },
@@ -193,7 +193,7 @@
             "description": "Stellar Graces are part of World Trial. The objective of the World Trial is to gather all the pyramidal containers known as Stellar Graces hidden in each exploration sector."
         },
         "musicplace": {
-            "title": "BGM Easter Egg",
+            "title": "Music Spots",
             "description": "Places that play music from older games of the Phantasy Star franchise.",
             "hint": "Press the left mouse button on marker to copy the music title"
         },
