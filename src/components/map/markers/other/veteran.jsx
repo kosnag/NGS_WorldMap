@@ -11,7 +11,7 @@ export default function Veteran(){
         var i = setInterval(()=>setMarker(window.localStorage_Settings.other.veteran));
         return ()=>clearInterval(i);
     });
-    useEffect(()=>{marker === 1 ? fetch("./api/read.php?table=other__veteran").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
+    useEffect(()=>{marker === 1 ? fetch("./assets/data/veterans.json").then(response=>response.json()).then(d=>setData(d)) : setData([])},[marker]);
     if(data !== null){return (marker ? (data.map((x=>
         <Marker icon={iconLib.veteran} position={[x.lat,x.lng]}>
             <Tooltip direction='top'><tooltipwindow style={{width: "320px"}}>
@@ -21,7 +21,21 @@ export default function Veteran(){
                 <content>
                     {t("enemies:"+x.string)}
                     <br/>
-                    <id>ID: veteran{x.id}:{x.string}</id>
+                    {x.levels.use_special === true ?
+                        <>
+                            <span>{t("ui:map.enemyLv")}: {x.levels.special}</span>
+                            <br/>
+                            <span>{t("ui:map.LevelChangeEventOngoing")}</span>
+                        </>
+                        :
+                        <span>{t("ui:map.enemyLv")}: {x.levels.normal}</span>
+                    }
+                    <br/>
+                    {(()=>{
+                        for(var i=0; i<x.length; i++){
+                            return(<id>ID: veteran{i}:{x.string}</id>)
+                        }
+                    })()}
                 </content>
             </tooltipwindow></Tooltip>
         </Marker>
