@@ -18,13 +18,12 @@
         "decold_augments": "「デコル」特殊能力",
         "class_cubes": "クラスのエクスキューブ",
         "super_augments": "「シュペル」特殊能力",
-        "strugments": "ストラグメント",
         "arms_refiner": "アームズリファイナー",
         "gigas_strugments": "rewards:item.gigas_strugments",
         "certain_fashion": "rewards:item.certain_fashion",
         "certain_equipment": "rewards:item.certain_equipment",
-        "arm_augments": "rewards:item.arm_augments",
-        "triyal_augments": "rewards:item.triyal_augments",
+        "arm_augments": "「アーム」特殊能力",
+        "triyal_augments": "「ドライエル」特殊能力",
         "customization_disks": "rewards:item.customization_disks"
     }
 }
