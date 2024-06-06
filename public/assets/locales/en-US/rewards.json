@@ -18,13 +18,12 @@
         "decold_augments": "Decold-type Augments",
         "class_cubes": "Class Excube",
         "super_augments": "Super-type Augments",
-        "strugments": "Stragment",
         "arms_refiner": "Arms Refiner",
-        "gigas_strugments": "rewards:item.gigas_strugments",
-        "certain_fashion": "rewards:item.certain_fashion",
-        "certain_equipment": "rewards:item.certain_equipment",
-        "arm_augments": "rewards:item.arm_augments",
-        "triyal_augments": "rewards:item.triyal_augments",
-        "customization_disks": "rewards:item.customization_disks"
+        "gigas_strugments": "Giga Strugment",
+        "certain_fashion": "Certain Fashion Elements",
+        "certain_equipment": "Certain Equipment",
+        "arm_augments": "Arm-type Augments",
+        "triyal_augments": "Triyal-type Augments",
+        "customization_disks": "TA Customization Discs"
     }
 }
