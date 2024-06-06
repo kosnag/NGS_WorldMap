@@ -15,7 +15,7 @@
     "thunderBanshee": "サンダバンシー",
     "varas": "ヴァラス",
     "waulon": "ワウロン",
-    "destragras": "enemies:destragras",
+    "destragras": "デストラグラス",
 
     "bubbleSnapper": "バブルクラッブ",
     "dustylHammer": "スナイダル・ハンマー",
@@ -54,10 +54,10 @@
     "blazeNogleth": "ブレズナグルス",
     "vardias": "ヴァーディアス",
 
-    "zelvin": "enemies:zelvin",
-    "valZagga": "enemies:valZagga",
-    "halvaldi": "enemies:halvaldi",
-    "raveed": "enemies:raveed",
-    "gilZaver": "enemies:gilZaver",
-    "elimineda": "enemies:elimineda"
+    "zelvin": "ゼレヴィン",
+    "valZagga": "ヴァルザッガ",
+    "halvaldi": "ハルヴァルディ",
+    "raveed": "ラヴィード",
+    "gilZaver": "ギルセイヴァ",
+    "elimineda": "エリミネイダ"
 }
