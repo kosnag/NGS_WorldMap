@@ -15,7 +15,7 @@
     "thunderBanshee": "Thunder Banshee",
     "varas": "Vallas",
     "waulon": "Wauron",
-    "destragras": "enemies:destragras",
+    "destragras": "Destragras",
 
     "bubbleSnapper": "Bubble Crab",
     "dustylHammer": "Snidael Hammer",
@@ -53,12 +53,12 @@
     "voltLemnas": "Volt Remnus",
     "blazeNogleth": "Blaznagrus",
     "vardias": "Vardias",
-    "nilsStia": "enemies:nilsStia",
+    "nilsStia": "Nilus Stia",
 
-    "zelvin": "enemies:zelvin",
-    "valZagga": "enemies:valZagga",
-    "halvaldi": "enemies:halvaldi",
-    "raveed": "enemies:raveed",
-    "gilZaver": "enemies:gilZaver",
-    "elimineda": "enemies:elimineda"
+    "zelvin": "Zerevin",
+    "valZagga": "Varzagga",
+    "halvaldi": "Halvaldi",
+    "raveed": "Ravide",
+    "gilZaver": "Gilzeiva",
+    "elimineda": "Elimindeida"
 }
