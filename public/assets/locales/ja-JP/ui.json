@@ -76,6 +76,6 @@
         },
         "checkHint": "マーカー上でマウスの左ボタンを押して、チェックマークを付けます",
         "availableChallengeRank": "このトレイニアで利用可能なチャレンジランク",
-        "levelChangeEventOngoing": "ui:map.levelChangeEventOngoing"
+        "levelChangeEventOngoing": "開催中のイベントによりエネミーのレベルが変更されました"
     }
 }

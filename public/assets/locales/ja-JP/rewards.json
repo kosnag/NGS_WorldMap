@@ -19,11 +19,11 @@
         "class_cubes": "クラスのエクスキューブ",
         "super_augments": "「シュペル」特殊能力",
         "arms_refiner": "アームズリファイナー",
-        "gigas_strugments": "rewards:item.gigas_strugments",
-        "certain_fashion": "rewards:item.certain_fashion",
-        "certain_equipment": "rewards:item.certain_equipment",
+        "gigas_strugments": "ギガストラグメント",
+        "certain_fashion": "特定のファッション要素",
+        "certain_equipment": "特定の設備",
         "arm_augments": "「アーム」特殊能力",
         "triyal_augments": "「ドライエル」特殊能力",
-        "customization_disks": "rewards:item.customization_disks"
+        "customization_disks": "TAカスタマイズディスク"
     }
 }
