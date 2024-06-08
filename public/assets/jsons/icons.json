@@ -93,9 +93,7 @@
     {"item": "snoal", "category": "other", "size": 26},
     {"item": "musicplace", "category": "other", "size": 26},
     {"item": "stellarseed", "category": "other", "size": 26},
-    {"item": "stellarGrace_Default", "category": "other", "size": 28},
-    {"item": "stellarGrace_Silver", "category": "other", "size": 28},
-    {"item": "stellarGrace_Gold", "category": "other", "size": 28},
+    {"item": "stellarGrace", "category": "other", "size": 28},
     {"item": "mischief", "category": "other", "size": 26},
     {"item": "mischiefChecked", "category": "other", "file": "mischief_checked", "size": 26},
     {"item": "veteran", "category": "other", "size": 32}

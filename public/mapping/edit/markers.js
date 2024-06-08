@@ -181,9 +181,6 @@ fetch("../../api/read.php?table=other__mischief").then((response)=>response.json
 fetch("../../api/read.php?table=other__stellargrace").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
     new L.circle([data[i].lat,data[i].lng],4,{"color":"lightblue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Stellar Grace | ID: '+data[i].id+':'+data[i].string,{"direction":"top"}).addTo(groups.other.stellarGraces)
 }}})
-fetch("../../api/read.php?table=other__veteran").then((response)=>response.json()).then(data=>{if(data !== null){for (let i = 0; i < data.length; i++){
-    new L.circle([data[i].lat,data[i].lng],4,{"color":"blue","fillColor":"red","fillOpacity":1,"weight":4}).bindTooltip('Veteran | ID: '+data[i].id+':'+data[i].string,{"direction":"top"}).addTo(groups.other.veterans)
-}}})
 
 
 var baseLayer = {
@@ -195,7 +192,6 @@ var overlayLayers = {
     "Seafood (Food)": groups.food.seafood,
     "Vegetables (Food)": groups.food.vegetables,
     "Red Containers": groups.containers.red,
-    "Veterans": groups.other.veterans,
     "Datapods": groups.other.datapods,
     "BGM Easter Eggs": groups.other.bgm,
     "Stellar Graces": groups.other.stellarGraces,

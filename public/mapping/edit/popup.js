@@ -80,12 +80,9 @@ var optionsList = [
     {"hr":""},
 
     {"category":"Other"},
-    {"table":"other__alphareactor","text":"Alpha Reactor"},
-    {"table":"other__snoal","text":"Snoal"},
     {"table":"other__datapod","text":"Datapod"},
-    {"table":"other__veteran","text":"Veteran"},
     {"table":"other__stellargrace","text":"Stellar Grace"},
-    {"table":"other__musicplace","text":"BGM Easter Egg"},
+    {"table":"other__musicplace","text":"Music Spot"},
     {"table":"other__mischief","text":"Mischief Symbol"}
 ];
 
@@ -133,45 +130,15 @@ var popup_window_content_form_select = document.createElement("select")
             case "other__veteran":
             case "other__datapod":
             case "other__musicplace":
-                popup_window_content_form_selectSub.style.display = "none"
                 popup_window_content_form_inputSub.style.display = "initial"
                 break;
-            case "other__stellarGrace":
-                popup_window_content_form_inputSub.style.display = "none"
-                popup_window_content_form_selectSub.style.display = "initial"
-                break;
             default:
-                popup_window_content_form_selectSub.style.display = "none"
                 popup_window_content_form_inputSub.style.display = "none"
-                break;
-        }
-        switch(e.target.value){
-            case "other__stellarGrace":
-                while(popup_window_content_form_selectSub.firstChild){popup_window_content_form_selectSub.removeChild(popup_window_content_form_selectSub.firstChild)}
-                subList = [
-                    {"type":"gold","text":"Gold"},
-                    {"type":"silver","text":"Silver"},
-                    {"type":"default","text":"Standard"}
-                ];
-                for (i=0;i<subList.length;i++){
-                    e = document.createElement("option")
-                    e.setAttribute("value",subList[i]["type"])
-                    e.innerHTML=subList[i]["text"]
-                    popup_window_content_form_selectSub.appendChild(e)
-                }
-                break;
-            default:
-                subList = [];
                 break;
         }
     });
 
 var popup_window_content_form_divSub = document.createElement("div");
-
-var popup_window_content_form_selectSub = document.createElement("select")
-    popup_window_content_form_selectSub.setAttribute("autocomplete","hidden")
-    popup_window_content_form_selectSub.style.marginTop = "10px";
-    popup_window_content_form_selectSub.style.display = "none"
 
 var popup_window_content_form_inputSub = document.createElement("input")
     popup_window_content_form_inputSub.setAttribute("autocomplete","hidden")
@@ -184,13 +151,17 @@ var popup_window_content_form_button_latlng = document.createElement("a")
     popup_window_content_form_button_latlng.innerHTML="Copy LatLng"
     popup_window_content_form_button_latlng.style.marginBottom = "5px"
     popup_window_content_form_button_latlng.setAttribute("href","#")
-    popup_window_content_form_button_latlng.addEventListener("click",()=>{console.log('"lat":'+lat_variable+', "lng":'+lng_variable)});
-    popup_window_content_form_button_latlng.addEventListener("click",()=>{navigator.clipboard.writeText('"lat":'+lat_variable+', "lng":'+lng_variable)});
+    popup_window_content_form_button_latlng.addEventListener("click",()=>{
+        console.log('"lat":'+lat_variable+', "lng":'+lng_variable)
+        navigator.clipboard.writeText('"lat":'+lat_variable+', "lng":'+lng_variable)
+    });
 
 var popup_window_content_form_button_submit = document.createElement("button")
     popup_window_content_form_button_submit.setAttribute("type","submit")
-    popup_window_content_form_button_submit.addEventListener("click",()=>{map.closePopup()});
-    popup_window_content_form_button_submit.addEventListener("click",()=>{console.log('Marker placed on '+lat_variable+','+lng_variable)});
+    popup_window_content_form_button_submit.addEventListener("click",()=>{
+        map.closePopup()
+        console.log('Marker placed on '+lat_variable+','+lng_variable)
+    });
     popup_window_content_form_button_submit.innerHTML="Place marker";
 
 
@@ -224,7 +195,6 @@ popup_window.appendChild(popup_window_content)
                 popup_window_content_form_select.appendChild(e)
             }
         popup_window_content_form.appendChild(popup_window_content_form_divSub)
-        popup_window_content_form.appendChild(popup_window_content_form_selectSub)  
             
         popup_window_content_form.appendChild(popup_window_content_form_inputSub)
         popup_window_content_form.appendChild(popup_window_content_border2)
@@ -237,7 +207,7 @@ popup_window_content_form.addEventListener("submit",(e)=>{
         "table": popup_window_content_form_select.value,
         "lat": lat_variable,
         "lng": lng_variable,
-        "string": popup_window_content_form_inputSub.value || popup_window_content_form_selectSub.value
+        "string": popup_window_content_form_inputSub.value
     }
     const xhr = new XMLHttpRequest;
     xhr.open("POST","../../api/record.php");
