@@ -1,461 +1,445 @@
 [
     {
-        "lat": -1302,
-        "lng": 255,
+        "lat":-1302, "lng":255,
         "string": "biggFrogga",
         "levels": {
-            "use_special": true,
-            "normal": 0,
+            "use_special": false,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1178,
-        "lng": 207,
+        "lat":-1178, "lng":207,
         "string": "thunderBanser",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1290,
-        "lng": 142,
+        "lat":-1422, "lng":411,
+        "string": "daitylSword",
+        "levels": {
+            "use_special": false,
+            "normal": 15,
+            "special": 0
+        }
+    },
+    {
+        "lat":-1290, "lng":142,
         "string": "thunderBanshee",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1124,
-        "lng": 345,
+        "lat":-1124, "lng":345,
         "string": "chiacurio",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -977,
-        "lng": 348,
+        "lat":-977, "lng":348,
         "string": "varas",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1232,
-        "lng": 487,
+        "lat":-1232, "lng":487,
         "string": "bujin",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1165,
-        "lng": 559,
+        "lat":-1165, "lng":559,
         "string": "eldiScythe",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1230,
-        "lng": 885,
+        "lat":-1230, "lng":885,
         "string": "waulon",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1438,
-        "lng": 817,
+        "lat":-1438, "lng":817,
         "string": "cragBear",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1633,
-        "lng": 644,
+        "lat":-1633, "lng":644,
         "string": "ardBanser",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1744,
-        "lng": 510,
+        "lat":-1744, "lng":510,
         "string": "daitylAxe",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1555,
-        "lng": 101,
+        "lat":-1555, "lng":101,
         "string": "oruq",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1867,
-        "lng": 748,
+        "lat":-1867, "lng":748,
         "string": "ardBanshee",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1935,
-        "lng": 660,
+        "lat":-1935, "lng":660,
         "string": "nogleth",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1985,
-        "lng": 69,
+        "lat":-1985, "lng":69,
         "string": "nexAelio",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
+
     {
-        "lat": -1087,
-        "lng": 1989,
+        "lat":-1087, "lng":1989,
         "string": "svadiScythe",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 15,
             "special": 0
         }
     },
     {
-        "lat": -1119,
-        "lng": 1808,
+        "lat":-1119, "lng":1808,
         "string": "bubbleSnapper",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1926,
-        "lng": 1690,
+        "lat":-1754.5, "lng":1617.5,
         "string": "bubbleSnapper",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1731,
-        "lng": 1439,
+        "lat":-1731, "lng":1439,
         "string": "dustylHammer",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1816,
-        "lng": 1157,
+        "lat":-1816, "lng":1157,
         "string": "svaulon",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1546,
-        "lng": 1308,
+        "lat":-1546, "lng":1308,
         "string": "fortosLauncher",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1498,
-        "lng": 1665,
+        "lat":-1498, "lng":1665,
         "string": "sandNogleth",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1311,
-        "lng": 1725,
+        "lat":-1311, "lng":1725,
         "string": "renusRetem",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1163,
-        "lng": 1537,
+        "lat":-1163, "lng":1537,
         "string": "lizentos",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1185,
-        "lng": 1414,
+        "lat":-1185, "lng":1414,
         "string": "fortosLaser",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1304,
-        "lng": 1430,
+        "lat":-1304, "lng":1430,
         "string": "svacurio",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -1349,
-        "lng": 1238,
+        "lat":-1349, "lng":1238,
         "string": "kelkundo",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 30,
             "special": 0
         }
     },
     {
-        "lat": -302,
-        "lng": 490,
+        "lat":-1842.75, "lng":1838,
+        "string": "svadiScythe",
+        "levels": {
+            "use_special": false,
+            "normal": 82,
+            "special": 0
+        }
+    },
+    {
+        "lat":-1965, "lng":1868.75,
+        "string": "svacurio",
+        "levels": {
+            "use_special": false,
+            "normal": 82,
+            "special": 0
+        }
+    },
+
+    {
+        "lat":-302, "lng":490,
         "string": "crocodylis",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -445,
-        "lng": 554,
+        "lat":-445, "lng":554,
         "string": "relyn",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -380,
-        "lng": 681,
+        "lat":-380, "lng":681,
         "string": "iceBanser",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -734,
-        "lng": 869,
+        "lat":-734, "lng":869,
         "string": "konigsseeYedi",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -850,
-        "lng": 901,
+        "lat":-850, "lng":901,
         "string": "snoruq",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -902,
-        "lng": 191,
+        "lat":-902, "lng":191,
         "string": "frostylSword",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -866,
-        "lng": 301,
+        "lat":-866, "lng":301,
         "string": "malachride",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -679,
-        "lng": 474,
+        "lat":-679, "lng":474,
         "string": "iceBanshee",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -696,
-        "lng": 551,
+        "lat":-696, "lng":551,
         "string": "pangolan",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -458,
-        "lng": 332,
+        "lat":-458, "lng":332,
         "string": "malachroid",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
     {
-        "lat": -513,
-        "lng": 410,
+        "lat":-513, "lng":410,
         "string": "zoMarmoth",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 55,
             "special": 0
         }
     },
+
     {
-        "lat": -840,
-        "lng": 1305,
+        "lat":-840, "lng":1305,
         "string": "blazentos",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 65,
             "special": 0
         }
     },
     {
-        "lat": -739,
-        "lng": 1207,
+        "lat":-739, "lng":1207,
         "string": "duskdiScythe",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 65,
             "special": 0
         }
     },
     {
-        "lat": -652,
-        "lng": 1311,
+        "lat":-652, "lng":1311,
         "string": "voltLemnas",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 65,
             "special": 0
         }
     },
     {
-        "lat": -510,
-        "lng": 1466,
+        "lat":-510, "lng":1466,
         "string": "darkLemnas",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 65,
             "special": 0
         }
     },
     {
-        "lat": -525,
-        "lng": 1522,
+        "lat":-525, "lng":1522,
         "string": "flamedylSword",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 65,
             "special": 0
         }
     },
     {
-        "lat": -555,
-        "lng": 1412,
+        "lat":-555, "lng":1412,
         "string": "darkMagilz",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 65,
             "special": 0
         }
     },
     {
-        "lat": -640,
-        "lng": 1490,
+        "lat":-640, "lng":1490,
         "string": "engouku",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 65,
             "special": 0
         }
     },
     {
-        "lat": -360,
-        "lng": 1475,
+        "lat":-360, "lng":1475,
         "string": "doldoris",
         "levels": {
             "use_special": false,
-            "normal": 0,
+            "normal": 65,
             "special": 0
         }
     }
