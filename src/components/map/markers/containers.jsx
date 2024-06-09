@@ -40,9 +40,8 @@ Red:()=>{
                      <span><menuicon/> {t("items:container.red.title")}</span>
                 </header>
                 <content>
-                    <id>ID: {x.id}</id>
-                    <br/>
-                    {t("ui:Map.checkHint")}
+                    {t("ui:map.checkHint")}
+                    <id>ID: red{x.id}</id>
                 </content>
             </tooltipwindow></Tooltip>
         </Marker>
