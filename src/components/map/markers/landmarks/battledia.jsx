@@ -87,10 +87,10 @@ const Template = (props) => {
                                                 {(()=>{
                                                     if(props.type === "purple"){return <>
                                                         {(()=>{
-                                                            if(props.have_unique_rewards === true){
+                                                            if(props.object.rewards){
                                                                 return(
                                                                     props.object.rewards.map(y=>(
-                                                                        <full>{t(y.item)}</full>
+                                                                        <full>{t(y)}</full>
                                                                     ))
                                                                 )
                                                             } else {
@@ -144,7 +144,6 @@ const Template = (props) => {
                         {(()=>{
                             const jsx = [];
                             if(props.have_unique_bosses_per_rank === true && props.object.ranks[tier].bosses){
-                                console.log(props.have_unique_bosses_per_rank)
                                 for (var i=0; i<props.object.ranks[tier].bosses.length; i++){
                                     if (i === 0){
                                         jsx.push(<>{t("enemies:"+props.object.ranks[tier].bosses[i])}</>)
@@ -153,7 +152,6 @@ const Template = (props) => {
                                     }
                                 }
                             } else {
-                                console.log(props.object.bosses)
                                 for (var k=0; k<props.object.bosses.length; k++){
                                     if (k === 0){
                                         jsx.push(<>{t("enemies:"+props.object.bosses[k])}</>)

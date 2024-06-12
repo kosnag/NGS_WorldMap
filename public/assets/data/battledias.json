@@ -252,30 +252,15 @@
         "type": "purple",
         "lat":-1033.5, "lng":1122.75,
         "players": 8,
-        "have_unique_rewards": true,
         "have_unique_bosses_per_rank": true,
         "rewards": [
-            {
-                "item": "rewards:item.gigas_augments"
-            },
-            {
-                "item": "rewards:item.triyal_augments"
-            },
-            {
-                "item": "rewards:item.gigas_strugments"
-            },
-            {
-                "item": "rewards:item.customization_disks"
-            },
-            {
-                "item": "rewards:item.special_scratch_ticket"
-            },
-            {
-                "item": "rewards:item.certain_fashion"
-            },
-            {
-                "item": "rewards:item.certain_equipment"
-            }
+            "rewards:item.gigas_augments",
+            "rewards:item.triyal_augments",
+            "rewards:item.gigas_strugments",
+            "rewards:item.customization_disks",
+            "rewards:item.special_scratch_ticket",
+            "rewards:item.certain_fashion",
+            "rewards:item.certain_equipment"
         ],
         "ranks": [
             {
