@@ -2,87 +2,153 @@
     {
         "id": "geometricLabyrinth",
         "lat":-1394.5, "lng":1699.25,
-        "minBP": 1681,
-        "enemyLv": 30,
         "players": 4,
-        "rewards": [
+        "ranks": [
             {
-                "item": "rewards:item.gold_prim_sword"
+                "minBP": 1682,
+                "enemyLv": 30,
+                "rewards": [
+                    "rewards:item.gold_prim_sword",
+                    "rewards:item.gold_prim_armor",
+                    "rewards:item.silver_prim_sword",
+                    "rewards:item.silver_prim_armor",
+                    "rewards:item.tria_augments",
+                    "rewards:item.basic_augments",
+                    "rewards:item.certain_equipment",
+                    "rewards:item.fashion_items"
+                ]
             },
             {
-                "item": "rewards:item.gold_prim_armor"
-            },
-            {
-                "item": "rewards:item.silver_prim_sword"
-            },
-            {
-                "item": "rewards:item.silver_prim_armor"
-            },
-            {
-                "item": "rewards:item.tria_augments"
-            },
-            {
-                "item": "rewards:item.fashion_items"
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    "rewards:item.gold_prim_sword",
+                    "rewards:item.gold_prim_armor",
+                    "rewards:item.silver_prim_sword",
+                    "rewards:item.silver_prim_armor",
+                    "rewards:item.dread_augments",
+                    "rewards:item.soul_augments",
+                    "rewards:item.domina_augments",
+                    "rewards:item.gigas_augments",
+                    "rewards:item.basic_augments",
+                    "rewards:item.arms_refiner",
+                    "rewards:item.certain_equipment",
+                    "rewards:item.fashion_items"
+                ]
             }
         ]
     },
     {
         "id": "cannonballRumble",
         "lat":-592.5, "lng":496.75,
-        "minBP": 2647,
-        "enemyLv": 60,
         "players": 4,
-        "rewards": [
+        "ranks": [
             {
-                "item": "rewards:item.gold_prim_sword"
-            },
-            {
-                "item": "rewards:item.gold_prim_armor"
-            },
-            {
-                "item": "rewards:item.silver_prim_sword"
-            },
-            {
-                "item": "rewards:item.silver_prim_armor"
-            },
-            {
-                "item": "rewards:item.class_cubes"
-            },
-            {
-                "item": "rewards:item.strugments"
-            },
-            {
-                "item": "rewards:item.super_augments"
+                "minBP": 2647,
+                "enemyLv": 60,
+                "rewards": [
+                    "rewards:item.gold_prim_sword",
+                    "rewards:item.gold_prim_armor",
+                    "rewards:item.silver_prim_sword",
+                    "rewards:item.silver_prim_armor",
+                    "rewards:item.class_cubes",
+                    "rewards:item.super_augments",
+                    "rewards:item.decold_augments"
+                ]
             }
         ]
     },
     {
         "id": "cannonballStrike",
         "lat":-706, "lng":840.5,
-        "minBP": 2647,
-        "enemyLv": 60,
         "players": 4,
-        "rewards": [
+        "ranks": [
             {
-                "item": "rewards:item.gold_prim_sword"
+                "minBP": 2647,
+                "enemyLv": 60,
+                "rewards": [
+                    "rewards:item.gold_prim_sword",
+                    "rewards:item.gold_prim_armor",
+                    "rewards:item.silver_prim_sword",
+                    "rewards:item.silver_prim_armor",
+                    "rewards:item.class_cubes",
+                    "rewards:item.super_augments",
+                    "rewards:item.decold_augments",
+                    "rewards:item.certain_fashion"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "ordinalTower",
+        "lat":-1883.75, "lng":506,
+        "players": 4,
+        "ranks": [
+            {
+                "minBP": 1063,
+                "enemyLv": 15,
+                "rewards": [
+                    "rewards:item.minerals",
+                    "rewards:item.certain_fashion"
+                ]
             },
             {
-                "item": "rewards:item.gold_prim_armor"
+                "minBP": 1243,
+                "enemyLv": 20,
+                "rewards": [
+                    "rewards:item.minerals",
+                    "rewards:item.certain_fashion",
+                    "rewards:item.certain_equipment"
+                ]
             },
             {
-                "item": "rewards:item.silver_prim_sword"
+                "minBP": 1633,
+                "enemyLv": 30,
+                "rewards": [
+                    "rewards:item.minerals",
+                    "rewards:item.certain_fashion",
+                    "rewards:item.certain_equipment"
+                ]
             },
             {
-                "item": "rewards:item.silver_prim_armor"
+                "minBP": 1759,
+                "enemyLv": 35,
+                "rewards": [
+                    "rewards:item.minerals",
+                    "rewards:item.certain_fashion",
+                    "rewards:item.certain_equipment"
+                ]
             },
             {
-                "item": "rewards:item.class_cubes"
+                "minBP": 2416,
+                "enemyLv": 55,
+                "rewards": [
+                    "rewards:item.minerals",
+                    "rewards:item.certain_fashion",
+                    "rewards:item.certain_equipment"
+                ]
             },
             {
-                "item": "rewards:item.strugments"
+                "minBP": 2647,
+                "enemyLv": 60,
+                "rewards": [
+                    "rewards:item.soul_augments",
+                    "rewards:item.minerals",
+                    "rewards:item.certain_fashion",
+                    "rewards:item.certain_equipment"
+                ]
             },
             {
-                "item": "rewards:item.super_augments"
+                "minBP": 2878,
+                "enemyLv": 65,
+                "rewards": [
+                    "rewards:item.soul_augments",
+                    "rewards:item.fusia_augments",
+                    "rewards:item.fused_augments",
+                    "rewards:item.arms_refiner",
+                    "rewards:item.certain_fashion",
+                    "rewards:item.certain_equipment"
+                ]
             }
         ]
     }
