@@ -5,25 +5,30 @@
         "experience": "EXP"
     },
     "item": {
+        "fused_augments": "Fused Augments",
+        "basic_augments": "Basic Augments",
         "gigas_augments": "Gigas-type Augments",
         "soul_augments": "Soul-type Augments",
-        "special_scratch_ticket": "Special Scratch Ticket",
         "mastery_augments": "Mastery Augments",
+        "tria_augments": "Tria-type Augments",
+        "domina_augments": "Domina-type Augments",
+        "decold_augments": "Decold-type Augments",
+        "super_augments": "Super-type Augments",
+        "triyal_augments": "Triyal-type Augments",
+        "fusia_augments": "Fusia-type Augments",
+        "dread_augments": "Dread-type Augments",
+
+        "special_scratch_ticket": "Special Scratch Tickets",
         "gold_prim_sword": "Gold Primm Sword",
         "silver_prim_sword": "Silver Primm Sword",
         "gold_prim_armor": "Gold Primm Armor",
         "silver_prim_armor": "Silver Primm Armor",
-        "tria_augments": "Tria-type Augments",
-        "domina_augments": "Domina-type Augments",
-        "decold_augments": "Decold-type Augments",
-        "class_cubes": "Class Excube",
-        "super_augments": "Super-type Augments",
-        "arms_refiner": "Arms Refiner",
-        "gigas_strugments": "Giga Strugment",
+        "class_cubes": "Class Excubes",
+        "arms_refiner": "Arms Refiners",
+        "gigas_strugments": "Giga Strugments",
         "certain_fashion": "Certain Fashion Elements",
         "certain_equipment": "Certain Equipment",
-        "arm_augments": "Arm-type Augments",
-        "triyal_augments": "Triyal-type Augments",
-        "customization_disks": "TA Customization Discs"
+        "customization_disks": "TA Customization Discs",
+        "minerals": "Minerals"
     }
 }

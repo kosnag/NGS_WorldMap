@@ -5,25 +5,30 @@
         "experience": "EXP"
     },
     "item": {
-        "gigas_augments": "Gigas-type Capsules",
-        "soul_augments": "Soul-type Capsules",
-        "special_scratch_ticket": "Special Scratch Ticket",
-        "mastery_augments": "Ability Capsules",
+        "fused_augments": "Fused Abilities",
+        "basic_augments": "Basic Abilities",
+        "gigas_augments": "Gigas-type Abilities",
+        "soul_augments": "Soul-type Abilities",
+        "mastery_augments": "Ability Abilities",
+        "tria_augments": "Tria-type Abilities",
+        "domina_augments": "Domina-type Abilities",
+        "decold_augments": "Decold-type Abilities",
+        "super_augments": "Superb-type Abilities",
+        "triyal_augments": "Dryl-type Abilities",
+        "fusia_augments": "Fusier-type Abilities",
+        "dread_augments": "Dread-type Abilities",
+
+        "special_scratch_ticket": "Special Scratch Tickets",
         "gold_prim_sword": "Gold Prim Sword",
         "silver_prim_sword": "Silver Prim Sword",
         "gold_prim_armor": "Gold Prim Armor",
         "silver_prim_armor": "Silver Prim Armor",
-        "tria_augments": "Tria-type Capsules",
-        "domina_augments": "Domina-type Capsules",
-        "decold_augments": "Decold-type Capsules",
         "class_cubes": "Class Excubes",
-        "super_augments": "Super-type Capsules",
-        "arms_refiner": "Arms Refiner",
+        "arms_refiner": "Arms Refiners",
         "gigas_strugments": "Gigas Stragments",
         "certain_fashion": "Certain Fashion Elements",
         "certain_equipment": "Certain Equipment",
-        "arm_augments": "Deftness-type Capsules",
-        "triyal_augments": "Dryl-type Capsules",
-        "customization_disks": "TA Customization Discs"
+        "customization_disks": "TA Customization Discs",
+        "minerals": "Minerals"
     }
 }

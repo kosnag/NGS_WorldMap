@@ -5,25 +5,30 @@
         "experience": "EXP"
     },
     "item": {
+        "fused_augments": "fused_augments",
+        "basic_augments": "basic_augments",
         "gigas_augments": "「ギガス」特殊能力",
         "soul_augments": "「ソール」特殊能力",
-        "special_scratch_ticket": "スペシャルスクラッチ券",
         "mastery_augments": "「アビリティ」特殊能力",
+        "tria_augments": "「トリア」特殊能力",
+        "domina_augments": "「ドミナ」特殊能力",
+        "decold_augments": "「デコル」特殊能力",
+        "super_augments": "「シュペル」特殊能力",
+        "triyal_augments": "「ドライエル」特殊能力",
+        "fusia_augments": "「フュージア」特殊能力",
+        "dread_augments": "「ドレド」特殊能力",
+        
+        "special_scratch_ticket": "スペシャルスクラッチ券",
         "gold_prim_sword": "ゴルドプリムソード",
         "silver_prim_sword": "シルヴァプリムソード",
         "gold_prim_armor": "ゴルドプリムアーマ",
         "silver_prim_armor": "シルヴァプリムアーマ",
-        "tria_augments": "「トリア」特殊能力",
-        "domina_augments": "「ドミナ」特殊能力",
-        "decold_augments": "「デコル」特殊能力",
         "class_cubes": "クラスのエクスキューブ",
-        "super_augments": "「シュペル」特殊能力",
         "arms_refiner": "アームズリファイナー",
         "gigas_strugments": "ギガストラグメント",
         "certain_fashion": "特定のファッション要素",
         "certain_equipment": "特定の設備",
-        "arm_augments": "「アーム」特殊能力",
-        "triyal_augments": "「ドライエル」特殊能力",
-        "customization_disks": "TAカスタマイズディスク"
+        "customization_disks": "TAカスタマイズディスク",
+        "minerals": "鉱石"
     }
 }
