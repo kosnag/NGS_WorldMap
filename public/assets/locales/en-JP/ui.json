@@ -76,6 +76,7 @@
         },
         "checkHint": "Press the left mouse button on marker to mark it as checked",
         "availableChallengeRank": "For this Trainia available Challenge Rank",
-        "levelChangeEventOngoing": "Enemy level was changed due ongoing event"
+        "levelChangeEventOngoing": "Enemy level was changed due ongoing event",
+        "maraphonTerminalNear": "Nearby located a Field Race terminal"
     }
 }

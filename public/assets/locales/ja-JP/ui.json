@@ -76,6 +76,7 @@
         },
         "checkHint": "マーカー上でマウスの左ボタンを押して、チェックマークを付けます",
         "availableChallengeRank": "このトレイニアで利用可能なチャレンジランク",
-        "levelChangeEventOngoing": "開催中のイベントによりエネミーのレベルが変更されました"
+        "levelChangeEventOngoing": "開催中のイベントによりエネミーのレベルが変更されました",
+        "maraphonTerminalNear": "近くにフィールドレースターミナルがある"
     }
 }
