@@ -132,6 +132,20 @@
             "rewards:item.certain_fashion",
             "rewards:item.certain_equipment"
         ],
+        "sell_materials": {
+            "alphareactor": [
+                {"lat":-1139, "lng":504},
+                {"lat":-1583, "lng":432},
+                {"lat":-1596.5, "lng":606}
+            ],
+            "snoal": [
+                {"lat": -201,"lng": 522},
+                {"lat": -172,"lng": 562},
+                {"lat": -255,"lng": 568},
+                {"lat": -298,"lng": 582},
+                {"lat": -348,"lng": 579}
+        ]
+        },
         "languages": [
             {   
                 "id": "en-US",
