@@ -19,7 +19,7 @@
     },
     "ordinalTower": {
         "title": "Ordinal Tower",
-        "clearCondition": "Defeat 3 enemies",
+        "clearCondition": "Defeat the enemies",
         "failCondition": "Become incapacitated 5 times \nExceed the time limit",
         "description": "This is Trainia Advance, an advanced training system meant to test an ARKS defender's overall level of skill. Use every ability available to you to defeat the enemies as quickly as possible on virtual replicas of each region of Halpha."
     }

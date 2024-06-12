@@ -19,7 +19,7 @@
     },
     "ordinalTower": {
         "title": "Ordinal Tower",
-        "clearCondition": "Defeat 3 enemies",
+        "clearCondition": "Defeat the enemies",
         "failCondition": "Become incapacitated 5 times \nTime limit expires",
         "description": "This Advanced Trainia facility is designed to thoroughly test all of your skills as an ARKS. \nUse all of your abilities to defeat the enemies as fast as possible in a field recreating the geography of Halpha."
     }
