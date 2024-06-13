@@ -5,8 +5,8 @@
         "experience": "EXP"
     },
     "item": {
-        "fused_augments": "fused_augments",
-        "basic_augments": "basic_augments",
+        "fused_augments": "アップグレードされた特殊能力",
+        "basic_augments": "ベーシック特殊能力",
         "gigas_augments": "「ギガス」特殊能力",
         "soul_augments": "「ソール」特殊能力",
         "mastery_augments": "「アビリティ」特殊能力",
