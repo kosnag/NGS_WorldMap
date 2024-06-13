@@ -151,7 +151,11 @@
     },
     {
         "lat":-770, "lng":793,
-        "id": "danannSnowField"
+        "id": "danannSnowFieldEast"
+    },
+    {
+        "lat":-711.25, "lng":496,
+        "id": "danannSnowFieldWest"
     },
     {
         "lat":-959, "lng":541,
