@@ -149,6 +149,19 @@
                     "rewards:item.certain_fashion",
                     "rewards:item.certain_equipment"
                 ]
+            },
+            {
+                "minBP": 3840,
+                "enemyLv": 90,
+                "rewards": [
+                    "rewards:item.soul_augments",
+                    "rewards:item.fusia_augments",
+                    "rewards:item.fused_augments",
+                    "rewards:item.arms_refiner",
+                    "rewards:item.minerals",
+                    "rewards:item.certain_fashion",
+                    "rewards:item.certain_equipment"
+                ]
             }
         ]
     }
